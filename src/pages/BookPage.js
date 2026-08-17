@@ -207,7 +207,15 @@ function hideTocInFrame(frame) {
     const doc = frame.contentDocument
     if (!doc) return
     const style = doc.createElement('style')
-    style.textContent = 'nav.toc { display: none !important; } .page { grid-template-columns: 1fr !important; } h1.book-title + section > h2:first-child { display: none !important; }'
+    // Book pages (book_*.html) use `.page{display:grid}` — force the nav
+    // column to collapse so `main` fills the iframe. Concept pages
+    // (concept_*.html) instead use `.page{max-width:780px;margin:0 auto}`,
+    // a standalone-reading layout that's centered with a hard cap — inside
+    // this app's wide main pane that leaves big blank margins on both
+    // sides. Override to the same left-aligned, capped-width treatment the
+    // book template's own `main` already uses, so both page types render
+    // consistently in the iframe.
+    style.textContent = 'nav.toc { display: none !important; } .page { grid-template-columns: 1fr !important; max-width: 860px !important; margin: 0 !important; } h1.book-title + section > h2:first-child { display: none !important; }'
     doc.head.appendChild(style)
   } catch (_) {}
 }
