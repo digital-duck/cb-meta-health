@@ -29,8 +29,24 @@ function conceptFilename(file) {
   return file.replace(/^.*\//, '')
 }
 
+// spl/tools.py's write_concept_html/build_book_index suffix every generated
+// filename with "_{language}" except English (kept unsuffixed for backward
+// compatibility). Strip whatever suffix the currently-open file carries
+// (from LANGUAGES, so a concept name that happens to end in a 2-letter word
+// is never mistaken for one) before re-adding the suffix for the requested
+// language — otherwise switching the Language control looks for the
+// English-named file under a different-language directory and 404s.
+const _LANG_CODES = LANGUAGES.map(l => l.code).filter(c => c !== 'en')
+const _LANG_SUFFIX_RE = new RegExp(`_(?:${_LANG_CODES.join('|')})(\\.html)$`)
+
+function withLangSuffix(fname, lang) {
+  const base = fname.replace(_LANG_SUFFIX_RE, '$1')
+  if (!lang || lang === 'en') return base
+  return base.replace(/\.html$/, `_${lang}.html`)
+}
+
 function buildUrl(domain, file, level, lang, model) {
-  const fname = conceptFilename(file)
+  const fname = withLangSuffix(conceptFilename(file), lang)
   const modelPart = model ? `${model}/` : ''
   return `${import.meta.env.BASE_URL}domains/${domain}/output/${level}.${lang}/${modelPart}html/${fname}`
 }
