@@ -247,6 +247,31 @@ def concept_label(concept: str) -> str:
 
 
 @spl_tool
+def concept_context(domain_yaml: str, concept: str) -> str:
+    """Return the concept's own `defines` text from the domain graph, for use
+    as write_section's "surrounding context" argument.
+
+    Looked up from the already-cached domain data (setup_domain() must have
+    run first), across primitives/concepts/applications. Falls back to the
+    bare concept id if the node or its `defines` field is missing, so a
+    domain without rich definitions degrades gracefully rather than erroring.
+
+    This is also the hook an external pipeline (e.g. concept-book-press's
+    publish pipeline) uses for cross-chapter concept reuse: it can annotate
+    a chapter's own `defines` text with "already introduced in Chapter N as:
+    ..." before syncing/generating, and that annotation flows straight into
+    the generation prompt through this same lookup — no separate mechanism
+    needed.
+    """
+    data = _domain(domain_yaml)["data"]
+    for section in ("primitives", "concepts", "applications"):
+        node = (data.get(section) or {}).get(concept)
+        if node:
+            return node.get("defines") or concept
+    return concept
+
+
+@spl_tool
 def write_concept_html(concept: str, section: str, domain_yaml: str, output_dir: str, language: str = "en") -> str:
     """Write a standalone HTML page for one concept to output_dir/concept_{concept}[_{language}].html.
 
