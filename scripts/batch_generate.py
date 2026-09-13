@@ -228,15 +228,26 @@ def _mark_generated(domain_id: str, target: str, level: str, language: str, mode
 
 
 # Substrings (checked lowercase) that indicate the LLM backend has hit a
-# session/rate/quota limit rather than a genuine workflow or code error.
-# Mirrors the detection in SPL.py's spl/adapters/claude_cli.py so a limit hit
-# here is recognized the same way it is inside the adapter — but here we act
-# on it *before* spl3 finishes printing the resulting uncaught-exception
-# traceback (ModelOverloaded propagates out of `spl3 run` unhandled when the
-# .spl workflow has no EXCEPTION WHEN ModelOverloaded clause), since every
-# remaining job in the batch would hit the same limit and print the same
-# traceback again.
-_SESSION_LIMIT_MARKERS = ("session limit", "rate limit", "quota", "usage limit", "modeloverloaded")
+# session/rate limit rather than a genuine workflow or code error.
+#
+# This scans *every* line of the subprocess's live output — which includes
+# the LLM's own generated section text (echoed to the console as it
+# streams), not just log/error lines — so generic phrases are dangerous:
+# a generated section on ecology, economics, or biochemistry can
+# legitimately say "fishing quotas" or discuss a reaction's "rate limiting
+# step" and false-trigger an abort mid-batch (confirmed in practice: a
+# Biology chapter's "Ecosystem" section describing fishery management
+# quotas killed a 173-job batch after 1 real success, with the earlier,
+# broader marker list here).
+#
+# These two are instead exactly what SPL.py's claude_cli adapter always
+# wraps a real limit as before it can reach this output — see
+# `raise ModelOverloaded(f"Claude CLI limit reached: {error_detail}")` in
+# spl/adapters/claude_cli.py — and build_concept_book.spl has no
+# `EXCEPTION WHEN ModelOverloaded` clause, so a real hit always propagates
+# as an uncaught exception containing both strings verbatim. Neither has
+# any plausible reason to appear in generated academic prose.
+_SESSION_LIMIT_MARKERS = ("modeloverloaded", "claude cli limit reached")
 
 
 class SessionLimitHit(Exception):

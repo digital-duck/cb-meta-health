@@ -55,7 +55,19 @@ _LLM_ALIASES: dict[str, str] = {
 # Claude CLI session/rate-limit signatures — seeing one means the wall applies
 # to every subsequent domain too, so the whole batch stops rather than
 # grinding through the rest of the list one failure at a time.
-_RATE_LIMIT_MARKERS = ("session limit", "ModelOverloaded", "rate_limit", "Rate limit", "usage limit")
+#
+# Only these two — never generic phrases like "quota"/"rate limit"/"usage
+# limit". This scan runs against the *entire* subprocess output, which
+# includes the LLM's own generated section text as it streams to the
+# console, not just log/error lines — a generic marker WILL eventually
+# false-positive on legitimate content (confirmed in practice: an ecology
+# section discussing fishery quotas). SPL.py's claude_cli adapter always
+# wraps a real limit as `ModelOverloaded("Claude CLI limit reached: ...")`
+# before it can reach this output, and build_concept_book.spl has no
+# `EXCEPTION WHEN ModelOverloaded` clause, so a real hit always propagates
+# as an uncaught exception containing both strings verbatim — safe and
+# sufficient without the false-positive risk of broader wording.
+_RATE_LIMIT_MARKERS = ("ModelOverloaded", "Claude CLI limit reached")
 
 
 def _resolve_llm(model: str) -> str:
@@ -112,7 +124,8 @@ _RATE_LIMIT_DETAIL_RE = re.compile(r"Claude CLI limit reached:\s*(.+)")
 
 
 def _run_spl3(domain_id: str, target: str, level: str, language: str, model: str,
-              llm: str, skip_cache: bool, log: logging.Logger) -> tuple[bool, str | None]:
+              llm: str, skip_cache: bool, log: logging.Logger,
+              domain_yaml_dir: Path | None = None) -> tuple[bool, str | None]:
     """Run spl3, streaming output live (minus tracebacks) while capturing it in full.
 
     Returns (ok, error). error is "RATE_LIMITED: <detail>" when the batch should stop.
@@ -120,11 +133,28 @@ def _run_spl3(domain_id: str, target: str, level: str, language: str, model: str
     output_dir = DOMAINS_DIR / domain_id / "output" / f"{level}.{language}" / model / "html"
     output_dir.mkdir(parents=True, exist_ok=True)
 
+    # Absolute path, not a bare "{domain_id}_graph.yaml" filename — same fix
+    # as batch_generate.py's _run_spl3: a bare filename is resolved by
+    # graph_lib.load_domain() relative to SPL.py's own cookbook/74_concept_book
+    # directory, which requires every domain to also be hand-copied there.
+    # An absolute path works for any domain synced into public/domains/,
+    # including ones synced from concept-book-press's ingestion pipeline,
+    # which never puts anything in SPL.py's cookbook dir.
+    domain_yaml_path = DOMAINS_DIR / domain_id / "input" / "graph.yaml"
+    # --domain-yaml-dir lets an external orchestrator (concept-book-press's
+    # publish pipeline) supply a per-domain override graph.yaml — e.g. one
+    # annotated with cross-chapter concept context — without ever touching
+    # this domain's own synced graph.yaml under public/domains/.
+    if domain_yaml_dir is not None:
+        override = Path(domain_yaml_dir) / f"{domain_id}_graph.yaml"
+        if override.exists():
+            domain_yaml_path = override
+
     cmd = [
         "spl3", "run", str(SPL_WORKFLOW / "build_concept_book.spl"),
         "--tools", str(SPL_WORKFLOW / "tools.py"),
         "--llm", llm,
-        "--param", f"domain_yaml={domain_id}_graph.yaml",
+        "--param", f"domain_yaml={domain_yaml_path}",
         "--param", f"target={target}",
         "--param", f"lvl={level}",
         "--param", f"language={language}",
@@ -174,9 +204,13 @@ def _run_spl3(domain_id: str, target: str, level: str, language: str, model: str
 @click.option("--force", is_flag=True, help="Regenerate even if output already exists.")
 @click.option("--limit", default=None, type=int, help="Only process the first N domains (e.g. for a test run).")
 @click.option("--progress-file", default=DEFAULT_PROGRESS_FILE, type=click.Path(path_type=Path), show_default=True)
+@click.option("--domain-yaml-dir", default=None, type=click.Path(path_type=Path),
+              help="Look here first for a per-domain '{domain_id}_graph.yaml' override "
+                   "before falling back to the domain's own synced graph.yaml.")
 @click.option("--log-file", default=None, type=click.Path(path_type=Path))
 def main(domains_file: Path, model: str, level: str, language: str, skip_cache: bool,
-         force: bool, limit: int | None, progress_file: Path, log_file: Path | None) -> None:
+         force: bool, limit: int | None, progress_file: Path, log_file: Path | None,
+         domain_yaml_dir: Path | None) -> None:
     """Batch-generate concept books, one capstone target per domain."""
     console = logging.StreamHandler()
     console.setLevel(logging.INFO)
@@ -230,7 +264,8 @@ def main(domains_file: Path, model: str, level: str, language: str, skip_cache: 
 
         log.info(f"Queue  {domain_id}  target={target}")
         t0 = time.time()
-        success, err = _run_spl3(domain_id, target, level, language, model_dir, llm, skip_cache, log)
+        success, err = _run_spl3(domain_id, target, level, language, model_dir, llm, skip_cache, log,
+                                  domain_yaml_dir=domain_yaml_dir)
         elapsed = time.time() - t0
 
         if success:
