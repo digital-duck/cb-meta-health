@@ -568,7 +568,9 @@ footer.spl-credit .spl-credit__meta{margin-bottom:4px}"""
 _MATHJAX_HEAD = """\
 <script>
 MathJax = {
-  tex: { inlineMath: [['$','$'],['\\\\(','\\\\)']], displayMath: [['$$','$$'],['\\\\[','\\\\]']] },
+  loader: { load: ['[tex]/mathtools'] },
+  tex: { inlineMath: [['$','$'],['\\\\(','\\\\)']], displayMath: [['$$','$$'],['\\\\[','\\\\]']],
+         packages: { '[+]': ['mathtools'] } },
   options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
 };
 </script>

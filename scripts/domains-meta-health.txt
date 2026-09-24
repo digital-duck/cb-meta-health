@@ -1,0 +1,10 @@
+# 元健康 Meta-Health — all chapters (see docs/gemini/review-revise-by-opus-5-5.md)
+meta_health_ch01   # TCM foundations
+meta_health_ch02   # physiology lens
+meta_health_ch03   # 五脏操
+meta_health_ch04   # 八段锦
+meta_health_ch05   # eating as internal exercise
+meta_health_ch06   # food: 四气五味
+meta_health_ch07   # stress & emotion
+meta_health_ch08   # rhythms
+meta_health_ch09   # 内调一元论 synthesis

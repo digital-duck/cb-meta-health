@@ -1,0 +1,41 @@
+{
+  "project": "cb-meta-health",
+  "version": "1.0.0",
+  "dimensions": {
+    "models": ["claude-3-7-sonnet", "gemma4"],
+    "levels": ["introductory", "intermediate", "advanced"],
+    "languages": ["en", "zh"]
+  },
+  "domains": [
+    {
+      "id": "meta_health_ch01",
+      "title": "Foundations of Bio-Mechanics and Joint Primitives",
+      "path": "public/domains/meta_health_ch01"
+    },
+    {
+      "id": "meta_health_ch02",
+      "title": "Energetics, Metabolism, and Nutrition Primitives",
+      "path": "public/domains/meta_health_ch02"
+    },
+    {
+      "id": "meta_health_ch03",
+      "title": "Autonomic Recovery, Sleep, and Circadian Rhythms",
+      "path": "public/domains/meta_health_ch03"
+    },
+    {
+      "id": "meta_health_ch04",
+      "title": "Compound Movement Integration and Structural Load",
+      "path": "public/domains/meta_health_ch04"
+    },
+    {
+      "id": "meta_health_ch05",
+      "title": "Nutrient Partitioning, Substrate Adaptation, and Timing",
+      "path": "public/domains/meta_health_ch05"
+    },
+    {
+      "id": "meta_health_ch06",
+      "title": "Systemic Equilibrium, TCM Harmony, and Long-Term Adaptation",
+      "path": "public/domains/meta_health_ch06"
+    }
+  ]
+}

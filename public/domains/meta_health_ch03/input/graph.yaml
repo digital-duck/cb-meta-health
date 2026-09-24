@@ -1,23 +1,177 @@
 domain: meta_health_ch03
-title: "Autonomic Recovery, Sleep, and Circadian Rhythms"
-description: "Systemic recovery, autonomic nervous system balance, and biological rhythms."
-version: "1.0"
-
-nodes:
-  - id: circadian-clock
-    title: "Circadian Rhythms and Light Exposure"
-    type: primitive
-    prerequisites: []
-    summary: "Molecular biological clocks, hormonal synchronization (melatonin/cortisol), and daylight stimulus."
-
-  - id: sleep-architecture
-    title: "Sleep Cycles, Deep Sleep, and REM Repair"
-    type: primitive
-    prerequisites: ["circadian-clock"]
-    summary: "The structural phases of sleep governing physical repair, cognitive consolidation, and metabolic resets."
-
-  - id: autonomic-balance-hrv
-    title: "Autonomic Regulation: Sympathetic vs. Parasympathetic Tone"
-    type: composite
-    prerequisites: ["sleep-architecture"]
-    summary: "Heart rate variability (HRV), nervous system recovery, and managing chronic vs. acute stress loads."
+primitives:
+  dantian:
+    defines: >-
+      The lower dantian (下丹田), the center below the navel where qigong settles breath and attention (from
+      Chapter 1).
+    tier: 0
+  diaphragmatic_breathing:
+    defines: >-
+      Diaphragmatic breathing and its parasympathetic effect (from Chapter 2).
+    tier: 0
+  five_phase_correspondences:
+    defines: >-
+      The Five-Phase correspondence table (五行归类) linking each phase to an organ, season, emotion, flavor
+      and tissue (from Chapter 1).
+    tier: 0
+  generating_cycle_xiangsheng:
+    defines: >-
+      The generating cycle (相生): Wood → Fire → Earth → Metal → Water (from Chapter 1).
+    tier: 0
+  heart_kidney_interaction:
+    defines: >-
+      Heart–Kidney interaction (心肾相交): Heart Fire descends and Kidney Water ascends (from Chapter 1).
+    tier: 0
+  intra_abdominal_pressure:
+    defines: >-
+      Intra-abdominal pressure and how breathing and trunk movement change it (from Chapter 2).
+    tier: 0
+  myofascial_lines:
+    defines: >-
+      Myofascial lines such as the lateral, spiral and superficial back lines (from Chapter 2).
+    tier: 0
+  skeletal_muscle_pump:
+    defines: >-
+      The calf and leg skeletal-muscle pump that returns venous blood to the heart (from Chapter 2).
+    tier: 0
+  squat_mechanics:
+    defines: >-
+      Squat mechanics: coordinated hip, knee and ankle flexion over a stable trunk (from Chapter 2).
+    tier: 0
+  thoracic_mobility:
+    defines: >-
+      Thoracic mobility: extension, rotation and side-bending of the rib cage and upper back (from Chapter
+      2).
+    tier: 0
+  twelve_primary_meridians:
+    defines: >-
+      The twelve primary meridians (十二经脉) and their paths along the limbs and trunk (from Chapter 1).
+    tier: 0
+concepts:
+  chest_expansion_kuoxiong:
+    defines: >-
+      Chest expansion (扩胸) → Lung (肺) → Metal (金): opening the arms and chest stretches the pectorals
+      and intercostals and increases thoracic volume; in TCM it opens the Lung meridian across the upper
+      chest and 'draws in clear qi'.
+    composed_of:
+    - thoracic_mobility
+    - diaphragmatic_breathing
+    - five_phase_correspondences
+    - twelve_primary_meridians
+    tier: 1
+  deep_squat_shendun:
+    defines: >-
+      Deep squat (深蹲) → Heart (心) → Fire (火): recruiting the largest leg muscles raises heart rate and
+      venous return; in TCM, lowering the center of gravity leads Heart Fire downward to meet Kidney Water
+      (引火归元).
+    composed_of:
+    - squat_mechanics
+    - skeletal_muscle_pump
+    - heart_kidney_interaction
+    - five_phase_correspondences
+    tier: 1
+  rib_fanning_shanlei:
+    defines: >-
+      Rib fanning (扇肋) → Liver (肝) → Wood (木): side-bending and spreading the ribs stretches the lateral
+      line, intercostals and obliques around the hypochondrium; in TCM it frees the Liver meridian's flank
+      pathway and relieves Liver qi stagnation (肝气郁结).
+    composed_of:
+    - myofascial_lines
+    - thoracic_mobility
+    - five_phase_correspondences
+    - twelve_primary_meridians
+    tier: 1
+  torso_twist_niuzhuan:
+    defines: >-
+      Torso twist (扭转) → Spleen (脾) → Earth (土): trunk rotation alternately compresses and releases the
+      abdomen and mobilizes the thoracolumbar fascia; in TCM it 'wrings out' the middle burner and supports
+      the Spleen's transformation (运化). The effect on gut motility is plausible but little studied.
+    composed_of:
+    - intra_abdominal_pressure
+    - myofascial_lines
+    - five_phase_correspondences
+    tier: 1
+  yongquan_point:
+    defines: >-
+      Yongquan (涌泉, KI-1), the 'bubbling spring' point on the sole of the foot where the Kidney meridian
+      begins; rising onto the toes and landing on the heels is said to stimulate it.
+    composed_of:
+    - twelve_primary_meridians
+    tier: 1
+  body_lifting_tishen:
+    defines: >-
+      Body lifting (提身) → Kidney (肾) → Water (水): reaching up while rising onto the toes engages the posterior
+      chain and calf pump; in TCM it stretches the back line and stimulates Yongquan at the root of the
+      Kidney meridian.
+    composed_of:
+    - skeletal_muscle_pump
+    - myofascial_lines
+    - yongquan_point
+    - five_phase_correspondences
+    tier: 2
+  five_organ_movement_matrix:
+    defines: >-
+      The five-organ movement matrix: one table of movement, main physical action, target organ, phase,
+      and meridian or physiological mechanism for all five exercises.
+    composed_of:
+    - chest_expansion_kuoxiong
+    - rib_fanning_shanlei
+    - body_lifting_tishen
+    - torso_twist_niuzhuan
+    - deep_squat_shendun
+    tier: 3
+  sealing_finish:
+    defines: >-
+      The sealing finish (收势): ending with body lifting and a pause with hands over the lower dantian
+      to 'settle and store' qi, instead of stopping abruptly.
+    composed_of:
+    - body_lifting_tishen
+    - dantian
+    tier: 3
+  breath_first_sequence:
+    defines: >-
+      Breath-first order: starting with chest expansion (Lung) because breathing is the easiest bridge
+      from voluntary control to the autonomic nervous system — the order used in some popular teaching
+      videos, differing from the generating cycle only by swapping Lung and Liver.
+    composed_of:
+    - five_organ_movement_matrix
+    - diaphragmatic_breathing
+    tier: 4
+  generating_cycle_sequence:
+    defines: >-
+      Generating-cycle order (相生顺序): rib fanning (Wood) → deep squat (Fire) → torso twist (Earth) → chest
+      expansion (Metal) → body lifting (Water), so that each movement 'feeds' the next — suited to daily
+      cultivation.
+    composed_of:
+    - five_organ_movement_matrix
+    - generating_cycle_xiangsheng
+    tier: 4
+  safe_practice_and_modification:
+    defines: >-
+      Safe practice: pain-free range, knee tracking and partial squats, a chair or wall for balance, gentle
+      twisting for back or disc problems, and no breath-holding for people with high blood pressure.
+    composed_of:
+    - five_organ_movement_matrix
+    - squat_mechanics
+    tier: 4
+  top_to_bottom_sequence:
+    defines: >-
+      Top-to-bottom order: chest → ribs → waist → legs → feet, warming joints from the upper body downward
+      and, in TCM terms, drawing rising yang back to the root.
+    composed_of:
+    - five_organ_movement_matrix
+    - thoracic_mobility
+    tier: 4
+applications:
+  five_organ_routine_design:
+    defines: >-
+      Designing a personal 5–10 minute five-organ routine: choosing a sequencing logic for the goal and
+      time of day, pairing each movement with the breath, ending with the sealing finish, and scaling
+      each movement to one's body.
+    needs:
+    - generating_cycle_sequence
+    - breath_first_sequence
+    - top_to_bottom_sequence
+    - sealing_finish
+    - safe_practice_and_modification
+    tier: 5

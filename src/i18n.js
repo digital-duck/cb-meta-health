@@ -1,7 +1,7 @@
 const translations = {
   en: {
-    'app.title': 'ConceptBook',
-    'app.tagline': 'Explore knowledge through concept graphs',
+    'app.title': '元健康 Meta-Health',
+    'app.tagline': 'Movement, Eating, and Mind as One Practice',
     'nav.about': 'About',
     'nav.settings': 'Settings',
     'home.subtitle': 'Choose a domain to explore',
@@ -16,12 +16,17 @@ const translations = {
     'about.title': 'About concept-book',
     'loading': 'Loading…',
   },
+  zh: {
+    'app.title': '元健康',
+    'app.tagline': '运动、饮食与心神的一体修炼',
+  },
 }
 
 let _locale = localStorage.getItem('cb-lang') || 'en'
 
 export function t(key) {
-  return (translations[_locale] || translations.en)[key] ?? key
+  // Per-key fallback to English, so a locale only needs to override the keys it translates.
+  return translations[_locale]?.[key] ?? translations.en[key] ?? key
 }
 
 export function setLocale(lang) {

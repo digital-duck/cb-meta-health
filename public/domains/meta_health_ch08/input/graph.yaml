@@ -1,0 +1,138 @@
+domain: meta_health_ch08
+primitives:
+  circadian_clock:
+    defines: >-
+      The circadian clock: the body's roughly 24-hour internal timer (suprachiasmatic nucleus and peripheral
+      clocks).
+    tier: 0
+  five_phase_correspondences:
+    defines: >-
+      The Five-Phase correspondence table, including the five seasons (from Chapter 1).
+    tier: 0
+  twelve_primary_meridians:
+    defines: >-
+      The twelve primary meridians (from Chapter 1).
+    tier: 0
+  yin_yang:
+    defines: >-
+      Yin-yang (from Chapter 1).
+    tier: 0
+concepts:
+  cortisol_melatonin_rhythm:
+    defines: >-
+      The cortisol–melatonin rhythm: cortisol peaks soon after waking to mobilize energy, and melatonin
+      rises in the evening darkness to prepare for sleep.
+    composed_of:
+    - circadian_clock
+    tier: 1
+  day_night_yin_yang:
+    defines: >-
+      Day–night yin-yang (昼夜阴阳消长): yang grows from midnight to noon and yin grows from noon to midnight,
+      so activity belongs to the day and storage and rest to the night.
+    composed_of:
+    - yin_yang
+    - circadian_clock
+    tier: 1
+  light_entrainment:
+    defines: >-
+      Light entrainment: morning daylight sets the circadian clock, while bright or blue light late at
+      night delays it.
+    composed_of:
+    - circadian_clock
+    tier: 1
+  sleep_architecture:
+    defines: >-
+      Sleep architecture: repeating ~90-minute cycles of light, deep (slow-wave) and REM sleep; deep sleep
+      dominates early in the night and REM toward the morning.
+    composed_of:
+    - circadian_clock
+    tier: 1
+  exercise_timing:
+    defines: >-
+      Exercise timing: morning movement in daylight helps set the clock and 'raise yang'; calmer practice
+      suits the evening, and vigorous exercise close to bedtime can delay sleep.
+    composed_of:
+    - light_entrainment
+    - cortisol_melatonin_rhythm
+    tier: 2
+  four_seasons_regimen:
+    defines: >-
+      The four-seasons regimen (四时养生): spring for growth, summer for expansion, autumn for gathering,
+      winter for storing (春生夏长秋收冬藏) — adjusting sleep, activity and diet to the season.
+    composed_of:
+    - five_phase_correspondences
+    - day_night_yin_yang
+    tier: 2
+  organ_clock_ziwu_liuzhu:
+    defines: >-
+      The meridian organ clock (子午流注): twelve two-hour periods, each assigned to a meridian — Lung 3–5,
+      Large Intestine 5–7, Stomach 7–9, Spleen 9–11, Heart 11–13, Small Intestine 13–15, Bladder 15–17,
+      Kidney 17–19, Pericardium 19–21, Triple Burner 21–23, Gallbladder 23–1, Liver 1–3.
+    composed_of:
+    - twelve_primary_meridians
+    - day_night_yin_yang
+    tier: 2
+  sleep_and_metabolic_repair:
+    defines: >-
+      Sleep and metabolic repair: tissue repair and growth-hormone release happen in deep sleep, and short
+      sleep impairs glucose tolerance and raises appetite hormones.
+    composed_of:
+    - sleep_architecture
+    - cortisol_melatonin_rhythm
+    tier: 2
+  chrononutrition:
+    defines: >-
+      Chrononutrition: insulin sensitivity is higher earlier in the day, so front-loading meals and finishing
+      eating a few hours before bed suits the circadian clock.
+    composed_of:
+    - cortisol_melatonin_rhythm
+    - sleep_and_metabolic_repair
+    tier: 3
+  seasonal_organ_care:
+    defines: >-
+      Caring for the organ of each season: nourish the Liver in spring, Heart in summer, Spleen in late
+      summer, Lung in autumn and Kidney in winter (春养肝, 夏养心, 长夏养脾, 秋养肺, 冬养肾).
+    composed_of:
+    - four_seasons_regimen
+    - five_phase_correspondences
+    tier: 3
+  sleep_before_zishi:
+    defines: >-
+      Sleeping before 子时 (23:00): TCM advises being asleep during the Gallbladder and Liver hours, when
+      'blood returns to the Liver when one lies down' (人卧则血归于肝) — in line with modern advice to keep a
+      regular early bedtime.
+    composed_of:
+    - organ_clock_ziwu_liuzhu
+    - sleep_architecture
+    tier: 3
+  breakfast_in_chenshi:
+    defines: >-
+      Breakfast in 辰时 (7–9 a.m., Stomach time): the organ clock and chrononutrition agree that a real
+      breakfast should anchor the day's eating.
+    composed_of:
+    - organ_clock_ziwu_liuzhu
+    - chrononutrition
+    tier: 4
+  seasonal_food_and_movement:
+    defines: >-
+      Seasonal food and movement: lighter, cooling foods and early mornings in summer; warming, nourishing
+      foods and gentler, shorter practice in winter; emphasizing the season's organ exercise.
+    composed_of:
+    - seasonal_organ_care
+    - exercise_timing
+    - chrononutrition
+    tier: 4
+applications:
+  personal_daily_rhythm_schedule:
+    defines: >-
+      A personal rhythm plan: a 24-hour day (morning light and Baduanjin, breakfast in 辰时, main meal at
+      midday, gentle movement after meals, an early light dinner, an evening wind-down, sleep before 23:00)
+      adjusted through the year according to the season's phase and organ.
+    needs:
+    - light_entrainment
+    - exercise_timing
+    - breakfast_in_chenshi
+    - sleep_before_zishi
+    - sleep_and_metabolic_repair
+    - seasonal_food_and_movement
+    tier: 5

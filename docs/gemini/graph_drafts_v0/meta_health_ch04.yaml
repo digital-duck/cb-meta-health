@@ -1,0 +1,23 @@
+domain: meta_health_ch04
+title: "Compound Movement Integration and Structural Load"
+description: "Progressive overload, multi-joint movement synthesis, and mechanical tension."
+version: "1.0"
+
+nodes:
+  - id: progressive-overload
+    title: "Principles of Progressive Overload and Adaptation"
+    type: primitive
+    prerequisites: []
+    summary: "Systematically increasing mechanical stress, volume, and intensity to elicit tissue adaptation."
+
+  - id: multi-joint-synthesis
+    title: "Multi-Joint Compound Movement Integration"
+    type: composite
+    prerequisites: ["progressive-overload"]
+    summary: "Synthesizing lower and upper body primitive patterns into complex athletic and functional lifts."
+
+  - id: tendon-bone-remodeling
+    title: "Connective Tissue, Tendon, and Bone Density Adaptation"
+    type: composite
+    prerequisites: ["multi-joint-synthesis"]
+    summary: "Long-term structural adaptations of non-vascular tissues under high-mechanical loads."

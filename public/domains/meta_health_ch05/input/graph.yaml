@@ -1,23 +1,194 @@
 domain: meta_health_ch05
-title: "Nutrient Partitioning, Substrate Adaptation, and Timing"
-description: "Advanced nutrient timing, glycemic response, and tissue-specific nutrient delivery."
-version: "1.0"
-
-nodes:
-  - id: glycemic-index-insulin
-    title: "Glycemic Response and Insulin Dynamics"
-    type: primitive
-    prerequisites: []
-    summary: "Carbohydrate digestion rate, blood glucose regulation, and endocrine signaling."
-
-  - id: nutrient-partitioning-timing
-    title: "Peri-Workout Nutrient Timing and Partitioning"
-    type: composite
-    prerequisites: ["glycemic-index-insulin"]
-    summary: "Directing nutrient intake toward skeletal muscle repair versus adipose storage relative to exercise."
-
-  - id: mitochondrial-biogenesis
-    title: "Mitochondrial Density and Oxidative Capacity"
-    type: composite
-    prerequisites: ["nutrient-partitioning-timing"]
-    summary: "Cellular adaptations enhancing aerobic capacity, fat oxidation, and metabolic longevity."
+primitives:
+  gastrointestinal_tract:
+    defines: >-
+      The gastrointestinal tract: mouth, esophagus, stomach, small and large intestine, with the liver
+      and pancreas as accessory organs.
+    tier: 0
+  liver_metabolic_role:
+    defines: >-
+      The liver's metabolic role: processing nutrients arriving from the gut, storing glycogen, making
+      bile and clearing toxins.
+    tier: 0
+  prenatal_postnatal_qi:
+    defines: >-
+      Postnatal qi (后天之气): qi and blood made daily from food by the Spleen and Stomach (from Chapter 1).
+    tier: 0
+  regional_blood_flow_distribution:
+    defines: >-
+      Regional redistribution of cardiac output between muscles and organs (from Chapter 2).
+    tier: 0
+  smooth_muscle:
+    defines: >-
+      Smooth muscle: involuntary muscle in the gut wall and blood vessels that contracts rhythmically
+      without conscious control.
+    tier: 0
+  spleen_stomach_system:
+    defines: >-
+      The Spleen–Stomach system (脾胃), the Earth phase and middle burner (中焦) of TCM (from Chapter 1).
+    tier: 0
+  sympathetic_parasympathetic_balance:
+    defines: >-
+      Sympathetic ('fight-or-flight') versus parasympathetic ('rest-and-digest') balance (from Chapter
+      2).
+    tier: 0
+concepts:
+  cephalic_phase_digestion:
+    defines: >-
+      The cephalic phase of digestion: the sight, smell and taste of food and the act of chewing trigger
+      saliva, gastric acid and insulin release through the vagus nerve before food reaches the stomach.
+    composed_of:
+    - gastrointestinal_tract
+    - sympathetic_parasympathetic_balance
+    tier: 1
+  peristalsis_and_motility:
+    defines: >-
+      Peristalsis and gut motility: coordinated smooth-muscle waves that mix and move food along several
+      metres of gut, strengthened by parasympathetic activity and inhibited by stress.
+    composed_of:
+    - smooth_muscle
+    - sympathetic_parasympathetic_balance
+    - gastrointestinal_tract
+    tier: 1
+  splanchnic_circulation:
+    defines: >-
+      The splanchnic circulation: blood supply to the stomach, intestines, pancreas, spleen and liver,
+      which receives roughly a quarter of resting cardiac output.
+    composed_of:
+    - regional_blood_flow_distribution
+    - gastrointestinal_tract
+    tier: 1
+  spleen_transformation_transport:
+    defines: >-
+      The Spleen transforms and transports (脾主运化): the Spleen extracts the refined essence (水谷精微) from
+      food and fluids and distributes it to make qi and blood; this work is powered by Spleen yang (脾阳).
+    composed_of:
+    - spleen_stomach_system
+    - prenatal_postnatal_qi
+    tier: 1
+  stomach_receiving_ripening:
+    defines: >-
+      The Stomach receives and ripens (胃主受纳腐熟): in TCM, the Stomach is the vessel that takes in food and
+      'rots and ripens' it as the first stage of digestion.
+    composed_of:
+    - spleen_stomach_system
+    tier: 1
+  ascending_clear_descending_turbid:
+    defines: >-
+      Ascending the clear, descending the turbid (升清降浊): Spleen qi lifts nourishment upward while Stomach
+      qi sends waste downward; when this reverses, bloating, belching and heaviness follow.
+    composed_of:
+    - spleen_transformation_transport
+    - stomach_receiving_ripening
+    tier: 2
+  hepatic_first_pass_processing:
+    defines: >-
+      First-pass processing in the liver: nutrient-rich blood from the gut goes through the portal vein
+      to the liver first, which stores glucose as glycogen, packages fats and makes bile.
+    composed_of:
+    - liver_metabolic_role
+    - splanchnic_circulation
+    tier: 2
+  mastication:
+    defines: >-
+      Mastication (咀嚼): chewing breaks food into small pieces, mixes it with saliva and enzymes, and gives
+      the brain time to register what is being eaten.
+    composed_of:
+    - gastrointestinal_tract
+    - cephalic_phase_digestion
+    tier: 2
+  postprandial_hyperemia:
+    defines: >-
+      Postprandial hyperemia (餐后充血): after a meal, intestinal blood flow rises substantially (superior
+      mesenteric flow can roughly double) and cardiac output increases to supply digestion.
+    composed_of:
+    - splanchnic_circulation
+    tier: 2
+  cardiovascular_load_of_digestion:
+    defines: >-
+      The cardiovascular load of digestion: heart rate and cardiac output rise after large meals, which
+      is why vigorous exercise straight after eating competes for blood and why some older adults feel
+      dizzy after meals (postprandial hypotension).
+    composed_of:
+    - postprandial_hyperemia
+    - sympathetic_parasympathetic_balance
+    tier: 3
+  postprandial_glucose_response:
+    defines: >-
+      The post-meal glucose response: blood sugar rises and falls after eating depending on meal composition,
+      eating speed, gastric emptying and muscle activity; large, repeated spikes are linked to metabolic
+      strain.
+    composed_of:
+    - hepatic_first_pass_processing
+    - peristalsis_and_motility
+    tier: 3
+  satiety_signaling:
+    defines: >-
+      Satiety signalling: stretch receptors and gut hormones (e.g. CCK, GLP-1, PYY) tell the brain the
+      stomach is filling, with a lag of roughly 15–20 minutes behind the eating itself.
+    composed_of:
+    - gastrointestinal_tract
+    - mastication
+    tier: 3
+  eating_as_internal_exercise:
+    defines: >-
+      Eating as internal exercise (饮食即内脏运动): a meal is a demanding workout for the digestive organs and
+      circulation — blood redistributes, smooth muscle works, and the liver's metabolic load surges —
+      equivalent in TCM to firing up the Spleen–Stomach engine. Like any workout, it needs preparation,
+      the right load and recovery.
+    composed_of:
+    - postprandial_hyperemia
+    - peristalsis_and_motility
+    - spleen_transformation_transport
+    - cardiovascular_load_of_digestion
+    tier: 4
+  post_meal_gentle_movement:
+    defines: >-
+      Gentle movement after meals (饭后百步走): an easy walk or gentle forms (e.g. Baduanjin forms 3 and 4)
+      about 10–40 minutes after eating measurably blunts the glucose spike and, in TCM terms, aids transformation;
+      vigorous exercise should wait longer.
+    composed_of:
+    - postprandial_glucose_response
+    - cardiovascular_load_of_digestion
+    - ascending_clear_descending_turbid
+    tier: 4
+  digestive_load_pacing:
+    defines: >-
+      Pacing the digestive load: eating slowly and stopping at about 70–80% full (七分饱, hara hachi bu)
+      so satiety signals can catch up and the Spleen–Stomach is not overloaded.
+    composed_of:
+    - eating_as_internal_exercise
+    - satiety_signaling
+    tier: 5
+  digestive_warm_up:
+    defines: >-
+      The digestive warm-up: a few slow breaths and a relaxed start before the first bite, then thorough
+      chewing — shifting into rest-and-digest and letting the cephalic phase prime secretions, like warming
+      up before a workout.
+    composed_of:
+    - eating_as_internal_exercise
+    - cephalic_phase_digestion
+    - mastication
+    tier: 5
+  digestive_overtraining:
+    defines: >-
+      Digestive 'overtraining': overeating, bolting food and heavy late meals overload the organs, as
+      overtraining injures muscles — seen in TCM as food stagnation (积食) and a weakened Spleen, and in
+      physiology as reflux, sluggishness and large glucose swings.
+    composed_of:
+    - digestive_load_pacing
+    - ascending_clear_descending_turbid
+    - postprandial_glucose_response
+    tier: 6
+applications:
+  mindful_meal_protocol:
+    defines: >-
+      The mindful-meal protocol: before (warm-up breaths, no screens), during (thorough chewing, pacing
+      to 70–80% full) and after (rest, then gentle movement) — a practical routine that treats every meal
+      as a well-coached internal workout.
+    needs:
+    - digestive_warm_up
+    - digestive_load_pacing
+    - digestive_overtraining
+    - post_meal_gentle_movement
+    tier: 7

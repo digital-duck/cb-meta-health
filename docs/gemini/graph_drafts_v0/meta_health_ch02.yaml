@@ -1,0 +1,29 @@
+domain: meta_health_ch02
+title: "Energetics, Metabolism, and Nutrition Primitives"
+description: "Thermodynamic energy balance, macronutrient roles, and metabolic substrate utilization."
+version: "1.0"
+
+nodes:
+  - id: thermodynamic-energy-balance
+    title: "Energy Expenditure and Caloric Balance"
+    type: primitive
+    prerequisites: []
+    summary: "Basal metabolic rate (BMR), total daily energy expenditure (TDEE), and thermodynamic balance."
+
+  - id: macronutrient-roles
+    title: "Macronutrient Function: Protein, Carbohydrate, and Fat"
+    type: primitive
+    prerequisites: ["thermodynamic-energy-balance"]
+    summary: "The elemental biological roles of amino acids, glucose/glycogen, and structural lipids."
+
+  - id: metabolic-flexibility
+    title: "Substrate Oxidation and Metabolic Flexibility"
+    type: composite
+    prerequisites: ["macronutrient-roles"]
+    summary: "The cellular capacity to efficiently transition between glucose and fat oxidation based on demand."
+
+  - id: micronutrients-cofactors
+    title: "Micronutrients, Electrolytes, and Enzymatic Co-factors"
+    type: primitive
+    prerequisites: ["thermodynamic-energy-balance"]
+    summary: "Essential vitamins, minerals, and hydration dynamics required for cellular signaling and energy conversion."

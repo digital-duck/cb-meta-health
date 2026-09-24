@@ -1,0 +1,23 @@
+domain: meta_health_ch05
+title: "Nutrient Partitioning, Substrate Adaptation, and Timing"
+description: "Advanced nutrient timing, glycemic response, and tissue-specific nutrient delivery."
+version: "1.0"
+
+nodes:
+  - id: glycemic-index-insulin
+    title: "Glycemic Response and Insulin Dynamics"
+    type: primitive
+    prerequisites: []
+    summary: "Carbohydrate digestion rate, blood glucose regulation, and endocrine signaling."
+
+  - id: nutrient-partitioning-timing
+    title: "Peri-Workout Nutrient Timing and Partitioning"
+    type: composite
+    prerequisites: ["glycemic-index-insulin"]
+    summary: "Directing nutrient intake toward skeletal muscle repair versus adipose storage relative to exercise."
+
+  - id: mitochondrial-biogenesis
+    title: "Mitochondrial Density and Oxidative Capacity"
+    type: composite
+    prerequisites: ["nutrient-partitioning-timing"]
+    summary: "Cellular adaptations enhancing aerobic capacity, fat oxidation, and metabolic longevity."
