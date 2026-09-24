@@ -1,0 +1,35 @@
+domain: meta_health_ch01
+title: "Foundations of Bio-Mechanics and Joint Primitives"
+description: "Core elemental movement patterns, joint stability, mobility, and fundamental motor control."
+version: "1.0"
+
+nodes:
+  - id: joint-articulation
+    title: "Joint Articulation and Range of Motion"
+    type: primitive
+    prerequisites: []
+    summary: "Understanding elemental articular freedom, joint mechanics, and mobility constraints across major joint complexes."
+
+  - id: motor-unit-recruitment
+    title: "Neuromuscular Activation and Motor Control"
+    type: primitive
+    prerequisites: ["joint-articulation"]
+    summary: "The neural signals governing muscle activation, stabilizer bracing, and movement efficiency."
+
+  - id: postural-stability
+    title: "Core Stability and Intra-Abdominal Pressure"
+    type: primitive
+    prerequisites: ["motor-unit-recruitment"]
+    summary: "Bracing mechanisms, spinal alignment, and core stabilization required for force transfer."
+
+  - id: foundational-hinge-squat
+    title: "Lower Body Primitive Patterns (Hinge and Squat)"
+    type: composite
+    prerequisites: ["postural-stability", "joint-articulation"]
+    summary: "Biomechanical execution of hip hinging and knee flexion patterns with proper joint tracking."
+
+  - id: foundational-push-pull
+    title: "Upper Body Primitive Patterns (Push and Pull)"
+    type: composite
+    prerequisites: ["postural-stability", "joint-articulation"]
+    summary: "Horizontal and vertical upper body mechanics, scapular control, and shoulder health."
