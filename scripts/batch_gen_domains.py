@@ -118,8 +118,16 @@ def _domain_tags(domain_id: str) -> list[str]:
     return entry.get("tags", [])
 
 
+def _book_filename(target: str, language: str) -> str:
+    # spl/tools.py's build_book_index suffixes the filename with "_{language}"
+    # for every language except English — match it, or every non-English run
+    # is reported as failed even though the book was written.
+    suffix = f"_{language}" if language and language != "en" else ""
+    return f"book_{target}{suffix}.html"
+
+
 def _output_exists(domain_id: str, target: str, level: str, language: str, model: str) -> bool:
-    path = DOMAINS_DIR / domain_id / "output" / f"{level}.{language}" / model / "html" / f"book_{target}.html"
+    path = DOMAINS_DIR / domain_id / "output" / f"{level}.{language}" / model / "html" / _book_filename(target, language)
     return path.exists() and path.stat().st_size > 500
 
 
@@ -212,7 +220,7 @@ def _run_spl3(domain_id: str, target: str, level: str, style: str, language: str
     if proc.returncode != 0:
         return False, f"spl3 exited {proc.returncode}"
 
-    out_file = output_dir / f"book_{target}.html"
+    out_file = output_dir / _book_filename(target, language)
     if not out_file.exists() or out_file.stat().st_size < 500:
         return False, f"spl3 exited 0 but {out_file.name} was not written (likely a caught exception)"
 

@@ -175,7 +175,29 @@ Why 元: it is the standard translation of "meta" (as in 元数据), it means or
 
 - A regex spelling pass in an earlier revision damaged some words (e.g. "Exercise" became "Exercize", and "raise"/"rise" became "raize"/"rize"). These were fixed and every remaining "-ize" word was checked.
 
-## 7. Suggested next steps
+## 7. Generation fixes after the first full run (2026-09-24)
+
+Review of the first EN + ZH generation found three problems in the Chinese text:
+
+| # | Problem | Root cause | Fix |
+|---|---|---|---|
+| 1 | A broken formula in `eating_as_internal_exercise` (zh, ch05 and ch09) | The model left out `\frac` | Patched both HTML pages and the cached section |
+| 2 | The ch09 payoff translated "meta-health" as 代谢健康 (metabolic health) and cited unrelated ch05 node IDs | **Bug in the workflow:** for an application capstone, `write_payoff` received only the bare target ID and an *empty* applications list (`applications_of()` looks downstream, and a capstone has nothing downstream), so the model guessed the concept from its name | The payoff now also receives the target's label, its `defines` text, and its direct prerequisites (new `prereq_labels` tool); `apps_list` returns labels, not IDs; the prompt forbids snake_case identifiers in prose. The ch09 definition now names 元健康 explicitly. Both ch09 payoffs were regenerated and checked. |
+| 3 | Invented formulas, far more in zh than en (ch05: 22 vs 3), e.g. `健康 ⟺ 阴阳平衡 ∧ 五行通畅` | `style_profiles.infer_subject_rigor()` matched no keyword in `meta_health_*`, so it defaulted to **`rigorous`** ("formal notation… include it whenever the concept calls for it"), combined with Core's "Simple rule or pattern" step | A new **`health`** subject-rigor tier (real quantities OK; never formalize qi, yin-yang, the Five Phases or emotions; label traditional claims as traditional); Core's rule step now reads "in words; as a formula only if the subject has a real one"; a general notation-honesty rule in the write and payoff prompts (equations only for established relationships, complete LaTeX) |
+
+Also carried over from `conceptbook-app/spl/build_concept_book.spl`, after review: its LaTeX-delimiter
+rules for the write, refine and payoff prompts (they prevent bare, undelimited LaTeX, which is a
+different failure from #1 and #3, so the rules above are added alongside them).
+
+**Upstreamed to `concept-book-base/spl/`:** `build_concept_book.spl`, `tools.py` (including the
+earlier MathJax `mathtools` fix) and `style_profiles.py`, copied from cb-meta-health. Before
+these changes the two repos' `spl/` directories were identical.
+
+**To apply #3 to already-generated books,** regenerate with `--skip-cache --force`. The cache key
+is `(concept, language, style name, model)`, and the style *name* didn't change, so without
+`--skip-cache` the old sections are reused.
+
+## 8. Suggested next steps
 
 1. Run `npm run dev` and look through the nine graphs. Rename or merge nodes to your taste.
 2. Generate **Ch3 (五脏操)** and **Ch5 (饮食即内脏运动)** first. They are the most original chapters and the best test of the style profile at the `core` level.

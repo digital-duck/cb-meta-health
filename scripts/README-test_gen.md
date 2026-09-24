@@ -97,6 +97,17 @@ because only `done` entries are skipped.
    the batch script now defaults the subprocess to `SPL_WHILE_MAX_ITER=60`,
    `SPL_MAX_LLM_CALLS=120`, and `SPL_MAX_TOTAL_TOKENS=600000`. Values you export in the shell
    still take precedence.
+3. **Non-English books are now recognized (fixed 2026-09-24).** `spl/tools.py` names non-English
+   output `book_{target}_{lang}.html`, but the script looked for `book_{target}.html`. The first
+   zh run therefore reported `spl3 exited 0 but book_….html was not written` for all 9 chapters,
+   even though every book had been written. The script now uses the same suffix rule as
+   `batch_generate.py`, the API and `src/lib/paths.js`. The 9 zh books from that run were
+   registered in `catalog.json` afterwards with `batch_generate._mark_generated`.
+
+   Note: when a book already exists on disk, the script only marks it `done` in the progress
+   file and does **not** update `catalog.json`. If files exist but are missing from the catalog,
+   register them with `_mark_generated` (or re-run with `--force`, which regenerates from the
+   cache in seconds).
 
 ---
 

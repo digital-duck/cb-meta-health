@@ -342,7 +342,7 @@ CH.append(dict(
         "evidence_and_safety_lens": ("The evidence-and-safety lens: separating what is well established (e.g. post-meal walking lowers glucose; Baduanjin improves balance), what is plausible and what is traditional metaphor — and knowing when symptoms need a doctor, especially with diabetes, heart disease, pregnancy or medication.", ["evidence_quality", "dual_lens_translation", "five_phase_integration_matrix"]),
     },
     A={
-        "daily_meta_health_protocol": ("The daily Meta-Health protocol — a 24-hour blueprint: morning light and Baduanjin; pre-meal breaths, mindful meals to 70–80% full, gentle movement 30–40 minutes after eating; stress-release through the day; an early, light dinner; sleep before 子时 — personalized, observed and adjusted over time.", ["mind_body_digestive_loop", "five_phase_integration_matrix", "habit_formation", "personalization", "self_observation_feedback", "evidence_and_safety_lens"]),
+        "daily_meta_health_protocol": ("The daily 元健康 Meta-Health protocol (日常元健康方案 — 'meta' as in 元, the whole above the parts: movement, eating, mind and rhythm as one practice; not 代谢/metabolic health) — a 24-hour blueprint: morning light and Baduanjin; pre-meal breaths, mindful meals to 70–80% full, gentle movement 30–40 minutes after eating; stress-release through the day; an early, light dinner; sleep before 子时 — personalized, observed and adjusted over time.", ["mind_body_digestive_loop", "five_phase_integration_matrix", "habit_formation", "personalization", "self_observation_feedback", "evidence_and_safety_lens"]),
     },
 ))
 
@@ -392,6 +392,12 @@ def build(ch):
     return out, len(prereq), n_edges
 
 
+# Keep generation results already registered in catalog.json: only the
+# graph-derived fields are rewritten.
+_prev = {}
+if (ROOT / "catalog.json").exists():
+    _prev = {e["id"]: e for e in json.loads((ROOT / "catalog.json").read_text(encoding="utf-8"))}
+
 catalog = []
 for ch in CH:
     out, n_nodes, n_edges = build(ch)
@@ -406,6 +412,14 @@ for ch in CH:
         "tags": ["health", ch["tag"]], "has_navigator": True, "has_book": False,
         "books": [], "generated_concepts": [], "default_level": "core",
     })
+    # Generation state (has_book, books, generated_concepts, pdfs, …) comes
+    # from the previous catalog; graph-derived fields are always recomputed.
+    graph_fields = {"id", "name", "description", "capstone", "nodes", "edges",
+                    "primitives", "concepts", "applications", "tags",
+                    "has_navigator", "default_level"}
+    for k, v in _prev.get(ch["id"], {}).items():
+        if k not in graph_fields:
+            catalog[-1][k] = v
     print(f"{ch['id']}: {n_nodes} nodes ({len(ch['P'])}P/{len(ch['C'])}C/{len(ch['A'])}A), {n_edges} edges, max tier {max(v['tier'] for v in out['applications'].values())}")
 
 (ROOT / "catalog.json").write_text(json.dumps(catalog, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
