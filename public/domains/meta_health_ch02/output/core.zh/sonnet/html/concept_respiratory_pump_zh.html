@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Respiratory Pump | Meta Health Ch02</title>
+<script>
+MathJax = {
+  loader: { load: ['[tex]/mathtools'] },
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']],
+         packages: { '[+]': ['mathtools'] } },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+footer.spl-credit span{display:block}
+footer.spl-credit .spl-credit__meta{margin-bottom:4px}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="respiratory-pump">Respiratory Pump</h2>
+<p><strong>回顾直觉</strong>：横膈膜是位于胸腔和腹腔之间的一块大肌肉。吸气时它下降,呼气时它上升,像一个活塞一样工作。这个动作不仅帮我们呼吸,还悄悄地帮血液和淋巴液完成一趟"从腹部到胸部"的旅程。</p>
+<p><strong>深入结构</strong>:吸气时横膈膜下降,胸腔容积增大,根据波意耳定律($PV = \text{常数}$,温度不变时压强与体积成反比),胸腔内压强($P_{\text{thorax}}$)下降,变成负压(低于大气压)。同时,横膈膜下降压迫腹腔器官,使腹腔内压强($P_{\text{abdomen}}$)升高。这样就在胸腔和腹腔之间制造出一个压强差:</p>
+$$\Delta P = P_{\text{abdomen}} - P_{\text{thorax}} > 0$$
+<p>液体总是从高压区流向低压区,所以静脉血和淋巴液被"吸"向胸腔——这就是<strong>呼吸泵</strong>(respiratory pump)。呼气时情况相反,但由于静脉和淋巴管中有单向瓣膜,液体不会倒流,只能一步步向心脏方向推进。</p>
+<p><strong>简单规律</strong>:呼吸幅度越大、越深,$\Delta P$ 越大,静脉回流和淋巴回流的效率就越高——这也是为什么深呼吸训练常被用来改善血液循环。</p>
+<p><strong>练习题</strong>:小明在做深呼吸练习时,吸气比平时更深,使胸腔内压强从 $-2\text{ mmHg}$ 进一步降到 $-6\text{ mmHg}$,而腹腔内压强保持在 $+4\text{ mmHg}$ 不变。请分别计算深呼吸前后的压强差 $\Delta P$,并说明深呼吸对静脉回流的影响。</p>
+  </main>
+  <footer class="spl-credit"><span class="spl-credit__meta">元健康 Meta-Health Ch2: The Physiology Lens — Breath, Circulation, Fascia, and Core (生理视角) (Level: Core &middot; Language: ZH &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
+</div>
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tension Relaxation Cycling | Meta Health Ch04</title>
+<script>
+MathJax = {
+  loader: { load: ['[tex]/mathtools'] },
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']],
+         packages: { '[+]': ['mathtools'] } },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+footer.spl-credit span{display:block}
+footer.spl-credit .spl-credit__meta{margin-bottom:4px}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="tension-relaxation-cycling">Tension Relaxation Cycling</h2>
+<p>回忆一下：静止不动地绷紧肌肉——比如提着一桶水站着不动——比反复用力再放松更让人疲劳,也更不利于血液循环。这背后其实有一套可以被描述的机制。</p>
+<p>肌肉本身就像一个"辅助泵"。当骨骼肌收缩时,肌肉体积变粗变硬,会挤压穿行其中的静脉和淋巴管,把里面的血液和淋巴液向心脏方向推送(静脉里的瓣膜确保液体只能单向流动,不会倒流)。当肌肉放松时,血管重新扩张,新的血液和淋巴液又被"吸"进这段血管,为下一次挤压做准备。这个"收缩—挤压—放松—充盈"的循环,正是<strong>骨骼肌泵</strong>(skeletal muscle pump)发挥作用的方式。</p>
+<p>如果肌肉持续保持紧张(静态收缩),血管会被持续压扁,液体流动反而被阻断,得不到"挤压—回流"的交替效果,组织反而更容易缺血、代谢废物堆积,产生酸痛感。</p>
+<p>简单规律可以这样表达:设一次循环中收缩阶段推动的净流量为 $\Delta V_{contract}$,放松阶段回填的流量为 $\Delta V_{relax}$,那么单位时间内的有效泵送量约为</p>
+$$
+Q_{pump} \approx n \times (\Delta V_{contract} + \Delta V_{relax})
+$$
+<p>其中 $n$ 是单位时间内完成的循环次数。可以看到,<strong>没有交替(要么一直紧、要么一直松),$Q_{pump}$ 就趋近于零</strong>——泵送效率依赖的正是"交替"这个结构,而不是单次收缩的力量大小。</p>
+<p><strong>小练习</strong>:小明连续站立答题 40 分钟,双腿一直绷得很紧;小红则是每答完一题就原地踮脚放松几秒。根据骨骼肌泵的原理,推测谁的腿更容易在活动结束后感到酸胀、肿胀?用一两句话说明你的推理依据。</p>
+  </main>
+  <footer class="spl-credit"><span class="spl-credit__meta">元健康 Meta-Health Ch4: Baduanjin — The Eight Brocades (八段锦) (Level: Core &middot; Language: ZH &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
+</div>
+</body>
+</html>

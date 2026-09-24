@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Generating Cycle Sequence | Meta Health Ch03</title>
+<script>
+MathJax = {
+  loader: { load: ['[tex]/mathtools'] },
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']],
+         packages: { '[+]': ['mathtools'] } },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+footer.spl-credit span{display:block}
+footer.spl-credit .spl-credit__meta{margin-bottom:4px}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="generating-cycle-sequence">Generating Cycle Sequence</h2>
+<p>By now you know the five-phase idea: Wood feeds Fire, Fire feeds Earth, Earth feeds Metal, Metal feeds Water, and Water feeds Wood again. That's the <em>generating cycle</em>, written formally as a directed cycle graph on five nodes:</p>
+$$\text{Wood} \rightarrow \text{Fire} \rightarrow \text{Earth} \rightarrow \text{Metal} \rightarrow \text{Water} \rightarrow \text{Wood}$$
+<p>In this practice, each movement is mapped to one phase, and the sequence is performed in this exact order so that the <em>energy</em> of one motion sets up the next:</p>
+<li><strong>Rib fanning</strong> (Wood) — opens the sides, like a sapling spreading its first branches</li>
+<li><strong>Deep squat</strong> (Fire) — the opened ribs let the chest drop low without collapsing, igniting the legs</li>
+<li><strong>Torso twist</strong> (Earth) — the squat's stability gives the spine a solid base to rotate around</li>
+<li><strong>Chest expansion</strong> (Metal) — the twist's rotational momentum carries naturally into an open, lifted chest</li>
+<li><strong>Body lifting</strong> (Water) — the expanded chest draws the whole body upward, completing the cycle back toward Wood</li>
+<p>Notice the <em>pattern</em>: it's not that any five moves in any order would work. The generating cycle is a specific permutation, $\sigma = (\text{Wood, Fire, Earth, Metal, Water})$, where each element is defined as the successor of the one before it. Skip a step or reverse two, and the "feeding" relationship breaks — you'd be asking Earth to feed Fire, which isn't how the cycle is built.</p>
+<p><strong>Practice problem:</strong> If you're told a sequence starts with the torso twist and must follow the generating cycle for all five moves, list the full order starting there, and identify which move "feeds into" the deep squat.</p>
+  </main>
+  <footer class="spl-credit"><span class="spl-credit__meta">元健康 Meta-Health Ch3: The Five-Organ Exercises (五脏操) (Level: Core &middot; Language: EN &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
+</div>
+</body>
+</html>

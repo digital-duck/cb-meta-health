@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Splanchnic Circulation | Meta Health Ch05</title>
+<script>
+MathJax = {
+  loader: { load: ['[tex]/mathtools'] },
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']],
+         packages: { '[+]': ['mathtools'] } },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+footer.spl-credit span{display:block}
+footer.spl-credit .spl-credit__meta{margin-bottom:4px}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="脾脏循环-splanchnic-circulation">脾脏循环（Splanchnic Circulation）</h2>
+<p>你已经知道，胃、肠、胰腺、脾脏和肝脏都需要血液才能工作——这一整套供血系统合称为"脾脏循环"（splanchnic circulation）。它有一个惊人的特点：在你安静休息、什么都不做的时候，这套系统竟然拿走了心脏输出血量的大约四分之一！用符号表示，如果心输出量记作 $CO$（cardiac output），那么脾脏循环获得的血流量 $Q_{splanchnic}$ 大约满足：</p>
+$$Q_{splanchnic} \approx 0.25 \times CO$$
+<p>为什么消化系统需要这么多血？因为消化不是被动过程——肠道要主动收缩蠕动、分泌消化液、还要把吸收来的营养物质通过血液运走，这些都需要能量和运输，而运输靠的就是血流。</p>
+<p>更有意思的是，这个比例不是固定不变的常数，而是会根据身体状态动态调整的<strong>变量</strong>。吃完一顿大餐后，肠道的血流需求会显著上升，此时脾脏循环占心输出量的比例可能从25%上升到更高;而剧烈运动时,血液会被优先调配到骨骼肌,脾脏循环的份额则会下降。这种此消彼长的关系,可以看作身体在做一个简化的"血流分配"优化问题：在总心输出量 $CO$ 一定的情况下,身体要决定分给消化系统 $Q_{splanchnic}$、骨骼肌 $Q_{muscle}$ 等各器官系统的比例,使总需求得到满足。</p>
+<p><strong>简单规律</strong>：脾脏循环的血流占比 = 消化系统当前的代谢需求 ÷ 全身器官的总需求竞争。</p>
+<p><strong>练习题</strong>：假设一个人静息时心输出量为 $5\ L/min$，脾脏循环占其中的 25%。饭后这个比例上升到 35%，且心输出量本身也略微增加到 $5.5\ L/min$。请分别计算饭前和饭后脾脏循环实际获得的血流量（单位：$L/min$）。</p>
+  </main>
+  <footer class="spl-credit"><span class="spl-credit__meta">元健康 Meta-Health Ch5: Eating as Internal Exercise (饮食即内脏运动) (Level: Core &middot; Language: ZH &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
+</div>
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Form5 Sway Head And Tail | Meta Health Ch04</title>
+<script>
+MathJax = {
+  loader: { load: ['[tex]/mathtools'] },
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']],
+         packages: { '[+]': ['mathtools'] } },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+footer.spl-credit span{display:block}
+footer.spl-credit .spl-credit__meta{margin-bottom:4px}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="form5-sway-head-and-tail">Form5 Sway Head And Tail</h2>
+<p>之前你已经学过"深蹲"这个动作:身体压低,重心下沉。第五式"摇头摆尾去心火"在这个基础上加了一个新元素——<strong>摆动</strong>。马步扎得很深,躯干不是静止不动,而是带着头颈沿一条弧线画圈,像钟摆一样左右摇摆。中医理论认为,这个动作能把"心火"(过旺的能量、烦躁情绪)引导向下,让它随着重心一起沉下去。</p>
+<p>从结构上看,这个动作其实是两个运动的叠加。第一层是<strong>深蹲</strong>——身体重心 $y$ 沿竖直方向下降;第二层是<strong>躯干的圆周摆动</strong>——上半身沿一个近似圆弧的路径左右摆动。如果我们把躯干顶端某一点的位置用平面坐标 $(x, y)$ 表示,深蹲阶段主要是 $y$ 在减小,而摆动阶段则是 $x$ 和 $y$ 同时按某种周期规律变化,类似简谐运动里熟悉的写法:</p>
+$$x(t) = A\sin(\omega t)$$
+<p>其中 $A$ 是摆动的幅度(摆多远),$\omega$ 是摆动的快慢。练习时马步要稳,幅度 $A$ 不要太大,动作要慢,即 $\omega$ 要小——这正是"慢而深"比"快而浅"更有效的原因:身体有更多时间把重心稳稳地控制在下沉的路径上,而不是靠惯性甩动。</p>
+<p>简单规律记住一句话:<strong>先蹲稳,再摆动,重心始终跟着躯干走,不分家。</strong></p>
+<p><strong>练习题</strong>:如果你在深蹲的最低点保持不动,只做左右摆动,你觉得此时身体的重心轨迹更接近一条直线,还是一段弧线?请说出你的理由,并想一想:如果摆动幅度 $A$ 变大一倍,对保持马步的稳定性会有什么影响?</p>
+  </main>
+  <footer class="spl-credit"><span class="spl-credit__meta">元健康 Meta-Health Ch4: Baduanjin — The Eight Brocades (八段锦) (Level: Core &middot; Language: ZH &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
+</div>
+</body>
+</html>

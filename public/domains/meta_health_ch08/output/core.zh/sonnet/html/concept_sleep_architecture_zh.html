@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sleep Architecture | Meta Health Ch08</title>
+<script>
+MathJax = {
+  loader: { load: ['[tex]/mathtools'] },
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']],
+         packages: { '[+]': ['mathtools'] } },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+footer.spl-credit span{display:block}
+footer.spl-credit .spl-credit__meta{margin-bottom:4px}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="sleep-architecture">Sleep Architecture</h2>
+<p>你可能已经知道,睡眠不是"关机"那么简单——它其实是一个不断循环、结构分明的过程。今晚一躺下,你的大脑就开始按照一个大约 90 分钟的节奏,反复经历几种不同的睡眠阶段。</p>
+<p>一个完整的睡眠周期大致包含三种状态:浅睡(light sleep)、深睡(slow-wave sleep,也叫慢波睡眠)和快速眼动睡眠(REM sleep)。如果整晚睡眠时长为 $T$,大致可以划分为 $n$ 个周期:</p>
+$$
+T \approx n \times 90\ \text{分钟}, \quad n \approx 4\text{–}5 \text{(以 8 小时睡眠为例)}
+$$
+<p>这些阶段不是平均分布的,而是随时间变化的。深睡在夜晚<strong>前半段</strong>占比更高,负责身体修复、生长激素分泌;而 REM 睡眠在夜晚<strong>后半段</strong>逐渐增多,与记忆巩固、梦境和情绪处理关系密切。可以把它想象成一个比例逐渐反转的过程:</p>
+$$
+\text{深睡比例}(t) \downarrow, \quad \text{REM 比例}(t) \uparrow \quad (t: \text{入睡后经过的时间})
+$$
+<p><strong>简单规律</strong>:睡眠不是一条从浅到深的单向直线,而是一系列"浅→深→浅→REM"的循环波浪,且深睡和 REM 在夜晚中的"权重"此消彼长。这也是为什么熬夜或只睡前半夜的人,深睡够了但 REM 严重不足——因为 REM 大多集中在清晨那几个周期。</p>
+<p><strong>练习题</strong>:小明晚上 11 点入睡,原计划睡 8 小时(约 5 个周期),但闹钟提前到早上 4 点把他叫醒,总共只睡了 5 小时。请你分析:他大概率缺失的是哪一类睡眠(深睡还是 REM)?为什么?</p>
+  </main>
+  <footer class="spl-credit"><span class="spl-credit__meta">元健康 Meta-Health Ch8: Rhythms — Sleep, the Organ Clock, and the Seasons (天人相应) (Level: Core &middot; Language: ZH &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
+</div>
+</body>
+</html>

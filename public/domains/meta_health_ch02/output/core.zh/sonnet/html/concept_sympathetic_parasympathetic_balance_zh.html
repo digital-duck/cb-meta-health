@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sympathetic Parasympathetic Balance | Meta Health Ch02</title>
+<script>
+MathJax = {
+  loader: { load: ['[tex]/mathtools'] },
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']],
+         packages: { '[+]': ['mathtools'] } },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+footer.spl-credit span{display:block}
+footer.spl-credit .spl-credit__meta{margin-bottom:4px}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="sympathetic-parasympathetic-balance">Sympathetic Parasympathetic Balance</h2>
+<p>你已经知道,身体里有两套"自动挡"系统在悄悄切换:交感神经像油门,负责"战斗或逃跑";副交感神经像刹车,负责"休息与消化"。现在我们来看看这套切换系统的真正结构。</p>
+<p>这两套系统同属<strong>自主神经系统</strong>（autonomic nervous system），它们并不是简单的"开/关"开关,而是<strong>同时都在工作</strong>,只是活跃程度此消彼长。我们可以用一个简化的平衡模型来描述:</p>
+$$
+B = \frac{A_{sym}}{A_{sym} + A_{para}}
+$$
+<p>其中 $A_{sym}$ 表示交感神经的活跃度，$A_{para}$ 表示副交感神经的活跃度，$B$ 是"交感占比"。当 $B$ 接近 $1$ 时，身体处于高度警觉状态（心跳加快、瞳孔放大、消化减慢）；当 $B$ 接近 $0$ 时，身体进入放松状态（心率下降、肠胃蠕动增强）。</p>
+<p>关键规律是：<strong>这不是非此即彼的选择，而是连续的动态调节</strong>。例如运动员比赛前，$B$ 会迅速升高；比赛结束后深呼吸、静坐，则帮助 $B$ 逐渐降回接近静息水平。这种调节由脑干和下丘脑通过神经信号实时完成，类似一个不断重新计算的反馈系统。</p>
+<p><strong>练习</strong>：假设某人静息时 $A_{sym}=2$，$A_{para}=8$。突然听到警报声后，$A_{sym}$ 变为 $6$，$A_{para}$ 不变。请分别计算警报前后的 $B$ 值，并说明身体状态发生了怎样的变化。</p>
+  </main>
+  <footer class="spl-credit"><span class="spl-credit__meta">元健康 Meta-Health Ch2: The Physiology Lens — Breath, Circulation, Fascia, and Core (生理视角) (Level: Core &middot; Language: ZH &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
+</div>
+</body>
+</html>

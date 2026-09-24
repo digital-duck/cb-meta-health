@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Autonomic Nervous System | Meta Health Ch02</title>
+<script>
+MathJax = {
+  loader: { load: ['[tex]/mathtools'] },
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']],
+         packages: { '[+]': ['mathtools'] } },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+footer.spl-credit span{display:block}
+footer.spl-credit .spl-credit__meta{margin-bottom:4px}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="autonomic-nervous-system">Autonomic Nervous System</h2>
+<p>还记得吗？我们知道心跳、呼吸、消化这些活动大多不需要你"命令"它们进行——你不会每次呼吸都要专门想一下。这背后负责的，就是<strong>自主神经系统</strong>（autonomic nervous system, ANS），它是神经系统中专门管理"自动运行"的那一部分。</p>
+<p>自主神经系统其实不是一整块，而是由两条互相配合又互相制衡的分支组成：</p>
+<li><strong>交感神经系统</strong>（sympathetic）：负责让身体进入"战斗或逃跑"状态——心率加快、血管收缩、消化减慢，把能量调去供应肌肉和大脑。</li>
+<li><strong>副交感神经系统</strong>（parasympathetic）：负责让身体"休息与消化"（rest and digest）——心率减慢、血管舒张、肠道蠕动加强，帮身体修复和储存能量。</li>
+<p>这两条分支几乎作用于同一批器官，但效果相反，就像油门和刹车。心率就是一个很好的例子：设心率为 $H$，交感神经的信号强度为 $S$，副交感神经的信号强度为 $P$，那么心率的变化可以粗略写成</p>
+$$
+\frac{dH}{dt} \approx k_S \cdot S - k_P \cdot P
+$$
+<p>其中 $k_S, k_P > 0$ 是各自的作用系数。当 $S$ 增大（比如受到惊吓）、$P$ 减小时，心率迅速上升；反之在放松状态下，$P$ 占主导，心率回落到静息水平。这种"双向拮抗"的调节方式，让身体能在毫秒到秒的时间尺度上快速响应环境变化，而不需要大脑有意识地干预。</p>
+<p><strong>练习</strong>：如果某人在剧烈运动后立刻坐下休息，你认为接下来几分钟内，交感信号 $S$ 和副交感信号 $P$ 会各自如何变化？请用一两句话说明你的推理，并指出这会让 $\frac{dH}{dt}$ 的符号发生什么变化。</p>
+  </main>
+  <footer class="spl-credit"><span class="spl-credit__meta">元健康 Meta-Health Ch2: The Physiology Lens — Breath, Circulation, Fascia, and Core (生理视角) (Level: Core &middot; Language: ZH &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
+</div>
+</body>
+</html>

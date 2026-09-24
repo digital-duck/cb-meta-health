@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sleep Before Zishi | Meta Health Ch08</title>
+<script>
+MathJax = {
+  loader: { load: ['[tex]/mathtools'] },
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']],
+         packages: { '[+]': ['mathtools'] } },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+footer.spl-credit span{display:block}
+footer.spl-credit .spl-credit__meta{margin-bottom:4px}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="sleep-before-zishi">Sleep Before Zishi</h2>
+<p>Recall the earlier idea: the body seems to prefer sleep during certain hours. Now let's look at <em>why</em> the timing matters, not just <em>that</em> it does.</p>
+<p>Traditional Chinese Medicine divides the day into twelve two-hour blocks, each associated with a meridian organ system. The Liver hour runs roughly 01:00–03:00, preceded by the Gallbladder hour, 23:00–01:00 — together spanning 子时 (zǐshí). The classical principle is: 人卧则血归于肝 — "when a person lies down, blood returns to the Liver." The idea is that Liver function (in TCM terms, storing and regulating blood) works best when the body is at rest, so sleep beginning <em>before</em> 23:00 lets this process run through its full window rather than starting late and being cut short.</p>
+<p>You can think of this as a scheduling problem. If a repair process needs an unbroken interval $[t_1, t_2]$ to complete — here, roughly $t_1 = 23{:}00$, $t_2 = 03{:}00$ — going to sleep at time $s$ only gives useful overlap of $[\max(s, t_1), t_2]$. Sleeping at $s = 23{:}00$ captures the whole 4-hour window; sleeping at $s = 01{:}00$ captures only 2 hours, even if total sleep duration that night is the same. This mirrors modern findings on circadian rhythm: consistent early sleep onset supports hormone regulation and cellular repair cycles tied to a roughly 24-hour clock, independent of total hours slept.</p>
+<p><strong>Simple rule:</strong> benefit depends on <em>when</em> the sleep interval starts, not just <em>how long</em> it lasts.</p>
+<p><strong>Practice problem:</strong> A student sleeps 23:30–07:30 (8 hours) on Monday and 00:45–08:45 (8 hours) on Tuesday. Using the window $[23{:}00, 03{:}00]$ above, compute the overlap hours captured each night. Which night better aligns with the zǐshí principle, and why, despite equal total sleep?</p>
+  </main>
+  <footer class="spl-credit"><span class="spl-credit__meta">元健康 Meta-Health Ch8: Rhythms — Sleep, the Organ Clock, and the Seasons (天人相应) (Level: Core &middot; Language: EN &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
+</div>
+</body>
+</html>
