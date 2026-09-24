@@ -1,29 +1,197 @@
 domain: meta_health_ch02
-title: "Energetics, Metabolism, and Nutrition Primitives"
-description: "Thermodynamic energy balance, macronutrient roles, and metabolic substrate utilization."
-version: "1.0"
-
-nodes:
-  - id: thermodynamic-energy-balance
-    title: "Energy Expenditure and Caloric Balance"
-    type: primitive
-    prerequisites: []
-    summary: "Basal metabolic rate (BMR), total daily energy expenditure (TDEE), and thermodynamic balance."
-
-  - id: macronutrient-roles
-    title: "Macronutrient Function: Protein, Carbohydrate, and Fat"
-    type: primitive
-    prerequisites: ["thermodynamic-energy-balance"]
-    summary: "The elemental biological roles of amino acids, glucose/glycogen, and structural lipids."
-
-  - id: metabolic-flexibility
-    title: "Substrate Oxidation and Metabolic Flexibility"
-    type: composite
-    prerequisites: ["macronutrient-roles"]
-    summary: "The cellular capacity to efficiently transition between glucose and fat oxidation based on demand."
-
-  - id: micronutrients-cofactors
-    title: "Micronutrients, Electrolytes, and Enzymatic Co-factors"
-    type: primitive
-    prerequisites: ["thermodynamic-energy-balance"]
-    summary: "Essential vitamins, minerals, and hydration dynamics required for cellular signaling and energy conversion."
+primitives:
+  autonomic_nervous_system:
+    defines: >-
+      The autonomic nervous system: the involuntary control system for heart rate, blood vessels, digestion
+      and breathing, with sympathetic and parasympathetic branches.
+    tier: 0
+  cardiac_output:
+    defines: >-
+      Cardiac output: the volume of blood the heart pumps per minute (heart rate × stroke volume), about
+      5 L/min at rest in adults.
+    tier: 0
+  fascia:
+    defines: >-
+      Fascia: the continuous connective-tissue web that wraps and links muscles, organs and bones throughout
+      the body.
+    tier: 0
+  joint_range_of_motion:
+    defines: >-
+      Joint range of motion: how far a joint can move in each direction (flexion, extension, rotation,
+      lateral bending), limited by bones, ligaments and muscles.
+    tier: 0
+  lymphatic_system:
+    defines: >-
+      The lymphatic system: a low-pressure network of vessels that returns tissue fluid to the blood and
+      carries immune cells; it has no central pump.
+    tier: 0
+  respiration_mechanics:
+    defines: >-
+      Breathing mechanics: the diaphragm and intercostal muscles change rib-cage and thoracic volume to
+      move air in and out of the lungs.
+    tier: 0
+  skeletal_muscle_contraction:
+    defines: >-
+      Skeletal muscle contraction: voluntary muscles shorten and produce force when activated by motor
+      nerves, then relax.
+    tier: 0
+concepts:
+  diaphragmatic_breathing:
+    defines: >-
+      Diaphragmatic ('belly') breathing: slow breathing led by the diaphragm, which expands the lower
+      ribs and abdomen and is linked to parasympathetic activation.
+    composed_of:
+    - respiration_mechanics
+    - autonomic_nervous_system
+    tier: 1
+  myofascial_lines:
+    defines: >-
+      Myofascial lines: chains of muscle and fascia running the length of the body (e.g. the superficial
+      back line, lateral line and spiral line), so a stretch in one region loads tissue far away.
+    composed_of:
+    - fascia
+    - skeletal_muscle_contraction
+    tier: 1
+  regional_blood_flow_distribution:
+    defines: >-
+      Regional blood-flow distribution: the autonomic nervous system redistributes cardiac output among
+      muscles, gut, skin and brain by constricting or dilating vessels, according to what the body is
+      doing.
+    composed_of:
+    - cardiac_output
+    - autonomic_nervous_system
+    tier: 1
+  sympathetic_parasympathetic_balance:
+    defines: >-
+      Sympathetic–parasympathetic balance: 'fight-or-flight' (sympathetic) versus 'rest-and-digest' (parasympathetic)
+      activity, and the body's ability to shift between them.
+    composed_of:
+    - autonomic_nervous_system
+    tier: 1
+  thoracic_mobility:
+    defines: >-
+      Thoracic mobility: the ability of the rib cage and upper-back spine to extend, rotate and side-bend,
+      which affects posture and how deeply one can breathe.
+    composed_of:
+    - joint_range_of_motion
+    - respiration_mechanics
+    tier: 1
+  tidal_volume_and_gas_exchange:
+    defines: >-
+      Tidal volume and gas exchange: how much air each breath moves, and how breathing depth and rate
+      affect oxygen and CO2 exchange in the alveoli.
+    composed_of:
+    - respiration_mechanics
+    tier: 1
+  venous_return:
+    defines: >-
+      Venous return: blood flowing back to the heart through low-pressure veins with one-way valves, which
+      sets how much the heart can pump out.
+    composed_of:
+    - cardiac_output
+    tier: 1
+  intra_abdominal_pressure:
+    defines: >-
+      Intra-abdominal pressure: the pressure in the abdominal cavity created by the diaphragm, abdominal
+      wall and pelvic floor working together; it stabilizes the spine and changes with breathing and twisting.
+    composed_of:
+    - diaphragmatic_breathing
+    - skeletal_muscle_contraction
+    tier: 2
+  posterior_chain:
+    defines: >-
+      The posterior chain: calves, hamstrings, glutes and spinal erectors working as one line, extending
+      the body upward and stabilizing the lower back.
+    composed_of:
+    - myofascial_lines
+    - skeletal_muscle_contraction
+    tier: 2
+  respiratory_pump:
+    defines: >-
+      The respiratory pump: pressure changes from diaphragmatic breathing help draw venous blood and lymph
+      from the abdomen into the chest.
+    composed_of:
+    - diaphragmatic_breathing
+    - venous_return
+    tier: 2
+  skeletal_muscle_pump:
+    defines: >-
+      The skeletal-muscle pump: contracting leg muscles, especially the calf ('second heart'), squeeze
+      the veins and push blood back toward the heart.
+    composed_of:
+    - skeletal_muscle_contraction
+    - venous_return
+    tier: 2
+  spinal_rotation_and_lateral_flexion:
+    defines: >-
+      Spinal rotation and lateral flexion: twisting and side-bending the trunk, which mobilizes the thoracic
+      spine and ribs and loads the spiral and lateral lines.
+    composed_of:
+    - thoracic_mobility
+    - myofascial_lines
+    tier: 2
+  vagal_tone_and_hrv:
+    defines: >-
+      Vagal tone and heart-rate variability (HRV): beat-to-beat variation in heart rate, an indirect index
+      of parasympathetic (vagus nerve) activity that slow breathing tends to raise.
+    composed_of:
+    - sympathetic_parasympathetic_balance
+    - diaphragmatic_breathing
+    tier: 2
+  core_stability:
+    defines: >-
+      Core stability: controlling the trunk under movement by coordinating the deep abdominal, back and
+      pelvic-floor muscles with intra-abdominal pressure.
+    composed_of:
+    - intra_abdominal_pressure
+    - joint_range_of_motion
+    tier: 3
+  interoception:
+    defines: >-
+      Interoception: awareness of internal bodily signals (heartbeat, breath, fullness, tension), which
+      slow mindful movement and eating practice and sharpen.
+    composed_of:
+    - vagal_tone_and_hrv
+    tier: 3
+  lymph_flow:
+    defines: >-
+      Lymph flow: because lymph has no heart, it relies on muscle contraction, breathing and movement,
+      which is why inactivity lets fluid pool in the tissues.
+    composed_of:
+    - lymphatic_system
+    - skeletal_muscle_pump
+    - respiratory_pump
+    tier: 3
+  tension_relaxation_cycling:
+    defines: >-
+      Tension–relaxation cycling: alternating brief contraction with full release, which pumps blood and
+      lymph more effectively than holding a static position.
+    composed_of:
+    - skeletal_muscle_pump
+    - regional_blood_flow_distribution
+    tier: 3
+  squat_mechanics:
+    defines: >-
+      Squat mechanics: hip, knee and ankle bending together with a stable trunk; large leg muscles do
+      the work, so squatting raises heart rate and venous return.
+    composed_of:
+    - joint_range_of_motion
+    - core_stability
+    - posterior_chain
+    - skeletal_muscle_pump
+    tier: 4
+applications:
+  dual_lens_translation:
+    defines: >-
+      Translating TCM statements into physiology and back — e.g. 'moving Lung qi' ↔ thoracic expansion
+      and gas exchange, 'Kidney root' ↔ calf pump and posterior chain — while noting where the correspondence
+      is mechanistic, where it is plausible, and where it is metaphorical.
+    needs:
+    - tidal_volume_and_gas_exchange
+    - lymph_flow
+    - vagal_tone_and_hrv
+    - spinal_rotation_and_lateral_flexion
+    - squat_mechanics
+    - tension_relaxation_cycling
+    - interoception
+    tier: 5

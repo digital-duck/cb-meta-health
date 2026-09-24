@@ -4,7 +4,7 @@
 
 ```bash
 conda activate spl123
-cd ~/projects/digital-duck/concept-book/
+cd ~/projects/digital-duck/cb-meta-health/
 ```
 
 The backend API must be running for the UI Generate/PDF buttons:
@@ -12,6 +12,91 @@ The backend API must be running for the UI Generate/PDF buttons:
 bash scripts/start-api.sh   # uvicorn on :8200
 npm run dev                 # Vite on :5174 (separate terminal)
 ```
+
+---
+
+## 元健康 Meta-Health: generate all chapters (overnight run)
+
+Nine chapters, `meta_health_ch01` … `ch09`, are listed in `scripts/domains-meta-health.txt`.
+Each chapter has exactly one application node (its capstone), so `batch_gen_domains.py`
+generates one full book per chapter:
+
+| Chapter | Capstone (book target) | Nodes |
+|---|---|---|
+| ch01 TCM foundations | `five_phase_body_map` | 26 |
+| ch02 Physiology lens | `dual_lens_translation` | 26 |
+| ch03 五脏操 | `five_organ_routine_design` | 24 |
+| ch04 八段锦 | `daily_baduanjin_practice_plan` | 27 |
+| ch05 Eating as internal exercise | `mindful_meal_protocol` | 25 |
+| ch06 Food: 四气五味 | `five_phase_meal_design` | 25 |
+| ch07 Stress & emotion | `stress_resilience_routine` | 24 |
+| ch08 Rhythms | `personal_daily_rhythm_schedule` | 18 |
+| ch09 内调一元论 | `daily_meta_health_protocol` | 19 |
+
+### 1. Smoke test (one chapter, about 10 min)
+
+```bash
+conda activate spl123
+cd ~/projects/digital-duck/cb-meta-health
+mkdir -p logs
+
+python scripts/batch_gen_domains.py -f scripts/domains-meta-health.txt \
+    --model sonnet --level core --language en --limit 1 \
+    --log-file logs/meta_health_en.log
+```
+
+Check that the `Queue` line shows `style=core`, then open ch01 in the UI (`npm run dev`).
+
+### 2. Overnight: English, then Chinese
+
+```bash
+nohup bash -c '
+python scripts/batch_gen_domains.py -f scripts/domains-meta-health.txt \
+    --model sonnet --level core --language en --log-file logs/meta_health_en.log
+python scripts/batch_gen_domains.py -f scripts/domains-meta-health.txt \
+    --model sonnet --level core --language zh --log-file logs/meta_health_zh.log
+' > logs/meta_health_overnight.out 2>&1 &
+
+tail -f logs/meta_health_overnight.out      # watch progress (Ctrl+C only stops tail)
+```
+
+- **Always pass `--level core`.** The script's default is `college`.
+- **Don't pass `--skip-cache`.** Sections already generated from the UI at core/en/sonnet
+  (the 9 ch05 concepts) are reused from the cache.
+- **Resumable.** If Claude CLI hits a session or rate limit, the batch stops with
+  `Claude CLI session/rate limit reached — resets …`. Re-run the same command after the
+  reset: chapters marked `done` in `scripts/batch_gen_domains_progress.json` are skipped,
+  and cached sections of a half-finished chapter are reused.
+- **Timing.** Expect roughly 8–15 min per chapter (25–80 LLM calls, depending on how many
+  sections need a refine pass): about 1.5–2 h per language and 3–4 h for EN + ZH, if no
+  rate limit intervenes.
+- **Output:** `public/domains/meta_health_chNN/output/core.{en,zh}/sonnet/html/book_<capstone>.html`.
+  `catalog.json` gets `has_book: true` plus `books`/`generated_concepts` entries
+  automatically.
+
+### Morning checklist
+
+```bash
+grep -E "✓ done|✗|SKIP|Batch complete|Stopped early" logs/meta_health_en.log logs/meta_health_zh.log
+cat scripts/batch_gen_domains_progress.json
+```
+
+Anything marked `error: …` in the progress file can be re-run. The next run retries it,
+because only `done` entries are skipped.
+
+### Fixes made to `batch_gen_domains.py` for this run (2026-09-23)
+
+1. **It now passes `style`.** The script used to pass only `--param lvl=…`, which
+   `build_concept_book.spl` silently ignores, so every book was generated at the workflow's
+   default `textbook` style regardless of `--level`. It now resolves the style through
+   `level_style.resolve_style(level, catalog tags)`, the same as the web UI (`api/services/executor.py`)
+   and `batch_generate.py`. At `core`, that gives style `core`; at `research`, the non-math
+   meta-health tags give `research_applied`.
+2. **The spl3 safety caps are raised.** spl3's built-in limits (15 loop iterations, 25 LLM calls,
+   100k tokens) are smaller than one 25-node chapter needs. The web UI raises them from `.env`;
+   the batch script now defaults the subprocess to `SPL_WHILE_MAX_ITER=60`,
+   `SPL_MAX_LLM_CALLS=120`, and `SPL_MAX_TOTAL_TOKENS=600000`. Values you export in the shell
+   still take precedence.
 
 ---
 
@@ -116,7 +201,7 @@ python scripts/batch_gen_domains.py -f scripts/domains-college-physics.txt \
 
 ## Cache behaviour
 
-The spl3 content cache key is `(concept, language, llm)`.
+The spl3 content cache key is `(concept, language, style, llm)`, so the same concept at a different level (style) is a separate cache entry.
 
 - Same concept in **different languages** → separate cache entries (independent)
 - Same concept with **different LLM** → separate cache entries (good for quality comparison)
@@ -189,6 +274,17 @@ bash scripts/sync_from_spl.sh
 
 This copies `*_graph.yaml` from SPL.py and regenerates all `graph.html` files.
 Then hard-refresh the browser (`Ctrl+Shift+R`).
+
+**元健康 Meta-Health graphs are authored in this repo, not in SPL.py**, so don't use the sync
+script for them. Rebuild the graphs from `docs/gemini/build_graphs_v1.py`, or edit
+`graph.yaml` directly, then regenerate the navigators:
+
+```bash
+for d in public/domains/meta_health_ch0*; do
+  python3 scripts/concept_graph.py --domain $d/input/graph.yaml \
+    visualize --format html --output $d/output/graph.html
+done
+```
 
 ---
 

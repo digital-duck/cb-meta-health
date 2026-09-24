@@ -1,23 +1,180 @@
 domain: meta_health_ch06
-title: "Systemic Equilibrium, TCM Harmony, and Long-Term Adaptation"
-description: "Holistic integration of movement, food, climate, and lifetime metabolic health."
-version: "1.0"
-
-nodes:
-  - id: tcm-holistic-triad
-    title: "The Triadic Equilibrium: Movement, Diet, and Internal Balance"
-    type: primitive
-    prerequisites: []
-    summary: "Unifying exercise, food, and rest into a continuous feedback loop mirroring traditional holistic medicine."
-
-  - id: seasonal-circannual-adaptation
-    title: "Circannual Rhythms and Environmental Adaptation"
-    type: primitive
-    prerequisites: ["tcm-holistic-triad"]
-    summary: "Adapting training volume, nutritional intake, and thermal stress across seasonal cycles."
-
-  - id: lifetime-metabolic-longevity
-    title: "Integrated Systemic Health and Longevity"
-    type: composite
-    prerequisites: ["seasonal-circannual-adaptation"]
-    summary: "Synthesizing all biological primitives for lifelong functional mobility, metabolic vitality, and healthspan."
+primitives:
+  circadian_clock:
+    defines: >-
+      The circadian clock: the body's roughly 24-hour internal timer, set mainly by light, that schedules
+      hormones, digestion and sleep.
+    tier: 0
+  dietary_fiber:
+    defines: >-
+      Dietary fiber: plant carbohydrates that human enzymes cannot digest, which add bulk and feed gut
+      bacteria.
+    tier: 0
+  energy_balance:
+    defines: >-
+      Energy balance: energy intake from food versus energy expenditure (basal metabolic rate, digestion
+      and activity), which together determine weight change over time.
+    tier: 0
+  five_phase_correspondences:
+    defines: >-
+      The Five-Phase correspondence table linking organs, flavors, colors and seasons (from Chapter 1).
+    tier: 0
+  gut_microbiome:
+    defines: >-
+      The gut microbiome: the trillions of microbes in the large intestine that ferment fiber and influence
+      digestion, immunity and metabolism.
+    tier: 0
+  macronutrients:
+    defines: >-
+      Macronutrients: protein, carbohydrate and fat — the nutrients that supply energy and building material.
+    tier: 0
+  micronutrients_and_hydration:
+    defines: >-
+      Micronutrients and hydration: vitamins, minerals and water, needed in small amounts as co-factors
+      for metabolism and signalling.
+    tier: 0
+  spleen_transformation_transport:
+    defines: >-
+      The Spleen transforms and transports (脾主运化), powered by Spleen yang (from Chapter 5).
+    tier: 0
+  yin_yang:
+    defines: >-
+      Yin-yang: complementary opposites such as cool/warm and rest/activity (from Chapter 1).
+    tier: 0
+concepts:
+  carbohydrate_quality:
+    defines: >-
+      Carbohydrate quality and glycemic load: whole, fiber-rich carbohydrates raise blood sugar more gently
+      than refined starches and sugars.
+    composed_of:
+    - macronutrients
+    - dietary_fiber
+    tier: 1
+  dietary_fat_quality:
+    defines: >-
+      Dietary fat quality: unsaturated fats from nuts, seeds, fish and plant oils versus excess saturated
+      and industrial trans fats.
+    composed_of:
+    - macronutrients
+    tier: 1
+  fiber_microbiome_axis:
+    defines: >-
+      The fiber–microbiome axis: gut bacteria ferment fiber into short-chain fatty acids that nourish
+      the gut lining and help regulate inflammation and appetite.
+    composed_of:
+    - dietary_fiber
+    - gut_microbiome
+    tier: 1
+  five_colors_foods:
+    defines: >-
+      The five colors (五色): green → Liver, red → Heart, yellow → Spleen, white → Lung, black → Kidney
+      — a simple TCM cue for variety that lines up with modern advice to 'eat the rainbow'.
+    composed_of:
+    - five_phase_correspondences
+    tier: 1
+  five_flavors_wuwei:
+    defines: >-
+      The five flavors (五味): sour → Liver, bitter → Heart, sweet → Spleen, pungent → Lung, salty → Kidney;
+      each flavor has an action (astringe, drain, tonify, disperse, soften), and any flavor in excess
+      harms its organ.
+    composed_of:
+    - five_phase_correspondences
+    tier: 1
+  four_natures_siqi:
+    defines: >-
+      The four natures (四气): foods classified as cold, cool, neutral, warm or hot by their effect on the
+      body — e.g. watermelon cooling, ginger warming.
+    composed_of:
+    - yin_yang
+    tier: 1
+  meal_timing_chrononutrition:
+    defines: >-
+      Meal timing and chrononutrition: the same meal is handled better earlier in the day, and late-night
+      eating conflicts with the circadian clock — 'forcing the organs to work overtime'.
+    composed_of:
+    - energy_balance
+    - circadian_clock
+    tier: 1
+  protein_across_life:
+    defines: >-
+      Protein across the lifespan: adequate, evenly spread protein supports muscle repair and helps prevent
+      age-related muscle loss (sarcopenia), which matters more after about age 50.
+    composed_of:
+    - macronutrients
+    - energy_balance
+    tier: 1
+  balanced_plate:
+    defines: >-
+      The balanced plate: roughly half vegetables and fruit, a quarter whole grains, a quarter protein,
+      plus healthy fats — cross-checked against the five colors for variety.
+    composed_of:
+    - protein_across_life
+    - carbohydrate_quality
+    - dietary_fat_quality
+    - fiber_microbiome_axis
+    - five_colors_foods
+    tier: 2
+  food_as_medicine_shiliao:
+    defines: >-
+      Food as medicine (药食同源, 食疗): everyday foods with recognized TCM actions — ginger, Chinese yam, jujube,
+      goji, mung bean — used gently and seasonally, not as a substitute for medical treatment.
+    composed_of:
+    - four_natures_siqi
+    - five_flavors_wuwei
+    tier: 2
+  warm_cooked_food_principle:
+    defines: >-
+      The warm, cooked food principle: TCM holds that habitual cold, raw and iced food weakens Spleen
+      yang, and favours warm, cooked, easily digested meals such as congee, soups and steamed vegetables.
+    composed_of:
+    - four_natures_siqi
+    - spleen_transformation_transport
+    tier: 2
+  whole_vs_ultra_processed_food:
+    defines: >-
+      Whole versus ultra-processed food: the NOVA classification, and why industrial formulations high
+      in refined starch, sugar, fat and additives are linked to overeating and poorer health.
+    composed_of:
+    - carbohydrate_quality
+    - dietary_fat_quality
+    - micronutrients_and_hydration
+    tier: 2
+  dampness_and_phlegm:
+    defines: >-
+      Dampness and phlegm (湿, 痰浊): in TCM, what builds up when the Spleen cannot transform an excess of
+      greasy, sweet, rich or cold food — heaviness, bloating, sluggishness — which some authors compare
+      with metabolic overload.
+    composed_of:
+    - spleen_transformation_transport
+    - whole_vs_ultra_processed_food
+    tier: 3
+  constitution_based_eating:
+    defines: >-
+      Eating for one's constitution (体质): the nine TCM constitution types (e.g. qi-deficient, yang-deficient,
+      damp-heat) and how the same food can suit one person and not another.
+    composed_of:
+    - four_natures_siqi
+    - dampness_and_phlegm
+    - food_as_medicine_shiliao
+    tier: 4
+  junk_load:
+    defines: >-
+      'Junk load' (劣质食物 = 垃圾训练): low-quality food makes the digestive organs work hard for little nourishment
+      — the internal equivalent of training with bad form under a heavy, useless load.
+    composed_of:
+    - whole_vs_ultra_processed_food
+    - dampness_and_phlegm
+    tier: 4
+applications:
+  five_phase_meal_design:
+    defines: >-
+      Designing a week of meals that satisfy both lenses: a balanced plate, whole foods, all five colors
+      and flavors in moderation, warm cooked foods, sensible timing, and adjustments for one's constitution.
+    needs:
+    - balanced_plate
+    - junk_load
+    - warm_cooked_food_principle
+    - five_flavors_wuwei
+    - meal_timing_chrononutrition
+    - constitution_based_eating
+    tier: 5

@@ -1,0 +1,126 @@
+domain: meta_health_ch09
+primitives:
+  daily_baduanjin_practice_plan:
+    defines: >-
+      A daily Baduanjin practice plan (from Chapter 4).
+    tier: 0
+  dual_lens_translation:
+    defines: >-
+      Translating between TCM and physiology (from Chapter 2).
+    tier: 0
+  eating_as_internal_exercise:
+    defines: >-
+      Eating as internal exercise (饮食即内脏运动) (from Chapter 5).
+    tier: 0
+  evidence_quality:
+    defines: >-
+      Evidence quality: weighing trials, observational data and tradition (from Chapter 4).
+    tier: 0
+  five_organ_routine_design:
+    defines: >-
+      A personal five-organ exercise routine (from Chapter 3).
+    tier: 0
+  five_phase_meal_design:
+    defines: >-
+      Five-Phase meal design (from Chapter 6).
+    tier: 0
+  harmony_as_health:
+    defines: >-
+      Health as dynamic balance (阴平阳秘) (from Chapter 1).
+    tier: 0
+  mindful_meal_protocol:
+    defines: >-
+      The mindful-meal protocol (from Chapter 5).
+    tier: 0
+  personal_daily_rhythm_schedule:
+    defines: >-
+      The personal 24-hour rhythm (from Chapter 8).
+    tier: 0
+  stress_resilience_routine:
+    defines: >-
+      The stress-resilience routine (from Chapter 7).
+    tier: 0
+concepts:
+  five_phase_integration_matrix:
+    defines: >-
+      The Five-Phase integration matrix: for each phase, one row linking organ, five-organ exercise, Baduanjin
+      form, flavor and food, emotion, organ-clock time and season — the whole book in one table.
+    composed_of:
+    - five_organ_routine_design
+    - daily_baduanjin_practice_plan
+    - five_phase_meal_design
+    - stress_resilience_routine
+    - personal_daily_rhythm_schedule
+    tier: 1
+  internal_external_cultivation:
+    defines: >-
+      Internal-external cultivation (内外兼修): external movement guides qi and blood through the channels
+      while mindful eating conditions the organs from within — two halves of one practice.
+    composed_of:
+    - eating_as_internal_exercise
+    - daily_baduanjin_practice_plan
+    - mindful_meal_protocol
+    tier: 1
+  organ_training_principles:
+    defines: >-
+      Training principles for the organs: warm-up, appropriate load, progression, recovery and consistency
+      — 'train, don't overload' — applied equally to muscles, the digestive organs and the nervous system.
+    composed_of:
+    - eating_as_internal_exercise
+    - harmony_as_health
+    tier: 1
+  evidence_and_safety_lens:
+    defines: >-
+      The evidence-and-safety lens: separating what is well established (e.g. post-meal walking lowers
+      glucose; Baduanjin improves balance), what is plausible and what is traditional metaphor — and knowing
+      when symptoms need a doctor, especially with diabetes, heart disease, pregnancy or medication.
+    composed_of:
+    - evidence_quality
+    - dual_lens_translation
+    - five_phase_integration_matrix
+    tier: 2
+  habit_formation:
+    defines: >-
+      Habit formation: small daily doses (10 minutes, one breath before each meal) anchored to existing
+      routines such as meals and waking are more durable than ambitious programs.
+    composed_of:
+    - organ_training_principles
+    tier: 2
+  mind_body_digestive_loop:
+    defines: >-
+      The mind–body–digestive loop: mental state → mindful eating → post-meal rest → gentle guiding movement
+      → better mental state; stress breaks the loop at its first link.
+    composed_of:
+    - internal_external_cultivation
+    - stress_resilience_routine
+    tier: 2
+  personalization:
+    defines: >-
+      Personalization: adjusting the framework for constitution (体质), age, fitness, chronic conditions
+      and culture instead of prescribing one routine for everyone.
+    composed_of:
+    - five_phase_integration_matrix
+    - organ_training_principles
+    tier: 2
+  self_observation_feedback:
+    defines: >-
+      Self-observation as feedback: tracking energy, appetite, digestion and stool, sleep, mood, tongue
+      appearance and, optionally, HRV or glucose, to adjust practice the way a coach adjusts training.
+    composed_of:
+    - organ_training_principles
+    - dual_lens_translation
+    tier: 2
+applications:
+  daily_meta_health_protocol:
+    defines: >-
+      The daily Meta-Health protocol — a 24-hour blueprint: morning light and Baduanjin; pre-meal breaths,
+      mindful meals to 70–80% full, gentle movement 30–40 minutes after eating; stress-release through
+      the day; an early, light dinner; sleep before 子时 — personalized, observed and adjusted over time.
+    needs:
+    - mind_body_digestive_loop
+    - five_phase_integration_matrix
+    - habit_formation
+    - personalization
+    - self_observation_feedback
+    - evidence_and_safety_lens
+    tier: 3

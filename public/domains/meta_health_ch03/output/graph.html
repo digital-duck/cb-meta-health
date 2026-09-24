@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Concept Graph — graph</title>
+<script src="https://unpkg.com/vis-network@9.1.9/standalone/umd/vis-network.min.js"></script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:system-ui,sans-serif;background:#f0f2f5;overflow:hidden;height:100vh}
+.app{
+  display:grid;
+  grid-template-columns:230px 1fr 210px;
+  grid-template-rows:60vh 40vh;
+  height:100vh;
+  gap:0;
+}
+/* ── Left sidebar: learning path ── */
+#path-sidebar{
+  grid-column:1;grid-row:1/3;
+  background:#f5f6f8;color:#2a2a2a;
+  display:flex;flex-direction:column;
+  overflow:hidden;
+  border-right:1px solid #dde0e6;
+}
+#path-header{
+  padding:14px 14px 10px;
+  border-bottom:1px solid #dde0e6;
+  flex-shrink:0;
+}
+#path-header h1{font-size:13px;letter-spacing:.05em;text-transform:uppercase;color:#888;margin-bottom:2px;font-weight:700}
+#path-header .domain-name{font-size:11px;color:#555;margin-top:4px}
+#path-steps{flex:1;overflow-y:auto;padding:8px 0}
+#path-steps .hint{color:#aaa;font-size:12px;text-align:center;padding:24px 12px;line-height:1.5}
+.step-item{
+  display:flex;align-items:flex-start;gap:8px;
+  padding:7px 12px;cursor:pointer;
+  border-left:3px solid transparent;
+  transition:background .15s;
+}
+.step-item:hover{background:#ebebf0}
+.step-item.active{background:#e8eef8;border-left-color:#4a90d9}
+.step-item.target{background:#eaf5ea;border-left-color:#4caf50}
+.step-num{min-width:20px;font-size:10px;font-weight:700;color:#bbb;padding-top:2px;flex-shrink:0}
+.step-item.target .step-num{color:#4caf50}
+.step-label{font-size:12px;font-weight:600;color:#333;line-height:1.4}
+.step-def{font-size:10px;color:#888;margin-top:2px;line-height:1.4}
+.step-kind{display:inline-block;padding:0 5px;border-radius:8px;font-size:9px;font-weight:700;margin-left:4px}
+#path-count{font-size:10px;color:#aaa;margin-top:3px}
+/* ── Graph panel ── */
+#graph-panel{
+  grid-column:2;grid-row:1;
+  position:relative;background:#fff;
+  border-bottom:2px solid #dde;
+}
+#graph-container{width:100%;height:100%}
+.graph-recenter-btn{
+  position:absolute;right:16px;bottom:16px;z-index:50;
+  padding:6px 14px;border-radius:6px;
+  border:1px solid #1e3a5f;background:#1e3a5f;color:#fff;
+  font-size:12px;font-weight:600;font-family:system-ui,sans-serif;
+  box-shadow:0 1px 4px rgba(0,0,0,.25);cursor:pointer;
+}
+.graph-recenter-btn:hover{background:#28496f;border-color:#28496f}
+/* ── Explanation panel ── */
+#explain-panel{
+  grid-column:2;grid-row:2;
+  background:#fff;overflow-y:auto;
+  padding:16px 20px;
+}
+#explain-panel .empty{color:#aaa;font-size:13px;padding:20px 0;text-align:center}
+#explain-panel .node-title{
+  display:flex;align-items:center;gap:8px;margin-bottom:10px;
+}
+#explain-panel .node-title h2{font-size:16px;color:#1e3a5f}
+.badge{
+  display:inline-block;padding:2px 8px;border-radius:10px;
+  font-size:11px;font-weight:700;
+}
+.badge.primitive{background:#e8f5e9;color:#2e7d32}
+.badge.concept{background:#e3f2fd;color:#1565c0}
+.badge.application{background:#fff3e0;color:#ef6c00}
+.tier-tag{font-size:11px;color:#999;margin-left:auto}
+#explain-panel .defines{
+  font-size:14px;color:#333;line-height:1.6;margin-bottom:12px;
+  padding:10px 12px;background:#f8f9fb;border-radius:6px;
+  border-left:3px solid #90b4e8;
+}
+#explain-panel .section-label{
+  font-size:10px;font-weight:700;text-transform:uppercase;
+  letter-spacing:.08em;color:#999;margin-bottom:6px;
+}
+#explain-panel .prereq-list{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:12px}
+.prereq-chip{
+  padding:3px 9px;border-radius:12px;font-size:11px;
+  background:#e3f2fd;color:#1565c0;cursor:pointer;
+  border:1px solid #90caf9;transition:background .12s;
+}
+.prereq-chip:hover{background:#bbdefb}
+#explain-panel .meta-row{display:flex;gap:16px;flex-wrap:wrap;margin-bottom:10px}
+.meta-item{font-size:12px;color:#555}
+.meta-item b{color:#1e3a5f}
+#explain-panel .play-hint{
+  font-size:12px;color:#5a5a5a;line-height:1.6;
+  padding:8px 12px;background:#fffde7;border-radius:6px;
+  border-left:3px solid #ffd54f;margin-bottom:8px;
+}
+/* ── Notes sidebar ── */
+#notes-sidebar{
+  grid-column:3;grid-row:1/3;
+  background:#fafaf8;
+  border-left:2px solid #e8e8e0;
+  display:flex;flex-direction:column;
+  overflow:hidden;
+}
+#notes-header{
+  padding:10px 12px 8px;
+  border-bottom:1px solid #e0e0d8;
+  flex-shrink:0;
+}
+#notes-header-top{display:flex;align-items:center;justify-content:space-between;margin-bottom:2px}
+#notes-header h2{font-size:12px;font-weight:700;color:#555;text-transform:uppercase;letter-spacing:.06em;margin:0}
+#notes-node-label{font-size:11px;color:#999;margin-top:2px}
+.nb-btn{font-size:10px;padding:2px 7px;border-radius:3px;
+  border:1px solid #ddd;background:#f0f0ea;cursor:pointer;color:#777;
+  font-family:system-ui,sans-serif}
+.nb-btn:hover{background:#e0e0d8;color:#444}
+#notes-textarea{
+  flex:0 0 auto;height:100px;border:none;resize:none;
+  padding:12px;font-size:12px;line-height:1.6;
+  font-family:inherit;background:#fafaf8;color:#333;
+  outline:none;
+}
+#notes-with-entries{
+  border-top:1px solid #e8e8e0;flex:1;min-height:0;overflow-y:auto;
+}
+.note-entry{
+  padding:6px 12px;cursor:pointer;
+  border-bottom:1px solid #f0f0e8;
+  font-size:11px;
+}
+.note-entry:hover{background:#f0efe8}
+.note-entry .note-node{font-weight:600;color:#555;display:flex;justify-content:space-between;align-items:center}
+.note-entry .note-ts{font-weight:400;color:#bbb;font-size:10px}
+.note-entry .note-preview{color:#999;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+/* ── kind badge colours in sidebar ── */
+.primitive-k{background:#e8f5e9;color:#2e7d32}
+.concept-k{background:#e3f2fd;color:#1565c0}
+.application-k{background:#fff3e0;color:#ef6c00}
+/* ── concept detail panel ── */
+#concept-detail{margin-top:14px;border-top:1px solid #e8e8e0;padding-top:10px;}
+#concept-iframe{width:100%;height:500px;border:1px solid #e0e0d8;border-radius:4px;margin-top:6px;display:block;}
+.concept-not-found{color:#e57373;font-size:12px;padding:6px 0;font-style:italic;}
+</style>
+</head>
+<body>
+<div class="app">
+
+<!-- LEFT: learning path sidebar -->
+<aside id="path-sidebar">
+  <div id="path-header">
+    <h1>Learning Path</h1>
+    <div class="domain-name">graph</div>
+    <div id="path-count"></div>
+  </div>
+  <div id="path-steps">
+    <div class="hint">Click any node in the graph<br>to see its learning path</div>
+  </div>
+</aside>
+
+<!-- CENTRE TOP: concept graph -->
+<div id="graph-panel">
+  <div id="graph-container"></div>
+  <button class="graph-recenter-btn" onclick="reCenterGraph()" title="Re-fit the graph to the viewport">Re-Center</button>
+</div>
+
+<!-- CENTRE BOTTOM: explanation panel -->
+<div id="explain-panel">
+  <div class="empty">Select a node to see its definition, prerequisites, and learning context.</div>
+</div>
+
+<!-- RIGHT: notes sidebar -->
+<aside id="notes-sidebar">
+  <div id="notes-header">
+    <div id="notes-header-top">
+      <h2>Notes</h2>
+      <div>
+        <button class="nb-btn" id="nb-clear-btn" onclick="clearNote()">Clear</button>
+        <button class="nb-btn" onclick="exportNotes()">Export</button>
+      </div>
+    </div>
+    <div id="notes-node-label">no node selected</div>
+  </div>
+  <textarea id="notes-textarea" placeholder="Type notes here&#10;(auto-saved per node)"></textarea>
+  <div id="notes-with-entries"></div>
+</aside>
+
+</div><!-- .app -->
+
+<script>
+const RAW = {"nodes": [{"id": "dantian", "label": "dantian", "kind": "primitive", "tier": 0, "defines": "The lower dantian (下丹田), the center below the navel where qigong settles breath and attention (from Chapter 1).", "prereqs": [], "verifier": "", "lab": "", "play": "", "color": {"background": "#fffde7", "border": "#795548"}, "font": {"size": 13}}, {"id": "diaphragmatic_breathing", "label": "diaphragmatic breathing", "kind": "primitive", "tier": 0, "defines": "Diaphragmatic breathing and its parasympathetic effect (from Chapter 2).", "prereqs": [], "verifier": "", "lab": "", "play": "", "color": {"background": "#fffde7", "border": "#795548"}, "font": {"size": 13}}, {"id": "five_phase_correspondences", "label": "five phase correspondences", "kind": "primitive", "tier": 0, "defines": "The Five-Phase correspondence table (五行归类) linking each phase to an organ, season, emotion, flavor and tissue (from Chapter 1).", "prereqs": [], "verifier": "", "lab": "", "play": "", "color": {"background": "#fffde7", "border": "#795548"}, "font": {"size": 13}}, {"id": "generating_cycle_xiangsheng", "label": "generating cycle xiangsheng", "kind": "primitive", "tier": 0, "defines": "The generating cycle (相生): Wood → Fire → Earth → Metal → Water (from Chapter 1).", "prereqs": [], "verifier": "", "lab": "", "play": "", "color": {"background": "#fffde7", "border": "#795548"}, "font": {"size": 13}}, {"id": "heart_kidney_interaction", "label": "heart kidney interaction", "kind": "primitive", "tier": 0, "defines": "Heart–Kidney interaction (心肾相交): Heart Fire descends and Kidney Water ascends (from Chapter 1).", "prereqs": [], "verifier": "", "lab": "", "play": "", "color": {"background": "#fffde7", "border": "#795548"}, "font": {"size": 13}}, {"id": "intra_abdominal_pressure", "label": "intra abdominal pressure", "kind": "primitive", "tier": 0, "defines": "Intra-abdominal pressure and how breathing and trunk movement change it (from Chapter 2).", "prereqs": [], "verifier": "", "lab": "", "play": "", "color": {"background": "#fffde7", "border": "#795548"}, "font": {"size": 13}}, {"id": "myofascial_lines", "label": "myofascial lines", "kind": "primitive", "tier": 0, "defines": "Myofascial lines such as the lateral, spiral and superficial back lines (from Chapter 2).", "prereqs": [], "verifier": "", "lab": "", "play": "", "color": {"background": "#fffde7", "border": "#795548"}, "font": {"size": 13}}, {"id": "skeletal_muscle_pump", "label": "skeletal muscle pump", "kind": "primitive", "tier": 0, "defines": "The calf and leg skeletal-muscle pump that returns venous blood to the heart (from Chapter 2).", "prereqs": [], "verifier": "", "lab": "", "play": "", "color": {"background": "#fffde7", "border": "#795548"}, "font": {"size": 13}}, {"id": "squat_mechanics", "label": "squat mechanics", "kind": "primitive", "tier": 0, "defines": "Squat mechanics: coordinated hip, knee and ankle flexion over a stable trunk (from Chapter 2).", "prereqs": [], "verifier": "", "lab": "", "play": "", "color": {"background": "#fffde7", "border": "#795548"}, "font": {"size": 13}}, {"id": "thoracic_mobility", "label": "thoracic mobility", "kind": "primitive", "tier": 0, "defines": "Thoracic mobility: extension, rotation and side-bending of the rib cage and upper back (from Chapter 2).", "prereqs": [], "verifier": "", "lab": "", "play": "", "color": {"background": "#fffde7", "border": "#795548"}, "font": {"size": 13}}, {"id": "twelve_primary_meridians", "label": "twelve primary meridians", "kind": "primitive", "tier": 0, "defines": "The twelve primary meridians (十二经脉) and their paths along the limbs and trunk (from Chapter 1).", "prereqs": [], "verifier": "", "lab": "", "play": "", "color": {"background": "#fffde7", "border": "#795548"}, "font": {"size": 13}}, {"id": "chest_expansion_kuoxiong", "label": "chest expansion kuoxiong", "kind": "concept", "tier": 1, "defines": "Chest expansion (扩胸) → Lung (肺) → Metal (金): opening the arms and chest stretches the pectorals and intercostals and increases thoracic volume; in TCM it opens the Lung meridian across the upper chest and 'draws in clear qi'.", "prereqs": ["thoracic_mobility", "diaphragmatic_breathing", "five_phase_correspondences", "twelve_primary_meridians"], "verifier": "", "lab": "", "play": "", "color": {"background": "#e8f5e9", "border": "#2e7d32"}, "font": {"size": 13}}, {"id": "deep_squat_shendun", "label": "deep squat shendun", "kind": "concept", "tier": 1, "defines": "Deep squat (深蹲) → Heart (心) → Fire (火): recruiting the largest leg muscles raises heart rate and venous return; in TCM, lowering the center of gravity leads Heart Fire downward to meet Kidney Water (引火归元).", "prereqs": ["squat_mechanics", "skeletal_muscle_pump", "heart_kidney_interaction", "five_phase_correspondences"], "verifier": "", "lab": "", "play": "", "color": {"background": "#e8f5e9", "border": "#2e7d32"}, "font": {"size": 13}}, {"id": "rib_fanning_shanlei", "label": "rib fanning shanlei", "kind": "concept", "tier": 1, "defines": "Rib fanning (扇肋) → Liver (肝) → Wood (木): side-bending and spreading the ribs stretches the lateral line, intercostals and obliques around the hypochondrium; in TCM it frees the Liver meridian's flank pathway and relieves Liver qi stagnation (肝气郁结).", "prereqs": ["myofascial_lines", "thoracic_mobility", "five_phase_correspondences", "twelve_primary_meridians"], "verifier": "", "lab": "", "play": "", "color": {"background": "#e8f5e9", "border": "#2e7d32"}, "font": {"size": 13}}, {"id": "torso_twist_niuzhuan", "label": "torso twist niuzhuan", "kind": "concept", "tier": 1, "defines": "Torso twist (扭转) → Spleen (脾) → Earth (土): trunk rotation alternately compresses and releases the abdomen and mobilizes the thoracolumbar fascia; in TCM it 'wrings out' the middle burner and supports the Spleen's transformation (运化). The effect on gut motility is plausible but little studied.", "prereqs": ["intra_abdominal_pressure", "myofascial_lines", "five_phase_correspondences"], "verifier": "", "lab": "", "play": "", "color": {"background": "#e8f5e9", "border": "#2e7d32"}, "font": {"size": 13}}, {"id": "yongquan_point", "label": "yongquan point", "kind": "concept", "tier": 1, "defines": "Yongquan (涌泉, KI-1), the 'bubbling spring' point on the sole of the foot where the Kidney meridian begins; rising onto the toes and landing on the heels is said to stimulate it.", "prereqs": ["twelve_primary_meridians"], "verifier": "", "lab": "", "play": "", "color": {"background": "#e8f5e9", "border": "#2e7d32"}, "font": {"size": 13}}, {"id": "body_lifting_tishen", "label": "body lifting tishen", "kind": "concept", "tier": 2, "defines": "Body lifting (提身) → Kidney (肾) → Water (水): reaching up while rising onto the toes engages the posterior chain and calf pump; in TCM it stretches the back line and stimulates Yongquan at the root of the Kidney meridian.", "prereqs": ["skeletal_muscle_pump", "myofascial_lines", "yongquan_point", "five_phase_correspondences"], "verifier": "", "lab": "", "play": "", "color": {"background": "#e8f5e9", "border": "#2e7d32"}, "font": {"size": 13}}, {"id": "five_organ_movement_matrix", "label": "five organ movement matrix", "kind": "concept", "tier": 3, "defines": "The five-organ movement matrix: one table of movement, main physical action, target organ, phase, and meridian or physiological mechanism for all five exercises.", "prereqs": ["chest_expansion_kuoxiong", "rib_fanning_shanlei", "body_lifting_tishen", "torso_twist_niuzhuan", "deep_squat_shendun"], "verifier": "", "lab": "", "play": "", "color": {"background": "#e8f5e9", "border": "#2e7d32"}, "font": {"size": 13}}, {"id": "sealing_finish", "label": "sealing finish", "kind": "concept", "tier": 3, "defines": "The sealing finish (收势): ending with body lifting and a pause with hands over the lower dantian to 'settle and store' qi, instead of stopping abruptly.", "prereqs": ["body_lifting_tishen", "dantian"], "verifier": "", "lab": "", "play": "", "color": {"background": "#e8f5e9", "border": "#2e7d32"}, "font": {"size": 13}}, {"id": "breath_first_sequence", "label": "breath first sequence", "kind": "concept", "tier": 4, "defines": "Breath-first order: starting with chest expansion (Lung) because breathing is the easiest bridge from voluntary control to the autonomic nervous system — the order used in some popular teaching videos, differing from the generating cycle only by swapping Lung and Liver.", "prereqs": ["five_organ_movement_matrix", "diaphragmatic_breathing"], "verifier": "", "lab": "", "play": "", "color": {"background": "#e8f5e9", "border": "#2e7d32"}, "font": {"size": 13}}, {"id": "generating_cycle_sequence", "label": "generating cycle sequence", "kind": "concept", "tier": 4, "defines": "Generating-cycle order (相生顺序): rib fanning (Wood) → deep squat (Fire) → torso twist (Earth) → chest expansion (Metal) → body lifting (Water), so that each movement 'feeds' the next — suited to daily cultivation.", "prereqs": ["five_organ_movement_matrix", "generating_cycle_xiangsheng"], "verifier": "", "lab": "", "play": "", "color": {"background": "#e8f5e9", "border": "#2e7d32"}, "font": {"size": 13}}, {"id": "safe_practice_and_modification", "label": "safe practice and modification", "kind": "concept", "tier": 4, "defines": "Safe practice: pain-free range, knee tracking and partial squats, a chair or wall for balance, gentle twisting for back or disc problems, and no breath-holding for people with high blood pressure.", "prereqs": ["five_organ_movement_matrix", "squat_mechanics"], "verifier": "", "lab": "", "play": "", "color": {"background": "#e8f5e9", "border": "#2e7d32"}, "font": {"size": 13}}, {"id": "top_to_bottom_sequence", "label": "top to bottom sequence", "kind": "concept", "tier": 4, "defines": "Top-to-bottom order: chest → ribs → waist → legs → feet, warming joints from the upper body downward and, in TCM terms, drawing rising yang back to the root.", "prereqs": ["five_organ_movement_matrix", "thoracic_mobility"], "verifier": "", "lab": "", "play": "", "color": {"background": "#e8f5e9", "border": "#2e7d32"}, "font": {"size": 13}}, {"id": "five_organ_routine_design", "label": "five organ routine design", "kind": "application", "tier": 5, "defines": "Designing a personal 5–10 minute five-organ routine: choosing a sequencing logic for the goal and time of day, pairing each movement with the breath, ending with the sealing finish, and scaling each movement to one's body.", "prereqs": ["generating_cycle_sequence", "breath_first_sequence", "top_to_bottom_sequence", "sealing_finish", "safe_practice_and_modification"], "verifier": "", "lab": "", "play": "", "color": {"background": "#fce4ec", "border": "#c62828"}, "font": {"size": 13}}], "edges": [{"from": "dantian", "to": "sealing_finish"}, {"from": "diaphragmatic_breathing", "to": "chest_expansion_kuoxiong"}, {"from": "diaphragmatic_breathing", "to": "breath_first_sequence"}, {"from": "five_phase_correspondences", "to": "chest_expansion_kuoxiong"}, {"from": "five_phase_correspondences", "to": "deep_squat_shendun"}, {"from": "five_phase_correspondences", "to": "rib_fanning_shanlei"}, {"from": "five_phase_correspondences", "to": "torso_twist_niuzhuan"}, {"from": "five_phase_correspondences", "to": "body_lifting_tishen"}, {"from": "generating_cycle_xiangsheng", "to": "generating_cycle_sequence"}, {"from": "heart_kidney_interaction", "to": "deep_squat_shendun"}, {"from": "intra_abdominal_pressure", "to": "torso_twist_niuzhuan"}, {"from": "myofascial_lines", "to": "rib_fanning_shanlei"}, {"from": "myofascial_lines", "to": "torso_twist_niuzhuan"}, {"from": "myofascial_lines", "to": "body_lifting_tishen"}, {"from": "skeletal_muscle_pump", "to": "deep_squat_shendun"}, {"from": "skeletal_muscle_pump", "to": "body_lifting_tishen"}, {"from": "squat_mechanics", "to": "deep_squat_shendun"}, {"from": "squat_mechanics", "to": "safe_practice_and_modification"}, {"from": "thoracic_mobility", "to": "chest_expansion_kuoxiong"}, {"from": "thoracic_mobility", "to": "rib_fanning_shanlei"}, {"from": "thoracic_mobility", "to": "top_to_bottom_sequence"}, {"from": "twelve_primary_meridians", "to": "chest_expansion_kuoxiong"}, {"from": "twelve_primary_meridians", "to": "rib_fanning_shanlei"}, {"from": "twelve_primary_meridians", "to": "yongquan_point"}, {"from": "chest_expansion_kuoxiong", "to": "five_organ_movement_matrix"}, {"from": "deep_squat_shendun", "to": "five_organ_movement_matrix"}, {"from": "rib_fanning_shanlei", "to": "five_organ_movement_matrix"}, {"from": "torso_twist_niuzhuan", "to": "five_organ_movement_matrix"}, {"from": "yongquan_point", "to": "body_lifting_tishen"}, {"from": "body_lifting_tishen", "to": "five_organ_movement_matrix"}, {"from": "body_lifting_tishen", "to": "sealing_finish"}, {"from": "five_organ_movement_matrix", "to": "breath_first_sequence"}, {"from": "five_organ_movement_matrix", "to": "generating_cycle_sequence"}, {"from": "five_organ_movement_matrix", "to": "safe_practice_and_modification"}, {"from": "five_organ_movement_matrix", "to": "top_to_bottom_sequence"}, {"from": "sealing_finish", "to": "five_organ_routine_design"}, {"from": "breath_first_sequence", "to": "five_organ_routine_design"}, {"from": "generating_cycle_sequence", "to": "five_organ_routine_design"}, {"from": "safe_practice_and_modification", "to": "five_organ_routine_design"}, {"from": "top_to_bottom_sequence", "to": "five_organ_routine_design"}]};
+const DOMAIN_KEY = "graph";
+
+// ── index ──────────────────────────────────────────────────────────────────
+const nodeIndex = {};
+RAW.nodes.forEach(n => nodeIndex[n.id] = n);
+
+const prereqOf  = {};  // id → ids that are direct prerequisites OF id
+const dependsOn = {};  // id → ids that id feeds into
+RAW.nodes.forEach(n => { prereqOf[n.id] = []; dependsOn[n.id] = []; });
+RAW.edges.forEach(e => {
+  prereqOf[e.to].push(e.from);
+  dependsOn[e.from].push(e.to);
+});
+
+// ── BFS longest-path levels (fixes application nodes at wrong tier) ─────────
+const bfsLevels = (() => {
+  const levels = {};
+  const successors = {};
+  RAW.nodes.forEach(n => { levels[n.id] = -1; successors[n.id] = []; });
+  RAW.edges.forEach(e => successors[e.from].push(e.to));
+  const sources = RAW.nodes.filter(n => !RAW.edges.some(e => e.to === n.id));
+  const queue = sources.map(n => n.id);
+  queue.forEach(n => levels[n] = 0);
+  let i = 0;
+  while (i < queue.length) {
+    const cur = queue[i++];
+    for (const succ of successors[cur]) {
+      const nl = levels[cur] + 1;
+      if (levels[succ] < nl) { levels[succ] = nl; queue.push(succ); }
+    }
+  }
+  return levels;
+})();
+
+// ── graph algorithms ────────────────────────────────────────────────────────
+function getAncestors(targetId) {
+  const visited = new Set();
+  const queue = [targetId];
+  while (queue.length) {
+    const cur = queue.shift();
+    for (const p of prereqOf[cur])
+      if (!visited.has(p)) { visited.add(p); queue.push(p); }
+  }
+  return visited;
+}
+
+function topoSort(nodeSet) {
+  const inDeg = {};
+  nodeSet.forEach(n => inDeg[n] = 0);
+  nodeSet.forEach(n => { for (const p of prereqOf[n]) if (nodeSet.has(p)) inDeg[n]++; });
+  const reach = {};
+  nodeSet.forEach(n => {
+    let r = 0;
+    nodeSet.forEach(m => { if (m !== n && getAncestors(m).has(n)) r++; });
+    reach[n] = r;
+  });
+  const heap = [];
+  nodeSet.forEach(n => { if (inDeg[n] === 0) heap.push(n); });
+  heap.sort((a, b) => (reach[b] - reach[a]) || a.localeCompare(b));
+  const result = [];
+  while (heap.length) {
+    const node = heap.shift();
+    result.push(node);
+    for (const succ of dependsOn[node]) {
+      if (!nodeSet.has(succ)) continue;
+      if (--inDeg[succ] === 0) {
+        heap.push(succ);
+        heap.sort((a, b) => (reach[b] - reach[a]) || a.localeCompare(b));
+      }
+    }
+  }
+  return result;
+}
+
+// ── vis.js network ──────────────────────────────────────────────────────────
+const container = document.getElementById('graph-container');
+const visNodes = new vis.DataSet(RAW.nodes.map(n => ({
+  id: n.id,
+  label: n.label.replace(/ /g, '\n'),
+  level: bfsLevels[n.id] !== undefined ? bfsLevels[n.id] : n.tier,
+  color: n.color,
+  font: n.font,
+  shape: n.kind === 'concept' ? 'ellipse' : 'box',
+})));
+const visEdges = new vis.DataSet(RAW.edges.map((e, i) => ({
+  id: i, from: e.from, to: e.to,
+  arrows: 'to', color: {color: '#c8ccd4'}, width: 1,
+})));
+const network = new vis.Network(container, {nodes: visNodes, edges: visEdges}, {
+  layout: { hierarchical: {
+    enabled: true, direction: 'UD',
+    sortMethod: 'directed', levelSeparation: 85, nodeSpacing: 130,
+  } },
+  physics: { enabled: false },
+  interaction: { hover: true, tooltipDelay: 150 },
+  edges: { smooth: { type: 'cubicBezier', forceDirection: 'vertical' } },
+});
+
+// Compact layout: group by tier, sort alphabetically, left-align all nodes.
+network.once('afterDrawing', function() {
+  const pos = network.getPositions();
+  const spacing = 140;
+
+  // Group nodes by their BFS tier
+  const byTier = {};
+  RAW.nodes.forEach(n => {
+    const tier = bfsLevels[n.id] ?? n.tier ?? 0;
+    if (!byTier[tier]) byTier[tier] = [];
+    byTier[tier].push(n.id);
+  });
+
+  // Sort each tier alphabetically, assign X starting from 0
+  const tiers = Object.keys(byTier).map(Number).sort((a, b) => a - b);
+  const tierSep = 85;
+  tiers.forEach((tier, ti) => {
+    const ids = byTier[tier].sort();
+    const y = ti * tierSep;
+    ids.forEach((id, i) => {
+      network.moveNode(id, i * spacing, y);
+    });
+  });
+
+  network.fit({ animation: false });
+});
+
+function reCenterGraph() {
+  network.fit({ animation: true });
+}
+
+const C_PATH   = {background: '#fff9c4', border: '#f9a825'};
+const C_TARGET = {background: '#ffe082', border: '#e65100'};
+
+function resetColors() {
+  visNodes.update(RAW.nodes.map(n => ({id: n.id, color: n.color})));
+  visEdges.update(RAW.edges.map((e, i) => ({id: i, color: {color: '#c8ccd4'}, width: 1})));
+}
+
+// ── explanation panel ───────────────────────────────────────────────────────
+function renderExplanation(node) {
+  const kclass = node.kind;
+  const prereqChips = (node.prereqs || []).map(p =>
+    `<span class="prereq-chip" onclick="selectNode('${p}')">${p.replace(/_/g,' ')}</span>`
+  ).join('');
+  const metaItems = [
+    node.verifier ? `<span class="meta-item"><b>Verifier:</b> ${node.verifier}</span>` : '',
+    node.lab      ? `<span class="meta-item"><b>Lab:</b> ${node.lab}</span>` : '',
+  ].filter(Boolean).join('');
+  const playHtml = node.play
+    ? `<div class="section-label">Try it</div><div class="play-hint">${node.play}</div>`
+    : '';
+
+  const panel = document.getElementById('explain-panel');
+  panel.innerHTML = `
+    <div class="node-title">
+      <h2>${node.label}</h2>
+      <span class="badge ${kclass}">${kclass}</span>
+      <span class="tier-tag">BFS level ${bfsLevels[node.id] ?? node.tier}</span>
+    </div>
+    ${node.defines ? `<div class="defines">${node.defines}</div>` : ''}
+    ${prereqChips ? `<div class="section-label">Prerequisites</div><div class="prereq-list">${prereqChips}</div>` : ''}
+    ${metaItems ? `<div class="meta-row">${metaItems}</div>` : ''}
+    ${playHtml}
+  `;
+
+  // ── concept HTML detail ──
+  const conceptsBase = window.__cb_CONCEPTS_BASE;
+  const conceptUrls = window.__cb_CONCEPT_URLS || {};
+  const mappedUrl = conceptUrls[node.id];
+  if (mappedUrl || conceptsBase) {
+    const conceptUrl = mappedUrl || (conceptsBase + 'concept_' + encodeURIComponent(node.id) + '.html');
+    const detail = document.createElement('div');
+    detail.id = 'concept-detail';
+    detail.innerHTML = '<div class="section-label">Concept Detail</div><div class="concept-loading" style="color:#aaa;font-size:12px;padding:6px 0">Loading…</div>';
+    panel.appendChild(detail);
+    fetch(conceptUrl)
+      .then(r => {
+        if (!r.ok) throw new Error('not found');
+        return r.text();
+      })
+      .then(html => {
+        const slot = detail.querySelector('.concept-loading');
+        if (!slot) return;
+        // Vite dev server returns the SPA index.html (200) for missing static files.
+        // Verify we got a real concept page by checking for a known marker.
+        if (html.includes('spl-credit') || html.includes('Powered by')) {
+          const iframe = document.createElement('iframe');
+          iframe.id = 'concept-iframe';
+          iframe.src = conceptUrl;
+          slot.replaceWith(iframe);
+        } else {
+          slot.className = 'concept-not-found';
+          slot.textContent = 'Content not found — generate it first.';
+        }
+      })
+      .catch(() => {
+        const slot = detail.querySelector('.concept-loading');
+        if (slot) { slot.className = 'concept-not-found'; slot.textContent = 'Content not found — generate it first.'; }
+      });
+  }
+}
+
+// ── learning path sidebar ───────────────────────────────────────────────────
+function renderPathSidebar(orderedPath, targetId) {
+  const stepsEl = document.getElementById('path-steps');
+  const countEl = document.getElementById('path-count');
+  countEl.textContent = orderedPath.length
+    ? `${orderedPath.length} step${orderedPath.length !== 1 ? 's' : ''} to learn first`
+    : 'Root concept — no prerequisites';
+
+  const target = nodeIndex[targetId];
+  const kc = k => `${k.charAt(0).toUpperCase() + k.slice(1)}`;
+
+  stepsEl.innerHTML = orderedPath.map((n, i) => {
+    const nd = nodeIndex[n];
+    return `<div class="step-item" onclick="selectNode('${n}')">
+      <span class="step-num">${i + 1}.</span>
+      <div>
+        <div class="step-label">${nd.label}
+          <span class="step-kind ${nd.kind}-k">${nd.kind}</span>
+        </div>
+        ${nd.defines ? `<div class="step-def">${nd.defines}</div>` : ''}
+      </div>
+    </div>`;
+  }).join('') + `<div class="step-item target">
+    <span class="step-num">▶</span>
+    <div>
+      <div class="step-label">${target.label}
+        <span class="step-kind ${target.kind}-k">${target.kind}</span>
+      </div>
+      ${target.defines ? `<div class="step-def">${target.defines}</div>` : ''}
+    </div>
+  </div>`;
+}
+
+// ── notes (localStorage) ────────────────────────────────────────────────────
+let currentNodeId = null;
+
+function noteKey(nodeId) { return `concept_notes_${DOMAIN_KEY}_${nodeId}`; }
+
+function loadNote(nodeId) {
+  const parsed = _parseNote(localStorage.getItem(noteKey(nodeId)));
+  return parsed ? parsed.text : '';
+}
+
+function saveNote(nodeId, text) {
+  if (text.trim()) {
+    const data = JSON.stringify({ text, ts: new Date().toISOString() });
+    localStorage.setItem(noteKey(nodeId), data);
+  } else {
+    localStorage.removeItem(noteKey(nodeId));
+  }
+  renderNotesList();
+}
+
+function _parseNote(raw) {
+  if (!raw) return null;
+  try { const d = JSON.parse(raw); return { text: d.text || '', ts: d.ts || '' }; }
+  catch (_) { return { text: raw, ts: '' }; }
+}
+
+function _fmtTs(iso) {
+  if (!iso) return '';
+  const d = new Date(iso);
+  const yy = d.getFullYear();
+  const mm = String(d.getMonth()+1).padStart(2,'0');
+  const dd = String(d.getDate()).padStart(2,'0');
+  const hh = String(d.getHours()).padStart(2,'0');
+  const mi = String(d.getMinutes()).padStart(2,'0');
+  return `${yy}-${mm}-${dd} ${hh}:${mi}`;
+}
+
+function renderNotesList() {
+  const container = document.getElementById('notes-with-entries');
+  const entries = RAW.nodes
+    .filter(n => localStorage.getItem(noteKey(n.id)))
+    .map(n => {
+      const parsed = _parseNote(localStorage.getItem(noteKey(n.id)));
+      return {id: n.id, label: n.label, preview: (parsed?.text || '').slice(0, 60), ts: parsed?.ts || ''};
+    });
+  if (!entries.length) { container.innerHTML = ''; return; }
+  container.innerHTML = entries.map(e =>
+    `<div class="note-entry" onclick="selectNode('${e.id}')">
+      <div class="note-node">${e.label}<span class="note-ts">${_fmtTs(e.ts)}</span></div>
+      <div class="note-preview">${e.preview}</div>
+    </div>`
+  ).join('');
+}
+
+function switchNotes(nodeId) {
+  if (currentNodeId !== null) {
+    saveNote(currentNodeId, document.getElementById('notes-textarea').value);
+  }
+  currentNodeId = nodeId;
+  document.getElementById('notes-textarea').value = loadNote(nodeId);
+  document.getElementById('notes-node-label').textContent =
+    nodeIndex[nodeId]?.label || nodeId;
+}
+
+function clearNote() {
+  if (!currentNodeId) return;
+  document.getElementById('notes-textarea').value = '';
+  saveNote(currentNodeId, '');
+  const btn = document.getElementById('nb-clear-btn');
+  if (btn) { btn.textContent = 'Cleared!'; setTimeout(() => { btn.textContent = 'Clear'; }, 1000); }
+}
+
+function exportNotes() {
+  const notes = {};
+  RAW.nodes.forEach(n => {
+    const v = localStorage.getItem(noteKey(n.id));
+    if (v) notes[n.id] = v;
+  });
+  const blob = new Blob([JSON.stringify(notes, null, 2)], {type: 'application/json'});
+  const a = document.createElement('a');
+  a.href = URL.createObjectURL(blob);
+  a.download = `${DOMAIN_KEY}_notes.json`;
+  a.click();
+}
+
+document.getElementById('notes-textarea').addEventListener('input', () => {
+  if (currentNodeId) saveNote(currentNodeId, document.getElementById('notes-textarea').value);
+});
+
+// ── unified node select ─────────────────────────────────────────────────────
+function selectNode(nodeId) {
+  if (!nodeIndex[nodeId]) return;
+  network.selectNodes([nodeId]);
+  handleSelect(nodeId);
+}
+
+function handleSelect(targetId) {
+  const node = nodeIndex[targetId];
+
+  renderExplanation(node);
+  switchNotes(targetId);
+
+  const ancestors = getAncestors(targetId);
+  const pathSet = new Set([...ancestors]);
+  const orderedPath = topoSort(pathSet);
+
+  renderPathSidebar(orderedPath, targetId);
+
+  resetColors();
+  visNodes.update(orderedPath.map(n => ({id: n, color: C_PATH})));
+  visNodes.update([{id: targetId, color: C_TARGET}]);
+  visEdges.update(RAW.edges.map((e, i) => {
+    const inPath = pathSet.has(e.from) && (pathSet.has(e.to) || e.to === targetId);
+    return {id: i, color: {color: inPath ? '#f9a825' : '#c8ccd4'}, width: inPath ? 2 : 1};
+  }));
+}
+
+network.on('click', params => {
+  if (params.nodes.length) handleSelect(params.nodes[0]);
+});
+
+// initialise notes list on load
+renderNotesList();
+
+// When viewed directly (not in an iframe), inject a back link next to the
+// "Learning Path" heading so it doesn't look like a title-bar element.
+if (window.parent === window) {
+  var h1 = document.querySelector('#path-header h1');
+  if (h1) {
+    var backLink = document.createElement('a');
+    backLink.href = '../../';
+    backLink.textContent = '← App';
+    backLink.style.cssText = [
+      'font-size:10px','color:#2563eb','font-family:system-ui,sans-serif',
+      'text-decoration:none','font-weight:400','letter-spacing:normal',
+      'text-transform:none','white-space:nowrap','flex-shrink:0'
+    ].join(';');
+    var row = document.createElement('div');
+    row.style.cssText = 'display:flex;align-items:baseline;gap:8px;';
+    h1.parentNode.insertBefore(row, h1);
+    row.appendChild(h1);
+    row.appendChild(backLink);
+  }
+}
+</script>
+</body>
+</html>

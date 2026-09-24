@@ -1,0 +1,23 @@
+domain: meta_health_ch03
+title: "Autonomic Recovery, Sleep, and Circadian Rhythms"
+description: "Systemic recovery, autonomic nervous system balance, and biological rhythms."
+version: "1.0"
+
+nodes:
+  - id: circadian-clock
+    title: "Circadian Rhythms and Light Exposure"
+    type: primitive
+    prerequisites: []
+    summary: "Molecular biological clocks, hormonal synchronization (melatonin/cortisol), and daylight stimulus."
+
+  - id: sleep-architecture
+    title: "Sleep Cycles, Deep Sleep, and REM Repair"
+    type: primitive
+    prerequisites: ["circadian-clock"]
+    summary: "The structural phases of sleep governing physical repair, cognitive consolidation, and metabolic resets."
+
+  - id: autonomic-balance-hrv
+    title: "Autonomic Regulation: Sympathetic vs. Parasympathetic Tone"
+    type: composite
+    prerequisites: ["sleep-architecture"]
+    summary: "Heart rate variability (HRV), nervous system recovery, and managing chronic vs. acute stress loads."

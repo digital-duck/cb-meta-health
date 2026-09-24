@@ -1,41 +1,452 @@
-{
-  "project": "cb-meta-health",
-  "version": "1.0.0",
-  "dimensions": {
-    "models": ["claude-3-7-sonnet", "gemma4"],
-    "levels": ["introductory", "intermediate", "advanced"],
-    "languages": ["en", "zh"]
+[
+  {
+    "id": "meta_health_ch01",
+    "name": "元健康 Meta-Health Ch1: TCM Foundations — Yin-Yang, Qi-Blood, and the Five Phases (中医基础)",
+    "description": "The core vocabulary of Traditional Chinese Medicine used throughout the book: yin-yang, qi, blood and fluids, the Five Phases (五行) with their generating and controlling cycles, the zang-fu organ systems, meridians, and the triple burner.",
+    "capstone": "five_phase_body_map",
+    "nodes": 26,
+    "edges": 47,
+    "primitives": 8,
+    "concepts": 17,
+    "applications": 1,
+    "tags": [
+      "health",
+      "tcm"
+    ],
+    "has_navigator": true,
+    "has_book": true,
+    "books": [
+      {
+        "target": "five_phase_body_map",
+        "file": "output/core.en/sonnet/html/book_five_phase_body_map.html",
+        "model": "sonnet",
+        "language": "en"
+      }
+    ],
+    "generated_concepts": [
+      {
+        "name": "blood_xue",
+        "label": "Blood Xue",
+        "file": "output/core.en/sonnet/html/concept_blood_xue.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "body_fluids_jinye",
+        "label": "Body Fluids Jinye",
+        "file": "output/core.en/sonnet/html/concept_body_fluids_jinye.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "controlling_cycle_xiangke",
+        "label": "Controlling Cycle Xiangke",
+        "file": "output/core.en/sonnet/html/concept_controlling_cycle_xiangke.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "dantian",
+        "label": "Dantian",
+        "file": "output/core.en/sonnet/html/concept_dantian.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "essence_jing",
+        "label": "Essence Jing",
+        "file": "output/core.en/sonnet/html/concept_essence_jing.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "five_phase_body_map",
+        "label": "Five Phase Body Map",
+        "file": "output/core.en/sonnet/html/concept_five_phase_body_map.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "five_phase_correspondences",
+        "label": "Five Phase Correspondences",
+        "file": "output/core.en/sonnet/html/concept_five_phase_correspondences.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "five_phases_wuxing",
+        "label": "Five Phases Wuxing",
+        "file": "output/core.en/sonnet/html/concept_five_phases_wuxing.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "five_zang_organs",
+        "label": "Five Zang Organs",
+        "file": "output/core.en/sonnet/html/concept_five_zang_organs.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "generating_cycle_xiangsheng",
+        "label": "Generating Cycle Xiangsheng",
+        "file": "output/core.en/sonnet/html/concept_generating_cycle_xiangsheng.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "harmony_as_health",
+        "label": "Harmony As Health",
+        "file": "output/core.en/sonnet/html/concept_harmony_as_health.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "heart_kidney_interaction",
+        "label": "Heart Kidney Interaction",
+        "file": "output/core.en/sonnet/html/concept_heart_kidney_interaction.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "liver_spleen_relationship",
+        "label": "Liver Spleen Relationship",
+        "file": "output/core.en/sonnet/html/concept_liver_spleen_relationship.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "meridian_jingluo",
+        "label": "Meridian Jingluo",
+        "file": "output/core.en/sonnet/html/concept_meridian_jingluo.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "overacting_and_insulting",
+        "label": "Overacting And Insulting",
+        "file": "output/core.en/sonnet/html/concept_overacting_and_insulting.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "prenatal_postnatal_qi",
+        "label": "Prenatal Postnatal Qi",
+        "file": "output/core.en/sonnet/html/concept_prenatal_postnatal_qi.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "qi",
+        "label": "Qi",
+        "file": "output/core.en/sonnet/html/concept_qi.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "qi_blood_relationship",
+        "label": "Qi Blood Relationship",
+        "file": "output/core.en/sonnet/html/concept_qi_blood_relationship.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "qi_stagnation_blood_stasis",
+        "label": "Qi Stagnation Blood Stasis",
+        "file": "output/core.en/sonnet/html/concept_qi_stagnation_blood_stasis.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "six_fu_organs",
+        "label": "Six Fu Organs",
+        "file": "output/core.en/sonnet/html/concept_six_fu_organs.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "spirit_shen",
+        "label": "Spirit Shen",
+        "file": "output/core.en/sonnet/html/concept_spirit_shen.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "three_treasures_jing_qi_shen",
+        "label": "Three Treasures Jing Qi Shen",
+        "file": "output/core.en/sonnet/html/concept_three_treasures_jing_qi_shen.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "triple_burner_sanjiao",
+        "label": "Triple Burner Sanjiao",
+        "file": "output/core.en/sonnet/html/concept_triple_burner_sanjiao.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "twelve_primary_meridians",
+        "label": "Twelve Primary Meridians",
+        "file": "output/core.en/sonnet/html/concept_twelve_primary_meridians.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "yin_yang",
+        "label": "Yin Yang",
+        "file": "output/core.en/sonnet/html/concept_yin_yang.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "zang_fu_pairing",
+        "label": "Zang Fu Pairing",
+        "file": "output/core.en/sonnet/html/concept_zang_fu_pairing.html",
+        "model": "sonnet",
+        "language": "en"
+      }
+    ],
+    "default_level": "core"
   },
-  "domains": [
-    {
-      "id": "meta_health_ch01",
-      "title": "Foundations of Bio-Mechanics and Joint Primitives",
-      "path": "public/domains/meta_health_ch01"
-    },
-    {
-      "id": "meta_health_ch02",
-      "title": "Energetics, Metabolism, and Nutrition Primitives",
-      "path": "public/domains/meta_health_ch02"
-    },
-    {
-      "id": "meta_health_ch03",
-      "title": "Autonomic Recovery, Sleep, and Circadian Rhythms",
-      "path": "public/domains/meta_health_ch03"
-    },
-    {
-      "id": "meta_health_ch04",
-      "title": "Compound Movement Integration and Structural Load",
-      "path": "public/domains/meta_health_ch04"
-    },
-    {
-      "id": "meta_health_ch05",
-      "title": "Nutrient Partitioning, Substrate Adaptation, and Timing",
-      "path": "public/domains/meta_health_ch05"
-    },
-    {
-      "id": "meta_health_ch06",
-      "title": "Systemic Equilibrium, TCM Harmony, and Long-Term Adaptation",
-      "path": "public/domains/meta_health_ch06"
-    }
-  ]
-}
+  {
+    "id": "meta_health_ch02",
+    "name": "元健康 Meta-Health Ch2: The Physiology Lens — Breath, Circulation, Fascia, and Core (生理视角)",
+    "description": "The modern physiology needed to understand gentle movement practices: breathing mechanics, cardiac output and regional blood flow, muscle and respiratory pumps, the autonomic nervous system, fascia and core pressure, and how to translate TCM claims into physiological terms.",
+    "capstone": "dual_lens_translation",
+    "nodes": 26,
+    "edges": 42,
+    "primitives": 7,
+    "concepts": 18,
+    "applications": 1,
+    "tags": [
+      "health",
+      "physiology"
+    ],
+    "has_navigator": true,
+    "has_book": false,
+    "books": [],
+    "generated_concepts": [],
+    "default_level": "core"
+  },
+  {
+    "id": "meta_health_ch03",
+    "name": "元健康 Meta-Health Ch3: The Five-Organ Exercises (五脏操)",
+    "description": "Five simple movements, each mapped to one zang organ and one of the Five Phases: chest expansion (Lung/Metal), rib fanning (Liver/Wood), body lifting (Kidney/Water), torso twist (Spleen/Earth) and deep squat (Heart/Fire). Covers their dual TCM and physiological rationale, three sequencing logics, and safe practice.",
+    "capstone": "five_organ_routine_design",
+    "nodes": 24,
+    "edges": 40,
+    "primitives": 11,
+    "concepts": 12,
+    "applications": 1,
+    "tags": [
+      "health",
+      "movement"
+    ],
+    "has_navigator": true,
+    "has_book": false,
+    "books": [],
+    "generated_concepts": [],
+    "default_level": "core"
+  },
+  {
+    "id": "meta_health_ch04",
+    "name": "元健康 Meta-Health Ch4: Baduanjin — The Eight Brocades (八段锦)",
+    "description": "The eight forms of Baduanjin qigong, how each maps onto the five-organ exercises and the Five Phases, the three regulations of body, breath and mind, closing the practice, dose, and what clinical research does and does not show.",
+    "capstone": "daily_baduanjin_practice_plan",
+    "nodes": 27,
+    "edges": 44,
+    "primitives": 10,
+    "concepts": 16,
+    "applications": 1,
+    "tags": [
+      "health",
+      "movement"
+    ],
+    "has_navigator": true,
+    "has_book": false,
+    "books": [],
+    "generated_concepts": [],
+    "default_level": "core"
+  },
+  {
+    "id": "meta_health_ch05",
+    "name": "元健康 Meta-Health Ch5: Eating as Internal Exercise (饮食即内脏运动)",
+    "description": "The book's central reframe: every meal is a workout for the digestive organs and circulation. Postprandial blood-flow redistribution, motility and liver metabolism, read side by side with the TCM Spleen–Stomach engine, then turned into a warm-up, pacing and recovery discipline for eating.",
+    "capstone": "mindful_meal_protocol",
+    "nodes": 25,
+    "edges": 42,
+    "primitives": 7,
+    "concepts": 17,
+    "applications": 1,
+    "tags": [
+      "health",
+      "nutrition"
+    ],
+    "has_navigator": true,
+    "has_book": true,
+    "books": [
+      {
+        "target": "postprandial_glucose_response",
+        "file": "output/core.en/sonnet/html/book_postprandial_glucose_response.html",
+        "model": "sonnet",
+        "language": "en"
+      }
+    ],
+    "generated_concepts": [
+      {
+        "name": "gastrointestinal_tract",
+        "label": "Gastrointestinal Tract",
+        "file": "output/core.en/sonnet/html/concept_gastrointestinal_tract.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "hepatic_first_pass_processing",
+        "label": "Hepatic First Pass Processing",
+        "file": "output/core.en/sonnet/html/concept_hepatic_first_pass_processing.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "liver_metabolic_role",
+        "label": "Liver Metabolic Role",
+        "file": "output/core.en/sonnet/html/concept_liver_metabolic_role.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "peristalsis_and_motility",
+        "label": "Peristalsis And Motility",
+        "file": "output/core.en/sonnet/html/concept_peristalsis_and_motility.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "postprandial_glucose_response",
+        "label": "Postprandial Glucose Response",
+        "file": "output/core.en/sonnet/html/concept_postprandial_glucose_response.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "regional_blood_flow_distribution",
+        "label": "Regional Blood Flow Distribution",
+        "file": "output/core.en/sonnet/html/concept_regional_blood_flow_distribution.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "smooth_muscle",
+        "label": "Smooth Muscle",
+        "file": "output/core.en/sonnet/html/concept_smooth_muscle.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "splanchnic_circulation",
+        "label": "Splanchnic Circulation",
+        "file": "output/core.en/sonnet/html/concept_splanchnic_circulation.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "sympathetic_parasympathetic_balance",
+        "label": "Sympathetic Parasympathetic Balance",
+        "file": "output/core.en/sonnet/html/concept_sympathetic_parasympathetic_balance.html",
+        "model": "sonnet",
+        "language": "en"
+      }
+    ],
+    "default_level": "core",
+    "pdfs": [
+      {
+        "target": "liver_metabolic_role",
+        "level": "core",
+        "language": "en",
+        "model": "sonnet",
+        "file": "output/core.en/sonnet/pdf/concept_liver_metabolic_role.pdf"
+      }
+    ]
+  },
+  {
+    "id": "meta_health_ch06",
+    "name": "元健康 Meta-Health Ch6: What We Eat — Food Quality, Four Natures, and Five Flavors (四气五味)",
+    "description": "Food quality through both lenses: energy, macronutrients, fiber, the microbiome and ultra-processed food; TCM's four natures, five flavors and five colors, dampness, food-as-medicine, and eating for one's constitution.",
+    "capstone": "five_phase_meal_design",
+    "nodes": 25,
+    "edges": 37,
+    "primitives": 9,
+    "concepts": 15,
+    "applications": 1,
+    "tags": [
+      "health",
+      "nutrition"
+    ],
+    "has_navigator": true,
+    "has_book": false,
+    "books": [],
+    "generated_concepts": [],
+    "default_level": "core"
+  },
+  {
+    "id": "meta_health_ch07",
+    "name": "元健康 Meta-Health Ch7: Stress, Emotion, and the Flow of Qi and Blood (情志与气血)",
+    "description": "How stress and emotion disrupt movement and digestion: the stress response, allostatic load and the gut–brain axis, read alongside TCM's seven emotions, the Liver's free flow and 'Wood overacting on Earth' — and how breath, movement and attention restore flow.",
+    "capstone": "stress_resilience_routine",
+    "nodes": 24,
+    "edges": 31,
+    "primitives": 9,
+    "concepts": 14,
+    "applications": 1,
+    "tags": [
+      "health",
+      "mind"
+    ],
+    "has_navigator": true,
+    "has_book": false,
+    "books": [],
+    "generated_concepts": [],
+    "default_level": "core"
+  },
+  {
+    "id": "meta_health_ch08",
+    "name": "元健康 Meta-Health Ch8: Rhythms — Sleep, the Organ Clock, and the Seasons (天人相应)",
+    "description": "Timing as a health variable: the circadian clock, light, cortisol and melatonin, sleep and metabolic repair, chrononutrition and exercise timing, read alongside TCM's day-night yin-yang, the meridian organ clock (子午流注) and seasonal regimens (四时养生).",
+    "capstone": "personal_daily_rhythm_schedule",
+    "nodes": 18,
+    "edges": 30,
+    "primitives": 4,
+    "concepts": 13,
+    "applications": 1,
+    "tags": [
+      "health",
+      "rhythms"
+    ],
+    "has_navigator": true,
+    "has_book": false,
+    "books": [],
+    "generated_concepts": [],
+    "default_level": "core"
+  },
+  {
+    "id": "meta_health_ch09",
+    "name": "元健康 Meta-Health Ch9: The Unified Internal Conditioning Framework (内调一元论)",
+    "description": "The synthesis: movement, eating, mind and rhythm as one continuous practice of conditioning the internal organs and circulation. One Five-Phase integration matrix, training principles applied to organs, personalization, self-observation, an honest evidence-and-safety lens, and the daily Meta-Health protocol.",
+    "capstone": "daily_meta_health_protocol",
+    "nodes": 19,
+    "edges": 26,
+    "primitives": 10,
+    "concepts": 8,
+    "applications": 1,
+    "tags": [
+      "health",
+      "integration"
+    ],
+    "has_navigator": true,
+    "has_book": false,
+    "books": [],
+    "generated_concepts": [],
+    "default_level": "core"
+  }
+]
