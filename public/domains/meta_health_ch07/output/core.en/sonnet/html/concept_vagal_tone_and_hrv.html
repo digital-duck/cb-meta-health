@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Vagal Tone And Hrv | Meta Health Ch07</title>
+<title>Vagal Tone and Heart-Rate Variability | Meta Health Ch07</title>
 <script>
 MathJax = {
   loader: { load: ['[tex]/mathtools'] },
@@ -38,15 +38,11 @@ section:first-of-type{border-top:none;padding-top:0}
 <body>
 <div class="page">
   <main>
-    <h2 id="vagal-tone-and-hrv">Vagal Tone And Hrv</h2>
-<p>You already know that slow, deep breathing calms you down — that's the vagus nerve, part of your parasympathetic "rest and digest" system, putting the brakes on your heart rate. Now let's look at how scientists actually measure how strong that braking system is.</p>
-<p>Your heart doesn't tick like a metronome. Even at rest, the time between beats stretches and shrinks slightly — faster on an inhale, slower on an exhale. This beat-to-beat fluctuation is called <strong>heart-rate variability (HRV)</strong>. If you recorded the time gaps between heartbeats as a sequence $t_1, t_2, t_3, \dots$, HRV is essentially a measure of how much those gaps differ from one another, not their average.</p>
-<p>Here's the key pattern: <strong>higher HRV generally means stronger vagal tone</strong> — a more responsive, flexible nervous system. A perfectly steady, unchanging heart rate isn't actually a sign of health; it can mean the vagus nerve isn't doing much regulating at all. One common way to quantify this is the root-mean-square of successive differences:</p>
-$$
-\text{RMSSD} = \sqrt{\frac{1}{N-1}\sum_{i=1}^{N-1} (t_{i+1}-t_i)^2}
-$$
-<p>A larger RMSSD signals more beat-to-beat variation, hence higher estimated vagal tone. This is why slow breathing (roughly 5–6 breaths per minute) is used in HRV training: it exaggerates the natural rise and fall of heart rate with each breath, giving the vagus nerve more room to act — and a higher measured HRV.</p>
-<p><strong>Practice problem:</strong> Suppose four consecutive beat-to-beat intervals (in milliseconds) are 800, 820, 795, 830. Calculate the RMSSD using the formula above.</p>
+    <h2 id="vagal-tone-and-heart-rate-variability">Vagal Tone and Heart-Rate Variability</h2>
+<p>You already know your heart doesn't beat like a metronome — the gaps between beats stretch and shrink slightly with each breath, each stress, each calm moment. That flexibility has a name: heart-rate variability, or HRV. It's measured by looking at the time between consecutive heartbeats (called the R-R interval, since it's measured peak-to-peak on an EKG) and calculating how much those intervals vary.</p>
+<p>The vagus nerve — the main highway of the parasympathetic "rest and digest" system — is a big reason HRV changes. When vagal tone is high, the vagus nerve puts more "brake" pressure on the heart, and the R-R intervals swing around more from beat to beat, especially syncing with breathing: intervals shorten slightly on inhale, lengthen on exhale. This breathing-linked swing is called respiratory sinus arrhythmia, and it's a well-established physiological signal, not a disorder despite the name.</p>
+<p>Here's the pattern researchers rely on: higher HRV generally reflects stronger vagal tone and a nervous system that can flexibly shift between alert and calm states. Lower HRV often shows up with chronic stress, poor sleep, or overtraining, since the sympathetic ("fight or flight") side is staying more dominant. HRV is measured in milliseconds (a common metric is RMSSD, the root mean square of successive R-R interval differences), and typical resting values vary widely by age and fitness — there's no single "healthy number," only trends over time in the same person.</p>
+<p><strong>Practice problem:</strong> A runner records R-R intervals during rest: 820 ms, 860 ms, 810 ms, 850 ms. Find the difference between each consecutive pair, square each difference, average the squares, then take the square root — that's a simplified RMSSD estimate. What does a larger result suggest about this runner's vagal tone compared to a smaller one?</p>
   </main>
   <footer class="spl-credit"><span class="spl-credit__meta">元健康 Meta-Health Ch7: Stress, Emotion, and the Flow of Qi and Blood (情志与气血) (Level: Core &middot; Language: EN &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
 </div>

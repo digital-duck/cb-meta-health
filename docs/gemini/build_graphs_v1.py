@@ -10,6 +10,9 @@ class Folded(str):
 
 yaml.add_representer(Folded, lambda d, v: d.represent_scalar("tag:yaml.org,2002:str", v, style=">"))
 
+# Per-language display labels for every concept (see concept_labels.yaml).
+LABELS = yaml.safe_load((Path(__file__).parent / "concept_labels.yaml").read_text(encoding="utf-8"))
+
 ROOT = Path("/home/gongai/projects/digital-duck/cb-meta-health/public/domains")
 
 # Each chapter: meta + P (primitives: name -> defines), C/A (name -> (defines, prereqs))
@@ -378,16 +381,18 @@ def build(ch):
     assert not dangling, f"{ch['id']}: not on capstone path {dangling}"
     assert ch["capstone"] in ch["A"]
 
+    missing = [n for n in prereq if n not in LABELS]
+    assert not missing, f"{ch['id']}: no labels in concept_labels.yaml for {missing}"
     order = lambda d: sorted(d, key=lambda n: (tier[n], n))
     out = {"domain": ch["id"], "primitives": {}, "concepts": {}, "applications": {}}
     for n in order(ch["P"]):
-        out["primitives"][n] = {"defines": Folded(ch["P"][n]), "tier": 0}
+        out["primitives"][n] = {"defines": Folded(ch["P"][n]), "labels": LABELS[n], "tier": 0}
     for n in order(ch["C"]):
         d, pre = ch["C"][n]
-        out["concepts"][n] = {"defines": Folded(d), "composed_of": pre, "tier": tier[n]}
+        out["concepts"][n] = {"defines": Folded(d), "labels": LABELS[n], "composed_of": pre, "tier": tier[n]}
     for n in order(ch["A"]):
         d, pre = ch["A"][n]
-        out["applications"][n] = {"defines": Folded(d), "needs": pre, "tier": tier[n]}
+        out["applications"][n] = {"defines": Folded(d), "labels": LABELS[n], "needs": pre, "tier": tier[n]}
     n_edges = sum(len(p) for p in prereq.values())
     return out, len(prereq), n_edges
 

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Venous Return | Meta Health Ch02</title>
+<script>
+MathJax = {
+  loader: { load: ['[tex]/mathtools'] },
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']],
+         packages: { '[+]': ['mathtools'] } },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+footer.spl-credit span{display:block}
+footer.spl-credit .spl-credit__meta{margin-bottom:4px}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="venous-return">Venous Return</h2>
+<p>回顾一下心脏的工作方式：右心房不断接收静脉血,再送去肺部换气。但你有没有想过——血液是怎么"爬"回心脏的?静脉里的血压很低,几乎没有心脏泵血时那种冲力,尤其是从腿部、脚部回流的血,必须对抗重力向上走。这个回流过程叫<strong>静脉回流(venous return)</strong>,它的效率直接决定了心脏"每次能泵出多少血"。</p>
+<p>静脉之所以能完成这项艰巨任务,靠的是两套机制协同工作。第一是<strong>骨骼肌泵</strong>:当你走路或运动时,腿部肌肉收缩会挤压邻近的静脉,把血液向心脏方向推送。第二是<strong>静脉瓣膜</strong>——静脉内壁上一系列单向阀门,只允许血液朝心脏方向流动,阻止血液因重力倒流。可以把整个系统想象成一条装有止回阀的输水管:每次肌肉挤压管壁,水只能往一个方向前进,不会退回去。</p>
+<p>这里有一个简单但重要的生理学规律,叫作 <strong>Frank-Starling 机制</strong> 的前提条件:</p>
+$$\text{心输出量} \propto \text{静脉回流量}$$
+<p>也就是说,回流到心脏的血越多,心室在舒张期被拉伸得越充分,收缩时泵出的血也越多。这解释了为什么长时间站立不动(肌肉泵不工作)会让人头晕——回心血量骤降,心输出量随之下降,大脑供血不足。</p>
+<p><strong>练习题</strong>：一名宇航员在失重环境中长期停留后返回地球,医生发现他站立时容易头晕。请结合"骨骼肌泵"和"重力对静脉回流的影响",尝试解释可能的原因(提示：思考肌肉是否得到足够锻炼,以及血液分布的变化)。</p>
+  </main>
+  <footer class="spl-credit"><span class="spl-credit__meta">元健康 Meta-Health Ch2: The Physiology Lens — Breath, Circulation, Fascia, and Core (生理视角) (Level: Core &middot; Language: ZH &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
+</div>
+</body>
+</html>

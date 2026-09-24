@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Hrv Self Monitoring | Meta Health Ch07</title>
+<title>Monitoring Stress with HRV | Meta Health Ch07</title>
 <script>
 MathJax = {
   loader: { load: ['[tex]/mathtools'] },
@@ -38,15 +38,12 @@ section:first-of-type{border-top:none;padding-top:0}
 <body>
 <div class="page">
   <main>
-    <h2 id="hrv-self-monitoring">Hrv Self Monitoring</h2>
-<p>You already know the basic idea: a rested body shows more variation between heartbeats, a stressed or fatigued one shows less. That's a good starting intuition — now let's look at how to actually <em>use</em> it as a feedback tool, not just a number to glance at.</p>
-<p>A single HRV reading is noisy. It swings with hydration, caffeine, alcohol, even room temperature, so comparing one night's number to another's tells you very little. What matters is your <strong>personal baseline</strong>: the average of your HRV over the past 7–14 days, call it $\bar{H}$, and how today's reading $H_t$ compares to it. A useful signal is the deviation</p>
-$$
-\Delta_t = H_t - \bar{H}
-$$
-<p>A large negative $\Delta_t$, especially paired with elevated resting heart rate and poor sleep or mood ratings that same day, suggests your body is still carrying load from recent training, stress, or illness — a cue to ease off. A $\Delta_t$ near zero or positive, alongside good sleep, suggests you're recovered and can handle more.</p>
-<p>The key discipline is triangulation: never read HRV alone. Resting heart rate, sleep duration/quality, and subjective mood are three independent checks — if two or three agree with what HRV is telling you, trust the signal; if they disagree, wait another day before acting.</p>
-<p><strong>Practice problem:</strong> Your 10-day average resting HRV is $\bar{H} = 62\,\text{ms}$. This morning your wearable shows $H_t = 51\,\text{ms}$, your resting heart rate is 8 bpm above normal, and you slept only 5 hours. Compute $\Delta_t$, and decide: should you push a hard workout today, or take a recovery day? Justify your answer using all three signals, not just $\Delta_t$.</p>
+    <h2 id="monitoring-stress-with-hrv">Monitoring Stress with HRV</h2>
+<p>You already know your resting heart rate — how fast your heart beats when you're calm and still. Heart rate variability, or HRV, looks at something subtler: the tiny differences in time between one heartbeat and the next. A healthy, well-recovered nervous system actually varies these gaps slightly beat to beat; a stressed or fatigued one tends to beat more rigidly, like a metronome.</p>
+<p>Wearables (smartwatches, rings, chest straps) estimate HRV overnight, usually reporting it in milliseconds. A higher HRV score generally suggests your body handled recovery well; a lower one can suggest accumulated physical or mental load — poor sleep, illness, intense training, or emotional stress. But a single night's number is noisy and easily thrown off by alcohol, travel, or a late meal, so the real signal comes from your personal trend over days and weeks, not any one reading.</p>
+<p>The useful habit is treating HRV as one input alongside others your device already tracks: resting heart rate, sleep duration and quality, and your own mood or energy rating. If resting heart rate trends up, HRV trends down, sleep is short, and you feel drained — that's convergent evidence your body wants easier training and more rest, not a diagnosis of anything specific. No single metric should be trusted alone.</p>
+<p>It's worth being honest about the science here: HRV is a legitimate, measurable physiological signal, but consumer wearable estimates are less precise than clinical ECG-based measurement, and interpreting personal trends is still an evolving research area.</p>
+<p><strong>Practice problem:</strong> Your watch reports these nightly HRV values (ms) for five nights: 52, 55, 49, 38, 41. Find the average of the first three nights and the average of the last two nights. What would you guess is happening around night 4, and what would you check to explain it?</p>
   </main>
   <footer class="spl-credit"><span class="spl-credit__meta">元健康 Meta-Health Ch7: Stress, Emotion, and the Flow of Qi and Blood (情志与气血) (Level: Core &middot; Language: EN &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
 </div>

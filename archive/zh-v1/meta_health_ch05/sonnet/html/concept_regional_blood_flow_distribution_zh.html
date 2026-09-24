@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Regional Blood Flow Distribution | Meta Health Ch05</title>
+<script>
+MathJax = {
+  loader: { load: ['[tex]/mathtools'] },
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']],
+         packages: { '[+]': ['mathtools'] } },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+footer.spl-credit span{display:block}
+footer.spl-credit .spl-credit__meta{margin-bottom:4px}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="regional-blood-flow-distribution">Regional Blood Flow Distribution</h2>
+<p>想象一下：刚跑完步,你满脸通红,而饭后你却容易犯困——这两种感觉背后,是同一套系统在决定血液该去哪里。心脏泵出的血液总量在短时间内变化不大,但<strong>身体会重新分配这些血液</strong>,决定谁"多拿一点",谁"少拿一点"。这套调度系统就是自主神经系统(autonomic nervous system)。</p>
+<p>血管壁上有平滑肌,自主神经系统通过交感神经和副交感神经控制这些肌肉的收缩(缩血管)与舒张(扩血管)。运动时,交感神经让皮肤和内脏的血管收缩,把血液"挤"向骨骼肌;消化时,情况反过来,血液更多流向肠胃,支持消化吸收。大脑是个例外——无论身体在做什么,流向大脑的血流几乎保持恒定,因为神经元对缺血极其敏感。</p>
+<p>用一个简单的规则来记住这套逻辑:如果把心输出量记作 $Q$,分配给某个器官的血流量记作 $Q_i$,那么各器官血流之和近似等于总心输出量:</p>
+$$\sum_i Q_i \approx Q$$
+<p>某个器官能分到多少,取决于该处血管的阻力 $R_i$——阻力越小(血管越舒张),分到的血流越多,类似电路中电流走阻力小的路径。自主神经系统的作用,正是实时调节这些 $R_i$ 的大小。</p>
+<p><strong>练习</strong>:小明吃完午饭后立刻去打篮球,结果肚子很快就不舒服了。请用"血流重新分配"的概念,解释为什么运动和消化几乎不能同时高效进行,身体在这种冲突下更可能优先保障哪个器官的供血?</p>
+  </main>
+  <footer class="spl-credit"><span class="spl-credit__meta">元健康 Meta-Health Ch5: Eating as Internal Exercise (饮食即内脏运动) (Level: Core &middot; Language: ZH &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
+</div>
+</body>
+</html>

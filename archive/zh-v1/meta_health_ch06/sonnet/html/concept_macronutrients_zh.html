@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Macronutrients | Meta Health Ch06</title>
+<script>
+MathJax = {
+  loader: { load: ['[tex]/mathtools'] },
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']],
+         packages: { '[+]': ['mathtools'] } },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+footer.spl-credit span{display:block}
+footer.spl-credit .spl-credit__meta{margin-bottom:4px}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="宏营养素">宏营养素</h2>
+<p>回顾一下之前的直觉:身体运转需要"燃料"和"建筑材料",这些主要来自三类<strong>宏营养素</strong>——蛋白质、碳水化合物和脂肪。它们之所以被称为"宏"营养素,是因为身体每天需要摄入的量是以克(g)计算的,远远超过维生素、矿物质这类"微"营养素(以毫克 mg 甚至微克 $\mu g$ 计)。</p>
+<p>从结构上看,三类宏营养素承担的角色并不相同:</p>
+<li><strong>碳水化合物</strong>:主要提供快速可用的能量,分解后进入血液成为葡萄糖,细胞可直接利用。</li>
+<li><strong>脂肪</strong>:能量密度最高,同时也是细胞膜、激素合成的重要原料。</li>
+<li><strong>蛋白质</strong>:由氨基酸组成,主要用于构建和修复肌肉、组织、酶等结构,只有在能量极度短缺时才被用作燃料。</li>
+<p>一个简单的能量换算规则可以帮助我们量化这三者:</p>
+$$
+1\text{ g 碳水化合物} \approx 4\text{ kcal}, \quad 1\text{ g 蛋白质} \approx 4\text{ kcal}, \quad 1\text{ g 脂肪} \approx 9\text{ kcal}
+$$
+<p>利用这个规则,我们可以计算一份食物的总能量:若某食物含碳水化合物 $C$ 克、蛋白质 $P$ 克、脂肪 $F$ 克,则总能量(单位 kcal)为</p>
+$$
+E = 4C + 4P + 9F
+$$
+<p><strong>练习</strong>:一份餐食含有 30 g 蛋白质、50 g 碳水化合物和 10 g 脂肪。请用上面的公式计算这份餐食提供的总能量(单位:kcal)。</p>
+  </main>
+  <footer class="spl-credit"><span class="spl-credit__meta">元健康 Meta-Health Ch6: What We Eat — Food Quality, Four Natures, and Five Flavors (四气五味) (Level: Core &middot; Language: ZH &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
+</div>
+</body>
+</html>

@@ -4,42 +4,66 @@ primitives:
     defines: >-
       The autonomic nervous system: the involuntary control system for heart rate, blood vessels, digestion
       and breathing, with sympathetic and parasympathetic branches.
+    labels:
+      en: The Autonomic Nervous System
+      zh: 自主神经系统
     tier: 0
   cardiac_output:
     defines: >-
       Cardiac output: the volume of blood the heart pumps per minute (heart rate × stroke volume), about
       5 L/min at rest in adults.
+    labels:
+      en: Cardiac Output
+      zh: 心输出量
     tier: 0
   fascia:
     defines: >-
       Fascia: the continuous connective-tissue web that wraps and links muscles, organs and bones throughout
       the body.
+    labels:
+      en: Fascia
+      zh: 筋膜
     tier: 0
   joint_range_of_motion:
     defines: >-
       Joint range of motion: how far a joint can move in each direction (flexion, extension, rotation,
       lateral bending), limited by bones, ligaments and muscles.
+    labels:
+      en: Joint Range of Motion
+      zh: 关节活动度
     tier: 0
   lymphatic_system:
     defines: >-
       The lymphatic system: a low-pressure network of vessels that returns tissue fluid to the blood and
       carries immune cells; it has no central pump.
+    labels:
+      en: The Lymphatic System
+      zh: 淋巴系统
     tier: 0
   respiration_mechanics:
     defines: >-
       Breathing mechanics: the diaphragm and intercostal muscles change rib-cage and thoracic volume to
       move air in and out of the lungs.
+    labels:
+      en: Breathing Mechanics
+      zh: 呼吸力学
     tier: 0
   skeletal_muscle_contraction:
     defines: >-
       Skeletal muscle contraction: voluntary muscles shorten and produce force when activated by motor
       nerves, then relax.
+    labels:
+      en: Skeletal Muscle Contraction
+      zh: 骨骼肌收缩
     tier: 0
 concepts:
   diaphragmatic_breathing:
     defines: >-
       Diaphragmatic ('belly') breathing: slow breathing led by the diaphragm, which expands the lower
       ribs and abdomen and is linked to parasympathetic activation.
+    labels:
+      en: Diaphragmatic Breathing
+      zh: 腹式呼吸
     composed_of:
     - respiration_mechanics
     - autonomic_nervous_system
@@ -48,6 +72,9 @@ concepts:
     defines: >-
       Myofascial lines: chains of muscle and fascia running the length of the body (e.g. the superficial
       back line, lateral line and spiral line), so a stretch in one region loads tissue far away.
+    labels:
+      en: Myofascial Lines
+      zh: 肌筋膜链
     composed_of:
     - fascia
     - skeletal_muscle_contraction
@@ -57,6 +84,9 @@ concepts:
       Regional blood-flow distribution: the autonomic nervous system redistributes cardiac output among
       muscles, gut, skin and brain by constricting or dilating vessels, according to what the body is
       doing.
+    labels:
+      en: Regional Blood-Flow Distribution
+      zh: 血流的区域分配
     composed_of:
     - cardiac_output
     - autonomic_nervous_system
@@ -65,6 +95,9 @@ concepts:
     defines: >-
       Sympathetic–parasympathetic balance: 'fight-or-flight' (sympathetic) versus 'rest-and-digest' (parasympathetic)
       activity, and the body's ability to shift between them.
+    labels:
+      en: Sympathetic–Parasympathetic Balance
+      zh: 交感与副交感神经平衡
     composed_of:
     - autonomic_nervous_system
     tier: 1
@@ -72,6 +105,9 @@ concepts:
     defines: >-
       Thoracic mobility: the ability of the rib cage and upper-back spine to extend, rotate and side-bend,
       which affects posture and how deeply one can breathe.
+    labels:
+      en: Thoracic Mobility
+      zh: 胸椎与胸廓灵活性
     composed_of:
     - joint_range_of_motion
     - respiration_mechanics
@@ -80,6 +116,9 @@ concepts:
     defines: >-
       Tidal volume and gas exchange: how much air each breath moves, and how breathing depth and rate
       affect oxygen and CO2 exchange in the alveoli.
+    labels:
+      en: Tidal Volume and Gas Exchange
+      zh: 潮气量与气体交换
     composed_of:
     - respiration_mechanics
     tier: 1
@@ -87,6 +126,9 @@ concepts:
     defines: >-
       Venous return: blood flowing back to the heart through low-pressure veins with one-way valves, which
       sets how much the heart can pump out.
+    labels:
+      en: Venous Return
+      zh: 静脉回流
     composed_of:
     - cardiac_output
     tier: 1
@@ -94,6 +136,9 @@ concepts:
     defines: >-
       Intra-abdominal pressure: the pressure in the abdominal cavity created by the diaphragm, abdominal
       wall and pelvic floor working together; it stabilizes the spine and changes with breathing and twisting.
+    labels:
+      en: Intra-Abdominal Pressure
+      zh: 腹内压
     composed_of:
     - diaphragmatic_breathing
     - skeletal_muscle_contraction
@@ -102,6 +147,9 @@ concepts:
     defines: >-
       The posterior chain: calves, hamstrings, glutes and spinal erectors working as one line, extending
       the body upward and stabilizing the lower back.
+    labels:
+      en: The Posterior Chain
+      zh: 后侧链
     composed_of:
     - myofascial_lines
     - skeletal_muscle_contraction
@@ -110,6 +158,9 @@ concepts:
     defines: >-
       The respiratory pump: pressure changes from diaphragmatic breathing help draw venous blood and lymph
       from the abdomen into the chest.
+    labels:
+      en: The Respiratory Pump
+      zh: 呼吸泵
     composed_of:
     - diaphragmatic_breathing
     - venous_return
@@ -118,6 +169,9 @@ concepts:
     defines: >-
       The skeletal-muscle pump: contracting leg muscles, especially the calf ('second heart'), squeeze
       the veins and push blood back toward the heart.
+    labels:
+      en: The Skeletal-Muscle Pump
+      zh: 骨骼肌泵
     composed_of:
     - skeletal_muscle_contraction
     - venous_return
@@ -126,6 +180,9 @@ concepts:
     defines: >-
       Spinal rotation and lateral flexion: twisting and side-bending the trunk, which mobilizes the thoracic
       spine and ribs and loads the spiral and lateral lines.
+    labels:
+      en: Spinal Rotation and Side-Bending
+      zh: 脊柱旋转与侧屈
     composed_of:
     - thoracic_mobility
     - myofascial_lines
@@ -134,6 +191,9 @@ concepts:
     defines: >-
       Vagal tone and heart-rate variability (HRV): beat-to-beat variation in heart rate, an indirect index
       of parasympathetic (vagus nerve) activity that slow breathing tends to raise.
+    labels:
+      en: Vagal Tone and Heart-Rate Variability
+      zh: 迷走神经张力与心率变异性
     composed_of:
     - sympathetic_parasympathetic_balance
     - diaphragmatic_breathing
@@ -142,6 +202,9 @@ concepts:
     defines: >-
       Core stability: controlling the trunk under movement by coordinating the deep abdominal, back and
       pelvic-floor muscles with intra-abdominal pressure.
+    labels:
+      en: Core Stability
+      zh: 核心稳定
     composed_of:
     - intra_abdominal_pressure
     - joint_range_of_motion
@@ -150,6 +213,9 @@ concepts:
     defines: >-
       Interoception: awareness of internal bodily signals (heartbeat, breath, fullness, tension), which
       slow mindful movement and eating practice and sharpen.
+    labels:
+      en: Interoception
+      zh: 内感受
     composed_of:
     - vagal_tone_and_hrv
     tier: 3
@@ -157,6 +223,9 @@ concepts:
     defines: >-
       Lymph flow: because lymph has no heart, it relies on muscle contraction, breathing and movement,
       which is why inactivity lets fluid pool in the tissues.
+    labels:
+      en: Lymph Flow
+      zh: 淋巴流动
     composed_of:
     - lymphatic_system
     - skeletal_muscle_pump
@@ -166,6 +235,9 @@ concepts:
     defines: >-
       Tension–relaxation cycling: alternating brief contraction with full release, which pumps blood and
       lymph more effectively than holding a static position.
+    labels:
+      en: Tension–Relaxation Cycling
+      zh: 松紧交替
     composed_of:
     - skeletal_muscle_pump
     - regional_blood_flow_distribution
@@ -174,6 +246,9 @@ concepts:
     defines: >-
       Squat mechanics: hip, knee and ankle bending together with a stable trunk; large leg muscles do
       the work, so squatting raises heart rate and venous return.
+    labels:
+      en: Squat Mechanics
+      zh: 深蹲力学
     composed_of:
     - joint_range_of_motion
     - core_stability
@@ -186,6 +261,9 @@ applications:
       Translating TCM statements into physiology and back — e.g. 'moving Lung qi' ↔ thoracic expansion
       and gas exchange, 'Kidney root' ↔ calf pump and posterior chain — while noting where the correspondence
       is mechanistic, where it is plausible, and where it is metaphorical.
+    labels:
+      en: 'Dual-Lens Translation: TCM and Physiology'
+      zh: 双重视角：中医与生理学的互译
     needs:
     - tidal_volume_and_gas_exchange
     - lymph_flow

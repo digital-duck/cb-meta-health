@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Tidal Volume And Gas Exchange | Meta Health Ch02</title>
+<title>Tidal Volume and Gas Exchange | Meta Health Ch02</title>
 <script>
 MathJax = {
   loader: { load: ['[tex]/mathtools'] },
@@ -38,19 +38,14 @@ section:first-of-type{border-top:none;padding-top:0}
 <body>
 <div class="page">
   <main>
-    <h2 id="tidal-volume-and-gas-exchange">Tidal Volume And Gas Exchange</h2>
-<p>You already know that breathing brings oxygen in and pushes carbon dioxide out. Now let's look at how much air actually moves — and why that number matters more than how <em>often</em> you breathe.</p>
-<p>The volume of air you move in a single normal breath (not a deep gasp, not a tiny sip) is called <strong>tidal volume</strong>, written $V_T$. A resting adult moves about $V_T \approx 500\ \text{mL}$ per breath. Multiply that by breaths per minute, the respiratory rate $f$, and you get <strong>minute ventilation</strong>:</p>
-$$
-\dot{V}_E = V_T \times f
-$$
-<p>If $V_T = 500\ \text{mL}$ and $f = 12$ breaths/min, then $\dot{V}_E = 6{,}000\ \text{mL/min} = 6\ \text{L/min}$ — that's the total air flowing in and out every minute.</p>
-<p>But here's the catch: not all of that air reaches the alveoli, where gas exchange with the blood actually happens. Part of each breath fills the trachea and bronchi — the "dead space" ($V_D$, roughly 150 mL) — and never touches an exchange surface. So the air that <em>actually</em> participates in gas exchange per minute is:</p>
-$$
-\dot{V}_A = (V_T - V_D) \times f
-$$
-<p>This means two breathing patterns with the same $\dot{V}_E$ aren't equally effective. Slow, deep breaths waste a smaller fraction of each breath on dead space than fast, shallow ones — which is why shallow panting exchanges gas poorly even if the total air moved looks similar.</p>
-<p><strong>Practice problem:</strong> Suppose $V_T = 400\ \text{mL}$, $V_D = 150\ \text{mL}$, and $f = 20$ breaths/min. Calculate $\dot{V}_E$ and $\dot{V}_A$. Which one determines how much oxygen actually reaches the blood?</p>
+    <h2 id="tidal-volume-and-gas-exchange">Tidal Volume and Gas Exchange</h2>
+<p>You already know that breathing brings in oxygen and removes carbon dioxide. Now let's look at what actually determines how much gas exchange happens with each breath.</p>
+<p>The amount of air moved in a single normal breath is called tidal volume, usually written $V_T$. At rest, a typical adult's tidal volume is around 500 milliliters — roughly the volume of a small water bottle. But not all of that air reaches the alveoli, where gas exchange with the blood actually occurs. Some of it — about 150 mL — stays in the airways (trachea, bronchi) that don't participate in exchange. This is called dead space. So the air that truly reaches working alveoli each breath is smaller than tidal volume itself.</p>
+<p>This leads to a useful idea: what matters for oxygen and carbon dioxide exchange isn't just how deep you breathe, but how much fresh air per minute actually reaches the alveoli. This is called alveolar ventilation, and it depends on both tidal volume and breathing rate (breaths per minute):</p>
+$$V_A = (V_T - V_D) \times f$$
+<p>where $V_A$ is alveolar ventilation, $V_T$ is tidal volume, $V_D$ is dead space volume, and $f$ is breathing rate.</p>
+<p>Here's the key pattern: taking fewer, deeper breaths often moves more air into the alveoli per minute than taking many shallow breaths — because dead space is a fixed cost paid on every breath, deep or shallow.</p>
+<p><strong>Practice problem:</strong> Suppose $V_T = 500$ mL, $V_D = 150$ mL, and $f = 12$ breaths/min. Calculate the alveolar ventilation in mL/min. Then predict: if breathing became shallow and rapid ($V_T = 300$ mL, $f = 20$), would alveolar ventilation increase or decrease, even though total air moved per minute is the same in both cases?</p>
   </main>
   <footer class="spl-credit"><span class="spl-credit__meta">元健康 Meta-Health Ch2: The Physiology Lens — Breath, Circulation, Fascia, and Core (生理视角) (Level: Core &middot; Language: EN &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
 </div>

@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Generating Cycle Xiangsheng | Meta Health Ch01</title>
+<title>五行相生 | Meta Health Ch01</title>
 <script>
 MathJax = {
   loader: { load: ['[tex]/mathtools'] },
@@ -38,16 +38,12 @@ section:first-of-type{border-top:none;padding-top:0}
 <body>
 <div class="page">
   <main>
-    <h2 id="generating-cycle-xiangsheng">Generating Cycle Xiangsheng</h2>
-<p>回忆一下：五行中的每一个"行"，都不是孤立存在的——木、火、土、金、水彼此之间存在着固定的传递关系，其中最重要的一种就是"相生"（生成、滋养）关系。</p>
-<p>相生的顺序是：木 → 火 → 土 → 金 → 水 → 木，首尾相连，形成一个闭合的循环。可以把它想象成一个"母亲喂养孩子"的链条：木燃烧生出火（木生火），火燃尽化为灰烬变成土（火生土），土中蕴藏矿物凝结成金（土生金），金属遇冷会在表面凝结出水珠（金生水），水滋润土壤使树木生长（水生木）。每一个阶段都是前一个阶段的"产物"，同时又成为下一个阶段的"养料"。</p>
-<p>用数学的眼光看，这其实是一个<strong>有向循环图（directed cyclic graph）</strong>，五个节点、五条有向边，可以写成一个函数：</p>
-$$
-f(\text{木}) = \text{火}, \quad f(\text{火}) = \text{土}, \quad f(\text{土}) = \text{金}, \quad f(\text{金}) = \text{水}, \quad f(\text{水}) = \text{木}
-$$
-<p>这个 $f$ 是一个<strong>置换（permutation）</strong>，且是一个长度为 5 的单一循环（5-cycle），记作 $(\text{木} \; \text{火} \; \text{土} \; \text{金} \; \text{水})$。因为它是一个完整的循环，所以连续应用五次 $f$ 会回到起点：$f^5(x) = x$，对任意一个"行" $x$ 都成立。</p>
-<p><strong>简单规律</strong>：要知道"谁生谁"，只需记住顺时针排列 木→火→土→金→水→木，任何一个字的下一个字就是它所生的对象。</p>
-<p><strong>练习</strong>：如果从"金"开始，连续应用 $f$ 三次（即计算 $f^3(\text{金})$），最终会得到五行中的哪一个？请写出每一步的推导过程。</p>
+    <h2 id="五行相生">五行相生</h2>
+<p>回忆一下五行的排列：木、火、土、金、水。相生循环讲的是这五个阶段之间一种"滋养"的关系——木生火，火生土，土生金,金生水,水生木,最后又回到木,形成一个闭合的环。古人用"母子关系"来打比方：每一个阶段像母亲一样,把能量和支持传递给下一个阶段这个"孩子"。</p>
+<p>这个循环的结构其实很好记。你可以把它想象成一场接力赛：木（树木、生长）把能量交给火（燃烧、温暖）；火燃烧后化为灰烬,滋养了土（土地、承载）；土中蕴藏矿物,孕育出金（金属、收敛）；金遇冷会在表面凝结水汽,象征金生水（水、流动）；水浇灌树木,让木得以生长,完成一圈。每一步都是"前一个阶段的存在,让后一个阶段得以产生或变得更强"。</p>
+<p>需要说明的是：这是中医理论体系中一种<strong>传统的、哲学性的描述方式</strong>,用来说明身体各系统（对应五脏：肝、心、脾、肺、肾）之间如何相互支持。它不是现代科学中可以用数字测量或用公式验证的关系,而是一种整体观——目前没有严格的科学证据证实"生"是一种可测量的因果作用。我们应该把它当作一种传统智慧的语言,而不是生理学定律。</p>
+<p>简单规律（用文字表达,而不是公式）：在相生循环中,每个阶段都会滋养紧跟其后的下一个阶段,顺序固定为木→火→土→金→水→木,不可跳跃或逆转。</p>
+<p><strong>练习题</strong>：请按顺序写出五行相生循环中,"土"的"母亲"是谁,"土"的"孩子"又是谁?（提示：找到土在木→火→土→金→水→木这个环中的前一个和后一个阶段。）</p>
   </main>
   <footer class="spl-credit"><span class="spl-credit__meta">元健康 Meta-Health Ch1: TCM Foundations — Yin-Yang, Qi-Blood, and the Five Phases (中医基础) (Level: Core &middot; Language: ZH &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
 </div>

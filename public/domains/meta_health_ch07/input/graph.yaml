@@ -3,44 +3,74 @@ primitives:
   diaphragmatic_breathing:
     defines: >-
       Diaphragmatic breathing (from Chapter 2).
+    labels:
+      en: Diaphragmatic Breathing
+      zh: 腹式呼吸
     tier: 0
   five_phase_correspondences:
     defines: >-
       The Five-Phase correspondence table, including the five emotions (from Chapter 1).
+    labels:
+      en: Five-Phase Correspondences
+      zh: 五行归类
     tier: 0
   hpa_axis:
     defines: >-
       The HPA axis (hypothalamus–pituitary–adrenal): the hormonal stress system that releases cortisol.
+    labels:
+      en: The HPA Axis
+      zh: HPA 轴（下丘脑-垂体-肾上腺轴）
     tier: 0
   liver_opening_movements:
     defines: >-
       Liver-opening movements: rib fanning (扇肋) and Baduanjin form 7 (攒拳怒目) (from Chapters 3–4).
+    labels:
+      en: Liver-Opening Movements
+      zh: 疏肝动作
     tier: 0
   liver_spleen_relationship:
     defines: >-
       The Liver–Spleen relationship (木克土) (from Chapter 1).
+    labels:
+      en: The Liver–Spleen Relationship
+      zh: 肝脾关系
     tier: 0
   postprandial_hyperemia:
     defines: >-
       Post-meal redistribution of blood to the gut (from Chapter 5).
+    labels:
+      en: Postprandial Hyperemia
+      zh: 餐后充血
     tier: 0
   qi_stagnation_blood_stasis:
     defines: >-
       Qi stagnation and blood stasis (气滞血瘀) (from Chapter 1).
+    labels:
+      en: Qi Stagnation and Blood Stasis (气滞血瘀)
+      zh: 气滞血瘀
     tier: 0
   sympathetic_parasympathetic_balance:
     defines: >-
       Sympathetic versus parasympathetic balance (from Chapter 2).
+    labels:
+      en: Sympathetic–Parasympathetic Balance
+      zh: 交感与副交感神经平衡
     tier: 0
   vagal_tone_and_hrv:
     defines: >-
       Vagal tone and heart-rate variability (from Chapter 2).
+    labels:
+      en: Vagal Tone and Heart-Rate Variability
+      zh: 迷走神经张力与心率变异性
     tier: 0
 concepts:
   acute_vs_chronic_stress:
     defines: >-
       Acute versus chronic stress: a short stress response mobilizes energy and resolves, whereas a stress
       response that stays switched on keeps cortisol and sympathetic tone elevated.
+    labels:
+      en: Acute vs. Chronic Stress
+      zh: 急性压力与慢性压力
     composed_of:
     - hpa_axis
     - sympathetic_parasympathetic_balance
@@ -49,6 +79,9 @@ concepts:
     defines: >-
       Breath as the bridge: breathing is the one autonomic function under voluntary control, so slow breathing
       (around 6 breaths per minute) is the quickest way to shift from sympathetic to parasympathetic tone.
+    labels:
+      en: Breath as the Bridge
+      zh: 呼吸是桥梁
     composed_of:
     - diaphragmatic_breathing
     - vagal_tone_and_hrv
@@ -57,6 +90,9 @@ concepts:
     defines: >-
       The seven emotions (七情 — joy, anger, worry, pensiveness, grief, fear, fright): normal emotions that
       TCM holds become causes of illness when intense or prolonged.
+    labels:
+      en: The Seven Emotions (Qiqing, 七情)
+      zh: 七情
     composed_of:
     - five_phase_correspondences
     tier: 1
@@ -64,6 +100,9 @@ concepts:
     defines: >-
       Allostatic load: the cumulative 'wear and tear' of repeated or chronic stress on blood pressure,
       metabolism, sleep and immunity.
+    labels:
+      en: Allostatic Load
+      zh: 稳态负荷
     composed_of:
     - acute_vs_chronic_stress
     tier: 2
@@ -71,6 +110,9 @@ concepts:
     defines: >-
       The five emotions and five organs: anger harms the Liver, excess joy the Heart, overthinking the
       Spleen, grief the Lung, fear the Kidney (怒伤肝, 喜伤心, 思伤脾, 悲伤肺, 恐伤肾).
+    labels:
+      en: The Five Emotions and the Five Organs
+      zh: 五志与五脏
     composed_of:
     - seven_emotions_qiqing
     - five_phase_correspondences
@@ -79,6 +121,9 @@ concepts:
     defines: >-
       Regulating the mind (调心): single-pointed attention on breath or the lower dantian (意守丹田), the mental
       half of qigong and mindful eating.
+    labels:
+      en: Regulating the Mind (Tiaoxin, 调心)
+      zh: 调心
     composed_of:
     - breath_as_bridge
     tier: 2
@@ -86,6 +131,9 @@ concepts:
     defines: >-
       Stress and digestion: fight-or-flight activity constricts gut blood vessels, slows motility and
       cuts digestive secretions — so eating while stressed means the internal workout starts under-supplied.
+    labels:
+      en: Stress and Digestion
+      zh: 压力与消化
     composed_of:
     - acute_vs_chronic_stress
     - postprandial_hyperemia
@@ -94,6 +142,9 @@ concepts:
     defines: >-
       The gut–brain axis: two-way communication between gut and brain through the vagus nerve, hormones,
       immune signals and the microbiome.
+    labels:
+      en: The Gut–Brain Axis
+      zh: 肠脑轴
     composed_of:
     - stress_and_digestion
     - vagal_tone_and_hrv
@@ -102,6 +153,9 @@ concepts:
     defines: >-
       Monitoring stress with HRV: using resting heart rate and HRV from a wearable, together with sleep
       and mood, as simple feedback on accumulated load and recovery.
+    labels:
+      en: Monitoring Stress with HRV
+      zh: 用心率变异性监测压力
     composed_of:
     - vagal_tone_and_hrv
     - allostatic_load
@@ -110,6 +164,9 @@ concepts:
     defines: >-
       The Liver governs free flow (肝主疏泄): the Liver keeps qi moving smoothly, which in turn regulates
       emotion, digestion and the menstrual cycle.
+    labels:
+      en: The Liver Governs Free Flow (肝主疏泄)
+      zh: 肝主疏泄
     composed_of:
     - five_emotions_five_organs
     - qi_stagnation_blood_stasis
@@ -118,6 +175,9 @@ concepts:
     defines: >-
       Liver qi stagnation (肝气郁结): frustration or suppressed emotion blocks the Liver's free flow, felt
       as sighing, tight flanks, irritability and a lump in the throat.
+    labels:
+      en: Liver Qi Stagnation (肝气郁结)
+      zh: 肝气郁结
     composed_of:
     - liver_free_flow_shuxie
     tier: 4
@@ -125,6 +185,9 @@ concepts:
     defines: >-
       Releasing Liver qi through movement: flank stretching, rib fanning and the glaring-fist form give
       stagnant qi an outlet — physically they loosen the trunk and discharge tension.
+    labels:
+      en: Releasing Liver Qi Through Movement
+      zh: 以动作疏解肝气
     composed_of:
     - liver_qi_stagnation
     - liver_opening_movements
@@ -133,6 +196,9 @@ concepts:
     defines: >-
       Wood overacting on Earth (肝木克脾土, 肝脾不调): stuck Liver qi attacks the Spleen and Stomach, causing bloating,
       poor appetite or stress-related bowel upset — TCM's counterpart of stress shutting down digestion.
+    labels:
+      en: Wood Overacting on Earth (肝木克脾土)
+      zh: 肝木克脾土
     composed_of:
     - liver_qi_stagnation
     - liver_spleen_relationship
@@ -142,6 +208,9 @@ concepts:
     defines: >-
       Emotional eating: eating to soothe stress or boredom, overriding satiety — 'overthinking harms the
       Spleen' in TCM, reward-driven eating in modern terms.
+    labels:
+      en: Emotional Eating
+      zh: 情绪化进食
     composed_of:
     - gut_brain_axis
     - wood_overacting_on_earth
@@ -152,6 +221,9 @@ applications:
       A daily stress-resilience routine: three slow breaths before each meal, a liver-releasing movement
       when tension builds, a calm evening wind-down, and HRV or journal feedback — protecting digestion
       from 'Wood overacting on Earth'.
+    labels:
+      en: A Daily Stress-Resilience Routine
+      zh: 每日抗压练习
     needs:
     - wood_overacting_on_earth
     - emotional_eating

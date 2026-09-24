@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Smooth Muscle | Meta Health Ch05</title>
+<script>
+MathJax = {
+  loader: { load: ['[tex]/mathtools'] },
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']],
+         packages: { '[+]': ['mathtools'] } },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+footer.spl-credit span{display:block}
+footer.spl-credit .spl-credit__meta{margin-bottom:4px}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="smooth-muscle-平滑肌">Smooth Muscle（平滑肌）</h2>
+<p>你已经知道，平滑肌是分布在消化道和血管壁里的一种"不听指挥"的肌肉——它不像你举手投臂那样受意识控制,而是自己有节奏地收缩,把食物推向前进,或调节血管的粗细。这一节我们要更深入地看看,这种"自动运作"背后到底是什么结构在支撑。</p>
+<p>平滑肌细胞呈长梭形,彼此之间靠特殊的连接（缝隙连接,gap junction）紧密相连,电信号可以像水波一样在细胞之间直接传递,不需要每个细胞单独接到"命令"。正因如此,一大片平滑肌可以像一个整体一样同步收缩,这也是肠道能产生连续推进波（蠕动）的关键原因。</p>
+<p>平滑肌的收缩由体内的起搏细胞驱动,它们会自发地产生周期性的电活动,这种节律可以近似地用一个简单的周期模型描述：</p>
+$$T = \frac{1}{f}$$
+<p>其中 $f$ 是收缩发生的频率（每分钟或每秒次数）,$T$ 是每次收缩之间的时间间隔。肠道的慢波频率大约是每分钟 3 次左右,这个数字并不是固定不变的——神经和激素信号会像"调节旋钮"一样让 $f$ 变大或变小,从而加快或减慢消化节奏。</p>
+<p><strong>规律小结</strong>：平滑肌的自主收缩 = 细胞间电信号同步传递 + 起搏节律控制频率。</p>
+<p><strong>练习题</strong>：如果某段肠道的慢波周期是 $T = 20$ 秒,那么它每分钟大约产生多少次收缩波？如果因为进食后神经信号增强,频率提高到原来的 1.5 倍,新的周期 $T'$ 大约是多少秒？</p>
+  </main>
+  <footer class="spl-credit"><span class="spl-credit__meta">元健康 Meta-Health Ch5: Eating as Internal Exercise (饮食即内脏运动) (Level: Core &middot; Language: ZH &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
+</div>
+</body>
+</html>

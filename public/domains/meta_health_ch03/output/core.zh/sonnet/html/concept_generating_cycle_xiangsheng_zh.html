@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Generating Cycle Xiangsheng | Meta Health Ch03</title>
+<title>五行相生 | Meta Health Ch03</title>
 <script>
 MathJax = {
   loader: { load: ['[tex]/mathtools'] },
@@ -38,16 +38,12 @@ section:first-of-type{border-top:none;padding-top:0}
 <body>
 <div class="page">
   <main>
-    <h2 id="generating-cycle-xiangsheng">Generating Cycle Xiangsheng</h2>
-<p>回忆一下：五行中的每一个"行"，都不是孤立存在的——木、火、土、金、水彼此之间存在着固定的传递关系，其中最重要的一种就是"相生"（生成、滋养）关系。</p>
-<p>相生的顺序是：木 → 火 → 土 → 金 → 水 → 木，首尾相连，形成一个闭合的循环。可以把它想象成一个"母亲喂养孩子"的链条：木燃烧生出火（木生火），火燃尽化为灰烬变成土（火生土），土中蕴藏矿物凝结成金（土生金），金属遇冷会在表面凝结出水珠（金生水），水滋润土壤使树木生长（水生木）。每一个阶段都是前一个阶段的"产物"，同时又成为下一个阶段的"养料"。</p>
-<p>用数学的眼光看，这其实是一个<strong>有向循环图（directed cyclic graph）</strong>，五个节点、五条有向边，可以写成一个函数：</p>
-$$
-f(\text{木}) = \text{火}, \quad f(\text{火}) = \text{土}, \quad f(\text{土}) = \text{金}, \quad f(\text{金}) = \text{水}, \quad f(\text{水}) = \text{木}
-$$
-<p>这个 $f$ 是一个<strong>置换（permutation）</strong>，且是一个长度为 5 的单一循环（5-cycle），记作 $(\text{木} \; \text{火} \; \text{土} \; \text{金} \; \text{水})$。因为它是一个完整的循环，所以连续应用五次 $f$ 会回到起点：$f^5(x) = x$，对任意一个"行" $x$ 都成立。</p>
-<p><strong>简单规律</strong>：要知道"谁生谁"，只需记住顺时针排列 木→火→土→金→水→木，任何一个字的下一个字就是它所生的对象。</p>
-<p><strong>练习</strong>：如果从"金"开始，连续应用 $f$ 三次（即计算 $f^3(\text{金})$），最终会得到五行中的哪一个？请写出每一步的推导过程。</p>
+    <h2 id="五行相生">五行相生</h2>
+<p>回忆一下第一章的内容:五行——木、火、土、金、水——不是孤立存在的,它们按固定顺序互相"滋养""促进"。这个顺序叫相生(生成循环):木生火,火生土,土生金,金生水,水生木,如此循环不息,没有起点也没有终点。</p>
+<p>从结构上看,相生描述的是一种"母子"关系:前一行是"母",后一行是"子",母养育子。比如木生火——想象木柴燃烧生出火焰;火生土——火烧尽后化为灰烬,归于土;土生金——金属矿藏蕴藏在土地之中;金生水——金属遇冷会凝结出水珠(古人观察到金属表面结露的现象);水生木——水滋润土壤,让树木得以生长。每一步都是前者"生出"或"滋养"后者,五步之后又回到起点,形成一个闭合的环。</p>
+<p>在中医里,五行对应人体的五脏:木对应肝,火对应心,土对应脾,金对应肺,水对应肾。相生关系被用来说明脏腑之间应当如何互相扶持——比如"肝生心""脾生肺"这类说法,描述的是一种传统的功能关系,不是解剖学或生理学上被现代科学证实的因果机制。这是传统理论对身体协调方式的一种解释框架,应当被当作传统观念来理解,而不是既定的科学事实。</p>
+<p>简单规律:顺着"木→火→土→金→水→木"这个固定顺序念下去,每一个都是前一个的"孩子"。</p>
+<p>练习:请按相生顺序把五行连成一个环,并说出金的"母"是谁、金的"子"是谁。</p>
   </main>
   <footer class="spl-credit"><span class="spl-credit__meta">元健康 Meta-Health Ch3: The Five-Organ Exercises (五脏操) (Level: Core &middot; Language: ZH &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
 </div>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Baduanjin Overview | Meta Health Ch04</title>
+<script>
+MathJax = {
+  loader: { load: ['[tex]/mathtools'] },
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']],
+         packages: { '[+]': ['mathtools'] } },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+footer.spl-credit span{display:block}
+footer.spl-credit .spl-credit__meta{margin-bottom:4px}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="baduanjin-overview">Baduanjin Overview</h2>
+<p>八段锦，字面意思是"八段锦缎"，是一套已经流传了将近一千年的站立式气功。它最早的文字记录出现在宋代，经过历代传承与调整，2003年国家体育总局把它标准化为"健身气功"系列项目之一，成为一套动作固定、可以量化练习的运动体系。完整练一遍，大约需要10到12分钟。</p>
+<p>从结构上看，"八段"指的是八个独立的动作单元，每个单元针对身体的不同部位或功能——比如有的伸展手臂和上背部，有的转动腰部，有的调整呼吸节奏。这不是随意编排的体操，而是一个<strong>有序序列</strong>：动作按照从上到下、从外到内的逻辑排列，前一段常常为后一段的发力或拉伸做铺垫。如果我们把整套动作看成一个序列 $S = (m_1, m_2, \dots, m_8)$，其中每个 $m_i$ 代表第 $i$ 段动作，那么练习八段锦就是按固定顺序执行这个序列，每个 $m_i$ 通常包含若干次重复，记作 $m_i = \{r_{i,1}, r_{i,2}, \dots\}$。</p>
+<p>简单的规律是：<strong>顺序不能打乱</strong>。这不像做八道随机选择的拉伸题，而更像执行一段结构化的程序——每一步都依赖于前一步建立的身体状态（比如站姿、呼吸节奏），跳过或调换顺序会打断这种连贯性。</p>
+<p><strong>练习小任务</strong>：假设你完整练习一遍八段锦需要11分钟，其中每一段平均用时相同。请计算：</p>
+<li>每段动作平均用时多少分钟？</li>
+<li>如果你连续练习3遍（中间不休息），总共需要多少分钟？</li>
+  </main>
+  <footer class="spl-credit"><span class="spl-credit__meta">元健康 Meta-Health Ch4: Baduanjin — The Eight Brocades (八段锦) (Level: Core &middot; Language: ZH &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
+</div>
+</body>
+</html>

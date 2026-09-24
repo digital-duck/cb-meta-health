@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mastication | Meta Health Ch05</title>
+<script>
+MathJax = {
+  loader: { load: ['[tex]/mathtools'] },
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']],
+         packages: { '[+]': ['mathtools'] } },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+footer.spl-credit span{display:block}
+footer.spl-credit .spl-credit__meta{margin-bottom:4px}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="咀嚼">咀嚼</h2>
+<p>你早就知道：吃饭要嚼,不然会噎着。这是最基础的直觉。但咀嚼(咀嚼,mastication)其实是一套精密的机械加工过程,把食物从"整块"变成"消化系统能处理的原料",背后有明确的结构和规律。</p>
+<p>咀嚼做三件事,层层递进。第一,<strong>机械分解</strong>:牙齿把食物切碎、磨碎,大幅增加食物的表面积。假设一块食物是边长 $L$ 的立方体,表面积为 $S = 6L^2$。若把它切成 $n^3$ 个小立方体,每个边长变为 $L/n$,总表面积变为:</p>
+$$
+S_{总} = n^3 \times 6\left(\frac{L}{n}\right)^2 = 6nL^2
+$$
+<p>也就是说,切得越细($n$ 越大),表面积就以 $n$ 的比例线性增长。这对消化至关重要,因为消化酶只能在食物表面起作用——表面积越大,酶接触到的位置越多,反应速率就越快。</p>
+<p>第二,<strong>化学预处理</strong>:咀嚼把食物与唾液充分混合,唾液中的淀粉酶(amylase)已经开始分解碳水化合物,消化在食物真正进入胃之前就已经启动。</p>
+<p>第三,<strong>信息传递</strong>:咀嚼给大脑留出时间,通过味觉、嗅觉和咀嚼时长,让大脑判断"吃了什么、吃了多少",这与后续的饱腹感调节密切相关。</p>
+<p>一个简单的规律是:<strong>咀嚼次数越多,表面积增量与消化效率的提升越明显,但存在边际递减</strong>——嚼到一定细度后,继续嚼对表面积的提升会变得很有限。</p>
+<p><strong>练习</strong>:若一块食物咀嚼前是边长 $2\text{cm}$ 的立方体,咀嚼后被切成 $8$ 个相同的小立方体,总表面积增大了多少倍?</p>
+  </main>
+  <footer class="spl-credit"><span class="spl-credit__meta">元健康 Meta-Health Ch5: Eating as Internal Exercise (饮食即内脏运动) (Level: Core &middot; Language: ZH &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
+</div>
+</body>
+</html>

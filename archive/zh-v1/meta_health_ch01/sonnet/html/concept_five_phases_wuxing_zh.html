@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Five Phases Wuxing | Meta Health Ch01</title>
+<script>
+MathJax = {
+  loader: { load: ['[tex]/mathtools'] },
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']],
+         packages: { '[+]': ['mathtools'] } },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+footer.spl-credit span{display:block}
+footer.spl-credit .spl-credit__meta{margin-bottom:4px}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="five-phases-wuxing">Five Phases Wuxing</h2>
+<p>你已经知道，五行——木、火、土、金、水——是中医用来给身体和自然现象分类、并说明它们如何相互影响的五个"过程类别"。这一节我们更进一步：五行不只是贴标签，它是一个有内部结构的<strong>关系系统</strong>。</p>
+<p>五行的核心结构是两套相反的关系链：<strong>相生</strong>（滋养、促进）和<strong>相克</strong>（制约、抑制）。相生顺序是木→火→土→金→水→木，像一个闭合的环：木燃烧生火，火燃烧后化为灰烬归于土，土中蕴藏矿物生成金，金遇冷凝结生水（想象金属表面的水珠），水滋养草木生长。相克顺序则是木→土→金→火→水→木：木的根系抓土（克土），金属工具砍伐树木（克木），火能熔化金属（克金），水能浇灭火（克水），土能筑坝挡水（克水……注意克水的其实是土）。</p>
+<p>用符号表示会更清楚。设五行集合为 $S = \{Wood, Fire, Earth, Metal, Water\}$，相生关系可写成一个有向环：</p>
+$$Wood \rightarrow Fire \rightarrow Earth \rightarrow Metal \rightarrow Water \rightarrow Wood$$
+<p>相克关系则是跳过一个元素的另一个环：</p>
+$$Wood \rightarrow Earth \rightarrow Water \rightarrow Fire \rightarrow Metal \rightarrow Wood$$
+<p>简单规律：在相生环中，每个"行"既是前一个行的产物，又是后一个行的来源；在相克环中，每个"行"都制约着环上间隔一位的那个行。这种"生中有克、克中有生"的双环结构，正是中医解释身体各系统（如肝—木、心—火、脾—土、肺—金、肾—水）如何互相支持又互相制衡的基础模型。</p>
+<p><strong>小练习</strong>：如果"肝（木）"功能过强，按照相克关系，它会过度制约哪一行对应的器官系统？请写出这一步在相克环 $Wood \rightarrow Earth \rightarrow \cdots$ 中的位置，并说出该器官系统的名称。</p>
+  </main>
+  <footer class="spl-credit"><span class="spl-credit__meta">元健康 Meta-Health Ch1: TCM Foundations — Yin-Yang, Qi-Blood, and the Five Phases (中医基础) (Level: Core &middot; Language: ZH &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
+</div>
+</body>
+</html>

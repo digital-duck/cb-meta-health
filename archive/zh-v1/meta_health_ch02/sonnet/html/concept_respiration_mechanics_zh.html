@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Respiration Mechanics | Meta Health Ch02</title>
+<script>
+MathJax = {
+  loader: { load: ['[tex]/mathtools'] },
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']],
+         packages: { '[+]': ['mathtools'] } },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+footer.spl-credit span{display:block}
+footer.spl-credit .spl-credit__meta{margin-bottom:4px}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="respiration-mechanics">Respiration Mechanics</h2>
+<p>回忆一下：呼吸不是肺自己"抽气",而是靠胸腔体积的变化,把空气"吸"进来或"挤"出去。这背后其实是一个物理规律在起作用。</p>
+<p>呼吸的核心机制依赖<strong>波义耳定律</strong>(Boyle's Law):在温度不变的条件下,气体压强与体积成反比,即</p>
+$$P \times V = \text{常数}$$
+<p>吸气时,膈肌(diaphragm)收缩并下移,同时肋间肌(intercostal muscles)收缩,把肋骨向上、向外拉,这两个动作共同使胸腔容积 $V$ 增大。根据波义耳定律,$V$ 增大意味着肺内压强 $P$ 下降,低于外界大气压。压强差驱动空气从高压(体外)流向低压(肺内)——这就是吸气。</p>
+<p>呼气时机制相反:膈肌和肋间肌放松,胸腔容积 $V$ 减小,肺内压强 $P$ 随之升高,超过大气压,空气被"挤"出体外。整个过程可以概括为一条简单规则:</p>
+$$V \uparrow \Rightarrow P \downarrow \Rightarrow \text{吸气} \qquad V \downarrow \Rightarrow P \uparrow \Rightarrow \text{呼气}$$
+<p>注意,是肌肉的机械运动主动改变了体积,压强变化只是体积变化的结果,气流方向则由压强差决定。</p>
+<p><strong>练习</strong>:如果某人胸腔容积从静息时的 $3.0\,\text{L}$ 扩张到吸气末的 $3.5\,\text{L}$,肺内压强从 $101.3\,\text{kPa}$ 变化到多少?(假设温度不变,使用波义耳定律 $P_1V_1 = P_2V_2$ 计算,结果保留一位小数。)</p>
+  </main>
+  <footer class="spl-credit"><span class="spl-credit__meta">元健康 Meta-Health Ch2: The Physiology Lens — Breath, Circulation, Fascia, and Core (生理视角) (Level: Core &middot; Language: ZH &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
+</div>
+</body>
+</html>

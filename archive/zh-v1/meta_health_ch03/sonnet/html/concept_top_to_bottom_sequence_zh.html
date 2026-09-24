@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Top To Bottom Sequence | Meta Health Ch03</title>
+<script>
+MathJax = {
+  loader: { load: ['[tex]/mathtools'] },
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']],
+         packages: { '[+]': ['mathtools'] } },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+footer.spl-credit span{display:block}
+footer.spl-credit .spl-credit__meta{margin-bottom:4px}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="top-to-bottom-sequence">Top To Bottom Sequence</h2>
+<p>你可能已经感觉到:热身时先动上半身,再慢慢往下,身体会更快进入状态。这不是随意安排,而是有结构的顺序——胸→肋→腰→腿→脚,从上到下依次唤醒关节和经络。</p>
+<p>从结构上看,这个顺序对应人体的"层次"。胸腔是呼吸和心肺活动的中心,肋部连接上下,腰是承重转折点,腿脚则是与地面接触、支撑全身重量的部位。按照从上到下的顺序热身,相当于先激活核心区域的循环,再把血液和"阳气"逐步引导向下,传统中医称这个过程为"引阳归根"——让原本容易向上浮散的阳气,重新回落到身体的根基(腿脚)处,达到上下贯通、内外协调的状态。</p>
+<p>我们可以把这个规律简单地写成一个顺序链:</p>
+$$\text{胸} \rightarrow \text{肋} \rightarrow \text{腰} \rightarrow \text{腿} \rightarrow \text{脚}$$
+<p>每一步都建立在前一步"松开"的基础上——胸部放松了,肋骨才能自然打开;腰部灵活了,腿部动作才不会僵硬。这种链式关系说明:跳过某一环节,后面的热身效果会打折扣。</p>
+<p><strong>练习题:</strong> 小明热身时的顺序是:脚→腿→胸→肋→腰。请指出他违反了"top-to-bottom sequence"的哪一个环节,并说明按照正确顺序调整后,应该怎样重新排列这五个部位?</p>
+  </main>
+  <footer class="spl-credit"><span class="spl-credit__meta">元健康 Meta-Health Ch3: The Five-Organ Exercises (五脏操) (Level: Core &middot; Language: ZH &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
+</div>
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tidal Volume And Gas Exchange | Meta Health Ch02</title>
+<script>
+MathJax = {
+  loader: { load: ['[tex]/mathtools'] },
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']],
+         packages: { '[+]': ['mathtools'] } },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+footer.spl-credit span{display:block}
+footer.spl-credit .spl-credit__meta{margin-bottom:4px}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="tidal-volume-and-gas-exchange">Tidal Volume And Gas Exchange</h2>
+<p>You already know that breathing brings oxygen in and pushes carbon dioxide out. Now let's look at how much air actually moves — and why that number matters more than how <em>often</em> you breathe.</p>
+<p>The volume of air you move in a single normal breath (not a deep gasp, not a tiny sip) is called <strong>tidal volume</strong>, written $V_T$. A resting adult moves about $V_T \approx 500\ \text{mL}$ per breath. Multiply that by breaths per minute, the respiratory rate $f$, and you get <strong>minute ventilation</strong>:</p>
+$$
+\dot{V}_E = V_T \times f
+$$
+<p>If $V_T = 500\ \text{mL}$ and $f = 12$ breaths/min, then $\dot{V}_E = 6{,}000\ \text{mL/min} = 6\ \text{L/min}$ — that's the total air flowing in and out every minute.</p>
+<p>But here's the catch: not all of that air reaches the alveoli, where gas exchange with the blood actually happens. Part of each breath fills the trachea and bronchi — the "dead space" ($V_D$, roughly 150 mL) — and never touches an exchange surface. So the air that <em>actually</em> participates in gas exchange per minute is:</p>
+$$
+\dot{V}_A = (V_T - V_D) \times f
+$$
+<p>This means two breathing patterns with the same $\dot{V}_E$ aren't equally effective. Slow, deep breaths waste a smaller fraction of each breath on dead space than fast, shallow ones — which is why shallow panting exchanges gas poorly even if the total air moved looks similar.</p>
+<p><strong>Practice problem:</strong> Suppose $V_T = 400\ \text{mL}$, $V_D = 150\ \text{mL}$, and $f = 20$ breaths/min. Calculate $\dot{V}_E$ and $\dot{V}_A$. Which one determines how much oxygen actually reaches the blood?</p>
+  </main>
+  <footer class="spl-credit"><span class="spl-credit__meta">元健康 Meta-Health Ch2: The Physiology Lens — Breath, Circulation, Fascia, and Core (生理视角) (Level: Core &middot; Language: EN &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
+</div>
+</body>
+</html>

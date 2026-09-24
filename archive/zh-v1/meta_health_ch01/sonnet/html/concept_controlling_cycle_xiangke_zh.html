@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Controlling Cycle Xiangke | Meta Health Ch01</title>
+<script>
+MathJax = {
+  loader: { load: ['[tex]/mathtools'] },
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']],
+         packages: { '[+]': ['mathtools'] } },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+footer.spl-credit span{display:block}
+footer.spl-credit .spl-credit__meta{margin-bottom:4px}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="controlling-cycle-xiangke">Controlling Cycle Xiangke</h2>
+<p>回忆一下：五行之间不只是"你生我、我生它"的相生关系，还有一层更严格的约束——相克。相克循环是：木克土、土克水、水克火、火克金、金克木。每一个"行"都被前一个牢牢管着，谁也不能无限膨胀。</p>
+<p>我们可以把相克看作一种<strong>环状限制系统</strong>。设五行集合为 $P=\{木,土,水,火,金\}$，定义一个函数 $C:P\to P$，表示"克制关系指向谁"：</p>
+$$C(木)=土,\quad C(土)=水,\quad C(水)=火,\quad C(火)=金,\quad C(金)=木$$
+<p>这其实是一个<strong>置换（permutation）</strong>，而且是一个长度为 5 的循环（cycle），数学上可以写成</p>
+$$(木\ 土\ 水\ 火\ 金)$$
+<p>意思是：从木出发,经过 5 步克制，恰好回到木本身，即 $C^5(x)=x$ 对所有 $x\in P$ 成立。这和相生循环结构相似,但箭头指向不同的"下三位"，形成了另一套独立的约束网络。</p>
+<p>规律很简单：<strong>每一行都恰好压制一个行，也恰好被另一个行压制</strong>——这保证了系统里没有哪一行能失控地一直变强。相生提供"能量流动"，相克提供"负反馈"，两者叠加,系统才趋于动态平衡（类似物理里"驱动力+阻力"共同决定运动状态）。</p>
+<p><strong>小练习</strong>：如果某个系统里"火"这一行因为某种原因持续增强，按照相克关系，理论上应该是哪一行的力量被相应削弱？请写出你的推理链条（提示：先找到 $C(火)$ 是谁）。</p>
+  </main>
+  <footer class="spl-credit"><span class="spl-credit__meta">元健康 Meta-Health Ch1: TCM Foundations — Yin-Yang, Qi-Blood, and the Five Phases (中医基础) (Level: Core &middot; Language: ZH &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
+</div>
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gut Microbiome | Meta Health Ch06</title>
+<script>
+MathJax = {
+  loader: { load: ['[tex]/mathtools'] },
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']],
+         packages: { '[+]': ['mathtools'] } },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+footer.spl-credit span{display:block}
+footer.spl-credit .spl-credit__meta{margin-bottom:4px}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="gut-microbiome">Gut Microbiome</h2>
+<p>你已经知道,大肠里住着数不清的细菌,它们帮你消化食物、维持健康。现在我们来看看这个"微生物群落"到底是怎么运作的。</p>
+<p>科学家估计,人体肠道里的微生物数量达到 $10^{13}$ 到 $10^{14}$ 个——这个数量级和人体自身细胞数相当。这些微生物不是随机堆在一起的,而是组成一个相互依存的生态系统:某些菌种分解你无法消化的膳食纤维(多糖),把它们发酵成短链脂肪酸(如乙酸、丙酸、丁酸)。这些短链脂肪酸不是废物——它们会被肠壁细胞吸收,成为重要的能量来源,还能调节免疫系统和炎症反应。</p>
+<p>可以把肠道菌群想象成一个"输入—处理—输出"的系统:输入是你吃进去的膳食纤维,处理是微生物的发酵代谢,输出是短链脂肪酸、维生素(如维生素K、部分B族维生素),以及影响身体状态的信号分子。这个系统的一个关键规律是:<strong>多样性(diversity)通常代表健康</strong>。用一个简化的多样性指数来描述:</p>
+$$
+D = -\sum_{i=1}^{n} p_i \ln(p_i)
+$$
+<p>其中 $p_i$ 是第 $i$ 种菌群在总菌群中所占的比例。当各菌种比例越均衡、种类越多时,$D$ 值越大,代表生态系统越稳定;某一物种过度占优则会导致 $D$ 偏低,往往与消化紊乱或免疫问题相关。</p>
+<p><strong>练习题</strong>:假设一个简化肠道菌群样本中只有两种主要菌群,比例分别为 $p_1 = 0.5$,$p_2 = 0.5$。请计算这个样本的多样性指数 $D$(用自然对数 $\ln$,保留两位小数),并说明:如果比例变为 $p_1 = 0.9$,$p_2 = 0.1$,$D$ 值会变大还是变小?这说明了什么?</p>
+  </main>
+  <footer class="spl-credit"><span class="spl-credit__meta">元健康 Meta-Health Ch6: What We Eat — Food Quality, Four Natures, and Five Flavors (四气五味) (Level: Core &middot; Language: ZH &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
+</div>
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Postprandial Glucose Response | Meta Health Ch05</title>
+<script>
+MathJax = {
+  loader: { load: ['[tex]/mathtools'] },
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']],
+         packages: { '[+]': ['mathtools'] } },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+footer.spl-credit span{display:block}
+footer.spl-credit .spl-credit__meta{margin-bottom:4px}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="postprandial-glucose-response">Postprandial Glucose Response</h2>
+<p>吃完一顿饭后，血糖不是"哐"一下上去又"哐"一下下来，而是一条有形状的曲线——先前的直觉是"吃糖升糖快、吃肉升糖慢"，现在我们要看清这条曲线到底由什么决定。</p>
+<p>把这个过程写成一个简化的输入—输出模型：设 $G(t)$ 为进食后时间 $t$（分钟）时的血糖浓度，$G_0$ 为空腹基线。曲线的形状取决于三个耦合因素：葡萄糖进入血液的<strong>速率</strong> $R_{in}(t)$，和身体清除葡萄糖的<strong>速率</strong> $R_{out}(t)$（主要靠胰岛素驱动肌肉、肝脏摄取葡萄糖）。血糖变化率可以写成：</p>
+$$
+\frac{dG}{dt} = R_{in}(t) - R_{out}(t)
+$$
+<p>而 $R_{in}(t)$ 本身又取决于胃排空速度（决定食物多快进入小肠）、食物成分（单糖 vs. 淀粉 vs. 搭配了脂肪/蛋白质/膳食纤维会显著拖慢吸收）、以及进食速度。$R_{out}(t)$ 则受运动强度影响——肌肉收缩时会不依赖胰岛素、直接增加葡萄糖摄取，这就是为什么饭后散步能让曲线更平缓。</p>
+<p>简单规律：曲线下面积（AUC，即 $\int (G(t)-G_0)\,dt$）越大、峰值越高、波动越剧烈且反复出现，代谢负担就越大；而延缓 $R_{in}$（细嚼慢咽、搭配纤维）或提高 $R_{out}$（餐后活动）都能压低这条曲线。</p>
+<p><strong>练习</strong>：小明空腹血糖是 90 mg/dL，喝下一杯纯果汁后 30 分钟血糖升到 150 mg/dL，随后 60 分钟内因胰岛素作用又降回 95 mg/dL。请画出这段时间内血糖随时间变化的大致曲线形状，并说明哪一段对应 $R_{in} > R_{out}$，哪一段对应 $R_{in} < R_{out}$。</p>
+  </main>
+  <footer class="spl-credit"><span class="spl-credit__meta">元健康 Meta-Health Ch5: Eating as Internal Exercise (饮食即内脏运动) (Level: Core &middot; Language: ZH &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
+</div>
+</body>
+</html>

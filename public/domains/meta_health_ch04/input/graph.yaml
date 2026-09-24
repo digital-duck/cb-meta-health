@@ -3,50 +3,83 @@ primitives:
   dantian:
     defines: >-
       The lower dantian (下丹田) (from Chapter 1).
+    labels:
+      en: Dantian (丹田)
+      zh: 丹田
     tier: 0
   daoyin_tradition:
     defines: >-
       Daoyin (导引): the ancient Chinese tradition of guided stretching and breathing exercises for health,
       of which Baduanjin is a well-known descendant.
+    labels:
+      en: The Daoyin Tradition (导引)
+      zh: 导引传统
     tier: 0
   diaphragmatic_breathing:
     defines: >-
       Diaphragmatic breathing (from Chapter 2).
+    labels:
+      en: Diaphragmatic Breathing
+      zh: 腹式呼吸
     tier: 0
   evidence_quality:
     defines: >-
       Evidence quality: how to weigh case reports, observational studies, randomized controlled trials
       and meta-analyses, and why small or unblinded trials can overstate benefits.
+    labels:
+      en: Judging Evidence Quality
+      zh: 证据质量的判断
     tier: 0
   five_organ_movement_matrix:
     defines: >-
       The five-organ movement matrix — 扩胸, 扇肋, 提身, 扭转, 深蹲 (from Chapter 3).
+    labels:
+      en: The Five-Organ Movement Matrix
+      zh: 五脏操对照表
     tier: 0
   heart_kidney_interaction:
     defines: >-
       Heart–Kidney interaction (心肾相交, 水火既济) (from Chapter 1).
+    labels:
+      en: Heart–Kidney Interaction (心肾相交)
+      zh: 心肾相交
     tier: 0
   tension_relaxation_cycling:
     defines: >-
       Tension–relaxation cycling as a circulatory pump (from Chapter 2).
+    labels:
+      en: Tension–Relaxation Cycling
+      zh: 松紧交替
     tier: 0
   triple_burner_sanjiao:
     defines: >-
       The triple burner (三焦): upper, middle and lower passageways of qi and fluids (from Chapter 1).
+    labels:
+      en: The Triple Burner (Sanjiao, 三焦)
+      zh: 三焦
     tier: 0
   twelve_primary_meridians:
     defines: >-
       The twelve primary meridians (十二经脉) (from Chapter 1).
+    labels:
+      en: The Twelve Primary Meridians
+      zh: 十二经脉
     tier: 0
   yongquan_point:
     defines: >-
       Yongquan (涌泉, KI-1) on the sole of the foot (from Chapter 3).
+    labels:
+      en: The Yongquan Point (涌泉, KI-1)
+      zh: 涌泉穴
     tier: 0
 concepts:
   baduanjin_overview:
     defines: >-
       Baduanjin (八段锦): a standing qigong routine of eight movements, first recorded in the Song dynasty
       and standardized in 2003 as a national Health Qigong (健身气功) set; one round takes about 10–12 minutes.
+    labels:
+      en: 'Baduanjin: An Overview (八段锦)'
+      zh: 八段锦概述
     composed_of:
     - daoyin_tradition
     tier: 1
@@ -55,6 +88,9 @@ concepts:
       The evidence for Baduanjin: randomized trials and meta-analyses report improvements in balance,
       flexibility, blood pressure, sleep quality, mood and quality of life, especially in older adults,
       but many trials are small and unblinded; organ-specific claims remain mostly traditional.
+    labels:
+      en: The Evidence for Baduanjin
+      zh: 八段锦的研究证据
     composed_of:
     - baduanjin_overview
     - evidence_quality
@@ -64,6 +100,9 @@ concepts:
       Form 1 — Holding up the heavens to regulate the triple burner (两手托天理三焦): pressing both palms up
       stretches the whole trunk and is the opening 'master key' that frees the three burners for the forms
       that follow.
+    labels:
+      en: 'Form 1: Holding Up the Heavens (两手托天理三焦)'
+      zh: 第一式：两手托天理三焦
     composed_of:
     - baduanjin_overview
     - triple_burner_sanjiao
@@ -73,6 +112,9 @@ concepts:
       Form 2 — Drawing the bow to shoot the eagle (左右开弓似射雕): a horse stance with a bow-drawing arm action
       that opens the chest and stretches the Lung and Large Intestine meridians — the natural counterpart
       of chest expansion (Lung/Metal).
+    labels:
+      en: 'Form 2: Drawing the Bow (左右开弓似射雕)'
+      zh: 第二式：左右开弓似射雕
     composed_of:
     - baduanjin_overview
     - twelve_primary_meridians
@@ -82,6 +124,9 @@ concepts:
       Form 3 — Raising one arm to regulate Spleen and Stomach (调理脾胃须单举): one palm presses up and the other
       presses down, stretching the abdomen to 'raise the clear and lower the turbid' (升清降浊) in the middle
       burner.
+    labels:
+      en: 'Form 3: Raising One Arm (调理脾胃须单举)'
+      zh: 第三式：调理脾胃须单举
     composed_of:
     - baduanjin_overview
     - triple_burner_sanjiao
@@ -90,6 +135,9 @@ concepts:
     defines: >-
       Form 4 — Looking back to cure the five strains and seven injuries (五劳七伤往后瞧): turning the head and
       upper trunk mobilizes the cervical and thoracic spine; paired with the torso twist (Spleen/Earth).
+    labels:
+      en: 'Form 4: Looking Back (五劳七伤往后瞧)'
+      zh: 第四式：五劳七伤往后瞧
     composed_of:
     - baduanjin_overview
     - twelve_primary_meridians
@@ -99,6 +147,9 @@ concepts:
       Form 5 — Swaying head and tail to clear Heart Fire (摇头摆尾去心火): a deep horse stance with a circling
       lean of the trunk that lowers the center of gravity to 'lead Heart Fire down' — the compound form
       of the deep squat (Heart/Fire).
+    labels:
+      en: 'Form 5: Swaying Head and Tail (摇头摆尾去心火)'
+      zh: 第五式：摇头摆尾去心火
     composed_of:
     - baduanjin_overview
     - heart_kidney_interaction
@@ -108,6 +159,9 @@ concepts:
       Form 6 — Both hands reach the feet to strengthen Kidney and waist (两手攀足固肾腰): a forward fold with
       hands sliding down the back of the legs, stretching the Bladder and Kidney meridians and the posterior
       chain.
+    labels:
+      en: 'Form 6: Reaching for the Feet (两手攀足固肾腰)'
+      zh: 第六式：两手攀足固肾腰
     composed_of:
     - baduanjin_overview
     - twelve_primary_meridians
@@ -117,6 +171,9 @@ concepts:
       Form 7 — Clenching fists with glaring eyes to increase strength (攒拳怒目增气力): punching from a horse
       stance with a fierce gaze to vent Liver qi — the counterpart of rib fanning (Liver/Wood), since
       the Liver 'opens into the eyes'.
+    labels:
+      en: 'Form 7: Clenched Fists, Glaring Eyes (攒拳怒目增气力)'
+      zh: 第七式：攒拳怒目增气力
     composed_of:
     - baduanjin_overview
     - twelve_primary_meridians
@@ -126,6 +183,9 @@ concepts:
       Form 8 — Bouncing on the heels seven times to banish illness (背后七颠百病消): rising onto the toes and
       dropping gently onto the heels jolts the body, works the calf pump and stimulates Yongquan — the
       direct match for body lifting (Kidney/Water).
+    labels:
+      en: 'Form 8: Bouncing on the Heels (背后七颠百病消)'
+      zh: 第八式：背后七颠百病消
     composed_of:
     - baduanjin_overview
     - yongquan_point
@@ -134,6 +194,9 @@ concepts:
     defines: >-
       The three regulations (三调): regulating the body (调身, posture), the breath (调息, breathing) and the
       mind (调心, attention) — together what distinguishes qigong from ordinary calisthenics.
+    labels:
+      en: The Three Regulations (三调)
+      zh: 三调：调身、调息、调心
     composed_of:
     - baduanjin_overview
     - diaphragmatic_breathing
@@ -144,6 +207,9 @@ concepts:
       3) ↔ torso twist; Metal 2 (and 1, 3) ↔ chest expansion; Water 8 (and 6) ↔ body lifting — with form
       1 as the overall regulator. The five exercises serve as isolation drills for Baduanjin's compound
       forms.
+    labels:
+      en: Baduanjin and the Five-Organ Exercises
+      zh: 八段锦与五脏操的对应
     composed_of:
     - five_organ_movement_matrix
     - form1_hold_up_heavens
@@ -159,6 +225,9 @@ concepts:
     defines: >-
       Coordinating breath and movement: breathing in as the body rises or opens and out as it sinks or
       closes, without ever holding the breath.
+    labels:
+      en: Coordinating Breath and Movement
+      zh: 呼吸与动作的配合
     composed_of:
     - three_regulations
     tier: 3
@@ -167,6 +236,9 @@ concepts:
       Practice dose: about 10 minutes (one or two rounds), once or twice a day — enough to mobilize the
       body without fatigue or heavy sweating (which TCM says 'consumes qi'); a morning round to raise
       yang and an evening round to release tension.
+    labels:
+      en: How Much to Practice
+      zh: 练习的剂量
     composed_of:
     - baduanjin_overview
     - three_regulations
@@ -175,6 +247,9 @@ concepts:
     defines: >-
       The tension–release rhythm (松紧结合): a brief firm moment at the end of each form (pressing up, drawing
       the bow, clenching) followed by immediate softening — where the circulatory 'pumping' happens.
+    labels:
+      en: The Tension–Release Rhythm (松紧结合)
+      zh: 松紧结合
     composed_of:
     - three_regulations
     - tension_relaxation_cycling
@@ -184,6 +259,9 @@ concepts:
       Closing the practice (收功): standing still with hands over the lower dantian for three to five slow
       breaths, rather than sitting down straight away or picking up a phone, to 'store' the qi that has
       been mobilized.
+    labels:
+      en: Closing the Practice (收功)
+      zh: 收功
     composed_of:
     - dantian
     - form8_heel_bounce
@@ -194,6 +272,9 @@ applications:
     defines: >-
       A personal daily Baduanjin plan: the full set with breath coordination and tension–release, organ-targeted
       extras drawn from the mapping, a proper closing, and realistic expectations based on the evidence.
+    labels:
+      en: Your Daily Baduanjin Plan
+      zh: 每日八段锦练习计划
     needs:
     - baduanjin_five_organ_mapping
     - breath_movement_coordination

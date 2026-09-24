@@ -4,48 +4,81 @@ primitives:
     defines: >-
       The lower dantian (下丹田), the center below the navel where qigong settles breath and attention (from
       Chapter 1).
+    labels:
+      en: Dantian (丹田)
+      zh: 丹田
     tier: 0
   diaphragmatic_breathing:
     defines: >-
       Diaphragmatic breathing and its parasympathetic effect (from Chapter 2).
+    labels:
+      en: Diaphragmatic Breathing
+      zh: 腹式呼吸
     tier: 0
   five_phase_correspondences:
     defines: >-
       The Five-Phase correspondence table (五行归类) linking each phase to an organ, season, emotion, flavor
       and tissue (from Chapter 1).
+    labels:
+      en: Five-Phase Correspondences
+      zh: 五行归类
     tier: 0
   generating_cycle_xiangsheng:
     defines: >-
       The generating cycle (相生): Wood → Fire → Earth → Metal → Water (from Chapter 1).
+    labels:
+      en: The Generating Cycle (Xiangsheng, 相生)
+      zh: 五行相生
     tier: 0
   heart_kidney_interaction:
     defines: >-
       Heart–Kidney interaction (心肾相交): Heart Fire descends and Kidney Water ascends (from Chapter 1).
+    labels:
+      en: Heart–Kidney Interaction (心肾相交)
+      zh: 心肾相交
     tier: 0
   intra_abdominal_pressure:
     defines: >-
       Intra-abdominal pressure and how breathing and trunk movement change it (from Chapter 2).
+    labels:
+      en: Intra-Abdominal Pressure
+      zh: 腹内压
     tier: 0
   myofascial_lines:
     defines: >-
       Myofascial lines such as the lateral, spiral and superficial back lines (from Chapter 2).
+    labels:
+      en: Myofascial Lines
+      zh: 肌筋膜链
     tier: 0
   skeletal_muscle_pump:
     defines: >-
       The calf and leg skeletal-muscle pump that returns venous blood to the heart (from Chapter 2).
+    labels:
+      en: The Skeletal-Muscle Pump
+      zh: 骨骼肌泵
     tier: 0
   squat_mechanics:
     defines: >-
       Squat mechanics: coordinated hip, knee and ankle flexion over a stable trunk (from Chapter 2).
+    labels:
+      en: Squat Mechanics
+      zh: 深蹲力学
     tier: 0
   thoracic_mobility:
     defines: >-
       Thoracic mobility: extension, rotation and side-bending of the rib cage and upper back (from Chapter
       2).
+    labels:
+      en: Thoracic Mobility
+      zh: 胸椎与胸廓灵活性
     tier: 0
   twelve_primary_meridians:
     defines: >-
       The twelve primary meridians (十二经脉) and their paths along the limbs and trunk (from Chapter 1).
+    labels:
+      en: The Twelve Primary Meridians
+      zh: 十二经脉
     tier: 0
 concepts:
   chest_expansion_kuoxiong:
@@ -53,6 +86,9 @@ concepts:
       Chest expansion (扩胸) → Lung (肺) → Metal (金): opening the arms and chest stretches the pectorals
       and intercostals and increases thoracic volume; in TCM it opens the Lung meridian across the upper
       chest and 'draws in clear qi'.
+    labels:
+      en: Chest Expansion (Kuoxiong, 扩胸)
+      zh: 扩胸
     composed_of:
     - thoracic_mobility
     - diaphragmatic_breathing
@@ -64,6 +100,9 @@ concepts:
       Deep squat (深蹲) → Heart (心) → Fire (火): recruiting the largest leg muscles raises heart rate and
       venous return; in TCM, lowering the center of gravity leads Heart Fire downward to meet Kidney Water
       (引火归元).
+    labels:
+      en: Deep Squat (Shendun, 深蹲)
+      zh: 深蹲
     composed_of:
     - squat_mechanics
     - skeletal_muscle_pump
@@ -75,6 +114,9 @@ concepts:
       Rib fanning (扇肋) → Liver (肝) → Wood (木): side-bending and spreading the ribs stretches the lateral
       line, intercostals and obliques around the hypochondrium; in TCM it frees the Liver meridian's flank
       pathway and relieves Liver qi stagnation (肝气郁结).
+    labels:
+      en: Rib Fanning (Shanlei, 扇肋)
+      zh: 扇肋
     composed_of:
     - myofascial_lines
     - thoracic_mobility
@@ -86,6 +128,9 @@ concepts:
       Torso twist (扭转) → Spleen (脾) → Earth (土): trunk rotation alternately compresses and releases the
       abdomen and mobilizes the thoracolumbar fascia; in TCM it 'wrings out' the middle burner and supports
       the Spleen's transformation (运化). The effect on gut motility is plausible but little studied.
+    labels:
+      en: Torso Twist (Niuzhuan, 扭转)
+      zh: 扭转
     composed_of:
     - intra_abdominal_pressure
     - myofascial_lines
@@ -95,6 +140,9 @@ concepts:
     defines: >-
       Yongquan (涌泉, KI-1), the 'bubbling spring' point on the sole of the foot where the Kidney meridian
       begins; rising onto the toes and landing on the heels is said to stimulate it.
+    labels:
+      en: The Yongquan Point (涌泉, KI-1)
+      zh: 涌泉穴
     composed_of:
     - twelve_primary_meridians
     tier: 1
@@ -103,6 +151,9 @@ concepts:
       Body lifting (提身) → Kidney (肾) → Water (水): reaching up while rising onto the toes engages the posterior
       chain and calf pump; in TCM it stretches the back line and stimulates Yongquan at the root of the
       Kidney meridian.
+    labels:
+      en: Body Lifting (Tishen, 提身)
+      zh: 提身
     composed_of:
     - skeletal_muscle_pump
     - myofascial_lines
@@ -113,6 +164,9 @@ concepts:
     defines: >-
       The five-organ movement matrix: one table of movement, main physical action, target organ, phase,
       and meridian or physiological mechanism for all five exercises.
+    labels:
+      en: The Five-Organ Movement Matrix
+      zh: 五脏操对照表
     composed_of:
     - chest_expansion_kuoxiong
     - rib_fanning_shanlei
@@ -124,6 +178,9 @@ concepts:
     defines: >-
       The sealing finish (收势): ending with body lifting and a pause with hands over the lower dantian
       to 'settle and store' qi, instead of stopping abruptly.
+    labels:
+      en: The Sealing Finish (收势)
+      zh: 收势
     composed_of:
     - body_lifting_tishen
     - dantian
@@ -133,6 +190,9 @@ concepts:
       Breath-first order: starting with chest expansion (Lung) because breathing is the easiest bridge
       from voluntary control to the autonomic nervous system — the order used in some popular teaching
       videos, differing from the generating cycle only by swapping Lung and Liver.
+    labels:
+      en: The Breath-First Sequence
+      zh: 呼吸优先顺序
     composed_of:
     - five_organ_movement_matrix
     - diaphragmatic_breathing
@@ -142,6 +202,9 @@ concepts:
       Generating-cycle order (相生顺序): rib fanning (Wood) → deep squat (Fire) → torso twist (Earth) → chest
       expansion (Metal) → body lifting (Water), so that each movement 'feeds' the next — suited to daily
       cultivation.
+    labels:
+      en: The Generating-Cycle Sequence (相生顺序)
+      zh: 相生顺序
     composed_of:
     - five_organ_movement_matrix
     - generating_cycle_xiangsheng
@@ -150,6 +213,9 @@ concepts:
     defines: >-
       Safe practice: pain-free range, knee tracking and partial squats, a chair or wall for balance, gentle
       twisting for back or disc problems, and no breath-holding for people with high blood pressure.
+    labels:
+      en: Safe Practice and Modifications
+      zh: 安全练习与动作调整
     composed_of:
     - five_organ_movement_matrix
     - squat_mechanics
@@ -158,6 +224,9 @@ concepts:
     defines: >-
       Top-to-bottom order: chest → ribs → waist → legs → feet, warming joints from the upper body downward
       and, in TCM terms, drawing rising yang back to the root.
+    labels:
+      en: The Top-to-Bottom Sequence
+      zh: 自上而下顺序
     composed_of:
     - five_organ_movement_matrix
     - thoracic_mobility
@@ -168,6 +237,9 @@ applications:
       Designing a personal 5–10 minute five-organ routine: choosing a sequencing logic for the goal and
       time of day, pairing each movement with the breath, ending with the sealing finish, and scaling
       each movement to one's body.
+    labels:
+      en: Designing Your Five-Organ Routine
+      zh: 设计你的五脏操练习
     needs:
     - generating_cycle_sequence
     - breath_first_sequence

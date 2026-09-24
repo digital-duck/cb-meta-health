@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Personalization | Meta Health Ch09</title>
+<script>
+MathJax = {
+  loader: { load: ['[tex]/mathtools'] },
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']],
+         packages: { '[+]': ['mathtools'] } },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+footer.spl-credit span{display:block}
+footer.spl-credit .spl-credit__meta{margin-bottom:4px}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="personalization">Personalization</h2>
+<p>前面说到,这个框架不是一套"人人照做"的固定动作,而是要根据身体给出的信号不断调整。现在我们来看看,到底可以从哪些维度去调整它。</p>
+<p>先想象一下:同样一杯冰水,有人喝下去立刻觉得舒服,有人却马上肚子不舒服。这不是"谁更坚强",而是<strong>体质(constitution)</strong>不同——每个人的消化能力、代谢速度、对寒热的耐受度天生就不一样。个性化调整,就是承认这种差异,并据此改动方案里的具体参数。</p>
+<p>个性化不是随便改,而是沿着几个明确的维度进行:</p>
+<li><strong>体质</strong>:偏寒体质的人减少生冷食物比例,偏热体质的人减少辛辣温补的比例</li>
+<li><strong>年龄</strong>:青少年代谢快、需求量大;中老年人则需要降低总负荷,拉长恢复时间</li>
+<li><strong>健康状况</strong>:有慢性病(如糖尿病、高血压)的人,某些食材或强度需要被替换或排除</li>
+<li><strong>文化背景</strong>:方案要能融入本地饮食习惯,而不是要求彻底放弃传统饮食结构</li>
+<p>可以把这想象成一个函数:</p>
+$$
+\text{方案} = f(\text{基础框架},\ \text{体质},\ \text{年龄},\ \text{健康状况},\ \text{文化背景})
+$$
+<p>基础框架(base framework)是固定的输入之一,但输出会因人而异——这正是"千人一方"和"千人千方"的区别。</p>
+<p><strong>练习</strong>:小明是青少年,体质偏热,没有慢性病,平时爱吃辣。请你说出他在"体质"和"文化背景"这两个维度上,分别应该如何调整基础框架中"温补食材比例"这一项?</p>
+  </main>
+  <footer class="spl-credit"><span class="spl-credit__meta">元健康 Meta-Health Ch9: The Unified Internal Conditioning Framework (内调一元论) (Level: Core &middot; Language: ZH &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
+</div>
+</body>
+</html>

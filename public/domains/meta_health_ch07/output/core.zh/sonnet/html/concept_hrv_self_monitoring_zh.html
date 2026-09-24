@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Hrv Self Monitoring | Meta Health Ch07</title>
+<title>用心率变异性监测压力 | Meta Health Ch07</title>
 <script>
 MathJax = {
   loader: { load: ['[tex]/mathtools'] },
@@ -38,17 +38,11 @@ section:first-of-type{border-top:none;padding-top:0}
 <body>
 <div class="page">
   <main>
-    <h2 id="hrv-self-monitoring">Hrv Self Monitoring</h2>
-<p>之前我们已经知道：心率变异性（HRV）越高,通常说明身体恢复得越好、副交感神经"刹车"越灵敏;HRV越低,可能意味着压力还没消化完。现在我们来看看,怎么把这个指标用起来,变成一套真正能指导生活的"自我监测系统"。</p>
-<p>单靠一天的HRV数值意义不大,因为它每天都会波动——睡眠、咖啡因、训练强度甚至天气都会影响它。真正有用的是<strong>趋势</strong>,而不是<strong>单点</strong>。设第 $i$ 天的HRV读数为 $H_i$，我们可以计算一个滚动平均值(rolling baseline)：</p>
-$$
-\bar{H}_n = \frac{1}{7}\sum_{i=n-6}^{n} H_i
-$$
-<p>这就是过去7天的平均值,代表你身体最近的"正常状态"。然后,把今天的读数 $H_n$ 和这个基线比较：</p>
-<li>如果 $H_n$ 明显低于 $\bar{H}_n$（比如低出一个标准差以上）,说明身体可能还在从压力或训练中恢复,这天适合安排轻松活动;</li>
-<li>如果 $H_n$ 接近或高于 $\bar{H}_n$,说明恢复得不错,可以承受更大的负荷。</li>
-<p>同时把静息心率(RHR)、睡眠时长、主观情绪一起记录,形成一个简单的"多变量仪表盘"——单一指标容易被误读,但几个信号同时下降,就是身体在提醒你"该减负了"。</p>
-<p><strong>练习</strong>：小明连续7天的HRV读数(单位ms)是：52, 55, 48, 50, 53, 54, 51。第8天他测得的HRV是43ms。请计算前7天的平均值 $\bar{H}$,并判断第8天的数值相对基线是偏高还是偏低,说明这可能代表什么。</p>
+    <h2 id="用心率变异性监测压力">用心率变异性监测压力</h2>
+<p>前面我们知道,心率变异性(HRV)反映的是心跳间隔时间的微小波动——波动越丰富,通常说明身体的自主神经系统调节能力越强,处于较好的恢复状态。现在我们来看,怎样把这个指标真正用起来,变成日常可以参考的"身体反馈"。</p>
+<p>现代可穿戴设备(手环、智能手表)每天夜间会记录两个核心数值:静息心率(resting heart rate, RHR)和HRV。健康成年人的静息心率大致在 $60$–$100$ 次/分钟之间,但更有意义的不是某一天的绝对值,而是<strong>相对于自己平时基线的变化</strong>。比如,如果你平常的静息心率是 $58$ 次/分钟,某天突然升到 $68$ 次/分钟,同时 HRV 明显下降,这往往提示身体正在应对某种负荷——可能是训练强度大、睡眠不足,或是即将生病。</p>
+<p>简单规律是:静息心率上升 + HRV 下降,通常意味着"身体还没恢复好";静息心率平稳 + HRV回升,通常意味着"恢复得不错"。但要注意,单看一天的数字意义有限,真正有用的是连续几天到几周的<strong>趋势</strong>,并结合睡眠时长和主观情绪一起看——这三者合在一起,才是相对可靠的"综合负荷信号",而不是孤立的某一个数字说了算。也要清楚,不同品牌设备的算法和精度不完全一致,数值本身不能直接跨设备比较。</p>
+<p><strong>小练习</strong>:小林最近连续三天记录到静息心率从 $60$ 次/分钟升到 $63$、再到 $67$ 次/分钟,同时 HRV 持续下降,他还发现自己每晚只睡了 $5$ 小时(平时是 $7.5$ 小时)。请你判断:这组数据整体在提示什么?小林接下来最应该优先调整的是什么?</p>
   </main>
   <footer class="spl-credit"><span class="spl-credit__meta">元健康 Meta-Health Ch7: Stress, Emotion, and the Flow of Qi and Blood (情志与气血) (Level: Core &middot; Language: ZH &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
 </div>
