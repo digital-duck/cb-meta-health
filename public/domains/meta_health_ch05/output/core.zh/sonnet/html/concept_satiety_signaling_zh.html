@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Satiety Signaling | Meta Health Ch05</title>
+<title>饱腹信号 | Meta Health Ch05</title>
 <script>
 MathJax = {
   loader: { load: ['[tex]/mathtools'] },
@@ -38,14 +38,12 @@ section:first-of-type{border-top:none;padding-top:0}
 <body>
 <div class="page">
   <main>
-    <h2 id="satiety-signaling">Satiety Signaling</h2>
-<p>想象一下吃饭时的感觉：一开始饭菜很香，吃着吃着,"饱"的感觉慢慢冒出来，直到你说"够了"。这种感觉不是凭空产生的，而是身体在给大脑发送一整套信号——这套系统叫做<strong>饱腹感信号传导（satiety signaling）</strong>。</p>
-<p>信号主要来自两个渠道。第一是<strong>机械信号</strong>：胃壁上布满了牵张感受器（stretch receptors），当食物和液体撑大胃部时，这些感受器会像拉伸的橡皮筋一样被激活，把"胃变大了"的信息通过迷走神经传给大脑。第二是<strong>化学信号</strong>：当食物进入小肠，肠道细胞会释放一系列激素，最重要的三种是 CCK（缩胆囊素）、GLP-1（胰高血糖素样肽-1）和 PYY（肽YY）。它们随血液循环到达大脑的下丘脑，告诉大脑"能量正在被吸收，可以减慢进食速度了"。</p>
-<p>这里有个关键的时间规律：这些信号不是瞬间起效的，而是存在大约 $15$ 到 $20$ 分钟的延迟。我们可以粗略地把"饱腹感强度"$S$ 看作是进食量 $Q$ 在过去一段时间内累积、并延迟显现的结果：</p>
-$$S(t) \approx f\big(Q(t-\Delta t)\big), \quad \Delta t \approx 15\text{–}20\ \text{分钟}$$
-<p>也就是说，你在 $t$ 时刻感受到的饱腹感，反映的其实是大约 $\Delta t$ 之前吃下的食物量，而不是"现在正在吃"的量。</p>
-<p><strong>规律总结</strong>：饱腹感 = 机械信号（胃扩张）+ 化学信号（肠道激素）− 时间延迟。</p>
-<p><strong>练习</strong>：小明用 5 分钟狼吞虎咽吃完一大份炒饭，之后又立刻加了一小碗汤，全程只用了 8 分钟。请用今天学到的延迟规律，解释他为什么容易在饭后 10 分钟左右感到"吃撑了"，而不是在吃的当下就停下来。</p>
+    <h2 id="饱腹信号">饱腹信号</h2>
+<p>回忆一下:吃饭时,胃壁会逐渐撑开,大脑要花一点时间才能"知道"你已经吃饱了——这就是为什么狼吞虎咽的人容易吃过量。这一节我们来看这个信号是怎么产生、怎么传递的。</p>
+<p>饱腹感的形成靠两条并行的通路。第一条是<strong>机械信号</strong>:胃壁上分布着牵张感受器(stretch receptors),食物和液体让胃壁扩张,感受器把"胃在变满"这个物理信息,通过迷走神经传给大脑的下丘脑和脑干。第二条是<strong>化学信号</strong>:当食物(尤其是脂肪和蛋白质)进入小肠,肠道细胞会释放一系列激素,包括胆囊收缩素(CCK)、胰高血糖素样肽-1(GLP-1)和肽YY(PYY)。这些激素随血液循环到达大脑,进一步强化"该停下了"的信息。</p>
+<p>关键的一点是<strong>延迟</strong>:从开始进食到这些信号在大脑中充分发挥作用,大约需要 $15$ 到 $20$ 分钟。这意味着,如果你在很短时间内快速进食,大脑接收到"已经吃饱"的信号时,你可能早已经吃下了比实际需要更多的食物——因为信号还在路上。</p>
+<p>简单规律(用语言表达,而非公式):进食速度越快,大脑"知道你吃饱了"的时间点相对于实际摄入量就越滞后,越容易导致过量进食;放慢进食速度,则更容易让身体在真正吃饱时就停下来。</p>
+<p><strong>小练习</strong>:小明和小华吃同样分量的午饭。小明用 $8$ 分钟吃完,小华用了 $22$ 分钟。根据上面讲的 $15$–$20$ 分钟延迟规律,谁更可能在感受到饱腹信号之前就已经吃完了饭?请说明理由。</p>
   </main>
   <footer class="spl-credit"><span class="spl-credit__meta">元健康 Meta-Health Ch5: Eating as Internal Exercise (饮食即内脏运动) (Level: Core &middot; Language: ZH &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
 </div>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Generating Cycle Sequence | Meta Health Ch03</title>
+<script>
+MathJax = {
+  loader: { load: ['[tex]/mathtools'] },
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']],
+         packages: { '[+]': ['mathtools'] } },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+footer.spl-credit span{display:block}
+footer.spl-credit .spl-credit__meta{margin-bottom:4px}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="generating-cycle-sequence">Generating Cycle Sequence</h2>
+<p>还记得五行相生吗？木生火，火生土，土生金，金生水——每一行都在"喂养"下一行。这一节，我们把这个抽象关系变成一套真正能做的动作序列：<strong>肋骨扇形开合（木）→ 深蹲（火）→ 转体（土）→ 扩胸（金）→ 提身（水）</strong>。这不是随便排的顺序，而是按相生方向设计的日常练习法。</p>
+<p>为什么顺序很重要？想象你在给一串多米诺骨牌排队——如果中间跳过一张，后面的牌不会倒。相生顺序也是这样：肋骨扇形开合先让胸腔和呼吸系统"苏醒"（木气升发），紧接着的深蹲把这股气引向下沉、扎根（火转化为土的承载），转体进一步把这股能量在躯干内"揉开"（土生金，为收敛做准备），扩胸让胸腔收束、气机内收（金），最后提身把整个动作序列的能量向上提升、收尾（水）。每一步都为下一步创造条件，这正是"生"字的含义——不是替代，而是滋养。</p>
+<p>我们可以用一个简单的记号表示这个循环：</p>
+$$
+\text{木} \rightarrow \text{火} \rightarrow \text{土} \rightarrow \text{金} \rightarrow \text{水} \rightarrow (\text{回到木})
+$$
+<p>这是一个首尾相连的循环序列，数学上可以看作长度为 5 的有向循环图（directed cycle），每个节点只指向唯一的下一个节点，绕行一周后回到起点。这种结构保证了练习是可持续的日常节律，而不是一次性的动作。</p>
+<p><strong>小练习</strong>：如果你只有时间做其中连续三个动作，并且想让这三个动作之间仍然保持相生关系（即第一个动作生出第二个，第二个生出第三个），请写出所有可能的三步序列，并说明其中一组的先后逻辑。</p>
+  </main>
+  <footer class="spl-credit"><span class="spl-credit__meta">元健康 Meta-Health Ch3: The Five-Organ Exercises (五脏操) (Level: Core &middot; Language: ZH &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
+</div>
+</body>
+</html>

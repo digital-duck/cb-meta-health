@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Controlling Cycle Xiangke | Meta Health Ch01</title>
+<title>五行相克 | Meta Health Ch01</title>
 <script>
 MathJax = {
   loader: { load: ['[tex]/mathtools'] },
@@ -38,15 +38,12 @@ section:first-of-type{border-top:none;padding-top:0}
 <body>
 <div class="page">
   <main>
-    <h2 id="controlling-cycle-xiangke">Controlling Cycle Xiangke</h2>
-<p>回忆一下：五行之间不只是"你生我、我生它"的相生关系，还有一层更严格的约束——相克。相克循环是：木克土、土克水、水克火、火克金、金克木。每一个"行"都被前一个牢牢管着，谁也不能无限膨胀。</p>
-<p>我们可以把相克看作一种<strong>环状限制系统</strong>。设五行集合为 $P=\{木,土,水,火,金\}$，定义一个函数 $C:P\to P$，表示"克制关系指向谁"：</p>
-$$C(木)=土,\quad C(土)=水,\quad C(水)=火,\quad C(火)=金,\quad C(金)=木$$
-<p>这其实是一个<strong>置换（permutation）</strong>，而且是一个长度为 5 的循环（cycle），数学上可以写成</p>
-$$(木\ 土\ 水\ 火\ 金)$$
-<p>意思是：从木出发,经过 5 步克制，恰好回到木本身，即 $C^5(x)=x$ 对所有 $x\in P$ 成立。这和相生循环结构相似,但箭头指向不同的"下三位"，形成了另一套独立的约束网络。</p>
-<p>规律很简单：<strong>每一行都恰好压制一个行，也恰好被另一个行压制</strong>——这保证了系统里没有哪一行能失控地一直变强。相生提供"能量流动"，相克提供"负反馈"，两者叠加,系统才趋于动态平衡（类似物理里"驱动力+阻力"共同决定运动状态）。</p>
-<p><strong>小练习</strong>：如果某个系统里"火"这一行因为某种原因持续增强，按照相克关系，理论上应该是哪一行的力量被相应削弱？请写出你的推理链条（提示：先找到 $C(火)$ 是谁）。</p>
+    <h2 id="五行相克">五行相克</h2>
+<p>还记得五行相生的循环吗——木生火、火生土、土生金、金生水、水生木，一种能量滋养下一种。但如果只有相生，某一行会不会越长越强，失去限制？中医理论中还有另一条循环,专门负责"刹车"：相克循环。</p>
+<p>相克的路径是：木克土、土克水、水克火、火克金、金克木。每一行都克制着另一行，而自己又被第三行克制，形成一个自我调节的闭环，没有哪一行可以无限扩张。用生活的例子理解：树根（木）扎进泥土，牢牢固定住松散的土壤，这就是"木克土"；堤坝（土）能挡住泛滥的流水，这是"土克水"；水能浇灭火焰，是"水克火"；烈火能熔化金属，是"火克金"；而金属打造的斧头能砍伐树木，是"金克木"。</p>
+<p>相克与相生共同作用，构成中医对身体各系统相互制约、维持整体协调状态的传统解释——五脏之间既互相滋养，又互相牵制。需要说明的是，这套理论是数千年临床观察和哲学思辨积累而成的传统框架，其具体机制并未在现代科学中得到实证检验，不应与心率、血糖等可测量的生理指标混为一谈。</p>
+<p><strong>规律小结</strong>：把六行排成一个环，相克关系是"隔一位克制"——木、土、水、火、金、木，每一行克制环上第三个位置的那一行。</p>
+<p><strong>练习</strong>：请按照相克顺序，把"木、火、土、金、水"重新排成一个环形序列，使得每一行都克制它顺时针方向的下一行。</p>
   </main>
   <footer class="spl-credit"><span class="spl-credit__meta">元健康 Meta-Health Ch1: TCM Foundations — Yin-Yang, Qi-Blood, and the Five Phases (中医基础) (Level: Core &middot; Language: ZH &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
 </div>

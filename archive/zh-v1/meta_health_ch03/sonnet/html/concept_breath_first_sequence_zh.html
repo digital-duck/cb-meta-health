@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Breath First Sequence | Meta Health Ch03</title>
+<script>
+MathJax = {
+  loader: { load: ['[tex]/mathtools'] },
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']],
+         packages: { '[+]': ['mathtools'] } },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+footer.spl-credit span{display:block}
+footer.spl-credit .spl-credit__meta{margin-bottom:4px}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="breath-first-sequence">Breath First Sequence</h2>
+<p>还记得五行相生循环吧？木生火，火生土,土生金，金生水，水生木——像一条首尾相接的链条，能量沿着固定方向流动。"呼吸优先序列"用的是同一条链条，只是把起点从"木/肝"换成了"金/肺"。为什么这样改？因为呼吸是身体里少数你能主动控制、又能自动运行的过程——它是你能亲手触碰的、通往自主神经系统的桥梁。从这里入手,比从"肝"这种完全不受意识支配的器官入手,要容易理解得多。</p>
+<p>用符号来写会更清楚。原始相生循环可以表示为一个有向序列：</p>
+$$\text{肝} \rightarrow \text{心} \rightarrow \text{脾} \rightarrow \text{肺} \rightarrow \text{肾} \rightarrow \text{肝}$$
+<p>呼吸优先序列只是选了不同的起点，遍历同一个环：</p>
+$$\text{肺} \rightarrow \text{肾} \rightarrow \text{肝} \rightarrow \text{心} \rightarrow \text{脾} \rightarrow \text{肺}$$
+<p>注意两条序列里，每个器官指向的下一个器官完全相同——顺序没有被打乱，只是"从哪里开始数"变了。这就是简单规律：<strong>起点可以按教学需要移动，但相生的方向（谁生谁）永远不变</strong>。有些教学视频喜欢从"肺"开始，正是利用了这个自由度，让学习者先掌握一个熟悉、可操作的入口，再顺着环走向更难感知的器官。</p>
+<p><strong>练习</strong>：如果把起点从"心"开始，沿着同样的相生方向写出完整的五步序列，下一步会经过哪个器官？请写出从"心"出发的完整循环。</p>
+  </main>
+  <footer class="spl-credit"><span class="spl-credit__meta">元健康 Meta-Health Ch3: The Five-Organ Exercises (五脏操) (Level: Core &middot; Language: ZH &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
+</div>
+</body>
+</html>

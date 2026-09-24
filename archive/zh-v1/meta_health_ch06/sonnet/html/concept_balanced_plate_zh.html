@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Balanced Plate | Meta Health Ch06</title>
+<script>
+MathJax = {
+  loader: { load: ['[tex]/mathtools'] },
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']],
+         packages: { '[+]': ['mathtools'] } },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+footer.spl-credit span{display:block}
+footer.spl-credit .spl-credit__meta{margin-bottom:4px}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="balanced-plate">Balanced Plate</h2>
+<p>还记得"餐盘法则"最初的样子吗？一个圆盘,分成几块,一半是蔬菜水果,剩下一半再切成两份,分别装全谷物和蛋白质,再加一点健康脂肪。这个直觉图像很好记,但现在我们可以更精确地理解它——它其实是一个<strong>比例分配问题</strong>。</p>
+<p>把整个餐盘的面积看作 $1$(即 100%),餐盘法则给出了一组固定比例:</p>
+$$
+\text{蔬果} = \frac{1}{2}, \quad \text{全谷物} = \frac{1}{4}, \quad \text{蛋白质} = \frac{1}{4}
+$$
+<p>验证一下:$\frac{1}{2} + \frac{1}{4} + \frac{1}{4} = 1$,刚好覆盖整个餐盘,健康脂肪则是穿插其中的"调味"部分,不单独占一块面积,而是薄薄地覆盖在其他食物上(比如烹调油、坚果碎)。</p>
+<p>这个比例本身还需要一个"质量检查"——颜色。研究营养的人常用"五色原则"交叉验证:红、黄、绿、白、黑(或紫)五种颜色的天然食材各出现在餐盘里,大致对应不同的植物营养素家族。如果你的蔬果那一半只有绿色,说明种类不够多样,即使比例数字对了,营养结构也可能不均衡。</p>
+<p>简单规则记住三步:<strong>先分比例(1/2 : 1/4 : 1/4),再查颜色(五色是否齐全),最后看脂肪(是否为健康来源,如橄榄油、坚果,而非油炸）</strong>。</p>
+<p><strong>小练习</strong>:小明的午餐餐盘中,蔬菜水果占了整个盘子面积的 $\frac{3}{8}$,全谷物占 $\frac{1}{4}$,请问按照餐盘法则的比例,他的蛋白质部分应该至少补到多少,才能让蔬果+蛋白质合计达到理想的 $\frac{3}{4}$?</p>
+  </main>
+  <footer class="spl-credit"><span class="spl-credit__meta">元健康 Meta-Health Ch6: What We Eat — Food Quality, Four Natures, and Five Flavors (四气五味) (Level: Core &middot; Language: ZH &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
+</div>
+</body>
+</html>

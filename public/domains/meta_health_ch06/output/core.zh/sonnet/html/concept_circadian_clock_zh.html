@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Circadian Clock | Meta Health Ch06</title>
+<title>生物钟 | Meta Health Ch06</title>
 <script>
 MathJax = {
   loader: { load: ['[tex]/mathtools'] },
@@ -38,16 +38,11 @@ section:first-of-type{border-top:none;padding-top:0}
 <body>
 <div class="page">
   <main>
-    <h2 id="circadian-clock">Circadian Clock</h2>
-<p>你已经知道,身体里有一个大约24小时的"生物钟",由光线设定,安排着荷尔蒙、消化和睡眠的节奏。现在我们来看看这个时钟到底是怎么"走"的。</p>
-<p>这个时钟的核心其实是一组细胞里的基因,它们互相调控,形成一个<strong>负反馈回路</strong>:某些基因(如 CLOCK 和 BMAL1)制造蛋白质,这些蛋白质又反过来抑制自己的基因表达。这个"开启—积累—抑制—清除"的循环大约需要24小时完成一轮,于是就产生了周期性节律。我们可以把这个过程简化地表示为一个振荡系统:</p>
-$$
-\frac{dP}{dt} = k_1 \cdot f(G) - k_2 \cdot P
-$$
-<p>其中 $P$ 是抑制蛋白的浓度,$G$ 代表基因表达活性,$k_1$ 和 $k_2$ 是合成与降解速率常数。当 $P$ 升高到一定程度,它会压制 $f(G)$,导致 $P$ 下降,随后循环重新开始——这就是振荡的数学本质。</p>
-<p>人体内几乎每个器官都有自己的"局部时钟",但大脑中的<strong>视交叉上核(SCN)</strong>是总指挥,它通过感知视网膜传来的光信号,每天重新校准整个系统,让身体各处的时钟保持同步。</p>
-<p><strong>简单规律</strong>:光照信号 → SCN 校准 → 局部时钟同步 → 激素与消化节律随之调整。</p>
-<p><strong>练习题</strong>:如果一个人连续三天熬夜到凌晨3点才睡觉,并且白天拉窗帘不见光,请推测他的 SCN 校准信号会发生什么变化?这可能会如何影响他白天的血糖调节节律?(提示:回忆餐后血糖反应与消化节律的关系。)</p>
+    <h2 id="生物钟">生物钟</h2>
+<p>回想一下：你的身体里有一个大约 24 小时的"内部时钟",科学家称之为<strong>生理节律钟</strong>(circadian clock)。它不是靠感觉猜测时间,而是真的在按周期运行——即使把一个人关在没有窗户、看不到日夜变化的房间里,他的体温、激素和睡意仍然会按大约 24 小时的节奏起伏。</p>
+<p>这个"时钟"到底在哪里、怎么运作?它的主时钟位于大脑深处一个叫"视交叉上核"的小区域,由几千个神经细胞组成,这些细胞内部的基因表达会以约 24 小时为周期自动开关,形成一个分子层面的"摆钟"。它每天靠什么"对表"?主要是<strong>光</strong>——尤其是清晨照进眼睛的阳光,会通过视神经把信号传给这个主时钟,把它重新校准到接近 24.0~24.2 小时的周期,与地球自转同步。</p>
+<p>这个主时钟一旦被光设定好,就像总指挥一样,向全身发出信号,安排身体各项活动的时间表:褪黑素在夜晚分泌帮助入睡,皮质醇在清晨升高帮助唤醒,体温在午后达到高点,消化系统的活跃度也随之起伏。这不是单一激素在起作用,而是一整套按时间表运行的协调系统——正因如此,倒时差、熬夜、夜班工作才会让人感觉"整个人都乱了",因为身体各部分被迫在错误的时间各自为政。</p>
+<p><strong>小练习</strong>:小李连续三天每天凌晨 2 点睡、上午 10 点起,周末又恢复晚上 11 点睡、早上 7 点起。请用今天学到的"光校准生理节律钟"的原理,解释他周一早上为什么会感觉特别疲惫、难以清醒。</p>
   </main>
   <footer class="spl-credit"><span class="spl-credit__meta">元健康 Meta-Health Ch6: What We Eat — Food Quality, Four Natures, and Five Flavors (四气五味) (Level: Core &middot; Language: ZH &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
 </div>

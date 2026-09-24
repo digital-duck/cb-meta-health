@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Vagal Tone And Hrv | Meta Health Ch02</title>
+<script>
+MathJax = {
+  loader: { load: ['[tex]/mathtools'] },
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']],
+         packages: { '[+]': ['mathtools'] } },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+footer.spl-credit span{display:block}
+footer.spl-credit .spl-credit__meta{margin-bottom:4px}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="vagal-tone-and-hrv">Vagal Tone And Hrv</h2>
+<p>心率不是一台稳定敲打节拍的鼓机——即使你静静坐着，心跳之间的间隔也在不断微调,这就是"心率变异性"(Heart Rate Variability, HRV)。它反映的是副交感神经(迷走神经,vagus nerve)对心脏的调节能力,即所谓的<strong>迷走神经张力</strong>(vagal tone)。</p>
+<p>心脏本身有一个天然的起搏点(窦房结),会以固定节律自发放电。但迷走神经像一条"刹车线",通过释放乙酰胆碱不断给心跳"踩刹车"、松刹车,产生快速的微调。吸气时,迷走张力短暂减弱,心率略微加快;呼气时,迷走张力恢复,心率略微减慢——这种随呼吸波动的现象叫作<strong>呼吸性窦性心律不齐</strong>(respiratory sinus arrhythmia)。HRV 越高,说明这条"刹车线"反应越灵敏,身体在压力后恢复平静的能力也越强。</p>
+<p>工程师用一个简单指标量化这种波动,叫作 SDNN(相邻正常心跳间期的标准差):</p>
+$$
+\text{SDNN} = \sqrt{\frac{1}{N-1}\sum_{i=1}^{N}(RR_i - \overline{RR})^2}
+$$
+<p>其中 $RR_i$ 是第 $i$ 个心跳间期(单位通常是毫秒), $\overline{RR}$ 是平均值。SDNN 越大,代表心跳间隔的波动范围越大，通常意味着迷走神经张力越高。</p>
+<p><strong>简单规律</strong>:缓慢而深长的呼吸(比如每分钟 5–6 次)会拉长呼气阶段,给迷走神经更多"发力"的时间,从而提高 HRV。</p>
+<p><strong>练习题</strong>:某人测得连续 5 个心跳间期(单位:毫秒)分别为 800, 820, 790, 810, 780。请计算这组数据的平均值 $\overline{RR}$,并说出:如果这个人开始做深呼吸练习,你预期 SDNN 会变大还是变小?为什么?</p>
+  </main>
+  <footer class="spl-credit"><span class="spl-credit__meta">元健康 Meta-Health Ch2: The Physiology Lens — Breath, Circulation, Fascia, and Core (生理视角) (Level: Core &middot; Language: ZH &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
+</div>
+</body>
+</html>

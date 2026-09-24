@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Vagal Tone And Hrv | Meta Health Ch02</title>
+<title>Vagal Tone and Heart-Rate Variability | Meta Health Ch02</title>
 <script>
 MathJax = {
   loader: { load: ['[tex]/mathtools'] },
@@ -38,15 +38,16 @@ section:first-of-type{border-top:none;padding-top:0}
 <body>
 <div class="page">
   <main>
-    <h2 id="vagal-tone-and-hrv">Vagal Tone And Hrv</h2>
-<p>You already know that slow, deep breathing calms you down — that's the vagus nerve, part of your parasympathetic "rest and digest" system, putting the brakes on your heart rate. Now let's look at how scientists actually measure how strong that braking system is.</p>
-<p>Your heart doesn't tick like a metronome. Even at rest, the time between beats stretches and shrinks slightly — faster on an inhale, slower on an exhale. This beat-to-beat fluctuation is called <strong>heart-rate variability (HRV)</strong>. If you recorded the time gaps between heartbeats as a sequence $t_1, t_2, t_3, \dots$, HRV is essentially a measure of how much those gaps differ from one another, not their average.</p>
-<p>Here's the key pattern: <strong>higher HRV generally means stronger vagal tone</strong> — a more responsive, flexible nervous system. A perfectly steady, unchanging heart rate isn't actually a sign of health; it can mean the vagus nerve isn't doing much regulating at all. One common way to quantify this is the root-mean-square of successive differences:</p>
+    <h2 id="vagal-tone-and-heart-rate-variability">Vagal Tone and Heart-Rate Variability</h2>
+<p>Your heart doesn't tick like a metronome. Even at rest, the gap between beats keeps shifting — slightly shorter, slightly longer — and that shifting is exactly what "heart-rate variability" measures. It's a sign that your body is fine-tuned enough to adjust in real time, not a flaw.</p>
+<p>The variation comes mostly from the vagus nerve, the main highway of the parasympathetic nervous system (the "rest and digest" branch, as opposed to the "fight or flight" sympathetic branch). When the vagus nerve is active, it releases a chemical signal that slows the heart's pacemaker cell by cell, beat by beat. "Vagal tone" describes how strong and responsive this signal is at baseline. Higher vagal tone generally means higher HRV, faster recovery after stress, and better regulation of blood pressure and digestion.</p>
+<p>Breathing links directly into this system. As you inhale, vagal activity briefly eases and heart rate ticks up; as you exhale, vagal activity returns and heart rate eases back down. This natural pattern is called respiratory sinus arrhythmia. Slow, deep breathing — roughly five to seven breaths per minute — exaggerates this swing, which is why controlled breathing exercises are one of the few things people can voluntarily do to raise their measured HRV.</p>
+<p>One common HRV metric is the root-mean-square of successive differences between heartbeats, written as:</p>
 $$
-\text{RMSSD} = \sqrt{\frac{1}{N-1}\sum_{i=1}^{N-1} (t_{i+1}-t_i)^2}
+\text{RMSSD} = \sqrt{\frac{1}{n-1}\sum_{i=1}^{n-1} (RR_{i+1} - RR_i)^2}
 $$
-<p>A larger RMSSD signals more beat-to-beat variation, hence higher estimated vagal tone. This is why slow breathing (roughly 5–6 breaths per minute) is used in HRV training: it exaggerates the natural rise and fall of heart rate with each breath, giving the vagus nerve more room to act — and a higher measured HRV.</p>
-<p><strong>Practice problem:</strong> Suppose four consecutive beat-to-beat intervals (in milliseconds) are 800, 820, 795, 830. Calculate the RMSSD using the formula above.</p>
+<p>where $RR_i$ is the time between beat $i$ and the next beat, in milliseconds.</p>
+<p><strong>Practice problem:</strong> A student records four beat-to-beat intervals: 800 ms, 820 ms, 790 ms, 815 ms. Find the three successive differences ($RR_2-RR_1$, $RR_3-RR_2$, $RR_4-RR_3$), square each, average them, and take the square root to estimate RMSSD.</p>
   </main>
   <footer class="spl-credit"><span class="spl-credit__meta">元健康 Meta-Health Ch2: The Physiology Lens — Breath, Circulation, Fascia, and Core (生理视角) (Level: Core &middot; Language: EN &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
 </div>

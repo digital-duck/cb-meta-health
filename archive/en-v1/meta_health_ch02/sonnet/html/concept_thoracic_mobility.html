@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Thoracic Mobility | Meta Health Ch02</title>
+<script>
+MathJax = {
+  loader: { load: ['[tex]/mathtools'] },
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']],
+         packages: { '[+]': ['mathtools'] } },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+footer.spl-credit span{display:block}
+footer.spl-credit .spl-credit__meta{margin-bottom:4px}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="thoracic-mobility">Thoracic Mobility</h2>
+<p>You already know that a stiff upper back makes you slouch, and slouching makes breathing feel shallow. Now let's look at <em>why</em> — and how to describe it precisely.</p>
+<p>The thoracic spine has 12 vertebrae, each connected to a pair of ribs. Unlike your lower back, which mostly bends forward and back, the thoracic spine is built for three separate motions: extension (arching), rotation (twisting), and side-bending. Each vertebra only allows a few degrees of motion, but stacked across 12 segments, those small angles add up to a usable range — this is the same idea as a recurrence relation, where a small per-step contribution compounds across iterations. If $\theta_i$ is the rotation available at vertebra $i$, total thoracic rotation $\Theta$ is approximately</p>
+$$\Theta = \sum_{i=1}^{12} \theta_i$$
+<p>Mobility loss rarely comes from one damaged joint — it comes from many segments each contributing a slightly smaller $\theta_i$, often because surrounding muscles (like the rhomboids and intercostals) have tightened and are limiting the rib cage's excursion.</p>
+<p>This matters for breathing because rib expansion is geometric: as ribs rotate outward and upward during inhalation, they increase the cross-sectional area of the thoracic cavity, which by Boyle's Law ($P_1V_1 = P_2V_2$) lowers internal pressure and draws air in. Less rib rotation means a smaller $\Delta V$, so the body compensates with faster, shallower breaths.</p>
+<p><strong>Practice problem:</strong> Suppose a person's thoracic spine normally allows 4° of rotation per vertebra across all 12 segments, but due to stiffness, 3 vertebrae now only contribute 1° each. Using the sum above, what is the new total $\Theta$, and by how many degrees has total rotation decreased?</p>
+  </main>
+  <footer class="spl-credit"><span class="spl-credit__meta">元健康 Meta-Health Ch2: The Physiology Lens — Breath, Circulation, Fascia, and Core (生理视角) (Level: Core &middot; Language: EN &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
+</div>
+</body>
+</html>

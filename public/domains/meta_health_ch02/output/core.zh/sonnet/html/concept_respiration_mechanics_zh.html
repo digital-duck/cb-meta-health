@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Respiration Mechanics | Meta Health Ch02</title>
+<title>呼吸力学 | Meta Health Ch02</title>
 <script>
 MathJax = {
   loader: { load: ['[tex]/mathtools'] },
@@ -38,15 +38,11 @@ section:first-of-type{border-top:none;padding-top:0}
 <body>
 <div class="page">
   <main>
-    <h2 id="respiration-mechanics">Respiration Mechanics</h2>
-<p>回忆一下：呼吸不是肺自己"抽气",而是靠胸腔体积的变化,把空气"吸"进来或"挤"出去。这背后其实是一个物理规律在起作用。</p>
-<p>呼吸的核心机制依赖<strong>波义耳定律</strong>(Boyle's Law):在温度不变的条件下,气体压强与体积成反比,即</p>
-$$P \times V = \text{常数}$$
-<p>吸气时,膈肌(diaphragm)收缩并下移,同时肋间肌(intercostal muscles)收缩,把肋骨向上、向外拉,这两个动作共同使胸腔容积 $V$ 增大。根据波义耳定律,$V$ 增大意味着肺内压强 $P$ 下降,低于外界大气压。压强差驱动空气从高压(体外)流向低压(肺内)——这就是吸气。</p>
-<p>呼气时机制相反:膈肌和肋间肌放松,胸腔容积 $V$ 减小,肺内压强 $P$ 随之升高,超过大气压,空气被"挤"出体外。整个过程可以概括为一条简单规则:</p>
-$$V \uparrow \Rightarrow P \downarrow \Rightarrow \text{吸气} \qquad V \downarrow \Rightarrow P \uparrow \Rightarrow \text{呼气}$$
-<p>注意,是肌肉的机械运动主动改变了体积,压强变化只是体积变化的结果,气流方向则由压强差决定。</p>
-<p><strong>练习</strong>:如果某人胸腔容积从静息时的 $3.0\,\text{L}$ 扩张到吸气末的 $3.5\,\text{L}$,肺内压强从 $101.3\,\text{kPa}$ 变化到多少?(假设温度不变,使用波义耳定律 $P_1V_1 = P_2V_2$ 计算,结果保留一位小数。)</p>
+    <h2 id="呼吸力学">呼吸力学</h2>
+<p>回忆一下:呼吸看起来简单——吸气,胸口鼓起;呼气,胸口回落。但这背后其实是一套精密的"体积—压力"机制,而不是肺自己主动"抽气"。肺没有肌肉,它完全依靠周围结构的牵拉才能张开和收缩。</p>
+<p>真正驱动呼吸的是两组肌肉:膈肌(位于胸腔底部的一片穹顶状肌肉)和肋间肌(连接相邻肋骨的肌肉)。吸气时,膈肌收缩并下移,肋间肌收缩使肋骨向上向外扩张,胸腔容积随之增大。根据气体的基本规律,同样多的空气分子占据更大空间时,压力会下降——于是肺内压低于大气压,外部空气便顺着压力差被"压入"肺中。呼气时过程相反:膈肌放松回升,肋骨下移,胸腔容积变小,肺内压升高,空气被推出体外。</p>
+<p>简单规律可以这样概括:<strong>胸腔容积增大 → 肺内压下降 → 空气流入;胸腔容积减小 → 肺内压升高 → 空气流出</strong>。平静呼吸时呼气主要靠肌肉放松和肺的弹性回缩完成,几乎不额外耗力;但用力呼气(比如吹气球)则需要腹肌等辅助肌肉主动参与,进一步压缩胸腔。</p>
+<p>练习:小明平静呼吸时,每分钟呼吸 $16$ 次,每次吸入约 $500\ \text{mL}$ 空气。请计算他 $1$ 分钟内吸入的空气总体积(单位:升,$1\ \text{L}=1000\ \text{mL}$)。</p>
   </main>
   <footer class="spl-credit"><span class="spl-credit__meta">元健康 Meta-Health Ch2: The Physiology Lens — Breath, Circulation, Fascia, and Core (生理视角) (Level: Core &middot; Language: ZH &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
 </div>

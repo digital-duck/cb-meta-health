@@ -4,39 +4,63 @@ primitives:
     defines: >-
       The gastrointestinal tract: mouth, esophagus, stomach, small and large intestine, with the liver
       and pancreas as accessory organs.
+    labels:
+      en: The Gastrointestinal Tract
+      zh: 消化道
     tier: 0
   liver_metabolic_role:
     defines: >-
       The liver's metabolic role: processing nutrients arriving from the gut, storing glycogen, making
       bile and clearing toxins.
+    labels:
+      en: The Liver's Metabolic Role
+      zh: 肝脏的代谢作用
     tier: 0
   prenatal_postnatal_qi:
     defines: >-
       Postnatal qi (后天之气): qi and blood made daily from food by the Spleen and Stomach (from Chapter 1).
+    labels:
+      en: Prenatal and Postnatal Qi (先天与后天)
+      zh: 先天之本与后天之本
     tier: 0
   regional_blood_flow_distribution:
     defines: >-
       Regional redistribution of cardiac output between muscles and organs (from Chapter 2).
+    labels:
+      en: Regional Blood-Flow Distribution
+      zh: 血流的区域分配
     tier: 0
   smooth_muscle:
     defines: >-
       Smooth muscle: involuntary muscle in the gut wall and blood vessels that contracts rhythmically
       without conscious control.
+    labels:
+      en: Smooth Muscle
+      zh: 平滑肌
     tier: 0
   spleen_stomach_system:
     defines: >-
       The Spleen–Stomach system (脾胃), the Earth phase and middle burner (中焦) of TCM (from Chapter 1).
+    labels:
+      en: The Spleen–Stomach System (脾胃)
+      zh: 脾胃
     tier: 0
   sympathetic_parasympathetic_balance:
     defines: >-
       Sympathetic ('fight-or-flight') versus parasympathetic ('rest-and-digest') balance (from Chapter
       2).
+    labels:
+      en: Sympathetic–Parasympathetic Balance
+      zh: 交感与副交感神经平衡
     tier: 0
 concepts:
   cephalic_phase_digestion:
     defines: >-
       The cephalic phase of digestion: the sight, smell and taste of food and the act of chewing trigger
       saliva, gastric acid and insulin release through the vagus nerve before food reaches the stomach.
+    labels:
+      en: The Cephalic Phase of Digestion
+      zh: 消化的头期
     composed_of:
     - gastrointestinal_tract
     - sympathetic_parasympathetic_balance
@@ -45,6 +69,9 @@ concepts:
     defines: >-
       Peristalsis and gut motility: coordinated smooth-muscle waves that mix and move food along several
       metres of gut, strengthened by parasympathetic activity and inhibited by stress.
+    labels:
+      en: Peristalsis and Gut Motility
+      zh: 胃肠蠕动
     composed_of:
     - smooth_muscle
     - sympathetic_parasympathetic_balance
@@ -54,6 +81,9 @@ concepts:
     defines: >-
       The splanchnic circulation: blood supply to the stomach, intestines, pancreas, spleen and liver,
       which receives roughly a quarter of resting cardiac output.
+    labels:
+      en: The Splanchnic Circulation
+      zh: 内脏循环
     composed_of:
     - regional_blood_flow_distribution
     - gastrointestinal_tract
@@ -62,6 +92,9 @@ concepts:
     defines: >-
       The Spleen transforms and transports (脾主运化): the Spleen extracts the refined essence (水谷精微) from
       food and fluids and distributes it to make qi and blood; this work is powered by Spleen yang (脾阳).
+    labels:
+      en: The Spleen Transforms and Transports (脾主运化)
+      zh: 脾主运化
     composed_of:
     - spleen_stomach_system
     - prenatal_postnatal_qi
@@ -70,6 +103,9 @@ concepts:
     defines: >-
       The Stomach receives and ripens (胃主受纳腐熟): in TCM, the Stomach is the vessel that takes in food and
       'rots and ripens' it as the first stage of digestion.
+    labels:
+      en: The Stomach Receives and Ripens (胃主受纳)
+      zh: 胃主受纳腐熟
     composed_of:
     - spleen_stomach_system
     tier: 1
@@ -77,6 +113,9 @@ concepts:
     defines: >-
       Ascending the clear, descending the turbid (升清降浊): Spleen qi lifts nourishment upward while Stomach
       qi sends waste downward; when this reverses, bloating, belching and heaviness follow.
+    labels:
+      en: Ascending the Clear, Descending the Turbid (升清降浊)
+      zh: 升清降浊
     composed_of:
     - spleen_transformation_transport
     - stomach_receiving_ripening
@@ -85,6 +124,9 @@ concepts:
     defines: >-
       First-pass processing in the liver: nutrient-rich blood from the gut goes through the portal vein
       to the liver first, which stores glucose as glycogen, packages fats and makes bile.
+    labels:
+      en: First-Pass Processing in the Liver
+      zh: 肝脏首过代谢
     composed_of:
     - liver_metabolic_role
     - splanchnic_circulation
@@ -93,6 +135,9 @@ concepts:
     defines: >-
       Mastication (咀嚼): chewing breaks food into small pieces, mixes it with saliva and enzymes, and gives
       the brain time to register what is being eaten.
+    labels:
+      en: Chewing (Mastication)
+      zh: 咀嚼
     composed_of:
     - gastrointestinal_tract
     - cephalic_phase_digestion
@@ -101,6 +146,9 @@ concepts:
     defines: >-
       Postprandial hyperemia (餐后充血): after a meal, intestinal blood flow rises substantially (superior
       mesenteric flow can roughly double) and cardiac output increases to supply digestion.
+    labels:
+      en: Postprandial Hyperemia
+      zh: 餐后充血
     composed_of:
     - splanchnic_circulation
     tier: 2
@@ -109,6 +157,9 @@ concepts:
       The cardiovascular load of digestion: heart rate and cardiac output rise after large meals, which
       is why vigorous exercise straight after eating competes for blood and why some older adults feel
       dizzy after meals (postprandial hypotension).
+    labels:
+      en: The Cardiovascular Load of Digestion
+      zh: 消化的心血管负荷
     composed_of:
     - postprandial_hyperemia
     - sympathetic_parasympathetic_balance
@@ -118,6 +169,9 @@ concepts:
       The post-meal glucose response: blood sugar rises and falls after eating depending on meal composition,
       eating speed, gastric emptying and muscle activity; large, repeated spikes are linked to metabolic
       strain.
+    labels:
+      en: The Post-Meal Glucose Response
+      zh: 餐后血糖反应
     composed_of:
     - hepatic_first_pass_processing
     - peristalsis_and_motility
@@ -126,6 +180,9 @@ concepts:
     defines: >-
       Satiety signalling: stretch receptors and gut hormones (e.g. CCK, GLP-1, PYY) tell the brain the
       stomach is filling, with a lag of roughly 15–20 minutes behind the eating itself.
+    labels:
+      en: Satiety Signaling
+      zh: 饱腹信号
     composed_of:
     - gastrointestinal_tract
     - mastication
@@ -136,6 +193,9 @@ concepts:
       circulation — blood redistributes, smooth muscle works, and the liver's metabolic load surges —
       equivalent in TCM to firing up the Spleen–Stomach engine. Like any workout, it needs preparation,
       the right load and recovery.
+    labels:
+      en: Eating as Internal Exercise
+      zh: 饮食即内脏运动
     composed_of:
     - postprandial_hyperemia
     - peristalsis_and_motility
@@ -147,6 +207,9 @@ concepts:
       Gentle movement after meals (饭后百步走): an easy walk or gentle forms (e.g. Baduanjin forms 3 and 4)
       about 10–40 minutes after eating measurably blunts the glucose spike and, in TCM terms, aids transformation;
       vigorous exercise should wait longer.
+    labels:
+      en: Gentle Movement After Meals
+      zh: 饭后温和活动
     composed_of:
     - postprandial_glucose_response
     - cardiovascular_load_of_digestion
@@ -156,6 +219,9 @@ concepts:
     defines: >-
       Pacing the digestive load: eating slowly and stopping at about 70–80% full (七分饱, hara hachi bu)
       so satiety signals can catch up and the Spleen–Stomach is not overloaded.
+    labels:
+      en: Pacing the Digestive Load (七分饱)
+      zh: 控制消化负荷：七分饱
     composed_of:
     - eating_as_internal_exercise
     - satiety_signaling
@@ -165,6 +231,9 @@ concepts:
       The digestive warm-up: a few slow breaths and a relaxed start before the first bite, then thorough
       chewing — shifting into rest-and-digest and letting the cephalic phase prime secretions, like warming
       up before a workout.
+    labels:
+      en: The Digestive Warm-Up
+      zh: 消化的热身
     composed_of:
     - eating_as_internal_exercise
     - cephalic_phase_digestion
@@ -175,6 +244,9 @@ concepts:
       Digestive 'overtraining': overeating, bolting food and heavy late meals overload the organs, as
       overtraining injures muscles — seen in TCM as food stagnation (积食) and a weakened Spleen, and in
       physiology as reflux, sluggishness and large glucose swings.
+    labels:
+      en: Digestive Overtraining
+      zh: 消化的过度训练
     composed_of:
     - digestive_load_pacing
     - ascending_clear_descending_turbid
@@ -186,6 +258,9 @@ applications:
       The mindful-meal protocol: before (warm-up breaths, no screens), during (thorough chewing, pacing
       to 70–80% full) and after (rest, then gentle movement) — a practical routine that treats every meal
       as a well-coached internal workout.
+    labels:
+      en: The Mindful-Meal Protocol
+      zh: 正念用餐方案
     needs:
     - digestive_warm_up
     - digestive_load_pacing

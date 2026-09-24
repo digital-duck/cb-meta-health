@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Tidal Volume And Gas Exchange | Meta Health Ch02</title>
+<title>潮气量与气体交换 | Meta Health Ch02</title>
 <script>
 MathJax = {
   loader: { load: ['[tex]/mathtools'] },
@@ -38,19 +38,13 @@ section:first-of-type{border-top:none;padding-top:0}
 <body>
 <div class="page">
   <main>
-    <h2 id="tidal-volume-and-gas-exchange">Tidal Volume And Gas Exchange</h2>
-<p>呼吸不是"开关式"的动作——不是简单的"打开"和"关闭"肺部,而是空气按体积、有节奏地进出。你已经知道每次呼吸都会带来氧气、排出二氧化碳,现在我们要更精确地问:<strong>每次呼吸到底移动了多少空气?这个量如何决定气体交换的效率?</strong></p>
-<p>这个"每次呼吸移动的空气量"叫作<strong>潮气量</strong>（tidal volume，记作 $V_T$）。安静状态下,成年人的 $V_T$ 大约是 500 mL。但肺里还有更多空气没被动用——深吸气还能再吸入的部分叫<strong>补吸气量</strong>,用力呼气还能再排出的部分叫<strong>补呼气量</strong>,即使用力呼尽,肺里仍残留着<strong>残气量</strong>。这些加在一起才是肺的总容量。潮气量只是"日常在用"的那一小部分。</p>
-<p>真正决定气体交换效率的,不只是 $V_T$,还有呼吸<strong>频率</strong> $f$（每分钟呼吸次数）。两者相乘得到<strong>每分通气量</strong>：</p>
-$$
-\dot{V}_E = V_T \times f
-$$
-<p>但这里有个精妙之处：并非所有吸入的空气都能到达肺泡参与交换——气管、支气管等"通道"部分不发生气体交换,这部分空间叫<strong>解剖无效腔</strong>（约 150 mL）。真正参与交换的是<strong>肺泡通气量</strong>：</p>
-$$
-\dot{V}_A = (V_T - V_D) \times f
-$$
-<p>其中 $V_D$ 是无效腔容积。这解释了一个反直觉的现象：浅而快的呼吸(小 $V_T$、大 $f$)即使 $\dot{V}_E$ 不变,$\dot{V}_A$ 也会显著下降,因为无效腔的"固定消耗"被重复缴纳了更多次。</p>
-<p><strong>练习</strong>：若 $V_T = 400$ mL、$V_D = 150$ mL、$f = 15$ 次/分钟,求每分通气量 $\dot{V}_E$ 与肺泡通气量 $\dot{V}_A$,并说明为什么后者更能反映真实的气体交换效率。</p>
+    <h2 id="潮气量与气体交换">潮气量与气体交换</h2>
+<p>每次呼吸,肺里的气体并不是全部换新——你吸入一口气,再呼出去,那一进一出的气体量,就叫作潮气量。安静坐着的时候，一次呼吸大约只交换半升左右的空气，肺里其实还留着大量"旧气"没有排出，这是正常的生理设计,而不是效率不足。</p>
+<p>现在往深处看:潮气量只是呼吸系统里的一个变量,它和呼吸频率一起,决定了每分钟真正进出肺部、参与气体交换的空气总量,这个总量叫作每分通气量。成年人安静时的每分通气量大约是 6 升左右。两者的关系可以写成一个简单的乘法:</p>
+$$V_E = V_T \times f$$
+<p>这里 $V_E$ 表示每分通气量(单位:升/分钟),$V_T$ 表示潮气量(单位:升/次),$f$ 表示呼吸频率(单位:次/分钟)。这个公式的价值在于提醒我们:身体调节呼吸,既可以靠"加深"(增大 $V_T$),也可以靠"加快"(增大 $f$)。运动时,身体两者都会用上——潮气量能翻两三倍,呼吸频率也会明显上升,这样才能让更多氧气进入肺泡,更多二氧化碳被排出。</p>
+<p>但要注意:并不是潮气量越大,交换效率就越高。如果只是把呼吸频率提得很快、每次却吸得很浅(潮气量很小),很大一部分气体根本到不了真正进行气体交换的肺泡,只是在气管、支气管里"往返打转",这部分空间叫作解剖无效腔。所以深而慢的呼吸,往往比浅而快的呼吸更有效率。</p>
+<p><strong>练习</strong>:小明安静时呼吸频率是 15 次/分钟,潮气量是 0.4 升。请计算他此时的每分通气量是多少升/分钟?</p>
   </main>
   <footer class="spl-credit"><span class="spl-credit__meta">元健康 Meta-Health Ch2: The Physiology Lens — Breath, Circulation, Fascia, and Core (生理视角) (Level: Core &middot; Language: ZH &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
 </div>

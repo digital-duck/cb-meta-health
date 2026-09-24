@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tidal Volume And Gas Exchange | Meta Health Ch02</title>
+<script>
+MathJax = {
+  loader: { load: ['[tex]/mathtools'] },
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']],
+         packages: { '[+]': ['mathtools'] } },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+footer.spl-credit span{display:block}
+footer.spl-credit .spl-credit__meta{margin-bottom:4px}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="tidal-volume-and-gas-exchange">Tidal Volume And Gas Exchange</h2>
+<p>呼吸不是"开关式"的动作——不是简单的"打开"和"关闭"肺部,而是空气按体积、有节奏地进出。你已经知道每次呼吸都会带来氧气、排出二氧化碳,现在我们要更精确地问:<strong>每次呼吸到底移动了多少空气?这个量如何决定气体交换的效率?</strong></p>
+<p>这个"每次呼吸移动的空气量"叫作<strong>潮气量</strong>（tidal volume，记作 $V_T$）。安静状态下,成年人的 $V_T$ 大约是 500 mL。但肺里还有更多空气没被动用——深吸气还能再吸入的部分叫<strong>补吸气量</strong>,用力呼气还能再排出的部分叫<strong>补呼气量</strong>,即使用力呼尽,肺里仍残留着<strong>残气量</strong>。这些加在一起才是肺的总容量。潮气量只是"日常在用"的那一小部分。</p>
+<p>真正决定气体交换效率的,不只是 $V_T$,还有呼吸<strong>频率</strong> $f$（每分钟呼吸次数）。两者相乘得到<strong>每分通气量</strong>：</p>
+$$
+\dot{V}_E = V_T \times f
+$$
+<p>但这里有个精妙之处：并非所有吸入的空气都能到达肺泡参与交换——气管、支气管等"通道"部分不发生气体交换,这部分空间叫<strong>解剖无效腔</strong>（约 150 mL）。真正参与交换的是<strong>肺泡通气量</strong>：</p>
+$$
+\dot{V}_A = (V_T - V_D) \times f
+$$
+<p>其中 $V_D$ 是无效腔容积。这解释了一个反直觉的现象：浅而快的呼吸(小 $V_T$、大 $f$)即使 $\dot{V}_E$ 不变,$\dot{V}_A$ 也会显著下降,因为无效腔的"固定消耗"被重复缴纳了更多次。</p>
+<p><strong>练习</strong>：若 $V_T = 400$ mL、$V_D = 150$ mL、$f = 15$ 次/分钟,求每分通气量 $\dot{V}_E$ 与肺泡通气量 $\dot{V}_A$,并说明为什么后者更能反映真实的气体交换效率。</p>
+  </main>
+  <footer class="spl-credit"><span class="spl-credit__meta">元健康 Meta-Health Ch2: The Physiology Lens — Breath, Circulation, Fascia, and Core (生理视角) (Level: Core &middot; Language: ZH &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
+</div>
+</body>
+</html>

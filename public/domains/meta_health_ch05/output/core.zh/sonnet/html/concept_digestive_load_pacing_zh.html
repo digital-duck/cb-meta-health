@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Digestive Load Pacing | Meta Health Ch05</title>
+<title>控制消化负荷：七分饱 | Meta Health Ch05</title>
 <script>
 MathJax = {
   loader: { load: ['[tex]/mathtools'] },
@@ -38,15 +38,12 @@ section:first-of-type{border-top:none;padding-top:0}
 <body>
 <div class="page">
   <main>
-    <h2 id="digestive-load-pacing">Digestive Load Pacing</h2>
-<p>回顾一下之前学过的直觉：脾胃就像一台消化"引擎",给它多少燃料、给得多快,直接决定它能不能稳定运转。这一节我们要把"细嚼慢咽、吃到七分饱"这句老话,变成一个可以分析的结构。</p>
-<p>先看一个关键事实:饱腹感信号(瘦素、胆囊收缩素等)从胃肠道传到大脑,存在<strong>时间延迟</strong>,大约需要 $15\text{–}20$ 分钟。如果进食速度过快,身体摄入食物量 $I(t)$(intake,随时间累积)会在信号 $S(t)$(satiety,饱腹感)追上之前就大幅超出实际需要量 $N$(need)。可以把这个关系简化成一个不等式模型:</p>
-$$
-I(t) > S(t-\tau)
-$$
-<p>其中 $\tau$ 是信号延迟。只要进食速度够快,$I(t)$ 会在 $\tau$ 时间内冲过 $N$,而 $S$ 还没"追上来",于是产生过量摄入 $\Delta = I(t)-N$,这部分就变成脾胃必须额外处理的负担。</p>
-<p>由此得到一个简单规律:<strong>放慢进食速度,等价于拉长 $t$、给 $S(t-\tau)$ 更多时间赶上 $I(t)$</strong>,从而让停止进食的时刻更接近真实需要量 $N$。"七分饱"(约 $70\%\text{–}80\%$ 饱和度)正是在信号完全追上之前主动设置的一个安全边界,防止过冲。</p>
-<p><strong>练习</strong>:小明吃饭速度是每分钟摄入 10% 的"满足所需食量",饱腹感信号有 15 分钟延迟。如果他不注意速度,按此速度进食,15 分钟后他大约摄入了饱和量的百分之多少?这个结果和"七分饱"目标相比,超出了多少个百分点?</p>
+    <h2 id="控制消化负荷-七分饱">控制消化负荷：七分饱</h2>
+<p>之前我们了解到,脾胃负责把食物转化为身体能用的"气血"。这一节要问一个更具体的问题:同样一顿饭,怎么吃能让脾胃更轻松地完成这项工作?答案的关键词是"节奏"——吃多快、吃多少。</p>
+<p>先看一个生理事实:大脑感知"吃饱了"的信号并不是瞬间到达的。从胃被食物撑开、血糖上升,到大脑接收并处理这些信号,通常需要大约 15 到 20 分钟。如果吃饭速度很快,在这段延迟时间里,人往往已经不知不觉吃下了比实际需要更多的食物——等到感觉"饱"的时候,其实已经吃"撑"了。</p>
+<p>中医养生中有一个流传已久的经验法则,叫"七分饱"(日本称 hara hachi bu),意思是吃到大约七到八成饱、还没有完全撑满的时候就停筷子。这不是一个精确的科学阈值,而是一种传统的自我节制方法:通过放慢进食速度、留出让身体信号"追上来"的时间,减少脾胃一次性处理过多食物的负担。需要说明的是,"七分饱有益健康"这一说法目前主要来自传统经验和部分动物实验(如热量限制研究),在人类身上的长期效果仍在科学研究中,并非已被完全证实的定论。</p>
+<p><strong>简单规则</strong>:放慢咀嚼速度、每餐留出约 20 分钟、感觉"还能吃一点但不饿了"就停下——这样既给身体信号足够的反应时间,也让脾胃不至于超负荷运转。</p>
+<p><strong>练习题</strong>:小明吃饭只用 5 分钟就吃完一大碗饭,还经常觉得饭后腹胀。请用本节学到的知识,解释他可能忽略了什么生理过程,并提出两条具体的改进建议。</p>
   </main>
   <footer class="spl-credit"><span class="spl-credit__meta">元健康 Meta-Health Ch5: Eating as Internal Exercise (饮食即内脏运动) (Level: Core &middot; Language: ZH &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
 </div>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hepatic First Pass Processing | Meta Health Ch05</title>
+<script>
+MathJax = {
+  loader: { load: ['[tex]/mathtools'] },
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']],
+         packages: { '[+]': ['mathtools'] } },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+footer.spl-credit span{display:block}
+footer.spl-credit .spl-credit__meta{margin-bottom:4px}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="hepatic-first-pass-processing">Hepatic First Pass Processing</h2>
+<p>回忆一下：肠道吸收营养后，血液并不会直接流向全身，而是先经过肝脏这一站——这就是"首过处理"（first-pass processing）。这一站不是随便路过,而是一次彻底的加工与调度。</p>
+<p>从结构上看，这条通路由<strong>肝门静脉（hepatic portal vein）</strong>承担：肠道毛细血管汇集成静脉，再汇入肝门静脉，直接注入肝脏的肝窦（sinusoid）网络,而不是先回到心脏。这意味着肝脏能在营养物质"上市"之前,先对其进行分类与转化。肝脏在此完成至少三项关键工作：</p>
+<li><strong>储存葡萄糖</strong>：多余的葡萄糖被转化为糖原（glycogen）储存起来,这是一种可逆反应,可用简单的质量守恒关系表示：</li>
+$$n\text{Glucose} \rightarrow \text{Glycogen}_n + n\,\text{H}_2\text{O}$$
+<li><strong>包装脂肪</strong>：脂肪被重新组装成脂蛋白颗粒,才能安全地在血液中运输。</li>
+<li><strong>制造胆汁</strong>：为未来消化脂肪做准备。</li>
+<p>可以把这套系统看作一个<strong>输入-处理-输出</strong>模型：肠道是输入端,肝脏是处理器,全身血液循环是输出端。这个"先处理再放行"的顺序,保证了血糖等指标不会因为一顿饭而剧烈失控——这正是稳态调节（homeostasis）的具体体现。</p>
+<p><strong>练习</strong>：如果一个人摄入 90 g 葡萄糖,其中肝脏立即转化为糖原储存的比例为 60%,请计算：(a) 被储存为糖原的葡萄糖质量；(b) 剩余进入全身循环的葡萄糖质量。</p>
+  </main>
+  <footer class="spl-credit"><span class="spl-credit__meta">元健康 Meta-Health Ch5: Eating as Internal Exercise (饮食即内脏运动) (Level: Core &middot; Language: ZH &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
+</div>
+</body>
+</html>

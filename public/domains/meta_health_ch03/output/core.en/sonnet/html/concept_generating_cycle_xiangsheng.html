@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Generating Cycle Xiangsheng | Meta Health Ch03</title>
+<title>The Generating Cycle (Xiangsheng, 相生) | Meta Health Ch03</title>
 <script>
 MathJax = {
   loader: { load: ['[tex]/mathtools'] },
@@ -38,15 +38,12 @@ section:first-of-type{border-top:none;padding-top:0}
 <body>
 <div class="page">
   <main>
-    <h2 id="generating-cycle-xiangsheng">Generating Cycle Xiangsheng</h2>
-<p>You already sense the pattern from the first pass: Wood → Fire → Earth → Metal → Water → Wood, each phase feeding the next like a mother feeding her child. Now let's look at what kind of structure this actually is.</p>
-<p>The generating cycle (相生, <em>xiāng shēng</em>) is a <strong>directed graph</strong> on five nodes, where each node has exactly one outgoing edge and one incoming edge:</p>
-$$\text{Wood} \rightarrow \text{Fire} \rightarrow \text{Earth} \rightarrow \text{Metal} \rightarrow \text{Water} \rightarrow \text{Wood}$$
-<p>Because every node has in-degree 1 and out-degree 1, this graph is a single <strong>cycle of length 5</strong> — there's no branching, no shortcut, and no dead end. If you define the successor function $g(x)$ as "the phase that $x$ generates," then applying $g$ five times returns you to where you started:</p>
-$$g^5(x) = x \quad \text{for any phase } x$$
-<p>This is exactly the structure of <em>modular arithmetic</em>: label the phases $0,1,2,3,4$ (Wood, Fire, Earth, Metal, Water), and $g(x) = x+1 \pmod 5$. Each phase is the "mother" of the next and the "child" of the previous one — a nourishing relationship, not a one-time gift. Fire doesn't just create Earth once; it <em>sustains</em> Earth's existence, the way a parent's care continues over time.</p>
-<p><strong>The rule:</strong> in a length-5 cycle with no shortcuts, every element eventually generates every other element if you follow the arrows far enough — it just takes multiple steps.</p>
-<p><strong>Practice problem:</strong> Starting at Metal, use the generating cycle to find which phase is <em>two generations downstream</em> (i.e., compute $g(g(\text{Metal}))$). Show the two steps you took.</p>
+    <h2 id="the-generating-cycle-xiangsheng-相生">The Generating Cycle (Xiangsheng, 相生)</h2>
+<p>You already know the story: Wood feeds Fire, Fire creates Earth, Earth bears Metal, Metal collects Water, and Water nourishes Wood again. That's the intuition. Now let's look at what this pattern actually claims about the body.</p>
+<p>In the Five Phase framework, each phase is linked to an organ system: Wood → Liver, Fire → Heart, Earth → Spleen, Metal → Lung, Water → Kidney. The generating cycle describes a <em>supportive</em> relationship between neighboring organs — the "mother" phase is said to nourish and enable the "child" phase that follows it. For example, in TCM theory, healthy Liver function is thought to support Heart function, and healthy Kidney function is thought to support Liver function. This is a five-step loop with no end: every phase is both a child (receiving support) and a mother (giving support) to its neighbors.</p>
+<p>It's important to be precise about what kind of claim this is. The generating cycle is not a biochemical pathway, a hormone cascade, or anything with a measurable rate — it's a traditional, symbolic model of relationship and sequence, not a scientifically validated mechanism connecting these organs. Modern physiology does describe real connections between organs (for instance, the kidneys regulate blood volume, which affects the heart's workload), but that is a separate, evidence-based fact, not a confirmation of the Five Phase cycle itself.</p>
+<p>The simple rule to remember: each phase generates the next one in a fixed order, and the cycle never stops — Wood, Fire, Earth, Metal, Water, back to Wood.</p>
+<p><strong>Practice problem:</strong> In the generating cycle, which phase is the "mother" of Earth, and which phase does Earth generate in turn?</p>
   </main>
   <footer class="spl-credit"><span class="spl-credit__meta">元健康 Meta-Health Ch3: The Five-Organ Exercises (五脏操) (Level: Core &middot; Language: EN &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
 </div>

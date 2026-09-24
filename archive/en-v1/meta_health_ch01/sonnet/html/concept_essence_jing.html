@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Essence Jing | Meta Health Ch01</title>
+<script>
+MathJax = {
+  loader: { load: ['[tex]/mathtools'] },
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']],
+         packages: { '[+]': ['mathtools'] } },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+footer.spl-credit span{display:block}
+footer.spl-credit .spl-credit__meta{margin-bottom:4px}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="essence-jing">Essence Jing</h2>
+<p>You already know that Essence, or <em>Jing</em> (精), is your body's stored constitutional substance — the deep reserve behind growth, reproduction, and aging. Now let's look at how it actually behaves as a system.</p>
+<p>Think of Jing as having two sources that combine, much like a starting balance plus ongoing deposits. <strong>Prenatal Jing</strong> (先天之精) is the fixed amount inherited from your parents at conception — it's set once and can only be depleted, never directly increased. <strong>Postnatal Jing</strong> (後天之精) is continuously extracted from food and air by the Spleen and Stomach, refined further by the Kidneys, and used to replenish the total store. We can write this as a simple relationship:</p>
+$$J_{total}(t) = J_{prenatal} - D(t) + \int_0^t R(\tau)\, d\tau$$
+<p>Here $D(t)$ is depletion from stress, overwork, and aging, while $R(\tau)$ is the replenishment rate from nutrition and rest. This isn't meant to be solved like a physics equation — it's a model for reasoning: your daily habits ($R$) can only partially offset unavoidable depletion ($D$), which is why traditional practice emphasizes <em>conserving</em> Jing, not just replacing it.</p>
+<p><strong>Simple rule</strong>: Jing stored in the Kidneys is the foundation for the other core substances — Qi (氣) and Shen (神) — much like a savings account funds daily transactions. Deplete it faster than you replenish it, and every downstream system eventually feels the shortfall.</p>
+<p><strong>Practice problem</strong>: If a person's prenatal Jing is fixed at $J_0$, and their daily depletion rate exceeds their replenishment rate for years, sketch what $J_{total}(t)$ looks like over a lifetime. What does the curve's slope tell you about aging in this model?</p>
+  </main>
+  <footer class="spl-credit"><span class="spl-credit__meta">元健康 Meta-Health Ch1: TCM Foundations — Yin-Yang, Qi-Blood, and the Five Phases (中医基础) (Level: Core &middot; Language: EN &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
+</div>
+</body>
+</html>

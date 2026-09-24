@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Posterior Chain | Meta Health Ch02</title>
+<script>
+MathJax = {
+  loader: { load: ['[tex]/mathtools'] },
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']],
+         packages: { '[+]': ['mathtools'] } },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+footer.spl-credit span{display:block}
+footer.spl-credit .spl-credit__meta{margin-bottom:4px}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="posterior-chain">Posterior Chain</h2>
+<p>想象你把身体从地面"拉起来"——深蹲站起、跳起摸高、甚至只是从椅子上站起来时，身体背面有一整条肌肉链在同时发力：小腿的<strong>腓肠肌</strong>、大腿后侧的<strong>腘绳肌</strong>、臀部的<strong>臀大肌</strong>，一路向上连接到脊柱两侧的<strong>竖脊肌</strong>。这条链条叫做后链（posterior chain），它不是几块孤立的肌肉，而是一条协同工作的"传动系统"。</p>
+<p>从结构上看，后链之所以强大，是因为它跨越了多个关节。腘绳肌同时跨过髋关节和膝关节，臀大肌跨过髋关节，竖脊肌则沿着脊柱分布、控制脊柱的伸展与稳定。当你做一个"髋铰链"动作（比如硬拉或早安式体前屈）时，髋关节角度 $\theta$ 从弯曲逐渐伸展到接近 $180°$，后链肌肉必须产生足够的伸髋力矩 $\tau = F \cdot d$（$F$ 为肌肉收缩力，$d$ 为力臂），才能对抗身体重量和外部负荷造成的力矩。</p>
+<p>一个简单规律是：<strong>髋铰链动作练后链，膝主导动作（如深蹲）更多依赖股四头肌</strong>。区分的关键看髋关节位移量——髋部前后移动越大，后链参与越多。</p>
+<p>竖脊肌的另一个作用是维持脊柱中立位，防止在负荷下腰椎过度弯曲，这也是"背部打直"这条安全提示背后的力学原因。</p>
+<p><strong>练习：</strong> 小明做硬拉时发现，随着杠铃离地，他的髋关节角度从 $70°$ 变化到 $170°$。请说明：在这个过程中，主要负责产生伸髋力矩的是后链中的哪两块（组）肌肉？为什么膝关节角度变化相对较小？</p>
+  </main>
+  <footer class="spl-credit"><span class="spl-credit__meta">元健康 Meta-Health Ch2: The Physiology Lens — Breath, Circulation, Fascia, and Core (生理视角) (Level: Core &middot; Language: ZH &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
+</div>
+</body>
+</html>

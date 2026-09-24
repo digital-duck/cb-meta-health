@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Evidence Quality | Meta Health Ch04</title>
+<title>证据质量的判断 | Meta Health Ch04</title>
 <script>
 MathJax = {
   loader: { load: ['[tex]/mathtools'] },
@@ -38,14 +38,12 @@ section:first-of-type{border-top:none;padding-top:0}
 <body>
 <div class="page">
   <main>
-    <h2 id="evidence-quality">Evidence Quality</h2>
-<p>我们已经知道，"有效"不能只靠感觉或个人经验判断——需要证据。但证据也分等级，就像消息来源有可信和不可信之分一样，医学证据也有一条从弱到强的证据等级链（evidence hierarchy）。</p>
-<p>最底层是<strong>病例报告</strong>（case report）：医生记录"这位病人用了某方法后好转了"。这类证据样本量极小（常常只有 $n=1$），无法排除巧合、安慰剂效应或疾病自然好转的可能。</p>
-<p>再往上是<strong>观察性研究</strong>（observational study）：研究者追踪一群人，比较用某疗法和不用的人后续结果差异。问题在于<strong>混杂因素</strong>——比如更健康、更有经济条件的人可能本来就更倾向选择某种疗法，也更可能恢复得好，这会让疗法看起来比实际更有效。</p>
-<p>再上一级是<strong>随机对照试验</strong>（RCT, randomized controlled trial）：把受试者随机分成实验组和对照组，随机化能平均分散混杂因素，让两组除了"是否接受干预"外基本一致。但如果试验<strong>未设盲</strong>（unblinded）——医生或病人知道自己在哪一组——主观期待仍会影响报告结果，尤其在"感觉是否好转"这类主观指标上。<strong>样本量过小</strong>的 RCT 也容易因随机波动而得出夸大的效果估计。</p>
-<p>最高一级是<strong>荟萃分析</strong>（meta-analysis）：把多个独立 RCT 的数据汇总统计，用更大的有效样本量得出更稳健的结论，同时能揭示单个小试验中被放大的效应量。</p>
-<p><strong>简单规则</strong>：证据强度 $\propto$ 样本量 $\times$ 随机化程度 $\times$ 盲法程度，等级越往上、越可信。</p>
-<p><strong>练习</strong>：一篇报道称"某保健品让 20 名志愿者血压下降，效果显著"，且志愿者和研究者都知道谁服用了保健品。请指出这项研究在证据等级中处于什么位置，并说出它最大的两个弱点。</p>
+    <h2 id="证据质量的判断">证据质量的判断</h2>
+<p>前面我们已经知道，不能只听一个人说"我吃了某种东西后病好了"就相信它有效——这只是一个案例报告。现在我们要更仔细地看：不同类型的研究证据，可靠程度其实差别很大。</p>
+<p>科学家把证据分成几个等级，像一座金字塔。最底层是<strong>案例报告</strong>（一两个人的故事），中间是<strong>观察性研究</strong>（研究者只是记录一大群人的生活习惯和健康结果，并不给他们分配治疗），顶层是<strong>随机对照试验</strong>（研究者把参与者随机分成两组，一组接受治疗，一组接受安慰剂或标准治疗，然后比较结果）。金字塔最顶端是<strong>荟萃分析</strong>——把许多个随机对照试验的结果合并起来统计，得出更稳定的结论。</p>
+<p>为什么随机分组这么重要？因为如果让参与者自己选择要不要接受治疗，那些更健康、更自律、更有钱的人可能本来就更容易选择治疗组，这样即使治疗本身没用，结果看起来也会"有效"，这叫作混杂因素。而"双盲"（参与者和研究者都不知道谁在哪一组）能防止心理预期影响结果判断。</p>
+<p>一个简单的判断规则：样本越小、时间越短、没有随机分组、没有盲法的研究，越容易夸大疗效；样本大、时间长、随机双盲、并被多个独立研究重复验证的结果，才更值得信任。</p>
+<p><strong>练习</strong>：某保健品的宣传引用了一项只有 8 人参与、没有对照组、为期 3 天的研究,声称"治愈率 100%"。请指出这项研究至少两个可能影响其可信度的问题。</p>
   </main>
   <footer class="spl-credit"><span class="spl-credit__meta">元健康 Meta-Health Ch4: Baduanjin — The Eight Brocades (八段锦) (Level: Core &middot; Language: ZH &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
 </div>

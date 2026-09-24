@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Vagal Tone And Hrv | Meta Health Ch07</title>
+<script>
+MathJax = {
+  loader: { load: ['[tex]/mathtools'] },
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']],
+         packages: { '[+]': ['mathtools'] } },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+footer.spl-credit span{display:block}
+footer.spl-credit .spl-credit__meta{margin-bottom:4px}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="vagal-tone-and-hrv">Vagal Tone And Hrv</h2>
+<p>You already know that slow, deep breathing calms you down — that's the vagus nerve, part of your parasympathetic "rest and digest" system, putting the brakes on your heart rate. Now let's look at how scientists actually measure how strong that braking system is.</p>
+<p>Your heart doesn't tick like a metronome. Even at rest, the time between beats stretches and shrinks slightly — faster on an inhale, slower on an exhale. This beat-to-beat fluctuation is called <strong>heart-rate variability (HRV)</strong>. If you recorded the time gaps between heartbeats as a sequence $t_1, t_2, t_3, \dots$, HRV is essentially a measure of how much those gaps differ from one another, not their average.</p>
+<p>Here's the key pattern: <strong>higher HRV generally means stronger vagal tone</strong> — a more responsive, flexible nervous system. A perfectly steady, unchanging heart rate isn't actually a sign of health; it can mean the vagus nerve isn't doing much regulating at all. One common way to quantify this is the root-mean-square of successive differences:</p>
+$$
+\text{RMSSD} = \sqrt{\frac{1}{N-1}\sum_{i=1}^{N-1} (t_{i+1}-t_i)^2}
+$$
+<p>A larger RMSSD signals more beat-to-beat variation, hence higher estimated vagal tone. This is why slow breathing (roughly 5–6 breaths per minute) is used in HRV training: it exaggerates the natural rise and fall of heart rate with each breath, giving the vagus nerve more room to act — and a higher measured HRV.</p>
+<p><strong>Practice problem:</strong> Suppose four consecutive beat-to-beat intervals (in milliseconds) are 800, 820, 795, 830. Calculate the RMSSD using the formula above.</p>
+  </main>
+  <footer class="spl-credit"><span class="spl-credit__meta">元健康 Meta-Health Ch7: Stress, Emotion, and the Flow of Qi and Blood (情志与气血) (Level: Core &middot; Language: EN &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
+</div>
+</body>
+</html>

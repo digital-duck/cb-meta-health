@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Five Colors Foods | Meta Health Ch06</title>
+<script>
+MathJax = {
+  loader: { load: ['[tex]/mathtools'] },
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']],
+         packages: { '[+]': ['mathtools'] } },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+footer.spl-credit span{display:block}
+footer.spl-credit .spl-credit__meta{margin-bottom:4px}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="five-colors-foods">Five Colors Foods</h2>
+<p>"多吃蔬菜水果"这句老生常谈,背后其实藏着一套结构化的思路——中医的"五色"理论。它把食物按颜色分成五组,并各自对应一个脏腑:绿色养肝、红色养心、黄色养脾、白色养肺、黑色养肾。这不是巧合的联想游戏,而是中医"取象比类"方法的具体应用:用可观察的外部特征(颜色)去提示不易直接观察的内部功能(脏腑)。</p>
+<p>从结构上看,这套系统其实是一个<strong>分类映射</strong>:设食物集合为 $F$,脏腑集合为 $O = \{肝, 心, 脾, 肺, 肾\}$,颜色集合为 $C = \{绿, 红, 黄, 白, 黑\}$。五色理论定义了一个函数</p>
+$$
+f: C \rightarrow O
+$$
+<p>它把每种颜色唯一对应到一个脏腑,而每种食物又可以按主要颜色归入某个颜色类。这和现代营养学建议的"eat the rainbow"(吃彩虹餐)不谋而合——不同颜色的植物性食物往往含有不同种类的植物化学物(phytochemicals)、维生素和矿物质,例如绿色蔬菜富含叶绿素与叶酸,红色食物常含番茄红素,黑色食物(黑豆、黑芝麻)富含花青素与矿物质。</p>
+<p>简单规则:一餐中尽量凑齐五种颜色,相当于对营养素做了一次"广谱覆盖",不必精确计算每种营养素含量,就能大概率获得均衡摄入。</p>
+<p><strong>练习</strong>:小明今天的午餐有——白米饭、炒青菜、番茄炒蛋、清蒸鱼。请指出目前缺少哪两种颜色(及对应脏腑),并各举一种食物补齐它们。</p>
+  </main>
+  <footer class="spl-credit"><span class="spl-credit__meta">元健康 Meta-Health Ch6: What We Eat — Food Quality, Four Natures, and Five Flavors (四气五味) (Level: Core &middot; Language: ZH &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
+</div>
+</body>
+</html>

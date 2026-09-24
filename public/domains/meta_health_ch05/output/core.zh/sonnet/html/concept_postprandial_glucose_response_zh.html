@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Postprandial Glucose Response | Meta Health Ch05</title>
+<title>餐后血糖反应 | Meta Health Ch05</title>
 <script>
 MathJax = {
   loader: { load: ['[tex]/mathtools'] },
@@ -38,15 +38,11 @@ section:first-of-type{border-top:none;padding-top:0}
 <body>
 <div class="page">
   <main>
-    <h2 id="postprandial-glucose-response">Postprandial Glucose Response</h2>
-<p>吃完一顿饭后，血糖不是"哐"一下上去又"哐"一下下来，而是一条有形状的曲线——先前的直觉是"吃糖升糖快、吃肉升糖慢"，现在我们要看清这条曲线到底由什么决定。</p>
-<p>把这个过程写成一个简化的输入—输出模型：设 $G(t)$ 为进食后时间 $t$（分钟）时的血糖浓度，$G_0$ 为空腹基线。曲线的形状取决于三个耦合因素：葡萄糖进入血液的<strong>速率</strong> $R_{in}(t)$，和身体清除葡萄糖的<strong>速率</strong> $R_{out}(t)$（主要靠胰岛素驱动肌肉、肝脏摄取葡萄糖）。血糖变化率可以写成：</p>
-$$
-\frac{dG}{dt} = R_{in}(t) - R_{out}(t)
-$$
-<p>而 $R_{in}(t)$ 本身又取决于胃排空速度（决定食物多快进入小肠）、食物成分（单糖 vs. 淀粉 vs. 搭配了脂肪/蛋白质/膳食纤维会显著拖慢吸收）、以及进食速度。$R_{out}(t)$ 则受运动强度影响——肌肉收缩时会不依赖胰岛素、直接增加葡萄糖摄取，这就是为什么饭后散步能让曲线更平缓。</p>
-<p>简单规律：曲线下面积（AUC，即 $\int (G(t)-G_0)\,dt$）越大、峰值越高、波动越剧烈且反复出现，代谢负担就越大；而延缓 $R_{in}$（细嚼慢咽、搭配纤维）或提高 $R_{out}$（餐后活动）都能压低这条曲线。</p>
-<p><strong>练习</strong>：小明空腹血糖是 90 mg/dL，喝下一杯纯果汁后 30 分钟血糖升到 150 mg/dL，随后 60 分钟内因胰岛素作用又降回 95 mg/dL。请画出这段时间内血糖随时间变化的大致曲线形状，并说明哪一段对应 $R_{in} > R_{out}$，哪一段对应 $R_{in} < R_{out}$。</p>
+    <h2 id="餐后血糖反应">餐后血糖反应</h2>
+<p>吃完一顿饭后,血糖并不是一条直线——它会先升高,再慢慢回落。你可能已经注意到,吃一大碗白米饭后容易犯困,而吃一份有蛋白质和蔬菜的正餐反而不会。这背后其实是身体在动态调节血糖浓度的过程。</p>
+<p>食物中的碳水化合物被消化后分解成葡萄糖,进入血液,这个过程受几个因素影响:食物本身的成分(精制糖和白面包消化快,升糖也快;富含纤维、蛋白质和脂肪的食物消化慢,升糖平缓)、进食速度(狼吞虎咽比细嚼慢咽升糖更快)、胃排空的快慢,以及饭后身体是否在活动(散步或做家务能让肌肉更快摄取血液中的葡萄糖,帮助血糖回落)。血糖上升后,胰腺分泌胰岛素,促使细胞吸收葡萄糖,血糖再逐渐下降,通常在餐后两小时左右回到接近餐前水平。</p>
+<p>医学上用"血糖曲线下面积"来衡量餐后血糖的整体波动幅度——曲线越高、维持时间越长,身体承受的代谢负担就越大。反复出现又高又陡的血糖峰值,长期下来与胰岛素抵抗和代谢紊乱的风险增加有关,这是有科学证据支持的观察,但具体到"某一顿饭是否有害"因人而异,需要结合整体饮食模式判断。</p>
+<p><strong>练习</strong>:小明早餐只吃了一个白面包卷(几乎全是精制碳水化合物),小红早餐吃了鸡蛋、燕麦和一个苹果。请说出两个理由,解释为什么小红餐后的血糖曲线大概率比小明的更平缓。</p>
   </main>
   <footer class="spl-credit"><span class="spl-credit__meta">元健康 Meta-Health Ch5: Eating as Internal Exercise (饮食即内脏运动) (Level: Core &middot; Language: ZH &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
 </div>

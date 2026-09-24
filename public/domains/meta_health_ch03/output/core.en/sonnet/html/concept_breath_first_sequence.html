@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Breath First Sequence | Meta Health Ch03</title>
+<title>The Breath-First Sequence | Meta Health Ch03</title>
 <script>
 MathJax = {
   loader: { load: ['[tex]/mathtools'] },
@@ -38,19 +38,12 @@ section:first-of-type{border-top:none;padding-top:0}
 <body>
 <div class="page">
   <main>
-    <h2 id="breath-first-sequence">Breath First Sequence</h2>
-<p>You already know the generating cycle: Lung feeds Kidney, Kidney feeds Liver, Liver feeds Heart, Heart feeds Spleen, Spleen feeds Lung, around and around. The breath-first sequence is that same cycle, but with one deliberate swap: instead of starting at Kidney (the traditional first station), it starts at Lung — chest expansion — because breathing is something you can consciously control, unlike your heartbeat or digestion. It's a doorway concept: your breath is the one autonomic process you can also operate voluntarily, so teachers use it as the entry point into a system that's otherwise running on its own.</p>
-<p>Structurally, this reordering is a <strong>cyclic permutation</strong> with a single transposition applied to it. If the generating cycle is the ordered sequence</p>
-$$
-L \to K \to Li \to H \to S \to L
-$$
-<p>(Lung, Kidney, Liver, Heart, Spleen), the breath-first sequence swaps the positions of Lung and Liver:</p>
-$$
-Li \to K \to L \to H \to S \to Li
-$$
-<p>Notice this isn't a new cycle invented from scratch — it's the <em>same five elements</em>, same <em>cycle length</em> (5), just re-anchored so Lung comes first and Liver takes Lung's old "slot." The underlying relationships between elements haven't changed; only the labeled starting point and one pairwise position have.</p>
-<p><strong>Simple rule:</strong> swapping two elements' positions in a sequence of length $n$ still gives you a valid sequence through all $n$ elements — it's a <em>relabeling</em>, not a <em>reordering</em> of the underlying structure, as long as every element still appears exactly once.</p>
-<p><strong>Practice problem:</strong> Write out the breath-first sequence starting from Heart instead of Lung, keeping the same swapped Lung/Liver order internally. Which element comes right after Heart?</p>
+    <h2 id="the-breath-first-sequence">The Breath-First Sequence</h2>
+<p>You already know the generating cycle: Wood feeds Fire, Fire feeds Earth, Earth feeds Metal, Metal feeds Water, Water feeds Wood again. The breath-first sequence teaches the same five organs in almost the same loop, but it starts somewhere different — with the Lung, the organ in charge of breathing.</p>
+<p>Why start there? Every other organ on this map — Heart, Spleen, Liver, Kidney — mostly runs on autopilot. You cannot consciously speed up your kidneys or tell your spleen to work harder. But breathing is unusual: it happens automatically when you're not thinking about it, and yet you can also take a slow, deliberate breath right now, on purpose. That makes the Lung a kind of doorway between voluntary control (things you choose) and the autonomic nervous system (things your body regulates without asking you). Some teachers use this as a way into the topic: begin the cycle where the body's self-control is most within reach.</p>
+<p>The order itself is a small variation on the generating cycle. Traditionally the sequence lists Liver before Lung; the breath-first version simply swaps their positions, keeping the other four organs in place. It's still the same set of five relationships — it's a teaching choice about where to enter the circle, not a different circle.</p>
+<p>It's worth noting this ordering is a pedagogical device from certain popular teaching sources, not a claim with scientific backing about breathing's biological priority over the other organs.</p>
+<p><strong>Practice problem:</strong> Traditional generating order: Liver → Heart → Spleen → Lung → Kidney → (back to Liver). Rewrite this as the breath-first sequence, starting with Lung and keeping every other organ's neighbors the same.</p>
   </main>
   <footer class="spl-credit"><span class="spl-credit__meta">元健康 Meta-Health Ch3: The Five-Organ Exercises (五脏操) (Level: Core &middot; Language: EN &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
 </div>

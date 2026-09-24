@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Chrononutrition | Meta Health Ch08</title>
+<script>
+MathJax = {
+  loader: { load: ['[tex]/mathtools'] },
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']],
+         packages: { '[+]': ['mathtools'] } },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+footer.spl-credit span{display:block}
+footer.spl-credit .spl-credit__meta{margin-bottom:4px}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="chrononutrition">Chrononutrition</h2>
+<p>回想一下：早上血糖调节能力最强，因为胰岛素敏感性（insulin sensitivity）在这个时段处于一天中的高峰。这不只是"早上吃得多、晚上吃得少"这么简单的经验之谈——它背后其实有一套和昼夜节律（circadian rhythm）同步的身体机制。</p>
+<p>我们的细胞对胰岛素的反应强度，会随一天的时间波动，这个波动本身受"生物钟基因"驱动，与光照、进食时间、睡眠周期相互校准。可以把胰岛素敏感性想象成一个随时间变化的函数 $S(t)$，其中 $t$ 表示从起床开始经过的小时数。研究观察到的大致模式是：</p>
+$$S(t) \text{ 在 } t \approx 2\text{–}4 \text{ 小时（上午）时接近峰值，随后缓慢下降}$$
+<p>也就是说，同样一份含碳水化合物的食物，在上午摄入时引起的血糖波动（glucose excursion）通常比晚上摄入时更平缓、恢复更快。这是因为身体在白天为肌肉活动和代谢做好了"准备状态"，而到了夜间，肝脏和肌肉对葡萄糖的处理效率随昼夜节律下调。</p>
+<p>由此可以归纳出一条简单规律：<strong>同样热量，越早吃，代谢负担越小；睡前几小时内进食,会让身体在低胰岛素敏感期处理这份负荷。</strong> 这也是为什么建议在睡前 3 小时左右完成最后一餐——给身体留出时间,在敏感性尚未跌到最低点前完成消化吸收。</p>
+<p><strong>练习</strong>：小明习惯晚上 10 点吃宵夜，11 点睡觉；小丽习惯晚上 7 点吃完晚饭，11 点睡觉。假设两人吃的食物完全相同，根据 $S(t)$ 的变化规律，谁的餐后血糖曲线更容易出现更高更持久的血糖峰值？请用一两句话说明你的推理依据。</p>
+  </main>
+  <footer class="spl-credit"><span class="spl-credit__meta">元健康 Meta-Health Ch8: Rhythms — Sleep, the Organ Clock, and the Seasons (天人相应) (Level: Core &middot; Language: ZH &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
+</div>
+</body>
+</html>

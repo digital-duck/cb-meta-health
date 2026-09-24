@@ -4,47 +4,74 @@ primitives:
     defines: >-
       Blood (血): in TCM, the nourishing and moistening substance that circulates in the vessels, overlapping
       with but broader than the anatomical blood.
+    labels:
+      en: Blood (Xue, 血)
+      zh: 血
     tier: 0
   body_fluids_jinye:
     defines: >-
       Body fluids (津液): all normal fluids of the body — thin fluids (津) that moisten skin and muscles
       and thick fluids (液) that lubricate joints, organs and orifices.
+    labels:
+      en: Body Fluids (Jinye, 津液)
+      zh: 津液
     tier: 0
   essence_jing:
     defines: >-
       Essence (精): the stored, constitutional substance underlying growth, reproduction and aging, inherited
       from parents and replenished by food.
+    labels:
+      en: Essence (Jing, 精)
+      zh: 精
     tier: 0
   five_phases_wuxing:
     defines: >-
       The Five Phases (五行 — Wood 木, Fire 火, Earth 土, Metal 金, Water 水): five categories of process used
       to classify and relate natural and bodily phenomena.
+    labels:
+      en: The Five Phases (Wuxing, 五行)
+      zh: 五行
     tier: 0
   meridian_jingluo:
     defines: >-
       Meridians (经络): the TCM network of channels through which qi and blood are said to flow, linking
       organs with the surface of the body and the limbs.
+    labels:
+      en: Meridians (Jingluo, 经络)
+      zh: 经络
     tier: 0
   qi:
     defines: >-
       Qi (气): the TCM notion of vital activity — the moving, warming, protecting and transforming function
       of the body; roughly 'physiological function in motion'.
+    labels:
+      en: Qi (气)
+      zh: 气
     tier: 0
   spirit_shen:
     defines: >-
       Spirit (神): the TCM term for consciousness, mental activity and vitality as it shows in the eyes,
       face and behavior.
+    labels:
+      en: Spirit (Shen, 神)
+      zh: 神
     tier: 0
   yin_yang:
     defines: >-
       Yin-yang (阴阳): the paired, mutually dependent and mutually transforming opposites (rest/activity,
       cool/warm, substance/function) that TCM uses to describe every process in the body.
+    labels:
+      en: Yin and Yang (阴阳)
+      zh: 阴阳
     tier: 0
 concepts:
   controlling_cycle_xiangke:
     defines: >-
       The controlling cycle (相克): Wood → Earth → Water → Fire → Metal → Wood, each phase restraining another
       so that no phase grows unchecked.
+    labels:
+      en: The Controlling Cycle (Xiangke, 相克)
+      zh: 五行相克
     composed_of:
     - five_phases_wuxing
     tier: 1
@@ -52,6 +79,9 @@ concepts:
     defines: >-
       Dantian (丹田): the 'elixir fields', especially the lower dantian a few finger-widths below the navel,
       used in qigong as the center where attention and breath settle qi.
+    labels:
+      en: Dantian (丹田)
+      zh: 丹田
     composed_of:
     - qi
     - essence_jing
@@ -61,6 +91,9 @@ concepts:
       The five zang organs (五脏 — Liver 肝, Heart 心, Spleen 脾, Lung 肺, Kidney 肾): functional systems that
       store qi, blood and essence, each governed by one of the Five Phases; not identical to the anatomical
       organs of the same name.
+    labels:
+      en: The Five Zang Organs (五脏)
+      zh: 五脏
     composed_of:
     - five_phases_wuxing
     - qi
@@ -71,6 +104,9 @@ concepts:
     defines: >-
       The generating cycle (相生): Wood → Fire → Earth → Metal → Water → Wood, each phase nourishing the
       next like a mother feeding a child.
+    labels:
+      en: The Generating Cycle (Xiangsheng, 相生)
+      zh: 五行相生
     composed_of:
     - five_phases_wuxing
     tier: 1
@@ -78,6 +114,9 @@ concepts:
     defines: >-
       The mutual dependence of qi and blood — 'qi is the commander of blood, blood is the mother of qi'
       (气为血之帅，血为气之母): qi moves blood, blood nourishes qi.
+    labels:
+      en: The Qi–Blood Relationship
+      zh: 气血关系
     composed_of:
     - qi
     - blood_xue
@@ -86,6 +125,9 @@ concepts:
     defines: >-
       The Three Treasures (精气神): essence, qi and spirit as three levels of vitality that cultivation practices
       aim to conserve and refine.
+    labels:
+      en: 'The Three Treasures: Jing, Qi, Shen (精气神)'
+      zh: 精气神三宝
     composed_of:
     - essence_jing
     - qi
@@ -95,6 +137,9 @@ concepts:
     defines: >-
       The Five-Phase correspondence table (五行归类): each phase links an organ, season, emotion, flavor,
       color, sense organ and tissue — e.g. Wood ↔ Liver ↔ spring ↔ anger ↔ sour ↔ green ↔ eyes ↔ tendons.
+    labels:
+      en: Five-Phase Correspondences
+      zh: 五行归类
     composed_of:
     - five_zang_organs
     - generating_cycle_xiangsheng
@@ -103,6 +148,9 @@ concepts:
     defines: >-
       Heart–Kidney interaction (心肾相交, 水火既济): Heart Fire descends to warm Kidney Water and Kidney Water
       ascends to cool Heart Fire; failure is described as 'Heart Fire flaring upward' (心火上炎).
+    labels:
+      en: Heart–Kidney Interaction (心肾相交)
+      zh: 心肾相交
     composed_of:
     - five_zang_organs
     - controlling_cycle_xiangke
@@ -112,6 +160,9 @@ concepts:
     defines: >-
       Pathological distortions of the controlling cycle — overacting (相乘, excessive restraint) and insulting
       (相侮, reversed restraint) — used in TCM to explain how imbalance spreads between organs.
+    labels:
+      en: Overacting and Insulting (相乘相侮)
+      zh: 相乘相侮
     composed_of:
     - controlling_cycle_xiangke
     tier: 2
@@ -119,6 +170,9 @@ concepts:
     defines: >-
       Prenatal (先天) and postnatal (后天) foundations: the Kidney stores inherited essence, while the Spleen
       and Stomach make new qi and blood from food and drink every day.
+    labels:
+      en: Prenatal and Postnatal Qi (先天与后天)
+      zh: 先天之本与后天之本
     composed_of:
     - five_zang_organs
     - essence_jing
@@ -127,6 +181,9 @@ concepts:
     defines: >-
       Qi stagnation and blood stasis (气滞血瘀): the TCM picture of impaired flow — when qi stops moving freely,
       blood and fluids pool, which is said to cause distension, pain and dysfunction.
+    labels:
+      en: Qi Stagnation and Blood Stasis (气滞血瘀)
+      zh: 气滞血瘀
     composed_of:
     - qi_blood_relationship
     tier: 2
@@ -134,6 +191,9 @@ concepts:
     defines: >-
       The six fu organs (六腑 — gallbladder, small intestine, stomach, large intestine, bladder, triple
       burner): hollow organs that receive, transform and pass on food and fluids.
+    labels:
+      en: The Six Fu Organs (六腑)
+      zh: 六腑
     composed_of:
     - five_zang_organs
     - body_fluids_jinye
@@ -142,6 +202,9 @@ concepts:
     defines: >-
       Health as dynamic balance (阴平阳秘): TCM defines health as yin-yang equilibrium and free flow among
       the Five Phases, not the absence of a single disease.
+    labels:
+      en: Health as Harmony (阴平阳秘)
+      zh: 阴平阳秘：以平衡为健康
     composed_of:
     - yin_yang
     - generating_cycle_xiangsheng
@@ -153,6 +216,9 @@ concepts:
     defines: >-
       The Liver–Spleen relationship (木克土): the Liver's smooth flow of qi supports digestion, and when
       the Liver is constrained it 'overacts' on the Spleen and Stomach (肝木克脾土).
+    labels:
+      en: The Liver–Spleen Relationship
+      zh: 肝脾关系
     composed_of:
     - five_zang_organs
     - overacting_and_insulting
@@ -161,6 +227,9 @@ concepts:
     defines: >-
       The triple burner (三焦): the upper (heart, lung), middle (spleen, stomach) and lower (liver, kidney,
       bladder, intestines) burners, understood as the passageways of qi and fluids through the trunk.
+    labels:
+      en: The Triple Burner (Sanjiao, 三焦)
+      zh: 三焦
     composed_of:
     - six_fu_organs
     - body_fluids_jinye
@@ -170,6 +239,9 @@ concepts:
     defines: >-
       Interior-exterior pairing (表里): each zang organ paired with a fu organ and linked by meridians,
       e.g. Spleen–Stomach, Liver–Gallbladder, Lung–Large Intestine.
+    labels:
+      en: Zang–Fu Pairing (表里)
+      zh: 脏腑表里
     composed_of:
     - five_zang_organs
     - six_fu_organs
@@ -180,6 +252,9 @@ concepts:
       The twelve primary meridians (十二经脉), each belonging to a zang or fu organ, running along the arms,
       legs and trunk — e.g. the Lung meridian (手太阴肺经) across the upper chest to the thumb and the Kidney
       meridian (足少阴肾经) from the sole of the foot.
+    labels:
+      en: The Twelve Primary Meridians
+      zh: 十二经脉
     composed_of:
     - zang_fu_pairing
     - meridian_jingluo
@@ -190,6 +265,9 @@ applications:
       Using the Five-Phase table, the three burners, the dantian and the prenatal/postnatal roots to read
       the body as one connected system — linking an everyday sign (e.g. irritability with a poor appetite)
       to organ relationships and the generating and controlling cycles.
+    labels:
+      en: The Five-Phase Body Map
+      zh: 五行身体地图
     needs:
     - five_phase_correspondences
     - twelve_primary_meridians

@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Regional Blood Flow Distribution | Meta Health Ch05</title>
+<title>血流的区域分配 | Meta Health Ch05</title>
 <script>
 MathJax = {
   loader: { load: ['[tex]/mathtools'] },
@@ -38,13 +38,16 @@ section:first-of-type{border-top:none;padding-top:0}
 <body>
 <div class="page">
   <main>
-    <h2 id="regional-blood-flow-distribution">Regional Blood Flow Distribution</h2>
-<p>想象一下：刚跑完步,你满脸通红,而饭后你却容易犯困——这两种感觉背后,是同一套系统在决定血液该去哪里。心脏泵出的血液总量在短时间内变化不大,但<strong>身体会重新分配这些血液</strong>,决定谁"多拿一点",谁"少拿一点"。这套调度系统就是自主神经系统(autonomic nervous system)。</p>
-<p>血管壁上有平滑肌,自主神经系统通过交感神经和副交感神经控制这些肌肉的收缩(缩血管)与舒张(扩血管)。运动时,交感神经让皮肤和内脏的血管收缩,把血液"挤"向骨骼肌;消化时,情况反过来,血液更多流向肠胃,支持消化吸收。大脑是个例外——无论身体在做什么,流向大脑的血流几乎保持恒定,因为神经元对缺血极其敏感。</p>
-<p>用一个简单的规则来记住这套逻辑:如果把心输出量记作 $Q$,分配给某个器官的血流量记作 $Q_i$,那么各器官血流之和近似等于总心输出量:</p>
-$$\sum_i Q_i \approx Q$$
-<p>某个器官能分到多少,取决于该处血管的阻力 $R_i$——阻力越小(血管越舒张),分到的血流越多,类似电路中电流走阻力小的路径。自主神经系统的作用,正是实时调节这些 $R_i$ 的大小。</p>
-<p><strong>练习</strong>:小明吃完午饭后立刻去打篮球,结果肚子很快就不舒服了。请用"血流重新分配"的概念,解释为什么运动和消化几乎不能同时高效进行,身体在这种冲突下更可能优先保障哪个器官的供血?</p>
+    <h2 id="血流的区域分配">血流的区域分配</h2>
+<p><strong>回顾直觉</strong></p>
+<p>想象你正在跑步：心脏不会把血液平均地分给全身。当你运动时,骨骼肌需要更多氧气和葡萄糖,身体会把更多血液"调拨"到肌肉,同时暂时减少消化系统等不那么紧急部位的供血。这就是区域血流分配的核心想法——同一份心输出量,在不同时刻被重新分配到不同器官。</p>
+<p><strong>结构探讨</strong></p>
+<p>安静状态下,心输出量(cardiac output)大约每分钟5升,按大致比例分配:骨骼肌约占15%-20%,消化系统(胃肠、肝脏)约占20%-25%,肾脏约占20%,脑约占15%,皮肤约占5%-10%,心肌本身约占5%。这些数字不是固定不变的,而是身体根据需求实时调节的结果。</p>
+<p>运动时,情况完全改变。剧烈运动中骨骼肌的血流占比可以升到80%以上,而消化系统和肾脏的血流比例大幅下降——这也是为什么剧烈运动后立刻进食容易感到不适,因为消化系统暂时"缺血"。这种调节依靠局部血管收缩与舒张:血管平滑肌根据组织的代谢信号(如氧气浓度、二氧化碳、乳酸堆积)自动调整管径,需要更多血流的组织,其血管会舒张,阻力降低,血流量增加。</p>
+<p><strong>简单规律</strong></p>
+<p>一句话概括:身体总是优先把血液送到当下最需要它的组织,通过血管收缩与舒张动态调节各器官获得的心输出量比例。</p>
+<p><strong>练习题</strong></p>
+<p>小明安静时心输出量为每分钟5升,其中骨骼肌占18%。如果他开始跑步后心输出量升到每分钟20升,且此时骨骼肌占70%,请分别计算安静时和运动时流向骨骼肌的血流量(升/分钟),并说明变化的倍数。</p>
   </main>
   <footer class="spl-credit"><span class="spl-credit__meta">元健康 Meta-Health Ch5: Eating as Internal Exercise (饮食即内脏运动) (Level: Core &middot; Language: ZH &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
 </div>

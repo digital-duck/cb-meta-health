@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cardiac Output | Meta Health Ch02</title>
+<script>
+MathJax = {
+  loader: { load: ['[tex]/mathtools'] },
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']],
+         packages: { '[+]': ['mathtools'] } },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+footer.spl-credit span{display:block}
+footer.spl-credit .spl-credit__meta{margin-bottom:4px}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="cardiac-output">Cardiac Output</h2>
+<p>心脏每次收缩都会射出一定量的血液,这就是"每搏输出量"。但心脏一分钟内到底能送出多少血,还要看它跳了多少次。这两者结合起来,就得到了"心输出量"——衡量心脏泵血能力最核心的指标。</p>
+<p>它的公式很简单,却非常重要:</p>
+$$
+CO = HR \times SV
+$$
+<p>其中 $CO$ 是心输出量(单位通常是 L/min),$HR$ 是心率(单位:次/分钟,beats/min),$SV$ 是每搏输出量(单位:mL/次)。计算时要注意单位换算——心率乘以每搏输出量(mL),再除以1000,才能得到以升(L)为单位的心输出量。</p>
+<p>成年人静息时,心率大约70次/分钟,每搏输出量约70 mL,代入公式:</p>
+$$
+CO = 70 \times 70\text{ mL} = 4900\text{ mL/min} \approx 5\text{ L/min}
+$$
+<p>这正是我们常说的"静息心输出量约5 L/min"的来源。</p>
+<p>这个公式揭示了一个规律:心输出量不是一个固定值,而是心率和每搏输出量两个变量共同决定的结果。运动时,心率上升、每搏输出量也可能增加,心输出量就会跟着上升,以满足肌肉对氧气和营养的更大需求;而在某些心脏疾病中,即使心率正常,每搏输出量下降,也会导致心输出量不足。</p>
+<p><strong>练习题</strong>:一位运动员在剧烈运动时,心率达到 150 次/分钟,每搏输出量为 120 mL。请计算此时的心输出量(单位:L/min),并与静息状态的5 L/min相比,说明增加了多少倍。</p>
+  </main>
+  <footer class="spl-credit"><span class="spl-credit__meta">元健康 Meta-Health Ch2: The Physiology Lens — Breath, Circulation, Fascia, and Core (生理视角) (Level: Core &middot; Language: ZH &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
+</div>
+</body>
+</html>
