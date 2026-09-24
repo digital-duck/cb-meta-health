@@ -1,0 +1,23 @@
+domain: meta_health_ch06
+title: "Systemic Equilibrium, TCM Harmony, and Long-Term Adaptation"
+description: "Holistic integration of movement, food, climate, and lifetime metabolic health."
+version: "1.0"
+
+nodes:
+  - id: tcm-holistic-triad
+    title: "The Triadic Equilibrium: Movement, Diet, and Internal Balance"
+    type: primitive
+    prerequisites: []
+    summary: "Unifying exercise, food, and rest into a continuous feedback loop mirroring traditional holistic medicine."
+
+  - id: seasonal-circannual-adaptation
+    title: "Circannual Rhythms and Environmental Adaptation"
+    type: primitive
+    prerequisites: ["tcm-holistic-triad"]
+    summary: "Adapting training volume, nutritional intake, and thermal stress across seasonal cycles."
+
+  - id: lifetime-metabolic-longevity
+    title: "Integrated Systemic Health and Longevity"
+    type: composite
+    prerequisites: ["seasonal-circannual-adaptation"]
+    summary: "Synthesizing all biological primitives for lifelong functional mobility, metabolic vitality, and healthspan."
