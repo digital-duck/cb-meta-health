@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Day Night Yin Yang | Meta Health Ch08</title>
+<script>
+MathJax = {
+  loader: { load: ['[tex]/mathtools'] },
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']],
+         packages: { '[+]': ['mathtools'] } },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+footer.spl-credit span{display:block}
+footer.spl-credit .spl-credit__meta{margin-bottom:4px}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="day-night-yin-yang">Day Night Yin Yang</h2>
+<p>清晨睁眼那一刻，身体像被按下开关——心跳变快、体温回升，你从"关机"状态切换到"待机"再到"全速运转"。这就是阳气升发的过程。而到了深夜，困意袭来、体温下降，身体又切换回修复与储备模式，这是阴气增长的过程。这种日夜交替的节律，中医称为"昼夜阴阳消长"。</p>
+<p>把一天24小时看作一个循环，阳气与阴气的强弱此消彼长，就像跷跷板的两端。可以用一个简化的余弦函数来描述这种周期变化：</p>
+$$Y(t) = A\cos\left(\frac{2\pi}{24}(t - 12)\right)$$
+<p>其中 $t$ 是以小时为单位的时间（0点到24点），$Y(t)$ 代表阳气水平，$A$ 是振幅。当 $t=12$（正午）时，$\cos(0)=1$，阳气达到峰值；当 $t=0$ 或 $t=24$（子夜）时，$\cos(\pi)=-1$，阳气降到最低、阴气最盛。这个函数模型只是一个类比工具，真实的生理节律更复杂，但它抓住了核心规律：<strong>从子夜到正午，阳气持续上升；从正午到子夜，阴气持续上升</strong>。</p>
+<p>由此得到一条简单法则：白天属阳，适合活动、消耗、外散；夜晚属阴，适合静养、储存、内守。这也是为什么中医强调"日出而作，日落而息"——顺应这条曲线，而不是逆着它熬夜耗阳。</p>
+<p><strong>练习</strong>：如果把一天看作上述余弦模型，阳气在早上6点、正午12点、晚上18点这三个时刻分别处于什么状态（上升中/峰值/下降中/谷值)？请用你学过的余弦函数性质说明理由。</p>
+  </main>
+  <footer class="spl-credit"><span class="spl-credit__meta">元健康 Meta-Health Ch8: Rhythms — Sleep, the Organ Clock, and the Seasons (天人相应) (Level: Core &middot; Language: ZH &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
+</div>
+</body>
+</html>

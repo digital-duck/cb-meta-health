@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Circadian Clock | Meta Health Ch08</title>
+<script>
+MathJax = {
+  loader: { load: ['[tex]/mathtools'] },
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']],
+         packages: { '[+]': ['mathtools'] } },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+footer.spl-credit span{display:block}
+footer.spl-credit .spl-credit__meta{margin-bottom:4px}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="circadian-clock">Circadian Clock</h2>
+<p>你已经知道,身体里有一个大约24小时的"生物钟",由光线设定,安排着荷尔蒙、消化和睡眠的节奏。现在我们来看看这个时钟到底是怎么"走"的。</p>
+<p>这个时钟的核心其实是一组细胞里的基因,它们互相调控,形成一个<strong>负反馈回路</strong>:某些基因(如 CLOCK 和 BMAL1)制造蛋白质,这些蛋白质又反过来抑制自己的基因表达。这个"开启—积累—抑制—清除"的循环大约需要24小时完成一轮,于是就产生了周期性节律。我们可以把这个过程简化地表示为一个振荡系统:</p>
+$$
+\frac{dP}{dt} = k_1 \cdot f(G) - k_2 \cdot P
+$$
+<p>其中 $P$ 是抑制蛋白的浓度,$G$ 代表基因表达活性,$k_1$ 和 $k_2$ 是合成与降解速率常数。当 $P$ 升高到一定程度,它会压制 $f(G)$,导致 $P$ 下降,随后循环重新开始——这就是振荡的数学本质。</p>
+<p>人体内几乎每个器官都有自己的"局部时钟",但大脑中的<strong>视交叉上核(SCN)</strong>是总指挥,它通过感知视网膜传来的光信号,每天重新校准整个系统,让身体各处的时钟保持同步。</p>
+<p><strong>简单规律</strong>:光照信号 → SCN 校准 → 局部时钟同步 → 激素与消化节律随之调整。</p>
+<p><strong>练习题</strong>:如果一个人连续三天熬夜到凌晨3点才睡觉,并且白天拉窗帘不见光,请推测他的 SCN 校准信号会发生什么变化?这可能会如何影响他白天的血糖调节节律?(提示:回忆餐后血糖反应与消化节律的关系。)</p>
+  </main>
+  <footer class="spl-credit"><span class="spl-credit__meta">元健康 Meta-Health Ch8: Rhythms — Sleep, the Organ Clock, and the Seasons (天人相应) (Level: Core &middot; Language: ZH &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
+</div>
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lymphatic System | Meta Health Ch02</title>
+<script>
+MathJax = {
+  loader: { load: ['[tex]/mathtools'] },
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']],
+         packages: { '[+]': ['mathtools'] } },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+footer.spl-credit span{display:block}
+footer.spl-credit .spl-credit__meta{margin-bottom:4px}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="lymphatic-system">Lymphatic System</h2>
+<p>我们已经知道，淋巴系统是一套低压的管道网络，负责把组织液送回血液，同时运送免疫细胞——但它没有一个像心脏那样的中央泵。这一点其实很奇特：血液循环靠心脏的收缩产生压力驱动，而淋巴液却"自己"在几乎没有压力的管道里前进。它是怎么做到的？</p>
+<p>答案在于淋巴系统的结构设计。淋巴毛细管布满全身组织间隙，管壁由单层内皮细胞松散搭接而成，像百叶窗一样——组织液和大分子蛋白质、细胞碎片可以被"吸入"，却难以倒流出去，这是一种单向阀结构。淋巴液沿着淋巴管前进，依靠三种外部力量：骨骼肌收缩时对管壁的挤压、胸腔呼吸运动造成的压力变化、以及淋巴管壁本身平滑肌的微弱节律性收缩。淋巴管内每隔一小段就有一个瓣膜（valve），防止淋巴液倒流，正如静脉瓣膜的原理一样。</p>
+<p>用一个简单模型理解流量 $Q$：</p>
+$$Q \propto \frac{\Delta P}{R}$$
+<p>其中 $\Delta P$ 是压力差（很小，主要来自肌肉挤压），$R$ 是管道阻力。淋巴系统靠"多次微小的 $\Delta P$ + 单向瓣膜累积方向"来弥补缺乏中央泵的劣势。</p>
+<p>简单规律：<strong>没有泵，靠瓣膜锁方向，靠身体运动供能。</strong></p>
+<p><strong>练习</strong>：如果一个人长期久坐不动，几乎不使用腿部肌肉，请根据上文推理，淋巴液回流会受到怎样的影响？可能会出现什么症状？</p>
+  </main>
+  <footer class="spl-credit"><span class="spl-credit__meta">元健康 Meta-Health Ch2: The Physiology Lens — Breath, Circulation, Fascia, and Core (生理视角) (Level: Core &middot; Language: ZH &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
+</div>
+</body>
+</html>

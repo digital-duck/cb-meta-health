@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Evidence Quality | Meta Health Ch04</title>
+<script>
+MathJax = {
+  loader: { load: ['[tex]/mathtools'] },
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']],
+         packages: { '[+]': ['mathtools'] } },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+footer.spl-credit span{display:block}
+footer.spl-credit .spl-credit__meta{margin-bottom:4px}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="evidence-quality">Evidence Quality</h2>
+<p>You already know that "someone said it worked" isn't the same as "it works." But medicine needs a way to <em>rank</em> how much to trust different kinds of evidence, because not all studies are built the same way.</p>
+<p>Picture a pyramid. At the bottom sit <strong>case reports</strong> — a doctor describing one patient who got better after a treatment. Interesting, but it proves almost nothing, since we don't know what would've happened without it. Above that are <strong>observational studies</strong>, where researchers watch groups of people who already chose (or happened to get) different treatments and compare outcomes. Better, but people who choose a treatment often differ in other ways too — maybe healthier, wealthier, or more careful — which can fake a benefit that isn't really there. This is called <strong>confounding</strong>.</p>
+<p>Near the top sit <strong>randomized controlled trials (RCTs)</strong>: researchers <em>randomly</em> assign people to treatment or control groups. Randomization spreads out unknown differences evenly, so if outcomes differ, it's more likely due to the treatment itself. Even better if the trial is <strong>blinded</strong> — patients and doctors don't know who got what — preventing hope or bias from distorting results. Small or unblinded trials can still overstate benefits: fewer people means random luck plays a bigger role, and knowing you got "the real treatment" can itself change how you feel or report symptoms (the placebo effect).</p>
+<p>At the very top: <strong>meta-analyses</strong>, which combine many trials into one statistical estimate, smoothing out individual studies' quirks.</p>
+<p><strong>Practice problem:</strong> A blog claims "50 people who tried Supplement X felt better!" Name two reasons this evidence is weak, and describe one change to the study that would make it more trustworthy.</p>
+  </main>
+  <footer class="spl-credit"><span class="spl-credit__meta">元健康 Meta-Health Ch4: Baduanjin — The Eight Brocades (八段锦) (Level: Core &middot; Language: EN &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
+</div>
+</body>
+</html>

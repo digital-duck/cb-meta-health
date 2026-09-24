@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Generating Cycle Xiangsheng | Meta Health Ch01</title>
+<script>
+MathJax = {
+  loader: { load: ['[tex]/mathtools'] },
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']],
+         packages: { '[+]': ['mathtools'] } },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+footer.spl-credit span{display:block}
+footer.spl-credit .spl-credit__meta{margin-bottom:4px}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="generating-cycle-xiangsheng">Generating Cycle Xiangsheng</h2>
+<p>回忆一下：五行中的每一个"行"，都不是孤立存在的——木、火、土、金、水彼此之间存在着固定的传递关系，其中最重要的一种就是"相生"（生成、滋养）关系。</p>
+<p>相生的顺序是：木 → 火 → 土 → 金 → 水 → 木，首尾相连，形成一个闭合的循环。可以把它想象成一个"母亲喂养孩子"的链条：木燃烧生出火（木生火），火燃尽化为灰烬变成土（火生土），土中蕴藏矿物凝结成金（土生金），金属遇冷会在表面凝结出水珠（金生水），水滋润土壤使树木生长（水生木）。每一个阶段都是前一个阶段的"产物"，同时又成为下一个阶段的"养料"。</p>
+<p>用数学的眼光看，这其实是一个<strong>有向循环图（directed cyclic graph）</strong>，五个节点、五条有向边，可以写成一个函数：</p>
+$$
+f(\text{木}) = \text{火}, \quad f(\text{火}) = \text{土}, \quad f(\text{土}) = \text{金}, \quad f(\text{金}) = \text{水}, \quad f(\text{水}) = \text{木}
+$$
+<p>这个 $f$ 是一个<strong>置换（permutation）</strong>，且是一个长度为 5 的单一循环（5-cycle），记作 $(\text{木} \; \text{火} \; \text{土} \; \text{金} \; \text{水})$。因为它是一个完整的循环，所以连续应用五次 $f$ 会回到起点：$f^5(x) = x$，对任意一个"行" $x$ 都成立。</p>
+<p><strong>简单规律</strong>：要知道"谁生谁"，只需记住顺时针排列 木→火→土→金→水→木，任何一个字的下一个字就是它所生的对象。</p>
+<p><strong>练习</strong>：如果从"金"开始，连续应用 $f$ 三次（即计算 $f^3(\text{金})$），最终会得到五行中的哪一个？请写出每一步的推导过程。</p>
+  </main>
+  <footer class="spl-credit"><span class="spl-credit__meta">元健康 Meta-Health Ch1: TCM Foundations — Yin-Yang, Qi-Blood, and the Five Phases (中医基础) (Level: Core &middot; Language: ZH &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
+</div>
+</body>
+</html>

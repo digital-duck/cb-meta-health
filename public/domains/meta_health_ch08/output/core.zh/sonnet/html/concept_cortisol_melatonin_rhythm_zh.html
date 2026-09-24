@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cortisol Melatonin Rhythm | Meta Health Ch08</title>
+<script>
+MathJax = {
+  loader: { load: ['[tex]/mathtools'] },
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']],
+         packages: { '[+]': ['mathtools'] } },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+footer.spl-credit span{display:block}
+footer.spl-credit .spl-credit__meta{margin-bottom:4px}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="cortisol-melatonin-rhythm">Cortisol Melatonin Rhythm</h2>
+<p>你已经知道:早上醒来时,皮质醇会升高,帮身体调动能量;晚上天黑后,褪黑素会升高,帮身体准备入睡。这两种激素像一对轮流值班的信使——一个负责"开机",一个负责"关机"。</p>
+<p>现在我们来看看这个节律的结构。皮质醇和褪黑素的分泌都受<strong>下丘脑</strong>里一个叫"生物钟"的区域(视交叉上核,SCN)控制,这个生物钟大致跟随一个接近 24 小时的周期运转,叫做<strong>昼夜节律</strong>(circadian rhythm)。皮质醇的浓度在清晨达到峰值(通常在醒来后 30–45 分钟内,这被称为"皮质醇觉醒反应"),之后整天缓慢下降,到深夜降到最低。褪黑素则相反:白天几乎检测不到,傍晚天色变暗后开始上升,午夜前后达到峰值,黎明前又下降。</p>
+<p>如果把一天的时间设为 $t$(单位:小时,$0 \le t < 24$),可以粗略地用两条相位相反的曲线来表示这种关系:</p>
+$$C(t) \approx A_C \cos\left(\frac{2\pi}{24}(t - 7)\right) + C_0$$
+$$M(t) \approx A_M \cos\left(\frac{2\pi}{24}(t - 24)\right) + M_0$$
+<p>其中 $A_C, A_M$ 是振幅,$C_0, M_0$ 是基线水平。两条曲线的峰值几乎相差 12 小时,这正是"开机—关机"节律的数学写照。</p>
+<p>简单规律:光照是重置这个时钟的关键信号——早晨的光抑制褪黑素、促进皮质醇上升;夜晚的黑暗则解除对褪黑素的抑制。</p>
+<p><strong>练习</strong>:小明连续三天熬夜到凌晨 2 点,并且用电脑到入睡前一刻。请用今天学到的机制,解释他早晨可能出现皮质醇觉醒反应减弱、白天犯困的原因。</p>
+  </main>
+  <footer class="spl-credit"><span class="spl-credit__meta">元健康 Meta-Health Ch8: Rhythms — Sleep, the Organ Clock, and the Seasons (天人相应) (Level: Core &middot; Language: ZH &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
+</div>
+</body>
+</html>

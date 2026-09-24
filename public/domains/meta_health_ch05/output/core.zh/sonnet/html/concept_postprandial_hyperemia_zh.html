@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Postprandial Hyperemia | Meta Health Ch05</title>
+<script>
+MathJax = {
+  loader: { load: ['[tex]/mathtools'] },
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']],
+         packages: { '[+]': ['mathtools'] } },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+footer.spl-credit span{display:block}
+footer.spl-credit .spl-credit__meta{margin-bottom:4px}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="postprandial-hyperemia">Postprandial Hyperemia</h2>
+<p>吃完一顿饭之后,你有没有觉得有点犯困、不想剧烈运动?这不是错觉——身体正在把大量血液调往肠道,去支持接下来的消化吸收工作。这种"餐后血流增多"的现象,就叫做<strong>餐后充血</strong>(postprandial hyperemia)。</p>
+<p>从结构上看,肠道的血液供应主要来自<strong>肠系膜上动脉</strong>(superior mesenteric artery, SMA)。空腹状态下,这条动脉的血流量相对平稳;但进食后,SMA 血流量可以<strong>上升到接近原来的两倍</strong>。这不是身体随意调配,而是一套精确的局部调节机制:食物进入肠道后,肠壁细胞释放血管舒张物质(如腺苷、一氧化氮等),使局部小动脉扩张,阻力下降,血流大幅增加。同时,为了满足这部分额外需求,心脏也要提高<strong>心输出量</strong>(cardiac output, $CO$),回顾一下:</p>
+$$CO = HR \times SV$$
+<p>其中 $HR$ 是心率,$SV$ 是每搏输出量。餐后心率通常会小幅上升,帮助维持全身血压稳定,即使大量血液被"借"去了肠道。</p>
+<p>可以把这套调节归纳为一个简单规律:<strong>消化需求 ↑ → 局部血管阻力 ↓ → 肠道血流 ↑ → 心输出量代偿性 ↑</strong>。这也解释了为什么剧烈运动和饱餐同时进行会让人不适——两者都在竞争心脏能提供的有限血流。</p>
+<p><strong>练习题</strong>:假设某人空腹时 SMA 血流量为 $300\ \text{mL/min}$,餐后血流量翻倍。若此时心输出量从 $5\ \text{L/min}$ 提高到 $5.5\ \text{L/min}$,请计算:餐后 SMA 血流量占心输出量的百分比是多少?(提示:先统一单位为 mL/min 再计算比例。)</p>
+  </main>
+  <footer class="spl-credit"><span class="spl-credit__meta">元健康 Meta-Health Ch5: Eating as Internal Exercise (饮食即内脏运动) (Level: Core &middot; Language: ZH &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
+</div>
+</body>
+</html>

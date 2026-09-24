@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Energy Balance | Meta Health Ch06</title>
+<script>
+MathJax = {
+  loader: { load: ['[tex]/mathtools'] },
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']],
+         packages: { '[+]': ['mathtools'] } },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+footer.spl-credit span{display:block}
+footer.spl-credit .spl-credit__meta{margin-bottom:4px}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="energy-balance">Energy Balance</h2>
+<p>You already know the basic idea: eat more calories than you burn, and you gain weight; burn more than you eat, and you lose it. Now let's look at the actual structure behind that intuition.</p>
+<p>Energy balance is really a bookkeeping equation. Let $E_{in}$ be the energy consumed from food, and $E_{out}$ be total energy expended. The change in stored body energy, $\Delta E_{store}$, follows:</p>
+$$\Delta E_{store} = E_{in} - E_{out}$$
+<p>The tricky part is that $E_{out}$ isn't one thing—it's a sum of several components:</p>
+$$E_{out} = BMR + TEF + AEE$$
+<p>Here, $BMR$ (basal metabolic rate) is the energy your body burns just staying alive—keeping your heart beating, brain running, cells repairing—even at complete rest. It typically accounts for 60–75% of total expenditure. $TEF$ (thermic effect of food) is the energy cost of digesting, absorbing, and processing what you eat—roughly 10% of intake. $AEE$ (activity energy expenditure) covers everything from walking to school to exercise.</p>
+<p>The simple rule: if $\Delta E_{store} > 0$, the body stores excess energy (mostly as fat); if $\Delta E_{store} < 0$, it draws on stored reserves. Notice that $BMR$ isn't fixed—it scales with body size, age, and muscle mass, which is why this isn't just "calories in, calories out" as a fixed target, but a dynamic system.</p>
+<p><strong>Practice problem:</strong> Maria's $BMR$ is 1400 kcal/day. Her $TEF$ is 150 kcal/day, and her activity burns 500 kcal/day. If she eats 2200 kcal today, calculate $\Delta E_{store}$. Is she in surplus or deficit?</p>
+  </main>
+  <footer class="spl-credit"><span class="spl-credit__meta">元健康 Meta-Health Ch6: What We Eat — Food Quality, Four Natures, and Five Flavors (四气五味) (Level: Core &middot; Language: EN &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
+</div>
+</body>
+</html>

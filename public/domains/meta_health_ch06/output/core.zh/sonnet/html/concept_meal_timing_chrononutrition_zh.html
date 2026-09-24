@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Meal Timing Chrononutrition | Meta Health Ch06</title>
+<script>
+MathJax = {
+  loader: { load: ['[tex]/mathtools'] },
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']],
+         packages: { '[+]': ['mathtools'] } },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+footer.spl-credit span{display:block}
+footer.spl-credit .spl-credit__meta{margin-bottom:4px}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="meal-timing-chrononutrition">Meal Timing Chrononutrition</h2>
+<p>想象一下：同样一顿饭，早上八点吃和晚上十一点吃,身体处理起来完全不一样。你已经知道这个直觉——晚上吃东西"更容易长胖"、"更难消化"。现在我们要更深入一层：为什么会这样？答案藏在一个词里——<strong>生物钟(circadian clock)</strong>。</p>
+<p>人体几乎每个器官都有自己的"日程表"。胰腺分泌胰岛素的效率、肝脏处理葡萄糖和脂肪的能力、肠道蠕动的节奏，都会随一天中的时间波动，这个波动由下丘脑中的"主时钟"和各器官里的"外周时钟"共同调控。白天，尤其是上午到中午,这些系统处于"应对进食"的高效状态；到了深夜,它们逐渐切换进"休整模式"——胰岛素敏感性下降、消化道血流减少、代谢速率变慢。</p>
+<p>这就形成了一条简单规律：<strong>同一份食物,在错误的时间点摄入,会让器官被迫"加班"完成本该在休息期完成的任务</strong>。我们可以用一个粗略的模型来表示这种"代谢负荷":</p>
+$$
+L(t) = \frac{M}{S(t)}
+$$
+<p>其中 $M$ 是这顿饭的代谢需求(热量、消化难度等),$S(t)$ 是当前时刻 $t$ 对应的器官"处理效率"。上午 $S(t)$ 较高,$L(t)$ 就小；深夜 $S(t)$ 较低,同样的 $M$ 换算出的 $L(t)$ 就变大——器官承受的相对压力更高。</p>
+<p><strong>练习</strong>：假设某人上午 8 点的器官处理效率 $S(8)=1.0$，晚上 11 点降为 $S(23)=0.5$。如果他在这两个时间点各吃了一顿代谢需求 $M=100$ 的晚餐,请分别计算两个时间点的代谢负荷 $L(t)$,并说明差异说明了什么。</p>
+  </main>
+  <footer class="spl-credit"><span class="spl-credit__meta">元健康 Meta-Health Ch6: What We Eat — Food Quality, Four Natures, and Five Flavors (四气五味) (Level: Core &middot; Language: ZH &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
+</div>
+</body>
+</html>

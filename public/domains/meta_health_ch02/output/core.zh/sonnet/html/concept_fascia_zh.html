@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Fascia | Meta Health Ch02</title>
+<script>
+MathJax = {
+  loader: { load: ['[tex]/mathtools'] },
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']],
+         packages: { '[+]': ['mathtools'] } },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+footer.spl-credit span{display:block}
+footer.spl-credit .spl-credit__meta{margin-bottom:4px}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="fascia">Fascia</h2>
+<p>回想一下:肌肉外面包着一层"塑料膜"一样的东西,这就是筋膜。但筋膜的作用远不止"包装"——它是全身唯一从头到脚连续不断的一张网,把肌肉、骨骼、内脏都缝进同一张结构里。</p>
+<p>从显微角度看,筋膜主要由胶原蛋白(collagen)纤维和弹性蛋白(elastin)纤维交织组成,泡在一种叫"基质"(ground substance)的黏稠液体中。胶原纤维负责抗拉力、不易被拉断;弹性纤维负责回弹,让组织能伸展后恢复原状。两种纤维的比例和排列方向,决定了某一处筋膜是偏"硬"(比如包裹肌腱处)还是偏"软"(比如包裹内脏处)。</p>
+<p>筋膜的关键规律是:<strong>力沿着筋膜网络传递,而不只是沿着单块肌肉传递</strong>。举例来说,小腿后侧的筋膜通过"浅背线"(superficial back line)与大腿后侧、脊柱两侧、甚至头皮的筋膜相连。这解释了一个看似奇怪的现象:压腿时如果低头,拉伸感会更强——因为张力沿着这条筋膜链一路传导上去了。我们可以把筋膜网络类比成一张三维的"力传导图":</p>
+$$
+F_{\text{总}} = F_{\text{局部肌肉}} + F_{\text{筋膜传导}}
+$$
+<p>也就是说,你感受到的张力,不只是局部肌肉产生的,还包含从远处经筋膜传来的部分。</p>
+<p><strong>练习题:</strong> 如果直腿前屈时,你发现拉伸感不仅出现在腘绳肌(大腿后侧),还沿着脊柱向上延伸到后颈,请用"筋膜连续性"这个概念,解释为什么单独拉伸腘绳肌可能无法完全消除这种紧绷感。</p>
+  </main>
+  <footer class="spl-credit"><span class="spl-credit__meta">元健康 Meta-Health Ch2: The Physiology Lens — Breath, Circulation, Fascia, and Core (生理视角) (Level: Core &middot; Language: ZH &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
+</div>
+</body>
+</html>

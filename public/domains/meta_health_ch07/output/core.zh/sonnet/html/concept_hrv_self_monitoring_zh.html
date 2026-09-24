@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hrv Self Monitoring | Meta Health Ch07</title>
+<script>
+MathJax = {
+  loader: { load: ['[tex]/mathtools'] },
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']],
+         packages: { '[+]': ['mathtools'] } },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+footer.spl-credit span{display:block}
+footer.spl-credit .spl-credit__meta{margin-bottom:4px}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="hrv-self-monitoring">Hrv Self Monitoring</h2>
+<p>之前我们已经知道：心率变异性（HRV）越高,通常说明身体恢复得越好、副交感神经"刹车"越灵敏;HRV越低,可能意味着压力还没消化完。现在我们来看看,怎么把这个指标用起来,变成一套真正能指导生活的"自我监测系统"。</p>
+<p>单靠一天的HRV数值意义不大,因为它每天都会波动——睡眠、咖啡因、训练强度甚至天气都会影响它。真正有用的是<strong>趋势</strong>,而不是<strong>单点</strong>。设第 $i$ 天的HRV读数为 $H_i$，我们可以计算一个滚动平均值(rolling baseline)：</p>
+$$
+\bar{H}_n = \frac{1}{7}\sum_{i=n-6}^{n} H_i
+$$
+<p>这就是过去7天的平均值,代表你身体最近的"正常状态"。然后,把今天的读数 $H_n$ 和这个基线比较：</p>
+<li>如果 $H_n$ 明显低于 $\bar{H}_n$（比如低出一个标准差以上）,说明身体可能还在从压力或训练中恢复,这天适合安排轻松活动;</li>
+<li>如果 $H_n$ 接近或高于 $\bar{H}_n$,说明恢复得不错,可以承受更大的负荷。</li>
+<p>同时把静息心率(RHR)、睡眠时长、主观情绪一起记录,形成一个简单的"多变量仪表盘"——单一指标容易被误读,但几个信号同时下降,就是身体在提醒你"该减负了"。</p>
+<p><strong>练习</strong>：小明连续7天的HRV读数(单位ms)是：52, 55, 48, 50, 53, 54, 51。第8天他测得的HRV是43ms。请计算前7天的平均值 $\bar{H}$,并判断第8天的数值相对基线是偏高还是偏低,说明这可能代表什么。</p>
+  </main>
+  <footer class="spl-credit"><span class="spl-credit__meta">元健康 Meta-Health Ch7: Stress, Emotion, and the Flow of Qi and Blood (情志与气血) (Level: Core &middot; Language: ZH &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
+</div>
+</body>
+</html>

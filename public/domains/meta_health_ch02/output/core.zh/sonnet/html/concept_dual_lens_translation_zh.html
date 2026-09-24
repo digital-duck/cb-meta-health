@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dual Lens Translation | Meta Health Ch02</title>
+<script>
+MathJax = {
+  loader: { load: ['[tex]/mathtools'] },
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']],
+         packages: { '[+]': ['mathtools'] } },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+footer.spl-credit span{display:block}
+footer.spl-credit .spl-credit__meta{margin-bottom:4px}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="dual-lens-translation">Dual Lens Translation</h2>
+<p>前面几节我们分别用"中医的语言"和"生理学的语言"描述了同一个身体——比如"肺主宣发"对应胸廓扩张、气体交换；"肾为先天之本"在下肢层面对应小腿肌泵与后侧链的支撑功能。这一节要做的，是把这两套语言正式对齐，建立一个"双镜头翻译"的工作方法。</p>
+<p>翻译不是简单的一一对应，而要分三个档次来标注可信度：</p>
+<li><strong>机制性对应（mechanistic）</strong>：两者描述的其实是同一个可测量的生理过程。例如"肺气宣发"与"胸廓扩张—吸气—氧气进入肺泡"，可以用呼吸力学参数（潮气量 $V_T$、呼吸频率 $f$）直接验证，$\dot{V}_E = V_T \times f$（每分通气量）。这类对应几乎不需要"翻译误差"的担忧。</li>
+<li><strong>合理关联（plausible）</strong>："肾主骨、肾为先天之本"与"小腿肌肉泵驱动静脉回流、支撑姿势"之间没有直接的解剖通路，但存在功能上的相关性——下肢力量下降与全身机能衰退常常同步出现，这种关联有统计支持，但因果链条尚未完全阐明。</li>
+<li><strong>隐喻性表达（metaphorical）</strong>："气"作为整体概念，往往是对多个生理系统协同状态的诗意概括，不宜逐字对应到某个可测变量。</li>
+<p>用一个简单的判断规则：如果一个中医术语能被拆解成可测量的生理变量并写出定量关系式，它更靠近"机制性"；如果只能观察到统计相关但缺乏中间机制，它是"合理关联"；如果拆解后失去意义，它是"隐喻"。</p>
+<p><strong>练习</strong>：请把"脾主运化"翻译成生理学语言，并判断你的翻译属于上述三档中的哪一档，说明理由（50字以内）。</p>
+  </main>
+  <footer class="spl-credit"><span class="spl-credit__meta">元健康 Meta-Health Ch2: The Physiology Lens — Breath, Circulation, Fascia, and Core (生理视角) (Level: Core &middot; Language: ZH &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
+</div>
+</body>
+</html>

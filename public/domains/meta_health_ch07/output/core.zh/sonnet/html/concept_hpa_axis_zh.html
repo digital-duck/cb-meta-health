@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hpa Axis | Meta Health Ch07</title>
+<script>
+MathJax = {
+  loader: { load: ['[tex]/mathtools'] },
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']],
+         packages: { '[+]': ['mathtools'] } },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+footer.spl-credit span{display:block}
+footer.spl-credit .spl-credit__meta{margin-bottom:4px}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="hpa-axis">Hpa Axis</h2>
+<p>你可能已经体会过这种感觉：考试前一晚,心跳莫名加快,肚子发紧,甚至有点睡不着。这不是心理作用,而是身体里一整套<strong>激素系统</strong>在悄悄运转——它叫做HPA轴(下丘脑–垂体–肾上腺轴)。</p>
+<p>HPA轴的结构其实是一条<strong>三级指挥链</strong>,信号像接力棒一样一级一级往下传:</p>
+<li><strong>下丘脑(Hypothalamus)</strong>感知到压力(比如恐惧、寒冷、考试焦虑),释放一种叫CRH(促肾上腺皮质激素释放激素)的化学信号。</li>
+<li>CRH顺着血液到达<strong>垂体(Pituitary)</strong>,刺激它分泌ACTH(促肾上腺皮质激素)。</li>
+<li>ACTH再顺着血液到达<strong>肾上腺(Adrenal glands)</strong>,促使它分泌<strong>皮质醇(cortisol)</strong>——真正让你心跳加快、血糖升高、注意力集中的激素。</li>
+<p>用符号简化这个信号级联:</p>
+$$
+\text{压力刺激} \xrightarrow{} \text{下丘脑} \xrightarrow{\text{CRH}} \text{垂体} \xrightarrow{\text{ACTH}} \text{肾上腺} \xrightarrow{} \text{皮质醇}
+$$
+<p>更巧妙的是,这个系统还有<strong>负反馈调节</strong>:当血液中皮质醇浓度升高到一定水平,它会反过来抑制下丘脑和垂体,让CRH和ACTH的分泌减少——这样身体就不会一直处于"报警状态"。这种"结果反过来关闭原因"的结构,在生物学和工程控制系统中都很常见,叫做<strong>负反馈回路(negative feedback loop)</strong>。</p>
+<p><strong>简单规律</strong>:压力信号沿"下丘脑→垂体→肾上腺"逐级放大,皮质醇浓度升高后又逐级抑制上游,形成一个自我调节的闭环。</p>
+<p><strong>练习题</strong>:如果某人肾上腺功能受损,无法正常分泌皮质醇,你认为下丘脑和垂体分泌的CRH和ACTH水平会偏高还是偏低?请用负反馈的逻辑说明理由。</p>
+  </main>
+  <footer class="spl-credit"><span class="spl-credit__meta">元健康 Meta-Health Ch7: Stress, Emotion, and the Flow of Qi and Blood (情志与气血) (Level: Core &middot; Language: ZH &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
+</div>
+</body>
+</html>

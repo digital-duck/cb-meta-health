@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Allostatic Load | Meta Health Ch07</title>
+<script>
+MathJax = {
+  loader: { load: ['[tex]/mathtools'] },
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']],
+         packages: { '[+]': ['mathtools'] } },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+footer.spl-credit span{display:block}
+footer.spl-credit .spl-credit__meta{margin-bottom:4px}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="allostatic-load">Allostatic Load</h2>
+<p>还记得"压力"这个词吗？我们知道短期压力像是拉紧弓弦——身体会调动血压、血糖和警觉性来应对挑战，事后再放松归零。但如果弓弦一直绷紧，从不放松呢？这就是<strong>allostatic load（负荷性适应负担）</strong>要研究的问题：身体为了应对反复或长期的压力,不断进行"适应性调节"（allostasis），而这些调节本身也会在血压、代谢、睡眠和免疫系统上留下磨损的痕迹。</p>
+<p>我们可以把身体想象成一个不断重新校准的系统。每次压力来临,系统会短暂偏离基线去应对,然后归位。用一个简化的方式描述,某一时刻的负荷可以看作各系统偏离健康基线程度的累加:</p>
+$$
+L = \sum_{i=1}^{n} w_i \cdot d_i
+$$
+<p>其中 $d_i$ 表示第 $i$ 个生理系统（如血压、皮质醇水平、血糖、睡眠质量）偏离正常范围的程度,$w_i$ 是该系统对整体健康影响的权重。当 $d_i$ 长期不归零、反而不断累积,$L$ 就持续升高——这正是"负荷"二字的含义:不是某一次事件,而是随时间累积的总和。</p>
+<p>简单规律是:<strong>偶尔的压力波动是适应,但没有恢复期的重复压力,会把波动变成损耗。</strong> 睡眠不足会推高皮质醇,皮质醇又干扰血糖调节和免疫功能,系统之间彼此拖累,形成连锁效应。</p>
+<p><strong>练习</strong>：小明连续两周每天只睡5小时,并且每天都有考试压力。请用一两句话说明,为什么"单次熬夜"和"两周持续熬夜"对身体的影响不能simply按天数相加来理解，而应该考虑系统是否有机会"归零"？</p>
+  </main>
+  <footer class="spl-credit"><span class="spl-credit__meta">元健康 Meta-Health Ch7: Stress, Emotion, and the Flow of Qi and Blood (情志与气血) (Level: Core &middot; Language: ZH &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
+</div>
+</body>
+</html>

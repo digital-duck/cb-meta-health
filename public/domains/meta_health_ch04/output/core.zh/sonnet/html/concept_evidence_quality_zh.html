@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Evidence Quality | Meta Health Ch04</title>
+<script>
+MathJax = {
+  loader: { load: ['[tex]/mathtools'] },
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']],
+         packages: { '[+]': ['mathtools'] } },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+footer.spl-credit span{display:block}
+footer.spl-credit .spl-credit__meta{margin-bottom:4px}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="evidence-quality">Evidence Quality</h2>
+<p>我们已经知道，"有效"不能只靠感觉或个人经验判断——需要证据。但证据也分等级，就像消息来源有可信和不可信之分一样，医学证据也有一条从弱到强的证据等级链（evidence hierarchy）。</p>
+<p>最底层是<strong>病例报告</strong>（case report）：医生记录"这位病人用了某方法后好转了"。这类证据样本量极小（常常只有 $n=1$），无法排除巧合、安慰剂效应或疾病自然好转的可能。</p>
+<p>再往上是<strong>观察性研究</strong>（observational study）：研究者追踪一群人，比较用某疗法和不用的人后续结果差异。问题在于<strong>混杂因素</strong>——比如更健康、更有经济条件的人可能本来就更倾向选择某种疗法，也更可能恢复得好，这会让疗法看起来比实际更有效。</p>
+<p>再上一级是<strong>随机对照试验</strong>（RCT, randomized controlled trial）：把受试者随机分成实验组和对照组，随机化能平均分散混杂因素，让两组除了"是否接受干预"外基本一致。但如果试验<strong>未设盲</strong>（unblinded）——医生或病人知道自己在哪一组——主观期待仍会影响报告结果，尤其在"感觉是否好转"这类主观指标上。<strong>样本量过小</strong>的 RCT 也容易因随机波动而得出夸大的效果估计。</p>
+<p>最高一级是<strong>荟萃分析</strong>（meta-analysis）：把多个独立 RCT 的数据汇总统计，用更大的有效样本量得出更稳健的结论，同时能揭示单个小试验中被放大的效应量。</p>
+<p><strong>简单规则</strong>：证据强度 $\propto$ 样本量 $\times$ 随机化程度 $\times$ 盲法程度，等级越往上、越可信。</p>
+<p><strong>练习</strong>：一篇报道称"某保健品让 20 名志愿者血压下降，效果显著"，且志愿者和研究者都知道谁服用了保健品。请指出这项研究在证据等级中处于什么位置，并说出它最大的两个弱点。</p>
+  </main>
+  <footer class="spl-credit"><span class="spl-credit__meta">元健康 Meta-Health Ch4: Baduanjin — The Eight Brocades (八段锦) (Level: Core &middot; Language: ZH &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
+</div>
+</body>
+</html>

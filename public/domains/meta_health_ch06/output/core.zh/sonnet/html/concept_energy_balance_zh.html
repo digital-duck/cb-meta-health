@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Energy Balance | Meta Health Ch06</title>
+<script>
+MathJax = {
+  loader: { load: ['[tex]/mathtools'] },
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']],
+         packages: { '[+]': ['mathtools'] } },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+footer.spl-credit span{display:block}
+footer.spl-credit .spl-credit__meta{margin-bottom:4px}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="energy-balance">Energy Balance</h2>
+<p>回忆一下:你早就知道"吃得多、动得少就会变胖"这个直觉。但身体其实是一个能量账本,每天都在精确地记账——只是这本账比想象中复杂得多。</p>
+<p>我们可以把身体的能量收支写成一个简单的平衡式:</p>
+$$\Delta E = E_{in} - E_{out}$$
+<p>其中 $E_{in}$ 是你从食物中摄入的能量(以千卡 kcal 计),$E_{out}$ 是身体消耗的总能量。当 $\Delta E > 0$,多余的能量会以脂肪形式储存,体重上升;当 $\Delta E < 0$,身体动用储存的能量,体重下降;当 $\Delta E = 0$,体重维持稳定。</p>
+<p>$E_{out}$ 本身并不是一个单一数字,而是三部分之和:</p>
+$$E_{out} = BMR + TEF + AEE$$
+<li>$BMR$(基础代谢率):维持心跳、呼吸、体温等基本生命活动所需的能量,通常占总消耗的 60%–70%,是最大的一块。</li>
+<li>$TEF$(食物热效应):消化、吸收、代谢食物本身也要耗能,约占摄入能量的 10%。</li>
+<li>$AEE$(活动消耗能量):走路、运动、甚至坐立时肌肉的微小活动,变化幅度最大,因人的生活方式而异。</li>
+<p>有意思的是,这个平衡不是瞬时的——它是"随时间累积"的关系,一天的小波动不代表趋势,真正决定体重变化的是几周甚至几个月的 $\Delta E$ 累积值。</p>
+<p><strong>练习</strong>:小明每天摄入 2200 kcal,他的 $BMR$ 为 1500 kcal,$TEF$ 为摄入量的 10%,$AEE$ 为 400 kcal。请计算他一天的 $\Delta E$,并判断他的体重趋势是上升、下降还是稳定。</p>
+  </main>
+  <footer class="spl-credit"><span class="spl-credit__meta">元健康 Meta-Health Ch6: What We Eat — Food Quality, Four Natures, and Five Flavors (四气五味) (Level: Core &middot; Language: ZH &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
+</div>
+</body>
+</html>
