@@ -21,6 +21,12 @@
         "file": "output/core.en/sonnet/html/book_five_phase_body_map.html",
         "model": "sonnet",
         "language": "en"
+      },
+      {
+        "target": "five_phase_body_map",
+        "file": "output/core.zh/sonnet/html/book_five_phase_body_map_zh.html",
+        "model": "sonnet",
+        "language": "zh"
       }
     ],
     "generated_concepts": [
@@ -32,11 +38,25 @@
         "language": "en"
       },
       {
+        "name": "blood_xue",
+        "label": "Blood Xue",
+        "file": "output/core.zh/sonnet/html/concept_blood_xue_zh.html",
+        "model": "sonnet",
+        "language": "zh"
+      },
+      {
         "name": "body_fluids_jinye",
         "label": "Body Fluids Jinye",
         "file": "output/core.en/sonnet/html/concept_body_fluids_jinye.html",
         "model": "sonnet",
         "language": "en"
+      },
+      {
+        "name": "body_fluids_jinye",
+        "label": "Body Fluids Jinye",
+        "file": "output/core.zh/sonnet/html/concept_body_fluids_jinye_zh.html",
+        "model": "sonnet",
+        "language": "zh"
       },
       {
         "name": "controlling_cycle_xiangke",
@@ -46,11 +66,25 @@
         "language": "en"
       },
       {
+        "name": "controlling_cycle_xiangke",
+        "label": "Controlling Cycle Xiangke",
+        "file": "output/core.zh/sonnet/html/concept_controlling_cycle_xiangke_zh.html",
+        "model": "sonnet",
+        "language": "zh"
+      },
+      {
         "name": "dantian",
         "label": "Dantian",
         "file": "output/core.en/sonnet/html/concept_dantian.html",
         "model": "sonnet",
         "language": "en"
+      },
+      {
+        "name": "dantian",
+        "label": "Dantian",
+        "file": "output/core.zh/sonnet/html/concept_dantian_zh.html",
+        "model": "sonnet",
+        "language": "zh"
       },
       {
         "name": "essence_jing",
@@ -60,11 +94,25 @@
         "language": "en"
       },
       {
+        "name": "essence_jing",
+        "label": "Essence Jing",
+        "file": "output/core.zh/sonnet/html/concept_essence_jing_zh.html",
+        "model": "sonnet",
+        "language": "zh"
+      },
+      {
         "name": "five_phase_body_map",
         "label": "Five Phase Body Map",
         "file": "output/core.en/sonnet/html/concept_five_phase_body_map.html",
         "model": "sonnet",
         "language": "en"
+      },
+      {
+        "name": "five_phase_body_map",
+        "label": "Five Phase Body Map",
+        "file": "output/core.zh/sonnet/html/concept_five_phase_body_map_zh.html",
+        "model": "sonnet",
+        "language": "zh"
       },
       {
         "name": "five_phase_correspondences",
@@ -74,11 +122,25 @@
         "language": "en"
       },
       {
+        "name": "five_phase_correspondences",
+        "label": "Five Phase Correspondences",
+        "file": "output/core.zh/sonnet/html/concept_five_phase_correspondences_zh.html",
+        "model": "sonnet",
+        "language": "zh"
+      },
+      {
         "name": "five_phases_wuxing",
         "label": "Five Phases Wuxing",
         "file": "output/core.en/sonnet/html/concept_five_phases_wuxing.html",
         "model": "sonnet",
         "language": "en"
+      },
+      {
+        "name": "five_phases_wuxing",
+        "label": "Five Phases Wuxing",
+        "file": "output/core.zh/sonnet/html/concept_five_phases_wuxing_zh.html",
+        "model": "sonnet",
+        "language": "zh"
       },
       {
         "name": "five_zang_organs",
@@ -88,11 +150,25 @@
         "language": "en"
       },
       {
+        "name": "five_zang_organs",
+        "label": "Five Zang Organs",
+        "file": "output/core.zh/sonnet/html/concept_five_zang_organs_zh.html",
+        "model": "sonnet",
+        "language": "zh"
+      },
+      {
         "name": "generating_cycle_xiangsheng",
         "label": "Generating Cycle Xiangsheng",
         "file": "output/core.en/sonnet/html/concept_generating_cycle_xiangsheng.html",
         "model": "sonnet",
         "language": "en"
+      },
+      {
+        "name": "generating_cycle_xiangsheng",
+        "label": "Generating Cycle Xiangsheng",
+        "file": "output/core.zh/sonnet/html/concept_generating_cycle_xiangsheng_zh.html",
+        "model": "sonnet",
+        "language": "zh"
       },
       {
         "name": "harmony_as_health",
@@ -102,11 +178,25 @@
         "language": "en"
       },
       {
+        "name": "harmony_as_health",
+        "label": "Harmony As Health",
+        "file": "output/core.zh/sonnet/html/concept_harmony_as_health_zh.html",
+        "model": "sonnet",
+        "language": "zh"
+      },
+      {
         "name": "heart_kidney_interaction",
         "label": "Heart Kidney Interaction",
         "file": "output/core.en/sonnet/html/concept_heart_kidney_interaction.html",
         "model": "sonnet",
         "language": "en"
+      },
+      {
+        "name": "heart_kidney_interaction",
+        "label": "Heart Kidney Interaction",
+        "file": "output/core.zh/sonnet/html/concept_heart_kidney_interaction_zh.html",
+        "model": "sonnet",
+        "language": "zh"
       },
       {
         "name": "liver_spleen_relationship",
@@ -116,11 +206,25 @@
         "language": "en"
       },
       {
+        "name": "liver_spleen_relationship",
+        "label": "Liver Spleen Relationship",
+        "file": "output/core.zh/sonnet/html/concept_liver_spleen_relationship_zh.html",
+        "model": "sonnet",
+        "language": "zh"
+      },
+      {
         "name": "meridian_jingluo",
         "label": "Meridian Jingluo",
         "file": "output/core.en/sonnet/html/concept_meridian_jingluo.html",
         "model": "sonnet",
         "language": "en"
+      },
+      {
+        "name": "meridian_jingluo",
+        "label": "Meridian Jingluo",
+        "file": "output/core.zh/sonnet/html/concept_meridian_jingluo_zh.html",
+        "model": "sonnet",
+        "language": "zh"
       },
       {
         "name": "overacting_and_insulting",
@@ -130,11 +234,25 @@
         "language": "en"
       },
       {
+        "name": "overacting_and_insulting",
+        "label": "Overacting And Insulting",
+        "file": "output/core.zh/sonnet/html/concept_overacting_and_insulting_zh.html",
+        "model": "sonnet",
+        "language": "zh"
+      },
+      {
         "name": "prenatal_postnatal_qi",
         "label": "Prenatal Postnatal Qi",
         "file": "output/core.en/sonnet/html/concept_prenatal_postnatal_qi.html",
         "model": "sonnet",
         "language": "en"
+      },
+      {
+        "name": "prenatal_postnatal_qi",
+        "label": "Prenatal Postnatal Qi",
+        "file": "output/core.zh/sonnet/html/concept_prenatal_postnatal_qi_zh.html",
+        "model": "sonnet",
+        "language": "zh"
       },
       {
         "name": "qi",
@@ -144,11 +262,25 @@
         "language": "en"
       },
       {
+        "name": "qi",
+        "label": "Qi",
+        "file": "output/core.zh/sonnet/html/concept_qi_zh.html",
+        "model": "sonnet",
+        "language": "zh"
+      },
+      {
         "name": "qi_blood_relationship",
         "label": "Qi Blood Relationship",
         "file": "output/core.en/sonnet/html/concept_qi_blood_relationship.html",
         "model": "sonnet",
         "language": "en"
+      },
+      {
+        "name": "qi_blood_relationship",
+        "label": "Qi Blood Relationship",
+        "file": "output/core.zh/sonnet/html/concept_qi_blood_relationship_zh.html",
+        "model": "sonnet",
+        "language": "zh"
       },
       {
         "name": "qi_stagnation_blood_stasis",
@@ -158,11 +290,25 @@
         "language": "en"
       },
       {
+        "name": "qi_stagnation_blood_stasis",
+        "label": "Qi Stagnation Blood Stasis",
+        "file": "output/core.zh/sonnet/html/concept_qi_stagnation_blood_stasis_zh.html",
+        "model": "sonnet",
+        "language": "zh"
+      },
+      {
         "name": "six_fu_organs",
         "label": "Six Fu Organs",
         "file": "output/core.en/sonnet/html/concept_six_fu_organs.html",
         "model": "sonnet",
         "language": "en"
+      },
+      {
+        "name": "six_fu_organs",
+        "label": "Six Fu Organs",
+        "file": "output/core.zh/sonnet/html/concept_six_fu_organs_zh.html",
+        "model": "sonnet",
+        "language": "zh"
       },
       {
         "name": "spirit_shen",
@@ -172,11 +318,25 @@
         "language": "en"
       },
       {
+        "name": "spirit_shen",
+        "label": "Spirit Shen",
+        "file": "output/core.zh/sonnet/html/concept_spirit_shen_zh.html",
+        "model": "sonnet",
+        "language": "zh"
+      },
+      {
         "name": "three_treasures_jing_qi_shen",
         "label": "Three Treasures Jing Qi Shen",
         "file": "output/core.en/sonnet/html/concept_three_treasures_jing_qi_shen.html",
         "model": "sonnet",
         "language": "en"
+      },
+      {
+        "name": "three_treasures_jing_qi_shen",
+        "label": "Three Treasures Jing Qi Shen",
+        "file": "output/core.zh/sonnet/html/concept_three_treasures_jing_qi_shen_zh.html",
+        "model": "sonnet",
+        "language": "zh"
       },
       {
         "name": "triple_burner_sanjiao",
@@ -186,11 +346,25 @@
         "language": "en"
       },
       {
+        "name": "triple_burner_sanjiao",
+        "label": "Triple Burner Sanjiao",
+        "file": "output/core.zh/sonnet/html/concept_triple_burner_sanjiao_zh.html",
+        "model": "sonnet",
+        "language": "zh"
+      },
+      {
         "name": "twelve_primary_meridians",
         "label": "Twelve Primary Meridians",
         "file": "output/core.en/sonnet/html/concept_twelve_primary_meridians.html",
         "model": "sonnet",
         "language": "en"
+      },
+      {
+        "name": "twelve_primary_meridians",
+        "label": "Twelve Primary Meridians",
+        "file": "output/core.zh/sonnet/html/concept_twelve_primary_meridians_zh.html",
+        "model": "sonnet",
+        "language": "zh"
       },
       {
         "name": "yin_yang",
@@ -200,11 +374,25 @@
         "language": "en"
       },
       {
+        "name": "yin_yang",
+        "label": "Yin Yang",
+        "file": "output/core.zh/sonnet/html/concept_yin_yang_zh.html",
+        "model": "sonnet",
+        "language": "zh"
+      },
+      {
         "name": "zang_fu_pairing",
         "label": "Zang Fu Pairing",
         "file": "output/core.en/sonnet/html/concept_zang_fu_pairing.html",
         "model": "sonnet",
         "language": "en"
+      },
+      {
+        "name": "zang_fu_pairing",
+        "label": "Zang Fu Pairing",
+        "file": "output/core.zh/sonnet/html/concept_zang_fu_pairing_zh.html",
+        "model": "sonnet",
+        "language": "zh"
       }
     ],
     "default_level": "core"
@@ -231,6 +419,12 @@
         "file": "output/core.en/sonnet/html/book_dual_lens_translation.html",
         "model": "sonnet",
         "language": "en"
+      },
+      {
+        "target": "dual_lens_translation",
+        "file": "output/core.zh/sonnet/html/book_dual_lens_translation_zh.html",
+        "model": "sonnet",
+        "language": "zh"
       }
     ],
     "generated_concepts": [
@@ -242,11 +436,25 @@
         "language": "en"
       },
       {
+        "name": "autonomic_nervous_system",
+        "label": "Autonomic Nervous System",
+        "file": "output/core.zh/sonnet/html/concept_autonomic_nervous_system_zh.html",
+        "model": "sonnet",
+        "language": "zh"
+      },
+      {
         "name": "cardiac_output",
         "label": "Cardiac Output",
         "file": "output/core.en/sonnet/html/concept_cardiac_output.html",
         "model": "sonnet",
         "language": "en"
+      },
+      {
+        "name": "cardiac_output",
+        "label": "Cardiac Output",
+        "file": "output/core.zh/sonnet/html/concept_cardiac_output_zh.html",
+        "model": "sonnet",
+        "language": "zh"
       },
       {
         "name": "core_stability",
@@ -256,11 +464,25 @@
         "language": "en"
       },
       {
+        "name": "core_stability",
+        "label": "Core Stability",
+        "file": "output/core.zh/sonnet/html/concept_core_stability_zh.html",
+        "model": "sonnet",
+        "language": "zh"
+      },
+      {
         "name": "diaphragmatic_breathing",
         "label": "Diaphragmatic Breathing",
         "file": "output/core.en/sonnet/html/concept_diaphragmatic_breathing.html",
         "model": "sonnet",
         "language": "en"
+      },
+      {
+        "name": "diaphragmatic_breathing",
+        "label": "Diaphragmatic Breathing",
+        "file": "output/core.zh/sonnet/html/concept_diaphragmatic_breathing_zh.html",
+        "model": "sonnet",
+        "language": "zh"
       },
       {
         "name": "dual_lens_translation",
@@ -270,11 +492,25 @@
         "language": "en"
       },
       {
+        "name": "dual_lens_translation",
+        "label": "Dual Lens Translation",
+        "file": "output/core.zh/sonnet/html/concept_dual_lens_translation_zh.html",
+        "model": "sonnet",
+        "language": "zh"
+      },
+      {
         "name": "fascia",
         "label": "Fascia",
         "file": "output/core.en/sonnet/html/concept_fascia.html",
         "model": "sonnet",
         "language": "en"
+      },
+      {
+        "name": "fascia",
+        "label": "Fascia",
+        "file": "output/core.zh/sonnet/html/concept_fascia_zh.html",
+        "model": "sonnet",
+        "language": "zh"
       },
       {
         "name": "interoception",
@@ -284,11 +520,25 @@
         "language": "en"
       },
       {
+        "name": "interoception",
+        "label": "Interoception",
+        "file": "output/core.zh/sonnet/html/concept_interoception_zh.html",
+        "model": "sonnet",
+        "language": "zh"
+      },
+      {
         "name": "intra_abdominal_pressure",
         "label": "Intra Abdominal Pressure",
         "file": "output/core.en/sonnet/html/concept_intra_abdominal_pressure.html",
         "model": "sonnet",
         "language": "en"
+      },
+      {
+        "name": "intra_abdominal_pressure",
+        "label": "Intra Abdominal Pressure",
+        "file": "output/core.zh/sonnet/html/concept_intra_abdominal_pressure_zh.html",
+        "model": "sonnet",
+        "language": "zh"
       },
       {
         "name": "joint_range_of_motion",
@@ -298,11 +548,25 @@
         "language": "en"
       },
       {
+        "name": "joint_range_of_motion",
+        "label": "Joint Range Of Motion",
+        "file": "output/core.zh/sonnet/html/concept_joint_range_of_motion_zh.html",
+        "model": "sonnet",
+        "language": "zh"
+      },
+      {
         "name": "lymph_flow",
         "label": "Lymph Flow",
         "file": "output/core.en/sonnet/html/concept_lymph_flow.html",
         "model": "sonnet",
         "language": "en"
+      },
+      {
+        "name": "lymph_flow",
+        "label": "Lymph Flow",
+        "file": "output/core.zh/sonnet/html/concept_lymph_flow_zh.html",
+        "model": "sonnet",
+        "language": "zh"
       },
       {
         "name": "lymphatic_system",
@@ -312,11 +576,25 @@
         "language": "en"
       },
       {
+        "name": "lymphatic_system",
+        "label": "Lymphatic System",
+        "file": "output/core.zh/sonnet/html/concept_lymphatic_system_zh.html",
+        "model": "sonnet",
+        "language": "zh"
+      },
+      {
         "name": "myofascial_lines",
         "label": "Myofascial Lines",
         "file": "output/core.en/sonnet/html/concept_myofascial_lines.html",
         "model": "sonnet",
         "language": "en"
+      },
+      {
+        "name": "myofascial_lines",
+        "label": "Myofascial Lines",
+        "file": "output/core.zh/sonnet/html/concept_myofascial_lines_zh.html",
+        "model": "sonnet",
+        "language": "zh"
       },
       {
         "name": "posterior_chain",
@@ -326,11 +604,25 @@
         "language": "en"
       },
       {
+        "name": "posterior_chain",
+        "label": "Posterior Chain",
+        "file": "output/core.zh/sonnet/html/concept_posterior_chain_zh.html",
+        "model": "sonnet",
+        "language": "zh"
+      },
+      {
         "name": "regional_blood_flow_distribution",
         "label": "Regional Blood Flow Distribution",
         "file": "output/core.en/sonnet/html/concept_regional_blood_flow_distribution.html",
         "model": "sonnet",
         "language": "en"
+      },
+      {
+        "name": "regional_blood_flow_distribution",
+        "label": "Regional Blood Flow Distribution",
+        "file": "output/core.zh/sonnet/html/concept_regional_blood_flow_distribution_zh.html",
+        "model": "sonnet",
+        "language": "zh"
       },
       {
         "name": "respiration_mechanics",
@@ -340,11 +632,25 @@
         "language": "en"
       },
       {
+        "name": "respiration_mechanics",
+        "label": "Respiration Mechanics",
+        "file": "output/core.zh/sonnet/html/concept_respiration_mechanics_zh.html",
+        "model": "sonnet",
+        "language": "zh"
+      },
+      {
         "name": "respiratory_pump",
         "label": "Respiratory Pump",
         "file": "output/core.en/sonnet/html/concept_respiratory_pump.html",
         "model": "sonnet",
         "language": "en"
+      },
+      {
+        "name": "respiratory_pump",
+        "label": "Respiratory Pump",
+        "file": "output/core.zh/sonnet/html/concept_respiratory_pump_zh.html",
+        "model": "sonnet",
+        "language": "zh"
       },
       {
         "name": "skeletal_muscle_contraction",
@@ -354,11 +660,25 @@
         "language": "en"
       },
       {
+        "name": "skeletal_muscle_contraction",
+        "label": "Skeletal Muscle Contraction",
+        "file": "output/core.zh/sonnet/html/concept_skeletal_muscle_contraction_zh.html",
+        "model": "sonnet",
+        "language": "zh"
+      },
+      {
         "name": "skeletal_muscle_pump",
         "label": "Skeletal Muscle Pump",
         "file": "output/core.en/sonnet/html/concept_skeletal_muscle_pump.html",
         "model": "sonnet",
         "language": "en"
+      },
+      {
+        "name": "skeletal_muscle_pump",
+        "label": "Skeletal Muscle Pump",
+        "file": "output/core.zh/sonnet/html/concept_skeletal_muscle_pump_zh.html",
+        "model": "sonnet",
+        "language": "zh"
       },
       {
         "name": "spinal_rotation_and_lateral_flexion",
@@ -368,11 +688,25 @@
         "language": "en"
       },
       {
+        "name": "spinal_rotation_and_lateral_flexion",
+        "label": "Spinal Rotation And Lateral Flexion",
+        "file": "output/core.zh/sonnet/html/concept_spinal_rotation_and_lateral_flexion_zh.html",
+        "model": "sonnet",
+        "language": "zh"
+      },
+      {
         "name": "squat_mechanics",
         "label": "Squat Mechanics",
         "file": "output/core.en/sonnet/html/concept_squat_mechanics.html",
         "model": "sonnet",
         "language": "en"
+      },
+      {
+        "name": "squat_mechanics",
+        "label": "Squat Mechanics",
+        "file": "output/core.zh/sonnet/html/concept_squat_mechanics_zh.html",
+        "model": "sonnet",
+        "language": "zh"
       },
       {
         "name": "sympathetic_parasympathetic_balance",
@@ -382,11 +716,25 @@
         "language": "en"
       },
       {
+        "name": "sympathetic_parasympathetic_balance",
+        "label": "Sympathetic Parasympathetic Balance",
+        "file": "output/core.zh/sonnet/html/concept_sympathetic_parasympathetic_balance_zh.html",
+        "model": "sonnet",
+        "language": "zh"
+      },
+      {
         "name": "tension_relaxation_cycling",
         "label": "Tension Relaxation Cycling",
         "file": "output/core.en/sonnet/html/concept_tension_relaxation_cycling.html",
         "model": "sonnet",
         "language": "en"
+      },
+      {
+        "name": "tension_relaxation_cycling",
+        "label": "Tension Relaxation Cycling",
+        "file": "output/core.zh/sonnet/html/concept_tension_relaxation_cycling_zh.html",
+        "model": "sonnet",
+        "language": "zh"
       },
       {
         "name": "thoracic_mobility",
@@ -396,11 +744,25 @@
         "language": "en"
       },
       {
+        "name": "thoracic_mobility",
+        "label": "Thoracic Mobility",
+        "file": "output/core.zh/sonnet/html/concept_thoracic_mobility_zh.html",
+        "model": "sonnet",
+        "language": "zh"
+      },
+      {
         "name": "tidal_volume_and_gas_exchange",
         "label": "Tidal Volume And Gas Exchange",
         "file": "output/core.en/sonnet/html/concept_tidal_volume_and_gas_exchange.html",
         "model": "sonnet",
         "language": "en"
+      },
+      {
+        "name": "tidal_volume_and_gas_exchange",
+        "label": "Tidal Volume And Gas Exchange",
+        "file": "output/core.zh/sonnet/html/concept_tidal_volume_and_gas_exchange_zh.html",
+        "model": "sonnet",
+        "language": "zh"
       },
       {
         "name": "vagal_tone_and_hrv",
@@ -410,11 +772,25 @@
         "language": "en"
       },
       {
+        "name": "vagal_tone_and_hrv",
+        "label": "Vagal Tone And Hrv",
+        "file": "output/core.zh/sonnet/html/concept_vagal_tone_and_hrv_zh.html",
+        "model": "sonnet",
+        "language": "zh"
+      },
+      {
         "name": "venous_return",
         "label": "Venous Return",
         "file": "output/core.en/sonnet/html/concept_venous_return.html",
         "model": "sonnet",
         "language": "en"
+      },
+      {
+        "name": "venous_return",
+        "label": "Venous Return",
+        "file": "output/core.zh/sonnet/html/concept_venous_return_zh.html",
+        "model": "sonnet",
+        "language": "zh"
       }
     ],
     "default_level": "core"
@@ -441,6 +817,12 @@
         "file": "output/core.en/sonnet/html/book_five_organ_routine_design.html",
         "model": "sonnet",
         "language": "en"
+      },
+      {
+        "target": "five_organ_routine_design",
+        "file": "output/core.zh/sonnet/html/book_five_organ_routine_design_zh.html",
+        "model": "sonnet",
+        "language": "zh"
       }
     ],
     "generated_concepts": [
@@ -452,11 +834,25 @@
         "language": "en"
       },
       {
+        "name": "body_lifting_tishen",
+        "label": "Body Lifting Tishen",
+        "file": "output/core.zh/sonnet/html/concept_body_lifting_tishen_zh.html",
+        "model": "sonnet",
+        "language": "zh"
+      },
+      {
         "name": "breath_first_sequence",
         "label": "Breath First Sequence",
         "file": "output/core.en/sonnet/html/concept_breath_first_sequence.html",
         "model": "sonnet",
         "language": "en"
+      },
+      {
+        "name": "breath_first_sequence",
+        "label": "Breath First Sequence",
+        "file": "output/core.zh/sonnet/html/concept_breath_first_sequence_zh.html",
+        "model": "sonnet",
+        "language": "zh"
       },
       {
         "name": "chest_expansion_kuoxiong",
@@ -466,11 +862,25 @@
         "language": "en"
       },
       {
+        "name": "chest_expansion_kuoxiong",
+        "label": "Chest Expansion Kuoxiong",
+        "file": "output/core.zh/sonnet/html/concept_chest_expansion_kuoxiong_zh.html",
+        "model": "sonnet",
+        "language": "zh"
+      },
+      {
         "name": "dantian",
         "label": "Dantian",
         "file": "output/core.en/sonnet/html/concept_dantian.html",
         "model": "sonnet",
         "language": "en"
+      },
+      {
+        "name": "dantian",
+        "label": "Dantian",
+        "file": "output/core.zh/sonnet/html/concept_dantian_zh.html",
+        "model": "sonnet",
+        "language": "zh"
       },
       {
         "name": "deep_squat_shendun",
@@ -480,11 +890,25 @@
         "language": "en"
       },
       {
+        "name": "deep_squat_shendun",
+        "label": "Deep Squat Shendun",
+        "file": "output/core.zh/sonnet/html/concept_deep_squat_shendun_zh.html",
+        "model": "sonnet",
+        "language": "zh"
+      },
+      {
         "name": "diaphragmatic_breathing",
         "label": "Diaphragmatic Breathing",
         "file": "output/core.en/sonnet/html/concept_diaphragmatic_breathing.html",
         "model": "sonnet",
         "language": "en"
+      },
+      {
+        "name": "diaphragmatic_breathing",
+        "label": "Diaphragmatic Breathing",
+        "file": "output/core.zh/sonnet/html/concept_diaphragmatic_breathing_zh.html",
+        "model": "sonnet",
+        "language": "zh"
       },
       {
         "name": "five_organ_movement_matrix",
@@ -494,11 +918,25 @@
         "language": "en"
       },
       {
+        "name": "five_organ_movement_matrix",
+        "label": "Five Organ Movement Matrix",
+        "file": "output/core.zh/sonnet/html/concept_five_organ_movement_matrix_zh.html",
+        "model": "sonnet",
+        "language": "zh"
+      },
+      {
         "name": "five_organ_routine_design",
         "label": "Five Organ Routine Design",
         "file": "output/core.en/sonnet/html/concept_five_organ_routine_design.html",
         "model": "sonnet",
         "language": "en"
+      },
+      {
+        "name": "five_organ_routine_design",
+        "label": "Five Organ Routine Design",
+        "file": "output/core.zh/sonnet/html/concept_five_organ_routine_design_zh.html",
+        "model": "sonnet",
+        "language": "zh"
       },
       {
         "name": "five_phase_correspondences",
@@ -508,11 +946,25 @@
         "language": "en"
       },
       {
+        "name": "five_phase_correspondences",
+        "label": "Five Phase Correspondences",
+        "file": "output/core.zh/sonnet/html/concept_five_phase_correspondences_zh.html",
+        "model": "sonnet",
+        "language": "zh"
+      },
+      {
         "name": "generating_cycle_sequence",
         "label": "Generating Cycle Sequence",
         "file": "output/core.en/sonnet/html/concept_generating_cycle_sequence.html",
         "model": "sonnet",
         "language": "en"
+      },
+      {
+        "name": "generating_cycle_sequence",
+        "label": "Generating Cycle Sequence",
+        "file": "output/core.zh/sonnet/html/concept_generating_cycle_sequence_zh.html",
+        "model": "sonnet",
+        "language": "zh"
       },
       {
         "name": "generating_cycle_xiangsheng",
@@ -522,11 +974,25 @@
         "language": "en"
       },
       {
+        "name": "generating_cycle_xiangsheng",
+        "label": "Generating Cycle Xiangsheng",
+        "file": "output/core.zh/sonnet/html/concept_generating_cycle_xiangsheng_zh.html",
+        "model": "sonnet",
+        "language": "zh"
+      },
+      {
         "name": "heart_kidney_interaction",
         "label": "Heart Kidney Interaction",
         "file": "output/core.en/sonnet/html/concept_heart_kidney_interaction.html",
         "model": "sonnet",
         "language": "en"
+      },
+      {
+        "name": "heart_kidney_interaction",
+        "label": "Heart Kidney Interaction",
+        "file": "output/core.zh/sonnet/html/concept_heart_kidney_interaction_zh.html",
+        "model": "sonnet",
+        "language": "zh"
       },
       {
         "name": "intra_abdominal_pressure",
@@ -536,11 +1002,25 @@
         "language": "en"
       },
       {
+        "name": "intra_abdominal_pressure",
+        "label": "Intra Abdominal Pressure",
+        "file": "output/core.zh/sonnet/html/concept_intra_abdominal_pressure_zh.html",
+        "model": "sonnet",
+        "language": "zh"
+      },
+      {
         "name": "myofascial_lines",
         "label": "Myofascial Lines",
         "file": "output/core.en/sonnet/html/concept_myofascial_lines.html",
         "model": "sonnet",
         "language": "en"
+      },
+      {
+        "name": "myofascial_lines",
+        "label": "Myofascial Lines",
+        "file": "output/core.zh/sonnet/html/concept_myofascial_lines_zh.html",
+        "model": "sonnet",
+        "language": "zh"
       },
       {
         "name": "rib_fanning_shanlei",
@@ -550,11 +1030,25 @@
         "language": "en"
       },
       {
+        "name": "rib_fanning_shanlei",
+        "label": "Rib Fanning Shanlei",
+        "file": "output/core.zh/sonnet/html/concept_rib_fanning_shanlei_zh.html",
+        "model": "sonnet",
+        "language": "zh"
+      },
+      {
         "name": "safe_practice_and_modification",
         "label": "Safe Practice And Modification",
         "file": "output/core.en/sonnet/html/concept_safe_practice_and_modification.html",
         "model": "sonnet",
         "language": "en"
+      },
+      {
+        "name": "safe_practice_and_modification",
+        "label": "Safe Practice And Modification",
+        "file": "output/core.zh/sonnet/html/concept_safe_practice_and_modification_zh.html",
+        "model": "sonnet",
+        "language": "zh"
       },
       {
         "name": "sealing_finish",
@@ -564,11 +1058,25 @@
         "language": "en"
       },
       {
+        "name": "sealing_finish",
+        "label": "Sealing Finish",
+        "file": "output/core.zh/sonnet/html/concept_sealing_finish_zh.html",
+        "model": "sonnet",
+        "language": "zh"
+      },
+      {
         "name": "skeletal_muscle_pump",
         "label": "Skeletal Muscle Pump",
         "file": "output/core.en/sonnet/html/concept_skeletal_muscle_pump.html",
         "model": "sonnet",
         "language": "en"
+      },
+      {
+        "name": "skeletal_muscle_pump",
+        "label": "Skeletal Muscle Pump",
+        "file": "output/core.zh/sonnet/html/concept_skeletal_muscle_pump_zh.html",
+        "model": "sonnet",
+        "language": "zh"
       },
       {
         "name": "squat_mechanics",
@@ -578,11 +1086,25 @@
         "language": "en"
       },
       {
+        "name": "squat_mechanics",
+        "label": "Squat Mechanics",
+        "file": "output/core.zh/sonnet/html/concept_squat_mechanics_zh.html",
+        "model": "sonnet",
+        "language": "zh"
+      },
+      {
         "name": "thoracic_mobility",
         "label": "Thoracic Mobility",
         "file": "output/core.en/sonnet/html/concept_thoracic_mobility.html",
         "model": "sonnet",
         "language": "en"
+      },
+      {
+        "name": "thoracic_mobility",
+        "label": "Thoracic Mobility",
+        "file": "output/core.zh/sonnet/html/concept_thoracic_mobility_zh.html",
+        "model": "sonnet",
+        "language": "zh"
       },
       {
         "name": "top_to_bottom_sequence",
@@ -592,11 +1114,25 @@
         "language": "en"
       },
       {
+        "name": "top_to_bottom_sequence",
+        "label": "Top To Bottom Sequence",
+        "file": "output/core.zh/sonnet/html/concept_top_to_bottom_sequence_zh.html",
+        "model": "sonnet",
+        "language": "zh"
+      },
+      {
         "name": "torso_twist_niuzhuan",
         "label": "Torso Twist Niuzhuan",
         "file": "output/core.en/sonnet/html/concept_torso_twist_niuzhuan.html",
         "model": "sonnet",
         "language": "en"
+      },
+      {
+        "name": "torso_twist_niuzhuan",
+        "label": "Torso Twist Niuzhuan",
+        "file": "output/core.zh/sonnet/html/concept_torso_twist_niuzhuan_zh.html",
+        "model": "sonnet",
+        "language": "zh"
       },
       {
         "name": "twelve_primary_meridians",
@@ -606,11 +1142,25 @@
         "language": "en"
       },
       {
+        "name": "twelve_primary_meridians",
+        "label": "Twelve Primary Meridians",
+        "file": "output/core.zh/sonnet/html/concept_twelve_primary_meridians_zh.html",
+        "model": "sonnet",
+        "language": "zh"
+      },
+      {
         "name": "yongquan_point",
         "label": "Yongquan Point",
         "file": "output/core.en/sonnet/html/concept_yongquan_point.html",
         "model": "sonnet",
         "language": "en"
+      },
+      {
+        "name": "yongquan_point",
+        "label": "Yongquan Point",
+        "file": "output/core.zh/sonnet/html/concept_yongquan_point_zh.html",
+        "model": "sonnet",
+        "language": "zh"
       }
     ],
     "default_level": "core"
@@ -637,6 +1187,12 @@
         "file": "output/core.en/sonnet/html/book_daily_baduanjin_practice_plan.html",
         "model": "sonnet",
         "language": "en"
+      },
+      {
+        "target": "daily_baduanjin_practice_plan",
+        "file": "output/core.zh/sonnet/html/book_daily_baduanjin_practice_plan_zh.html",
+        "model": "sonnet",
+        "language": "zh"
       }
     ],
     "generated_concepts": [
@@ -648,11 +1204,25 @@
         "language": "en"
       },
       {
+        "name": "baduanjin_evidence_base",
+        "label": "Baduanjin Evidence Base",
+        "file": "output/core.zh/sonnet/html/concept_baduanjin_evidence_base_zh.html",
+        "model": "sonnet",
+        "language": "zh"
+      },
+      {
         "name": "baduanjin_five_organ_mapping",
         "label": "Baduanjin Five Organ Mapping",
         "file": "output/core.en/sonnet/html/concept_baduanjin_five_organ_mapping.html",
         "model": "sonnet",
         "language": "en"
+      },
+      {
+        "name": "baduanjin_five_organ_mapping",
+        "label": "Baduanjin Five Organ Mapping",
+        "file": "output/core.zh/sonnet/html/concept_baduanjin_five_organ_mapping_zh.html",
+        "model": "sonnet",
+        "language": "zh"
       },
       {
         "name": "baduanjin_overview",
@@ -662,11 +1232,25 @@
         "language": "en"
       },
       {
+        "name": "baduanjin_overview",
+        "label": "Baduanjin Overview",
+        "file": "output/core.zh/sonnet/html/concept_baduanjin_overview_zh.html",
+        "model": "sonnet",
+        "language": "zh"
+      },
+      {
         "name": "breath_movement_coordination",
         "label": "Breath Movement Coordination",
         "file": "output/core.en/sonnet/html/concept_breath_movement_coordination.html",
         "model": "sonnet",
         "language": "en"
+      },
+      {
+        "name": "breath_movement_coordination",
+        "label": "Breath Movement Coordination",
+        "file": "output/core.zh/sonnet/html/concept_breath_movement_coordination_zh.html",
+        "model": "sonnet",
+        "language": "zh"
       },
       {
         "name": "closing_form_shougong",
@@ -676,11 +1260,25 @@
         "language": "en"
       },
       {
+        "name": "closing_form_shougong",
+        "label": "Closing Form Shougong",
+        "file": "output/core.zh/sonnet/html/concept_closing_form_shougong_zh.html",
+        "model": "sonnet",
+        "language": "zh"
+      },
+      {
         "name": "daily_baduanjin_practice_plan",
         "label": "Daily Baduanjin Practice Plan",
         "file": "output/core.en/sonnet/html/concept_daily_baduanjin_practice_plan.html",
         "model": "sonnet",
         "language": "en"
+      },
+      {
+        "name": "daily_baduanjin_practice_plan",
+        "label": "Daily Baduanjin Practice Plan",
+        "file": "output/core.zh/sonnet/html/concept_daily_baduanjin_practice_plan_zh.html",
+        "model": "sonnet",
+        "language": "zh"
       },
       {
         "name": "dantian",
@@ -690,11 +1288,25 @@
         "language": "en"
       },
       {
+        "name": "dantian",
+        "label": "Dantian",
+        "file": "output/core.zh/sonnet/html/concept_dantian_zh.html",
+        "model": "sonnet",
+        "language": "zh"
+      },
+      {
         "name": "daoyin_tradition",
         "label": "Daoyin Tradition",
         "file": "output/core.en/sonnet/html/concept_daoyin_tradition.html",
         "model": "sonnet",
         "language": "en"
+      },
+      {
+        "name": "daoyin_tradition",
+        "label": "Daoyin Tradition",
+        "file": "output/core.zh/sonnet/html/concept_daoyin_tradition_zh.html",
+        "model": "sonnet",
+        "language": "zh"
       },
       {
         "name": "diaphragmatic_breathing",
@@ -704,11 +1316,25 @@
         "language": "en"
       },
       {
+        "name": "diaphragmatic_breathing",
+        "label": "Diaphragmatic Breathing",
+        "file": "output/core.zh/sonnet/html/concept_diaphragmatic_breathing_zh.html",
+        "model": "sonnet",
+        "language": "zh"
+      },
+      {
         "name": "evidence_quality",
         "label": "Evidence Quality",
         "file": "output/core.en/sonnet/html/concept_evidence_quality.html",
         "model": "sonnet",
         "language": "en"
+      },
+      {
+        "name": "evidence_quality",
+        "label": "Evidence Quality",
+        "file": "output/core.zh/sonnet/html/concept_evidence_quality_zh.html",
+        "model": "sonnet",
+        "language": "zh"
       },
       {
         "name": "five_organ_movement_matrix",
@@ -718,11 +1344,25 @@
         "language": "en"
       },
       {
+        "name": "five_organ_movement_matrix",
+        "label": "Five Organ Movement Matrix",
+        "file": "output/core.zh/sonnet/html/concept_five_organ_movement_matrix_zh.html",
+        "model": "sonnet",
+        "language": "zh"
+      },
+      {
         "name": "form1_hold_up_heavens",
         "label": "Form1 Hold Up Heavens",
         "file": "output/core.en/sonnet/html/concept_form1_hold_up_heavens.html",
         "model": "sonnet",
         "language": "en"
+      },
+      {
+        "name": "form1_hold_up_heavens",
+        "label": "Form1 Hold Up Heavens",
+        "file": "output/core.zh/sonnet/html/concept_form1_hold_up_heavens_zh.html",
+        "model": "sonnet",
+        "language": "zh"
       },
       {
         "name": "form2_draw_the_bow",
@@ -732,11 +1372,25 @@
         "language": "en"
       },
       {
+        "name": "form2_draw_the_bow",
+        "label": "Form2 Draw The Bow",
+        "file": "output/core.zh/sonnet/html/concept_form2_draw_the_bow_zh.html",
+        "model": "sonnet",
+        "language": "zh"
+      },
+      {
         "name": "form3_single_arm_raise",
         "label": "Form3 Single Arm Raise",
         "file": "output/core.en/sonnet/html/concept_form3_single_arm_raise.html",
         "model": "sonnet",
         "language": "en"
+      },
+      {
+        "name": "form3_single_arm_raise",
+        "label": "Form3 Single Arm Raise",
+        "file": "output/core.zh/sonnet/html/concept_form3_single_arm_raise_zh.html",
+        "model": "sonnet",
+        "language": "zh"
       },
       {
         "name": "form4_look_back",
@@ -746,11 +1400,25 @@
         "language": "en"
       },
       {
+        "name": "form4_look_back",
+        "label": "Form4 Look Back",
+        "file": "output/core.zh/sonnet/html/concept_form4_look_back_zh.html",
+        "model": "sonnet",
+        "language": "zh"
+      },
+      {
         "name": "form5_sway_head_and_tail",
         "label": "Form5 Sway Head And Tail",
         "file": "output/core.en/sonnet/html/concept_form5_sway_head_and_tail.html",
         "model": "sonnet",
         "language": "en"
+      },
+      {
+        "name": "form5_sway_head_and_tail",
+        "label": "Form5 Sway Head And Tail",
+        "file": "output/core.zh/sonnet/html/concept_form5_sway_head_and_tail_zh.html",
+        "model": "sonnet",
+        "language": "zh"
       },
       {
         "name": "form6_touch_toes",
@@ -760,11 +1428,25 @@
         "language": "en"
       },
       {
+        "name": "form6_touch_toes",
+        "label": "Form6 Touch Toes",
+        "file": "output/core.zh/sonnet/html/concept_form6_touch_toes_zh.html",
+        "model": "sonnet",
+        "language": "zh"
+      },
+      {
         "name": "form7_clench_fists_glare",
         "label": "Form7 Clench Fists Glare",
         "file": "output/core.en/sonnet/html/concept_form7_clench_fists_glare.html",
         "model": "sonnet",
         "language": "en"
+      },
+      {
+        "name": "form7_clench_fists_glare",
+        "label": "Form7 Clench Fists Glare",
+        "file": "output/core.zh/sonnet/html/concept_form7_clench_fists_glare_zh.html",
+        "model": "sonnet",
+        "language": "zh"
       },
       {
         "name": "form8_heel_bounce",
@@ -774,11 +1456,25 @@
         "language": "en"
       },
       {
+        "name": "form8_heel_bounce",
+        "label": "Form8 Heel Bounce",
+        "file": "output/core.zh/sonnet/html/concept_form8_heel_bounce_zh.html",
+        "model": "sonnet",
+        "language": "zh"
+      },
+      {
         "name": "heart_kidney_interaction",
         "label": "Heart Kidney Interaction",
         "file": "output/core.en/sonnet/html/concept_heart_kidney_interaction.html",
         "model": "sonnet",
         "language": "en"
+      },
+      {
+        "name": "heart_kidney_interaction",
+        "label": "Heart Kidney Interaction",
+        "file": "output/core.zh/sonnet/html/concept_heart_kidney_interaction_zh.html",
+        "model": "sonnet",
+        "language": "zh"
       },
       {
         "name": "practice_dose",
@@ -788,11 +1484,25 @@
         "language": "en"
       },
       {
+        "name": "practice_dose",
+        "label": "Practice Dose",
+        "file": "output/core.zh/sonnet/html/concept_practice_dose_zh.html",
+        "model": "sonnet",
+        "language": "zh"
+      },
+      {
         "name": "tension_relaxation_cycling",
         "label": "Tension Relaxation Cycling",
         "file": "output/core.en/sonnet/html/concept_tension_relaxation_cycling.html",
         "model": "sonnet",
         "language": "en"
+      },
+      {
+        "name": "tension_relaxation_cycling",
+        "label": "Tension Relaxation Cycling",
+        "file": "output/core.zh/sonnet/html/concept_tension_relaxation_cycling_zh.html",
+        "model": "sonnet",
+        "language": "zh"
       },
       {
         "name": "tension_release_rhythm",
@@ -802,11 +1512,25 @@
         "language": "en"
       },
       {
+        "name": "tension_release_rhythm",
+        "label": "Tension Release Rhythm",
+        "file": "output/core.zh/sonnet/html/concept_tension_release_rhythm_zh.html",
+        "model": "sonnet",
+        "language": "zh"
+      },
+      {
         "name": "three_regulations",
         "label": "Three Regulations",
         "file": "output/core.en/sonnet/html/concept_three_regulations.html",
         "model": "sonnet",
         "language": "en"
+      },
+      {
+        "name": "three_regulations",
+        "label": "Three Regulations",
+        "file": "output/core.zh/sonnet/html/concept_three_regulations_zh.html",
+        "model": "sonnet",
+        "language": "zh"
       },
       {
         "name": "triple_burner_sanjiao",
@@ -816,6 +1540,13 @@
         "language": "en"
       },
       {
+        "name": "triple_burner_sanjiao",
+        "label": "Triple Burner Sanjiao",
+        "file": "output/core.zh/sonnet/html/concept_triple_burner_sanjiao_zh.html",
+        "model": "sonnet",
+        "language": "zh"
+      },
+      {
         "name": "twelve_primary_meridians",
         "label": "Twelve Primary Meridians",
         "file": "output/core.en/sonnet/html/concept_twelve_primary_meridians.html",
@@ -823,11 +1554,25 @@
         "language": "en"
       },
       {
+        "name": "twelve_primary_meridians",
+        "label": "Twelve Primary Meridians",
+        "file": "output/core.zh/sonnet/html/concept_twelve_primary_meridians_zh.html",
+        "model": "sonnet",
+        "language": "zh"
+      },
+      {
         "name": "yongquan_point",
         "label": "Yongquan Point",
         "file": "output/core.en/sonnet/html/concept_yongquan_point.html",
         "model": "sonnet",
         "language": "en"
+      },
+      {
+        "name": "yongquan_point",
+        "label": "Yongquan Point",
+        "file": "output/core.zh/sonnet/html/concept_yongquan_point_zh.html",
+        "model": "sonnet",
+        "language": "zh"
       }
     ],
     "default_level": "core"
@@ -860,6 +1605,12 @@
         "file": "output/core.en/sonnet/html/book_mindful_meal_protocol.html",
         "model": "sonnet",
         "language": "en"
+      },
+      {
+        "target": "mindful_meal_protocol",
+        "file": "output/core.zh/sonnet/html/book_mindful_meal_protocol_zh.html",
+        "model": "sonnet",
+        "language": "zh"
       }
     ],
     "generated_concepts": [
@@ -871,11 +1622,25 @@
         "language": "en"
       },
       {
+        "name": "ascending_clear_descending_turbid",
+        "label": "Ascending Clear Descending Turbid",
+        "file": "output/core.zh/sonnet/html/concept_ascending_clear_descending_turbid_zh.html",
+        "model": "sonnet",
+        "language": "zh"
+      },
+      {
         "name": "cardiovascular_load_of_digestion",
         "label": "Cardiovascular Load Of Digestion",
         "file": "output/core.en/sonnet/html/concept_cardiovascular_load_of_digestion.html",
         "model": "sonnet",
         "language": "en"
+      },
+      {
+        "name": "cardiovascular_load_of_digestion",
+        "label": "Cardiovascular Load Of Digestion",
+        "file": "output/core.zh/sonnet/html/concept_cardiovascular_load_of_digestion_zh.html",
+        "model": "sonnet",
+        "language": "zh"
       },
       {
         "name": "cephalic_phase_digestion",
@@ -885,11 +1650,25 @@
         "language": "en"
       },
       {
+        "name": "cephalic_phase_digestion",
+        "label": "Cephalic Phase Digestion",
+        "file": "output/core.zh/sonnet/html/concept_cephalic_phase_digestion_zh.html",
+        "model": "sonnet",
+        "language": "zh"
+      },
+      {
         "name": "digestive_load_pacing",
         "label": "Digestive Load Pacing",
         "file": "output/core.en/sonnet/html/concept_digestive_load_pacing.html",
         "model": "sonnet",
         "language": "en"
+      },
+      {
+        "name": "digestive_load_pacing",
+        "label": "Digestive Load Pacing",
+        "file": "output/core.zh/sonnet/html/concept_digestive_load_pacing_zh.html",
+        "model": "sonnet",
+        "language": "zh"
       },
       {
         "name": "digestive_overtraining",
@@ -899,11 +1678,25 @@
         "language": "en"
       },
       {
+        "name": "digestive_overtraining",
+        "label": "Digestive Overtraining",
+        "file": "output/core.zh/sonnet/html/concept_digestive_overtraining_zh.html",
+        "model": "sonnet",
+        "language": "zh"
+      },
+      {
         "name": "digestive_warm_up",
         "label": "Digestive Warm Up",
         "file": "output/core.en/sonnet/html/concept_digestive_warm_up.html",
         "model": "sonnet",
         "language": "en"
+      },
+      {
+        "name": "digestive_warm_up",
+        "label": "Digestive Warm Up",
+        "file": "output/core.zh/sonnet/html/concept_digestive_warm_up_zh.html",
+        "model": "sonnet",
+        "language": "zh"
       },
       {
         "name": "eating_as_internal_exercise",
@@ -913,11 +1706,25 @@
         "language": "en"
       },
       {
+        "name": "eating_as_internal_exercise",
+        "label": "Eating As Internal Exercise",
+        "file": "output/core.zh/sonnet/html/concept_eating_as_internal_exercise_zh.html",
+        "model": "sonnet",
+        "language": "zh"
+      },
+      {
         "name": "gastrointestinal_tract",
         "label": "Gastrointestinal Tract",
         "file": "output/core.en/sonnet/html/concept_gastrointestinal_tract.html",
         "model": "sonnet",
         "language": "en"
+      },
+      {
+        "name": "gastrointestinal_tract",
+        "label": "Gastrointestinal Tract",
+        "file": "output/core.zh/sonnet/html/concept_gastrointestinal_tract_zh.html",
+        "model": "sonnet",
+        "language": "zh"
       },
       {
         "name": "hepatic_first_pass_processing",
@@ -927,11 +1734,25 @@
         "language": "en"
       },
       {
+        "name": "hepatic_first_pass_processing",
+        "label": "Hepatic First Pass Processing",
+        "file": "output/core.zh/sonnet/html/concept_hepatic_first_pass_processing_zh.html",
+        "model": "sonnet",
+        "language": "zh"
+      },
+      {
         "name": "liver_metabolic_role",
         "label": "Liver Metabolic Role",
         "file": "output/core.en/sonnet/html/concept_liver_metabolic_role.html",
         "model": "sonnet",
         "language": "en"
+      },
+      {
+        "name": "liver_metabolic_role",
+        "label": "Liver Metabolic Role",
+        "file": "output/core.zh/sonnet/html/concept_liver_metabolic_role_zh.html",
+        "model": "sonnet",
+        "language": "zh"
       },
       {
         "name": "mastication",
@@ -941,11 +1762,25 @@
         "language": "en"
       },
       {
+        "name": "mastication",
+        "label": "Mastication",
+        "file": "output/core.zh/sonnet/html/concept_mastication_zh.html",
+        "model": "sonnet",
+        "language": "zh"
+      },
+      {
         "name": "mindful_meal_protocol",
         "label": "Mindful Meal Protocol",
         "file": "output/core.en/sonnet/html/concept_mindful_meal_protocol.html",
         "model": "sonnet",
         "language": "en"
+      },
+      {
+        "name": "mindful_meal_protocol",
+        "label": "Mindful Meal Protocol",
+        "file": "output/core.zh/sonnet/html/concept_mindful_meal_protocol_zh.html",
+        "model": "sonnet",
+        "language": "zh"
       },
       {
         "name": "peristalsis_and_motility",
@@ -955,11 +1790,25 @@
         "language": "en"
       },
       {
+        "name": "peristalsis_and_motility",
+        "label": "Peristalsis And Motility",
+        "file": "output/core.zh/sonnet/html/concept_peristalsis_and_motility_zh.html",
+        "model": "sonnet",
+        "language": "zh"
+      },
+      {
         "name": "post_meal_gentle_movement",
         "label": "Post Meal Gentle Movement",
         "file": "output/core.en/sonnet/html/concept_post_meal_gentle_movement.html",
         "model": "sonnet",
         "language": "en"
+      },
+      {
+        "name": "post_meal_gentle_movement",
+        "label": "Post Meal Gentle Movement",
+        "file": "output/core.zh/sonnet/html/concept_post_meal_gentle_movement_zh.html",
+        "model": "sonnet",
+        "language": "zh"
       },
       {
         "name": "postprandial_glucose_response",
@@ -969,11 +1818,25 @@
         "language": "en"
       },
       {
+        "name": "postprandial_glucose_response",
+        "label": "Postprandial Glucose Response",
+        "file": "output/core.zh/sonnet/html/concept_postprandial_glucose_response_zh.html",
+        "model": "sonnet",
+        "language": "zh"
+      },
+      {
         "name": "postprandial_hyperemia",
         "label": "Postprandial Hyperemia",
         "file": "output/core.en/sonnet/html/concept_postprandial_hyperemia.html",
         "model": "sonnet",
         "language": "en"
+      },
+      {
+        "name": "postprandial_hyperemia",
+        "label": "Postprandial Hyperemia",
+        "file": "output/core.zh/sonnet/html/concept_postprandial_hyperemia_zh.html",
+        "model": "sonnet",
+        "language": "zh"
       },
       {
         "name": "prenatal_postnatal_qi",
@@ -983,11 +1846,25 @@
         "language": "en"
       },
       {
+        "name": "prenatal_postnatal_qi",
+        "label": "Prenatal Postnatal Qi",
+        "file": "output/core.zh/sonnet/html/concept_prenatal_postnatal_qi_zh.html",
+        "model": "sonnet",
+        "language": "zh"
+      },
+      {
         "name": "regional_blood_flow_distribution",
         "label": "Regional Blood Flow Distribution",
         "file": "output/core.en/sonnet/html/concept_regional_blood_flow_distribution.html",
         "model": "sonnet",
         "language": "en"
+      },
+      {
+        "name": "regional_blood_flow_distribution",
+        "label": "Regional Blood Flow Distribution",
+        "file": "output/core.zh/sonnet/html/concept_regional_blood_flow_distribution_zh.html",
+        "model": "sonnet",
+        "language": "zh"
       },
       {
         "name": "satiety_signaling",
@@ -997,11 +1874,25 @@
         "language": "en"
       },
       {
+        "name": "satiety_signaling",
+        "label": "Satiety Signaling",
+        "file": "output/core.zh/sonnet/html/concept_satiety_signaling_zh.html",
+        "model": "sonnet",
+        "language": "zh"
+      },
+      {
         "name": "smooth_muscle",
         "label": "Smooth Muscle",
         "file": "output/core.en/sonnet/html/concept_smooth_muscle.html",
         "model": "sonnet",
         "language": "en"
+      },
+      {
+        "name": "smooth_muscle",
+        "label": "Smooth Muscle",
+        "file": "output/core.zh/sonnet/html/concept_smooth_muscle_zh.html",
+        "model": "sonnet",
+        "language": "zh"
       },
       {
         "name": "splanchnic_circulation",
@@ -1011,11 +1902,25 @@
         "language": "en"
       },
       {
+        "name": "splanchnic_circulation",
+        "label": "Splanchnic Circulation",
+        "file": "output/core.zh/sonnet/html/concept_splanchnic_circulation_zh.html",
+        "model": "sonnet",
+        "language": "zh"
+      },
+      {
         "name": "spleen_stomach_system",
         "label": "Spleen Stomach System",
         "file": "output/core.en/sonnet/html/concept_spleen_stomach_system.html",
         "model": "sonnet",
         "language": "en"
+      },
+      {
+        "name": "spleen_stomach_system",
+        "label": "Spleen Stomach System",
+        "file": "output/core.zh/sonnet/html/concept_spleen_stomach_system_zh.html",
+        "model": "sonnet",
+        "language": "zh"
       },
       {
         "name": "spleen_transformation_transport",
@@ -1025,6 +1930,13 @@
         "language": "en"
       },
       {
+        "name": "spleen_transformation_transport",
+        "label": "Spleen Transformation Transport",
+        "file": "output/core.zh/sonnet/html/concept_spleen_transformation_transport_zh.html",
+        "model": "sonnet",
+        "language": "zh"
+      },
+      {
         "name": "stomach_receiving_ripening",
         "label": "Stomach Receiving Ripening",
         "file": "output/core.en/sonnet/html/concept_stomach_receiving_ripening.html",
@@ -1032,11 +1944,25 @@
         "language": "en"
       },
       {
+        "name": "stomach_receiving_ripening",
+        "label": "Stomach Receiving Ripening",
+        "file": "output/core.zh/sonnet/html/concept_stomach_receiving_ripening_zh.html",
+        "model": "sonnet",
+        "language": "zh"
+      },
+      {
         "name": "sympathetic_parasympathetic_balance",
         "label": "Sympathetic Parasympathetic Balance",
         "file": "output/core.en/sonnet/html/concept_sympathetic_parasympathetic_balance.html",
         "model": "sonnet",
         "language": "en"
+      },
+      {
+        "name": "sympathetic_parasympathetic_balance",
+        "label": "Sympathetic Parasympathetic Balance",
+        "file": "output/core.zh/sonnet/html/concept_sympathetic_parasympathetic_balance_zh.html",
+        "model": "sonnet",
+        "language": "zh"
       }
     ],
     "default_level": "core",
@@ -1072,6 +1998,12 @@
         "file": "output/core.en/sonnet/html/book_five_phase_meal_design.html",
         "model": "sonnet",
         "language": "en"
+      },
+      {
+        "target": "five_phase_meal_design",
+        "file": "output/core.zh/sonnet/html/book_five_phase_meal_design_zh.html",
+        "model": "sonnet",
+        "language": "zh"
       }
     ],
     "generated_concepts": [
@@ -1083,11 +2015,25 @@
         "language": "en"
       },
       {
+        "name": "balanced_plate",
+        "label": "Balanced Plate",
+        "file": "output/core.zh/sonnet/html/concept_balanced_plate_zh.html",
+        "model": "sonnet",
+        "language": "zh"
+      },
+      {
         "name": "carbohydrate_quality",
         "label": "Carbohydrate Quality",
         "file": "output/core.en/sonnet/html/concept_carbohydrate_quality.html",
         "model": "sonnet",
         "language": "en"
+      },
+      {
+        "name": "carbohydrate_quality",
+        "label": "Carbohydrate Quality",
+        "file": "output/core.zh/sonnet/html/concept_carbohydrate_quality_zh.html",
+        "model": "sonnet",
+        "language": "zh"
       },
       {
         "name": "circadian_clock",
@@ -1097,11 +2043,25 @@
         "language": "en"
       },
       {
+        "name": "circadian_clock",
+        "label": "Circadian Clock",
+        "file": "output/core.zh/sonnet/html/concept_circadian_clock_zh.html",
+        "model": "sonnet",
+        "language": "zh"
+      },
+      {
         "name": "constitution_based_eating",
         "label": "Constitution Based Eating",
         "file": "output/core.en/sonnet/html/concept_constitution_based_eating.html",
         "model": "sonnet",
         "language": "en"
+      },
+      {
+        "name": "constitution_based_eating",
+        "label": "Constitution Based Eating",
+        "file": "output/core.zh/sonnet/html/concept_constitution_based_eating_zh.html",
+        "model": "sonnet",
+        "language": "zh"
       },
       {
         "name": "dampness_and_phlegm",
@@ -1111,11 +2071,25 @@
         "language": "en"
       },
       {
+        "name": "dampness_and_phlegm",
+        "label": "Dampness And Phlegm",
+        "file": "output/core.zh/sonnet/html/concept_dampness_and_phlegm_zh.html",
+        "model": "sonnet",
+        "language": "zh"
+      },
+      {
         "name": "dietary_fat_quality",
         "label": "Dietary Fat Quality",
         "file": "output/core.en/sonnet/html/concept_dietary_fat_quality.html",
         "model": "sonnet",
         "language": "en"
+      },
+      {
+        "name": "dietary_fat_quality",
+        "label": "Dietary Fat Quality",
+        "file": "output/core.zh/sonnet/html/concept_dietary_fat_quality_zh.html",
+        "model": "sonnet",
+        "language": "zh"
       },
       {
         "name": "dietary_fiber",
@@ -1125,11 +2099,25 @@
         "language": "en"
       },
       {
+        "name": "dietary_fiber",
+        "label": "Dietary Fiber",
+        "file": "output/core.zh/sonnet/html/concept_dietary_fiber_zh.html",
+        "model": "sonnet",
+        "language": "zh"
+      },
+      {
         "name": "energy_balance",
         "label": "Energy Balance",
         "file": "output/core.en/sonnet/html/concept_energy_balance.html",
         "model": "sonnet",
         "language": "en"
+      },
+      {
+        "name": "energy_balance",
+        "label": "Energy Balance",
+        "file": "output/core.zh/sonnet/html/concept_energy_balance_zh.html",
+        "model": "sonnet",
+        "language": "zh"
       },
       {
         "name": "fiber_microbiome_axis",
@@ -1139,11 +2127,25 @@
         "language": "en"
       },
       {
+        "name": "fiber_microbiome_axis",
+        "label": "Fiber Microbiome Axis",
+        "file": "output/core.zh/sonnet/html/concept_fiber_microbiome_axis_zh.html",
+        "model": "sonnet",
+        "language": "zh"
+      },
+      {
         "name": "five_colors_foods",
         "label": "Five Colors Foods",
         "file": "output/core.en/sonnet/html/concept_five_colors_foods.html",
         "model": "sonnet",
         "language": "en"
+      },
+      {
+        "name": "five_colors_foods",
+        "label": "Five Colors Foods",
+        "file": "output/core.zh/sonnet/html/concept_five_colors_foods_zh.html",
+        "model": "sonnet",
+        "language": "zh"
       },
       {
         "name": "five_flavors_wuwei",
@@ -1153,11 +2155,25 @@
         "language": "en"
       },
       {
+        "name": "five_flavors_wuwei",
+        "label": "Five Flavors Wuwei",
+        "file": "output/core.zh/sonnet/html/concept_five_flavors_wuwei_zh.html",
+        "model": "sonnet",
+        "language": "zh"
+      },
+      {
         "name": "five_phase_correspondences",
         "label": "Five Phase Correspondences",
         "file": "output/core.en/sonnet/html/concept_five_phase_correspondences.html",
         "model": "sonnet",
         "language": "en"
+      },
+      {
+        "name": "five_phase_correspondences",
+        "label": "Five Phase Correspondences",
+        "file": "output/core.zh/sonnet/html/concept_five_phase_correspondences_zh.html",
+        "model": "sonnet",
+        "language": "zh"
       },
       {
         "name": "five_phase_meal_design",
@@ -1167,11 +2183,25 @@
         "language": "en"
       },
       {
+        "name": "five_phase_meal_design",
+        "label": "Five Phase Meal Design",
+        "file": "output/core.zh/sonnet/html/concept_five_phase_meal_design_zh.html",
+        "model": "sonnet",
+        "language": "zh"
+      },
+      {
         "name": "food_as_medicine_shiliao",
         "label": "Food As Medicine Shiliao",
         "file": "output/core.en/sonnet/html/concept_food_as_medicine_shiliao.html",
         "model": "sonnet",
         "language": "en"
+      },
+      {
+        "name": "food_as_medicine_shiliao",
+        "label": "Food As Medicine Shiliao",
+        "file": "output/core.zh/sonnet/html/concept_food_as_medicine_shiliao_zh.html",
+        "model": "sonnet",
+        "language": "zh"
       },
       {
         "name": "four_natures_siqi",
@@ -1181,11 +2211,25 @@
         "language": "en"
       },
       {
+        "name": "four_natures_siqi",
+        "label": "Four Natures Siqi",
+        "file": "output/core.zh/sonnet/html/concept_four_natures_siqi_zh.html",
+        "model": "sonnet",
+        "language": "zh"
+      },
+      {
         "name": "gut_microbiome",
         "label": "Gut Microbiome",
         "file": "output/core.en/sonnet/html/concept_gut_microbiome.html",
         "model": "sonnet",
         "language": "en"
+      },
+      {
+        "name": "gut_microbiome",
+        "label": "Gut Microbiome",
+        "file": "output/core.zh/sonnet/html/concept_gut_microbiome_zh.html",
+        "model": "sonnet",
+        "language": "zh"
       },
       {
         "name": "junk_load",
@@ -1195,11 +2239,25 @@
         "language": "en"
       },
       {
+        "name": "junk_load",
+        "label": "Junk Load",
+        "file": "output/core.zh/sonnet/html/concept_junk_load_zh.html",
+        "model": "sonnet",
+        "language": "zh"
+      },
+      {
         "name": "macronutrients",
         "label": "Macronutrients",
         "file": "output/core.en/sonnet/html/concept_macronutrients.html",
         "model": "sonnet",
         "language": "en"
+      },
+      {
+        "name": "macronutrients",
+        "label": "Macronutrients",
+        "file": "output/core.zh/sonnet/html/concept_macronutrients_zh.html",
+        "model": "sonnet",
+        "language": "zh"
       },
       {
         "name": "meal_timing_chrononutrition",
@@ -1209,11 +2267,25 @@
         "language": "en"
       },
       {
+        "name": "meal_timing_chrononutrition",
+        "label": "Meal Timing Chrononutrition",
+        "file": "output/core.zh/sonnet/html/concept_meal_timing_chrononutrition_zh.html",
+        "model": "sonnet",
+        "language": "zh"
+      },
+      {
         "name": "micronutrients_and_hydration",
         "label": "Micronutrients And Hydration",
         "file": "output/core.en/sonnet/html/concept_micronutrients_and_hydration.html",
         "model": "sonnet",
         "language": "en"
+      },
+      {
+        "name": "micronutrients_and_hydration",
+        "label": "Micronutrients And Hydration",
+        "file": "output/core.zh/sonnet/html/concept_micronutrients_and_hydration_zh.html",
+        "model": "sonnet",
+        "language": "zh"
       },
       {
         "name": "protein_across_life",
@@ -1223,11 +2295,25 @@
         "language": "en"
       },
       {
+        "name": "protein_across_life",
+        "label": "Protein Across Life",
+        "file": "output/core.zh/sonnet/html/concept_protein_across_life_zh.html",
+        "model": "sonnet",
+        "language": "zh"
+      },
+      {
         "name": "spleen_transformation_transport",
         "label": "Spleen Transformation Transport",
         "file": "output/core.en/sonnet/html/concept_spleen_transformation_transport.html",
         "model": "sonnet",
         "language": "en"
+      },
+      {
+        "name": "spleen_transformation_transport",
+        "label": "Spleen Transformation Transport",
+        "file": "output/core.zh/sonnet/html/concept_spleen_transformation_transport_zh.html",
+        "model": "sonnet",
+        "language": "zh"
       },
       {
         "name": "warm_cooked_food_principle",
@@ -1237,6 +2323,13 @@
         "language": "en"
       },
       {
+        "name": "warm_cooked_food_principle",
+        "label": "Warm Cooked Food Principle",
+        "file": "output/core.zh/sonnet/html/concept_warm_cooked_food_principle_zh.html",
+        "model": "sonnet",
+        "language": "zh"
+      },
+      {
         "name": "whole_vs_ultra_processed_food",
         "label": "Whole Vs Ultra Processed Food",
         "file": "output/core.en/sonnet/html/concept_whole_vs_ultra_processed_food.html",
@@ -1244,11 +2337,25 @@
         "language": "en"
       },
       {
+        "name": "whole_vs_ultra_processed_food",
+        "label": "Whole Vs Ultra Processed Food",
+        "file": "output/core.zh/sonnet/html/concept_whole_vs_ultra_processed_food_zh.html",
+        "model": "sonnet",
+        "language": "zh"
+      },
+      {
         "name": "yin_yang",
         "label": "Yin Yang",
         "file": "output/core.en/sonnet/html/concept_yin_yang.html",
         "model": "sonnet",
         "language": "en"
+      },
+      {
+        "name": "yin_yang",
+        "label": "Yin Yang",
+        "file": "output/core.zh/sonnet/html/concept_yin_yang_zh.html",
+        "model": "sonnet",
+        "language": "zh"
       }
     ],
     "default_level": "core"
@@ -1275,6 +2382,12 @@
         "file": "output/core.en/sonnet/html/book_stress_resilience_routine.html",
         "model": "sonnet",
         "language": "en"
+      },
+      {
+        "target": "stress_resilience_routine",
+        "file": "output/core.zh/sonnet/html/book_stress_resilience_routine_zh.html",
+        "model": "sonnet",
+        "language": "zh"
       }
     ],
     "generated_concepts": [
@@ -1286,11 +2399,25 @@
         "language": "en"
       },
       {
+        "name": "acute_vs_chronic_stress",
+        "label": "Acute Vs Chronic Stress",
+        "file": "output/core.zh/sonnet/html/concept_acute_vs_chronic_stress_zh.html",
+        "model": "sonnet",
+        "language": "zh"
+      },
+      {
         "name": "allostatic_load",
         "label": "Allostatic Load",
         "file": "output/core.en/sonnet/html/concept_allostatic_load.html",
         "model": "sonnet",
         "language": "en"
+      },
+      {
+        "name": "allostatic_load",
+        "label": "Allostatic Load",
+        "file": "output/core.zh/sonnet/html/concept_allostatic_load_zh.html",
+        "model": "sonnet",
+        "language": "zh"
       },
       {
         "name": "breath_as_bridge",
@@ -1300,11 +2427,25 @@
         "language": "en"
       },
       {
+        "name": "breath_as_bridge",
+        "label": "Breath As Bridge",
+        "file": "output/core.zh/sonnet/html/concept_breath_as_bridge_zh.html",
+        "model": "sonnet",
+        "language": "zh"
+      },
+      {
         "name": "diaphragmatic_breathing",
         "label": "Diaphragmatic Breathing",
         "file": "output/core.en/sonnet/html/concept_diaphragmatic_breathing.html",
         "model": "sonnet",
         "language": "en"
+      },
+      {
+        "name": "diaphragmatic_breathing",
+        "label": "Diaphragmatic Breathing",
+        "file": "output/core.zh/sonnet/html/concept_diaphragmatic_breathing_zh.html",
+        "model": "sonnet",
+        "language": "zh"
       },
       {
         "name": "emotional_eating",
@@ -1314,11 +2455,25 @@
         "language": "en"
       },
       {
+        "name": "emotional_eating",
+        "label": "Emotional Eating",
+        "file": "output/core.zh/sonnet/html/concept_emotional_eating_zh.html",
+        "model": "sonnet",
+        "language": "zh"
+      },
+      {
         "name": "five_emotions_five_organs",
         "label": "Five Emotions Five Organs",
         "file": "output/core.en/sonnet/html/concept_five_emotions_five_organs.html",
         "model": "sonnet",
         "language": "en"
+      },
+      {
+        "name": "five_emotions_five_organs",
+        "label": "Five Emotions Five Organs",
+        "file": "output/core.zh/sonnet/html/concept_five_emotions_five_organs_zh.html",
+        "model": "sonnet",
+        "language": "zh"
       },
       {
         "name": "five_phase_correspondences",
@@ -1328,11 +2483,25 @@
         "language": "en"
       },
       {
+        "name": "five_phase_correspondences",
+        "label": "Five Phase Correspondences",
+        "file": "output/core.zh/sonnet/html/concept_five_phase_correspondences_zh.html",
+        "model": "sonnet",
+        "language": "zh"
+      },
+      {
         "name": "gut_brain_axis",
         "label": "Gut Brain Axis",
         "file": "output/core.en/sonnet/html/concept_gut_brain_axis.html",
         "model": "sonnet",
         "language": "en"
+      },
+      {
+        "name": "gut_brain_axis",
+        "label": "Gut Brain Axis",
+        "file": "output/core.zh/sonnet/html/concept_gut_brain_axis_zh.html",
+        "model": "sonnet",
+        "language": "zh"
       },
       {
         "name": "hpa_axis",
@@ -1342,11 +2511,25 @@
         "language": "en"
       },
       {
+        "name": "hpa_axis",
+        "label": "Hpa Axis",
+        "file": "output/core.zh/sonnet/html/concept_hpa_axis_zh.html",
+        "model": "sonnet",
+        "language": "zh"
+      },
+      {
         "name": "hrv_self_monitoring",
         "label": "Hrv Self Monitoring",
         "file": "output/core.en/sonnet/html/concept_hrv_self_monitoring.html",
         "model": "sonnet",
         "language": "en"
+      },
+      {
+        "name": "hrv_self_monitoring",
+        "label": "Hrv Self Monitoring",
+        "file": "output/core.zh/sonnet/html/concept_hrv_self_monitoring_zh.html",
+        "model": "sonnet",
+        "language": "zh"
       },
       {
         "name": "liver_free_flow_shuxie",
@@ -1356,11 +2539,25 @@
         "language": "en"
       },
       {
+        "name": "liver_free_flow_shuxie",
+        "label": "Liver Free Flow Shuxie",
+        "file": "output/core.zh/sonnet/html/concept_liver_free_flow_shuxie_zh.html",
+        "model": "sonnet",
+        "language": "zh"
+      },
+      {
         "name": "liver_opening_movements",
         "label": "Liver Opening Movements",
         "file": "output/core.en/sonnet/html/concept_liver_opening_movements.html",
         "model": "sonnet",
         "language": "en"
+      },
+      {
+        "name": "liver_opening_movements",
+        "label": "Liver Opening Movements",
+        "file": "output/core.zh/sonnet/html/concept_liver_opening_movements_zh.html",
+        "model": "sonnet",
+        "language": "zh"
       },
       {
         "name": "liver_qi_stagnation",
@@ -1370,11 +2567,25 @@
         "language": "en"
       },
       {
+        "name": "liver_qi_stagnation",
+        "label": "Liver Qi Stagnation",
+        "file": "output/core.zh/sonnet/html/concept_liver_qi_stagnation_zh.html",
+        "model": "sonnet",
+        "language": "zh"
+      },
+      {
         "name": "liver_spleen_relationship",
         "label": "Liver Spleen Relationship",
         "file": "output/core.en/sonnet/html/concept_liver_spleen_relationship.html",
         "model": "sonnet",
         "language": "en"
+      },
+      {
+        "name": "liver_spleen_relationship",
+        "label": "Liver Spleen Relationship",
+        "file": "output/core.zh/sonnet/html/concept_liver_spleen_relationship_zh.html",
+        "model": "sonnet",
+        "language": "zh"
       },
       {
         "name": "mind_regulation_tiaoxin",
@@ -1384,11 +2595,25 @@
         "language": "en"
       },
       {
+        "name": "mind_regulation_tiaoxin",
+        "label": "Mind Regulation Tiaoxin",
+        "file": "output/core.zh/sonnet/html/concept_mind_regulation_tiaoxin_zh.html",
+        "model": "sonnet",
+        "language": "zh"
+      },
+      {
         "name": "postprandial_hyperemia",
         "label": "Postprandial Hyperemia",
         "file": "output/core.en/sonnet/html/concept_postprandial_hyperemia.html",
         "model": "sonnet",
         "language": "en"
+      },
+      {
+        "name": "postprandial_hyperemia",
+        "label": "Postprandial Hyperemia",
+        "file": "output/core.zh/sonnet/html/concept_postprandial_hyperemia_zh.html",
+        "model": "sonnet",
+        "language": "zh"
       },
       {
         "name": "qi_stagnation_blood_stasis",
@@ -1398,11 +2623,25 @@
         "language": "en"
       },
       {
+        "name": "qi_stagnation_blood_stasis",
+        "label": "Qi Stagnation Blood Stasis",
+        "file": "output/core.zh/sonnet/html/concept_qi_stagnation_blood_stasis_zh.html",
+        "model": "sonnet",
+        "language": "zh"
+      },
+      {
         "name": "releasing_liver_qi_through_movement",
         "label": "Releasing Liver Qi Through Movement",
         "file": "output/core.en/sonnet/html/concept_releasing_liver_qi_through_movement.html",
         "model": "sonnet",
         "language": "en"
+      },
+      {
+        "name": "releasing_liver_qi_through_movement",
+        "label": "Releasing Liver Qi Through Movement",
+        "file": "output/core.zh/sonnet/html/concept_releasing_liver_qi_through_movement_zh.html",
+        "model": "sonnet",
+        "language": "zh"
       },
       {
         "name": "seven_emotions_qiqing",
@@ -1412,11 +2651,25 @@
         "language": "en"
       },
       {
+        "name": "seven_emotions_qiqing",
+        "label": "Seven Emotions Qiqing",
+        "file": "output/core.zh/sonnet/html/concept_seven_emotions_qiqing_zh.html",
+        "model": "sonnet",
+        "language": "zh"
+      },
+      {
         "name": "stress_and_digestion",
         "label": "Stress And Digestion",
         "file": "output/core.en/sonnet/html/concept_stress_and_digestion.html",
         "model": "sonnet",
         "language": "en"
+      },
+      {
+        "name": "stress_and_digestion",
+        "label": "Stress And Digestion",
+        "file": "output/core.zh/sonnet/html/concept_stress_and_digestion_zh.html",
+        "model": "sonnet",
+        "language": "zh"
       },
       {
         "name": "stress_resilience_routine",
@@ -1426,11 +2679,25 @@
         "language": "en"
       },
       {
+        "name": "stress_resilience_routine",
+        "label": "Stress Resilience Routine",
+        "file": "output/core.zh/sonnet/html/concept_stress_resilience_routine_zh.html",
+        "model": "sonnet",
+        "language": "zh"
+      },
+      {
         "name": "sympathetic_parasympathetic_balance",
         "label": "Sympathetic Parasympathetic Balance",
         "file": "output/core.en/sonnet/html/concept_sympathetic_parasympathetic_balance.html",
         "model": "sonnet",
         "language": "en"
+      },
+      {
+        "name": "sympathetic_parasympathetic_balance",
+        "label": "Sympathetic Parasympathetic Balance",
+        "file": "output/core.zh/sonnet/html/concept_sympathetic_parasympathetic_balance_zh.html",
+        "model": "sonnet",
+        "language": "zh"
       },
       {
         "name": "vagal_tone_and_hrv",
@@ -1440,11 +2707,25 @@
         "language": "en"
       },
       {
+        "name": "vagal_tone_and_hrv",
+        "label": "Vagal Tone And Hrv",
+        "file": "output/core.zh/sonnet/html/concept_vagal_tone_and_hrv_zh.html",
+        "model": "sonnet",
+        "language": "zh"
+      },
+      {
         "name": "wood_overacting_on_earth",
         "label": "Wood Overacting On Earth",
         "file": "output/core.en/sonnet/html/concept_wood_overacting_on_earth.html",
         "model": "sonnet",
         "language": "en"
+      },
+      {
+        "name": "wood_overacting_on_earth",
+        "label": "Wood Overacting On Earth",
+        "file": "output/core.zh/sonnet/html/concept_wood_overacting_on_earth_zh.html",
+        "model": "sonnet",
+        "language": "zh"
       }
     ],
     "default_level": "core"
@@ -1471,6 +2752,12 @@
         "file": "output/core.en/sonnet/html/book_personal_daily_rhythm_schedule.html",
         "model": "sonnet",
         "language": "en"
+      },
+      {
+        "target": "personal_daily_rhythm_schedule",
+        "file": "output/core.zh/sonnet/html/book_personal_daily_rhythm_schedule_zh.html",
+        "model": "sonnet",
+        "language": "zh"
       }
     ],
     "generated_concepts": [
@@ -1482,11 +2769,25 @@
         "language": "en"
       },
       {
+        "name": "breakfast_in_chenshi",
+        "label": "Breakfast In Chenshi",
+        "file": "output/core.zh/sonnet/html/concept_breakfast_in_chenshi_zh.html",
+        "model": "sonnet",
+        "language": "zh"
+      },
+      {
         "name": "chrononutrition",
         "label": "Chrononutrition",
         "file": "output/core.en/sonnet/html/concept_chrononutrition.html",
         "model": "sonnet",
         "language": "en"
+      },
+      {
+        "name": "chrononutrition",
+        "label": "Chrononutrition",
+        "file": "output/core.zh/sonnet/html/concept_chrononutrition_zh.html",
+        "model": "sonnet",
+        "language": "zh"
       },
       {
         "name": "circadian_clock",
@@ -1496,11 +2797,25 @@
         "language": "en"
       },
       {
+        "name": "circadian_clock",
+        "label": "Circadian Clock",
+        "file": "output/core.zh/sonnet/html/concept_circadian_clock_zh.html",
+        "model": "sonnet",
+        "language": "zh"
+      },
+      {
         "name": "cortisol_melatonin_rhythm",
         "label": "Cortisol Melatonin Rhythm",
         "file": "output/core.en/sonnet/html/concept_cortisol_melatonin_rhythm.html",
         "model": "sonnet",
         "language": "en"
+      },
+      {
+        "name": "cortisol_melatonin_rhythm",
+        "label": "Cortisol Melatonin Rhythm",
+        "file": "output/core.zh/sonnet/html/concept_cortisol_melatonin_rhythm_zh.html",
+        "model": "sonnet",
+        "language": "zh"
       },
       {
         "name": "day_night_yin_yang",
@@ -1510,11 +2825,25 @@
         "language": "en"
       },
       {
+        "name": "day_night_yin_yang",
+        "label": "Day Night Yin Yang",
+        "file": "output/core.zh/sonnet/html/concept_day_night_yin_yang_zh.html",
+        "model": "sonnet",
+        "language": "zh"
+      },
+      {
         "name": "exercise_timing",
         "label": "Exercise Timing",
         "file": "output/core.en/sonnet/html/concept_exercise_timing.html",
         "model": "sonnet",
         "language": "en"
+      },
+      {
+        "name": "exercise_timing",
+        "label": "Exercise Timing",
+        "file": "output/core.zh/sonnet/html/concept_exercise_timing_zh.html",
+        "model": "sonnet",
+        "language": "zh"
       },
       {
         "name": "five_phase_correspondences",
@@ -1524,11 +2853,25 @@
         "language": "en"
       },
       {
+        "name": "five_phase_correspondences",
+        "label": "Five Phase Correspondences",
+        "file": "output/core.zh/sonnet/html/concept_five_phase_correspondences_zh.html",
+        "model": "sonnet",
+        "language": "zh"
+      },
+      {
         "name": "four_seasons_regimen",
         "label": "Four Seasons Regimen",
         "file": "output/core.en/sonnet/html/concept_four_seasons_regimen.html",
         "model": "sonnet",
         "language": "en"
+      },
+      {
+        "name": "four_seasons_regimen",
+        "label": "Four Seasons Regimen",
+        "file": "output/core.zh/sonnet/html/concept_four_seasons_regimen_zh.html",
+        "model": "sonnet",
+        "language": "zh"
       },
       {
         "name": "light_entrainment",
@@ -1538,11 +2881,25 @@
         "language": "en"
       },
       {
+        "name": "light_entrainment",
+        "label": "Light Entrainment",
+        "file": "output/core.zh/sonnet/html/concept_light_entrainment_zh.html",
+        "model": "sonnet",
+        "language": "zh"
+      },
+      {
         "name": "organ_clock_ziwu_liuzhu",
         "label": "Organ Clock Ziwu Liuzhu",
         "file": "output/core.en/sonnet/html/concept_organ_clock_ziwu_liuzhu.html",
         "model": "sonnet",
         "language": "en"
+      },
+      {
+        "name": "organ_clock_ziwu_liuzhu",
+        "label": "Organ Clock Ziwu Liuzhu",
+        "file": "output/core.zh/sonnet/html/concept_organ_clock_ziwu_liuzhu_zh.html",
+        "model": "sonnet",
+        "language": "zh"
       },
       {
         "name": "personal_daily_rhythm_schedule",
@@ -1552,11 +2909,25 @@
         "language": "en"
       },
       {
+        "name": "personal_daily_rhythm_schedule",
+        "label": "Personal Daily Rhythm Schedule",
+        "file": "output/core.zh/sonnet/html/concept_personal_daily_rhythm_schedule_zh.html",
+        "model": "sonnet",
+        "language": "zh"
+      },
+      {
         "name": "seasonal_food_and_movement",
         "label": "Seasonal Food And Movement",
         "file": "output/core.en/sonnet/html/concept_seasonal_food_and_movement.html",
         "model": "sonnet",
         "language": "en"
+      },
+      {
+        "name": "seasonal_food_and_movement",
+        "label": "Seasonal Food And Movement",
+        "file": "output/core.zh/sonnet/html/concept_seasonal_food_and_movement_zh.html",
+        "model": "sonnet",
+        "language": "zh"
       },
       {
         "name": "seasonal_organ_care",
@@ -1566,11 +2937,25 @@
         "language": "en"
       },
       {
+        "name": "seasonal_organ_care",
+        "label": "Seasonal Organ Care",
+        "file": "output/core.zh/sonnet/html/concept_seasonal_organ_care_zh.html",
+        "model": "sonnet",
+        "language": "zh"
+      },
+      {
         "name": "sleep_and_metabolic_repair",
         "label": "Sleep And Metabolic Repair",
         "file": "output/core.en/sonnet/html/concept_sleep_and_metabolic_repair.html",
         "model": "sonnet",
         "language": "en"
+      },
+      {
+        "name": "sleep_and_metabolic_repair",
+        "label": "Sleep And Metabolic Repair",
+        "file": "output/core.zh/sonnet/html/concept_sleep_and_metabolic_repair_zh.html",
+        "model": "sonnet",
+        "language": "zh"
       },
       {
         "name": "sleep_architecture",
@@ -1580,11 +2965,25 @@
         "language": "en"
       },
       {
+        "name": "sleep_architecture",
+        "label": "Sleep Architecture",
+        "file": "output/core.zh/sonnet/html/concept_sleep_architecture_zh.html",
+        "model": "sonnet",
+        "language": "zh"
+      },
+      {
         "name": "sleep_before_zishi",
         "label": "Sleep Before Zishi",
         "file": "output/core.en/sonnet/html/concept_sleep_before_zishi.html",
         "model": "sonnet",
         "language": "en"
+      },
+      {
+        "name": "sleep_before_zishi",
+        "label": "Sleep Before Zishi",
+        "file": "output/core.zh/sonnet/html/concept_sleep_before_zishi_zh.html",
+        "model": "sonnet",
+        "language": "zh"
       },
       {
         "name": "twelve_primary_meridians",
@@ -1594,11 +2993,25 @@
         "language": "en"
       },
       {
+        "name": "twelve_primary_meridians",
+        "label": "Twelve Primary Meridians",
+        "file": "output/core.zh/sonnet/html/concept_twelve_primary_meridians_zh.html",
+        "model": "sonnet",
+        "language": "zh"
+      },
+      {
         "name": "yin_yang",
         "label": "Yin Yang",
         "file": "output/core.en/sonnet/html/concept_yin_yang.html",
         "model": "sonnet",
         "language": "en"
+      },
+      {
+        "name": "yin_yang",
+        "label": "Yin Yang",
+        "file": "output/core.zh/sonnet/html/concept_yin_yang_zh.html",
+        "model": "sonnet",
+        "language": "zh"
       }
     ],
     "default_level": "core"
@@ -1625,15 +3038,35 @@
         "file": "output/core.en/sonnet/html/book_daily_meta_health_protocol.html",
         "model": "sonnet",
         "language": "en"
+      },
+      {
+        "target": "daily_meta_health_protocol",
+        "file": "output/core.zh/sonnet/html/book_daily_meta_health_protocol_zh.html",
+        "model": "sonnet",
+        "language": "zh"
       }
     ],
     "generated_concepts": [
       {
         "name": "daily_baduanjin_practice_plan",
         "label": "Daily Baduanjin Practice Plan",
+        "file": "output/core.zh/sonnet/html/concept_daily_baduanjin_practice_plan_zh.html",
+        "model": "sonnet",
+        "language": "zh"
+      },
+      {
+        "name": "daily_baduanjin_practice_plan",
+        "label": "Daily Baduanjin Practice Plan",
         "file": "output/core.en/sonnet/html/concept_daily_baduanjin_practice_plan.html",
         "model": "sonnet",
         "language": "en"
+      },
+      {
+        "name": "daily_meta_health_protocol",
+        "label": "Daily Meta Health Protocol",
+        "file": "output/core.zh/sonnet/html/concept_daily_meta_health_protocol_zh.html",
+        "model": "sonnet",
+        "language": "zh"
       },
       {
         "name": "daily_meta_health_protocol",
@@ -1645,9 +3078,23 @@
       {
         "name": "dual_lens_translation",
         "label": "Dual Lens Translation",
+        "file": "output/core.zh/sonnet/html/concept_dual_lens_translation_zh.html",
+        "model": "sonnet",
+        "language": "zh"
+      },
+      {
+        "name": "dual_lens_translation",
+        "label": "Dual Lens Translation",
         "file": "output/core.en/sonnet/html/concept_dual_lens_translation.html",
         "model": "sonnet",
         "language": "en"
+      },
+      {
+        "name": "eating_as_internal_exercise",
+        "label": "Eating As Internal Exercise",
+        "file": "output/core.zh/sonnet/html/concept_eating_as_internal_exercise_zh.html",
+        "model": "sonnet",
+        "language": "zh"
       },
       {
         "name": "eating_as_internal_exercise",
@@ -1659,9 +3106,23 @@
       {
         "name": "evidence_and_safety_lens",
         "label": "Evidence And Safety Lens",
+        "file": "output/core.zh/sonnet/html/concept_evidence_and_safety_lens_zh.html",
+        "model": "sonnet",
+        "language": "zh"
+      },
+      {
+        "name": "evidence_and_safety_lens",
+        "label": "Evidence And Safety Lens",
         "file": "output/core.en/sonnet/html/concept_evidence_and_safety_lens.html",
         "model": "sonnet",
         "language": "en"
+      },
+      {
+        "name": "evidence_quality",
+        "label": "Evidence Quality",
+        "file": "output/core.zh/sonnet/html/concept_evidence_quality_zh.html",
+        "model": "sonnet",
+        "language": "zh"
       },
       {
         "name": "evidence_quality",
@@ -1673,9 +3134,23 @@
       {
         "name": "five_organ_routine_design",
         "label": "Five Organ Routine Design",
+        "file": "output/core.zh/sonnet/html/concept_five_organ_routine_design_zh.html",
+        "model": "sonnet",
+        "language": "zh"
+      },
+      {
+        "name": "five_organ_routine_design",
+        "label": "Five Organ Routine Design",
         "file": "output/core.en/sonnet/html/concept_five_organ_routine_design.html",
         "model": "sonnet",
         "language": "en"
+      },
+      {
+        "name": "five_phase_integration_matrix",
+        "label": "Five Phase Integration Matrix",
+        "file": "output/core.zh/sonnet/html/concept_five_phase_integration_matrix_zh.html",
+        "model": "sonnet",
+        "language": "zh"
       },
       {
         "name": "five_phase_integration_matrix",
@@ -1687,9 +3162,23 @@
       {
         "name": "five_phase_meal_design",
         "label": "Five Phase Meal Design",
+        "file": "output/core.zh/sonnet/html/concept_five_phase_meal_design_zh.html",
+        "model": "sonnet",
+        "language": "zh"
+      },
+      {
+        "name": "five_phase_meal_design",
+        "label": "Five Phase Meal Design",
         "file": "output/core.en/sonnet/html/concept_five_phase_meal_design.html",
         "model": "sonnet",
         "language": "en"
+      },
+      {
+        "name": "habit_formation",
+        "label": "Habit Formation",
+        "file": "output/core.zh/sonnet/html/concept_habit_formation_zh.html",
+        "model": "sonnet",
+        "language": "zh"
       },
       {
         "name": "habit_formation",
@@ -1701,9 +3190,23 @@
       {
         "name": "harmony_as_health",
         "label": "Harmony As Health",
+        "file": "output/core.zh/sonnet/html/concept_harmony_as_health_zh.html",
+        "model": "sonnet",
+        "language": "zh"
+      },
+      {
+        "name": "harmony_as_health",
+        "label": "Harmony As Health",
         "file": "output/core.en/sonnet/html/concept_harmony_as_health.html",
         "model": "sonnet",
         "language": "en"
+      },
+      {
+        "name": "internal_external_cultivation",
+        "label": "Internal External Cultivation",
+        "file": "output/core.zh/sonnet/html/concept_internal_external_cultivation_zh.html",
+        "model": "sonnet",
+        "language": "zh"
       },
       {
         "name": "internal_external_cultivation",
@@ -1715,9 +3218,23 @@
       {
         "name": "mind_body_digestive_loop",
         "label": "Mind Body Digestive Loop",
+        "file": "output/core.zh/sonnet/html/concept_mind_body_digestive_loop_zh.html",
+        "model": "sonnet",
+        "language": "zh"
+      },
+      {
+        "name": "mind_body_digestive_loop",
+        "label": "Mind Body Digestive Loop",
         "file": "output/core.en/sonnet/html/concept_mind_body_digestive_loop.html",
         "model": "sonnet",
         "language": "en"
+      },
+      {
+        "name": "mindful_meal_protocol",
+        "label": "Mindful Meal Protocol",
+        "file": "output/core.zh/sonnet/html/concept_mindful_meal_protocol_zh.html",
+        "model": "sonnet",
+        "language": "zh"
       },
       {
         "name": "mindful_meal_protocol",
@@ -1729,9 +3246,23 @@
       {
         "name": "organ_training_principles",
         "label": "Organ Training Principles",
+        "file": "output/core.zh/sonnet/html/concept_organ_training_principles_zh.html",
+        "model": "sonnet",
+        "language": "zh"
+      },
+      {
+        "name": "organ_training_principles",
+        "label": "Organ Training Principles",
         "file": "output/core.en/sonnet/html/concept_organ_training_principles.html",
         "model": "sonnet",
         "language": "en"
+      },
+      {
+        "name": "personal_daily_rhythm_schedule",
+        "label": "Personal Daily Rhythm Schedule",
+        "file": "output/core.zh/sonnet/html/concept_personal_daily_rhythm_schedule_zh.html",
+        "model": "sonnet",
+        "language": "zh"
       },
       {
         "name": "personal_daily_rhythm_schedule",
@@ -1743,6 +3274,13 @@
       {
         "name": "personalization",
         "label": "Personalization",
+        "file": "output/core.zh/sonnet/html/concept_personalization_zh.html",
+        "model": "sonnet",
+        "language": "zh"
+      },
+      {
+        "name": "personalization",
+        "label": "Personalization",
         "file": "output/core.en/sonnet/html/concept_personalization.html",
         "model": "sonnet",
         "language": "en"
@@ -1750,9 +3288,23 @@
       {
         "name": "self_observation_feedback",
         "label": "Self Observation Feedback",
+        "file": "output/core.zh/sonnet/html/concept_self_observation_feedback_zh.html",
+        "model": "sonnet",
+        "language": "zh"
+      },
+      {
+        "name": "self_observation_feedback",
+        "label": "Self Observation Feedback",
         "file": "output/core.en/sonnet/html/concept_self_observation_feedback.html",
         "model": "sonnet",
         "language": "en"
+      },
+      {
+        "name": "stress_resilience_routine",
+        "label": "Stress Resilience Routine",
+        "file": "output/core.zh/sonnet/html/concept_stress_resilience_routine_zh.html",
+        "model": "sonnet",
+        "language": "zh"
       },
       {
         "name": "stress_resilience_routine",

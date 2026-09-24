@@ -8,13 +8,13 @@
   "meta_health_ch07|sonnet|core|en": "done",
   "meta_health_ch08|sonnet|core|en": "done",
   "meta_health_ch09|sonnet|core|en": "done",
-  "meta_health_ch01|sonnet|core|zh": "error: spl3 exited 0 but book_five_phase_body_map.html was not written (likely a caught exception)",
-  "meta_health_ch02|sonnet|core|zh": "error: spl3 exited 0 but book_dual_lens_translation.html was not written (likely a caught exception)",
-  "meta_health_ch03|sonnet|core|zh": "error: spl3 exited 0 but book_five_organ_routine_design.html was not written (likely a caught exception)",
-  "meta_health_ch04|sonnet|core|zh": "error: spl3 exited 0 but book_daily_baduanjin_practice_plan.html was not written (likely a caught exception)",
-  "meta_health_ch05|sonnet|core|zh": "error: spl3 exited 0 but book_mindful_meal_protocol.html was not written (likely a caught exception)",
-  "meta_health_ch06|sonnet|core|zh": "error: spl3 exited 0 but book_five_phase_meal_design.html was not written (likely a caught exception)",
-  "meta_health_ch07|sonnet|core|zh": "error: spl3 exited 0 but book_stress_resilience_routine.html was not written (likely a caught exception)",
-  "meta_health_ch08|sonnet|core|zh": "error: spl3 exited 0 but book_personal_daily_rhythm_schedule.html was not written (likely a caught exception)",
-  "meta_health_ch09|sonnet|core|zh": "error: spl3 exited 0 but book_daily_meta_health_protocol.html was not written (likely a caught exception)"
+  "meta_health_ch01|sonnet|core|zh": "done",
+  "meta_health_ch02|sonnet|core|zh": "done",
+  "meta_health_ch03|sonnet|core|zh": "done",
+  "meta_health_ch04|sonnet|core|zh": "done",
+  "meta_health_ch05|sonnet|core|zh": "done",
+  "meta_health_ch06|sonnet|core|zh": "done",
+  "meta_health_ch07|sonnet|core|zh": "done",
+  "meta_health_ch08|sonnet|core|zh": "done",
+  "meta_health_ch09|sonnet|core|zh": "done"
 }

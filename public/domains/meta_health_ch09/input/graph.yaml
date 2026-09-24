@@ -113,9 +113,11 @@ concepts:
 applications:
   daily_meta_health_protocol:
     defines: >-
-      The daily Meta-Health protocol — a 24-hour blueprint: morning light and Baduanjin; pre-meal breaths,
-      mindful meals to 70–80% full, gentle movement 30–40 minutes after eating; stress-release through
-      the day; an early, light dinner; sleep before 子时 — personalized, observed and adjusted over time.
+      The daily 元健康 Meta-Health protocol (日常元健康方案 — 'meta' as in 元, the whole above the parts: movement,
+      eating, mind and rhythm as one practice; not 代谢/metabolic health) — a 24-hour blueprint: morning
+      light and Baduanjin; pre-meal breaths, mindful meals to 70–80% full, gentle movement 30–40 minutes
+      after eating; stress-release through the day; an early, light dinner; sleep before 子时 — personalized,
+      observed and adjusted over time.
     needs:
     - mind_body_digestive_loop
     - five_phase_integration_matrix
