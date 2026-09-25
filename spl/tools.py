@@ -10,6 +10,7 @@ The loaded domain graph is cached in _DOMAIN_CACHE for the process lifetime.
 """
 from __future__ import annotations
 
+import os
 import re
 import time
 from pathlib import Path
@@ -477,10 +478,27 @@ def write_concept_html(concept: str, section: str, domain_yaml: str, output_dir:
 
 
 # Fixed strings on the book index page, per language (English fallback).
-_BOOK_UI: dict[str, dict[str, str]] = {
-    "en": {"book": "Concept Book", "contents": "Contents", "payoff": "Payoff"},
-    "zh": {"book": "概念书", "contents": "目录", "payoff": "学以致用"},
-}
+# Source of truth is the `book:` block of locales/ui.yaml (shared with the
+# frontend); these built-in English strings are used when that file is absent,
+# e.g. when spl/ is copied into a repo without locales/.
+_BOOK_UI_DEFAULT: dict[str, str] = {"book": "Concept Book", "contents": "Contents", "payoff": "Payoff"}
+_LOCALES_DIR = Path(os.environ.get("CB_LOCALES_DIR") or _CB_DIR.parent / "locales")
+_BOOK_UI_CACHE: dict[str, dict] | None = None
+
+
+def _book_ui(language: str) -> dict[str, str]:
+    """Book-page strings for `language`, falling back key by key to English."""
+    global _BOOK_UI_CACHE
+    if _BOOK_UI_CACHE is None:
+        try:
+            import yaml
+            _BOOK_UI_CACHE = (yaml.safe_load((_LOCALES_DIR / "ui.yaml").read_text(encoding="utf-8")) or {}).get("book", {})
+        except (OSError, ImportError):
+            _BOOK_UI_CACHE = {}
+    ui = dict(_BOOK_UI_DEFAULT)
+    for key, texts in _BOOK_UI_CACHE.items():
+        ui[key] = texts.get(language) or texts.get("en") or ui.get(key, key)
+    return ui
 
 
 @spl_tool
@@ -506,7 +524,7 @@ def build_book_index(domain_yaml: str, target: str, language: str, output_dir: s
         toc_items.append(f'<li{cls}><a href="concept_{concept}{suffix}.html">{label}</a></li>')
     toc_html = '<ol>\n' + '\n'.join(toc_items) + '\n</ol>'
 
-    ui = {**_BOOK_UI["en"], **_BOOK_UI.get(language, {})}
+    ui = _book_ui(language)
     # write_payoff is told to begin with "## Payoff"; show it in the book's language.
     payoff = re.sub(r'\A\s*##[ \t]+Payoff\b[^\n]*', f"## {ui['payoff']}", payoff)
     # Non-application targets never get a payoff (see build_concept_book.spl's
