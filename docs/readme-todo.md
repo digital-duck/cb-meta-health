@@ -274,12 +274,16 @@ glycemic load and energy balance.
       the cache (0 LLM calls), and drop the stale `pdfs` catalog entry (`concept_liver_metabolic_role.pdf`,
       archived in `archive/en-v1/meta_health_ch05/sonnet/pdf/`). Re-export the PDF from the UI.
 - [ ] Editing pass: ch07 liver-movement slip (evaluation issue 2).
-- [ ] Delete `archive/zh-v1` (and later `archive/en-v1`) once v2 is accepted.
+- [x] ~~Delete `archive/zh-v1` / `archive/en-v1`~~ — **keep** all archived versions (v1, and v2
+      once v3 replaces it) as permanent references for hallucination/regression comparisons.
 - [x] Commit the concept-book-base changes from the first port (formula/payoff/script fixes).
 - [ ] Commit the second concept-book-base port: localized labels, context-hash cache key, and
       book-index UI strings (see §5).
-- [ ] Port the payoff, formula, label and cache-key fixes to `conceptbook-app`, which has diverged:
-      it has its own `style_profiles.py` tiers (`social`) and Chinese-character tools.
+- [x] Port the payoff, formula, label, cache-key and TCM-attribution fixes to `conceptbook-app`
+      (merged by hand; its `social`/`minimal` tiers, References rule and CJK stroke-order widget
+      are kept). Tested; **uncommitted**. See §6.
+- [ ] Commit the conceptbook-app port.
+- [ ] Commit the third concept-book-base change: the TCM-attribution health note in `style_profiles.py`.
 
 ## 5. Localized headings, the cache-key bug, and the en regeneration (2026-09-24, 07:30–)
 
@@ -293,7 +297,7 @@ each section with that English heading.
 
 | Where | Change |
 |---|---|
-| `docs/gemini/concept_labels.yaml` (new) | en + zh display label for all 168 concepts. English labels drop the pinyin suffixes ("Blood (Xue, 血)" instead of "Blood Xue"). |
+| `docs/gemini/concept_labels.yaml` (new; since moved to `locales/content.yaml` `concepts:`) | en + zh display label for all 168 concepts. English labels drop the pinyin suffixes ("Blood (Xue, 血)" instead of "Blood Xue"). |
 | `docs/gemini/build_graphs_v1.py` | Merges them into every node as `labels: {en, zh}`, and fails if any concept has no label |
 | `spl/tools.py` | `localized_label()` / `_label_for()` (graph label → en label → title-cased id); `apps_list` and `prereq_labels` take a language; `write_concept_html` normalizes the section's leading `##` to the localized label when the node has one for that language (otherwise keeps the old bare-ID-only behavior, so books without labels are unaffected); `build_book_index` uses localized TOC and title strings plus `_BOOK_UI` for "Contents" / "Payoff" / "Concept Book" (zh: 目录 / 学以致用 / 概念书) |
 | `spl/build_concept_book.spl` | Section loop and payoff use `localized_label(..., @language)`, so new runs write the localized heading directly |
@@ -453,3 +457,55 @@ formulas are eliminated in both languages, and length and practice problems didn
   PDF is in `archive/en-v1/meta_health_ch05/sonnet/pdf/`; re-export from the UI if needed.
 - Catalog check: all 19 books (9 en + 9 zh + the ch05 UI book) and 428 concept pages (214 × 2)
   exist on disk.
+
+
+## 6. Trimming "traditional" wording, TCM attribution (2026-09-25)
+
+**Finding:** en v2 has 437 `tradition*` mentions; most are "Traditional Chinese Medicine" spelled out
+in full (58) and "traditional framework" (49). zh v2 has 传统中医理论 and similar forms (redundant,
+since 中医 already means TCM), and 5 uses of 传统智慧 ("traditional wisdom"). That phrase implies
+merit, but "traditional" only describes where an idea comes from. Some traditional beliefs are wrong
+or harmful.
+
+**Fix** (`spl/style_profiles.py`, health tier note):
+- attribute neutrally and briefly with the acronym ("In TCM, …", "TCM holds that …"; 中医认为…,
+  never 传统中医)
+- spell out "Traditional Chinese Medicine (TCM)" only where the book first introduces it
+- state evidence status at most once per section
+- never "wisdom"/"time-tested" (传统智慧, 古人智慧)
+- say plainly when a traditional belief or practice is disproven or harmful
+
+**Test** (11 en ch01 sections, v2 vs test, cache restored afterwards): `tradition*` 22 → 4,
+`TCM` 25 → 35; `essence_jing` states its caveat once, neutrally.
+
+**Ported to:** concept-book-base (`style_profiles.py`), conceptbook-app (health tier added).
+
+### Plan: v3 regeneration (both languages)
+
+Archive v2 for reference, then regenerate. `--skip-cache` is required: the cache key (concept +
+language/style/model/defines-hash) doesn't change when only the style prompt changes.
+
+```bash
+mkdir -p archive/en-v2 archive/zh-v2
+for d in public/domains/meta_health_ch0*; do
+  mv $d/output/core.en archive/en-v2/$(basename $d)
+  mv $d/output/core.zh archive/zh-v2/$(basename $d)
+done
+nohup bash -c '
+python scripts/batch_gen_domains.py -f scripts/domains-meta-health.txt \
+    --model sonnet --level core --language en --skip-cache \
+    --progress-file scripts/progress_en_v3.json --log-file logs/meta_health_en_v3.log
+python scripts/batch_gen_domains.py -f scripts/domains-meta-health.txt \
+    --model sonnet --level core --language zh --skip-cache \
+    --progress-file scripts/progress_zh_v3.json --log-file logs/meta_health_zh_v3.log
+' > logs/meta_health_v3.out 2>&1 &
+# if a session limit interrupts it, re-run the same command WITH --skip-cache
+# (the progress file skips finished chapters; sections of the unfinished one regenerate)
+python scripts/eval_generated_content.py --dir v2=archive/en-v2 --dir v3=public/domains --variant core.en
+python scripts/eval_generated_content.py --dir v2=archive/zh-v2 --dir v3=public/domains --variant core.zh
+```
+
+Also count `tradition*` / `TCM` / 传统 / 传统智慧 / 中医 in the v2 vs v3 comparison.
+
+**Remaining editorial items:** ch07 liver-movement slip (扩胸 given as a liver movement); trim
+duplicate caveats (should mostly vanish in v3); label `HR_max ≈ 220 − 年龄` as an estimate.

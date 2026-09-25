@@ -1,8 +1,14 @@
 [
   {
     "id": "meta_health_ch01",
-    "name": "元健康 Meta-Health Ch1: TCM Foundations — Yin-Yang, Qi-Blood, and the Five Phases (中医基础)",
+    "name": "Ch1: TCM Foundations — Yin-Yang, Qi-Blood, and the Five Phases (中医基础)",
     "description": "The core vocabulary of Traditional Chinese Medicine used throughout the book: yin-yang, qi, blood and fluids, the Five Phases (五行) with their generating and controlling cycles, the zang-fu organ systems, meridians, and the triple burner.",
+    "i18n": {
+      "zh": {
+        "name": "第一章 中医基础：阴阳、气血与五行",
+        "description": "贯穿全书的中医核心概念：阴阳、气、血与津液，五行及其相生相克，脏腑系统、经络与三焦。"
+      }
+    },
     "capstone": "five_phase_body_map",
     "nodes": 26,
     "edges": 47,
@@ -399,8 +405,14 @@
   },
   {
     "id": "meta_health_ch02",
-    "name": "元健康 Meta-Health Ch2: The Physiology Lens — Breath, Circulation, Fascia, and Core (生理视角)",
+    "name": "Ch2: The Physiology Lens — Breath, Circulation, Fascia, and Core (生理视角)",
     "description": "The modern physiology needed to understand gentle movement practices: breathing mechanics, cardiac output and regional blood flow, muscle and respiratory pumps, the autonomic nervous system, fascia and core pressure, and how to translate TCM claims into physiological terms.",
+    "i18n": {
+      "zh": {
+        "name": "第二章 生理视角：呼吸、循环、筋膜与核心",
+        "description": "理解柔和运动练习所需的现代生理学：呼吸力学、心输出量与局部血流、肌肉泵与呼吸泵、自主神经系统、筋膜与核心压力，以及如何把中医说法转译为生理学语言。"
+      }
+    },
     "capstone": "dual_lens_translation",
     "nodes": 26,
     "edges": 42,
@@ -797,8 +809,14 @@
   },
   {
     "id": "meta_health_ch03",
-    "name": "元健康 Meta-Health Ch3: The Five-Organ Exercises (五脏操)",
+    "name": "Ch3: The Five-Organ Exercises (五脏操)",
     "description": "Five simple movements, each mapped to one zang organ and one of the Five Phases: chest expansion (Lung/Metal), rib fanning (Liver/Wood), body lifting (Kidney/Water), torso twist (Spleen/Earth) and deep squat (Heart/Fire). Covers their dual TCM and physiological rationale, three sequencing logics, and safe practice.",
+    "i18n": {
+      "zh": {
+        "name": "第三章 五脏操",
+        "description": "五个简单动作，各对应一个脏与五行之一：扩胸（肺／金）、展肋（肝／木）、提身（肾／水）、转腰（脾／土）与深蹲（心／火）。涵盖其中医与生理学的双重依据、三种编排逻辑及安全练习要点。"
+      }
+    },
     "capstone": "five_organ_routine_design",
     "nodes": 24,
     "edges": 40,
@@ -1167,8 +1185,14 @@
   },
   {
     "id": "meta_health_ch04",
-    "name": "元健康 Meta-Health Ch4: Baduanjin — The Eight Brocades (八段锦)",
+    "name": "Ch4: Baduanjin — The Eight Brocades (八段锦)",
     "description": "The eight forms of Baduanjin qigong, how each maps onto the five-organ exercises and the Five Phases, the three regulations of body, breath and mind, closing the practice, dose, and what clinical research does and does not show.",
+    "i18n": {
+      "zh": {
+        "name": "第四章 八段锦",
+        "description": "八段锦的八个式子，每式如何对应五脏操与五行；调身、调息、调心三调；收功、练习量，以及临床研究能说明什么、不能说明什么。"
+      }
+    },
     "capstone": "daily_baduanjin_practice_plan",
     "nodes": 27,
     "edges": 44,
@@ -1579,8 +1603,14 @@
   },
   {
     "id": "meta_health_ch05",
-    "name": "元健康 Meta-Health Ch5: Eating as Internal Exercise (饮食即内脏运动)",
+    "name": "Ch5: Eating as Internal Exercise (饮食即内脏运动)",
     "description": "The book's central reframe: every meal is a workout for the digestive organs and circulation. Postprandial blood-flow redistribution, motility and liver metabolism, read side by side with the TCM Spleen–Stomach engine, then turned into a warm-up, pacing and recovery discipline for eating.",
+    "i18n": {
+      "zh": {
+        "name": "第五章 饮食即内脏运动",
+        "description": "全书的核心视角转换：每一餐都是消化器官与循环系统的一次锻炼。餐后血流再分配、胃肠动力与肝脏代谢，与中医脾胃运化并读，再落实为进食的热身、节奏与恢复。"
+      }
+    },
     "capstone": "mindful_meal_protocol",
     "nodes": 25,
     "edges": 42,
@@ -1969,8 +1999,14 @@
   },
   {
     "id": "meta_health_ch06",
-    "name": "元健康 Meta-Health Ch6: What We Eat — Food Quality, Four Natures, and Five Flavors (四气五味)",
+    "name": "Ch6: What We Eat — Food Quality, Four Natures, and Five Flavors (四气五味)",
     "description": "Food quality through both lenses: energy, macronutrients, fiber, the microbiome and ultra-processed food; TCM's four natures, five flavors and five colors, dampness, food-as-medicine, and eating for one's constitution.",
+    "i18n": {
+      "zh": {
+        "name": "第六章 吃什么：食物品质与四气五味",
+        "description": "从两个视角看食物品质：能量、宏量营养素、膳食纤维、肠道菌群与超加工食品；中医的四气、五味、五色，湿，药食同源，以及依体质饮食。"
+      }
+    },
     "capstone": "five_phase_meal_design",
     "nodes": 25,
     "edges": 37,
@@ -2353,8 +2389,14 @@
   },
   {
     "id": "meta_health_ch07",
-    "name": "元健康 Meta-Health Ch7: Stress, Emotion, and the Flow of Qi and Blood (情志与气血)",
+    "name": "Ch7: Stress, Emotion, and the Flow of Qi and Blood (情志与气血)",
     "description": "How stress and emotion disrupt movement and digestion: the stress response, allostatic load and the gut–brain axis, read alongside TCM's seven emotions, the Liver's free flow and 'Wood overacting on Earth' — and how breath, movement and attention restore flow.",
+    "i18n": {
+      "zh": {
+        "name": "第七章 情志与气血",
+        "description": "压力与情绪如何扰乱运动与消化：应激反应、稳态负荷与肠脑轴，与中医的七情、肝主疏泄及“木乘土”并读——以及呼吸、运动与专注如何恢复通畅。"
+      }
+    },
     "capstone": "stress_resilience_routine",
     "nodes": 24,
     "edges": 31,
@@ -2723,8 +2765,14 @@
   },
   {
     "id": "meta_health_ch08",
-    "name": "元健康 Meta-Health Ch8: Rhythms — Sleep, the Organ Clock, and the Seasons (天人相应)",
+    "name": "Ch8: Rhythms — Sleep, the Organ Clock, and the Seasons (天人相应)",
     "description": "Timing as a health variable: the circadian clock, light, cortisol and melatonin, sleep and metabolic repair, chrononutrition and exercise timing, read alongside TCM's day-night yin-yang, the meridian organ clock (子午流注) and seasonal regimens (四时养生).",
+    "i18n": {
+      "zh": {
+        "name": "第八章 节律：睡眠、脏腑时钟与四季（天人相应）",
+        "description": "把时间当作健康变量：昼夜节律、光照、皮质醇与褪黑素、睡眠与代谢修复、时间营养学与运动时机，与中医的昼夜阴阳、子午流注及四时养生并读。"
+      }
+    },
     "capstone": "personal_daily_rhythm_schedule",
     "nodes": 18,
     "edges": 30,
@@ -3009,8 +3057,14 @@
   },
   {
     "id": "meta_health_ch09",
-    "name": "元健康 Meta-Health Ch9: The Unified Internal Conditioning Framework (内调一元论)",
+    "name": "Ch9: The Unified Internal Conditioning Framework (内调一元论)",
     "description": "The synthesis: movement, eating, mind and rhythm as one continuous practice of conditioning the internal organs and circulation. One Five-Phase integration matrix, training principles applied to organs, personalization, self-observation, an honest evidence-and-safety lens, and the daily Meta-Health protocol.",
+    "i18n": {
+      "zh": {
+        "name": "第九章 内调一元论",
+        "description": "综合篇：把运动、饮食、心神与节律视为调理内脏与循环的同一项连续练习。一张五行整合矩阵、应用于脏腑的训练原则、个体化、自我观察、诚实的证据与安全视角，以及每日元健康方案。"
+      }
+    },
     "capstone": "daily_meta_health_protocol",
     "nodes": 19,
     "edges": 26,

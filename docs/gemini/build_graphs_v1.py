@@ -10,8 +10,12 @@ class Folded(str):
 
 yaml.add_representer(Folded, lambda d, v: d.represent_scalar("tag:yaml.org,2002:str", v, style=">"))
 
-# Per-language display labels for every concept (see concept_labels.yaml).
-LABELS = yaml.safe_load((Path(__file__).parent / "concept_labels.yaml").read_text(encoding="utf-8"))
+# Content translations (chapter names/descriptions + per-language concept
+# labels) live in locales/content.yaml — see docs/DEV/readme-i18n.md §2a.
+CONTENT = yaml.safe_load((Path(__file__).resolve().parents[2] / "locales" / "content.yaml").read_text(encoding="utf-8"))
+LABELS = CONTENT["concepts"]
+DOMAINS = CONTENT["domains"]
+SOURCE_LANG = CONTENT.get("_meta", {}).get("source", "en")
 
 ROOT = Path("/home/gongai/projects/digital-duck/cb-meta-health/public/domains")
 
@@ -21,8 +25,6 @@ CH = []
 # ---------------------------------------------------------------- ch01
 CH.append(dict(
     id="meta_health_ch01", tag="tcm", capstone="five_phase_body_map",
-    name="元健康 Meta-Health Ch1: TCM Foundations — Yin-Yang, Qi-Blood, and the Five Phases (中医基础)",
-    description="The core vocabulary of Traditional Chinese Medicine used throughout the book: yin-yang, qi, blood and fluids, the Five Phases (五行) with their generating and controlling cycles, the zang-fu organ systems, meridians, and the triple burner.",
     P={
         "yin_yang": "Yin-yang (阴阳): the paired, mutually dependent and mutually transforming opposites (rest/activity, cool/warm, substance/function) that TCM uses to describe every process in the body.",
         "qi": "Qi (气): the TCM notion of vital activity — the moving, warming, protecting and transforming function of the body; roughly 'physiological function in motion'.",
@@ -60,8 +62,6 @@ CH.append(dict(
 # ---------------------------------------------------------------- ch02
 CH.append(dict(
     id="meta_health_ch02", tag="physiology", capstone="dual_lens_translation",
-    name="元健康 Meta-Health Ch2: The Physiology Lens — Breath, Circulation, Fascia, and Core (生理视角)",
-    description="The modern physiology needed to understand gentle movement practices: breathing mechanics, cardiac output and regional blood flow, muscle and respiratory pumps, the autonomic nervous system, fascia and core pressure, and how to translate TCM claims into physiological terms.",
     P={
         "respiration_mechanics": "Breathing mechanics: the diaphragm and intercostal muscles change rib-cage and thoracic volume to move air in and out of the lungs.",
         "cardiac_output": "Cardiac output: the volume of blood the heart pumps per minute (heart rate × stroke volume), about 5 L/min at rest in adults.",
@@ -99,8 +99,6 @@ CH.append(dict(
 # ---------------------------------------------------------------- ch03
 CH.append(dict(
     id="meta_health_ch03", tag="movement", capstone="five_organ_routine_design",
-    name="元健康 Meta-Health Ch3: The Five-Organ Exercises (五脏操)",
-    description="Five simple movements, each mapped to one zang organ and one of the Five Phases: chest expansion (Lung/Metal), rib fanning (Liver/Wood), body lifting (Kidney/Water), torso twist (Spleen/Earth) and deep squat (Heart/Fire). Covers their dual TCM and physiological rationale, three sequencing logics, and safe practice.",
     P={
         "five_phase_correspondences": "The Five-Phase correspondence table (五行归类) linking each phase to an organ, season, emotion, flavor and tissue (from Chapter 1).",
         "generating_cycle_xiangsheng": "The generating cycle (相生): Wood → Fire → Earth → Metal → Water (from Chapter 1).",
@@ -136,8 +134,6 @@ CH.append(dict(
 # ---------------------------------------------------------------- ch04
 CH.append(dict(
     id="meta_health_ch04", tag="movement", capstone="daily_baduanjin_practice_plan",
-    name="元健康 Meta-Health Ch4: Baduanjin — The Eight Brocades (八段锦)",
-    description="The eight forms of Baduanjin qigong, how each maps onto the five-organ exercises and the Five Phases, the three regulations of body, breath and mind, closing the practice, dose, and what clinical research does and does not show.",
     P={
         "daoyin_tradition": "Daoyin (导引): the ancient Chinese tradition of guided stretching and breathing exercises for health, of which Baduanjin is a well-known descendant.",
         "triple_burner_sanjiao": "The triple burner (三焦): upper, middle and lower passageways of qi and fluids (from Chapter 1).",
@@ -176,8 +172,6 @@ CH.append(dict(
 # ---------------------------------------------------------------- ch05
 CH.append(dict(
     id="meta_health_ch05", tag="nutrition", capstone="mindful_meal_protocol",
-    name="元健康 Meta-Health Ch5: Eating as Internal Exercise (饮食即内脏运动)",
-    description="The book's central reframe: every meal is a workout for the digestive organs and circulation. Postprandial blood-flow redistribution, motility and liver metabolism, read side by side with the TCM Spleen–Stomach engine, then turned into a warm-up, pacing and recovery discipline for eating.",
     P={
         "gastrointestinal_tract": "The gastrointestinal tract: mouth, esophagus, stomach, small and large intestine, with the liver and pancreas as accessory organs.",
         "smooth_muscle": "Smooth muscle: involuntary muscle in the gut wall and blood vessels that contracts rhythmically without conscious control.",
@@ -214,8 +208,6 @@ CH.append(dict(
 # ---------------------------------------------------------------- ch06
 CH.append(dict(
     id="meta_health_ch06", tag="nutrition", capstone="five_phase_meal_design",
-    name="元健康 Meta-Health Ch6: What We Eat — Food Quality, Four Natures, and Five Flavors (四气五味)",
-    description="Food quality through both lenses: energy, macronutrients, fiber, the microbiome and ultra-processed food; TCM's four natures, five flavors and five colors, dampness, food-as-medicine, and eating for one's constitution.",
     P={
         "energy_balance": "Energy balance: energy intake from food versus energy expenditure (basal metabolic rate, digestion and activity), which together determine weight change over time.",
         "macronutrients": "Macronutrients: protein, carbohydrate and fat — the nutrients that supply energy and building material.",
@@ -252,8 +244,6 @@ CH.append(dict(
 # ---------------------------------------------------------------- ch07
 CH.append(dict(
     id="meta_health_ch07", tag="mind", capstone="stress_resilience_routine",
-    name="元健康 Meta-Health Ch7: Stress, Emotion, and the Flow of Qi and Blood (情志与气血)",
-    description="How stress and emotion disrupt movement and digestion: the stress response, allostatic load and the gut–brain axis, read alongside TCM's seven emotions, the Liver's free flow and 'Wood overacting on Earth' — and how breath, movement and attention restore flow.",
     P={
         "hpa_axis": "The HPA axis (hypothalamus–pituitary–adrenal): the hormonal stress system that releases cortisol.",
         "sympathetic_parasympathetic_balance": "Sympathetic versus parasympathetic balance (from Chapter 2).",
@@ -289,8 +279,6 @@ CH.append(dict(
 # ---------------------------------------------------------------- ch08
 CH.append(dict(
     id="meta_health_ch08", tag="rhythms", capstone="personal_daily_rhythm_schedule",
-    name="元健康 Meta-Health Ch8: Rhythms — Sleep, the Organ Clock, and the Seasons (天人相应)",
-    description="Timing as a health variable: the circadian clock, light, cortisol and melatonin, sleep and metabolic repair, chrononutrition and exercise timing, read alongside TCM's day-night yin-yang, the meridian organ clock (子午流注) and seasonal regimens (四时养生).",
     P={
         "circadian_clock": "The circadian clock: the body's roughly 24-hour internal timer (suprachiasmatic nucleus and peripheral clocks).",
         "yin_yang": "Yin-yang (from Chapter 1).",
@@ -320,8 +308,6 @@ CH.append(dict(
 # ---------------------------------------------------------------- ch09
 CH.append(dict(
     id="meta_health_ch09", tag="integration", capstone="daily_meta_health_protocol",
-    name="元健康 Meta-Health Ch9: The Unified Internal Conditioning Framework (内调一元论)",
-    description="The synthesis: movement, eating, mind and rhythm as one continuous practice of conditioning the internal organs and circulation. One Five-Phase integration matrix, training principles applied to organs, personalization, self-observation, an honest evidence-and-safety lens, and the daily Meta-Health protocol.",
     P={
         "harmony_as_health": "Health as dynamic balance (阴平阳秘) (from Chapter 1).",
         "dual_lens_translation": "Translating between TCM and physiology (from Chapter 2).",
@@ -382,7 +368,7 @@ def build(ch):
     assert ch["capstone"] in ch["A"]
 
     missing = [n for n in prereq if n not in LABELS]
-    assert not missing, f"{ch['id']}: no labels in concept_labels.yaml for {missing}"
+    assert not missing, f"{ch['id']}: no labels in locales/content.yaml for {missing}"
     order = lambda d: sorted(d, key=lambda n: (tier[n], n))
     out = {"domain": ch["id"], "primitives": {}, "concepts": {}, "applications": {}}
     for n in order(ch["P"]):
@@ -410,8 +396,17 @@ for ch in CH:
     d.mkdir(parents=True, exist_ok=True)
     (d / "graph.yaml").write_text(
         yaml.dump(out, allow_unicode=True, sort_keys=False, width=100), encoding="utf-8")
+    text = DOMAINS[ch["id"]]
+    # name/description are the source-language fallback; other languages go
+    # under i18n.<lang> (read by src/data/catalog.js catalogText()).
+    i18n = {}
+    for field in ("name", "description"):
+        for lang, val in text[field].items():
+            if lang != SOURCE_LANG:
+                i18n.setdefault(lang, {})[field] = val
     catalog.append({
-        "id": ch["id"], "name": ch["name"], "description": ch["description"],
+        "id": ch["id"], "name": text["name"][SOURCE_LANG], "description": text["description"][SOURCE_LANG],
+        "i18n": i18n,
         "capstone": ch["capstone"], "nodes": n_nodes, "edges": n_edges,
         "primitives": len(ch["P"]), "concepts": len(ch["C"]), "applications": len(ch["A"]),
         "tags": ["health", ch["tag"]], "has_navigator": True, "has_book": False,
@@ -419,7 +414,7 @@ for ch in CH:
     })
     # Generation state (has_book, books, generated_concepts, pdfs, …) comes
     # from the previous catalog; graph-derived fields are always recomputed.
-    graph_fields = {"id", "name", "description", "capstone", "nodes", "edges",
+    graph_fields = {"id", "name", "description", "i18n", "capstone", "nodes", "edges",
                     "primitives", "concepts", "applications", "tags",
                     "has_navigator", "default_level"}
     for k, v in _prev.get(ch["id"], {}).items():
