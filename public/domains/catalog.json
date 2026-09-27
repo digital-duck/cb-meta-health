@@ -437,6 +437,12 @@
         "file": "output/core.zh/sonnet/html/book_dual_lens_translation_zh.html",
         "model": "sonnet",
         "language": "zh"
+      },
+      {
+        "target": "dual_lens_translation",
+        "file": "output/college.en/sonnet/html/book_dual_lens_translation.html",
+        "model": "sonnet",
+        "language": "en"
       }
     ],
     "generated_concepts": [
@@ -455,6 +461,13 @@
         "language": "en"
       },
       {
+        "name": "autonomic_nervous_system",
+        "label": "Autonomic Nervous System",
+        "file": "output/college.en/sonnet/html/concept_autonomic_nervous_system.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
         "name": "cardiac_output",
         "label": "Cardiac Output",
         "file": "output/core.zh/sonnet/html/concept_cardiac_output_zh.html",
@@ -465,6 +478,13 @@
         "name": "cardiac_output",
         "label": "Cardiac Output",
         "file": "output/core.en/sonnet/html/concept_cardiac_output.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "cardiac_output",
+        "label": "Cardiac Output",
+        "file": "output/college.en/sonnet/html/concept_cardiac_output.html",
         "model": "sonnet",
         "language": "en"
       },
@@ -483,6 +503,13 @@
         "language": "en"
       },
       {
+        "name": "core_stability",
+        "label": "Core Stability",
+        "file": "output/college.en/sonnet/html/concept_core_stability.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
         "name": "diaphragmatic_breathing",
         "label": "Diaphragmatic Breathing",
         "file": "output/core.zh/sonnet/html/concept_diaphragmatic_breathing_zh.html",
@@ -493,6 +520,13 @@
         "name": "diaphragmatic_breathing",
         "label": "Diaphragmatic Breathing",
         "file": "output/core.en/sonnet/html/concept_diaphragmatic_breathing.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "diaphragmatic_breathing",
+        "label": "Diaphragmatic Breathing",
+        "file": "output/college.en/sonnet/html/concept_diaphragmatic_breathing.html",
         "model": "sonnet",
         "language": "en"
       },
@@ -511,6 +545,13 @@
         "language": "en"
       },
       {
+        "name": "dual_lens_translation",
+        "label": "Dual Lens Translation",
+        "file": "output/college.en/sonnet/html/concept_dual_lens_translation.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
         "name": "fascia",
         "label": "Fascia",
         "file": "output/core.zh/sonnet/html/concept_fascia_zh.html",
@@ -521,6 +562,13 @@
         "name": "fascia",
         "label": "Fascia",
         "file": "output/core.en/sonnet/html/concept_fascia.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "fascia",
+        "label": "Fascia",
+        "file": "output/college.en/sonnet/html/concept_fascia.html",
         "model": "sonnet",
         "language": "en"
       },
@@ -539,6 +587,13 @@
         "language": "en"
       },
       {
+        "name": "interoception",
+        "label": "Interoception",
+        "file": "output/college.en/sonnet/html/concept_interoception.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
         "name": "intra_abdominal_pressure",
         "label": "Intra Abdominal Pressure",
         "file": "output/core.zh/sonnet/html/concept_intra_abdominal_pressure_zh.html",
@@ -549,6 +604,13 @@
         "name": "intra_abdominal_pressure",
         "label": "Intra Abdominal Pressure",
         "file": "output/core.en/sonnet/html/concept_intra_abdominal_pressure.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "intra_abdominal_pressure",
+        "label": "Intra Abdominal Pressure",
+        "file": "output/college.en/sonnet/html/concept_intra_abdominal_pressure.html",
         "model": "sonnet",
         "language": "en"
       },
@@ -567,6 +629,13 @@
         "language": "en"
       },
       {
+        "name": "joint_range_of_motion",
+        "label": "Joint Range Of Motion",
+        "file": "output/college.en/sonnet/html/concept_joint_range_of_motion.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
         "name": "lymph_flow",
         "label": "Lymph Flow",
         "file": "output/core.zh/sonnet/html/concept_lymph_flow_zh.html",
@@ -577,6 +646,13 @@
         "name": "lymph_flow",
         "label": "Lymph Flow",
         "file": "output/core.en/sonnet/html/concept_lymph_flow.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "lymph_flow",
+        "label": "Lymph Flow",
+        "file": "output/college.en/sonnet/html/concept_lymph_flow.html",
         "model": "sonnet",
         "language": "en"
       },
@@ -595,6 +671,13 @@
         "language": "en"
       },
       {
+        "name": "lymphatic_system",
+        "label": "Lymphatic System",
+        "file": "output/college.en/sonnet/html/concept_lymphatic_system.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
         "name": "myofascial_lines",
         "label": "Myofascial Lines",
         "file": "output/core.zh/sonnet/html/concept_myofascial_lines_zh.html",
@@ -605,6 +688,13 @@
         "name": "myofascial_lines",
         "label": "Myofascial Lines",
         "file": "output/core.en/sonnet/html/concept_myofascial_lines.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "myofascial_lines",
+        "label": "Myofascial Lines",
+        "file": "output/college.en/sonnet/html/concept_myofascial_lines.html",
         "model": "sonnet",
         "language": "en"
       },
@@ -623,6 +713,13 @@
         "language": "en"
       },
       {
+        "name": "posterior_chain",
+        "label": "Posterior Chain",
+        "file": "output/college.en/sonnet/html/concept_posterior_chain.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
         "name": "regional_blood_flow_distribution",
         "label": "Regional Blood Flow Distribution",
         "file": "output/core.zh/sonnet/html/concept_regional_blood_flow_distribution_zh.html",
@@ -633,6 +730,13 @@
         "name": "regional_blood_flow_distribution",
         "label": "Regional Blood Flow Distribution",
         "file": "output/core.en/sonnet/html/concept_regional_blood_flow_distribution.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "regional_blood_flow_distribution",
+        "label": "Regional Blood Flow Distribution",
+        "file": "output/college.en/sonnet/html/concept_regional_blood_flow_distribution.html",
         "model": "sonnet",
         "language": "en"
       },
@@ -651,6 +755,13 @@
         "language": "en"
       },
       {
+        "name": "respiration_mechanics",
+        "label": "Respiration Mechanics",
+        "file": "output/college.en/sonnet/html/concept_respiration_mechanics.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
         "name": "respiratory_pump",
         "label": "Respiratory Pump",
         "file": "output/core.zh/sonnet/html/concept_respiratory_pump_zh.html",
@@ -661,6 +772,13 @@
         "name": "respiratory_pump",
         "label": "Respiratory Pump",
         "file": "output/core.en/sonnet/html/concept_respiratory_pump.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "respiratory_pump",
+        "label": "Respiratory Pump",
+        "file": "output/college.en/sonnet/html/concept_respiratory_pump.html",
         "model": "sonnet",
         "language": "en"
       },
@@ -679,6 +797,13 @@
         "language": "en"
       },
       {
+        "name": "skeletal_muscle_contraction",
+        "label": "Skeletal Muscle Contraction",
+        "file": "output/college.en/sonnet/html/concept_skeletal_muscle_contraction.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
         "name": "skeletal_muscle_pump",
         "label": "Skeletal Muscle Pump",
         "file": "output/core.zh/sonnet/html/concept_skeletal_muscle_pump_zh.html",
@@ -689,6 +814,13 @@
         "name": "skeletal_muscle_pump",
         "label": "Skeletal Muscle Pump",
         "file": "output/core.en/sonnet/html/concept_skeletal_muscle_pump.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "skeletal_muscle_pump",
+        "label": "Skeletal Muscle Pump",
+        "file": "output/college.en/sonnet/html/concept_skeletal_muscle_pump.html",
         "model": "sonnet",
         "language": "en"
       },
@@ -707,6 +839,13 @@
         "language": "en"
       },
       {
+        "name": "spinal_rotation_and_lateral_flexion",
+        "label": "Spinal Rotation And Lateral Flexion",
+        "file": "output/college.en/sonnet/html/concept_spinal_rotation_and_lateral_flexion.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
         "name": "squat_mechanics",
         "label": "Squat Mechanics",
         "file": "output/core.zh/sonnet/html/concept_squat_mechanics_zh.html",
@@ -717,6 +856,13 @@
         "name": "squat_mechanics",
         "label": "Squat Mechanics",
         "file": "output/core.en/sonnet/html/concept_squat_mechanics.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "squat_mechanics",
+        "label": "Squat Mechanics",
+        "file": "output/college.en/sonnet/html/concept_squat_mechanics.html",
         "model": "sonnet",
         "language": "en"
       },
@@ -735,6 +881,13 @@
         "language": "en"
       },
       {
+        "name": "sympathetic_parasympathetic_balance",
+        "label": "Sympathetic Parasympathetic Balance",
+        "file": "output/college.en/sonnet/html/concept_sympathetic_parasympathetic_balance.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
         "name": "tension_relaxation_cycling",
         "label": "Tension Relaxation Cycling",
         "file": "output/core.zh/sonnet/html/concept_tension_relaxation_cycling_zh.html",
@@ -745,6 +898,13 @@
         "name": "tension_relaxation_cycling",
         "label": "Tension Relaxation Cycling",
         "file": "output/core.en/sonnet/html/concept_tension_relaxation_cycling.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "tension_relaxation_cycling",
+        "label": "Tension Relaxation Cycling",
+        "file": "output/college.en/sonnet/html/concept_tension_relaxation_cycling.html",
         "model": "sonnet",
         "language": "en"
       },
@@ -763,6 +923,13 @@
         "language": "en"
       },
       {
+        "name": "thoracic_mobility",
+        "label": "Thoracic Mobility",
+        "file": "output/college.en/sonnet/html/concept_thoracic_mobility.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
         "name": "tidal_volume_and_gas_exchange",
         "label": "Tidal Volume And Gas Exchange",
         "file": "output/core.zh/sonnet/html/concept_tidal_volume_and_gas_exchange_zh.html",
@@ -773,6 +940,13 @@
         "name": "tidal_volume_and_gas_exchange",
         "label": "Tidal Volume And Gas Exchange",
         "file": "output/core.en/sonnet/html/concept_tidal_volume_and_gas_exchange.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "tidal_volume_and_gas_exchange",
+        "label": "Tidal Volume And Gas Exchange",
+        "file": "output/college.en/sonnet/html/concept_tidal_volume_and_gas_exchange.html",
         "model": "sonnet",
         "language": "en"
       },
@@ -791,6 +965,13 @@
         "language": "en"
       },
       {
+        "name": "vagal_tone_and_hrv",
+        "label": "Vagal Tone And Hrv",
+        "file": "output/college.en/sonnet/html/concept_vagal_tone_and_hrv.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
         "name": "venous_return",
         "label": "Venous Return",
         "file": "output/core.zh/sonnet/html/concept_venous_return_zh.html",
@@ -801,6 +982,13 @@
         "name": "venous_return",
         "label": "Venous Return",
         "file": "output/core.en/sonnet/html/concept_venous_return.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "venous_return",
+        "label": "Venous Return",
+        "file": "output/college.en/sonnet/html/concept_venous_return.html",
         "model": "sonnet",
         "language": "en"
       }

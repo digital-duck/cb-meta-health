@@ -1,6 +1,9 @@
 domain: meta_health_ch02
 primitives:
   autonomic_nervous_system:
+    diagram:
+      type: flowchart TD
+      hint: "central nervous system branches into sympathetic (fight/flight: heart rate up, pupils dilate, digestion slows) and parasympathetic (rest/digest: heart rate down, digestion active); label each effect"
     defines: >-
       The autonomic nervous system: the involuntary control system for heart rate, blood vessels, digestion
       and breathing, with sympathetic and parasympathetic branches.
@@ -49,6 +52,9 @@ primitives:
       zh: 呼吸力学
     tier: 0
   skeletal_muscle_contraction:
+    diagram:
+      type: flowchart LR
+      hint: "action potential → motor neuron → neuromuscular junction → ACh release → depolarization → Ca2+ release → actin/myosin cross-bridge formation → muscle shortening"
     defines: >-
       Skeletal muscle contraction: voluntary muscles shorten and produce force when activated by motor
       nerves, then relax.
