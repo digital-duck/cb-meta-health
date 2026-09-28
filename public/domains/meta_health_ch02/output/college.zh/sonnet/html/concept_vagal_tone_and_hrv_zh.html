@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>迷走神经张力与心率变异性 | Meta Health Ch02</title>
+<script>
+MathJax = {
+  loader: { load: ['[tex]/mathtools'] },
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']],
+         packages: { '[+]': ['mathtools'] } },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<script src="https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.min.js"></script>
+<script>mermaid.initialize({ startOnLoad: true, theme: 'neutral' });</script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+footer.spl-credit span{display:block}
+footer.spl-credit .spl-credit__meta{margin-bottom:4px}
+.cb-figure{margin:24px 0;text-align:center}
+.cb-figure img{max-width:100%;height:auto;border:1px solid #e0e0d8;border-radius:6px}
+figcaption{font-size:.82rem;color:#666;margin-top:8px;font-style:italic;text-align:center}
+pre.mermaid{background:none;border:none;padding:0;overflow:visible;margin:16px 0}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="迷走神经张力与心率变异性">迷走神经张力与心率变异性</h2>
+<p>心脏并非以固定节拍跳动。即使在安静静坐时，相邻两次心跳之间的时间间隔也会有细微差异——这种逐拍变化被称为心率变异性（HRV）。HRV 的高低是自主神经系统状态的一面镜子：迷走神经（副交感神经的主干）在每次呼气时向窦房结发出减速信号，在吸气时信号减弱，心跳随之加快，这就是所谓的呼吸性窦性心律不齐。迷走神经张力越高，这种逐拍调节越灵敏，HRV 数值通常也越高；交感神经占主导、身体处于应激或炎症状态时，HRV 则趋于降低。因此，HRV 被广泛用作迷走神经张力的间接、非侵入性指标。</p>
+<p>临床和研究中最常用的时域指标是相邻心跳间期之差的均方根，记作 RMSSD：</p>
+$$
+\text{RMSSD} = \sqrt{\frac{1}{N-1}\sum_{i=1}^{N-1}(RR_{i+1}-RR_i)^2}
+$$
+<p>其中 $RR_i$ 是第 $i$ 次心跳与下一次心跳之间的时间间隔（毫秒）。RMSSD 主要反映高频、由迷走神经主导的快速波动，受呼吸节律影响明显。</p>
+<p>举例说明：某成年人静息时连续记录 6 个 RR 间期（毫秒）：820、845、810、860、830、850。计算相邻差值：25、-35、50、-30、20，平方后求平均再开方，可得 RMSSD 约为 33 毫秒。若同一人在缓慢腹式呼吸（约每分钟 6 次）下重新测量，RR 间期波动幅度通常会显著增大，RMSSD 随之升高，提示迷走神经张力被主动调动。</p>
+<p>在实际应用中，HRV 常用于评估训练恢复状态、慢性压力水平以及自主神经功能紊乱的风险：连续多日 RMSSD 低于个人基线，往往提示身体尚未从前一天的训练或压力中恢复，是调整训练强度或安排休息日的客观依据，而非单凭主观疲劳感做判断。</p>
+  </main>
+  <footer class="spl-credit"><span class="spl-credit__meta">Ch2: The Physiology Lens — Breath, Circulation, Fascia, and Core (生理视角) (Level: College &middot; Language: ZH &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
+</div>
+</body>
+</html>

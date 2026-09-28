@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>淋巴系统 | Meta Health Ch02</title>
+<script>
+MathJax = {
+  loader: { load: ['[tex]/mathtools'] },
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']],
+         packages: { '[+]': ['mathtools'] } },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<script src="https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.min.js"></script>
+<script>mermaid.initialize({ startOnLoad: true, theme: 'neutral' });</script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+footer.spl-credit span{display:block}
+footer.spl-credit .spl-credit__meta{margin-bottom:4px}
+.cb-figure{margin:24px 0;text-align:center}
+.cb-figure img{max-width:100%;height:auto;border:1px solid #e0e0d8;border-radius:6px}
+figcaption{font-size:.82rem;color:#666;margin-top:8px;font-style:italic;text-align:center}
+pre.mermaid{background:none;border:none;padding:0;overflow:visible;margin:16px 0}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="淋巴系统">淋巴系统</h2>
+<p>淋巴系统是一套低压力的管道网络,负责把渗漏到组织间隙的多余液体送回血液循环,同时运输免疫细胞。它没有像心脏那样的中央泵,液体的推动主要依靠骨骼肌收缩挤压淋巴管、周围动脉的搏动、以及淋巴管壁自身的节律性收缩;淋巴管内还有单向瓣膜,防止液体倒流。</p>
+<p><strong>工作原理</strong>:动脉端的毛细血管压力较高,会把血浆中的水分、小分子和少量蛋白质挤压到组织间隙,形成组织液。健康成体每天从毛细血管滤出的液体中,约有十分之一(相当于2至3升)不会直接被静脉端重新吸收,而是被更细小、通透性更高的毛细淋巴管收集。这些淋巴管逐级汇合成集合淋巴管、淋巴干,最终经胸导管或右淋巴导管在锁骨下静脉处重新汇入血液,完成"体液回收"。沿途分布的淋巴结则是免疫监视的关卡:淋巴液流经淋巴结时,其中携带的细菌、病毒碎片或异常细胞会被巨噬细胞和淋巴细胞识别并清除,同时激活适应性免疫反应。</p>
+<p><strong>应用实例——判断水肿的原因</strong>:如果一位患者一侧手臂在乳腺癌手术后出现持续肿胀,而另一侧正常,医生首先会怀疑淋巴回流受阻(常见于手术切除或放疗损伤了腋窝淋巴结),而不是单纯的静脉问题。区分依据在于:静脉性水肿抬高患肢后通常明显减轻,且常伴皮肤发红发热;而淋巴性水肿抬高后改善缓慢,组织质地随时间推移会变得坚实、按压后凹陷恢复很慢,因为淤积的是富含蛋白质的液体,长期滞留会刺激纤维组织增生。这种鉴别思路在康复科和肿瘤术后随访中十分常用,治疗上也会相应采用徒手淋巴引流按摩、弹力绷带包扎等以恢复液体回流的方法,而非单纯的抬高患肢或使用利尿剂。</p>
+<pre class="mermaid">flowchart LR
+    A[动脉毛细血管] -->|滤出液体| B[组织间隙]
+    B -->|大部分| C[静脉毛细血管]
+    B -->|约十分之一| D[毛细淋巴管]
+    D --> E[集合淋巴管]
+    E --> F[淋巴结<br/>免疫过滤]
+    F --> G[淋巴干]
+    G --> H[胸导管/右淋巴导管]
+    H --> I[锁骨下静脉]</pre>
+<p><em>该图展示组织液如何从毛细血管渗出,一部分经淋巴管网络逐级回收并在淋巴结完成免疫监视,最终重新汇入静脉血液。</em></p>
+  </main>
+  <footer class="spl-credit"><span class="spl-credit__meta">Ch2: The Physiology Lens — Breath, Circulation, Fascia, and Core (生理视角) (Level: College &middot; Language: ZH &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
+</div>
+</body>
+</html>

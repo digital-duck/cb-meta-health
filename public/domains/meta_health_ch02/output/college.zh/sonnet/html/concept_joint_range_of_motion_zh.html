@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>关节活动度 | Meta Health Ch02</title>
+<script>
+MathJax = {
+  loader: { load: ['[tex]/mathtools'] },
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']],
+         packages: { '[+]': ['mathtools'] } },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<script src="https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.min.js"></script>
+<script>mermaid.initialize({ startOnLoad: true, theme: 'neutral' });</script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+footer.spl-credit span{display:block}
+footer.spl-credit .spl-credit__meta{margin-bottom:4px}
+.cb-figure{margin:24px 0;text-align:center}
+.cb-figure img{max-width:100%;height:auto;border:1px solid #e0e0d8;border-radius:6px}
+figcaption{font-size:.82rem;color:#666;margin-top:8px;font-style:italic;text-align:center}
+pre.mermaid{background:none;border:none;padding:0;overflow:visible;margin:16px 0}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="关节活动度">关节活动度</h2>
+<p>关节活动度指一个关节沿其自由度方向能够转动的最大角度范围，通常用度（°）表示。人体主要的运动方向包括屈曲（关节角度减小，如屈肘）、伸展（关节角度增大或恢复到中立位）、旋转（沿骨的长轴转动，如转头）和侧屈（向侧方弯曲，如颈部侧倾）。每个关节能达到的角度范围，受三类结构共同限制：骨与骨之间的形状契合（如肘关节的鹰嘴突顶住肱骨窝，限制过度伸展）、关节囊和韧带的长度与紧张度、以及跨关节肌肉和肌腱的柔韧性与拉伸限度。临床上用量角器（goniometer）测量关节活动度，将其一臂对齐近端骨骼、一臂对齐远端骨骼，直接读出角度。</p>
+<p>以肩关节和膝关节为例。健康成年人的肩关节屈曲（手臂向前上举）正常范围约为0°到180°，肩关节外展也接近180°；而膝关节的屈曲范围通常在0°到135°左右，伸展则以0°为正常终点，超过0°的过伸提示韧带松弛或损伤。这些数值是体格检查和物理治疗中评估关节功能的重要参考标准，医生会将患者的实测角度与正常范围比较，判断是否存在功能受限。</p>
+<p>在实际问题中，关节活动度的评估常用于康复进度追踪。例如，一名膝关节前交叉韧带术后患者，第2周膝屈曲角度为75°，第6周复查时增至110°，正常膝屈曲上限约135°。计算其恢复百分比：$\frac{110}{135} \times 100\% \approx 81.5\%$，这一简单比值可以帮助治疗师判断康复训练强度是否需要调整，以及是否存在关节僵硬（活动度长期低于正常值）或关节过度松弛（活动度超出正常上限，提示韧带损伤）的风险。关节活动度的丧失还可能来自疼痛引起的保护性肌肉紧张、关节内炎症积液，或长期制动后关节囊粘连，因此临床评估时需要结合病史综合判断限制的具体来源。</p>
+  </main>
+  <footer class="spl-credit"><span class="spl-credit__meta">Ch2: The Physiology Lens — Breath, Circulation, Fascia, and Core (生理视角) (Level: College &middot; Language: ZH &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
+</div>
+</body>
+</html>
