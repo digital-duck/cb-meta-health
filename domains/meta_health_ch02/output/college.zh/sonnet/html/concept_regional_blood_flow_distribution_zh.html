@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>血流的区域分配 | Meta Health Ch02</title>
+<script>
+MathJax = {
+  loader: { load: ['[tex]/mathtools'] },
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']],
+         packages: { '[+]': ['mathtools'] } },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<script src="https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.min.js"></script>
+<script>mermaid.initialize({ startOnLoad: true, theme: 'neutral' });</script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+footer.spl-credit span{display:block}
+footer.spl-credit .spl-credit__meta{margin-bottom:4px}
+.cb-figure{margin:24px 0;text-align:center}
+.cb-figure img{max-width:100%;height:auto;border:1px solid #e0e0d8;border-radius:6px}
+figcaption{font-size:.82rem;color:#666;margin-top:8px;font-style:italic;text-align:center}
+pre.mermaid{background:none;border:none;padding:0;overflow:visible;margin:16px 0}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="血流的区域分配">血流的区域分配</h2>
+<p>心脏每分钟泵出的血液总量称为心输出量,其定义为心率与每搏输出量之乘积:</p>
+$$
+\text{心输出量} = \text{心率} \times \text{每搏输出量}
+$$
+<p>静息状态下心输出量约为每分钟5升,但这5升血液并非均匀分配给全身器官。自主神经系统通过收缩或舒张特定血管床的平滑肌,持续调整血流去向:交感神经激活会使血管收缩(减少该区域血流),而局部代谢产物增多或副交感信号则会使血管舒张(增加血流)。血流分配的原则很直接——身体优先把血液送到当下最需要氧气和营养的组织。</p>
+<p><strong>举例说明</strong>:静息时,骨骼肌大约获得心输出量的20%,消化道(胃肠道及肝脏,合称内脏循环)约获得25%,皮肤约5%,脑部约15%,肾脏约20%。开始中等强度跑步后,心输出量可上升到每分钟20升以上;与此同时,支配内脏血管和皮肤血管(在高强度运动初期)的交感神经使这些区域血管收缩,而支配骨骼肌血管的信号则使其舒张。结果是骨骼肌血流占比可升至80%以上,而内脏血流被大幅压缩。这正是为什么饭后立即剧烈运动容易引起腹部不适——消化系统的血液供应被暂时挪用给肌肉。</p>
+<p><strong>问题解决应用</strong>:假设某人静息心输出量为5升/分钟,内脏循环占25%,即每分钟约1.25升血液流经胃肠道。若运动使心输出量升至20升/分钟,而内脏血流占比降至5%,则实际内脏血流为每分钟1升——虽然总心输出量翻了两番,内脏灌注反而下降。这类计算说明:判断某器官血流是否充足,不能只看心输出量的绝对值,还必须结合该器官当时所占的分配比例。这也是运动生理学中评估器官灌注、设计训练强度或理解运动性胃肠道症状的基本方法。</p>
+<pre class="mermaid">flowchart LR
+    CO[心输出量] --> M[骨骼肌]
+    CO --> G[胃肠道/内脏]
+    CO --> S[皮肤]
+    CO --> B[脑]
+    ANS[自主神经系统] -- 收缩血管 --> G
+    ANS -- 收缩血管 --> S
+    ANS -- 舒张血管 --> M</pre>
+<p><em>运动状态下自主神经系统如何通过收缩内脏和皮肤血管、舒张肌肉血管,重新分配心输出量。</em></p>
+  </main>
+  <footer class="spl-credit"><span class="spl-credit__meta">Ch2: The Physiology Lens — Breath, Circulation, Fascia, and Core (生理视角) (Level: College &middot; Language: ZH &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
+</div>
+</body>
+</html>

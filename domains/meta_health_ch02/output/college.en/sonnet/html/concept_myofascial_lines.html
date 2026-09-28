@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Myofascial Lines | Meta Health Ch02</title>
+<script>
+MathJax = {
+  loader: { load: ['[tex]/mathtools'] },
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']],
+         packages: { '[+]': ['mathtools'] } },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<script src="https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.min.js"></script>
+<script>mermaid.initialize({ startOnLoad: true, theme: 'neutral' });</script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+footer.spl-credit span{display:block}
+footer.spl-credit .spl-credit__meta{margin-bottom:4px}
+.cb-figure{margin:24px 0;text-align:center}
+.cb-figure img{max-width:100%;height:auto;border:1px solid #e0e0d8;border-radius:6px}
+figcaption{font-size:.82rem;color:#666;margin-top:8px;font-style:italic;text-align:center}
+pre.mermaid{background:none;border:none;padding:0;overflow:visible;margin:16px 0}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="myofascial-lines">Myofascial Lines</h2>
+<p>Fascia is the sheet of connective tissue that wraps every muscle, and it does not stop cleanly at a muscle's tendon attachments. Instead, the fascia of one muscle blends into the fascia of the next, forming continuous mechanical chains called myofascial lines that run the length of the body. A pull applied at one end of a line transmits tension along the whole chain, so a tight muscle in the calf can restrict motion in the hamstring, low back, or even the scalp, depending on which line connects them. This concept, developed most fully in Thomas Myers's "Anatomy Trains" model, reframes stretching and injury from a single-muscle event into a whole-body one.</p>
+<p>Three commonly cited lines illustrate the idea. The superficial back line runs from the sole of the foot up the calf and hamstring, over the back, to the top of the skull; it is loaded whenever you bend forward to touch your toes. The lateral line runs down the side of the body, from the ear past the ribs and hip to the outside of the foot, and stabilizes side-to-side sway during walking. The spiral line wraps diagonally around the trunk, connecting the opposite shoulder and hip, and is active whenever the trunk rotates, as in throwing or golf swings.</p>
+<p>Consider a runner with chronically tight calves who develops hamstring and low-back tightness on the same side. A clinician working from the myofascial-lines model would not treat the hamstring in isolation. Because calf, hamstring, and lower-back muscles all lie along the superficial back line, tension anywhere in that chain can present as symptoms elsewhere in it. The practical approach is to test flexibility and release tightness along the entire line, for example using a straight-leg raise to gauge whole-line tension rather than isolated ankle or knee range of motion, and to stretch or foam-roll the calf and back together rather than the hamstring alone.</p>
+<p>For problem-solving, this model changes how a trainer plans a stretching routine: instead of assigning one stretch per "tight" muscle, they select a small number of full-line stretches (e.g., a standing forward fold for the superficial back line) that load several muscles in series, then check whether flexibility improves at a joint far from the muscle being stretched — a direct test of whether the chain, not just the local muscle, was the limiting factor.</p>
+<pre class="mermaid">graph TD
+    A[Skull base] --> B[Upper back / erector spinae]
+    B --> C[Sacrum / lower back fascia]
+    C --> D[Hamstring]
+    D --> E[Calf / gastrocnemius]
+    E --> F[Sole of foot]</pre>
+<p><em>The superficial back line: a continuous fascial chain linking the skull, spine, hamstring, calf, and foot, so tension at one end can affect flexibility or pain at the other.</em></p>
+<p>Evidence for exact line pathways comes mainly from cadaver dissection and clinical observation rather than large controlled trials, so the anatomical continuity is well documented while claims about how strongly tension actually transmits along a full line in living, moving bodies are still being tested.</p>
+  </main>
+  <footer class="spl-credit"><span class="spl-credit__meta">Ch2: The Physiology Lens — Breath, Circulation, Fascia, and Core (生理视角) (Level: College &middot; Language: EN &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
+</div>
+</body>
+</html>
