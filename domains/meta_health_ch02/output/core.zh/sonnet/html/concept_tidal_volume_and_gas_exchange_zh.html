@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>潮气量与气体交换 | Meta Health Ch02</title>
+<script>
+MathJax = {
+  loader: { load: ['[tex]/mathtools'] },
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']],
+         packages: { '[+]': ['mathtools'] } },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+footer.spl-credit span{display:block}
+footer.spl-credit .spl-credit__meta{margin-bottom:4px}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="潮气量与气体交换">潮气量与气体交换</h2>
+<p>每次呼吸,肺里的气体并不是全部换新——你吸入一口气,再呼出去,那一进一出的气体量,就叫作潮气量。安静坐着的时候，一次呼吸大约只交换半升左右的空气，肺里其实还留着大量"旧气"没有排出，这是正常的生理设计,而不是效率不足。</p>
+<p>现在往深处看:潮气量只是呼吸系统里的一个变量,它和呼吸频率一起,决定了每分钟真正进出肺部、参与气体交换的空气总量,这个总量叫作每分通气量。成年人安静时的每分通气量大约是 6 升左右。两者的关系可以写成一个简单的乘法:</p>
+$$V_E = V_T \times f$$
+<p>这里 $V_E$ 表示每分通气量(单位:升/分钟),$V_T$ 表示潮气量(单位:升/次),$f$ 表示呼吸频率(单位:次/分钟)。这个公式的价值在于提醒我们:身体调节呼吸,既可以靠"加深"(增大 $V_T$),也可以靠"加快"(增大 $f$)。运动时,身体两者都会用上——潮气量能翻两三倍,呼吸频率也会明显上升,这样才能让更多氧气进入肺泡,更多二氧化碳被排出。</p>
+<p>但要注意:并不是潮气量越大,交换效率就越高。如果只是把呼吸频率提得很快、每次却吸得很浅(潮气量很小),很大一部分气体根本到不了真正进行气体交换的肺泡,只是在气管、支气管里"往返打转",这部分空间叫作解剖无效腔。所以深而慢的呼吸,往往比浅而快的呼吸更有效率。</p>
+<p><strong>练习</strong>:小明安静时呼吸频率是 15 次/分钟,潮气量是 0.4 升。请计算他此时的每分通气量是多少升/分钟?</p>
+  </main>
+  <footer class="spl-credit"><span class="spl-credit__meta">元健康 Meta-Health Ch2: The Physiology Lens — Breath, Circulation, Fascia, and Core (生理视角) (Level: Core &middot; Language: ZH &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
+</div>
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>呼吸泵 | Meta Health Ch02</title>
+<script>
+MathJax = {
+  loader: { load: ['[tex]/mathtools'] },
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']],
+         packages: { '[+]': ['mathtools'] } },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<script src="https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.min.js"></script>
+<script>mermaid.initialize({ startOnLoad: true, theme: 'neutral' });</script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+footer.spl-credit span{display:block}
+footer.spl-credit .spl-credit__meta{margin-bottom:4px}
+.cb-figure{margin:24px 0;text-align:center}
+.cb-figure img{max-width:100%;height:auto;border:1px solid #e0e0d8;border-radius:6px}
+figcaption{font-size:.82rem;color:#666;margin-top:8px;font-style:italic;text-align:center}
+pre.mermaid{background:none;border:none;padding:0;overflow:visible;margin:16px 0}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="呼吸泵">呼吸泵</h2>
+<p>呼吸泵指呼吸运动过程中胸腔与腹腔内压力交替变化，从而推动静脉血和淋巴液从腹部流向胸部、返回心脏的机制。它与骨骼肌泵共同构成静脉回流的两大辅助动力,在心脏本身收缩力之外弥补了外周静脉血压过低、单靠心脏难以将血液从下肢和腹部拉回胸腔的问题。</p>
+<p>呼吸泵的工作原理建立在胸腔与腹腔压力的相互关系上。吸气时,膈肌收缩下降,胸腔容积增大,胸腔内压力降低,形成相对负压;同时膈肌下降压迫腹腔器官,使腹腔内压力升高。这一"胸腔降压、腹腔升压"的压力差,恰好沿着从腹部大静脉、下腔静脉到胸腔内静脉和右心房的方向,推动血液顺压力梯度向心脏方向流动。呼气时膈肌放松回升,胸腔压力回升、腹腔压力下降,压力差短暂减小,但静脉瓣膜阻止血液倒流,保证净效应仍是血液向心脏方向的流动。淋巴管同样具备类似的单向瓣膜结构,因此胸导管等大淋巴管中的淋巴液也随呼吸节律被间歇性地"抽吸"入静脉系统。</p>
+<p>举一个具体的场景：一名静息状态下的成年人,平静呼吸频率约为每分钟12～16次,每次吸气使胸膜腔内压从约-4毫米汞柱降至约-6毫米汞柱。虽然这一压力变化远小于心脏收缩产生的动脉压(约120毫米汞柱收缩压),但它作用于阻力很小的静脉和淋巴系统,足以显著促进血液和淋巴液的回流。深呼吸或腹式呼吸训练时,膈肌下降幅度更大,胸腔负压更明显,呼吸泵效应也随之增强，这也是瑜伽、太极等强调深长呼吸的锻炼方式常被认为有助于改善循环的生理基础之一。</p>
+<p>在实际问题中,理解呼吸泵有助于解释一些常见现象：长时间浅呼吸(如久坐、压力状态下)会减弱静脉回流,可能加重下肢水肿或静脉淤血;而腹式深呼吸练习则常被用作促进淋巴引流和减轻水肿的辅助手段。此外,呼吸泵与骨骼肌泵(行走时小腿肌肉收缩挤压深静脉)协同工作,二者共同解释了为何久坐不动的人更容易出现下肢静脉血液淤积,而适度活动加上深呼吸能有效改善这一问题。</p>
+  </main>
+  <footer class="spl-credit"><span class="spl-credit__meta">Ch2: The Physiology Lens — Breath, Circulation, Fascia, and Core (生理视角) (Level: College &middot; Language: ZH &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
+</div>
+</body>
+</html>
