@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>五脏操对照表 | Meta Health Ch03</title>
+<script>
+MathJax = {
+  loader: { load: ['[tex]/mathtools'] },
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']],
+         packages: { '[+]': ['mathtools'] } },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<script src="https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.min.js"></script>
+<script>mermaid.initialize({ startOnLoad: true, theme: 'neutral' });</script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+footer.spl-credit span{display:block}
+footer.spl-credit .spl-credit__meta{margin-bottom:4px}
+.cb-figure{margin:24px 0;text-align:center}
+.cb-figure img{max-width:100%;height:auto;border:1px solid #e0e0d8;border-radius:6px}
+figcaption{font-size:.82rem;color:#666;margin-top:8px;font-style:italic;text-align:center}
+pre.mermaid{background:none;border:none;padding:0;overflow:visible;margin:16px 0}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="五脏操对照表">五脏操对照表</h2>
+<p><strong>定义。</strong> 五脏操对照表,是把五个动作放在同一张表里比较:每个动作的主要身体动作、对应的目标脏器、所属的"五行"阶段,以及它依据的经络或生理机制。这里的对应关系属于中医(Traditional Chinese Medicine,TCM)的说法;表中"生理机制"一列则是现代运动生理学能解释的部分,两者分开读,不要混为一谈。</p>
+<p>| 动作 | 主要身体动作 | 目标脏器 | 五行阶段 | 经络(中医说法) | 生理机制(现代解释) | |---|---|---|---|---|---| | 第一式 | 双臂上举、扩胸深吸气 | 肺 | 金 | 手太阴肺经 | 胸廓扩张,增加呼吸肌活动和潮气量 | | 第二式 | 躯干前屈、后伸 | 肾 | 水 | 足少阴肾经、腰背部 | 腰背肌与核心肌群收缩,脊柱活动度增加 | | 第三式 | 躯干侧旋、侧屈 | 肝 | 木 | 足厥阴肝经、胆经 | 腹斜肌参与,拉伸胸胁部软组织 | | 第四式 | 双臂摆动、原地踏步 | 心 | 火 | 手少阴心经 | 大肌群参与,心率上升,心输出量增加 | | 第五式 | 腹式呼吸、按摩腹部 | 脾 | 土 | 足太阴脾经 | 膈肌下降,腹压变化,有助于肠道蠕动 |</p>
+<p><em>说明:此表为示意性编排,各流派的动作顺序和命名不尽相同。</em></p>
+<p><strong>示例。</strong> 以第四式为例,查表可知它属于"心—火",动作为踏步摆臂。用现代数据检验:一位 20 岁学生静息心率约 70 次/分,每搏输出量约 70 mL,则心输出量为</p>
+$$
+CO = HR \times SV = 70 \times 70\ \text{mL} = 4900\ \text{mL/min} \approx 4.9\ \text{L/min}
+$$
+<p>踏步 5 分钟后,心率升到 100 次/分,每搏输出量升到 80 mL:</p>
+$$
+CO = 100 \times 80 = 8000\ \text{mL/min} = 8.0\ \text{L/min}
+$$
+<p>心输出量增加约 63%。这说明该式的实际效果是有氧运动对循环系统的作用。至于"补心火"或"手少阴心经"的说法,TCM 中有此对应,但无法通过心输出量这类指标检验。</p>
+<p><strong>问题应用。</strong> </p>
+<p><em>问题 1:</em> 一位久坐的办公室人员说自己"胸闷、呼吸浅",想选一式缓解。</p>
+<li>步骤一:症状与呼吸有关,查表,对应第一式(肺)。</li>
+<li>步骤二:看生理机制列:扩胸与深吸气可活动胸廓、增加通气。</li>
+<li>步骤三:结论:先练第一式较合理。若胸闷伴随胸痛或气促,应先就医,不应只靠体操。</li>
+<p><em>问题 2:</em> 若时间只够做两式,想兼顾心肺耐力与腰背灵活性,怎么选?</p>
+<li>步骤一:心肺耐力需要大肌群持续运动,选第四式。</li>
+<li>步骤二:腰背灵活性对应第二式的前屈后伸。</li>
+<li>步骤三:选第四式与第二式。</li>
+<p><strong>要点。</strong> 读这张表时,按"动作→脏器→机制"的顺序查找;选择动作时,以"生理机制"列的效果为实际依据,"五行"和"经络"列则作为理解 TCM 框架的参照。</p>
+  </main>
+  <footer class="spl-credit"><span class="spl-credit__meta">Ch3: The Five-Organ Exercises (五脏操) (Level: College &middot; Language: ZH &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
+</div>
+</body>
+</html>

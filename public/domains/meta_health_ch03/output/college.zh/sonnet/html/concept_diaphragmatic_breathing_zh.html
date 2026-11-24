@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>腹式呼吸 | Meta Health Ch03</title>
+<script>
+MathJax = {
+  loader: { load: ['[tex]/mathtools'] },
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']],
+         packages: { '[+]': ['mathtools'] } },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<script src="https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.min.js"></script>
+<script>mermaid.initialize({ startOnLoad: true, theme: 'neutral' });</script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+footer.spl-credit span{display:block}
+footer.spl-credit .spl-credit__meta{margin-bottom:4px}
+.cb-figure{margin:24px 0;text-align:center}
+.cb-figure img{max-width:100%;height:auto;border:1px solid #e0e0d8;border-radius:6px}
+figcaption{font-size:.82rem;color:#666;margin-top:8px;font-style:italic;text-align:center}
+pre.mermaid{background:none;border:none;padding:0;overflow:visible;margin:16px 0}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="腹式呼吸">腹式呼吸</h2>
+<p><strong>定义。</strong> 腹式呼吸(又称膈肌呼吸)是以膈肌为主要动力的呼吸方式。吸气时膈肌收缩、下降,胸腔纵向扩大,肺内压低于大气压,空气进入肺底部,腹部随之自然隆起;呼气时膈肌放松上抬,腹部回落。相对地,胸式呼吸主要依靠肋间肌和颈肩部辅助肌,幅度浅、位置偏上。</p>
+<p><strong>与副交感神经的关系。</strong> 缓慢而深的呼吸能增加迷走神经的传出活动,使心率降低。生理学上有一个可观察的现象:呼吸性窦性心律不齐——吸气时心率略升,呼气时略降。呼气延长、呼吸变慢(约每分钟 6 次)时,这种心率随呼吸的波动幅度增大,心率变异性随之上升,常被用作副交感活动增强的指标。此外,深而慢的呼吸会刺激肺牵张感受器和压力感受器,进一步抑制交感兴奋。证据表明,这类练习能在短期内降低静息心率和主观紧张感,但对长期疾病的疗效因人群而异,应结合具体研究判断。</p>
+<p>在 TCM 中,类似的练习被称为“腹式吐纳”或“气沉丹田”,强调呼吸深长、意念下沉;这里只需把它理解为一种呼吸训练的传统说法,具体机制以上述生理学解释为准。</p>
+<p><strong>练习步骤。</strong></p>
+<li>仰卧或端坐,一手放胸前,一手放肚脐上方。</li>
+<li>用鼻缓慢吸气约 4 秒,使腹部手被顶起,胸前的手基本不动。</li>
+<li>用口或鼻缓慢呼气约 6 秒,腹部回落。</li>
+<li>连续做 5 至 10 分钟。</li>
+<p><strong>例题。</strong> 某同学静息时每分钟呼吸 15 次,改为腹式呼吸后,每次吸气 4 秒、呼气 6 秒。求:(1)新的呼吸频率;(2)若每次潮气量为 $500\ \text{mL}$,每分通气量是多少?</p>
+<p>解:(1)每个呼吸周期为 $4+6=10$ 秒,所以每分钟的呼吸次数为</p>
+$$\frac{60\ \text{s}}{10\ \text{s}} = 6\ \text{次/分}$$
+<p>(2)每分通气量等于潮气量乘以呼吸频率:</p>
+$$500\ \text{mL} \times 6 = 3000\ \text{mL/min}$$
+<p>原来是 $500 \times 15 = 7500\ \text{mL/min}$。通气量下降,是因为潮气量不变而频率降低;实际练习中,腹式呼吸往往使潮气量增大,因此通气量不会降得这样多,也不应出现头晕。</p>
+<p><strong>应用题。</strong> 一名学生考前心跳加快,静息心率为 96 次/分。他练习腹式呼吸 5 分钟后,心率降为 84 次/分。</p>
+<p>(a)心率下降了多少?</p>
+$$\frac{96-84}{96}\times 100\% = 12.5\%$$
+<p>(b)判断:这一变化与副交感神经活动增强的方向一致。但单次测量还受姿势、情绪、咖啡因等因素影响,要下结论,应在相同条件下重复测量并取平均。</p>
+<p><strong>注意事项。</strong> 若练习中出现头晕、手脚发麻,说明可能过度换气,应恢复自然呼吸;有严重心肺疾病者应先咨询医生。</p>
+  </main>
+  <footer class="spl-credit"><span class="spl-credit__meta">Ch3: The Five-Organ Exercises (五脏操) (Level: College &middot; Language: ZH &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
+</div>
+</body>
+</html>

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Concept Book: Designing Your Five-Organ Routine — Meta Health Ch03</title>
+<script>
+MathJax = {
+  loader: { load: ['[tex]/mathtools'] },
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']],
+         packages: { '[+]': ['mathtools'] } },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<script src="https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.min.js"></script>
+<script>mermaid.initialize({ startOnLoad: true, theme: 'neutral' });</script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+footer.spl-credit span{display:block}
+footer.spl-credit .spl-credit__meta{margin-bottom:4px}
+.cb-figure{margin:24px 0;text-align:center}
+.cb-figure img{max-width:100%;height:auto;border:1px solid #e0e0d8;border-radius:6px}
+figcaption{font-size:.82rem;color:#666;margin-top:8px;font-style:italic;text-align:center}
+pre.mermaid{background:none;border:none;padding:0;overflow:visible;margin:16px 0}
+.page{display:grid;grid-template-columns:260px 1fr;min-height:100vh}
+nav.toc{position:sticky;top:0;height:100vh;overflow-y:auto;
+        background:#1e3a5f;color:#e8f0fe;padding:24px 16px}
+nav.toc h2{font-size:.75rem;letter-spacing:.1em;text-transform:uppercase;
+           color:#90b4e8;margin-bottom:14px;font-family:system-ui,sans-serif}
+nav.toc ol{list-style:decimal inside;padding:0}
+nav.toc li{margin-bottom:7px;font-size:.85rem;line-height:1.4;font-family:system-ui,sans-serif}
+nav.toc a{color:#a8c8f0;text-decoration:none}
+nav.toc a:hover{color:#fff}
+nav.toc li.toc-target{font-weight:700}
+nav.toc li.toc-target a{color:#fff}
+main{padding:48px 64px;max-width:860px}
+h1.book-title{font-size:2rem;color:#1e3a5f;margin-bottom:4px}
+.subtitle{color:#666;margin-bottom:48px;font-size:1rem;font-style:italic;font-family:system-ui,sans-serif}
+section{margin-bottom:56px;border-top:1px solid #e0e0d8;padding-top:40px}
+section:first-of-type{border-top:none;padding-top:0}
+@media(max-width:768px){.page{grid-template-columns:1fr}
+nav.toc{position:relative;height:auto}}
+</style>
+</head>
+<body>
+<div class="page">
+  <nav class="toc">
+    <h2>Contents</h2>
+    <ol>
+<li><a href="concept_five_phase_correspondences.html">Five-Phase Correspondences</a></li>
+<li><a href="concept_twelve_primary_meridians.html">The Twelve Primary Meridians</a></li>
+<li><a href="concept_myofascial_lines.html">Myofascial Lines</a></li>
+<li><a href="concept_skeletal_muscle_pump.html">The Skeletal-Muscle Pump</a></li>
+<li><a href="concept_thoracic_mobility.html">Thoracic Mobility</a></li>
+<li><a href="concept_yongquan_point.html">The Yongquan Point (涌泉, KI-1)</a></li>
+<li><a href="concept_body_lifting_tishen.html">Body Lifting (Tishen, 提身)</a></li>
+<li><a href="concept_diaphragmatic_breathing.html">Diaphragmatic Breathing</a></li>
+<li><a href="concept_heart_kidney_interaction.html">Heart–Kidney Interaction (心肾相交)</a></li>
+<li><a href="concept_intra_abdominal_pressure.html">Intra-Abdominal Pressure</a></li>
+<li><a href="concept_squat_mechanics.html">Squat Mechanics</a></li>
+<li><a href="concept_chest_expansion_kuoxiong.html">Chest Expansion (Kuoxiong, 扩胸)</a></li>
+<li><a href="concept_deep_squat_shendun.html">Deep Squat (Shendun, 深蹲)</a></li>
+<li><a href="concept_rib_fanning_shanlei.html">Rib Fanning (Shanlei, 扇肋)</a></li>
+<li><a href="concept_torso_twist_niuzhuan.html">Torso Twist (Niuzhuan, 扭转)</a></li>
+<li><a href="concept_five_organ_movement_matrix.html">The Five-Organ Movement Matrix</a></li>
+<li><a href="concept_dantian.html">Dantian (丹田)</a></li>
+<li><a href="concept_generating_cycle_xiangsheng.html">The Generating Cycle (Xiangsheng, 相生)</a></li>
+<li><a href="concept_breath_first_sequence.html">The Breath-First Sequence</a></li>
+<li><a href="concept_generating_cycle_sequence.html">The Generating-Cycle Sequence (相生顺序)</a></li>
+<li><a href="concept_safe_practice_and_modification.html">Safe Practice and Modifications</a></li>
+<li><a href="concept_sealing_finish.html">The Sealing Finish (收势)</a></li>
+<li><a href="concept_top_to_bottom_sequence.html">The Top-to-Bottom Sequence</a></li>
+<li class="toc-target"><a href="concept_five_organ_routine_design.html">Designing Your Five-Organ Routine</a></li>
+</ol>
+  </nav>
+  <main>
+    <h1 class="book-title">Concept Book: Designing Your Five-Organ Routine</h1>
+    <p class="subtitle">Meta Health Ch03 &middot; Generated by SPL</p>
+    <section>
+      <section>
+      <h2 id="payoff">Payoff</h2>
+<p>Every earlier concept in this book answered one narrow question: how to breathe, which order to move in, how to stay safe, how to end. Designing Your Five-Organ Routine puts those answers together into a single 5–10 minute practice that is yours. It is the natural endpoint because a routine is where separate skills must be combined and fitted to a real person, a real goal, and a real time of day.</p>
+<p><strong>What the design involves.</strong> You make four decisions.</p>
+<li><strong>Choose a sequencing logic.</strong> The Top-to-Bottom Sequence moves from the upper body down to the lower body. It suits a morning start or a desk break, when you want to loosen the shoulders and neck first and then wake up the legs. The Generating-Cycle Sequence (相生顺序) follows the order in which TCM says each of the Five Phases gives rise to the next. It suits a practice where you want a fixed, repeatable order tied to the five organs.</li>
+<li><strong>Pair each movement with the breath.</strong> The Breath-First Sequence means you settle the breath before adding movement. Then each movement gets one breath cue, such as inhale as the arms rise and exhale as they lower.</li>
+<li><strong>Scale each movement to your body.</strong> Safe Practice and Modifications supplies the adjustments: a smaller range, a seated version, or a skipped movement.</li>
+<li><strong>End with the Sealing Finish (收势).</strong> Take a few slow breaths and bring the hands to rest below the navel.</li>
+<p><strong>Worked example.</strong> Suppose you have 8 minutes before work and mild stiffness in the lower back. First, choose the top-to-bottom order, because you want to loosen up and move from the neck to the legs. Second, spend the first minute on slow breathing, with no movement. Third, give each of the five movements about 90 seconds, which comes to 7.5 minutes of movement. Fourth, replace the deep forward bend with a gentle seated version to protect your back. Fifth, spend the last 30 seconds on the sealing finish. The total is $60 + 5 \times 90 + 30 = 540$ seconds, or 9 minutes. That is over your 8-minute limit, so cut each movement to 75 seconds. The new total is $60 + 5 \times 75 + 30 = 465$ seconds, about 7.75 minutes, and it fits.</p>
+<p><strong>Problem-solving application.</strong> Treat your routine as a design problem with constraints, and test each draft against four questions. Does it fit the time? Does the sequence match the goal and time of day? Does every movement have a breath cue? Can you do every movement without pain? If the answer to the last question is no, change the movement, not your tolerance. In the evening you might choose the generating-cycle order with slower breathing and a longer sealing finish. In the morning you might use top-to-bottom order with brisker pacing. The same pieces fit together in different ways for different goals.</p>
+<p>This section lists no further applications because the routine is the use itself: something you can do daily and adjust as your body and schedule change.</p>
+<p><strong>Your turn.</strong> Write down your available minutes, your goal, and any body limits. Pick a sequence, assign a breath cue to each movement, and time one full run-through. Then practice it for a week and note what feels easy, what feels awkward, and what you would change. The first draft is rarely the final one, and revising it is part of the design.</p>
+    </section>
+    </section>
+    <footer class="spl-credit"><span class="spl-credit__meta">Ch3: The Five-Organ Exercises (五脏操) (Level: College &middot; Language: EN &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
+  </main>
+</div>
+</body>
+</html>

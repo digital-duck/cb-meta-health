@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Concept Book: The Five-Phase Body Map — Meta Health Ch01</title>
+<script>
+MathJax = {
+  loader: { load: ['[tex]/mathtools'] },
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']],
+         packages: { '[+]': ['mathtools'] } },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<script src="https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.min.js"></script>
+<script>mermaid.initialize({ startOnLoad: true, theme: 'neutral' });</script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+footer.spl-credit span{display:block}
+footer.spl-credit .spl-credit__meta{margin-bottom:4px}
+.cb-figure{margin:24px 0;text-align:center}
+.cb-figure img{max-width:100%;height:auto;border:1px solid #e0e0d8;border-radius:6px}
+figcaption{font-size:.82rem;color:#666;margin-top:8px;font-style:italic;text-align:center}
+pre.mermaid{background:none;border:none;padding:0;overflow:visible;margin:16px 0}
+.page{display:grid;grid-template-columns:260px 1fr;min-height:100vh}
+nav.toc{position:sticky;top:0;height:100vh;overflow-y:auto;
+        background:#1e3a5f;color:#e8f0fe;padding:24px 16px}
+nav.toc h2{font-size:.75rem;letter-spacing:.1em;text-transform:uppercase;
+           color:#90b4e8;margin-bottom:14px;font-family:system-ui,sans-serif}
+nav.toc ol{list-style:decimal inside;padding:0}
+nav.toc li{margin-bottom:7px;font-size:.85rem;line-height:1.4;font-family:system-ui,sans-serif}
+nav.toc a{color:#a8c8f0;text-decoration:none}
+nav.toc a:hover{color:#fff}
+nav.toc li.toc-target{font-weight:700}
+nav.toc li.toc-target a{color:#fff}
+main{padding:48px 64px;max-width:860px}
+h1.book-title{font-size:2rem;color:#1e3a5f;margin-bottom:4px}
+.subtitle{color:#666;margin-bottom:48px;font-size:1rem;font-style:italic;font-family:system-ui,sans-serif}
+section{margin-bottom:56px;border-top:1px solid #e0e0d8;padding-top:40px}
+section:first-of-type{border-top:none;padding-top:0}
+@media(max-width:768px){.page{grid-template-columns:1fr}
+nav.toc{position:relative;height:auto}}
+</style>
+</head>
+<body>
+<div class="page">
+  <nav class="toc">
+    <h2>Contents</h2>
+    <ol>
+<li><a href="concept_qi.html">Qi (气)</a></li>
+<li><a href="concept_five_phases_wuxing.html">The Five Phases (Wuxing, 五行)</a></li>
+<li><a href="concept_blood_xue.html">Blood (Xue, 血)</a></li>
+<li><a href="concept_essence_jing.html">Essence (Jing, 精)</a></li>
+<li><a href="concept_five_zang_organs.html">The Five Zang Organs (五脏)</a></li>
+<li><a href="concept_body_fluids_jinye.html">Body Fluids (Jinye, 津液)</a></li>
+<li><a href="concept_controlling_cycle_xiangke.html">The Controlling Cycle (Xiangke, 相克)</a></li>
+<li><a href="concept_six_fu_organs.html">The Six Fu Organs (六腑)</a></li>
+<li><a href="concept_generating_cycle_xiangsheng.html">The Generating Cycle (Xiangsheng, 相生)</a></li>
+<li><a href="concept_meridian_jingluo.html">Meridians (Jingluo, 经络)</a></li>
+<li><a href="concept_qi_blood_relationship.html">The Qi–Blood Relationship</a></li>
+<li><a href="concept_spirit_shen.html">Spirit (Shen, 神)</a></li>
+<li><a href="concept_yin_yang.html">Yin and Yang (阴阳)</a></li>
+<li><a href="concept_overacting_and_insulting.html">Overacting and Insulting (相乘相侮)</a></li>
+<li><a href="concept_qi_stagnation_blood_stasis.html">Qi Stagnation and Blood Stasis (气滞血瘀)</a></li>
+<li><a href="concept_three_treasures_jing_qi_shen.html">The Three Treasures: Jing, Qi, Shen (精气神)</a></li>
+<li><a href="concept_zang_fu_pairing.html">Zang–Fu Pairing (表里)</a></li>
+<li><a href="concept_dantian.html">Dantian (丹田)</a></li>
+<li><a href="concept_five_phase_correspondences.html">Five-Phase Correspondences</a></li>
+<li><a href="concept_harmony_as_health.html">Health as Harmony (阴平阳秘)</a></li>
+<li><a href="concept_heart_kidney_interaction.html">Heart–Kidney Interaction (心肾相交)</a></li>
+<li><a href="concept_liver_spleen_relationship.html">The Liver–Spleen Relationship</a></li>
+<li><a href="concept_prenatal_postnatal_qi.html">Prenatal and Postnatal Qi (先天与后天)</a></li>
+<li><a href="concept_triple_burner_sanjiao.html">The Triple Burner (Sanjiao, 三焦)</a></li>
+<li><a href="concept_twelve_primary_meridians.html">The Twelve Primary Meridians</a></li>
+<li class="toc-target"><a href="concept_five_phase_body_map.html">The Five-Phase Body Map</a></li>
+</ol>
+  </nav>
+  <main>
+    <h1 class="book-title">Concept Book: The Five-Phase Body Map</h1>
+    <p class="subtitle">Meta Health Ch01 &middot; Generated by SPL</p>
+    <section>
+      <section>
+      <h2 id="payoff">Payoff</h2>
+<p>The Five-Phase Body Map is the endpoint because it asks you to use everything you have learned at once. Each earlier concept describes one piece of a body. The map describes how those pieces connect. Its purpose is to take an everyday sign, such as irritability together with a poor appetite, and trace it through organ relationships and the generating and controlling cycles. It does this instead of treating the sign as an isolated complaint.</p>
+<p><strong>How the pieces come together</strong></p>
+<p>Each earlier concept supplies one tool:</p>
+<p>| Concept | What it contributes to the map | |---|---| | Five-Phase Correspondences | The table linking each phase to an organ, tissue, emotion, and flavor | | The generating and controlling cycles | The directions in which one phase supports or restrains another | | The Liver–Spleen Relationship | A specific controlling-cycle pathway, Wood over Earth | | The Triple Burner | Upper, middle, and lower regions through which fluids and qi travel | | Dantian | Three centers of focus along the trunk's midline | | Prenatal and Postnatal Qi | The constitutional root and the daily root fed by food and breathing | | The Twelve Primary Meridians | The channels that connect organs and the surface | | Health as Harmony | The standard against which a pattern is judged |</p>
+<p><strong>Worked example</strong></p>
+<p>Take a student during exams who is irritable, snaps at classmates, and has little appetite. Here is how the map reads this, step by step.</p>
+<li><em>Locate the signs in the table.</em> In TCM, irritability corresponds to the Liver (Wood). Poor appetite corresponds to the Spleen (Earth).</li>
+<li><em>Choose the cycle.</em> Wood controls Earth. TCM holds that when Liver qi is constrained by stress, it can overact on the Spleen and weaken digestion.</li>
+<li><em>Place it in the burners.</em> Both organs act in the middle burner, the digestive region, so the two signs share a location.</li>
+<li><em>Check the roots.</em> Poor intake weakens postnatal qi. If it continues, it draws on the prenatal reserve.</li>
+<li><em>Trace consequences.</em> If rest suffers too, the Heart–Kidney Interaction may also be affected.</li>
+<p>The resulting plan has three parts: ease the stress, eat regular warm meals, and sleep consistently. Whether TCM's explanation is the correct mechanism is a separate question. Stress is known to suppress appetite and disturb digestion, so these steps are sensible in any case.</p>
+<p><strong>Problem-solving practice</strong></p>
+<p>Apply the same sequence to a new case. Someone has cold hands, low back soreness, and a tendency to worry. Find each sign in the table. Decide which cycle links the organs involved. Locate the signs among the three burners. Then ask which root is more likely under strain. Write the chain down, and notice where one sign could belong to several pathways. That ambiguity is the main limit of the map. It organizes hypotheses, and it does not diagnose. Persistent or severe symptoms call for a clinician, and the map cannot replace one.</p>
+<p><strong>Going further</strong></p>
+<p>No further concept builds on this one, so the next step is practice. For a week, record one sign each day and trace it through the table, the cycles, and the burners. You will be applying the whole book to your own observations.</p>
+    </section>
+    </section>
+    <footer class="spl-credit"><span class="spl-credit__meta">Ch1: TCM Foundations — Yin-Yang, Qi-Blood, and the Five Phases (中医基础) (Level: College &middot; Language: EN &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
+  </main>
+</div>
+</body>
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>深蹲力学 | Meta Health Ch03</title>
+<script>
+MathJax = {
+  loader: { load: ['[tex]/mathtools'] },
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']],
+         packages: { '[+]': ['mathtools'] } },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<script src="https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.min.js"></script>
+<script>mermaid.initialize({ startOnLoad: true, theme: 'neutral' });</script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+footer.spl-credit span{display:block}
+footer.spl-credit .spl-credit__meta{margin-bottom:4px}
+.cb-figure{margin:24px 0;text-align:center}
+.cb-figure img{max-width:100%;height:auto;border:1px solid #e0e0d8;border-radius:6px}
+figcaption{font-size:.82rem;color:#666;margin-top:8px;font-style:italic;text-align:center}
+pre.mermaid{background:none;border:none;padding:0;overflow:visible;margin:16px 0}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="深蹲力学">深蹲力学</h2>
+<h3 id="定义">定义</h3>
+<p>深蹲力学是指在下蹲与站起过程中,髋、膝、踝三个关节协调屈伸,同时躯干保持稳定的运动模式。下蹲时,髋关节屈曲、膝关节屈曲、踝关节背屈(小腿向前倾);站起时,三者同步伸展。躯干通过腹部与竖脊肌的共同收缩维持中立脊柱,把地面产生的力有效传递到杠铃或身体重心。</p>
+<p>力学上的核心是<strong>力矩</strong>。外力(体重或杠铃重力)作用线与某个关节中心之间的水平距离称为力臂,力矩为:</p>
+$$M = F \times d$$
+<p>其中 $F$ 为力的大小(N),$d$ 为力臂(m),$M$ 的单位为 N·m。躯干前倾越多,髋的力臂越大,髋部负担越重;膝前移越多,膝的力臂越大,膝部负担越重。因此,不同的下蹲姿势只是在髋、膝之间重新分配负荷,并不存在对所有人都"唯一正确"的姿势。</p>
+<h3 id="示例">示例</h3>
+<p>一名体重 $80\ \text{kg}$ 的学生,肩扛 $60\ \text{kg}$ 杠铃,系统总质量 $140\ \text{kg}$。取 $g = 9.8\ \text{m/s}^2$,总重力为:</p>
+$$F = 140 \times 9.8 = 1372\ \text{N}$$
+<p>假设该重力作用线通过足中部,下蹲到底部时,它与髋关节中心的水平距离为 $0.20\ \text{m}$。为简化起见,这里把全部重力都算在髋以上,实际上腿部自身的重量并不作用在髋的力矩上,所以这只是粗略估算:</p>
+$$M_{\text{髋}} = 1372 \times 0.20 \approx 274\ \text{N·m}$$
+<p>如果该学生躯干更直立,力臂缩短到 $0.15\ \text{m}$,则:</p>
+$$M_{\text{髋}} = 1372 \times 0.15 \approx 206\ \text{N·m}$$
+<p>髋部力矩下降约 25%,但此时膝关节通常需要更多前移,膝部力矩会相应增加。</p>
+<h3 id="问题解决应用">问题解决应用</h3>
+<p><strong>情境:</strong> 某人下蹲到底部时脚跟抬起、躯干过度前倾。如何诊断与调整?</p>
+<li><strong>找出限制因素。</strong> 脚跟抬起通常提示踝背屈活动度不足。可做靠墙膝触墙测试:脚尖离墙约 $10\ \text{cm}$ 以上仍能让膝盖触墙,通常说明踝活动度基本够用。</li>
+<li><strong>判断是活动度还是控制问题。</strong> 若徒手深蹲时脚跟不再抬起,问题多半在负重时的躯干控制和核心稳定;若徒手也抬跟,则优先改善踝活动度或使用小垫片(如举重鞋)。</li>
+<li><strong>调整变量。</strong> 适当加宽站距、让脚尖外展约 $15^\circ$–$30^\circ$,可以减少髋部的受限;高脚杯式深蹲把重量放在身体前方,有助于躯干保持直立。</li>
+<li><strong>检查躯干。</strong> 全程保持脊柱中立,下蹲前先吸气并收紧腹部,形成腹内压支撑,避免骨盆在底部后卷。</li>
+<p><strong>常见错误对照:</strong></p>
+<p>| 现象 | 可能原因 | 调整方向 | |---|---|---| | 膝盖内扣 | 臀中肌控制不足 | 弹力带辅助、降低负重 | | 脚跟抬起 | 踝背屈受限 | 踝活动度训练、垫片 | | 底部骨盆后卷 | 髋屈曲受限或蹲得过深 | 限制深度、改善髋活动度 | | 重心前移至脚尖 | 躯干控制不足 | 高脚杯深蹲、减轻重量 |</p>
+<p>总之,分析深蹲时先看重心是否稳定落在足中部,再依次检查踝、膝、髋的活动与躯干姿势,逐一定位限制环节。</p>
+  </main>
+  <footer class="spl-credit"><span class="spl-credit__meta">Ch3: The Five-Organ Exercises (五脏操) (Level: College &middot; Language: ZH &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
+</div>
+</body>
+</html>

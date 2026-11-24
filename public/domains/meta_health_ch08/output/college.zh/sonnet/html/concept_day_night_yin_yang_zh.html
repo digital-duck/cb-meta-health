@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>昼夜阴阳消长 | Meta Health Ch08</title>
+<script>
+MathJax = {
+  loader: { load: ['[tex]/mathtools'] },
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']],
+         packages: { '[+]': ['mathtools'] } },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<script src="https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.min.js"></script>
+<script>mermaid.initialize({ startOnLoad: true, theme: 'neutral' });</script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+footer.spl-credit span{display:block}
+footer.spl-credit .spl-credit__meta{margin-bottom:4px}
+.cb-figure{margin:24px 0;text-align:center}
+.cb-figure img{max-width:100%;height:auto;border:1px solid #e0e0d8;border-radius:6px}
+figcaption{font-size:.82rem;color:#666;margin-top:8px;font-style:italic;text-align:center}
+pre.mermaid{background:none;border:none;padding:0;overflow:visible;margin:16px 0}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="昼夜阴阳消长">昼夜阴阳消长</h2>
+<h3 id="定义">定义</h3>
+<p>中医认为,一天之中人体的阴阳也随昼夜起伏:从子夜到正午,阳气逐渐生长,阴气逐渐减退;从正午到子夜,阴气逐渐生长,阳气逐渐减退。这就是"昼夜阴阳消长"。按这一说法,白天属阳,适合活动、工作和消耗;夜晚属阴,适合安静、睡眠和储存。这是一种用来安排作息的传统框架,不是可以用数字计算的量。</p>
+<p>与之相对应的,是现代生理学中真实可测的昼夜节律(生物钟),大约以24小时为周期。例如:</p>
+<p>| 指标 | 大致规律 | |---|---| | 核心体温 | 清晨最低,傍晚最高,相差约 $0.5\,^\circ\mathrm{C}$ 至 $1\,^\circ\mathrm{C}$ | | 皮质醇 | 醒后不久达到高峰,夜间降到低谷 | | 褪黑素 | 天黑后升高,夜间达到高峰 | | 心率与血压 | 白天较高,睡眠中下降 |</p>
+<p>这两套说法的时段划分大体相近,但中医的"阳气""阴气"是传统概念,并不等同于上述任何一项指标。</p>
+<h3 id="示例">示例</h3>
+<p>小林是一名学生,作息如下:</p>
+<li>23:30 入睡,7:00 起床,早餐后上课;</li>
+<li>12:00 午饭后短暂休息;</li>
+<li>晚上 20:00 之后做轻松的复习,22:30 关闭屏幕。</li>
+<p>按中医的说法,7:00 至 12:00 属阳气渐盛之时,适合安排最费脑力的课程;午后至傍晚阳气渐退,安排练习与运动;入夜后阴气渐盛,应减少兴奋性活动,准备入睡。</p>
+<p>用现代生理学解释,这样安排也有道理:早晨皮质醇高、体温上升,警觉性较好;夜间强光会抑制褪黑素分泌,推迟入睡。睡眠时长也可以直接计算:</p>
+$$
+\text{睡眠时长} = 7{:}00 - 23{:}30 = 7.5\ \text{小时}
+$$
+<p>处在成年人常被推荐的 7 至 9 小时范围内。</p>
+<h3 id="问题应用">问题应用</h3>
+<p>小王是夜班护士,22:00 上班,6:00 下班,回家后想马上睡觉,但总在中午前后醒来。请分析并提出建议。</p>
+<p><strong>第一步:找出冲突。</strong>中医认为,他在阴气渐盛的夜晚工作,又在阳气渐生的白天睡觉,与昼夜阴阳消长的节奏相反。现代的说法是:白天光照和体温上升会让睡眠变浅、变短,这是昼夜节律与作息错位的表现。</p>
+<p><strong>第二步:提出可操作的措施。</strong></p>
+<li>下班回家路上戴深色墨镜,减少晨光照射;</li>
+<li>卧室使用遮光窗帘,保持安静和凉爽;</li>
+<li>睡眠分为主睡眠(如 7:30–13:00)和上班前的 20–30 分钟小睡;</li>
+<li>上班前半段在明亮环境中工作,临近下班时调暗光线,咖啡因最迟在上班后约 6 小时停用;</li>
+<li>休息日也尽量保持相近的睡眠时间,避免节律反复被打乱。</li>
+<p><strong>第三步:评估边界。</strong>长期倒班会增加疲劳和睡眠障碍的风险,这是有研究支持的结论。而"子时必须入睡,否则伤阴"这类具体说法,缺乏可靠的证据。若失眠持续超过数周,或白天严重嗜睡,应就医评估。</p>
+<p><strong>小结:</strong>昼夜阴阳消长提醒人们让作息顺应昼夜的节律。真正用来解决问题的,是对光照、睡眠时长和时间安排的具体调整。</p>
+  </main>
+  <footer class="spl-credit"><span class="spl-credit__meta">Ch8: Rhythms — Sleep, the Organ Clock, and the Seasons (天人相应) (Level: College &middot; Language: ZH &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
+</div>
+</body>
+</html>

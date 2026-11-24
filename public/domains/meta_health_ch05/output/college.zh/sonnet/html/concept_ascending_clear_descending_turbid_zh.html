@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>升清降浊 | Meta Health Ch05</title>
+<script>
+MathJax = {
+  loader: { load: ['[tex]/mathtools'] },
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']],
+         packages: { '[+]': ['mathtools'] } },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<script src="https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.min.js"></script>
+<script>mermaid.initialize({ startOnLoad: true, theme: 'neutral' });</script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+footer.spl-credit span{display:block}
+footer.spl-credit .spl-credit__meta{margin-bottom:4px}
+.cb-figure{margin:24px 0;text-align:center}
+.cb-figure img{max-width:100%;height:auto;border:1px solid #e0e0d8;border-radius:6px}
+figcaption{font-size:.82rem;color:#666;margin-top:8px;font-style:italic;text-align:center}
+pre.mermaid{background:none;border:none;padding:0;overflow:visible;margin:16px 0}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="升清降浊">升清降浊</h2>
+<p><strong>定义。</strong> 升清降浊是中医(TCM)对消化与水谷输布的一种概括。中医认为,脾主升,负责把饮食中的精微(“清”)向上输送,供养全身;胃主降,负责使食物下行、糟粕(“浊”)向下传导排出。两者一升一降、方向相反,各司其职。若方向紊乱,即清阳不升或浊阴不降,就会出现相应症状。</p>
+<p>用现代生理学的话说,这大致对应:胃的容受与排空、小肠的蠕动和吸收、结肠的传导。这是一种功能上的类比,不是严格的一一对应。</p>
+<p><strong>症状对照。</strong></p>
+<p>| 失常类型 | 中医描述 | 常见表现 | |---|---|---| | 脾气不升 | 清气不能上行 | 乏力、头昏沉、大便稀溏、身体困重 | | 胃气不降 | 浊气不能下行,反而上逆 | 腹胀、嗳气、恶心、反酸、便秘 |</p>
+<p><strong>例题。</strong> 一位大学生连续两周熬夜复习,晚餐常吃油腻外卖,且进食很快。近来他饭后上腹胀满,频繁嗳气,早晨起床觉得四肢沉重,大便偏稀。</p>
+<p>分析步骤:</p>
+<li>把症状分组。上腹胀、嗳气属于“浊气不降”(胃气上逆);四肢沉重、便稀属于“清气不升”(脾失健运)。</li>
+<li>找诱因。油腻、过快进食会加重胃的负担;熬夜、压力会干扰消化节律。</li>
+<li>判断方向。这是升降两方面同时失调,而不是单一问题。</li>
+<p><strong>问题解决应用。</strong> 针对上述情况,可从生活方式入手:</p>
+<li>减慢进食速度,每餐约 20 分钟,减少吞入空气(嗳气的常见原因之一)。</li>
+<li>晚餐减少油脂,避免饭后立即平卧,以利胃排空。一般的胃排空需要数小时,富含脂肪的餐食更慢。</li>
+<li>保持规律作息与适度活动,如饭后散步 10 到 15 分钟。</li>
+<li>记录症状日志:饭后 1 小时的胀气程度(0 到 10 分)、嗳气次数、大便性状,持续一到两周,观察是否随饮食改变而变化。</li>
+<p>需要注意,TCM 的方剂和针灸调理升降的疗效,高质量证据有限;而上述饮食与作息调整,在功能性消化不良中有较好的支持。</p>
+<p><strong>就医提示。</strong> 若出现体重不明原因下降、吞咽困难、呕血或黑便、持续呕吐、夜间痛醒或症状持续超过数周,应尽快就医检查,不能仅以“升降失调”解释。这些是现代医学中的警示信号,可能提示溃疡、反流性疾病或更严重的病变。</p>
+<p><strong>小结。</strong> 升清降浊是描述消化功能“上输精微、下排糟粕”的框架。它的实用价值在于帮助人把症状按方向分类,再对照饮食与作息逐项排查;而是否存在器质性疾病,需要现代医学检查来判断。</p>
+  </main>
+  <footer class="spl-credit"><span class="spl-credit__meta">Ch5: Eating as Internal Exercise (饮食即内脏运动) (Level: College &middot; Language: ZH &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
+</div>
+</body>
+</html>

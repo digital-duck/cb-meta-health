@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>肝脏首过代谢 | Meta Health Ch05</title>
+<script>
+MathJax = {
+  loader: { load: ['[tex]/mathtools'] },
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']],
+         packages: { '[+]': ['mathtools'] } },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<script src="https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.min.js"></script>
+<script>mermaid.initialize({ startOnLoad: true, theme: 'neutral' });</script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+footer.spl-credit span{display:block}
+footer.spl-credit .spl-credit__meta{margin-bottom:4px}
+.cb-figure{margin:24px 0;text-align:center}
+.cb-figure img{max-width:100%;height:auto;border:1px solid #e0e0d8;border-radius:6px}
+figcaption{font-size:.82rem;color:#666;margin-top:8px;font-style:italic;text-align:center}
+pre.mermaid{background:none;border:none;padding:0;overflow:visible;margin:16px 0}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="肝脏首过代谢">肝脏首过代谢</h2>
+<p><strong>定义。</strong> 肠道吸收的大部分营养物质(除大部分脂类经淋巴入血外)并不直接进入体循环,而是先经<strong>门静脉</strong>汇入肝脏。肝脏在这些血液流向全身之前先"过滤、加工、分配",这一过程称为肝脏首过代谢。它有三项核心任务:把多余的葡萄糖合成<strong>糖原</strong>储存;把脂类重新包装成脂蛋白运出;合成<strong>胆汁</strong>,帮助脂肪消化吸收。同样,口服药物和酒精也要先经过肝脏,一部分在到达全身前就被代谢掉。</p>
+<p><strong>为什么重要。</strong> 进餐后门静脉血中的葡萄糖浓度可远高于外周血,肝脏吸收其中相当一部分(常估计约三分之一到一半),使餐后血糖不至于过度升高;空腹时,肝脏又分解糖原、释放葡萄糖,维持血糖稳定。</p>
+<p><strong>例题。</strong> 一名成年人进食后,肠道吸收了 80 g 葡萄糖。假设肝脏首过摄取其中 30%,问进入体循环的葡萄糖有多少?若这部分被合成为糖原,相当于储存了多少能量?(葡萄糖约 4 kcal/g)</p>
+<p>解:</p>
+<li>肝脏摄取量:$80 \times 0.30 = 24\ \text{g}$</li>
+<li>进入体循环:$80 - 24 = 56\ \text{g}$</li>
+<li>储存的能量:$24 \times 4 = 96\ \text{kcal}$</li>
+<p>肝糖原总储量通常仅约 70–100 g,因此这 24 g 已占相当比例。</p>
+<pre class="mermaid">flowchart LR
+A[肠道吸收] --> B[门静脉]
+B --> C[肝脏]
+C --> D[合成糖原储存]
+C --> E[脂类包装为脂蛋白]
+C --> F[合成胆汁]
+C --> G[药物与酒精代谢]
+C --> H[经肝静脉进入体循环]</pre>
+<p><em>图:营养物质经门静脉进入肝脏,在肝内被储存、包装或代谢后,再进入体循环。</em></p>
+<p><strong>问题解决应用。</strong> 某口服药的口服剂量为 100 mg,其中 90 mg 被肠道吸收,经肝脏首过后只有 45 mg 以原形进入体循环。求肝脏提取率与生物利用度。</p>
+<li>肝脏提取率:$\frac{90-45}{90} = 0.5$,即 50% 被肝脏清除。</li>
+<li>生物利用度:$F = \frac{45}{100} = 0.45$,即 45%。</li>
+<p>这就是为什么有些药(如硝酸甘油)口服几乎无效,而改为舌下含服:舌下黏膜的血液不经门静脉,可绕过首过效应。同理,肝功能受损或门静脉分流(如肝硬化)时,首过清除下降,同样剂量的药物或酒精会产生更强、更持久的作用,用药时需要调整剂量。</p>
+<p><strong>小结。</strong> 判断首过效应时,先问两个问题:物质经哪条途径吸收(经门静脉还是绕过它)?肝脏对它的提取率有多高?这两个答案决定了进入全身的量。</p>
+  </main>
+  <footer class="spl-credit"><span class="spl-credit__meta">Ch5: Eating as Internal Exercise (饮食即内脏运动) (Level: College &middot; Language: ZH &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
+</div>
+</body>
+</html>

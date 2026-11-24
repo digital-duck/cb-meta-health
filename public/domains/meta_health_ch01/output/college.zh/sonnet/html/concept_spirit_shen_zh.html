@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>神 | Meta Health Ch01</title>
+<script>
+MathJax = {
+  loader: { load: ['[tex]/mathtools'] },
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']],
+         packages: { '[+]': ['mathtools'] } },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<script src="https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.min.js"></script>
+<script>mermaid.initialize({ startOnLoad: true, theme: 'neutral' });</script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+footer.spl-credit span{display:block}
+footer.spl-credit .spl-credit__meta{margin-bottom:4px}
+.cb-figure{margin:24px 0;text-align:center}
+.cb-figure img{max-width:100%;height:auto;border:1px solid #e0e0d8;border-radius:6px}
+figcaption{font-size:.82rem;color:#666;margin-top:8px;font-style:italic;text-align:center}
+pre.mermaid{background:none;border:none;padding:0;overflow:visible;margin:16px 0}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="神">神</h2>
+<p><strong>神</strong>(shén)是中医(TCM)的核心概念之一,通常译作"神"或"精神",指意识、思维活动和生命活力的总体表现。TCM 认为,神主要体现在两个层面:广义的神,是整个人的生命活力在眼神、面色、表情、言语、动作和反应上的外在表现;狭义的神,是指意识、思维和情志活动。中医认为神与心关系最密切(即"心藏神"),并依赖精和气的充养。</p>
+<p>在现代医学语言里,神大致对应"意识水平、精神状态和整体生命体征的观察印象"。它不是可以测量的单一数值,因此不用公式表示,而是通过望诊来判断。</p>
+<h3 id="神的三种常见状态">神的三种常见状态</h3>
+<p>| 状态 | 中医称法 | 典型表现 | |---|---|---| | 有神 | 得神 | 目光明亮灵活,神志清楚,面色荣润,反应灵敏,语言清晰,动作协调 | | 少神 | 神气不足 | 精神不振,目光少采,倦怠少言,反应偏慢 | | 失神 | 无神 | 目光呆滞,神志模糊,或语言错乱、循衣摸床,反应迟钝或消失 |</p>
+<p>此外还有"假神",指久病重病者突然精神好转、思维清晰、想进食,但这是病情恶化的假象。中医形象地称之为"回光返照"。</p>
+<h3 id="示例-两位发热患者的对比">示例:两位发热患者的对比</h3>
+<p>患者甲:体温 $38.5\ ^\circ\mathrm{C}$,诉头痛、乏力,但眼神明亮,回答切题,能自己走进诊室,面色微红。 患者乙:体温同为 $38.5\ ^\circ\mathrm{C}$,但目光呆滞,叫名字反应迟缓,说话含糊,需要人搀扶。</p>
+<p>两人体温相同,但按中医望诊,甲属有神,乙属失神,提示乙病情更重。这个判断与现代急诊的做法相通:温度相同时,意识状态是否改变,往往比体温数值更能反映危重程度。</p>
+<h3 id="问题解决应用">问题解决应用</h3>
+<p><strong>问题</strong>:一位老年患者肺炎住院数日,原本神志淡漠、不思饮食。某天傍晚家属发现他突然精神很好,谈笑自如,还主动要吃东西。该如何解读?</p>
+<p><strong>分析步骤</strong>:</p>
+<li><strong>对比基线</strong>:这位患者此前处于少神甚至失神状态,这次好转与病程趋势不一致。</li>
+<li><strong>检查是否有客观支持</strong>:看体温、血氧饱和度、呼吸频率、血压和化验是否同步改善。如果这些指标没有好转,单靠精神变好不可信。</li>
+<li><strong>判断</strong>:若客观指标没有改善,应考虑假神。中医认为这是重病末期的警示,临床上也要警惕谵妄、代谢紊乱或病情短暂波动等原因。</li>
+<li><strong>行动</strong>:不能因为"精神好了"而放松观察,应立即通知医护人员复查生命体征。</li>
+<p><strong>要点</strong>:神的观察是辅助判断,必须与测量结果合并分析。实际中,护理人员用格拉斯哥昏迷评分(GCS,总分 3~15 分)量化意识水平,中医的得神、少神、失神可看作对同一问题的定性描述,两者不能互相替代。</p>
+<p>需要说明的是,TCM 对"神"的分类是经验性描述,其中"假神"与临床上"终末期短暂好转"的观察有相似之处,但并无严格的诊断标准。</p>
+  </main>
+  <footer class="spl-credit"><span class="spl-credit__meta">Ch1: TCM Foundations — Yin-Yang, Qi-Blood, and the Five Phases (中医基础) (Level: College &middot; Language: ZH &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
+</div>
+</body>
+</html>

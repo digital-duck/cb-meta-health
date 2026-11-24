@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>血流的区域分配 | Meta Health Ch05</title>
+<script>
+MathJax = {
+  loader: { load: ['[tex]/mathtools'] },
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']],
+         packages: { '[+]': ['mathtools'] } },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<script src="https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.min.js"></script>
+<script>mermaid.initialize({ startOnLoad: true, theme: 'neutral' });</script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+footer.spl-credit span{display:block}
+footer.spl-credit .spl-credit__meta{margin-bottom:4px}
+.cb-figure{margin:24px 0;text-align:center}
+.cb-figure img{max-width:100%;height:auto;border:1px solid #e0e0d8;border-radius:6px}
+figcaption{font-size:.82rem;color:#666;margin-top:8px;font-style:italic;text-align:center}
+pre.mermaid{background:none;border:none;padding:0;overflow:visible;margin:16px 0}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="血流的区域分配">血流的区域分配</h2>
+<p><strong>定义。</strong> 心输出量(每分钟由心脏泵出的血量)并不平均分给全身各处,而是按各器官当下的需要分配。这种分配主要靠局部小动脉的收缩与舒张来调节:某器官的小动脉舒张,流经它的血量增加;收缩则减少。静息时,成年人心输出量约为 $5\ \text{L/min}$,大致分配为:肝脏和消化道约 $25\%$,肾脏约 $20\%$,脑约 $15\%$,骨骼肌约 $15\%\text{–}20\%$,心肌约 $5\%$,皮肤及其他约 $10\%$ 以上。</p>
+<p>血流量、压力与阻力之间有一个确定的关系:</p>
+$$Q=\frac{\Delta P}{R}$$
+<p>其中 $Q$ 为某器官的血流量,$\Delta P$ 为该器官动脉端与静脉端的压力差,$R$ 为血管阻力。各器官并联在同一个动脉压力下,因此某器官的 $R$ 变小,它得到的 $Q$ 就增大。</p>
+<p><strong>运动时的重新分配。</strong> 运动时,交感神经兴奋,内脏和皮肤的小动脉收缩;同时骨骼肌因代谢产物(如腺苷、二氧化碳、氢离子)积累而局部舒张。脑血流基本保持稳定。心输出量增加,其中更大的份额流向工作的肌肉。</p>
+<p>| 器官 | 静息血流(mL/min) | 剧烈运动血流(mL/min) | |---|---|---| | 骨骼肌 | 约 1000 | 约 22000 | | 肝脏及消化道 | 约 1400 | 约 600 | | 肾脏 | 约 1100 | 约 600 | | 脑 | 约 750 | 约 750 | | 总心输出量 | 约 5000 | 约 25000 |</p>
+<p>(表中数值为典型的约数,个体差异较大。)</p>
+<p><strong>例题。</strong> 一名运动员静息时心输出量为 $5\ \text{L/min}$,骨骼肌分得 $20\%$;剧烈运动时心输出量升至 $25\ \text{L/min}$,骨骼肌分得 $85\%$。求骨骼肌血流量增加了多少倍。</p>
+<p>解:静息时骨骼肌血流量为 $5\times 0.20=1\ \text{L/min}$。运动时为 $25\times 0.85=21.25\ \text{L/min}$。</p>
+$$\frac{21.25}{1}\approx 21\text{ 倍}$$
+<p>可见其中心输出量增加贡献了 $5$ 倍,而份额提高($20\%\to 85\%$)又贡献约 $4$ 倍,两者相乘得到总增幅。</p>
+<p><strong>问题应用。</strong> 饭后立即剧烈运动为什么容易不适?消化道此时需要较多血流来吸收营养,而运动又要求把血液分给肌肉。两者竞争有限的心输出量,消化道血流被压缩,可能引起腹胀、恶心或腹痛。因此,较大的一餐之后,通常建议间隔一段时间(常见建议为 1–2 小时)再进行高强度运动。</p>
+<p>再如,炎热环境中运动时,皮肤也需要大量血流散热。此时肌肉与皮肤同时争夺血液,若再脱水导致血容量下降,心输出量不足以满足两者,运动能力会明显下降,甚至发生热衰竭。所以补水对维持血流分配十分关键。</p>
+<p><strong>小结。</strong> 血流的区域分配是在心输出量有限的前提下,按需求动态调整各器官的血流份额。理解这一点,就能解释运动、进食、高温等情境下身体的反应,并据此安排训练与饮食。</p>
+  </main>
+  <footer class="spl-credit"><span class="spl-credit__meta">Ch5: Eating as Internal Exercise (饮食即内脏运动) (Level: College &middot; Language: ZH &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
+</div>
+</body>
+</html>

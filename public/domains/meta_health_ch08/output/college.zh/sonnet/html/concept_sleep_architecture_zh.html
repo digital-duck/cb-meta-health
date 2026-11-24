@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>睡眠结构 | Meta Health Ch08</title>
+<script>
+MathJax = {
+  loader: { load: ['[tex]/mathtools'] },
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']],
+         packages: { '[+]': ['mathtools'] } },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<script src="https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.min.js"></script>
+<script>mermaid.initialize({ startOnLoad: true, theme: 'neutral' });</script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+footer.spl-credit span{display:block}
+footer.spl-credit .spl-credit__meta{margin-bottom:4px}
+.cb-figure{margin:24px 0;text-align:center}
+.cb-figure img{max-width:100%;height:auto;border:1px solid #e0e0d8;border-radius:6px}
+figcaption{font-size:.82rem;color:#666;margin-top:8px;font-style:italic;text-align:center}
+pre.mermaid{background:none;border:none;padding:0;overflow:visible;margin:16px 0}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="睡眠结构">睡眠结构</h2>
+<p><strong>定义。</strong> 睡眠结构（sleep architecture）指一整夜睡眠中各个睡眠阶段的类型、时长和排列方式。根据脑电图，睡眠分为非快速眼动睡眠（NREM）和快速眼动睡眠（REM）。NREM 又分为：</p>
+<li><strong>浅睡眠</strong>（N1、N2期）：肌肉放松，体温和心率下降，容易被唤醒。N2期占整夜睡眠的约 45%–55%，是占比最大的阶段。</li>
+<li><strong>深睡眠</strong>（N3期，又称慢波睡眠）：脑电出现高振幅、低频的慢波，很难被唤醒，与身体修复和记忆巩固有关。</li>
+<li><strong>REM 睡眠</strong>：脑电活动接近清醒，眼球快速转动，多数梦境发生在此阶段，与情绪处理和记忆整合有关。</li>
+<p>这些阶段并非各出现一次，而是按 NREM 到 REM 的顺序循环，每个周期约 90 分钟（个体差异约 70–110 分钟）。一夜通常经历 4–6 个周期。</p>
+<p><strong>关键规律：</strong> 深睡眠集中在前半夜，随周期推进逐渐减少；REM 睡眠则在后半夜逐渐变长。第一个周期的 REM 可能只有约 5–10 分钟，而最后一个周期的 REM 可达 30–60 分钟。</p>
+<pre class="mermaid">flowchart LR
+    A[清醒] --> B[浅睡眠 N1/N2]
+    B --> C[深睡眠 N3]
+    C --> D[浅睡眠 N2]
+    D --> E[REM 睡眠]
+    E -->|进入下一个约90分钟周期| B
+    E -->|早晨| F[醒来]</pre>
+<p><em>一个睡眠周期的典型顺序：浅睡眠、深睡眠、再回到浅睡眠，最后进入 REM，然后进入下一周期。</em></p>
+<p><strong>例题。</strong> 小李 23:00 入睡，设定 07:00 起床。假设每个周期 90 分钟，他能完成几个周期？</p>
+<p>总睡眠时间为 8 小时，即 480 分钟。周期数为：</p>
+$$\frac{480\ \text{分钟}}{90\ \text{分钟/周期}} \approx 5.3$$
+<p>也就是约 5 个完整周期，加上一个未完成的周期。5 个周期共 450 分钟，结束于 06:30。</p>
+<p><strong>问题解决应用。</strong> 小李平时睡 6 小时（360 分钟），只有 4 个周期。因为深睡眠集中在前半夜，这样缩短后深睡眠损失不大；但 REM 集中在后半夜，所以 REM 损失最明显。他可能觉得情绪调节变差，注意力和记忆下降。</p>
+<p>再看闹钟设置。如果小李想在周期结束时醒来，可把起床时间设在入睡后 $n\times 90$ 分钟附近，再加上约 15 分钟的入睡时间。要睡 5 个周期，应在约 23:00 上床后的 $450+15=465$ 分钟，即 06:45 左右起床。在深睡眠中被叫醒，往往会出现睡眠惯性（头昏、迟钝），而在周期末的浅睡眠中醒来则轻松得多。</p>
+<p><strong>注意事项。</strong> 90 分钟只是平均值，各周期长度会变化。酒精会抑制 REM，使睡眠结构被打乱；年龄增长会使深睡眠占比明显下降。因此，不能只看总时长，还要看睡眠是否连续、周期是否完整。</p>
+  </main>
+  <footer class="spl-credit"><span class="spl-credit__meta">Ch8: Rhythms — Sleep, the Organ Clock, and the Seasons (天人相应) (Level: College &middot; Language: ZH &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
+</div>
+</body>
+</html>

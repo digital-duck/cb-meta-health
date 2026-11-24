@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>生物钟 | Meta Health Ch08</title>
+<script>
+MathJax = {
+  loader: { load: ['[tex]/mathtools'] },
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']],
+         packages: { '[+]': ['mathtools'] } },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<script src="https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.min.js"></script>
+<script>mermaid.initialize({ startOnLoad: true, theme: 'neutral' });</script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+footer.spl-credit span{display:block}
+footer.spl-credit .spl-credit__meta{margin-bottom:4px}
+.cb-figure{margin:24px 0;text-align:center}
+.cb-figure img{max-width:100%;height:auto;border:1px solid #e0e0d8;border-radius:6px}
+figcaption{font-size:.82rem;color:#666;margin-top:8px;font-style:italic;text-align:center}
+pre.mermaid{background:none;border:none;padding:0;overflow:visible;margin:16px 0}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="生物钟">生物钟</h2>
+<p><strong>定义。</strong> 生物钟(昼夜节律系统)是人体内约 24 小时运转一圈的内部计时机制。它的"总指挥"是下丘脑的<strong>视交叉上核</strong>(SCN),约由两万个神经元组成,位于视交叉上方,直接接收来自视网膜的光信号。除此之外,肝、肾、心脏、脂肪、骨骼肌等几乎所有组织的细胞中也有各自的<strong>外周时钟</strong>。外周时钟靠细胞内的基因反馈环路自行振荡,而视交叉上核通过神经信号、体温和激素(如褪黑素、皮质醇)把它们协调成同一节拍。</p>
+<p>在人体中,内源性周期平均约为 24.2 小时,略长于一天。因此,每天清晨的光照会把时钟"拨回"与外界同步。能校准时钟的外部信号称为授时因子,其中光最强,进餐时间、运动和社交活动也有作用。</p>
+<p><strong>例题。</strong> 小林的内源周期为 24.2 小时。如果他长期待在没有任何时间线索的环境中,每天会比外界"晚"多少?30 天后累计偏移多少?</p>
+<p>每天偏移:</p>
+$$24.2\ \text{h} - 24\ \text{h} = 0.2\ \text{h} = 12\ \text{min}$$
+<p>30 天累计:</p>
+$$30 \times 12\ \text{min} = 360\ \text{min} = 6\ \text{h}$$
+<p>也就是说,没有光照校准时,他的睡眠时段会逐渐后移,一个月后大约晚 6 小时。这解释了为什么盲人有时会出现"非24小时睡眠觉醒障碍":他们的时钟得不到光的校准。</p>
+<p><strong>问题解决应用。</strong> 小王从上海飞往纽约,时差 $-12$ 小时(向西飞)。他的时钟需要"向后拨"。研究显示,向西飞时,体内时钟每天大约能后移 1.5 小时,向东飞则每天只能前移约 1 小时。估算他完全适应所需天数:</p>
+$$\frac{12\ \text{h}}{1.5\ \text{h/天}} = 8\ \text{天}$$
+<p>若他从纽约飞回上海,同样 12 小时的差距,按每天前移 1 小时估算,则需约 12 天。这与"向东飞比向西飞更难倒时差"的经验一致。(这里的数字是粗略平均值,个体差异较大。)</p>
+<p>可操作的策略包括:</p>
+<p>| 目的 | 做法 | |---|---| | 时钟需要前移(向东飞) | 到达后上午尽早接触明亮的自然光,傍晚避免强光 | | 时钟需要后移(向西飞) | 傍晚多接触光,早晨可适当避光 | | 日常维持稳定 | 起床和用餐时间尽量固定,睡前一小时减少手机、电脑等蓝光屏幕 |</p>
+<p><strong>小结。</strong> 视交叉上核负责与外界光照同步,外周时钟负责各器官的节律。两者失调,例如倒班、长期熬夜或跨时区旅行,会带来睡眠紊乱、代谢和情绪方面的问题。调整作息时抓住"光照时机"这一关键,就能更快让整个系统重新同步。</p>
+  </main>
+  <footer class="spl-credit"><span class="spl-credit__meta">Ch8: Rhythms — Sleep, the Organ Clock, and the Seasons (天人相应) (Level: College &middot; Language: ZH &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
+</div>
+</body>
+</html>

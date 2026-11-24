@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>七情 | Meta Health Ch07</title>
+<script>
+MathJax = {
+  loader: { load: ['[tex]/mathtools'] },
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']],
+         packages: { '[+]': ['mathtools'] } },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<script src="https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.min.js"></script>
+<script>mermaid.initialize({ startOnLoad: true, theme: 'neutral' });</script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+footer.spl-credit span{display:block}
+footer.spl-credit .spl-credit__meta{margin-bottom:4px}
+.cb-figure{margin:24px 0;text-align:center}
+.cb-figure img{max-width:100%;height:auto;border:1px solid #e0e0d8;border-radius:6px}
+figcaption{font-size:.82rem;color:#666;margin-top:8px;font-style:italic;text-align:center}
+pre.mermaid{background:none;border:none;padding:0;overflow:visible;margin:16px 0}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="七情">七情</h2>
+<p><strong>定义。</strong> 七情指喜、怒、忧、思、悲、恐、惊七种情志活动。中医认为,七情是人对外界刺激的正常反应,本身并不是病因。只有当某种情绪过于强烈或持续过久,超出个人的调节能力时,才会成为致病因素,称为"内伤七情"。</p>
+<p>中医对各情绪的经典对应如下(本表只是中医的归纳,不是测量值):</p>
+<p>| 情志 | 中医认为主要影响的脏 | 常描述的表现 | |---|---|---| | 喜 | 心 | 过度兴奋、心神不宁、失眠 | | 怒 | 肝 | 头痛、面红、易怒 | | 忧、悲 | 肺 | 气短、乏力、叹息 | | 思 | 脾 | 食欲减退、腹胀 | | 恐、惊 | 肾 | 心悸、二便失控、坐立不安 |</p>
+<p>其中"强度"与"持续时间"两项是判断是否致病的关键。</p>
+<p><strong>与现代生理的对照。</strong> 现代医学并不使用"气"的概念,但已证实长期心理压力会使交感神经与下丘脑—垂体—肾上腺轴持续激活,导致血压升高、睡眠变差、消化功能紊乱。例如,急性惊恐时心率可从静息的约 $70$ 次/分升至 $120$ 次/分以上,这是正常的应激反应;若这种状态长期持续,则增加心血管疾病风险。这一对照说明七情理论的核心观察——情绪可影响躯体——有生理学依据;但"某情绪对应某脏"的具体配属,缺乏严格的临床证据支持。</p>
+<p><strong>例题。</strong> 一位学生备考三个月,长期焦虑、反复思虑,近来食欲下降、饭后腹胀、入睡困难。请分析。</p>
+<p><em>步骤 1:判断情绪类型。</em> 反复思虑、担忧,对应"思"和"忧"。</p>
+<p><em>步骤 2:判断强度与时间。</em> 情绪持续三个月,属于"过久",而非一过性反应。</p>
+<p><em>步骤 3:对应症状。</em> 中医认为思虑过度影响脾,故见食欲下降、腹胀;心神不安则入睡困难。</p>
+<p><em>步骤 4:提出处理。</em> 先排除器质性疾病(如胃炎、甲状腺功能异常),再从源头调节:制订分段的复习计划,保证每日规律运动(如每周至少 $150$ 分钟中等强度活动),固定作息,必要时向学校心理咨询师求助。</p>
+<p><strong>问题求解应用。</strong> 遇到类似案例,可按"四问"处理:</p>
+<li>是哪种情绪?</li>
+<li>强度大不大、持续多久?</li>
+<li>是否伴有躯体症状,并先排除器质性病因?</li>
+<li>能否改变诱因或提高调节能力?</li>
+<p>若出现持续两周以上的情绪低落、兴趣丧失,或有自伤念头,这已超出日常调节范围,应及时就医,按抑郁症等精神疾病评估,而不应只当作"情志不畅"自行调养。</p>
+  </main>
+  <footer class="spl-credit"><span class="spl-credit__meta">Ch7: Stress, Emotion, and the Flow of Qi and Blood (情志与气血) (Level: College &middot; Language: ZH &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
+</div>
+</body>
+</html>

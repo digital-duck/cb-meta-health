@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>经络 | Meta Health Ch01</title>
+<script>
+MathJax = {
+  loader: { load: ['[tex]/mathtools'] },
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']],
+         packages: { '[+]': ['mathtools'] } },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<script src="https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.min.js"></script>
+<script>mermaid.initialize({ startOnLoad: true, theme: 'neutral' });</script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+footer.spl-credit span{display:block}
+footer.spl-credit .spl-credit__meta{margin-bottom:4px}
+.cb-figure{margin:24px 0;text-align:center}
+.cb-figure img{max-width:100%;height:auto;border:1px solid #e0e0d8;border-radius:6px}
+figcaption{font-size:.82rem;color:#666;margin-top:8px;font-style:italic;text-align:center}
+pre.mermaid{background:none;border:none;padding:0;overflow:visible;margin:16px 0}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="经络">经络</h2>
+<p><strong>定义。</strong> 经络是中医(TCM)用来描述人体"通路网络"的概念。中医认为,气血沿这些通路运行,把脏腑与体表、四肢连成一个整体。经络分为两类:<strong>经脉</strong>是纵向的主干,包括十二正经和奇经八脉中的任脉、督脉等;<strong>络脉</strong>是从经脉分出的细小分支,遍布全身。需要说明的是,现代解剖学至今没有找到与经络对应的独立结构,所以它是一套用来归纳症状和指导治疗的理论框架,而不是已被证实的解剖实体。</p>
+<p><strong>十二正经的命名规则。</strong> 每条正经的名称包含三个信息:手或足(循行的肢体)、阴或阳(循行在肢体内侧或外侧)、所属脏腑。</p>
+<p>| 名称 | 肢体 | 位置 | 所属脏腑 | |---|---|---|---| | 手太阴肺经 | 上肢 | 内侧(前缘) | 肺 | | 手阳明大肠经 | 上肢 | 外侧(前缘) | 大肠 | | 足阳明胃经 | 下肢 | 外侧(前面) | 胃 | | 足太阴脾经 | 下肢 | 内侧(前面) | 脾 |</p>
+<p><strong>例题:读懂一个名称。</strong> 请判断"足少阴肾经"的循行部位和所属脏腑。</p>
+<li>"足"表示这条经走在下肢。</li>
+<li>"少阴"表示它属阴经,走在下肢内侧(偏后)。</li>
+<li>"肾"表示它与肾脏相连。</li>
+<p>答案:这是一条走在下肢内侧、归属肾的经脉。</p>
+<p><strong>应用:用经络理论分析一个情景。</strong> 一位久坐的学生肩颈酸痛,疼痛沿上臂外侧一直放射到食指。</p>
+<li>第一步,定位:疼痛位于上肢外侧的前缘。</li>
+<li>第二步,对照:按中医的循行描述,这个位置与手阳明大肠经的走向相符。</li>
+<li>第三步,得出结论:中医会把这条经作为调理的重点,并取这条经上的穴位,如合谷、曲池。</li>
+<p><strong>用现代知识评估。</strong> 上述疼痛沿手臂外侧放射,更常见的现代解释是颈椎神经根受压或肌筋膜触发点。做判断时可以先排查这些原因:疼痛是否伴有手指麻木、无力,或在转头时加重。如果有,应先就医做神经学检查,而不是只依靠经络理论自行处理。</p>
+<p><strong>图示。</strong></p>
+<pre class="mermaid">graph TD
+A[经络系统] --> B[经脉]
+A --> C[络脉]
+B --> D[十二正经]
+B --> E[奇经八脉]
+D --> F[手三阴三阳]
+D --> G[足三阴三阳]
+C --> H[从经脉分出的细小分支]</pre>
+<p><em>经络系统的分类:经脉是主干,分为十二正经与奇经八脉,络脉是遍布全身的分支。</em></p>
+<p><strong>小结。</strong> 学习经络时,应掌握名称规则(手足、阴阳、脏腑),用它定位症状,同时记住它是一套传统理论框架。出现神经症状等警示信号时,应优先寻求现代医学评估。</p>
+  </main>
+  <footer class="spl-credit"><span class="spl-credit__meta">Ch1: TCM Foundations — Yin-Yang, Qi-Blood, and the Five Phases (中医基础) (Level: College &middot; Language: ZH &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
+</div>
+</body>
+</html>

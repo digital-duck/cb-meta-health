@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Post-Meal Glucose Response | Meta Health Ch05</title>
+<script>
+MathJax = {
+  loader: { load: ['[tex]/mathtools'] },
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']],
+         packages: { '[+]': ['mathtools'] } },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<script src="https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.min.js"></script>
+<script>mermaid.initialize({ startOnLoad: true, theme: 'neutral' });</script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+footer.spl-credit span{display:block}
+footer.spl-credit .spl-credit__meta{margin-bottom:4px}
+.cb-figure{margin:24px 0;text-align:center}
+.cb-figure img{max-width:100%;height:auto;border:1px solid #e0e0d8;border-radius:6px}
+figcaption{font-size:.82rem;color:#666;margin-top:8px;font-style:italic;text-align:center}
+pre.mermaid{background:none;border:none;padding:0;overflow:visible;margin:16px 0}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="the-post-meal-glucose-response">The Post-Meal Glucose Response</h2>
+<p>After you eat, carbohydrates are digested into glucose, which enters the blood and raises blood glucose. The pancreas releases insulin, and tissues, especially muscle and liver, take up the glucose, so levels drift back toward baseline. This rise-and-fall pattern is the <strong>post-meal (postprandial) glucose response</strong>. In a healthy adult, fasting glucose is roughly 70–99 mg/dL, and it typically peaks 30–60 minutes after a meal, usually staying below about 140 mg/dL, before returning to baseline within 2–3 hours.</p>
+<p>Four factors shape the curve:</p>
+<p>| Factor | Effect on the curve | |---|---| | Meal composition | Refined carbohydrates are absorbed quickly and give a taller, earlier peak. Fiber, protein and fat slow absorption and flatten the peak. | | Eating speed | Fast eating delivers glucose in a concentrated burst. Slower eating spreads it out. | | Gastric emptying | The stomach releases food into the small intestine gradually. Slower emptying (as with fatty or fibrous meals) delays and lowers the peak. | | Muscle activity | Contracting muscle takes up glucose largely without needing insulin, so even a short walk lowers the peak. |</p>
+<h3 id="worked-example">Worked example</h3>
+<p>A student's glucose is 90 mg/dL before eating. A continuous glucose monitor records two experiments with the same 60 g of carbohydrate.</p>
+<li><strong>Meal A:</strong> white rice and juice, eaten in 8 minutes. Glucose peaks at 165 mg/dL after 40 minutes.</li>
+<li><strong>Meal B:</strong> the same rice, eaten with beans, vegetables and chicken over 25 minutes, followed by a 10-minute walk. Glucose peaks at 125 mg/dL after 60 minutes.</li>
+<p>The size of each spike is the peak minus baseline:</p>
+$$\Delta G_A = 165 - 90 = 75 \text{ mg/dL}, \qquad \Delta G_B = 125 - 90 = 35 \text{ mg/dL}$$
+<p>Meal B's spike is $\frac{35}{75} \approx 47\%$ of Meal A's, even though the carbohydrate load was identical. Fiber and protein, slower eating and the walk all contributed. The data cannot say how much each factor contributed, because they were changed together.</p>
+<h3 id="problem-solving-application">Problem-solving application</h3>
+<p>Suppose you want to find which habit helps you most. Treat it as a controlled comparison:</p>
+<li>Pick one reference meal and repeat it on separate days, at the same time of day and after a similar fasting period.</li>
+<li>Change <strong>one</strong> variable per trial (for example, add a 10-minute walk, or eat the vegetables first).</li>
+<li>Record baseline, peak, and time to return to baseline.</li>
+<li>Compare spike sizes ($\Delta G$) across trials.</li>
+<p>Sleep, stress and the previous day's exercise also shift glucose, so repeat each trial a few times before drawing conclusions.</p>
+<p>This matters because large, repeated spikes are linked to metabolic strain. Frequent high peaks demand more insulin, and over years this is associated with insulin resistance and a higher risk of type 2 diabetes. A single spike after a celebratory meal is normal and not harmful. The concern is the pattern. People with diabetes or prediabetes should work with a clinician, since their thresholds and medication needs differ.</p>
+  </main>
+  <footer class="spl-credit"><span class="spl-credit__meta">Ch5: Eating as Internal Exercise (饮食即内脏运动) (Level: College &middot; Language: EN &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
+</div>
+</body>
+</html>

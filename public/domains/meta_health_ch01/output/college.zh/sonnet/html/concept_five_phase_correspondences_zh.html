@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>五行归类 | Meta Health Ch01</title>
+<script>
+MathJax = {
+  loader: { load: ['[tex]/mathtools'] },
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']],
+         packages: { '[+]': ['mathtools'] } },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<script src="https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.min.js"></script>
+<script>mermaid.initialize({ startOnLoad: true, theme: 'neutral' });</script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+footer.spl-credit span{display:block}
+footer.spl-credit .spl-credit__meta{margin-bottom:4px}
+.cb-figure{margin:24px 0;text-align:center}
+.cb-figure img{max-width:100%;height:auto;border:1px solid #e0e0d8;border-radius:6px}
+figcaption{font-size:.82rem;color:#666;margin-top:8px;font-style:italic;text-align:center}
+pre.mermaid{background:none;border:none;padding:0;overflow:visible;margin:16px 0}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="五行归类">五行归类</h2>
+<p><strong>定义。</strong> 五行归类是中医(Traditional Chinese Medicine,TCM)用木、火、土、金、水五个类别,把脏腑、季节、情志、五味、五色、五官和形体组织归并成若干组的方法。TCM 认为,同一组内的事物彼此"相应",可用来解释和归纳身体与外界的联系。这是一套分类框架,不是定量模型,所以用表格和文字说明,不用公式。</p>
+<p>| 五行 | 脏 | 季节 | 情志 | 五味 | 五色 | 五官 | 形体 | |---|---|---|---|---|---|---|---| | 木 | 肝 | 春 | 怒 | 酸 | 青(绿) | 目 | 筋 | | 火 | 心 | 夏 | 喜 | 苦 | 赤 | 舌 | 脉 | | 土 | 脾 | 长夏 | 思 | 甘 | 黄 | 口 | 肌肉 | | 金 | 肺 | 秋 | 悲(忧) | 辛 | 白 | 鼻 | 皮毛 | | 水 | 肾 | 冬 | 恐 | 咸 | 黑 | 耳 | 骨 |</p>
+<p><strong>归类的依据。</strong> 这套表按"取象比类"的方式建立:古人观察事物的功能或形态特征,把相似者放进同一类。例如春天草木生发、向上舒展,与肝"主疏泄、喜条达"的特点相类,于是肝归木;冬天寒冷收藏,与肾"主藏精"相类,于是肾归水。归类依据是类比,不是实验测量。</p>
+<p><strong>例题。</strong> 一位同学说:"每到春天我就容易烦躁易怒,眼睛干涩,还爱抽筋。"请用五行归类整理这些信息。</p>
+<li>把症状逐个定位:烦躁易怒对应情志"怒",眼睛对应五官"目",抽筋涉及"筋"。</li>
+<li>查表:怒、目、筋都在"木"这一行;季节"春"也在同一行;脏为"肝"。</li>
+<li>结论:按 TCM 的归纳,这些表现被统一归入"肝(木)"的范畴,与春季相应。</li>
+<p><strong>问题解决应用。</strong> 再看一个反向的题目:某人长期"悲忧",常感皮肤干燥、易患鼻炎,秋季加重。查表可见悲、皮毛、鼻、秋同属金,故 TCM 会优先考虑"肺"的问题。</p>
+<p>使用这张表时要注意两点。第一,它只是整理线索的索引,不能代替诊断。现代医学中,春季烦躁、眼干、肌肉痉挛各有不同的原因,比如睡眠不足、屏幕用眼过久或电解质失衡,需要分别排查。第二,这些对应关系多数没有得到现代生理学的验证,肝并不"主管"眼睛或肌腱,情绪与器官的一一对应也缺乏证据。因此,学习五行归类的目的,是读懂 TCM 的理论语言,而不是把它当作解剖或病因的事实。</p>
+<p><strong>练习。</strong> 先写出"水"行的全部七项对应,再说明"口苦、易怒、目赤"在表中分别落在哪一行。(提示:口苦属火,易怒、目赤与木相关,所以你需要想一想,TCM 为何会把它们联系起来讨论。)</p>
+  </main>
+  <footer class="spl-credit"><span class="spl-credit__meta">Ch1: TCM Foundations — Yin-Yang, Qi-Blood, and the Five Phases (中医基础) (Level: College &middot; Language: ZH &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
+</div>
+</body>
+</html>

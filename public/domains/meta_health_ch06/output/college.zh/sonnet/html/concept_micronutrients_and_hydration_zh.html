@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>微量营养素与水分 | Meta Health Ch06</title>
+<script>
+MathJax = {
+  loader: { load: ['[tex]/mathtools'] },
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']],
+         packages: { '[+]': ['mathtools'] } },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<script src="https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.min.js"></script>
+<script>mermaid.initialize({ startOnLoad: true, theme: 'neutral' });</script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+footer.spl-credit span{display:block}
+footer.spl-credit .spl-credit__meta{margin-bottom:4px}
+.cb-figure{margin:24px 0;text-align:center}
+.cb-figure img{max-width:100%;height:auto;border:1px solid #e0e0d8;border-radius:6px}
+figcaption{font-size:.82rem;color:#666;margin-top:8px;font-style:italic;text-align:center}
+pre.mermaid{background:none;border:none;padding:0;overflow:visible;margin:16px 0}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="微量营养素与水分">微量营养素与水分</h2>
+<p><strong>定义。</strong> 微量营养素是人体每天只需毫克甚至微克量、却不可缺少的营养物质,包括维生素和矿物质。它们不提供能量,主要作为辅酶或辅因子参与代谢反应,或参与信号传递。例如,B 族维生素是能量代谢中多种酶的辅酶,铁是血红蛋白中运输氧的核心成分,钙参与肌肉收缩和神经信号传递。水不属于微量营养素,因为人体需求量很大,但它同样必不可少。水占成年人体重的约 50%~60%,是血液、细胞内外液和各种代谢反应的介质,并参与体温调节。</p>
+<p>按溶解性,维生素分为两类:</p>
+<p>| 类别 | 代表 | 特点 | |---|---|---| | 脂溶性 | 维生素 A、D、E、K | 可储存在脂肪组织和肝脏,过量易蓄积中毒 | | 水溶性 | B 族维生素、维生素 C | 储存有限,多余部分经尿排出,需要经常补充 |</p>
+<p><strong>参考摄入量。</strong> 成人维生素 C 的推荐摄入量约为每日 100 mg,铁的推荐摄入量因性别而异(中国居民膳食指南:成年男性约 12 mg/日,育龄女性约 20 mg/日,因月经失血)。每种微量营养素还有可耐受最高摄入量,超过它可能有害。</p>
+<p><strong>例题:估算每日水需求。</strong> 一位体重 60 kg 的成年人,常用经验估算为每千克体重 30~40 mL 水。取 $35\ \text{mL/kg}$:</p>
+$$60\ \text{kg} \times 35\ \text{mL/kg} = 2100\ \text{mL}$$
+<p>这是总水量,其中包括食物中的水(通常约占 20%~30%)。若食物提供约 25%,则需要饮水:</p>
+$$2100\ \text{mL} \times (1-0.25) = 1575\ \text{mL}$$
+<p>即约 1.6 L。运动、高温或发热出汗时,需求会增加。</p>
+<p><strong>问题解决应用。</strong> 这位 60 kg 的人进行 1 小时跑步,运动前后体重分别为 60.0 kg 和 59.2 kg,其间饮水 300 mL,排尿可忽略。</p>
+<li>体重减少 $0.8\ \text{kg}$,约等于失去 $800\ \text{mL}$ 液体(水的密度约 $1\ \text{g/mL}$)。</li>
+<li>加上已饮入的 300 mL,总出汗量约为 $800 + 300 = 1100\ \text{mL}$。</li>
+<li>一般建议补回丢失量的 125%~150%,以抵消之后继续的排尿损失。按失重 800 mL 计算,约需补充 $800\times1.25 = 1000\ \text{mL}$ 到 $800\times1.5 = 1200\ \text{mL}$。</li>
+<li>出汗同时丢失钠等电解质,长时间(超过 1 小时)或大量出汗的运动应适当补充含钠饮品或食物。</li>
+<p><strong>判断要点。</strong> 尿液颜色是简便的参考:浅黄色通常说明水分充足,深黄色提示可能不足。另外,多数饮食均衡的健康成人不需要常规服用维生素补充剂;只有在确诊缺乏、特殊人群(如孕妇需要叶酸、严格素食者需要维生素 B12)或医生建议时才有明确益处。大剂量脂溶性维生素补充反而可能造成中毒,而且饮水过量(短时间内饮入数升)也可能导致低钠血症,所以关键是适量。</p>
+  </main>
+  <footer class="spl-credit"><span class="spl-credit__meta">Ch6: What We Eat — Food Quality, Four Natures, and Five Flavors (四气五味) (Level: College &middot; Language: ZH &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
+</div>
+</body>
+</html>

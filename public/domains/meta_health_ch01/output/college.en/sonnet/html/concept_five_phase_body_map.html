@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Five-Phase Body Map | Meta Health Ch01</title>
+<script>
+MathJax = {
+  loader: { load: ['[tex]/mathtools'] },
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']],
+         packages: { '[+]': ['mathtools'] } },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<script src="https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.min.js"></script>
+<script>mermaid.initialize({ startOnLoad: true, theme: 'neutral' });</script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+footer.spl-credit span{display:block}
+footer.spl-credit .spl-credit__meta{margin-bottom:4px}
+.cb-figure{margin:24px 0;text-align:center}
+.cb-figure img{max-width:100%;height:auto;border:1px solid #e0e0d8;border-radius:6px}
+figcaption{font-size:.82rem;color:#666;margin-top:8px;font-style:italic;text-align:center}
+pre.mermaid{background:none;border:none;padding:0;overflow:visible;margin:16px 0}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="the-five-phase-body-map">The Five-Phase Body Map</h2>
+<p><strong>Definition.</strong> In Traditional Chinese Medicine (TCM), the body is read as one connected system rather than a set of separate parts. TCM organizes this reading with four tools:</p>
+<li><strong>The Five-Phase table</strong> groups organs, tissues, emotions, and flavors under Wood, Fire, Earth, Metal, and Water.</li>
+<li><strong>The three burners</strong> divide the trunk into upper, middle, and lower zones of function.</li>
+<li><strong>The dantian</strong> is a lower-abdominal "field" where vital energy is said to be stored.</li>
+<li><strong>The prenatal and postnatal roots</strong> are two sources of vitality. The prenatal root is inherited constitution. The postnatal root comes from food and breath.</li>
+<p>These are traditional frameworks for organizing observations. They are not anatomical structures, and none has been confirmed as a distinct physiological entity. Their practical use is as a reasoning aid: they link signs that a modern clinician would file separately.</p>
+<p><strong>The two cycles.</strong> In the generating cycle, each phase "nourishes" the next: Wood to Fire to Earth to Metal to Water and back to Wood. In the controlling cycle, each phase "restrains" another: Wood restrains Earth, Earth restrains Water, Water restrains Fire, Fire restrains Metal, and Metal restrains Wood.</p>
+<p>| Phase | Organs (yin / yang) | Typical emotion | Zone | |---|---|---|---| | Wood | Liver / Gallbladder | Anger, irritability | Middle to lower | | Fire | Heart / Small Intestine | Joy, agitation | Upper | | Earth | Spleen / Stomach | Worry, overthinking | Middle | | Metal | Lungs / Large Intestine | Grief | Upper | | Water | Kidneys / Bladder | Fear | Lower |</p>
+<p><strong>Worked example.</strong> A student under exam stress reports irritability, a tight feeling in the ribs, and a poor appetite with bloating after meals.</p>
+<li><em>Locate the signs in the table.</em> Irritability and rib tightness belong to Wood (Liver). Poor appetite and bloating belong to Earth (Spleen and Stomach).</li>
+<li><em>Choose the cycle.</em> Wood restrains Earth. TCM describes this pattern as "Liver overacting on the Spleen": the controlling relationship becomes excessive, and digestion suffers.</li>
+<li><em>Place it in the burners.</em> The signs fall in the middle burner, the digestive zone.</li>
+<li><em>Check the roots.</em> If the student has eaten and slept poorly for weeks, the postnatal root is being depleted. This is why the practitioner would ask about meals and sleep, not only mood.</li>
+<p><strong>Problem-solving application.</strong> The map is useful because it generates questions. For a new case, a reader can ask which phases the signs touch and whether a cycle connects them. They can then ask which burner is involved and which root is under strain. A second case: a person with chronic low-back ache, frequent night urination, and fatigue points to Water (Kidneys), the lower burner, and the prenatal root. Whether the map is valid is a separate question from whether it is useful. It has not been validated as a model of disease. In this case the physiological explanation lies elsewhere, and a persistent symptom like this one needs a conventional medical evaluation. In the exam-stress case, the practical point stands without TCM: stress commonly disturbs both mood and digestion, so regular meals and sleep are reasonable steps.</p>
+<pre class="mermaid">graph LR
+    Wood --> Fire --> Earth --> Metal --> Water --> Wood
+    Wood -.restrains.-> Earth
+    Earth -.restrains.-> Water
+    Water -.restrains.-> Fire
+    Fire -.restrains.-> Metal
+    Metal -.restrains.-> Wood</pre>
+<p><em>Solid arrows show the generating cycle. Dashed arrows show the controlling cycle.</em></p>
+  </main>
+  <footer class="spl-credit"><span class="spl-credit__meta">Ch1: TCM Foundations — Yin-Yang, Qi-Blood, and the Five Phases (中医基础) (Level: College &middot; Language: EN &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
+</div>
+</body>
+</html>

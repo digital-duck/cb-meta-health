@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Liver's Metabolic Role | Meta Health Ch05</title>
+<script>
+MathJax = {
+  loader: { load: ['[tex]/mathtools'] },
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']],
+         packages: { '[+]': ['mathtools'] } },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<script src="https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.min.js"></script>
+<script>mermaid.initialize({ startOnLoad: true, theme: 'neutral' });</script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+footer.spl-credit span{display:block}
+footer.spl-credit .spl-credit__meta{margin-bottom:4px}
+.cb-figure{margin:24px 0;text-align:center}
+.cb-figure img{max-width:100%;height:auto;border:1px solid #e0e0d8;border-radius:6px}
+figcaption{font-size:.82rem;color:#666;margin-top:8px;font-style:italic;text-align:center}
+pre.mermaid{background:none;border:none;padding:0;overflow:visible;margin:16px 0}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="the-liver-s-metabolic-role">The Liver's Metabolic Role</h2>
+<p>The liver is the body's central chemical processing plant. Blood leaving the stomach and intestines does not go straight to the rest of the body. It first travels through the hepatic portal vein to the liver, which sorts, converts, stores and detoxifies what arrives. Four jobs matter most.</p>
+<p><strong>1. Processing nutrients.</strong> The liver converts absorbed sugars, amino acids and fats into forms the body can use. Fructose and galactose are converted to glucose. Excess amino acids lose their nitrogen, which is turned into urea for excretion by the kidneys. The liver also assembles fats into lipoproteins for transport and makes most blood proteins, such as albumin.</p>
+<p><strong>2. Storing glycogen.</strong> After a meal, the liver links glucose into glycogen. Between meals it breaks glycogen back down and releases glucose, which keeps blood glucose near 70–100 mg/dL. When glycogen runs low, as in prolonged fasting, the liver makes new glucose from amino acids, lactate and glycerol. This process is called gluconeogenesis.</p>
+<p><strong>3. Making bile.</strong> Hepatocytes (liver cells) produce roughly 500–1000 mL of bile per day. Bile salts emulsify dietary fat so that lipase can digest it. Bile also carries away bilirubin, a breakdown product of old red blood cells.</p>
+<p><strong>4. Clearing toxins.</strong> Liver enzymes chemically modify drugs, alcohol, ammonia and hormones so that bile or urine can remove them. Detoxification here means these specific enzyme reactions. Commercial "liver cleanse" products have no demonstrated benefit.</p>
+<h3 id="worked-example">Worked example</h3>
+<p>Glycogen storage is limited, and the numbers show why fasting matters. An adult liver holds about 100 g of glycogen. Glycogen yields about 4 kcal per gram, so:</p>
+$$100\ \text{g} \times 4\ \frac{\text{kcal}}{\text{g}} = 400\ \text{kcal}$$
+<p>The brain uses roughly 120 g of glucose per day. Liver glycogen alone would therefore last only about</p>
+$$\frac{100\ \text{g}}{120\ \text{g/day}} \approx 0.8\ \text{day}$$
+<p>if the brain were the only consumer. In practice, other tissues use glucose too, and the liver supplies it to the blood at a rate that depends on activity. Liver glycogen is therefore largely depleted within about 12–24 hours of fasting, and gluconeogenesis takes over.</p>
+<h3 id="problem-solving-application">Problem-solving application</h3>
+<p><strong>Problem:</strong> A person finishes an overnight fast of 14 hours with no food. Their blood glucose is still 85 mg/dL. Which liver processes explain this, and what changes if they then eat a carbohydrate meal?</p>
+<p><strong>Solution:</strong></p>
+<li>Early in the fast, the liver breaks down glycogen and releases glucose.</li>
+<li>By 14 hours, glycogen is partly depleted, so gluconeogenesis supplies a growing share of the glucose.</li>
+<li>After the meal, glucose and fructose arrive through the portal vein. The liver takes up a large fraction of the glucose and stores it as glycogen. It also converts fructose to glucose. This blunts the rise in blood glucose.</li>
+<li>If glycogen stores are full, the liver converts the excess into fatty acids. This is one route to fatty liver when excess intake is chronic.</li>
+<p>Blood glucose stays stable because the liver switches between storing and releasing glucose according to need.</p>
+<h3 id="diagram">Diagram</h3>
+<pre class="mermaid">flowchart TD
+    A[Gut absorbs nutrients] --> B[Hepatic portal vein]
+    B --> C[Liver]
+    C --> D[Glycogen storage]
+    C --> E[Bile production]
+    C --> F[Toxin and drug clearance]
+    C --> G[Glucose, proteins and lipoproteins to blood]
+    E --> H[Fat digestion in intestine]
+    D -->|Between meals| G</pre>
+<p><em>Nutrients from the gut pass through the liver, which stores, converts, secretes or clears them before they reach the general circulation.</em></p>
+  </main>
+  <footer class="spl-credit"><span class="spl-credit__meta">Ch5: Eating as Internal Exercise (饮食即内脏运动) (Level: College &middot; Language: EN &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
+</div>
+</body>
+</html>

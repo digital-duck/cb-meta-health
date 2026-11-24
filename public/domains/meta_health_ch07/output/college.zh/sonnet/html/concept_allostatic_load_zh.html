@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>稳态负荷 | Meta Health Ch07</title>
+<script>
+MathJax = {
+  loader: { load: ['[tex]/mathtools'] },
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']],
+         packages: { '[+]': ['mathtools'] } },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<script src="https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.min.js"></script>
+<script>mermaid.initialize({ startOnLoad: true, theme: 'neutral' });</script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+footer.spl-credit span{display:block}
+footer.spl-credit .spl-credit__meta{margin-bottom:4px}
+.cb-figure{margin:24px 0;text-align:center}
+.cb-figure img{max-width:100%;height:auto;border:1px solid #e0e0d8;border-radius:6px}
+figcaption{font-size:.82rem;color:#666;margin-top:8px;font-style:italic;text-align:center}
+pre.mermaid{background:none;border:none;padding:0;overflow:visible;margin:16px 0}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="稳态负荷">稳态负荷</h2>
+<p><strong>定义。</strong> 稳态负荷(allostatic load)指身体为应对反复或长期的压力,在血压、代谢、睡眠和免疫等系统上累积的"磨损"。短期压力时,身体通过"应变稳态"(allostasis)调整心率、血压、血糖和激素水平来适应。若这种调整频繁启动、迟迟不能关闭,或恢复不充分,代价就会逐渐累积。这个概念由 McEwen 和 Stellar 在 1993 年提出。</p>
+<p>稳态负荷不是单一指标,而是多个系统的综合状态。研究中常用的生物标志物包括:</p>
+<p>| 系统 | 常用指标 | 偏高/偏低时的提示 | |---|---|---| | 心血管 | 收缩压、舒张压、静息心率 | 血压持续偏高 | | 代谢 | 糖化血红蛋白、腰臀比、总胆固醇/HDL | 血糖和脂代谢失衡 | | 炎症与免疫 | C 反应蛋白、白介素-6 | 慢性低度炎症 | | 应激激素 | 皮质醇、肾上腺素 | 昼夜节律紊乱 |</p>
+<p><strong>计分方法。</strong> 研究中常用"超阈值计数"法:对每项指标设定风险阈值(例如取人群最不利的四分之一),超过阈值记 1 分,否则记 0 分,总分即稳态负荷得分。该方法只是把已测得的指标计数,不涉及复杂公式。</p>
+<p><strong>例题。</strong> 小李是一名 32 岁的研究生,备考期间连续 3 个月每晚睡 5 小时。体检结果与阈值对比如下:</p>
+<p>| 指标 | 小李 | 阈值 | 是否超标 | |---|---|---|---| | 收缩压 | 138 mmHg | ≥ 130 mmHg | 是 | | 静息心率 | 88 次/分 | ≥ 85 次/分 | 是 | | 糖化血红蛋白 | 5.4% | ≥ 5.7% | 否 | | C 反应蛋白 | 4.2 mg/L | ≥ 3 mg/L | 是 | | 腰臀比 | 0.86 | ≥ 0.90 | 否 |</p>
+<p>超标项为 3 项,共 5 项指标,因此得分为 3/5。这说明他的心血管和炎症系统已经显示出压力累积的迹象,而代谢系统暂时还正常。</p>
+<p><strong>问题解决应用。</strong> 以下是针对小李的分析步骤:</p>
+<li><strong>找出压力来源与持续时间。</strong> 睡眠不足加上考试压力,持续了 3 个月,属于慢性而非急性压力。</li>
+<li><strong>找出受累系统。</strong> 血压、心率和 C 反应蛋白同时偏高,符合"交感神经长期兴奋加低度炎症"的模式。</li>
+<li><strong>选择可检验的干预。</strong> 睡眠是调节血压和炎症的关键环节。可以先把睡眠延长到 7 小时,每周进行 150 分钟中等强度运动,再用同样的指标复查。</li>
+<li><strong>用数据评估效果。</strong> 8~12 周后若得分降到 1/5 或 0/5,说明负荷是可逆的。若指标仍然偏高,应就医排查高血压等独立疾病。</li>
+<p><strong>注意事项。</strong> 稳态负荷在研究中是一个预测框架,不同研究选用的指标和阈值并不统一,因此得分只能在同一研究内部比较,不能当作诊断。它也不意味着所有压力都有害:短暂、可控、能够恢复的压力反而可能增强适应能力。关键在于压力之后是否有足够的恢复。</p>
+  </main>
+  <footer class="spl-credit"><span class="spl-credit__meta">Ch7: Stress, Emotion, and the Flow of Qi and Blood (情志与气血) (Level: College &middot; Language: ZH &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
+</div>
+</body>
+</html>

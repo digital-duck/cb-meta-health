@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>肝脏的代谢作用 | Meta Health Ch05</title>
+<script>
+MathJax = {
+  loader: { load: ['[tex]/mathtools'] },
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']],
+         packages: { '[+]': ['mathtools'] } },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<script src="https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.min.js"></script>
+<script>mermaid.initialize({ startOnLoad: true, theme: 'neutral' });</script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+footer.spl-credit span{display:block}
+footer.spl-credit .spl-credit__meta{margin-bottom:4px}
+.cb-figure{margin:24px 0;text-align:center}
+.cb-figure img{max-width:100%;height:auto;border:1px solid #e0e0d8;border-radius:6px}
+figcaption{font-size:.82rem;color:#666;margin-top:8px;font-style:italic;text-align:center}
+pre.mermaid{background:none;border:none;padding:0;overflow:visible;margin:16px 0}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="肝脏的代谢作用">肝脏的代谢作用</h2>
+<p><strong>定义。</strong> 肝脏是人体最大的内脏器官,也是营养物质进入全身循环前的"中转站"。肠道吸收的营养物质(除大部分脂类经淋巴入血外)先经门静脉进入肝脏,由肝细胞加工后再送往全身。肝脏的代谢作用主要包括四项:</p>
+<li><strong>处理营养物质</strong>:调节血糖,把氨基酸合成血浆蛋白(如白蛋白),合成胆固醇和脂蛋白。</li>
+<li><strong>储存糖原</strong>:饭后把多余葡萄糖合成糖原;空腹时分解糖原释放葡萄糖,并通过糖异生补充血糖。</li>
+<li><strong>制造胆汁</strong>:每天约分泌 $500\text{–}1000\ \text{mL}$ 胆汁,帮助小肠消化和吸收脂肪。</li>
+<li><strong>清除毒物</strong>:把药物、酒精、氨等转化为更易排出的物质。氨在肝内合成尿素,再经肾脏排出。</li>
+<p><strong>工作示例。</strong> 一位成年人晚餐摄入 $90\ \text{g}$ 碳水化合物,血糖上升。门静脉血携带葡萄糖进入肝脏,肝细胞把一部分合成糖原。成人肝糖原总量约 $80\text{–}100\ \text{g}$。葡萄糖每克约提供 $4\ \text{kcal}$ 能量,所以这些糖原约相当于:</p>
+$$
+90\ \text{g} \times 4\ \text{kcal/g} \approx 360\ \text{kcal}
+$$
+<p>这一数量级与肝糖原全部储备的能量接近。夜间进食停止后,血糖由肝糖原分解维持。肝糖原消耗殆尽后,肝脏转而用乳酸、甘油和氨基酸合成葡萄糖。</p>
+<p><strong>问题解决应用。</strong></p>
+<p><em>问题 1:</em> 一名患者长期大量饮酒,化验显示血氨升高、白蛋白降低、空腹易低血糖。请判断是肝脏哪些功能受损。</p>
+<p><em>分析:</em></p>
+<li>血氨升高:肝内合成尿素的能力下降,毒物清除受损。</li>
+<li>白蛋白降低:蛋白质合成减少。</li>
+<li>空腹低血糖:糖原储备不足,糖异生能力下降。</li>
+<p>三项指标分别对应清除毒物、处理营养物质和储存糖原,说明肝脏代谢功能受到广泛损害。</p>
+<p><em>问题 2:</em> 为什么某些药物需要根据肝功能调整剂量?</p>
+<p><em>分析:</em> 许多药物经肝脏转化后才被清除。肝功能下降时,药物清除变慢,血药浓度升高,常规剂量可能造成蓄积中毒,因此需要减量或换药。</p>
+<p><strong>中医视角。</strong> 中医认为"肝主疏泄",与情志和消化的调畅有关。这是中医理论中的功能概念,与现代解剖学意义上的肝脏代谢功能并不等同,不能互相替代。临床上评估肝脏代谢功能,仍应依据转氨酶、胆红素、白蛋白等检验指标。</p>
+<p><strong>小结。</strong> 肝脏位于消化道与全身循环之间,负责加工、储存、分泌和解毒。分析临床现象时,可以先问:是加工营养、储存糖原、分泌胆汁,还是清除毒物出了问题。</p>
+  </main>
+  <footer class="spl-credit"><span class="spl-credit__meta">Ch5: Eating as Internal Exercise (饮食即内脏运动) (Level: College &middot; Language: ZH &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
+</div>
+</body>
+</html>

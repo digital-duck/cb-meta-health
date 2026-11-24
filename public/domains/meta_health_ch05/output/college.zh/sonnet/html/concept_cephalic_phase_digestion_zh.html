@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>消化的头期 | Meta Health Ch05</title>
+<script>
+MathJax = {
+  loader: { load: ['[tex]/mathtools'] },
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']],
+         packages: { '[+]': ['mathtools'] } },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<script src="https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.min.js"></script>
+<script>mermaid.initialize({ startOnLoad: true, theme: 'neutral' });</script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+footer.spl-credit span{display:block}
+footer.spl-credit .spl-credit__meta{margin-bottom:4px}
+.cb-figure{margin:24px 0;text-align:center}
+.cb-figure img{max-width:100%;height:auto;border:1px solid #e0e0d8;border-radius:6px}
+figcaption{font-size:.82rem;color:#666;margin-top:8px;font-style:italic;text-align:center}
+pre.mermaid{background:none;border:none;padding:0;overflow:visible;margin:16px 0}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="消化的头期">消化的头期</h2>
+<p><strong>定义。</strong> 消化的头期(cephalic phase)是指食物尚未进入胃之前,由看到、闻到、尝到食物,或想到食物、咀嚼动作所引发的消化反应。这些感觉信号传到脑干和下丘脑,再经迷走神经向消化器官发出指令,使唾液腺分泌唾液,胃壁分泌胃酸和胃蛋白酶原,胰腺的 β 细胞释放少量胰岛素,胰腺外分泌部也开始分泌消化酶。这些反应相当于身体提前做好准备。</p>
+<p><strong>为什么有意义。</strong> 胃酸的分泌通常分为头期、胃期和肠期三个阶段。在进食的过程中,头期大约贡献了全部胃酸分泌量的 30%。它的意义在于,食物到达时,消化液已经备好,血糖的上升也已经有了应对。</p>
+<p><strong>例题。</strong> 一位受试者空腹时胃液基础分泌量为每小时 20 mL。研究者让这位受试者闻、看一份烤肉,但不吞咽。假设一小时内胃液分泌升至 60 mL。</p>
+<li>头期引起的增量为 $60 - 20 = 40\ \text{mL}$。</li>
+<li>这部分增量完全由迷走神经介导,因为食物没有接触胃壁,胃内没有机械牵张,也没有化学刺激。</li>
+<li>如果在实验前给受试者注射阿托品(一种阻断迷走神经末梢毒蕈碱受体的药物),分泌量大多会停留在基础水平附近。这支持迷走神经是主要通路的结论。</li>
+<p><strong>问题解决应用。</strong> 下面三个情境可以用头期原理来分析。</p>
+<p><em>情境一:口干与进食前后的血糖。</em> 一位 2 型糖尿病患者发现,餐前闻到饭香时,血糖有时会轻微下降。解释:头期引起第一时相胰岛素的少量释放(通常只有餐后总量的很小一部分),使肝脏输出葡萄糖略受抑制,并为随后的血糖上升做好准备。</p>
+<p><em>情境二:仔细咀嚼。</em> 咀嚼本身是头期的刺激之一。咀嚼更久,唾液淀粉酶有更多时间开始分解淀粉,迷走神经的反馈也更充分。需要注意的是,咀嚼时间对体重的长期影响,目前的研究证据并不一致,不宜夸大。</p>
+<p><em>情境三:鼻饲或静脉营养。</em> 通过管道直接把营养送入胃肠的患者,绕过了口腔和嗅觉,头期反应缺失。这是临床上让能够经口进食的患者尽量保留口腔刺激的原因之一。</p>
+<p><strong>常见误解。</strong> 有人认为"想到食物就会让胃酸腐蚀胃壁"。实际上,头期分泌的胃酸量有限,胃黏膜表面有黏液和碳酸氢盐保护层。但对已有胃溃疡的人,长期的情绪紧张与不规律进食可能增加不适,应在医生指导下管理。</p>
+<p><strong>小结。</strong> 头期的核心是"先于食物的准备":感觉与咀嚼信号经迷走神经,提前启动唾液、胃酸和胰岛素的分泌。它解释了为什么食物的气味会让人"流口水",也说明了进食方式如何影响消化的开端。</p>
+  </main>
+  <footer class="spl-credit"><span class="spl-credit__meta">Ch5: Eating as Internal Exercise (饮食即内脏运动) (Level: College &middot; Language: ZH &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
+</div>
+</body>
+</html>

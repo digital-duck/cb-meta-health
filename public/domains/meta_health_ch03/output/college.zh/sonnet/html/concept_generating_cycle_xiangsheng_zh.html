@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>五行相生 | Meta Health Ch03</title>
+<script>
+MathJax = {
+  loader: { load: ['[tex]/mathtools'] },
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']],
+         packages: { '[+]': ['mathtools'] } },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<script src="https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.min.js"></script>
+<script>mermaid.initialize({ startOnLoad: true, theme: 'neutral' });</script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+footer.spl-credit span{display:block}
+footer.spl-credit .spl-credit__meta{margin-bottom:4px}
+.cb-figure{margin:24px 0;text-align:center}
+.cb-figure img{max-width:100%;height:auto;border:1px solid #e0e0d8;border-radius:6px}
+figcaption{font-size:.82rem;color:#666;margin-top:8px;font-style:italic;text-align:center}
+pre.mermaid{background:none;border:none;padding:0;overflow:visible;margin:16px 0}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="五行相生">五行相生</h2>
+<p><strong>定义。</strong> 五行相生是指五行之间依次“滋生、促进”的关系。中医认为,木生火,火生土,土生金,金生水,水再生木,首尾相接,循环不息。每一行都有“生我”和“我生”两个方向,传统上分别称为“母”和“子”:生我者为母,我生者为子。例如对火而言,木是母,土是子。</p>
+<p>相生的名称来自古人对自然现象的类比:木材燃烧生火;火燃尽成灰,灰归于土;矿物蕴藏在土中,故土生金;金属表面遇冷凝结水珠,故金生水;水滋养草木,故水生木。这些类比是理解该模型的助记方式,并不是对物质变化的科学解释。</p>
+<pre class="mermaid">graph LR
+    A[木] -->|生| B[火]
+    B -->|生| C[土]
+    C -->|生| D[金]
+    D -->|生| E[水]
+    E -->|生| A</pre>
+<p><em>五行相生循环:箭头方向表示“生”,水又回到木,形成闭环。</em></p>
+<p><strong>对应关系。</strong> 在中医的脏腑配属中,五行与五脏相对应,如下表。</p>
+<p>| 五行 | 木 | 火 | 土 | 金 | 水 | |---|---|---|---|---|---| | 五脏 | 肝 | 心 | 脾 | 肺 | 肾 |</p>
+<p><strong>例题。</strong> 某人长期熬夜,中医辨证为“肾水不足,不能滋养肝木”,表现为头晕、眼睛干涩、易烦躁。请用相生关系说明治疗思路。</p>
+<p><em>解析:</em></p>
+<li>定位关系:水生木,肾(水)为母,肝(木)为子。肾不足,则“母不养子”。</li>
+<li>确定原则:中医称之为“滋水涵木”,即通过补益肾阴来帮助肝。</li>
+<li>对比思路:若直接只治肝,属治“子”;相生思路则强调“虚则补其母”,从母脏入手。</li>
+<p><strong>应用练习。</strong> 若某人脾胃虚弱(土),又伴有咳嗽气短(肺,金),按相生关系应如何考虑?</p>
+<p><em>思路:</em> 土生金,脾为肺之母。中医提出“培土生金”,即先调理脾胃,以增强肺的功能。反过来,肺病日久也可能影响脾,这属于“子病犯母”或“子盗母气”的说法。</p>
+<p><strong>使用提示。</strong> 相生只描述一个方向的促进关系,并不说明“过度”或“制约”;后者需要结合相克来理解。此外,这套对应是中医的理论框架,临床上的判断仍需依据具体症状和现代医学检查,不能仅凭五行推算来判断疾病或决定用药。</p>
+  </main>
+  <footer class="spl-credit"><span class="spl-credit__meta">Ch3: The Five-Organ Exercises (五脏操) (Level: College &middot; Language: ZH &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
+</div>
+</body>
+</html>

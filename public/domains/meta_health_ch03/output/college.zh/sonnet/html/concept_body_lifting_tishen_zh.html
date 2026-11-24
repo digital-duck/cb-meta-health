@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>提身 | Meta Health Ch03</title>
+<script>
+MathJax = {
+  loader: { load: ['[tex]/mathtools'] },
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']],
+         packages: { '[+]': ['mathtools'] } },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<script src="https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.min.js"></script>
+<script>mermaid.initialize({ startOnLoad: true, theme: 'neutral' });</script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+footer.spl-credit span{display:block}
+footer.spl-credit .spl-credit__meta{margin-bottom:4px}
+.cb-figure{margin:24px 0;text-align:center}
+.cb-figure img{max-width:100%;height:auto;border:1px solid #e0e0d8;border-radius:6px}
+figcaption{font-size:.82rem;color:#666;margin-top:8px;font-style:italic;text-align:center}
+pre.mermaid{background:none;border:none;padding:0;overflow:visible;margin:16px 0}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="提身">提身</h2>
+<p><strong>提身</strong>(body lifting)是一个动作:双臂向上伸展,同时脚跟抬起、身体立于前脚掌。从生理学看,这个动作主要调动后侧链,即小腿三头肌(腓肠肌与比目鱼肌)、腘绳肌、臀大肌和竖脊肌,同时拉长身体前侧和两侧。中医认为,这一动作拉伸背部的足太阳膀胱经,并刺激位于足底前部凹陷处的涌泉穴。涌泉是肾经的起始穴,而肾在五行中属水。这属于中医的理论框架,并不等于已被现代研究证实的疗效。</p>
+<h3 id="动作要点与生理作用">动作要点与生理作用</h3>
+<li>双脚与肩同宽站立,重心落在足弓上。</li>
+<li>吸气,双臂从体侧上举过头,同时脚跟缓慢抬起。</li>
+<li>在最高处停留 2 秒,感到腿后侧和脊柱被拉长。</li>
+<li>呼气,脚跟缓慢落下,双臂放回体侧。</li>
+<p>脚跟抬起时,小腿肌肉反复收缩,挤压深部静脉,把血液推回心脏,这称为小腿肌肉泵。肌肉泵能促进静脉回流。回心血量增加,每搏输出量随之增加,心输出量的计算式为:</p>
+$$CO = HR \times SV$$
+<p>其中 $CO$ 是心输出量(L/min),$HR$ 是心率(次/分),$SV$ 是每搏输出量(mL/次)。</p>
+<h3 id="例题">例题</h3>
+<p>一位学生久坐后站起,静息心率为 $72$ 次/分,每搏输出量为 $70\ \text{mL}$。</p>
+$$CO = 72 \times 70 = 5040\ \text{mL/min} \approx 5.0\ \text{L/min}$$
+<p>做 20 次提身后,心率升至 $78$ 次/分,每搏输出量升至 $75\ \text{mL}$:</p>
+$$CO = 78 \times 75 = 5850\ \text{mL/min} \approx 5.9\ \text{L/min}$$
+<p>心输出量增加约 $0.8\ \text{L/min}$。这个数字是为演示计算而设的假设值,不是实测结果。</p>
+<h3 id="问题应用">问题应用</h3>
+<p><strong>情境:</strong> 一位办公室职员每天坐 8 小时,傍晚常觉小腿发胀。请设计一个简单的提身方案,并说明理由。</p>
+<p><strong>分析:</strong></p>
+<li>久坐时小腿肌肉几乎不收缩,静脉回流依赖重力和肌肉泵,血液容易积在下肢,因此傍晚会发胀。</li>
+<li>方案:每工作 60 分钟做 1 组,每组 10 次提身,每次上举 2 秒、下降 3 秒。下降放慢,是为了让小腿肌肉离心控制,多做功。</li>
+<li>若有头晕、平衡不稳、严重静脉曲张或足踝损伤,应扶墙完成动作,或先咨询医生。</li>
+<p><strong>检验:</strong> 每天 8 组、每组 10 次,共 $8 \times 10 = 80$ 次。按每次 5 秒计算,总用时约 $80 \times 5 = 400$ 秒,不到 7 分钟,很容易分散到工作日里完成。</p>
+<h3 id="小结">小结</h3>
+<p>提身把上肢上举与足跟抬起结合起来。它既能利用小腿肌肉泵促进静脉回流、拉伸后侧链,也是中医理论中联系涌泉、肾经与背部经络的一种导引动作。</p>
+  </main>
+  <footer class="spl-credit"><span class="spl-credit__meta">Ch3: The Five-Organ Exercises (五脏操) (Level: College &middot; Language: ZH &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
+</div>
+</body>
+</html>

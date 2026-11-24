@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>交感与副交感神经平衡 | Meta Health Ch05</title>
+<script>
+MathJax = {
+  loader: { load: ['[tex]/mathtools'] },
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']],
+         packages: { '[+]': ['mathtools'] } },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<script src="https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.min.js"></script>
+<script>mermaid.initialize({ startOnLoad: true, theme: 'neutral' });</script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+footer.spl-credit span{display:block}
+footer.spl-credit .spl-credit__meta{margin-bottom:4px}
+.cb-figure{margin:24px 0;text-align:center}
+.cb-figure img{max-width:100%;height:auto;border:1px solid #e0e0d8;border-radius:6px}
+figcaption{font-size:.82rem;color:#666;margin-top:8px;font-style:italic;text-align:center}
+pre.mermaid{background:none;border:none;padding:0;overflow:visible;margin:16px 0}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="交感与副交感神经平衡">交感与副交感神经平衡</h2>
+<p><strong>定义。</strong> 自主神经系统分为两大分支,它们对同一器官常常产生相反的作用。交感神经(常称"战或逃"系统)在应激、运动或危险时被激活:心率加快、支气管扩张、瞳孔放大、血糖升高,消化活动被抑制。副交感神经(常称"休息与消化"系统)在安静时占优势:心率减慢、胃肠蠕动和消化液分泌增加、能量被储存。两者并非"一开一关",而是同时持续发放冲动,身体状态取决于二者<strong>当下的相对优势</strong>,称为自主神经张力。</p>
+<p><strong>心脏是最直观的例子。</strong> 心脏自身的窦房结在不受神经影响时,固有节律约为 100 次/分。静息时迷走神经(副交感)的抑制性影响占主导,所以健康成年人静息心率约为 60–80 次/分。运动时,迷走神经张力下降,同时交感神经兴奋,心率可升至接近最大心率。常用的估算公式为:</p>
+$$HR_{\max} \approx 220 - \text{年龄}$$
+<p>心率还通过心输出量影响全身供血:</p>
+$$CO = HR \times SV$$
+<p>其中 $CO$ 为心输出量(L/min),$HR$ 为心率(次/分),$SV$ 为每搏输出量(mL/次,计算时换算为 L)。</p>
+<p><strong>例题。</strong> 一名 20 岁学生静息心率 70 次/分,每搏输出量 70 mL。剧烈运动时心率升至 180 次/分,每搏输出量升至 100 mL。求心输出量的变化,并估算其最大心率。</p>
+<li>静息:$CO = 70 \times 0.070 = 4.9\ \text{L/min}$</li>
+<li>运动:$CO = 180 \times 0.100 = 18\ \text{L/min}$</li>
+<li>增加约 3.7 倍。</li>
+<li>估算最大心率:$220 - 20 = 200$ 次/分,运动时的 180 次/分约为其 90%。</li>
+<p>这一变化主要由交感神经兴奋与迷走神经张力撤退共同完成。</p>
+<p><strong>应用:用心率恢复判断平衡状态。</strong> 运动停止后,副交感神经重新占优势,心率会迅速下降。运动后第 1 分钟心率下降幅度较小(例如少于约 12 次/分)与较差的心血管预后相关,因此常被用作自主神经调节能力的指标。</p>
+<p><em>问题:</em> 上述学生运动结束时心率为 180 次/分,1 分钟后降至 150 次/分。心率恢复量是多少?</p>
+<p><em>解答:</em> $180 - 150 = 30$ 次/分,明显高于 12 次/分的参考界限,提示副交感神经"刹车"反应良好。</p>
+<p>另一个常用指标是心率变异性(HRV),即相邻心跳间隔的波动程度。一般而言,静息时 HRV 较高提示副交感调节能力较强,长期压力、睡眠不足时 HRV 往往降低。需要注意,HRV 受年龄、呼吸、测量方法影响很大,个体之间不宜直接比较,更适合与自己的基线对照。</p>
+<p><strong>要点。</strong> 健康并不是让某一分支"永远占优势",而是能够根据情境灵活切换:需要时迅速动员,结束后及时恢复。长期处于交感兴奋状态(慢性压力)而难以恢复,才是需要关注的问题。</p>
+  </main>
+  <footer class="spl-credit"><span class="spl-credit__meta">Ch5: Eating as Internal Exercise (饮食即内脏运动) (Level: College &middot; Language: ZH &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
+</div>
+</body>
+</html>

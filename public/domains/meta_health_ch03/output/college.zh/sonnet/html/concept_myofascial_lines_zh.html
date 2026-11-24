@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>肌筋膜链 | Meta Health Ch03</title>
+<script>
+MathJax = {
+  loader: { load: ['[tex]/mathtools'] },
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']],
+         packages: { '[+]': ['mathtools'] } },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<script src="https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.min.js"></script>
+<script>mermaid.initialize({ startOnLoad: true, theme: 'neutral' });</script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+footer.spl-credit span{display:block}
+footer.spl-credit .spl-credit__meta{margin-bottom:4px}
+.cb-figure{margin:24px 0;text-align:center}
+.cb-figure img{max-width:100%;height:auto;border:1px solid #e0e0d8;border-radius:6px}
+figcaption{font-size:.82rem;color:#666;margin-top:8px;font-style:italic;text-align:center}
+pre.mermaid{background:none;border:none;padding:0;overflow:visible;margin:16px 0}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="肌筋膜链">肌筋膜链</h2>
+<p><strong>定义。</strong> 肌筋膜链(myofascial lines)是一种解剖学描述框架:它把相邻的肌肉、肌腱和包裹它们的筋膜,看作沿身体走向连续相接的"带状"结构。最常被引用的是 Thomas Myers 在《解剖列车》中提出的模型,其中包括:</p>
+<p>| 肌筋膜链 | 大致走向 | 主要功能 | |---|---|---| | 浅背线 | 足底筋膜→小腿后侧→腘绳肌→骶骨→竖脊肌→头皮 | 维持直立、伸展躯干 | | 体侧线 | 足外侧→小腿外侧→髂胫束→躯干侧面→颈部 | 侧向稳定、限制侧屈 | | 螺旋线 | 头部→对侧肩→环绕躯干→同侧髋→胫骨前→足弓 | 躯干旋转、骨盆与足的协调 |</p>
+<p>需要说明的是,这是一种有启发性的整理方式,而不是已被证实的"独立功能链"。解剖学研究在部分连接(如腘绳肌与骶结节韧带、胸腰筋膜与臀大肌)上有支持,但对"力可以沿整条链远距离传递"这一点,证据仍有限。</p>
+<p><strong>例题。</strong> 一位跑者长期足底不适,同时腘绳肌紧绷。试用浅背线的思路分析。</p>
+<li>第一步:确认两处症状是否都位于浅背线上。足底筋膜与腘绳肌确实属于同一条线。</li>
+<li>第二步:提出可检验的假设。在站立前屈测试中,若先对小腿后侧和足底做放松,再次测试时指尖离地距离缩短,说明该线上的组织张力可能相互影响。</li>
+<li>第三步:设计对照。同一天分别只放松手臂、只放松足底,各自测量前屈距离。如果只有放松足底(或小腿)才有明显改善,假设得到支持。</li>
+<p>假设初测指尖距地 $12\ \text{cm}$,放松足底后为 $8\ \text{cm}$,放松手臂后为 $11.5\ \text{cm}$。足底干预使距离缩短 $12-8=4\ \text{cm}$,手臂干预仅缩短 $0.5\ \text{cm}$,差异提示局部与远端组织存在关联。不过,这类即时改善也可能来自牵伸耐受度提高(神经系统对牵拉感的适应),并不一定说明筋膜发生了结构变化。</p>
+<p><strong>问题解决应用。</strong> 面对"体侧线"问题,可按以下流程思考:</p>
+<li><strong>观察姿势:</strong> 单腿站立时,骨盆是否明显下沉或躯干向一侧倾斜?</li>
+<li><strong>定位线上的薄弱环节:</strong> 体侧线上的臀中肌、阔筋膜张肌和腹斜肌,哪一处力量不足或过紧?</li>
+<li><strong>选择干预:</strong> 侧桥、侧向抬腿等训练,同时练习髋、躯干、肩的协同;而不是只孤立地牵伸髂胫束。</li>
+<li><strong>复测:</strong> 记录单腿站立 30 秒内的晃动或骨盆下沉情况,训练 4 周后比较。</li>
+<p>同理,螺旋线可用于分析高尔夫挥杆、投掷等旋转动作:受伤时不只检查疼痛部位,也检查整条线上相邻关节的活动度与力量。</p>
+<p><strong>小结。</strong> 肌筋膜链提供了一种"从整体链条找原因"的思路,适合用来提出假设、设计检验;但应以实际测量的改善为准,而不是默认链条一定传递了力量。</p>
+  </main>
+  <footer class="spl-credit"><span class="spl-credit__meta">Ch3: The Five-Organ Exercises (五脏操) (Level: College &middot; Language: ZH &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
+</div>
+</body>
+</html>

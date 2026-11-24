@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>First-Pass Processing in the Liver | Meta Health Ch05</title>
+<script>
+MathJax = {
+  loader: { load: ['[tex]/mathtools'] },
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']],
+         packages: { '[+]': ['mathtools'] } },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<script src="https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.min.js"></script>
+<script>mermaid.initialize({ startOnLoad: true, theme: 'neutral' });</script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+footer.spl-credit span{display:block}
+footer.spl-credit .spl-credit__meta{margin-bottom:4px}
+.cb-figure{margin:24px 0;text-align:center}
+.cb-figure img{max-width:100%;height:auto;border:1px solid #e0e0d8;border-radius:6px}
+figcaption{font-size:.82rem;color:#666;margin-top:8px;font-style:italic;text-align:center}
+pre.mermaid{background:none;border:none;padding:0;overflow:visible;margin:16px 0}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="first-pass-processing-in-the-liver">First-Pass Processing in the Liver</h2>
+<p><strong>Definition.</strong> Blood leaving the stomach and intestines does not return directly to the heart. Instead, it drains into the <strong>hepatic portal vein</strong>, which carries absorbed nutrients to the liver first. There the liver screens, stores, converts, and packages them before they reach the general circulation. This routing is called <em>first-pass processing</em>. The same route applies to many orally taken drugs, so the liver can reduce a drug's dose before it reaches the rest of the body (the <em>first-pass effect</em>).</p>
+<p>The liver's main jobs on this first pass:</p>
+<p>| Nutrient arriving | Liver's action | Result | |---|---|---| | Glucose | Stored as glycogen (about 100 g in the liver) | Blood glucose is buffered after a meal | | Dietary fat | Repackaged into lipoproteins; cholesterol made into bile | Fats can travel in blood; bile aids fat digestion | | Amino acids | Used for proteins; excess nitrogen converted to urea | Ammonia is detoxified | | Toxins, drugs, alcohol | Chemically modified by enzymes | Often less active or easier to excrete |</p>
+<p>Note that most digested fat bypasses the portal vein. It enters lymph as chylomicrons and reaches the liver later, via the bloodstream.</p>
+<p><strong>Worked example.</strong> A person eats a meal with 75 g of carbohydrate, and about 60 g of it is absorbed as glucose. Suppose the liver takes up roughly one-third on the first pass.</p>
+$$60\ \text{g} \times \frac{1}{3} = 20\ \text{g glucose stored}$$
+<p>Carbohydrate yields about 4 kcal/g, so this is</p>
+$$20\ \text{g} \times 4\ \frac{\text{kcal}}{\text{g}} = 80\ \text{kcal}$$
+<p>stored as glycogen. The remaining 40 g enters general circulation, where muscle and other tissues take it up. Without this buffering, blood glucose would spike much higher after the meal.</p>
+<p><strong>Problem-solving application.</strong> Consider a drug with an oral dose of 100 mg. Assume 80% is absorbed from the gut, and the liver then removes 50% of that on the first pass. How much reaches the systemic circulation?</p>
+<li>Absorbed: $100\ \text{mg} \times 0.80 = 80\ \text{mg}$</li>
+<li>Survives the liver: $80\ \text{mg} \times (1 - 0.50) = 40\ \text{mg}$</li>
+<p>Bioavailability is therefore</p>
+$$F = \frac{40\ \text{mg}}{100\ \text{mg}} = 0.40 = 40\%$$
+<p>This explains why some drugs are given by routes that bypass the portal vein. Nitroglycerin is placed under the tongue, and some medications are given by injection or patch. Those routes reach the heart before the liver, so smaller doses work.</p>
+<p>The same logic explains why liver disease matters clinically. If the liver's capacity falls, as in cirrhosis, blood can shunt around it. Glucose regulation worsens, ammonia accumulates, and oral drugs become more potent than expected, so doses often need adjusting.</p>
+<pre class="mermaid">flowchart LR
+A[Stomach and intestines] --> B[Hepatic portal vein]
+B --> C[Liver]
+C --> D[Store glucose as glycogen]
+C --> E[Package fats and make bile]
+C --> F[Detoxify drugs and ammonia]
+C --> G[Hepatic vein]
+G --> H[General circulation]</pre>
+<p><em>Nutrient-rich blood from the gut passes through the liver before entering general circulation.</em></p>
+  </main>
+  <footer class="spl-credit"><span class="spl-credit__meta">Ch5: Eating as Internal Exercise (饮食即内脏运动) (Level: College &middot; Language: EN &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
+</div>
+</body>
+</html>

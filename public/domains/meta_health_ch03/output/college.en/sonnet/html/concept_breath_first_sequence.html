@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Breath-First Sequence | Meta Health Ch03</title>
+<script>
+MathJax = {
+  loader: { load: ['[tex]/mathtools'] },
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']],
+         packages: { '[+]': ['mathtools'] } },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<script src="https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.min.js"></script>
+<script>mermaid.initialize({ startOnLoad: true, theme: 'neutral' });</script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+footer.spl-credit span{display:block}
+footer.spl-credit .spl-credit__meta{margin-bottom:4px}
+.cb-figure{margin:24px 0;text-align:center}
+.cb-figure img{max-width:100%;height:auto;border:1px solid #e0e0d8;border-radius:6px}
+figcaption{font-size:.82rem;color:#666;margin-top:8px;font-style:italic;text-align:center}
+pre.mermaid{background:none;border:none;padding:0;overflow:visible;margin:16px 0}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="the-breath-first-sequence">The Breath-First Sequence</h2>
+<p><strong>Definition.</strong> The breath-first sequence is an ordering of a five-part body-awareness routine that begins with the chest (Lung) and moves on from there. In Traditional Chinese Medicine (TCM), the five organ systems are arranged in a generating cycle, usually listed as Liver, Heart, Spleen, Lung, Kidney. The breath-first order is almost the same, with Lung and Liver swapped, so Lung comes first. Some popular teaching videos use this order. Its rationale is physiological, not traditional: breathing is the one autonomic function you can also control voluntarily, so it is a convenient entry point for calming the body.</p>
+<p><strong>Why breathing works as the entry point.</strong> Heart rate, digestion, and blood pressure run automatically. Breathing runs automatically too, but you can take it over at will. Slow, deliberate breathing increases vagal (parasympathetic) activity. This shows up as respiratory sinus arrhythmia, in which heart rate rises slightly on inhalation and falls on exhalation. Controlled breathing therefore lets you influence a system you cannot command directly. Starting here gives the later steps a calmer baseline.</p>
+<p><strong>Worked example.</strong> Compare two ways to run the routine.</p>
+<p>| Step | Generating-cycle order | Breath-first order | |------|------------------------|--------------------| | 1 | Liver | Lung | | 2 | Heart | Heart | | 3 | Spleen | Spleen | | 4 | Lung | Liver | | 5 | Kidney | Kidney |</p>
+<p>Only steps 1 and 4 differ. Suppose a student's resting heart rate is 84 beats per minute and they are anxious before an exam. In the breath-first order they begin with six breaths per minute: about 4 seconds in and 6 seconds out, for 10 seconds per breath. Over 2 minutes that is $\frac{120\ \text{s}}{10\ \text{s/breath}} = 12$ breaths. Many people see resting heart rate drop by several beats per minute during this kind of paced breathing, so the student might fall from 84 to roughly 76. The remaining steps then start from that calmer state.</p>
+<p><strong>Problem-solving application.</strong> Use the sequence as a decision rule for designing a routine:</p>
+<li>Identify what you can control directly. Breathing is the clear choice, and posture and muscle tension are others.</li>
+<li>Put the controllable step first, then use the change it produces to support the steps that depend on autonomic state.</li>
+<li>Measure the result with something real, such as pulse over 60 seconds before and after.</li>
+<p><em>Practice problem:</em> A person's pulse is 90 beats per minute before the routine and 78 after. What is the percentage decrease? The drop is 12 beats, so $\frac{12}{90} \approx 0.133$, or about 13%. Repeat this on several days. If the number does not move, the breathing step is not doing its job, whatever order you use.</p>
+<p><strong>Evidence note.</strong> The physiological effect of slow breathing on heart rate is well documented. The claim that Lung-first is better than the generating-cycle order has no direct trial support. It is a teaching choice that rests on the breathing rationale above.</p>
+  </main>
+  <footer class="spl-credit"><span class="spl-credit__meta">Ch3: The Five-Organ Exercises (五脏操) (Level: College &middot; Language: EN &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
+</div>
+</body>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>五脏 | Meta Health Ch01</title>
+<script>
+MathJax = {
+  loader: { load: ['[tex]/mathtools'] },
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']],
+         packages: { '[+]': ['mathtools'] } },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<script src="https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.min.js"></script>
+<script>mermaid.initialize({ startOnLoad: true, theme: 'neutral' });</script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+footer.spl-credit span{display:block}
+footer.spl-credit .spl-credit__meta{margin-bottom:4px}
+.cb-figure{margin:24px 0;text-align:center}
+.cb-figure img{max-width:100%;height:auto;border:1px solid #e0e0d8;border-radius:6px}
+figcaption{font-size:.82rem;color:#666;margin-top:8px;font-style:italic;text-align:center}
+pre.mermaid{background:none;border:none;padding:0;overflow:visible;margin:16px 0}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="五脏">五脏</h2>
+<p><strong>定义。</strong> 中医认为，人体的核心功能系统有五个，称为五脏：肝、心、脾、肺、肾。（"中医"即传统中医学，英文为 Traditional Chinese Medicine，简称 TCM。）按 TCM 的说法，五脏的共同特点是"藏精气而不泻"，即主要负责贮藏和化生气、血、精（生命的基本物质），并各自与五行中的一行对应。需要特别注意：五脏是<strong>功能系统</strong>，不等同于解剖学上的同名器官。例如，TCM 所说的"脾"主管饮食的消化吸收和水液运化，涵盖了现代解剖学中胃肠、胰腺等多个器官的部分功能，而不是单指位于左上腹的脾脏。</p>
+<p><strong>五脏的主要功能与对应关系</strong></p>
+<p>| 五脏 | 五行 | TCM 所述主要功能 | 常联系的部位或表现 | |---|---|---|---| | 肝 | 木 | 主疏泄，调畅气机；藏血 | 目、筋 | | 心 | 火 | 主血脉；主神志 | 舌、面色 | | 脾 | 土 | 主运化，化生气血 | 口、肌肉 | | 肺 | 金 | 主气，司呼吸；宣发肃降 | 鼻、皮毛 | | 肾 | 水 | 藏精；主水；主纳气 | 耳、骨、发 |</p>
+<p><strong>例题。</strong> 一位学生长期熬夜备考，出现食欲差、饭后腹胀、大便偏稀、容易疲倦。按 TCM 的辨证思路，这些表现被归入"脾失健运"：消化吸收（运化）功能减弱，导致气血化生不足，所以既有消化症状，又有乏力。</p>
+<p><strong>分析步骤：</strong></p>
+<li>先找症状集中在哪个功能上：食欲、腹胀、便溏，都与"运化"有关。</li>
+<li>再对应到五脏：运化属脾。</li>
+<li>最后看伴随症状：疲倦对应"气血化生不足"，与脾的功能相符。</li>
+<p><strong>应用练习。</strong> 判断下列说法是否正确，并说明理由：</p>
+<p><em>"某人被诊断为'肾虚'，说明他的肾脏（解剖器官）有病变，应做肾功能检查。"</em></p>
+<p><strong>解答：</strong> 这一说法不准确。TCM 的"肾"是功能系统，涵盖生殖、生长发育、水液代谢、骨骼等方面，"肾虚"是 TCM 的辨证概念，并不等于现代医学中的肾脏疾病。因此，"肾虚"的诊断不能直接推出肾脏器官有病变。反过来，如果出现水肿、尿量异常、血压升高等症状，应当按现代医学检查血肌酐、尿常规等指标，而不能只依据 TCM 的名称下结论。</p>
+<p><strong>使用时的要点：</strong></p>
+<li>阅读 TCM 资料时，先分清它说的是"功能系统"还是"解剖器官"。</li>
+<li>五脏与五行的对应是 TCM 的理论框架，用来归纳症状和功能，并不是可测量的生理定律。就证据而言，五脏理论本身没有得到现代生理学的验证；针对具体疗法的疗效，需要逐一用临床试验评价。</li>
+<li>出现持续或严重的症状时，应优先寻求现代医学的诊断，不应仅凭 TCM 术语自行判断。</li>
+  </main>
+  <footer class="spl-credit"><span class="spl-credit__meta">Ch1: TCM Foundations — Yin-Yang, Qi-Blood, and the Five Phases (中医基础) (Level: College &middot; Language: ZH &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
+</div>
+</body>
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The HPA Axis | Meta Health Ch07</title>
+<script>
+MathJax = {
+  loader: { load: ['[tex]/mathtools'] },
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']],
+         packages: { '[+]': ['mathtools'] } },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<script src="https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.min.js"></script>
+<script>mermaid.initialize({ startOnLoad: true, theme: 'neutral' });</script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+footer.spl-credit span{display:block}
+footer.spl-credit .spl-credit__meta{margin-bottom:4px}
+.cb-figure{margin:24px 0;text-align:center}
+.cb-figure img{max-width:100%;height:auto;border:1px solid #e0e0d8;border-radius:6px}
+figcaption{font-size:.82rem;color:#666;margin-top:8px;font-style:italic;text-align:center}
+pre.mermaid{background:none;border:none;padding:0;overflow:visible;margin:16px 0}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="the-hpa-axis">The HPA Axis</h2>
+<p>The <strong>hypothalamus–pituitary–adrenal (HPA) axis</strong> is the body's main hormonal stress system. It is a chain of three glands that pass a chemical signal along in sequence, ending with the release of <strong>cortisol</strong> from the adrenal glands. Cortisol raises blood glucose, sharpens the body's energy supply, and temporarily dampens functions that are not urgent, such as digestion and immune activity.</p>
+<p><strong>The chain of command</strong></p>
+<li>The <strong>hypothalamus</strong>, a brain region, detects a stressor (a threat, pain, low blood sugar, or an exam) and releases corticotropin-releasing hormone (CRH).</li>
+<li>CRH travels a short distance to the <strong>pituitary gland</strong>, which releases adrenocorticotropic hormone (ACTH) into the blood.</li>
+<li>ACTH reaches the <strong>adrenal cortex</strong>, the outer layer of the adrenal glands sitting above the kidneys, which releases cortisol.</li>
+<p>Cortisol then acts on tissues throughout the body. It also signals back to the hypothalamus and pituitary to slow CRH and ACTH release. This is <strong>negative feedback</strong>, and it is how the system switches itself off once the stressor passes.</p>
+<pre class="mermaid">flowchart TD
+    A[Stressor] --> B[Hypothalamus]
+    B -->|CRH| C[Pituitary gland]
+    C -->|ACTH| D[Adrenal cortex]
+    D -->|Cortisol| E[Body tissues]
+    D -.->|Negative feedback| B
+    D -.->|Negative feedback| C</pre>
+<p><em>The HPA axis: each gland triggers the next, and cortisol feeds back to shut the chain down.</em></p>
+<p><strong>Daily rhythm.</strong> Cortisol is not constant. Levels peak about 30–45 minutes after waking, a rise called the cortisol awakening response, and fall through the day to their lowest point near midnight. A typical morning blood level is roughly 10–20 µg/dL, and an evening level is often below 5 µg/dL.</p>
+<p><strong>Worked example.</strong> A student has a saliva cortisol test at 8:00 a.m. (just after waking), at 4:00 p.m., and at 11:00 p.m. on a normal day. The results are 15, 6, and 2 nmol/L. This is a healthy pattern: high in the morning and low at night. Now suppose a second student, under weeks of poor sleep and exam pressure, gets 9, 8, and 7 nmol/L. The morning peak is blunted and the evening level stays elevated. The daily rhythm has flattened, which is commonly seen with chronic stress or disrupted sleep.</p>
+<p><strong>Problem-solving application.</strong> Suppose a person reports being "wired but tired" at night, waking at 3 a.m., and relying on caffeine in the morning. You can reason through this in steps:</p>
+<li><strong>Identify the system.</strong> Sleep problems and daytime fatigue can involve the HPA rhythm.</li>
+<li><strong>Look for the pattern, not one number.</strong> A single cortisol value is hard to interpret. A multi-point daily profile shows whether the rhythm is intact.</li>
+<li><strong>Check the inputs.</strong> Irregular sleep, late-night light exposure, overtraining, and under-eating all activate the HPA axis.</li>
+<li><strong>Choose changes that reduce the load.</strong> Examples are consistent sleep and wake times, morning daylight, adequate calories, and scheduled recovery days.</li>
+<p>Short bursts of cortisol are useful, as in a race or a presentation. Problems arise when activation is prolonged and the feedback loop no longer resets the system. Persistently abnormal cortisol patterns, or symptoms such as rapid weight gain or unexplained weakness, need medical evaluation. Conditions such as Cushing syndrome (too much cortisol) and Addison disease (too little) are diagnosed with clinical testing.</p>
+  </main>
+  <footer class="spl-credit"><span class="spl-credit__meta">Ch7: Stress, Emotion, and the Flow of Qi and Blood (情志与气血) (Level: College &middot; Language: EN &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
+</div>
+</body>
+</html>

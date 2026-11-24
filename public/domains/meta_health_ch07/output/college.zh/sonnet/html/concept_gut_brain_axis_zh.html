@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>肠脑轴 | Meta Health Ch07</title>
+<script>
+MathJax = {
+  loader: { load: ['[tex]/mathtools'] },
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']],
+         packages: { '[+]': ['mathtools'] } },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<script src="https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.min.js"></script>
+<script>mermaid.initialize({ startOnLoad: true, theme: 'neutral' });</script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+footer.spl-credit span{display:block}
+footer.spl-credit .spl-credit__meta{margin-bottom:4px}
+.cb-figure{margin:24px 0;text-align:center}
+.cb-figure img{max-width:100%;height:auto;border:1px solid #e0e0d8;border-radius:6px}
+figcaption{font-size:.82rem;color:#666;margin-top:8px;font-style:italic;text-align:center}
+pre.mermaid{background:none;border:none;padding:0;overflow:visible;margin:16px 0}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="肠脑轴">肠脑轴</h2>
+<p><strong>肠脑轴</strong>(gut–brain axis)是肠道与大脑之间的双向通信网络。它不是单一的"线路",而是四条相互交织的通道:</p>
+<li><strong>迷走神经</strong>:连接脑干与消化道的主要神经,约 80% 的纤维是由肠道向大脑传递信号的传入纤维。</li>
+<li><strong>激素通路</strong>:进食后,肠道内分泌细胞释放胰高血糖素样肽-1(GLP-1)、胆囊收缩素、胃饥饿素(ghrelin)等激素,作用于下丘脑,调节食欲与饱腹感。</li>
+<li><strong>免疫信号</strong>:肠道含有人体大部分免疫细胞;炎症因子可进入血液,影响脑内的炎症状态与情绪。</li>
+<li><strong>肠道微生物组</strong>:肠道菌群发酵膳食纤维,产生短链脂肪酸(如丁酸),并影响色氨酸代谢。人体约 90% 的血清素由肠道的肠嗜铬细胞合成,但它基本不能穿过血脑屏障,因此不能简单理解为"肠道血清素直接决定情绪"。</li>
+<p>反方向上,大脑通过自主神经和应激激素(如皮质醇)改变肠道的蠕动、分泌和通透性。这就是为什么考试前会腹泻或胃痛。</p>
+<pre class="mermaid">flowchart LR
+    A[大脑] -->|自主神经、应激激素| B[肠道]
+    B -->|迷走神经传入信号| A
+    B -->|GLP-1、胆囊收缩素等激素| A
+    C[肠道微生物组] -->|短链脂肪酸、代谢产物| B
+    B -->|免疫信号、炎症因子| A
+    B --> C</pre>
+<p><em>肠脑轴的双向通信:神经、激素、免疫与微生物四条通道共同连接肠道与大脑。</em></p>
+<h3 id="worked-example-进餐后的饱腹信号">worked example:进餐后的饱腹信号</h3>
+<p>小李吃了一份约 600 kcal 的午餐。食物进入小肠后,发生下列事件:</p>
+<li>肠壁受到牵拉,迷走神经传入纤维兴奋;</li>
+<li>L 细胞分泌 GLP-1,胆囊收缩素同时升高;</li>
+<li>这些信号抵达下丘脑,抑制饥饿感,于是小李在大约 3–4 小时内不想再进食。</li>
+<p>这一过程由神经和激素共同完成,并不是"意志力"的结果。GLP-1 受体激动剂类减重药物(如司美格鲁肽)正是模拟这条通路发挥作用。</p>
+<h3 id="问题求解应用">问题求解应用</h3>
+<p><strong>情境</strong>:一名学生在考试周连续两周出现腹胀、排便不规律,睡眠也变差。他想知道怎样改善。</p>
+<p><strong>分析步骤</strong>:</p>
+<li><strong>识别方向</strong>:压力(脑→肠)使肠道蠕动紊乱;肠道不适和睡眠差(肠→脑)又加重焦虑,形成恶性循环。</li>
+<li><strong>找可干预的环节</strong>:</li>
+<p>   - 规律作息、运动和放松训练(如深呼吸、慢速腹式呼吸)可降低交感神经兴奋,并增强迷走神经张力;    - 每日摄入约 25–30 g 膳食纤维(蔬菜、全谷物、豆类),为产短链脂肪酸的菌群提供原料,应逐步增加以免加重胀气;    - 限制咖啡因和酒精,二者都会刺激肠道。</p>
+<li><strong>设定预期</strong>:改变饮食和作息通常需要数周才能见效。如果出现便血、体重明显下降、持续腹痛或夜间症状,应就医排查器质性疾病,而不是自行归因于压力。</li>
+<p><strong>证据说明</strong>:肠脑轴在动物实验中证据较强;在人体中,益生菌或"心理益生菌"对抑郁、焦虑的疗效结果尚不一致,目前不宜把它们当作精神疾病的替代治疗。</p>
+<p><strong>小结</strong>:肠脑轴说明消化与情绪相互影响。理解方向和通道,才能针对具体环节采取有依据的措施。</p>
+  </main>
+  <footer class="spl-credit"><span class="spl-credit__meta">Ch7: Stress, Emotion, and the Flow of Qi and Blood (情志与气血) (Level: College &middot; Language: ZH &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
+</div>
+</body>
+</html>

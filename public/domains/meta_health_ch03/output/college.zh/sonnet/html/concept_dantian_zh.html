@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>丹田 | Meta Health Ch03</title>
+<script>
+MathJax = {
+  loader: { load: ['[tex]/mathtools'] },
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']],
+         packages: { '[+]': ['mathtools'] } },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<script src="https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.min.js"></script>
+<script>mermaid.initialize({ startOnLoad: true, theme: 'neutral' });</script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+footer.spl-credit span{display:block}
+footer.spl-credit .spl-credit__meta{margin-bottom:4px}
+.cb-figure{margin:24px 0;text-align:center}
+.cb-figure img{max-width:100%;height:auto;border:1px solid #e0e0d8;border-radius:6px}
+figcaption{font-size:.82rem;color:#666;margin-top:8px;font-style:italic;text-align:center}
+pre.mermaid{background:none;border:none;padding:0;overflow:visible;margin:16px 0}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="丹田">丹田</h2>
+<p><strong>定义。</strong> 丹田(dāntián)是中国气功与内丹传统中的一个概念。中医认为,人体有上、中、下三个丹田,其中最常被提及的是<strong>下丹田</strong>,位置约在脐下三寸(同身寸)、腹腔深处。在气功练习中,它是安放呼吸与注意力的“中心”。需要说明的是,丹田不是解剖学结构:现代解剖中,该处并没有一个独立的器官或腺体。它是一种练习用的定位坐标,而不是组织名称。</p>
+<p><strong>三个丹田的传统划分。</strong></p>
+<p>| 名称 | 大致位置 | 练习中的常见用途 | |---|---|---| | 上丹田 | 两眉之间或头部深处 | 专注、观想 | | 中丹田 | 胸部正中,膻中附近 | 调节情绪、放松胸廓 | | 下丹田 | 脐下约三寸,腹内 | 呼吸与注意力的落点 |</p>
+<p><strong>与现代生理的对应。</strong> 虽然丹田本身没有解剖实体,但练习时的体验有可观察的生理基础。所谓“气沉丹田”,实际做法是腹式呼吸:吸气时膈肌下降,腹壁轻微隆起;呼气时腹壁回收。注意力放在下腹,有助于放慢呼吸、减少胸式浅呼吸。研究表明,缓慢深呼吸可增强迷走神经活动,使心率降低、情绪趋于平稳。“气”是否在体内流动,目前缺乏可靠的客观证据。</p>
+<p><strong>例题。</strong> 一位学生平静时每分钟呼吸 16 次,每次潮气量约 $0.5\ \text{L}$。练习丹田呼吸后,呼吸频率降为每分钟 6 次,潮气量增至 $0.8\ \text{L}$。比较两种状态下的每分通气量。</p>
+<p>每分通气量等于呼吸频率乘以潮气量:</p>
+$$\dot V_E = f \times V_T$$
+<p>练习前:$\dot V_E = 16 \times 0.5 = 8.0\ \text{L/min}$。</p>
+<p>练习后:$\dot V_E = 6 \times 0.8 = 4.8\ \text{L/min}$。</p>
+<p>可见每分通气量下降了 $\frac{8.0-4.8}{8.0} = 40\%$,但每次呼吸更深。考虑到解剖死腔约 $0.15\ \text{L}$,再比较肺泡通气量 $\dot V_A = f \times (V_T - V_D)$:</p>
+<li>练习前:$16 \times (0.5-0.15) = 5.6\ \text{L/min}$</li>
+<li>练习后:$6 \times (0.8-0.15) = 3.9\ \text{L/min}$</li>
+<p>这说明慢而深的呼吸并不一定增加通气总量,它的特点是每次呼吸的死腔占比更小(由 $30\%$ 降到约 $19\%$),气体交换效率更高,同时呼吸节律更慢。</p>
+<p><strong>问题应用。</strong> 学习丹田呼吸时,可按以下步骤操作:</p>
+<li><strong>定位:</strong> 坐或站立,一手掌放在脐下,另一手放在胸口。</li>
+<li><strong>观察:</strong> 吸气时,下腹的手应先被轻轻顶起,胸口的手几乎不动。</li>
+<li><strong>计时:</strong> 用计时器数一分钟的呼吸次数,目标为每分钟 6 至 10 次。</li>
+<li><strong>控制力度:</strong> 腹部只需自然起伏,不要刻意憋气或用力顶腹。</li>
+<p><strong>注意事项。</strong> 有高血压、疝气、孕期或腹部手术史者,不宜长时间用力收缩腹部或憋气;若出现头晕、手脚麻木,应立即恢复自然呼吸。把丹田理解为“放松、放慢呼吸的注意力锚点”,既贴近练习的实际效果,也不必依赖无法验证的解剖说法。</p>
+  </main>
+  <footer class="spl-credit"><span class="spl-credit__meta">Ch3: The Five-Organ Exercises (五脏操) (Level: College &middot; Language: ZH &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
+</div>
+</body>
+</html>

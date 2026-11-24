@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Diaphragmatic Breathing | Meta Health Ch04</title>
+<script>
+MathJax = {
+  loader: { load: ['[tex]/mathtools'] },
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']],
+         packages: { '[+]': ['mathtools'] } },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<script src="https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.min.js"></script>
+<script>mermaid.initialize({ startOnLoad: true, theme: 'neutral' });</script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+footer.spl-credit span{display:block}
+footer.spl-credit .spl-credit__meta{margin-bottom:4px}
+.cb-figure{margin:24px 0;text-align:center}
+.cb-figure img{max-width:100%;height:auto;border:1px solid #e0e0d8;border-radius:6px}
+figcaption{font-size:.82rem;color:#666;margin-top:8px;font-style:italic;text-align:center}
+pre.mermaid{background:none;border:none;padding:0;overflow:visible;margin:16px 0}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="diaphragmatic-breathing">Diaphragmatic Breathing</h2>
+<p><strong>Definition.</strong> Diaphragmatic breathing (also called abdominal or belly breathing) is a pattern in which the diaphragm, the dome-shaped muscle beneath the lungs, does most of the work of inhalation. On inhalation the diaphragm contracts and flattens, moving downward. This enlarges the chest cavity, lowers the pressure inside the lungs below atmospheric pressure, and draws air in. The abdominal contents are pushed down and outward, so the belly rises. On exhalation the diaphragm relaxes and recoils upward, and the belly falls. In contrast, shallow chest breathing relies more on the rib muscles and the neck and shoulder muscles, and it often moves less air per breath.</p>
+<p><strong>Worked example.</strong> Compare two people at rest, each breathing 12 times per minute. Person A takes shallow breaths of about 350 mL. Person B breathes diaphragmatically at about 500 mL. About 150 mL of each breath fills the anatomical dead space (the airways where no gas exchange occurs). Alveolar ventilation is</p>
+$$\dot V_A = (V_T - V_D)\times f$$
+<p>where $V_T$ is tidal volume, $V_D$ is dead-space volume, and $f$ is breathing rate.</p>
+<li>Person A: $(350-150)\times 12 = 2400$ mL/min</li>
+<li>Person B: $(500-150)\times 12 = 4200$ mL/min</li>
+<p>Person B moves 75% more fresh air to the alveoli at the same rate. Deeper breaths therefore ventilate the lungs more efficiently, because the fixed dead space takes up a smaller share of each breath.</p>
+<p><strong>Problem-solving application.</strong> Suppose you want to practice the technique before an exam or a race, when your heart is pounding and your breathing is quick and shallow.</p>
+<li><strong>Position.</strong> Lie on your back with knees bent, or sit upright. Put one hand on your chest and the other on your belly.</li>
+<li><strong>Inhale.</strong> Breathe in slowly through the nose for about 4 seconds. The belly hand should rise while the chest hand stays mostly still.</li>
+<li><strong>Exhale.</strong> Breathe out through pursed lips for about 6 seconds. Longer exhalations are commonly used to slow the breathing rate.</li>
+<li><strong>Repeat.</strong> Do 5 to 10 minutes of this, then check your pulse for 15 seconds and multiply by 4.</li>
+<p>If your resting heart rate was 90 beats per minute before and the 15-second count is 18 afterward, your rate is now $18\times 4 = 72$ beats per minute. Slow breathing tends to increase vagal (parasympathetic) activity, which lowers heart rate. In TCM, a similar practice is described as sinking the breath to the dantian (丹田, the lower abdomen). That is a traditional description, and the physiological account above stands on its own.</p>
+<p><strong>Check your understanding.</strong> A patient breathes at 15 breaths per minute with a 400 mL tidal volume and 150 mL of dead space. Their alveolar ventilation is $(400-150)\times 15 = 3750$ mL/min. If training raises the tidal volume to 550 mL and lowers the rate to 10 breaths per minute, the new value is $(550-150)\times 10 = 4000$ mL/min. Ventilation rises slightly even though the person breathes less often. This is why slow, deep breathing can be both calming and efficient.</p>
+<p><strong>Caution.</strong> People with certain lung or heart conditions should ask a clinician before practicing prolonged breathing exercises. If you feel dizzy, return to normal breathing.</p>
+  </main>
+  <footer class="spl-credit"><span class="spl-credit__meta">Ch4: Baduanjin — The Eight Brocades (八段锦) (Level: College &middot; Language: EN &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
+</div>
+</body>
+</html>

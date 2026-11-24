@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>人生各阶段的蛋白质 | Meta Health Ch06</title>
+<script>
+MathJax = {
+  loader: { load: ['[tex]/mathtools'] },
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']],
+         packages: { '[+]': ['mathtools'] } },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<script src="https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.min.js"></script>
+<script>mermaid.initialize({ startOnLoad: true, theme: 'neutral' });</script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+footer.spl-credit span{display:block}
+footer.spl-credit .spl-credit__meta{margin-bottom:4px}
+.cb-figure{margin:24px 0;text-align:center}
+.cb-figure img{max-width:100%;height:auto;border:1px solid #e0e0d8;border-radius:6px}
+figcaption{font-size:.82rem;color:#666;margin-top:8px;font-style:italic;text-align:center}
+pre.mermaid{background:none;border:none;padding:0;overflow:visible;margin:16px 0}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="人生各阶段的蛋白质">人生各阶段的蛋白质</h2>
+<p><strong>定义。</strong> 蛋白质需求不是一个固定数字,而是随年龄、活动量和健康状况变化。成人的推荐膳食摄入量(RDA)为每天每公斤体重 $0.8\,\text{g}$,这是防止氮缺乏的最低水平。蛋白质由氨基酸组成,其中亮氨酸能强烈触发肌肉蛋白合成。<strong>肌少症</strong>(sarcopenia)指随年龄增长出现的骨骼肌质量与力量的进行性下降,50 岁以后更明显。</p>
+<p><strong>各阶段特点。</strong></p>
+<p>| 阶段 | 蛋白质需求要点 | |---|---| | 婴幼儿、儿童 | 按体重计需求最高,用于生长发育 | | 青少年 | 生长突增期需求上升 | | 成年人 | RDA 为 $0.8\,\text{g/kg}$;运动者常建议 $1.2\text{–}1.6\,\text{g/kg}$ | | 50 岁以上 | 常建议 $1.0\text{–}1.2\,\text{g/kg}$ |</p>
+<p>老年人肌肉对少量蛋白质的反应变弱,这种现象称为"合成代谢抵抗"。因此,老年人需要每餐摄入更多蛋白质,才能达到与年轻人相同的肌肉合成效果。一般认为每餐约 $25\text{–}40\,\text{g}$ 较合适。</p>
+<p><strong>worked example(例题)。</strong> 一位 68 岁女性体重 $60\,\text{kg}$,目标为 $1.2\,\text{g/kg}$。她的早餐只有面包和咖啡(约 $5\,\text{g}$ 蛋白质),午餐约 $15\,\text{g}$,晚餐约 $50\,\text{g}$。</p>
+<p>每日目标:</p>
+$$60\,\text{kg} \times 1.2\,\frac{\text{g}}{\text{kg}} = 72\,\text{g}$$
+<p>她的实际总量为 $5+15+50=70\,\text{g}$,接近目标。但分布极不均匀:早、午餐都低于每餐 $25\,\text{g}$ 的门槛,晚餐的超额部分不能"补偿"前两餐。</p>
+<p><strong>问题解决应用。</strong> 把 $72\,\text{g}$ 平均分成三餐,每餐约 $24\,\text{g}$:</p>
+$$\frac{72\,\text{g}}{3} = 24\,\text{g}$$
+<p>可以这样调整:</p>
+<li>早餐:加 2 个鸡蛋(约 $12\,\text{g}$)和一杯牛奶(约 $8\,\text{g}$),合计约 $25\,\text{g}$。</li>
+<li>午餐:加一块约 $100\,\text{g}$ 的鱼或豆腐(约 $20\,\text{g}$),合计约 $25\,\text{g}$。</li>
+<li>晚餐:减到约 $25\,\text{g}$,例如一份鸡胸肉或豆制品加蔬菜。</li>
+<p>调整后总量约 $75\,\text{g}$,三餐都达到合成肌肉的有效水平。再配合每周 2–3 次抗阻训练,预防肌少症的效果会更好,因为蛋白质提供原料,运动提供合成信号。</p>
+<p><strong>注意事项。</strong> 患有慢性肾病的人应先咨询医生再提高蛋白质摄入量,因为他们可能需要限制蛋白质。健康老年人则不必过度担心,把蛋白质分散到每餐、选择优质来源,通常就足够了。</p>
+  </main>
+  <footer class="spl-credit"><span class="spl-credit__meta">Ch6: What We Eat — Food Quality, Four Natures, and Five Flavors (四气五味) (Level: College &middot; Language: ZH &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
+</div>
+</body>
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>五行相克 | Meta Health Ch01</title>
+<script>
+MathJax = {
+  loader: { load: ['[tex]/mathtools'] },
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']],
+         packages: { '[+]': ['mathtools'] } },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<script src="https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.min.js"></script>
+<script>mermaid.initialize({ startOnLoad: true, theme: 'neutral' });</script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+footer.spl-credit span{display:block}
+footer.spl-credit .spl-credit__meta{margin-bottom:4px}
+.cb-figure{margin:24px 0;text-align:center}
+.cb-figure img{max-width:100%;height:auto;border:1px solid #e0e0d8;border-radius:6px}
+figcaption{font-size:.82rem;color:#666;margin-top:8px;font-style:italic;text-align:center}
+pre.mermaid{background:none;border:none;padding:0;overflow:visible;margin:16px 0}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="五行相克">五行相克</h2>
+<p><strong>定义。</strong> 在中医（Traditional Chinese Medicine，TCM）的五行学说中，相克指五行之间的制约关系：木克土，土克水，水克火，火克金，金克木。每一行都制约另一行，同时又被另一行制约，因此没有哪一行可以不受约束地增强。TCM 把这套关系作为一种解释模型，用来归纳脏腑功能之间的相互制约。它是一个类比框架，不是可以测量的定律，所以下文用文字和表格说明，不用公式。</p>
+<p><strong>与脏腑的对应。</strong> TCM 把五行配属五脏：</p>
+<p>| 五行 | 五脏 | 所克 | 所不胜（克它者） | |---|---|---|---| | 木 | 肝 | 土（脾） | 金（肺） | | 火 | 心 | 金（肺） | 水（肾） | | 土 | 脾 | 水（肾） | 木（肝） | | 金 | 肺 | 木（肝） | 火（心） | | 水 | 肾 | 火（心） | 土（脾） |</p>
+<p>“我克”称为“所胜”，“克我”称为“所不胜”。例如木的所胜是土，所不胜是金。</p>
+<p><strong>例题。</strong> 一位患者长期情绪紧张，随后出现食欲差、腹胀、大便稀溏。请用相克理论解释，并提出相应的调理思路。</p>
+<p><em>分析：</em></p>
+<li>情绪紧张在 TCM 中归于“肝”（木）。</li>
+<li>木克土。肝的功能过亢，会过度制约脾（土）。</li>
+<li>脾主运化，被抑制后就出现食欲差、腹胀、便溏。TCM 称此为“木旺乘土”，或“肝气犯脾”。</li>
+<li>调理思路是两方面并行：一方面疏肝，削弱过强的木；另一方面健脾，增强受制的土。</li>
+<p><strong>解题应用。</strong> 判断相克类病变时，可按以下步骤：</p>
+<li>先找出症状集中在哪一脏。</li>
+<li>查表，看哪一脏是它的“克我者”，哪一脏是它的“我克者”。</li>
+<li>区分两种异常。“相乘”是克制过度，例如木旺乘土。“相侮”是反向克制，例如木过盛时反而欺凌本应克它的金。</li>
+<li>根据判断确定治疗方向：抑制过强的一方，扶助过弱的一方。</li>
+<p><em>再练一题：</em> 一个人咳嗽、胸闷，同时易怒、胁肋胀痛。请判断。按 TCM 的说法，这属于肺（金）本应克肝（木），但木过盛反过来制约金，即“木火刑金”或“相侮”。调理需要同时清肝，并润肺。</p>
+<p><strong>证据说明。</strong> 相克是 TCM 的理论模型，用于组织临床思路。它没有被现代生理学证实为脏器之间的因果机制。例如，情绪压力确实会影响消化功能，这有现代研究支持，但“肝克脾”这一具体的解释并没有被检验证实。因此，学习时应把它当作理解 TCM 辨证推理的工具，不应当作人体运行的客观规律。</p>
+<pre class="mermaid">graph LR
+    A[木 肝] -->|克| B[土 脾]
+    B -->|克| C[水 肾]
+    C -->|克| D[火 心]
+    D -->|克| E[金 肺]
+    E -->|克| A</pre>
+<p><em>图：五行相克的循环。箭头由“克者”指向“被克者”，每一行都制约一行，也被一行制约。</em></p>
+  </main>
+  <footer class="spl-credit"><span class="spl-credit__meta">Ch1: TCM Foundations — Yin-Yang, Qi-Blood, and the Five Phases (中医基础) (Level: College &middot; Language: ZH &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
+</div>
+</body>
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>正念用餐方案 | Meta Health Ch05</title>
+<script>
+MathJax = {
+  loader: { load: ['[tex]/mathtools'] },
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']],
+         packages: { '[+]': ['mathtools'] } },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<script src="https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.min.js"></script>
+<script>mermaid.initialize({ startOnLoad: true, theme: 'neutral' });</script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+footer.spl-credit span{display:block}
+footer.spl-credit .spl-credit__meta{margin-bottom:4px}
+.cb-figure{margin:24px 0;text-align:center}
+.cb-figure img{max-width:100%;height:auto;border:1px solid #e0e0d8;border-radius:6px}
+figcaption{font-size:.82rem;color:#666;margin-top:8px;font-style:italic;text-align:center}
+pre.mermaid{background:none;border:none;padding:0;overflow:visible;margin:16px 0}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="正念用餐方案">正念用餐方案</h2>
+<p><strong>正念用餐方案</strong>是一套把每顿饭当作一次"内部训练"来安排的实用流程,分为餐前、餐中、餐后三个阶段。它不是节食法,不规定吃什么,只规定怎么吃。其生理依据是:饱腹信号(胃的牵张感、肠道激素、血糖变化)通常需要约20分钟才能被大脑充分整合,吃得太快,感觉会滞后于摄入量。</p>
+<p><strong>三个阶段</strong></p>
+<p>| 阶段 | 做法 | 目的 | |---|---|---| | 餐前 | 放下屏幕,做3–5次缓慢腹式呼吸 | 让身体从应激状态转入进食状态,把注意力带到饥饿感上 | | 餐中 | 每口充分咀嚼,放下餐具再咀嚼,吃到七八分饱 | 放慢速度,给饱腹信号留出时间 | | 餐后 | 先静坐休息10–15分钟,再散步等轻度活动 | 避免饭后立刻剧烈运动,同时帮助血糖平稳 |</p>
+<p>"七八分饱"可用10分制自评:1分为极度饥饿,10分为撑胀不适,在7–8分时停下。</p>
+<p><strong>例题:把一顿快饭改成正念饭</strong></p>
+<p>小李午餐常边看视频边吃,约8分钟吃完一份约700 kcal 的盖饭,吃完仍觉得没饱,常再加一份小食。现按方案调整:</p>
+<li>餐前:关闭手机,做4次呼吸,自评饥饿程度为3分。</li>
+<li>餐中:每口咀嚼约20次,每吃几口就放下筷子,用时延长到约20分钟。吃到自评7–8分时停下,剩下约四分之一。</li>
+<li>餐后:静坐10分钟,再慢走10分钟。</li>
+<p>计算摄入:剩余约四分之一,则实际摄入约为</p>
+$$700\ \text{kcal} \times \left(1-\frac{1}{4}\right) = 525\ \text{kcal}$$
+<p>少摄入约175 kcal,同时省去了额外加的小食。</p>
+<p><strong>问题解决应用</strong></p>
+<p>遇到困难时,按"哪一阶段出了问题"来排查:</p>
+<li><strong>总在饱后才发觉吃多</strong>:问题多在餐中。试着每吃5口就暂停,做一次1–10分的饱腹自评。</li>
+<li><strong>餐前过度饥饿(1–2分),吃得又急又猛</strong>:问题在餐前。把用餐时间提前,或在饥饿到达此程度之前先吃一份小加餐。</li>
+<li><strong>饭后犯困、腹胀</strong>:检查餐后环节。把剧烈运动改为散步,并确认是否吃得超过八分饱。</li>
+<li><strong>工作午餐无法完全离开屏幕</strong>:退而求其次,保留"前三口不看屏幕,专心咀嚼"的最小版本。</li>
+<p><strong>练习建议</strong></p>
+<p>不必一开始每餐都做到。先选一餐(如晚餐)连续练习一周,记录用餐时长和停筷时的饱腹分数,再逐步推广。对于有进食障碍史、需要遵医嘱控制饮食的人,"吃到七八分饱"的目标应先与医生或营养师商量,不宜自行套用。</p>
+  </main>
+  <footer class="spl-credit"><span class="spl-credit__meta">Ch5: Eating as Internal Exercise (饮食即内脏运动) (Level: College &middot; Language: ZH &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
+</div>
+</body>
+</html>

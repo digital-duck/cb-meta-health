@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>宏量营养素 | Meta Health Ch06</title>
+<script>
+MathJax = {
+  loader: { load: ['[tex]/mathtools'] },
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']],
+         packages: { '[+]': ['mathtools'] } },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<script src="https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.min.js"></script>
+<script>mermaid.initialize({ startOnLoad: true, theme: 'neutral' });</script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+footer.spl-credit span{display:block}
+footer.spl-credit .spl-credit__meta{margin-bottom:4px}
+.cb-figure{margin:24px 0;text-align:center}
+.cb-figure img{max-width:100%;height:auto;border:1px solid #e0e0d8;border-radius:6px}
+figcaption{font-size:.82rem;color:#666;margin-top:8px;font-style:italic;text-align:center}
+pre.mermaid{background:none;border:none;padding:0;overflow:visible;margin:16px 0}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="宏量营养素">宏量营养素</h2>
+<p><strong>定义。</strong> 宏量营养素是人体需要量较大(每日以克计)的三类营养物质:蛋白质、碳水化合物和脂肪。它们既提供能量,也提供构建和修复身体的原料。按常用的能量换算系数(Atwater 系数):</p>
+<p>| 营养素 | 能量(kcal/g) | 主要作用 | |---|---|---| | 碳水化合物 | 4 | 首选供能物质,脑和红细胞依赖葡萄糖 | | 蛋白质 | 4 | 构建肌肉、酶、激素和免疫分子;也可供能 | | 脂肪 | 9 | 储能、构成细胞膜、协助吸收脂溶性维生素 |</p>
+<p>酒精(7 kcal/g)也供能,但不属于必需营养素。维生素和矿物质属于微量营养素,不提供能量。</p>
+<p>食物的总能量为各营养素克数与其系数乘积之和:</p>
+$$E = 4\,m_{\text{碳水}} + 4\,m_{\text{蛋白}} + 9\,m_{\text{脂肪}}$$
+<p>其中 $E$ 的单位是 kcal,$m$ 的单位是 g。</p>
+<p><strong>例题。</strong> 一份早餐含碳水化合物 60 g、蛋白质 20 g、脂肪 15 g。求总能量及各营养素的供能比。</p>
+<p>碳水化合物:$60 \times 4 = 240$ kcal 蛋白质:$20 \times 4 = 80$ kcal 脂肪:$15 \times 9 = 135$ kcal</p>
+<p>总能量 $E = 240 + 80 + 135 = 455$ kcal。</p>
+<p>供能比分别为:</p>
+$$\frac{240}{455} \approx 52.7\%,\quad \frac{80}{455} \approx 17.6\%,\quad \frac{135}{455} \approx 29.7\%$$
+<p>注意脂肪只占质量的 $\frac{15}{95}\approx 15.8\%$,却提供近 30% 的能量,这是因为它的能量密度最高。</p>
+<p><strong>应用:根据目标制订每日摄入。</strong> 一位体重 70 kg 的成年人,每日能量需求约 2200 kcal。常见的膳食参考范围是:碳水化合物占 45%–65%,脂肪占 20%–35%,蛋白质占 10%–35%;蛋白质的推荐摄入量约为每日 0.8 g/kg(从事力量或耐力训练者常用 1.2–2.0 g/kg)。</p>
+<p>第一步,算蛋白质。取 1.2 g/kg:$70 \times 1.2 = 84$ g,相当于 $84 \times 4 = 336$ kcal,约占 15%。</p>
+<p>第二步,定脂肪。取 30%:$2200 \times 0.30 = 660$ kcal,折合 $\frac{660}{9} \approx 73$ g。</p>
+<p>第三步,余下为碳水化合物:$2200 - 336 - 660 = 1204$ kcal,折合 $\frac{1204}{4} = 301$ g,约占 55%。</p>
+<p>三项占比(15%、30%、55%)均落在参考范围内,方案合理。</p>
+<p><strong>常见误区。</strong> 标签上的克数不等于能量;比较食物时应先换算成 kcal。另外,不同营养素的饱腹感、消化速度和代谢去向并不相同,所以能量相同的两份食物,对身体的影响未必相同。</p>
+<p><strong>练习。</strong> 一包零食标注:碳水化合物 25 g、蛋白质 3 g、脂肪 12 g。请计算其总能量以及脂肪的供能比。(答案:$100+12+108=220$ kcal;脂肪约占 $\frac{108}{220}\approx 49\%$。)</p>
+  </main>
+  <footer class="spl-credit"><span class="spl-credit__meta">Ch6: What We Eat — Food Quality, Four Natures, and Five Flavors (四气五味) (Level: College &middot; Language: ZH &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
+</div>
+</body>
+</html>

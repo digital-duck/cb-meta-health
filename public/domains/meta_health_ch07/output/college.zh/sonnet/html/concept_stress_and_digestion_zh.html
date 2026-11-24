@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>压力与消化 | Meta Health Ch07</title>
+<script>
+MathJax = {
+  loader: { load: ['[tex]/mathtools'] },
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']],
+         packages: { '[+]': ['mathtools'] } },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<script src="https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.min.js"></script>
+<script>mermaid.initialize({ startOnLoad: true, theme: 'neutral' });</script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+footer.spl-credit span{display:block}
+footer.spl-credit .spl-credit__meta{margin-bottom:4px}
+.cb-figure{margin:24px 0;text-align:center}
+.cb-figure img{max-width:100%;height:auto;border:1px solid #e0e0d8;border-radius:6px}
+figcaption{font-size:.82rem;color:#666;margin-top:8px;font-style:italic;text-align:center}
+pre.mermaid{background:none;border:none;padding:0;overflow:visible;margin:16px 0}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="压力与消化">压力与消化</h2>
+<p><strong>定义。</strong> 压力与消化的关系,是指心理或生理压力引发的"战斗或逃跑"反应(交感神经兴奋、肾上腺素和皮质醇释放)如何抑制胃肠功能。在这种状态下,身体把血液和能量优先分配给骨骼肌、心脏和大脑,而消化系统被"降级"。具体表现为三点:</p>
+<li><strong>血流重新分配</strong>:内脏血管收缩,胃肠得到的血液减少。</li>
+<li><strong>蠕动减慢</strong>:胃排空延迟,肠道推进节律紊乱。</li>
+<li><strong>分泌减少</strong>:唾液、胃酸和消化酶的分泌下降。</li>
+<p>需要说明的是,压力对肠道的影响并不总是"变慢"。部分人在紧张时反而出现腹泻,因为肠道的蠕动在压力下可能变得紊乱,而不是单纯减弱。</p>
+<p><strong>例题。</strong> 小林下午两点有一场重要答辩,她在十二点半匆忙吃了一份约 $700\ \text{kcal}$ 的午餐,之后一直心跳加快、手心出汗。答辩结束后她感到胃胀、反酸。</p>
+<p>分析步骤:</p>
+<li>答辩前她处于交感神经兴奋状态,胃肠血流下降、胃酸和消化酶分泌减少、胃排空变慢。</li>
+<li>食物在胃里停留更久,又缺乏足够的消化液,所以出现胀满;胃内容物更容易反流,表现为反酸。</li>
+<li>这 $700\ \text{kcal}$ 的能量在当时并没有被高效利用,身体"边紧张边消化",两边都做不好。</li>
+<p><strong>问题解决应用。</strong> 想象你计划下午 $17{:}00$ 进行一次力量训练,运动本身也需要充足的能量和血液供应。如果你在训练前一小时处于高压状态(赶截止日期、与人争执)并匆忙进食,就会遇到"双重挤压":压力使消化吸收变差,训练前的能量补充没有真正到位,训练开始时又要把血液调往肌肉。结果是训练中容易腹胀、乏力,"内部的这场训练"从一开始就供给不足。</p>
+<p>可行的处理办法:</p>
+<p>| 情境 | 做法 | |---|---| | 进食前明显紧张 | 先做 $2$ 到 $5$ 分钟缓慢深呼吸(如吸气 $4$ 秒、呼气 $6$ 秒),再开始吃 | | 时间紧、压力大 | 选择体积小、易消化的食物(如香蕉、酸奶),避免高脂、大份量 | | 进餐过程 | 放慢速度,充分咀嚼,不边工作边吃 | | 训练安排 | 压力高峰期适当降低训练强度,或把进食提前,留出更长的消化时间 |</p>
+<p><strong>小结。</strong> 压力会让身体进入"优先保命"模式,消化功能被压低。因此,吃什么固然重要,在什么状态下吃同样重要。进餐前先让身体从紧张转入放松,是提高消化吸收效果的简单而有效的手段。</p>
+  </main>
+  <footer class="spl-credit"><span class="spl-credit__meta">Ch7: Stress, Emotion, and the Flow of Qi and Blood (情志与气血) (Level: College &middot; Language: ZH &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
+</div>
+</body>
+</html>

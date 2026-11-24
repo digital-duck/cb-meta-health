@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Regional Blood-Flow Distribution | Meta Health Ch05</title>
+<script>
+MathJax = {
+  loader: { load: ['[tex]/mathtools'] },
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']],
+         packages: { '[+]': ['mathtools'] } },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<script src="https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.min.js"></script>
+<script>mermaid.initialize({ startOnLoad: true, theme: 'neutral' });</script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+footer.spl-credit span{display:block}
+footer.spl-credit .spl-credit__meta{margin-bottom:4px}
+.cb-figure{margin:24px 0;text-align:center}
+.cb-figure img{max-width:100%;height:auto;border:1px solid #e0e0d8;border-radius:6px}
+figcaption{font-size:.82rem;color:#666;margin-top:8px;font-style:italic;text-align:center}
+pre.mermaid{background:none;border:none;padding:0;overflow:visible;margin:16px 0}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="regional-blood-flow-distribution">Regional Blood-Flow Distribution</h2>
+<p><strong>Definition.</strong> Cardiac output is the volume of blood the heart pumps per minute. At any moment it is divided among the organs and tissues, and the division is not fixed. <em>Regional blood-flow distribution</em> is the share of cardiac output each organ receives. The body changes these shares to match each tissue's current metabolic demand. The mechanism is vasodilation in the tissues that need more blood and vasoconstriction in those that can wait. Because the total is limited, extra flow to one region usually means less flow to another.</p>
+<p>At rest in a healthy adult, cardiac output is about 5 L/min. A typical split is shown below. Values are approximate and vary between people.</p>
+<p>| Region | Resting flow (mL/min) | Share | |---|---|---| | Digestive organs and liver | 1,400 | 28% | | Kidneys | 1,100 | 22% | | Skeletal muscle | 1,000 | 20% | | Brain | 750 | 15% | | Skin, heart, other | 750 | 15% |</p>
+<p><strong>Worked example.</strong> During hard cycling, cardiac output rises to about 20 L/min, and about 80% goes to working muscle. Compare muscle flow before and after:</p>
+$$
+\text{Rest: } 0.20 \times 5000 = 1000 \text{ mL/min}
+$$
+$$
+\text{Exercise: } 0.80 \times 20000 = 16000 \text{ mL/min}
+$$
+<p>Muscle flow rises 16-fold. The share rose only 4-fold (from 20% to 80%), and total output rose 4-fold. The two increases multiply: $4 \times 4 = 16$.</p>
+<p>Now check the other organs. About 20% of output remains for everything else:</p>
+$$
+0.20 \times 20000 = 4000 \text{ mL/min}
+$$
+<p>At rest, those organs received $5000 - 1000 = 4000$ mL/min. Their absolute flow is about the same as before. Their <em>share</em> fell from 80% to 20%, while their flow was roughly maintained. In practice, gut and kidney flow do drop during hard exercise, and the skin gets a larger share for cooling. The brain's flow is held nearly constant throughout.</p>
+<p><strong>Problem-solving application.</strong> Suppose a person eats a large meal and then runs hard. Digestive flow wants to rise after eating, and working muscle needs most of the output. Both regions compete for a limited supply. Several effects follow:</p>
+<li>Sympathetic nervous activity constricts gut vessels, so digestion slows. This is one reason heavy exercise right after a large meal can cause cramping or nausea.</li>
+<li>Muscle vessels dilate in response to local chemical signals such as rising carbon dioxide, potassium, and falling oxygen. This is called active hyperemia.</li>
+<li>Brain flow stays protected, so dizziness appears only when total output cannot keep up.</li>
+<p>To solve problems of this type, follow these steps:</p>
+<li>Write down total cardiac output for the condition.</li>
+<li>Convert each region's percentage share to mL/min.</li>
+<li>Subtract the muscle flow from the total to find what remains for all other organs.</li>
+<li>Compare with resting values to see which organs lost flow and which merely lost share.</li>
+<p>Try it: if a trained athlete reaches 30 L/min with 85% going to muscle, muscle flow is $0.85 \times 30000 = 25500$ mL/min, leaving 4500 mL/min for everything else. That is more than the 4000 mL/min those organs received at rest, so the extra output is large enough to feed the muscles without starving the rest of the body.</p>
+  </main>
+  <footer class="spl-credit"><span class="spl-credit__meta">Ch5: Eating as Internal Exercise (饮食即内脏运动) (Level: College &middot; Language: EN &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
+</div>
+</body>
+</html>

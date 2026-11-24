@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Top-to-Bottom Sequence | Meta Health Ch03</title>
+<script>
+MathJax = {
+  loader: { load: ['[tex]/mathtools'] },
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']],
+         packages: { '[+]': ['mathtools'] } },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<script src="https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.min.js"></script>
+<script>mermaid.initialize({ startOnLoad: true, theme: 'neutral' });</script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+footer.spl-credit span{display:block}
+footer.spl-credit .spl-credit__meta{margin-bottom:4px}
+.cb-figure{margin:24px 0;text-align:center}
+.cb-figure img{max-width:100%;height:auto;border:1px solid #e0e0d8;border-radius:6px}
+figcaption{font-size:.82rem;color:#666;margin-top:8px;font-style:italic;text-align:center}
+pre.mermaid{background:none;border:none;padding:0;overflow:visible;margin:16px 0}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="the-top-to-bottom-sequence">The Top-to-Bottom Sequence</h2>
+<p>The top-to-bottom sequence is the order in which a warm-up or movement routine works through the body: chest, then ribs, then waist, then legs, then feet. Each stage prepares the joints and muscles of one region before attention moves to the next one below. In Traditional Chinese Medicine (TCM), the order is also explained as drawing rising yang back down to the root, meaning the lower body.</p>
+<h3 id="why-this-order-is-useful">Why this order is useful</h3>
+<p>Two practical reasons support the order, and neither depends on TCM.</p>
+<li><strong>Posture control comes first.</strong> The upper trunk sets the position of the head and shoulders. Loosening the chest and ribs first improves breathing depth, so oxygen delivery is better when the larger leg muscles start working.</li>
+<li><strong>Load increases gradually.</strong> Chest and rib motions are low-load. Waist rotation adds moderate load. Leg and foot work carries body weight and joint impact. Progressing from light to heavy follows the usual warm-up principle of raising muscle temperature and joint lubrication before loading.</li>
+<p>TCM adds its own reading: it holds that yang tends to rise toward the head and chest, and that guiding movement and attention downward settles it. This is a traditional explanation, not a measured mechanism.</p>
+<h3 id="worked-example">Worked example</h3>
+<p>A five-stage routine of about 10 minutes, with timings that you can adjust:</p>
+<p>| Stage | Region | Movement | Time | |---|---|---|---| | 1 | Chest | Open arms wide, then cross them, 10 times | 2 min | | 2 | Ribs | Slow side bends, 8 per side | 2 min | | 3 | Waist | Gentle hip circles, 8 each direction | 2 min | | 4 | Legs | Shallow knee bends, 10 times | 2 min | | 5 | Feet | Ankle circles and heel-toe rocks | 2 min |</p>
+<p>At the start, breathe in time with the arm movements. By stage 4, you are using the largest muscles, and your heart rate should have risen modestly, to roughly a light-effort level. Stage 5 ends with your weight settled through the soles of your feet.</p>
+<h3 id="problem-solving-application">Problem-solving application</h3>
+<p><strong>Problem:</strong> A person with stiff knees and mild lower-back tightness wants to adapt the sequence.</p>
+<p><strong>Reasoning:</strong></p>
+<li>Keep the order. Loosening the ribs and waist before the legs reduces compensatory strain on the lower back when the knees bend.</li>
+<li>Reduce the load at the point of difficulty. Make the knee bends shallower, or hold a chair for balance, rather than skipping stage 4.</li>
+<li>Extend the time where the stiffness is. Give the waist stage 3 minutes and the legs stage 3 minutes, and shorten the chest stage to 1 minute.</li>
+<li>Stop any movement that causes sharp pain. Mild stretch or warmth is acceptable, but sharp or joint-localized pain is not.</li>
+<p><strong>Check your understanding:</strong> Why would starting with the feet and ending with the chest be a poorer fit for someone with limited balance? (Hint: consider when the body is asked to carry weight, and how well the trunk is prepared at that point.)</p>
+<pre class="mermaid">flowchart TD
+    A[Chest: open and cross arms] --> B[Ribs: side bends]
+    B --> C[Waist: hip circles]
+    C --> D[Legs: shallow knee bends]
+    D --> E[Feet: ankle circles and rocks]</pre>
+<p><em>The five stages run from the upper body to the feet, and the load increases at each step.</em></p>
+  </main>
+  <footer class="spl-credit"><span class="spl-credit__meta">Ch3: The Five-Organ Exercises (五脏操) (Level: College &middot; Language: EN &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
+</div>
+</body>
+</html>

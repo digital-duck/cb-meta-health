@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>收势 | Meta Health Ch03</title>
+<script>
+MathJax = {
+  loader: { load: ['[tex]/mathtools'] },
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']],
+         packages: { '[+]': ['mathtools'] } },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<script src="https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.min.js"></script>
+<script>mermaid.initialize({ startOnLoad: true, theme: 'neutral' });</script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+footer.spl-credit span{display:block}
+footer.spl-credit .spl-credit__meta{margin-bottom:4px}
+.cb-figure{margin:24px 0;text-align:center}
+.cb-figure img{max-width:100%;height:auto;border:1px solid #e0e0d8;border-radius:6px}
+figcaption{font-size:.82rem;color:#666;margin-top:8px;font-style:italic;text-align:center}
+pre.mermaid{background:none;border:none;padding:0;overflow:visible;margin:16px 0}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="收势">收势</h2>
+<p><strong>定义。</strong> 收势是一套功法(如太极拳、八段锦、站桩)结束时的收尾动作:练习者不是突然停下,而是缓慢收回动作,身体随之微微上提,双手叠放于下丹田(脐下小腹处),静立片刻后再收脚、放松。中医认为,练功时气机被调动,收势能让气“归元”,即“安定并收藏”于下丹田。需要说明的是,“气”“丹田”是中医概念,现代生理学并未证实气的流动;但收势在生理上的作用是可以用心率、呼吸等指标观察的。</p>
+<p><strong>生理学解释。</strong> 运动时心率升高、血液集中在肌肉。若立刻停下,下肢血管仍处于扩张状态,静脉回心血量骤减,可能引起头晕、眼前发黑,这在运动医学中称为“运动后低血压”。缓慢收势相当于一次小型整理活动:动作变慢、呼吸变深,心率逐步回落,同时手放小腹、意念内收,有助于注意力从“动”转向“静”。</p>
+<p><strong>示例。</strong> 一位同学打完一遍24式太极拳(约6分钟),停止瞬间测得心率为 $96$ 次/分。他随后做了约1分钟的收势:两臂缓缓上抬再下按,双手叠于小腹,深呼吸6次,静立。1分钟后心率降到 $78$ 次/分。心率下降幅度为:</p>
+$$96-78=18\ \text{次/分}$$
+<p>平均每分钟下降 $18$ 次。对比之下,若他打完立即坐下玩手机,往往会因为缺少过渡而感到心悸或发晕。</p>
+<p><strong>问题求解应用。</strong> 请判断以下三种情况应如何处理:</p>
+<p>| 情况 | 问题 | 建议 | |---|---|---| | 练完后立即转身去拿水,感到头晕 | 缺少过渡,血压波动 | 先做收势,站定约1分钟再活动 | | 收势时屏气、用力下压小腹 | 过度用力,反而升高血压 | 呼吸自然,双手轻放即可 | | 收势只有2秒,草草放手 | 形式化,心率未回落 | 以呼吸为准:待呼吸平稳、心率接近安静水平再结束 |</p>
+<p>判断标准可以简化为三步:①动作逐渐放慢;②呼吸由快变深长;③自觉身体温热、心神安定后再收脚。若1分钟后心率仍比平时安静心率高出很多(例如超过安静值约20次/分),应延长静立时间。</p>
+<p><strong>小结。</strong> 收势的实用价值在于“缓慢过渡”:让心率、呼吸和注意力平稳回落。至于“气归丹田”的说法,可视为对这种内收、安定感受的传统描述,不必当作可测量的生理事实。</p>
+  </main>
+  <footer class="spl-credit"><span class="spl-credit__meta">Ch3: The Five-Organ Exercises (五脏操) (Level: College &middot; Language: ZH &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
+</div>
+</body>
+</html>

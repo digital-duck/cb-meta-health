@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>呼吸优先顺序 | Meta Health Ch03</title>
+<script>
+MathJax = {
+  loader: { load: ['[tex]/mathtools'] },
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']],
+         packages: { '[+]': ['mathtools'] } },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<script src="https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.min.js"></script>
+<script>mermaid.initialize({ startOnLoad: true, theme: 'neutral' });</script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+footer.spl-credit span{display:block}
+footer.spl-credit .spl-credit__meta{margin-bottom:4px}
+.cb-figure{margin:24px 0;text-align:center}
+.cb-figure img{max-width:100%;height:auto;border:1px solid #e0e0d8;border-radius:6px}
+figcaption{font-size:.82rem;color:#666;margin-top:8px;font-style:italic;text-align:center}
+pre.mermaid{background:none;border:none;padding:0;overflow:visible;margin:16px 0}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="呼吸优先顺序">呼吸优先顺序</h2>
+<p><strong>定义。</strong> 呼吸优先顺序是某些流行教学视频采用的五脏练习排序:先做扩胸(对应肺),再依次进入其他动作。中医认为肺主气、司呼吸,所以这一顺序以"肺"开头。它与相生顺序(木、火、土、金、水)只差一处:把肺和肝互换了位置。</p>
+<p>这样排序的理由是生理学上的。呼吸是少数既能随意控制、又由自主神经系统调节的功能。你可以主动放慢呼吸;呼吸放慢后,心率和紧张程度往往随之下降。因此,从呼吸入手,是从"主动控制"过渡到"自主调节"最容易的一步。</p>
+<p>需要说明的是:这是教学上的编排选择,不是经典规定;该顺序是否带来额外的健康效益,目前没有直接的研究证据。慢呼吸本身对放松的作用,则有生理学研究支持。</p>
+<p><strong>对比。</strong></p>
+<p>| 位置 | 相生顺序 | 呼吸优先顺序 | |---|---|---| | 1 | 肝 | 肺 | | 2 | 心 | 心 | | 3 | 脾 | 脾 | | 4 | 肺 | 肝 | | 5 | 肾 | 肾 |</p>
+<p>(此处按"肝、心、脾、肺、肾"的相生次序列出;两者仅第 1 位与第 4 位互换。)</p>
+<p><strong>例题。</strong> 小林静息时每分钟呼吸 16 次,每次潮气量约 $500\ \text{mL}$。他练习扩胸时把呼吸放慢到每分钟 6 次,每次约 $800\ \text{mL}$。比较两种情况的每分通气量:</p>
+$$\dot V_E = f \times V_T$$
+<p>其中 $f$ 是呼吸频率,$V_T$ 是潮气量。</p>
+<li>静息:$\dot V_E = 16 \times 500 = 8000\ \text{mL/min}$</li>
+<li>慢呼吸:$\dot V_E = 6 \times 800 = 4800\ \text{mL/min}$</li>
+<p>慢而深的呼吸使总通气量下降,但每次吸入的气体更多地到达肺泡,而不是停留在无效腔中。若无效腔约 $150\ \text{mL}$,则肺泡通气量为 $(V_T - 150) \times f$:</p>
+<li>静息:$(500-150)\times 16 = 5600\ \text{mL/min}$</li>
+<li>慢呼吸:$(800-150)\times 6 = 3900\ \text{mL/min}$</li>
+<p><strong>问题应用。</strong> 假设你要为初学者设计一套五脏练习,并选择顺序。请按下面三步判断:</p>
+<li><strong>目标是什么?</strong> 若目标是让初学者尽快安静下来,可选呼吸优先顺序,先用扩胸加慢呼吸建立节奏。</li>
+<li><strong>学习者是否熟悉相生顺序?</strong> 若课程其他部分都按相生顺序讲解,保留原顺序可减少记忆负担。</li>
+<li><strong>是否有人不适?</strong> 若练习者在慢呼吸中出现头晕或手脚发麻(可能是过度通气或憋气所致),应恢复自然呼吸,并缩短这一环节。</li>
+<p>小结:两种顺序只在肺与肝的位置上不同。选哪一种,取决于教学目标和学习者的熟悉程度,而不是哪一种"更正确"。</p>
+  </main>
+  <footer class="spl-credit"><span class="spl-credit__meta">Ch3: The Five-Organ Exercises (五脏操) (Level: College &middot; Language: ZH &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
+</div>
+</body>
+</html>

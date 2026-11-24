@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>消化的热身 | Meta Health Ch05</title>
+<script>
+MathJax = {
+  loader: { load: ['[tex]/mathtools'] },
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']],
+         packages: { '[+]': ['mathtools'] } },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<script src="https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.min.js"></script>
+<script>mermaid.initialize({ startOnLoad: true, theme: 'neutral' });</script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+footer.spl-credit span{display:block}
+footer.spl-credit .spl-credit__meta{margin-bottom:4px}
+.cb-figure{margin:24px 0;text-align:center}
+.cb-figure img{max-width:100%;height:auto;border:1px solid #e0e0d8;border-radius:6px}
+figcaption{font-size:.82rem;color:#666;margin-top:8px;font-style:italic;text-align:center}
+pre.mermaid{background:none;border:none;padding:0;overflow:visible;margin:16px 0}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="消化的热身">消化的热身</h2>
+<p><strong>定义。</strong> 消化的热身,是指在吃第一口之前先用几次慢呼吸和放松的状态让身体切换到"休息与消化"模式,然后在进食时充分咀嚼。它的生理基础是消化的头相(cephalic phase):食物的气味、外观、对进食的预期,甚至只是坐下来准备吃饭,就会通过迷走神经(副交感神经的主要通路)促使唾液、胃酸和胰液开始分泌,胃也开始舒张以容纳食物。这很像运动前的热身:先让系统进入工作状态,再承担负荷。</p>
+<p>相反,紧张、匆忙或边看屏幕边吞咽时,交感神经占优势,头相的分泌准备不足,而且人容易吞入更多空气、咀嚼更少。</p>
+<p><strong>咀嚼的作用。</strong> 咀嚼把食物机械地磨碎,增加与消化液接触的表面积,同时唾液淀粉酶开始分解淀粉。咀嚼还延长了进食时间,让饱腹信号(如胃扩张和肠道激素)有时间到达大脑。研究提示,更多的咀嚼次数与进食量略微减少相关,但效果因人而异,不能当作减重的保证。</p>
+<p><strong>Worked example(算一算)。</strong> 小李午餐通常 8 分钟吃完 600 kcal,平均摄入速度为:</p>
+$$\frac{600\ \text{kcal}}{8\ \text{min}} = 75\ \text{kcal/min}$$
+<p>饱腹信号通常需要约 15–20 分钟才充分显现。若他先做 1 分钟慢呼吸(例如吸气 4 秒、呼气 6 秒,约 6 次/分钟),再把进食延长到 20 分钟,速度变为:</p>
+$$\frac{600\ \text{kcal}}{20\ \text{min}} = 30\ \text{kcal/min}$$
+<p>同样的食物,摄入速度降到原来的 $\frac{30}{75}=0.4$ 倍,饱腹信号在他吃完前就有机会起作用。</p>
+<p><strong>问题解决应用。</strong> 假设你每天午餐时间只有 15 分钟,想落实消化的热身,可以这样安排:</p>
+<li><strong>第 0–1 分钟</strong>:坐下,放下手机,做 6 次慢呼吸,同时留意食物的气味和外观(这正是在激活头相)。</li>
+<li><strong>第 1–14 分钟</strong>:每口食物放入口中后放下餐具,咀嚼到质地变软、不再有明显颗粒(常见建议是 20–30 次,但以质地为准,不必机械计数)。</li>
+<li><strong>第 14–15 分钟</strong>:停一下,问自己"还饿吗?"再决定是否添加食物。</li>
+<p>若你有胃食管反流、进食时容易呛咳或吞咽困难,应先咨询医生,因为进食姿势和速度的调整需要个体化。</p>
+<p><strong>小结。</strong> 消化的热身并非神秘的仪式,而是借助头相这一真实的生理机制:放松让副交感神经占优势,气味与预期启动分泌,充分咀嚼完成机械消化并放慢速度。它代价很低,可以在任何一餐里立即练习。</p>
+  </main>
+  <footer class="spl-credit"><span class="spl-credit__meta">Ch5: Eating as Internal Exercise (饮食即内脏运动) (Level: College &middot; Language: ZH &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
+</div>
+</body>
+</html>

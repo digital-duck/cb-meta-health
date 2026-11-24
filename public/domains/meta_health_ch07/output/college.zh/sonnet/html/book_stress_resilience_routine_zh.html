@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>概念书: 每日抗压练习 — Meta Health Ch07</title>
+<script>
+MathJax = {
+  loader: { load: ['[tex]/mathtools'] },
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']],
+         packages: { '[+]': ['mathtools'] } },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<script src="https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.min.js"></script>
+<script>mermaid.initialize({ startOnLoad: true, theme: 'neutral' });</script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+footer.spl-credit span{display:block}
+footer.spl-credit .spl-credit__meta{margin-bottom:4px}
+.cb-figure{margin:24px 0;text-align:center}
+.cb-figure img{max-width:100%;height:auto;border:1px solid #e0e0d8;border-radius:6px}
+figcaption{font-size:.82rem;color:#666;margin-top:8px;font-style:italic;text-align:center}
+pre.mermaid{background:none;border:none;padding:0;overflow:visible;margin:16px 0}
+.page{display:grid;grid-template-columns:260px 1fr;min-height:100vh}
+nav.toc{position:sticky;top:0;height:100vh;overflow-y:auto;
+        background:#1e3a5f;color:#e8f0fe;padding:24px 16px}
+nav.toc h2{font-size:.75rem;letter-spacing:.1em;text-transform:uppercase;
+           color:#90b4e8;margin-bottom:14px;font-family:system-ui,sans-serif}
+nav.toc ol{list-style:decimal inside;padding:0}
+nav.toc li{margin-bottom:7px;font-size:.85rem;line-height:1.4;font-family:system-ui,sans-serif}
+nav.toc a{color:#a8c8f0;text-decoration:none}
+nav.toc a:hover{color:#fff}
+nav.toc li.toc-target{font-weight:700}
+nav.toc li.toc-target a{color:#fff}
+main{padding:48px 64px;max-width:860px}
+h1.book-title{font-size:2rem;color:#1e3a5f;margin-bottom:4px}
+.subtitle{color:#666;margin-bottom:48px;font-size:1rem;font-style:italic;font-family:system-ui,sans-serif}
+section{margin-bottom:56px;border-top:1px solid #e0e0d8;padding-top:40px}
+section:first-of-type{border-top:none;padding-top:0}
+@media(max-width:768px){.page{grid-template-columns:1fr}
+nav.toc{position:relative;height:auto}}
+</style>
+</head>
+<body>
+<div class="page">
+  <nav class="toc">
+    <h2>目录</h2>
+    <ol>
+<li><a href="concept_five_phase_correspondences_zh.html">五行归类</a></li>
+<li><a href="concept_hpa_axis_zh.html">HPA 轴（下丘脑-垂体-肾上腺轴）</a></li>
+<li><a href="concept_sympathetic_parasympathetic_balance_zh.html">交感与副交感神经平衡</a></li>
+<li><a href="concept_acute_vs_chronic_stress_zh.html">急性压力与慢性压力</a></li>
+<li><a href="concept_seven_emotions_qiqing_zh.html">七情</a></li>
+<li><a href="concept_five_emotions_five_organs_zh.html">五志与五脏</a></li>
+<li><a href="concept_qi_stagnation_blood_stasis_zh.html">气滞血瘀</a></li>
+<li><a href="concept_vagal_tone_and_hrv_zh.html">迷走神经张力与心率变异性</a></li>
+<li><a href="concept_liver_free_flow_shuxie_zh.html">肝主疏泄</a></li>
+<li><a href="concept_postprandial_hyperemia_zh.html">餐后充血</a></li>
+<li><a href="concept_liver_qi_stagnation_zh.html">肝气郁结</a></li>
+<li><a href="concept_stress_and_digestion_zh.html">压力与消化</a></li>
+<li><a href="concept_diaphragmatic_breathing_zh.html">腹式呼吸</a></li>
+<li><a href="concept_liver_spleen_relationship_zh.html">肝脾关系</a></li>
+<li><a href="concept_allostatic_load_zh.html">稳态负荷</a></li>
+<li><a href="concept_breath_as_bridge_zh.html">呼吸是桥梁</a></li>
+<li><a href="concept_gut_brain_axis_zh.html">肠脑轴</a></li>
+<li><a href="concept_liver_opening_movements_zh.html">疏肝动作</a></li>
+<li><a href="concept_wood_overacting_on_earth_zh.html">肝木克脾土</a></li>
+<li><a href="concept_emotional_eating_zh.html">情绪化进食</a></li>
+<li><a href="concept_hrv_self_monitoring_zh.html">用心率变异性监测压力</a></li>
+<li><a href="concept_mind_regulation_tiaoxin_zh.html">调心</a></li>
+<li><a href="concept_releasing_liver_qi_through_movement_zh.html">以动作疏解肝气</a></li>
+<li class="toc-target"><a href="concept_stress_resilience_routine_zh.html">每日抗压练习</a></li>
+</ol>
+  </nav>
+  <main>
+    <h1 class="book-title">概念书: 每日抗压练习</h1>
+    <p class="subtitle">Meta Health Ch07 &middot; Generated by SPL</p>
+    <section>
+      <section>
+      <h2 id="结语与实践">结语与实践</h2>
+<p>每日抗压练习的目标很具体:在压力出现的地方就地化解,不让它一路传到消化系统。它不是新技术,而是把前面学过的六个概念排成一天的日程。</p>
+<h3 id="它是什么">它是什么</h3>
+<p>这套练习有四个部分:</p>
+<li><strong>餐前三次慢呼吸</strong>:每顿饭前做。</li>
+<li><strong>疏肝动作</strong>:紧张积累时做。</li>
+<li><strong>傍晚的平静收尾</strong>:睡前做。</li>
+<li><strong>反馈记录</strong>:用心率变异性或日记。</li>
+<p>它的目的是保护消化。中医认为"肝木克脾土",也就是情绪紧张(肝)过度,会干扰消化功能(脾)。这是一种传统解释框架。不过,"压力会扰乱进食和消化"在现代生理学里也有对应的机制:应激时交感神经占优势,胃肠活动受到抑制。</p>
+<h3 id="六个概念如何汇合">六个概念如何汇合</h3>
+<p>| 环节 | 用到的概念 | 作用 | |---|---|---| | 餐前三次慢呼吸 | 呼吸是桥梁 | 用可以主动控制的呼吸,影响不受意志控制的自主神经 | | 同上 | 情绪化进食 | 在拿起筷子前停顿,把"情绪驱动"和"饥饿驱动"分开 | | 紧张时的动作 | 以动作疏解肝气 | 伸展、扩胸、缓慢转体,把积累的紧张释放出来 | | 晚间收尾 | 调心 | 放下白天的事,让身心转入休息 | | 反馈 | 用心率变异性监测压力 | 把主观感受变成可以对照的记录 | | 整体逻辑 | 肝木克脾土 | 说明为什么要在进食前后保护消化 |</p>
+<h3 id="一个具体的一天">一个具体的一天</h3>
+<p>小林是备考的大学生,常在焦虑时暴食零食,餐后胃胀。她这样安排:</p>
+<li>早餐、午餐、晚餐前,各做三次慢呼吸,每次吸气约4秒、呼气约6秒,总共不到一分钟。</li>
+<li>下午复习到肩颈发紧时,起身做2到3分钟的扩胸和侧身拉伸。</li>
+<li>睡前30分钟关掉屏幕,写三行日记:今天最紧张的时刻、当时身体的感觉、有没有因此多吃。</li>
+<li>每天早晨用手环记录静息时的心率变异性。</li>
+<h3 id="用反馈调整练习">用反馈调整练习</h3>
+<p>两周后,小林发现了规律:考试周的前两天,晨间心率变异性比平时低,而日记里"焦虑时吃零食"的记录增多。她据此做了调整:这几天把疏肝动作从一次增加到三次,并提前10分钟开始晚间收尾。</p>
+<p>要注意,心率变异性的数值因人、因设备而异,只适合和自己的基线比较,不适合和别人比较,也不能当作诊断。一天的波动没有意义,看的是一周以上的趋势。若长期胃痛、暴食或持续焦虑,应该就医,不能只靠这套练习。</p>
+<h3 id="为什么这是终点">为什么这是终点</h3>
+<p>前面的概念各自回答一个问题:如何调节、如何察觉、如何释放。每日抗压练习把它们放进同一天:吃饭前有呼吸,紧张时有动作,睡前有收尾,最后还有记录来检验效果。它没有进一步的应用,因为它本身就是落实这些概念的方式。</p>
+<h3 id="现在就开始">现在就开始</h3>
+<p>从最小的一步做起:今天的下一顿饭前,先慢慢呼吸三次。一周后,翻看自己的记录,看看有什么变化,再决定要不要加入其他环节。</p>
+    </section>
+    </section>
+    <footer class="spl-credit"><span class="spl-credit__meta">Ch7: Stress, Emotion, and the Flow of Qi and Blood (情志与气血) (Level: College &middot; Language: ZH &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
+  </main>
+</div>
+</body>
+</html>

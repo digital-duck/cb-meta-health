@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Five-Phase Meal Design | Meta Health Ch06</title>
+<script>
+MathJax = {
+  loader: { load: ['[tex]/mathtools'] },
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']],
+         packages: { '[+]': ['mathtools'] } },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<script src="https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.min.js"></script>
+<script>mermaid.initialize({ startOnLoad: true, theme: 'neutral' });</script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+footer.spl-credit span{display:block}
+footer.spl-credit .spl-credit__meta{margin-bottom:4px}
+.cb-figure{margin:24px 0;text-align:center}
+.cb-figure img{max-width:100%;height:auto;border:1px solid #e0e0d8;border-radius:6px}
+figcaption{font-size:.82rem;color:#666;margin-top:8px;font-style:italic;text-align:center}
+pre.mermaid{background:none;border:none;padding:0;overflow:visible;margin:16px 0}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="five-phase-meal-design">Five-Phase Meal Design</h2>
+<p><strong>Definition.</strong> Five-phase meal design plans a week of meals through two lenses at once. The first is modern nutrition: a balanced plate, mostly whole foods, adequate protein and fiber, and sensible meal timing. The second is the Five Phases framework of Traditional Chinese Medicine (TCM), which sorts foods by color and flavor: green/sour, red/bitter, yellow/sweet, white/pungent, and black/salty. TCM also recommends warm, cooked foods and adjusting the diet to one's constitution. The lenses mostly agree in practice. Eating a variety of colors reliably increases the range of vitamins, minerals, and plant compounds you get. The claim that each flavor or color supports a specific organ system has not been established by clinical evidence, so treat it as a planning checklist for variety, not a medical prescription.</p>
+<p><strong>Worked example.</strong> Build one day for a 2,000 kcal target using the plate model: half vegetables and fruit, a quarter protein, a quarter whole grains or starch.</p>
+<p>| Meal | Foods | Color/flavor coverage | |---|---|---| | Breakfast (about 450 kcal) | Warm oat porridge, walnuts, sliced pear, black sesame | White, black, sweet | | Lunch (about 700 kcal) | Brown rice, stir-fried bok choy, tofu, carrots, a little rice vinegar | Green/sour, red, yellow | | Dinner (about 650 kcal) | Steamed fish, sweet potato, sautéed kale with garlic, miso soup | Yellow/sweet, green, pungent, salty | | Snack (about 200 kcal) | Red apple with almond butter | Red, sweet |</p>
+<p>Checking the day: green appears at lunch and dinner, red in the carrots and apple, yellow in the sweet potato, white in the oats and garlic, black in the sesame. Protein is spread across all meals. Total energy is 450 + 700 + 650 + 200 = 2,000 kcal.</p>
+<p><strong>Problem-solving application.</strong> Planning a week is a constraint-satisfaction task. Follow these steps:</p>
+<li><strong>Fix the nutritional constraints first.</strong> Set an energy target, a protein goal (commonly 0.8–1.2 g per kg of body weight for healthy adults), and a fiber goal (about 25–35 g per day).</li>
+<li><strong>Rotate the colors.</strong> Do not repeat the same vegetables daily. Aim for all five colors at least several times across the week, not necessarily in every meal.</li>
+<li><strong>Keep flavors moderate.</strong> Salt in particular should stay within health guidelines (under about 2,300 mg of sodium per day), even though TCM lists salty as a flavor to include.</li>
+<li><strong>Prefer warm, cooked foods where it suits you.</strong> Cooking softens fiber and can make some nutrients, such as lycopene in tomatoes, easier to absorb. Others, such as vitamin C, decline with heat, so keep some raw foods.</li>
+<li><strong>Adjust for constitution.</strong> In TCM, someone who often feels cold might favor ginger tea and soups, while someone who often feels overheated might choose more steamed greens and fewer fried dishes. Check any such adjustment against real needs: a person with diabetes still tracks carbohydrates and blood glucose, whatever their TCM profile.</li>
+<li><strong>Time meals sensibly.</strong> Regular meals, with the largest ones earlier in the day, suit most schedules. Shift them for training, shift work, or medication.</li>
+<p><strong>Check yourself.</strong> A plan with all five colors but 3,000 kcal for a person who needs 2,000 fails the nutritional lens. Where the two lenses conflict, the measurable one takes priority.</p>
+  </main>
+  <footer class="spl-credit"><span class="spl-credit__meta">Ch6: What We Eat — Food Quality, Four Natures, and Five Flavors (四气五味) (Level: College &middot; Language: EN &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
+</div>
+</body>
+</html>

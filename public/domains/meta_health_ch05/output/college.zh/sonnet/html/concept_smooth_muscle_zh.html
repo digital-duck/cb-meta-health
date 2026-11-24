@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>平滑肌 | Meta Health Ch05</title>
+<script>
+MathJax = {
+  loader: { load: ['[tex]/mathtools'] },
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']],
+         packages: { '[+]': ['mathtools'] } },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<script src="https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.min.js"></script>
+<script>mermaid.initialize({ startOnLoad: true, theme: 'neutral' });</script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+footer.spl-credit span{display:block}
+footer.spl-credit .spl-credit__meta{margin-bottom:4px}
+.cb-figure{margin:24px 0;text-align:center}
+.cb-figure img{max-width:100%;height:auto;border:1px solid #e0e0d8;border-radius:6px}
+figcaption{font-size:.82rem;color:#666;margin-top:8px;font-style:italic;text-align:center}
+pre.mermaid{background:none;border:none;padding:0;overflow:visible;margin:16px 0}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="平滑肌">平滑肌</h2>
+<p><strong>定义。</strong> 平滑肌是不受意识支配的肌肉,分布于胃肠壁、血管壁、支气管、膀胱和子宫等器官。它的细胞呈梭形,只有一个细胞核,肌丝排列不整齐,因此在显微镜下看不到骨骼肌那样的横纹。平滑肌由自主神经、激素和局部化学信号调节,并且部分平滑肌能自发地节律性收缩。</p>
+<p><strong>与骨骼肌的关键差异。</strong> 骨骼肌的收缩由钙离子与肌钙蛋白结合触发。平滑肌细胞没有肌钙蛋白,而是靠钙离子与钙调蛋白结合,激活肌球蛋白轻链激酶,使肌球蛋白磷酸化后才能与肌动蛋白相互作用。平滑肌收缩较慢,但耗能低,能长时间维持张力而不易疲劳。这正是血管能持续保持张力、括约肌能长时间关闭的原因。</p>
+<p>| 特征 | 骨骼肌 | 平滑肌 | |---|---|---| | 控制方式 | 随意(躯体神经) | 不随意(自主神经、激素) | | 横纹 | 有 | 无 | | 钙离子的作用对象 | 肌钙蛋白 | 钙调蛋白 | | 收缩速度 | 快 | 慢 | | 抗疲劳能力 | 较弱 | 强 |</p>
+<p><strong>工作示例:血管平滑肌与血流。</strong> 血管阻力对半径极为敏感。泊肃叶定律表明,在其他条件不变时,血流阻力 $R$ 与半径 $r$ 的四次方成反比:</p>
+$$R \propto \frac{1}{r^{4}}$$
+<p>设某小动脉的血管平滑肌舒张,使半径增至原来的 $1.2$ 倍,则阻力变为原来的</p>
+$$\frac{1}{1.2^{4}} \approx \frac{1}{2.07} \approx 0.48$$
+<p>即阻力约降为原来的一半。反之,平滑肌收缩使半径缩小到 $0.8$ 倍,阻力约增至原来的 $\frac{1}{0.8^{4}} \approx 2.44$ 倍。因此,小动脉平滑肌的微小舒缩,就足以显著改变血压和器官的血流分配。</p>
+<p><strong>问题求解应用。</strong> 平均动脉压可由心输出量 $CO$ 与总外周阻力 $TPR$ 估算:</p>
+$$MAP = CO \times TPR$$
+<p>题目:某人静息时 $CO = 5\ \text{L/min}$,$MAP = 90\ \text{mmHg}$,求 $TPR$。再设服用血管扩张药后小动脉平滑肌舒张,$TPR$ 降低 $20\%$,心输出量不变,求新的 $MAP$。</p>
+<p>解:$TPR = \frac{90}{5} = 18\ \text{mmHg·min/L}$。降低 $20\%$ 后 $TPR = 18 \times 0.8 = 14.4$,所以</p>
+$$MAP = 5 \times 14.4 = 72\ \text{mmHg}$$
+<p>这说明了一些降压药(如钙通道阻滞剂)的作用机制:阻断钙离子进入平滑肌细胞,使血管舒张,外周阻力下降,血压随之降低。</p>
+<p><strong>消化道中的节律性收缩。</strong> 胃肠壁平滑肌分为环形肌和纵行肌两层。部分细胞(如卡哈尔间质细胞)产生缓慢的电节律,引发节段性收缩和蠕动,把食物向前推送并与消化液混合。肠道蠕动的强弱受副交感神经促进、交感神经抑制,这解释了为什么紧张时常出现消化不适。</p>
+  </main>
+  <footer class="spl-credit"><span class="spl-credit__meta">Ch5: Eating as Internal Exercise (饮食即内脏运动) (Level: College &middot; Language: ZH &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
+</div>
+</body>
+</html>

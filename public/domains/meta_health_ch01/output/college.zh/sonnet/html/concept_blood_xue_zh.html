@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>血 | Meta Health Ch01</title>
+<script>
+MathJax = {
+  loader: { load: ['[tex]/mathtools'] },
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']],
+         packages: { '[+]': ['mathtools'] } },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<script src="https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.min.js"></script>
+<script>mermaid.initialize({ startOnLoad: true, theme: 'neutral' });</script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+footer.spl-credit span{display:block}
+footer.spl-credit .spl-credit__meta{margin-bottom:4px}
+.cb-figure{margin:24px 0;text-align:center}
+.cb-figure img{max-width:100%;height:auto;border:1px solid #e0e0d8;border-radius:6px}
+figcaption{font-size:.82rem;color:#666;margin-top:8px;font-style:italic;text-align:center}
+pre.mermaid{background:none;border:none;padding:0;overflow:visible;margin:16px 0}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="血">血</h2>
+<p><strong>定义。</strong> 中医认为，血是在脉管中运行、具有营养和滋润作用的红色液体物质。它与现代解剖学所说的血液有大量重叠：二者都在管道中循环，都向全身组织供应所需物质。但中医的"血"概念更宽，它同时承担着滋养眼、筋、皮肤、脑等组织，以及为"神"（精神意识活动）提供物质基础的功能。因此，中医讨论血的问题时，常常同时涉及视力、肢体活动、月经、睡眠和情绪。</p>
+<p><strong>来源与运行。</strong> 中医认为，血主要由脾胃运化的水谷精微化生，并与营气密切相关。血的运行涉及三个脏的分工：</p>
+<p>| 脏 | 中医所述的作用 | |---|---| | 心 | 主血脉，推动血液在脉中运行 | | 肝 | 藏血，并调节不同状态下的血量分配 | | 脾 | 统血，使血液循行于脉内而不外溢 |</p>
+<p><strong>对应的现代概念。</strong> 现代生理学中，与"血的营养功能"关系最密切的是血红蛋白及其携氧能力。成年男性血红蛋白的参考范围约为 $130\text{–}175\ \text{g/L}$，成年女性约为 $115\text{–}150\ \text{g/L}$。血红蛋白低于参考范围下限即诊断为贫血。</p>
+<p><strong>例题。</strong> 一位 28 岁女性，近三个月面色偏白、头晕、心悸、夜间多梦，月经量多。血常规显示血红蛋白为 $98\ \text{g/L}$。</p>
+<p><em>现代解读：</em> 该值低于女性下限 $115\ \text{g/L}$，属贫血。月经量多提示可能存在失血，应检查血清铁蛋白，判断是否缺铁。</p>
+<p><em>中医解读：</em> 中医会把这组表现归为"血虚"：面色淡白、头晕和心悸被认为是血不能濡养头面和心神的表现。</p>
+<p><em>问题求解：</em> 比较两种视角，可以得到以下结论。</p>
+<li>两者在症状层面有明显重合。缺铁性贫血确实会引起头晕和心悸，原因是携氧能力下降，心脏代偿性加快搏动。</li>
+<li>但"血虚"是一种证候归纳，并不等于"贫血"。有些人化验结果正常，却被辨为血虚；也有人血红蛋白偏低，却无明显血虚表现。</li>
+<li>判断必须以检查为准。如果仅凭"补血"的说法自行服用食物或补品，可能掩盖需要处理的失血来源，例如子宫肌瘤或消化道出血，从而延误诊治。</li>
+<p><strong>应用要点。</strong> 学习这一概念时，应分清两个层次：血红蛋白、铁蛋白、失血量是可测量的指标，可用于诊断和疗效评估；"血虚""血瘀"等是中医的辨证分类，用于描述症状组合。用后者解释前者，或用前者简单取代后者，都容易出错。遇到头晕、乏力、月经异常等表现时，应先做血常规等检查，再讨论调养方式。</p>
+  </main>
+  <footer class="spl-credit"><span class="spl-credit__meta">Ch1: TCM Foundations — Yin-Yang, Qi-Blood, and the Five Phases (中医基础) (Level: College &middot; Language: ZH &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
+</div>
+</body>
+</html>

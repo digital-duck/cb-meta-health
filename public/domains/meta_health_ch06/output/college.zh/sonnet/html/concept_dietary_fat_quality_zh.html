@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>膳食脂肪的质量 | Meta Health Ch06</title>
+<script>
+MathJax = {
+  loader: { load: ['[tex]/mathtools'] },
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']],
+         packages: { '[+]': ['mathtools'] } },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<script src="https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.min.js"></script>
+<script>mermaid.initialize({ startOnLoad: true, theme: 'neutral' });</script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+footer.spl-credit span{display:block}
+footer.spl-credit .spl-credit__meta{margin-bottom:4px}
+.cb-figure{margin:24px 0;text-align:center}
+.cb-figure img{max-width:100%;height:auto;border:1px solid #e0e0d8;border-radius:6px}
+figcaption{font-size:.82rem;color:#666;margin-top:8px;font-style:italic;text-align:center}
+pre.mermaid{background:none;border:none;padding:0;overflow:visible;margin:16px 0}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="膳食脂肪的质量">膳食脂肪的质量</h2>
+<p><strong>定义。</strong> 膳食脂肪的质量,指的是我们摄入的脂肪<strong>属于哪一类</strong>,而不只是吃了多少。按化学结构,脂肪酸大致分为三类:</p>
+<li><strong>不饱和脂肪酸</strong>:主要来自坚果、种子、深海鱼和植物油(橄榄油、菜籽油、亚麻籽油等)。其中 ω-3 脂肪酸(如 EPA、DHA)和 ω-6 脂肪酸是人体不能自行合成的必需脂肪酸。</li>
+<li><strong>饱和脂肪酸</strong>:多见于肥肉、黄油、棕榈油和椰子油。适量摄入没有问题,过量会升高低密度脂蛋白胆固醇(LDL-C)。</li>
+<li><strong>反式脂肪酸</strong>:天然少量存在于反刍动物脂肪中,主要的健康风险来自植物油部分氢化产生的<strong>工业反式脂肪</strong>(部分起酥油、植脂末、某些烘焙食品)。它既升高 LDL-C,又降低高密度脂蛋白胆固醇(HDL-C)。</li>
+<p>世界卫生组织建议:饱和脂肪供能不超过总能量的 10%,反式脂肪不超过 1%。总脂肪供能比通常以 20%–30% 为宜。</p>
+<p><strong>例题。</strong> 小李每天摄入 2000 kcal,脂肪的能量系数为 9 kcal/g。他想把饱和脂肪控制在上限以内,应该吃多少克?</p>
+<p>饱和脂肪最多提供的能量为:</p>
+$$2000 \times 10\% = 200\ \text{kcal}$$
+<p>换算为质量:</p>
+$$\frac{200\ \text{kcal}}{9\ \text{kcal/g}} \approx 22\ \text{g}$$
+<p>也就是说,他每天饱和脂肪不宜超过约 22 g。同理,反式脂肪上限为 $2000 \times 1\% \div 9 \approx 2.2$ g。</p>
+<p><strong>问题解决应用。</strong> 假设小李某天的饮食如下:</p>
+<p>| 食物 | 饱和脂肪(约) | |---|---| | 一份奶油蛋糕 | 12 g | | 100 g 五花肉 | 13 g | | 一份煎鸡蛋 | 3 g |</p>
+<p>合计约 28 g,超出上限约 6 g。要调整,不必砍掉所有脂肪,而是<strong>替换</strong>:</p>
+<li>把五花肉换成同量的清蒸鱼,饱和脂肪降至约 2 g,同时增加了 ω-3 脂肪酸;</li>
+<li>用橄榄油或菜籽油烹饪,代替猪油或黄油;</li>
+<li>以一小把(约 25 g)原味坚果代替蛋糕作为加餐;</li>
+<li>查看食品标签,配料表中出现"氢化植物油""植脂末""起酥油"时,说明可能含有工业反式脂肪;若营养成分表标示反式脂肪为 0,也要留意每份的标注限度(国内标准允许 0.3 g/100 g 以下标示为"0")。</li>
+<p>调整后,当天饱和脂肪约为 $3 + 2 + 3 = 8$ g,低于 22 g 的上限,还留有余量。研究显示,用不饱和脂肪替代饱和脂肪,可降低 LDL-C 与心血管疾病风险;如果只是用精制碳水化合物替代饱和脂肪,则没有这样的益处。</p>
+<p><strong>要点:</strong> 脂肪质量的核心是"换",而不是"戒"。优先选择鱼、坚果、种子和植物油,限制肥肉和奶油类食品,尽量避免工业反式脂肪。</p>
+  </main>
+  <footer class="spl-credit"><span class="spl-credit__meta">Ch6: What We Eat — Food Quality, Four Natures, and Five Flavors (四气五味) (Level: College &middot; Language: ZH &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
+</div>
+</body>
+</html>

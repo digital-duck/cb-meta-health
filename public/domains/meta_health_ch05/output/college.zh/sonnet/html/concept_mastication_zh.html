@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>咀嚼 | Meta Health Ch05</title>
+<script>
+MathJax = {
+  loader: { load: ['[tex]/mathtools'] },
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']],
+         packages: { '[+]': ['mathtools'] } },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<script src="https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.min.js"></script>
+<script>mermaid.initialize({ startOnLoad: true, theme: 'neutral' });</script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+footer.spl-credit span{display:block}
+footer.spl-credit .spl-credit__meta{margin-bottom:4px}
+.cb-figure{margin:24px 0;text-align:center}
+.cb-figure img{max-width:100%;height:auto;border:1px solid #e0e0d8;border-radius:6px}
+figcaption{font-size:.82rem;color:#666;margin-top:8px;font-style:italic;text-align:center}
+pre.mermaid{background:none;border:none;padding:0;overflow:visible;margin:16px 0}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="咀嚼">咀嚼</h2>
+<p><strong>定义。</strong> 咀嚼(mastication)是由咀嚼肌(咬肌、颞肌、翼内肌、翼外肌)带动下颌,配合牙齿与舌头,把食物切碎、磨细的过程。它同时完成三件事:</p>
+<li><strong>机械破碎</strong>:增大食物的表面积,让消化酶更容易接触食物。</li>
+<li><strong>化学启动</strong>:食物与唾液混合。唾液中的唾液淀粉酶开始把淀粉分解为麦芽糖等较小的分子;舌脂肪酶也开始作用于脂肪。</li>
+<li><strong>信息反馈</strong>:口腔感受食物的质地与味道,饱腹信号需要一定时间才会传到大脑,咀嚼放慢了进食速度,为这一过程留出时间。</li>
+<p><strong>worked example:同一份饭,两种吃法。</strong> 小明吃一份约 600 kcal 的午餐。</p>
+<li>快速进食:10 分钟吃完,平均摄入速度为 $\dfrac{600\ \text{kcal}}{10\ \text{min}} = 60\ \text{kcal/min}$。</li>
+<li>细嚼慢咽:每口咀嚼约 20–30 次,25 分钟吃完,平均速度为 $\dfrac{600\ \text{kcal}}{25\ \text{min}} = 24\ \text{kcal/min}$。</li>
+<p>摄入的总能量相同,但后者的速度只有前者的 $\dfrac{24}{60}=40\%$。若饱腹信号大约在进食 20 分钟后才明显增强(这是常用的粗略说法,个体差异大),快速进食者在信号到来前已经吃完甚至吃多,慢速进食者则有机会在中途感到"够了"。一些研究发现,放慢进食、增加咀嚼次数与较低的单餐摄入量相关,但效果的大小因人而异。</p>
+<p><strong>问题解决应用。</strong> 下面三个情境,可以用咀嚼的原理来分析。</p>
+<p><em>情境一:吃米饭时,越嚼越甜。</em> 原因是唾液淀粉酶把淀粉分解成了麦芽糖。这也说明:咀嚼时间越长,淀粉与酶接触越充分。不过胃酸会使淀粉酶失活,所以口腔中的淀粉消化只是整个过程的开端,主要的淀粉消化仍在小肠完成。</p>
+<p><em>情境二:牙齿缺失或义齿不合适的老人,常常食物嚼不烂。</em> 食物颗粒较大时,小肠的消化吸收效率会下降,同时老人可能因咀嚼困难而回避肉类、蔬菜和坚果,导致蛋白质与膳食纤维摄入不足。对策是:把食物做得更软更小(切碎、炖煮),并及时就医修复牙齿,而不是只依赖流食。</p>
+<p><em>情境三:你想控制进食速度。</em> 可行的做法包括:每口放下餐具、每口咀嚼约 20 次、一餐至少用 20 分钟,并减少边看屏幕边吃的分心。这些方法的目的是给大脑时间接收饱腹信号,不必追求固定的次数。</p>
+<p>在 TCM 中,也有"细嚼慢咽有助脾胃运化"的说法,这与上述现代生理学的结论方向一致:充分咀嚼减轻了后续消化的负担。</p>
+<p><strong>小结。</strong> 咀嚼不只是"把食物弄碎":它启动了消化,也调节了进食速度。在日常饮食中,吃得慢一点,往往是最容易做到、成本最低的饮食调整之一。</p>
+  </main>
+  <footer class="spl-credit"><span class="spl-credit__meta">Ch5: Eating as Internal Exercise (饮食即内脏运动) (Level: College &middot; Language: ZH &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
+</div>
+</body>
+</html>

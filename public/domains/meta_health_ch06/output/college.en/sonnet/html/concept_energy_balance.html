@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Energy Balance | Meta Health Ch06</title>
+<script>
+MathJax = {
+  loader: { load: ['[tex]/mathtools'] },
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']],
+         packages: { '[+]': ['mathtools'] } },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<script src="https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.min.js"></script>
+<script>mermaid.initialize({ startOnLoad: true, theme: 'neutral' });</script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+footer.spl-credit span{display:block}
+footer.spl-credit .spl-credit__meta{margin-bottom:4px}
+.cb-figure{margin:24px 0;text-align:center}
+.cb-figure img{max-width:100%;height:auto;border:1px solid #e0e0d8;border-radius:6px}
+figcaption{font-size:.82rem;color:#666;margin-top:8px;font-style:italic;text-align:center}
+pre.mermaid{background:none;border:none;padding:0;overflow:visible;margin:16px 0}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="energy-balance">Energy Balance</h2>
+<p><strong>Energy balance</strong> compares the energy you take in from food with the energy your body uses. Both sides are measured in kilocalories (kcal).</p>
+<p><strong>Intake</strong> is the energy in what you eat and drink: carbohydrate and protein provide about 4 kcal per gram, fat about 9 kcal per gram, and alcohol about 7 kcal per gram.</p>
+<p><strong>Expenditure</strong> has three main parts:</p>
+<li><strong>Basal metabolic rate (BMR):</strong> the energy needed at complete rest to keep the heart beating, the lungs working and the body temperature stable. It is usually the largest share, roughly 60–70% of daily use.</li>
+<li><strong>Thermic effect of food:</strong> the energy spent digesting, absorbing and storing nutrients, about 10% of intake.</li>
+<li><strong>Activity:</strong> both deliberate exercise and everyday movement such as walking, standing and fidgeting.</li>
+<p>When intake equals expenditure, body weight stays roughly stable. When intake is higher, the surplus is stored, mostly as fat. When it is lower, the body draws on its stores. A common rule of thumb is that about 7,700 kcal corresponds to 1 kg of body fat. It is an approximation, because the body adapts as weight changes.</p>
+<h3 id="worked-example">Worked example</h3>
+<p>Estimate BMR with the Mifflin–St Jeor equation. For a 70 kg man, 175 cm tall, age 20:</p>
+$$\text{BMR} = 10(70) + 6.25(175) - 5(20) + 5 = 1699 \text{ kcal/day}$$
+<p>An activity multiplier of 1.55 (moderately active) gives total daily energy expenditure (TDEE), which already includes the thermic effect of food and activity:</p>
+$$\text{TDEE} \approx 1699 \times 1.55 \approx 2634 \text{ kcal/day}$$
+<p>If he eats 2,200 kcal per day, the daily balance is:</p>
+$$2200 - 2634 = -434 \text{ kcal/day}$$
+<h3 id="problem-solving-application">Problem-solving application</h3>
+<p><strong>Question:</strong> How long would it take him to lose 2 kg of fat at this deficit?</p>
+<li>Energy to be removed: $2 \times 7700 = 15{,}400$ kcal.</li>
+<li>Time at the current deficit: $\frac{15400}{434} \approx 35.5$ days, or about 5 weeks.</li>
+<p><strong>Check the assumptions.</strong> As he loses weight, his BMR falls, so the deficit shrinks. Rework the estimate after a few weeks with his new weight. A deficit of 400–500 kcal per day is generally considered sustainable, because it loses fat with less loss of muscle and less hunger than aggressive dieting. Real results also vary because activity multipliers are rough estimates and food labels can be off by 10–20%.</p>
+<p><strong>Try it yourself:</strong> A 60 kg, 165 cm, 18-year-old woman has TDEE of 2,100 kcal. (Her Mifflin–St Jeor equation ends in $-161$ instead of $+5$.) She eats 2,400 kcal per day. Predict her monthly weight change.</p>
+<li>Daily surplus: $2400 - 2100 = 300$ kcal.</li>
+<li>Over 30 days: $300 \times 30 = 9000$ kcal.</li>
+<li>Weight change: $\frac{9000}{7700} \approx 1.2$ kg gained per month, if nothing else changes.</li>
+<p>In practice, the method is to estimate expenditure, track intake, compare the two, and adjust based on measured weight over several weeks.</p>
+  </main>
+  <footer class="spl-credit"><span class="spl-credit__meta">Ch6: What We Eat — Food Quality, Four Natures, and Five Flavors (四气五味) (Level: College &middot; Language: EN &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
+</div>
+</body>
+</html>

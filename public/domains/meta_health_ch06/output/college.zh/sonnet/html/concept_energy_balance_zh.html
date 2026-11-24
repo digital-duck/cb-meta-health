@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>能量平衡 | Meta Health Ch06</title>
+<script>
+MathJax = {
+  loader: { load: ['[tex]/mathtools'] },
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']],
+         packages: { '[+]': ['mathtools'] } },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<script src="https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.min.js"></script>
+<script>mermaid.initialize({ startOnLoad: true, theme: 'neutral' });</script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+footer.spl-credit span{display:block}
+footer.spl-credit .spl-credit__meta{margin-bottom:4px}
+.cb-figure{margin:24px 0;text-align:center}
+.cb-figure img{max-width:100%;height:auto;border:1px solid #e0e0d8;border-radius:6px}
+figcaption{font-size:.82rem;color:#666;margin-top:8px;font-style:italic;text-align:center}
+pre.mermaid{background:none;border:none;padding:0;overflow:visible;margin:16px 0}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="能量平衡">能量平衡</h2>
+<p><strong>定义。</strong> 能量平衡是指身体从食物中获得的能量(摄入)与消耗的能量(支出)之间的关系。两者之差决定体重随时间的变化:摄入大于支出时,多余能量主要以脂肪等形式储存,体重上升;摄入小于支出时,身体动用储备,体重下降;两者大致相等时,体重基本稳定。能量常用千卡(kcal)计量。</p>
+<p>能量支出主要由三部分组成:</p>
+<p>| 组成部分 | 含义 | 大致占比(成年人) | |---|---|---| | 基础代谢率(BMR) | 静息状态下维持呼吸、心跳、体温等生命活动所需的能量 | 约 60%–70% | | 食物热效应 | 消化、吸收和代谢食物所耗能量 | 约 10% | | 活动消耗 | 运动及日常活动(走路、站立、做家务等) | 约 15%–30%,个体差异最大 |</p>
+<p>估算 BMR 可用 Mifflin-St Jeor 公式。男性:</p>
+$$\text{BMR} = 10m + 6.25h - 5a + 5$$
+<p>女性则把最后的常数改为 $-161$。其中 $m$ 为体重(kg),$h$ 为身高(cm),$a$ 为年龄(岁),结果单位为 kcal/天。</p>
+<p><strong>例题。</strong> 一位 30 岁男性,体重 70 kg,身高 175 cm,日常活动较少。估算他的每日总能量支出。</p>
+<li>计算 BMR:</li>
+$$\text{BMR} = 10\times 70 + 6.25\times 175 - 5\times 30 + 5 = 1648.75\ \text{kcal}$$
+<p>约 1650 kcal。</p>
+<li>乘以活动系数。久坐的人常取约 1.2,中等活动者约 1.55。此处取 1.2:</li>
+$$1650 \times 1.2 \approx 1980\ \text{kcal/天}$$
+<p>这个数字已包含食物热效应和日常活动,是一个估计值,实际值因人而异。</p>
+<p><strong>问题解决应用。</strong> 假设他每天实际摄入 2380 kcal。</p>
+<li>每日盈余:$2380 - 1980 = 400$ kcal。</li>
+<li>常用经验换算是约 7700 kcal 对应 1 kg 体脂。因此一天约增加 $\frac{400}{7700} \approx 0.05$ kg,30 天约增加 1.6 kg。</li>
+<p>反过来,若他想在 12 周(84 天)内减重 4 kg,所需总缺口约为 $4 \times 7700 = 30800$ kcal,平均每天缺口为:</p>
+$$\frac{30800}{84} \approx 367\ \text{kcal}$$
+<p>即每天摄入约 $1980 - 367 \approx 1610$ kcal,或通过增加运动、少量减食两者结合来实现。</p>
+<p><strong>使用提醒。</strong> 7700 kcal 每公斤只是粗略的经验值。实际中,体重下降后 BMR 和活动消耗会随之降低,同样的缺口带来的减重会逐渐变慢,所以长期计划需要每隔几周按新体重重新估算。此外,极低的摄入量(例如远低于 BMR)可能导致营养不足和肌肉流失,不宜采用。</p>
+  </main>
+  <footer class="spl-credit"><span class="spl-credit__meta">Ch6: What We Eat — Food Quality, Four Natures, and Five Flavors (四气五味) (Level: College &middot; Language: ZH &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
+</div>
+</body>
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Zang–Fu Pairing (表里) | Meta Health Ch01</title>
+<script>
+MathJax = {
+  loader: { load: ['[tex]/mathtools'] },
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']],
+         packages: { '[+]': ['mathtools'] } },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<script src="https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.min.js"></script>
+<script>mermaid.initialize({ startOnLoad: true, theme: 'neutral' });</script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+footer.spl-credit span{display:block}
+footer.spl-credit .spl-credit__meta{margin-bottom:4px}
+.cb-figure{margin:24px 0;text-align:center}
+.cb-figure img{max-width:100%;height:auto;border:1px solid #e0e0d8;border-radius:6px}
+figcaption{font-size:.82rem;color:#666;margin-top:8px;font-style:italic;text-align:center}
+pre.mermaid{background:none;border:none;padding:0;overflow:visible;margin:16px 0}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="zang-fu-pairing-表里">Zang–Fu Pairing (表里)</h2>
+<p><strong>Definition.</strong> In Traditional Chinese Medicine (TCM), the body's main organ systems are divided into two groups. The <em>zang</em> organs (脏) are described as solid and storing: Heart, Liver, Spleen, Lung, and Kidney. The <em>fu</em> organs (腑) are hollow and transmitting: Small Intestine, Gallbladder, Stomach, Large Intestine, Bladder, and the Triple Burner (三焦). TCM holds that each zang organ is paired with one fu organ. The zang is called the "interior" (里) and the fu the "exterior" (表), so the relationship is named 表里 (exterior-interior). Each pair is said to be linked by meridians, which are channels along which TCM describes qi as flowing. The pair is expected to function together and to show related patterns when disordered.</p>
+<p>The standard pairings are:</p>
+<p>| Zang (interior) | Fu (exterior) | |---|---| | Lung | Large Intestine | | Spleen | Stomach | | Heart | Small Intestine | | Kidney | Bladder | | Liver | Gallbladder | | Pericardium | Triple Burner |</p>
+<p>Note that the Triple Burner has no counterpart in Western anatomy, and meridians have not been identified as physical structures. These pairings are a framework from TCM theory, not an anatomical finding.</p>
+<p><strong>Worked example.</strong> Consider the Spleen–Stomach pair. In TCM, the Stomach "receives and ripens" food, and the Spleen "transforms and transports" the resulting nutrients. Physiologically, this resembles a division of labor between gastric digestion and downstream absorption and distribution. Take a patient who reports poor appetite, bloating after meals, loose stools, and fatigue. A TCM practitioner would treat this as one pair-level pattern, not as separate complaints. Appetite and fullness belong to the Stomach side, while stool consistency and energy belong to the Spleen side. The treatment plan would address both organs, often with dietary changes such as warm, cooked, easily digested foods in regular, moderate portions.</p>
+<p><strong>Problem-solving application.</strong> The pairing gives a practitioner a rule for reasoning from a set of symptoms to a pattern. Try this case: a person has a persistent dry cough and also constipation.</p>
+<li><em>List the symptoms by system.</em> Cough is a respiratory sign. Constipation is a bowel sign.</li>
+<li><em>Check for a pair.</em> TCM pairs the Lung with the Large Intestine, so the two complaints are read as possibly related.</li>
+<li><em>Form a hypothesis.</em> TCM would suggest that dryness affecting the Lung may also dry the Large Intestine. Treatment would then address both, for example with moistening foods such as pear.</li>
+<li><em>Evaluate it critically.</em> In modern physiology, a link between these two symptoms is plausible but not specific. Dehydration, low fiber intake, or medication side effects could each explain both. A sensible approach is to check those ordinary causes first.</li>
+<p>The pairing is best used as a structured way to organize observations and ask questions, such as "what else is happening in the paired system?" It is not proof of a causal connection. Controlled evidence for the pairings as organ-to-organ relationships is limited, so any serious or persistent symptoms should be evaluated by a licensed clinician.</p>
+<pre class="mermaid">graph LR
+    L[Lung] --- LI[Large Intestine]
+    S[Spleen] --- ST[Stomach]
+    H[Heart] --- SI[Small Intestine]
+    K[Kidney] --- B[Bladder]
+    Li[Liver] --- GB[Gallbladder]</pre>
+<p><em>The five main zang–fu pairs in TCM, each linking an interior zang organ to its exterior fu partner.</em></p>
+  </main>
+  <footer class="spl-credit"><span class="spl-credit__meta">Ch1: TCM Foundations — Yin-Yang, Qi-Blood, and the Five Phases (中医基础) (Level: College &middot; Language: EN &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
+</div>
+</body>
+</html>

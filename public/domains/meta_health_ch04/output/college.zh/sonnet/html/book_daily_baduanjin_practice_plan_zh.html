@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>概念书: 每日八段锦练习计划 — Meta Health Ch04</title>
+<script>
+MathJax = {
+  loader: { load: ['[tex]/mathtools'] },
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']],
+         packages: { '[+]': ['mathtools'] } },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<script src="https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.min.js"></script>
+<script>mermaid.initialize({ startOnLoad: true, theme: 'neutral' });</script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+footer.spl-credit span{display:block}
+footer.spl-credit .spl-credit__meta{margin-bottom:4px}
+.cb-figure{margin:24px 0;text-align:center}
+.cb-figure img{max-width:100%;height:auto;border:1px solid #e0e0d8;border-radius:6px}
+figcaption{font-size:.82rem;color:#666;margin-top:8px;font-style:italic;text-align:center}
+pre.mermaid{background:none;border:none;padding:0;overflow:visible;margin:16px 0}
+.page{display:grid;grid-template-columns:260px 1fr;min-height:100vh}
+nav.toc{position:sticky;top:0;height:100vh;overflow-y:auto;
+        background:#1e3a5f;color:#e8f0fe;padding:24px 16px}
+nav.toc h2{font-size:.75rem;letter-spacing:.1em;text-transform:uppercase;
+           color:#90b4e8;margin-bottom:14px;font-family:system-ui,sans-serif}
+nav.toc ol{list-style:decimal inside;padding:0}
+nav.toc li{margin-bottom:7px;font-size:.85rem;line-height:1.4;font-family:system-ui,sans-serif}
+nav.toc a{color:#a8c8f0;text-decoration:none}
+nav.toc a:hover{color:#fff}
+nav.toc li.toc-target{font-weight:700}
+nav.toc li.toc-target a{color:#fff}
+main{padding:48px 64px;max-width:860px}
+h1.book-title{font-size:2rem;color:#1e3a5f;margin-bottom:4px}
+.subtitle{color:#666;margin-bottom:48px;font-size:1rem;font-style:italic;font-family:system-ui,sans-serif}
+section{margin-bottom:56px;border-top:1px solid #e0e0d8;padding-top:40px}
+section:first-of-type{border-top:none;padding-top:0}
+@media(max-width:768px){.page{grid-template-columns:1fr}
+nav.toc{position:relative;height:auto}}
+</style>
+</head>
+<body>
+<div class="page">
+  <nav class="toc">
+    <h2>目录</h2>
+    <ol>
+<li><a href="concept_daoyin_tradition_zh.html">导引传统</a></li>
+<li><a href="concept_baduanjin_overview_zh.html">八段锦概述</a></li>
+<li><a href="concept_diaphragmatic_breathing_zh.html">腹式呼吸</a></li>
+<li><a href="concept_twelve_primary_meridians_zh.html">十二经脉</a></li>
+<li><a href="concept_three_regulations_zh.html">三调：调身、调息、调心</a></li>
+<li><a href="concept_triple_burner_sanjiao_zh.html">三焦</a></li>
+<li><a href="concept_yongquan_point_zh.html">涌泉穴</a></li>
+<li><a href="concept_form8_heel_bounce_zh.html">第八式：背后七颠百病消</a></li>
+<li><a href="concept_heart_kidney_interaction_zh.html">心肾相交</a></li>
+<li><a href="concept_breath_movement_coordination_zh.html">呼吸与动作的配合</a></li>
+<li><a href="concept_dantian_zh.html">丹田</a></li>
+<li><a href="concept_evidence_quality_zh.html">证据质量的判断</a></li>
+<li><a href="concept_five_organ_movement_matrix_zh.html">五脏操对照表</a></li>
+<li><a href="concept_form1_hold_up_heavens_zh.html">第一式：两手托天理三焦</a></li>
+<li><a href="concept_form2_draw_the_bow_zh.html">第二式：左右开弓似射雕</a></li>
+<li><a href="concept_form3_single_arm_raise_zh.html">第三式：调理脾胃须单举</a></li>
+<li><a href="concept_form4_look_back_zh.html">第四式：五劳七伤往后瞧</a></li>
+<li><a href="concept_form5_sway_head_and_tail_zh.html">第五式：摇头摆尾去心火</a></li>
+<li><a href="concept_form6_touch_toes_zh.html">第六式：两手攀足固肾腰</a></li>
+<li><a href="concept_form7_clench_fists_glare_zh.html">第七式：攒拳怒目增气力</a></li>
+<li><a href="concept_tension_relaxation_cycling_zh.html">松紧交替</a></li>
+<li><a href="concept_baduanjin_evidence_base_zh.html">八段锦的研究证据</a></li>
+<li><a href="concept_baduanjin_five_organ_mapping_zh.html">八段锦与五脏操的对应</a></li>
+<li><a href="concept_closing_form_shougong_zh.html">收功</a></li>
+<li><a href="concept_practice_dose_zh.html">练习的剂量</a></li>
+<li><a href="concept_tension_release_rhythm_zh.html">松紧结合</a></li>
+<li class="toc-target"><a href="concept_daily_baduanjin_practice_plan_zh.html">每日八段锦练习计划</a></li>
+</ol>
+  </nav>
+  <main>
+    <h1 class="book-title">概念书: 每日八段锦练习计划</h1>
+    <p class="subtitle">Meta Health Ch04 &middot; Generated by SPL</p>
+    <section>
+      <section>
+      <h2 id="学以致用">学以致用</h2>
+<p><strong>每日八段锦练习计划</strong>是把前面学过的几块内容合成一份可以天天照着做的个人方案。它包括完整的一套八段锦、配合动作的呼吸与松紧交替、从五脏操对应中挑选的针对性加练、规范的收功，以及基于研究证据的合理预期。它是这本书自然的终点，因为前面每一章回答的是"是什么""为什么""怎么做"中的一个问题，只有把它们放进同一张日程里，才算真正学会。</p>
+<h3 id="各个概念如何汇合">各个概念如何汇合</h3>
+<li><strong>呼吸与动作的配合</strong>决定每一式的节奏。一般是起势、上举、展开时吸气，下按、收回、下蹲时呼气，让呼吸带着动作走。</li>
+<li><strong>松紧结合</strong>决定每一式的质感。发力的瞬间（例如"攒拳怒目"出拳）短暂收紧，随即放松，不能全程僵持。</li>
+<li><strong>八段锦与五脏操的对应</strong>提供加练的选择。中医认为"调理脾胃须单举"，所以如果你饭后容易腹胀，可以在整套之后多做几遍第三式。这是传统对应关系，用作选择动作的线索，不是诊断依据。</li>
+<li><strong>练习的剂量</strong>决定每次练多久、每周练几次。</li>
+<li><strong>收功</strong>让身体从练习状态回到日常状态。</li>
+<li><strong>八段锦的研究证据</strong>限定了你能期待什么结果。</li>
+<h3 id="示例-一份工作日计划">示例：一份工作日计划</h3>
+<p>小林是大学生，每天久坐，偶尔肩颈僵硬。他的计划如下：</p>
+<p>| 环节 | 内容 | 时间 | |---|---|---| | 准备 | 站立静息，呼吸放缓 | 约 2 分钟 | | 全套 | 八式，每式 6 遍，呼吸与动作同步 | 约 15 分钟 | | 加练 | 第二式（左右开弓）与第一式各加 3 遍，针对肩颈和胸背 | 约 3 分钟 | | 收功 | 两手叠放下腹，缓缓呼气，搓手、浴面 | 约 2 分钟 |</p>
+<p>合计约 22 分钟，每周 5 天，其余两天可休息或只做半套。</p>
+<h3 id="问题求解-如何调整计划">问题求解：如何调整计划</h3>
+<p>设想一周后小林出现膝盖酸痛。按剂量原则，先减少下蹲幅度和遍数，保持动作可控，不要硬撑；若疼痛持续，就应暂停并就医。如果他说"练了三天没感觉"，就应对照证据：研究显示，规律练习数周到数月，对睡眠、平衡、心肺功能和情绪等方面可能有改善，但效果因人而异，也不能替代治疗。所以合理的做法是坚持记录 8–12 周的变化，比如睡眠时长、肩颈不适程度和每次练完的主观疲劳感，再决定是否调整。</p>
+<p>调整时按三个问题逐项检查：动作是否做完整，呼吸与松紧是否到位，剂量是否适合当前体力。哪一项不合格，就回到对应的概念去修正。</p>
+<h3 id="邀请">邀请</h3>
+<p>从明天开始，选一个固定的时间和地点，先做 10 分钟的简化版，一周后再逐步加到完整的一套。写下你的第一份计划，并在每周末回看一次。这份计划不是一成不变的，它会随着你的身体和生活不断调整。</p>
+    </section>
+    </section>
+    <footer class="spl-credit"><span class="spl-credit__meta">Ch4: Baduanjin — The Eight Brocades (八段锦) (Level: College &middot; Language: ZH &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
+  </main>
+</div>
+</body>
+</html>

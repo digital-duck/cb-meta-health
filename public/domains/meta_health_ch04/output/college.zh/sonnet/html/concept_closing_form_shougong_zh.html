@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>收功 | Meta Health Ch04</title>
+<script>
+MathJax = {
+  loader: { load: ['[tex]/mathtools'] },
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']],
+         packages: { '[+]': ['mathtools'] } },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<script src="https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.min.js"></script>
+<script>mermaid.initialize({ startOnLoad: true, theme: 'neutral' });</script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+footer.spl-credit span{display:block}
+footer.spl-credit .spl-credit__meta{margin-bottom:4px}
+.cb-figure{margin:24px 0;text-align:center}
+.cb-figure img{max-width:100%;height:auto;border:1px solid #e0e0d8;border-radius:6px}
+figcaption{font-size:.82rem;color:#666;margin-top:8px;font-style:italic;text-align:center}
+pre.mermaid{background:none;border:none;padding:0;overflow:visible;margin:16px 0}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="收功">收功</h2>
+<p><strong>定义。</strong> 收功是一套练功(如站桩、八段锦、太极拳)结束时的收尾动作:练完后不立刻坐下或拿起手机,而是原地站定,双手叠放在小腹的下丹田位置(约脐下三指处),缓慢呼吸三到五次。中医认为,练功时被调动的“气”在此时应当“收回”并“储存”于下丹田。需要说明的是,“气”的储存目前没有现代生理学证据;但收功在生理上的作用是可以观察和验证的:它是一段让身体从运动状态平稳过渡到安静状态的缓冲。</p>
+<p><strong>生理上发生了什么。</strong> 练功时心率、呼吸频率和肌肉血流都高于静息水平。如果骤然坐下,下肢血管扩张、血液易淤积在腿部,回心血量下降,可能引起头晕;立刻看手机,则又把注意力和交感神经兴奋带回外界刺激。站立缓呼吸,则让心率和呼吸逐步回落。</p>
+<p><strong>操作步骤。</strong></p>
+<li>动作结束后双脚与肩同宽站定,膝微屈。</li>
+<li>双手叠放于下腹部,男性多左手在内,女性多右手在内(这是流派习惯,不是生理要求)。</li>
+<li>鼻吸鼻呼,每次吸气约4秒、呼气约6秒,共3至5次。</li>
+<li>双手搓热,轻按面部,再缓慢睁眼、活动脚踝,然后才坐下或离开。</li>
+<p><strong>例题。</strong> 小李练完一套八段锦,约12分钟,练功末段心率约为110次/分,他的静息心率为70次/分。他按上述节奏做5次呼吸,每次呼吸周期10秒,共用时50秒。结束时用手指测脉搏15秒,数到21次,问心率是否已接近静息值?</p>
+<p>解:15秒脉搏数乘以4,得</p>
+$$21\times 4=84\ \text{次/分}$$
+<p>84次/分比练功末段下降了26次/分,但仍比静息值高14次/分。这说明50秒的收功已使心率明显回落,而完全回到静息水平还需要再安静几分钟。</p>
+<p><strong>应用题。</strong> 小王练完功后马上坐下刷手机,1分钟后测心率为96次/分。若他改为收功50秒,结果是否更低?要比较两种做法,应在相同练功强度、相同间隔时间下多次测量,取平均值,因为单次测量受情绪、咖啡因和室温影响。判断方法是:若收功组的平均恢复心率稳定地低于刷手机组,就说明收功确实帮助了恢复;若没有差别,也不必否定它的价值,因为它至少是一个固定的“结束信号”,有助于养成规律的练习习惯。</p>
+<p><strong>小结。</strong> 收功是一个简单的缓冲环节:“储存气”属于中医的说法,而降低心率、避免头晕、让注意力平稳收回,则是可以用脉搏测量验证的实际效果。</p>
+  </main>
+  <footer class="spl-credit"><span class="spl-credit__meta">Ch4: Baduanjin — The Eight Brocades (八段锦) (Level: College &middot; Language: ZH &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
+</div>
+</body>
+</html>

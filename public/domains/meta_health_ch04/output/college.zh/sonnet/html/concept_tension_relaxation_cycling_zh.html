@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>松紧交替 | Meta Health Ch04</title>
+<script>
+MathJax = {
+  loader: { load: ['[tex]/mathtools'] },
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']],
+         packages: { '[+]': ['mathtools'] } },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<script src="https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.min.js"></script>
+<script>mermaid.initialize({ startOnLoad: true, theme: 'neutral' });</script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+footer.spl-credit span{display:block}
+footer.spl-credit .spl-credit__meta{margin-bottom:4px}
+.cb-figure{margin:24px 0;text-align:center}
+.cb-figure img{max-width:100%;height:auto;border:1px solid #e0e0d8;border-radius:6px}
+figcaption{font-size:.82rem;color:#666;margin-top:8px;font-style:italic;text-align:center}
+pre.mermaid{background:none;border:none;padding:0;overflow:visible;margin:16px 0}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="松紧交替">松紧交替</h2>
+<p><strong>定义。</strong> 松紧交替是指肌肉有节律地收缩(紧)与舒张(松)轮流出现。它对循环有实际的泵作用:静脉血压力低,又要逆重力回流,主要靠这种交替来推动。小腿的比目鱼肌和腓肠肌收缩时挤压深静脉,血液被推向心脏。静脉内有单向瓣膜,血液只能向上走,不会回流。肌肉放松后,静脉重新充盈,血液从浅静脉和远端补入。这套机制称为骨骼肌泵,也常被称为“外周心脏”。</p>
+<p><strong>与持续紧张的区别。</strong> 肌肉持续紧绷时,血管被一直压着,血流受阻。肌肉完全不动时,静脉没有外力推动,血液容易淤积在下肢。只有“紧、松、紧、松”的交替,才能把血一段一段往上送。</p>
+<p><strong>例题。</strong> 一个人站立不动,足部静脉压约为 $80\ \text{mmHg}$。步行时,小腿肌肉泵的作用使足部静脉压降到约 $25\ \text{mmHg}$。降幅为多少?</p>
+$$80 - 25 = 55\ \text{mmHg}$$
+<p>降低的静脉压减轻了毛细血管的滤出,所以长时间站立后脚会肿,走动后会消退。每次收缩的射血量也可以估算。设小腿肌肉泵每次收缩挤出约 $20\ \text{mL}$ 血液,步频为每分钟 $60$ 步,则每条腿每分钟推送的血量为:</p>
+$$20\ \text{mL} \times 60 = 1200\ \text{mL}$$
+<p>这个数是示意值,实际射血量因人而异,但它说明了为什么坚持走动对回心血量很重要。</p>
+<p><strong>问题应用。</strong></p>
+<p><em>情境一:长途飞行。</em> 乘客坐了 $6$ 小时,小腿几乎不动,血液容易淤积,深静脉血栓的风险上升。对策是每隔约 $1$ 到 $2$ 小时起身走动。座位上也可以做踝泵:脚尖用力上勾 $5$ 秒,再放松,然后下压 $5$ 秒,再放松,反复 $10$ 到 $15$ 次。这个动作主动制造“紧、松”,让小腿肌肉泵持续工作。</p>
+<p><em>情境二:久坐办公。</em> 持续坐着时,可以每小时站起活动 $2$ 到 $3$ 分钟,做提踵(踮脚再放下)$15$ 到 $20$ 次。重点是节律:紧和松都要完整,不能只紧不松。</p>
+<p><em>情境三:训练后整理。</em> 剧烈运动后突然停止,肌肉泵随之停下,血液可能积在下肢,有头晕的风险。所以运动后应缓慢走动几分钟,让肌肉泵逐步减速。</p>
+<p><strong>要点。</strong> 松紧交替之所以有效,是因为肌肉泵和静脉瓣膜配合,把低压静脉血逐段送回心脏。它不能代替心脏的泵血,只是辅助回流。下肢静脉曲张、已有血栓或水肿明显的人,应先咨询医生,再决定运动方式。</p>
+<pre class="mermaid">flowchart LR
+    A["小腿肌肉收缩"] --> B["挤压深静脉"]
+    B --> C["瓣膜开启,血液上行"]
+    C --> D["小腿肌肉舒张"]
+    D --> E["瓣膜关闭,防止回流"]
+    E --> F["静脉重新充盈"]
+    F --> A</pre>
+<p><em>图:松紧交替驱动小腿肌肉泵的一个循环。收缩时血液被推向心脏,舒张时瓣膜阻止回流并让静脉重新充盈。</em></p>
+  </main>
+  <footer class="spl-credit"><span class="spl-credit__meta">Ch4: Baduanjin — The Eight Brocades (八段锦) (Level: College &middot; Language: ZH &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
+</div>
+</body>
+</html>

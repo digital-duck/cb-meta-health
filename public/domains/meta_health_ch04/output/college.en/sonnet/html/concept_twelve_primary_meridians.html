@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Twelve Primary Meridians | Meta Health Ch04</title>
+<script>
+MathJax = {
+  loader: { load: ['[tex]/mathtools'] },
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']],
+         packages: { '[+]': ['mathtools'] } },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<script src="https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.min.js"></script>
+<script>mermaid.initialize({ startOnLoad: true, theme: 'neutral' });</script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+footer.spl-credit span{display:block}
+footer.spl-credit .spl-credit__meta{margin-bottom:4px}
+.cb-figure{margin:24px 0;text-align:center}
+.cb-figure img{max-width:100%;height:auto;border:1px solid #e0e0d8;border-radius:6px}
+figcaption{font-size:.82rem;color:#666;margin-top:8px;font-style:italic;text-align:center}
+pre.mermaid{background:none;border:none;padding:0;overflow:visible;margin:16px 0}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="the-twelve-primary-meridians">The Twelve Primary Meridians</h2>
+<p><strong>Definition.</strong> In Traditional Chinese Medicine (TCM), the twelve primary meridians (十二经脉) are the main channels along which <em>qi</em> is said to circulate through the body. TCM holds that each meridian is linked to one organ system (such as the Lung, Heart, or Liver) and runs along a characteristic path on the body surface. Meridians are a traditional framework for organizing symptoms and choosing acupuncture points. Modern anatomy has not identified them as distinct physical structures, and clinical evidence for acupuncture varies by condition. Treat them as a classification system, not as measured anatomy.</p>
+<p>The twelve are paired by limb and by the yin or yang character TCM assigns to them:</p>
+<p>| Pathway | Meridians | Typical course | |---|---|---| | Hand yin | Lung, Pericardium, Heart | Chest to fingertips, along the inner arm | | Hand yang | Large Intestine, Triple Burner, Small Intestine | Fingertips to head, along the outer arm | | Foot yang | Stomach, Gallbladder, Bladder | Head to toes, along the front, side, and back of the body | | Foot yin | Spleen, Liver, Kidney | Toes to chest, along the inner leg |</p>
+<p>In TCM, qi flows through them in a fixed sequence beginning with the Lung meridian and ending with the Liver meridian, which then connects back to the Lung. Each yin meridian is paired with a yang meridian that shares the same limb and an organ partner. The Lung is paired with the Large Intestine, for example.</p>
+<p><strong>Worked example.</strong> A student has a tension headache at the back of the head, with a stiff upper neck and upper back. Using the table:</p>
+<li>Locate the symptom on the body. The back of the head and neck lie along the Bladder meridian's course, a foot yang pathway that runs down the back.</li>
+<li>Name the associated meridian: Bladder.</li>
+<li>Identify its yin partner: Kidney, a foot yin meridian on the inner leg.</li>
+<li>List candidate acupuncture points. A practitioner might choose points on the Bladder meridian near the neck. They might also choose a distal point on the same meridian, such as one near the ankle.</li>
+<p>This is the reasoning TCM uses to turn a symptom location into a treatment plan. It rests on tradition, not on a measured physiological pathway.</p>
+<p><strong>Problem-solving application.</strong> Classify each complaint by the meridian whose course it follows:</p>
+<li>Pain along the inner forearm toward the thumb: Lung meridian (hand yin).</li>
+<li>Pain along the outer arm, ending at the index finger: Large Intestine meridian (hand yang).</li>
+<li>Aching along the inner leg and groin: the foot yin group (Spleen, Liver, or Kidney). A practitioner would narrow it further by exact location.</li>
+<p>Two questions help you work through a case. First, is the symptom on the inner or outer surface of the limb? Inner suggests yin and outer suggests yang. Second, is it on the arm or the leg? That separates hand meridians from foot meridians. Together, these two questions narrow twelve candidates to three. The exact location then decides among those three.</p>
+<p>Pay attention to the limits of this approach. Pain along a "meridian" can have ordinary causes, such as a pinched nerve, a muscle strain, or a joint problem. A persistent or severe symptom, or one that comes with numbness or weakness, calls for a medical evaluation. Do not rely on meridian reasoning alone.</p>
+<pre class="mermaid">flowchart LR
+    A[Lung] --> B[Large Intestine]
+    B --> C[Stomach]
+    C --> D[Spleen]
+    D --> E[Heart]
+    E --> F[Small Intestine]
+    F --> G[Bladder]
+    G --> H[Kidney]
+    H --> I[Pericardium]
+    I --> J[Triple Burner]
+    J --> K[Gallbladder]
+    K --> L[Liver]</pre>
+<p><em>The traditional TCM circulation order of the twelve primary meridians. After the Liver, the sequence returns to the Lung.</em></p>
+  </main>
+  <footer class="spl-credit"><span class="spl-credit__meta">Ch4: Baduanjin — The Eight Brocades (八段锦) (Level: College &middot; Language: EN &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
+</div>
+</body>
+</html>

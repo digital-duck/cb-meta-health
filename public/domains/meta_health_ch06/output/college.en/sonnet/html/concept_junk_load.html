@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Junk Load | Meta Health Ch06</title>
+<script>
+MathJax = {
+  loader: { load: ['[tex]/mathtools'] },
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']],
+         packages: { '[+]': ['mathtools'] } },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<script src="https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.min.js"></script>
+<script>mermaid.initialize({ startOnLoad: true, theme: 'neutral' });</script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+footer.spl-credit span{display:block}
+footer.spl-credit .spl-credit__meta{margin-bottom:4px}
+.cb-figure{margin:24px 0;text-align:center}
+.cb-figure img{max-width:100%;height:auto;border:1px solid #e0e0d8;border-radius:6px}
+figcaption{font-size:.82rem;color:#666;margin-top:8px;font-style:italic;text-align:center}
+pre.mermaid{background:none;border:none;padding:0;overflow:visible;margin:16px 0}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="junk-load">Junk Load</h2>
+<p><strong>Junk load</strong> (劣质食物, "junk training") is a way of describing food that forces the digestive system to do a lot of work for little nourishment. The analogy is to a gym session in which you train with poor form under a heavy but useless load: effort is spent, strain accumulates, and no useful adaptation results. Nutrition science supports the core idea in measurable terms. Ultra-processed, low-fiber, high-sugar foods tend to deliver many kilocalories (kcal) with few micronutrients, little protein, and little fiber.</p>
+<p>The comparison is a teaching metaphor, not a physiological mechanism. The digestive tract does not "train" the way a muscle does, and the useful quantity to compare is nutrient density: nutrition delivered per kcal consumed.</p>
+<h3 id="worked-example">Worked example</h3>
+<p>Compare two 200 kcal snacks.</p>
+<p>| | Snack A: soda and candy | Snack B: apple and 20 g almonds | |---|---|---| | Energy | 200 kcal | about 200 kcal | | Fiber | 0 g | about 6 g | | Protein | 0 g | about 4 g | | Micronutrients | almost none | vitamin C, vitamin E, magnesium, potassium | | Effect on blood glucose | fast spike, then drop | slower, flatter rise |</p>
+<p>Both snacks supply the same energy, but only Snack B supplies materials the body can use for repair and regulation. Snack A is the "heavy but useless load." It adds kcal while leaving the body's nutrient needs unmet. It also encourages further eating, because it satisfies little hunger, so the day's total intake climbs.</p>
+<p>In TCM, the Spleen and Stomach are said to "work hard" to process greasy, sweet, and cold foods that yield little nourishment. This is a traditional framing of the same observation. The modern account is in terms of nutrient density, satiety, and blood glucose response.</p>
+<h3 id="problem-solving-application">Problem-solving application</h3>
+<p>Suppose a student eats 2,200 kcal per day, and 700 kcal of it comes from sugary drinks and packaged snacks with almost no nutrients.</p>
+<li><strong>Find the junk share.</strong> The share of daily energy is $\frac{700}{2200} \approx 0.32$, so about 32%.</li>
+<li><strong>Judge it.</strong> One commonly cited guideline, from the World Health Organization, recommends keeping free sugars below 10% of total energy. That is about 220 kcal on this diet. Free sugars are only part of the 700 kcal, but the junk share is clearly high.</li>
+<li><strong>Swap, don't just cut.</strong> Replace half of the junk kcal (350 kcal) with foods that carry nutrients: legumes, vegetables, whole grains, fruit, yogurt. Total energy stays the same, but the same 2,200 kcal now supplies more fiber, protein, and micronutrients.</li>
+<li><strong>Check the result.</strong> Track hunger, energy through the afternoon, and, if relevant, a food log or blood glucose readings over a week.</li>
+<p><strong>Key takeaway:</strong> judge food by what it delivers per kcal, not by kcal alone. A useful habit is to ask of each meal, "What nutrients and fullness am I getting for this energy?" Replacing junk load with nutrient-dense food is usually more sustainable than simply eating less.</p>
+  </main>
+  <footer class="spl-credit"><span class="spl-credit__meta">Ch6: What We Eat — Food Quality, Four Natures, and Five Flavors (四气五味) (Level: College &middot; Language: EN &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
+</div>
+</body>
+</html>

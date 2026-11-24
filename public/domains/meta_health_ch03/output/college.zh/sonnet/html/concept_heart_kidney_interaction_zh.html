@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>心肾相交 | Meta Health Ch03</title>
+<script>
+MathJax = {
+  loader: { load: ['[tex]/mathtools'] },
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']],
+         packages: { '[+]': ['mathtools'] } },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<script src="https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.min.js"></script>
+<script>mermaid.initialize({ startOnLoad: true, theme: 'neutral' });</script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+footer.spl-credit span{display:block}
+footer.spl-credit .spl-credit__meta{margin-bottom:4px}
+.cb-figure{margin:24px 0;text-align:center}
+.cb-figure img{max-width:100%;height:auto;border:1px solid #e0e0d8;border-radius:6px}
+figcaption{font-size:.82rem;color:#666;margin-top:8px;font-style:italic;text-align:center}
+pre.mermaid{background:none;border:none;padding:0;overflow:visible;margin:16px 0}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="心肾相交">心肾相交</h2>
+<p><strong>定义。</strong> 在中医(TCM)理论中,心属火、位居上焦,肾属水、位居下焦。中医认为,正常状态下,心火下降以温暖肾水,使肾水不至于过寒;肾水上升以滋养心火,使心火不至于过亢。这种上下相济、水火互通的关系称为"心肾相交"。若失调,则称"心肾不交",常见表现为心烦、失眠多梦、心悸、腰膝酸软、夜间盗汗等。</p>
+<p>这是一套传统的解释框架,而不是现代生理学的解剖结论。现代医学中并没有与"心火下降、肾水上升"一一对应的机制。不过,心与肾在现代生理中确实相互影响:心脏的泵血功能决定肾脏的血流灌注,肾脏则通过调节水盐和血压反过来影响心脏负荷。这两套语言描述的对象不同,不宜直接等同。</p>
+<p><strong>对照表:相交与不交</strong></p>
+<p>| 状态 | 心(火) | 肾(水) | 典型表现 | |---|---|---|---| | 心肾相交 | 火能下降,不亢 | 水能上升,不寒 | 入睡顺利,精力平稳 | | 心肾不交(阴虚火旺型) | 火亢于上 | 水亏于下 | 心烦失眠、口干、盗汗、腰酸 |</p>
+<pre class="mermaid">flowchart TD
+    A[心火 位于上] -->|下降温养| B[肾水 位于下]
+    B -->|上升滋润| A
+    A --> C[水火既济 睡眠安稳]
+    B --> C
+    D[肾水不足] --> E[心火偏亢]
+    E --> F[心烦 失眠 盗汗]</pre>
+<p><em>图:心肾相交的双向关系(上),以及肾水不足导致心火偏亢、出现失眠等表现的路径(下)。</em></p>
+<p><strong>例题。</strong> 一位 22 岁的备考学生,连续两个月每晚 1 点后才入睡,入睡困难、多梦,伴有口干、手心发热、腰酸。请用心肾相交的框架分析,并给出生活调整建议。</p>
+<p><strong>解析:</strong></p>
+<li>归类症状:心烦、失眠、多梦属"心火偏亢"一侧;口干、手心热、腰酸属"肾水(阴)不足"一侧。</li>
+<li>TCM 的判断:长期熬夜被认为耗伤肾阴,肾水不能上济心火,火亢于上,于是出现入睡困难。这属于"心肾不交"的阴虚火旺型。</li>
+<li>排除其他原因:这套解释并不能取代鉴别诊断。若同时有体重明显下降、心率持续偏快(静息心率常超过 100 次/分)、怕热多汗,应先检查甲状腺功能,因为甲亢可以产生几乎相同的表现。若有明显焦虑或抑郁,也应评估。</li>
+<li>可操作的调整:固定就寝时间(例如 23:00 前)、睡前 1 小时远离屏幕、下午 2 点后避免咖啡因(咖啡因半衰期约 5 小时,下午 3 点喝一杯,到晚上 8 点仍约剩一半)。这些措施的作用在睡眠医学中有较充分的证据,不依赖心肾理论。</li>
+<p><strong>问题应用。</strong></p>
+<li>某人症状为畏寒、下肢水肿、夜尿多、心悸。这更像"心肾不交"还是别的问题?应提示什么检查?(提示:这些表现可能与心功能或肾功能异常有关,应做心电图、肾功能和尿常规,而不是自行按"火水失衡"处理。)</li>
+<li>判断:"心肾不交的人应该多吃寒凉之物来降心火。"这种说法为什么不可靠?(提示:该理论中的失调主要是肾阴不足,寒凉饮食可能加重不适,而且饮食不能替代对原发疾病的诊治。)</li>
+<p><strong>小结。</strong> 心肾相交是 TCM 用"水火上下相济"解释睡眠与情绪的框架,分析时可用来归类症状、安排作息;但出现持续心悸、水肿、体重变化等表现时,应优先用现代医学检查排除器质性疾病。</p>
+  </main>
+  <footer class="spl-credit"><span class="spl-credit__meta">Ch3: The Five-Organ Exercises (五脏操) (Level: College &middot; Language: ZH &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
+</div>
+</body>
+</html>

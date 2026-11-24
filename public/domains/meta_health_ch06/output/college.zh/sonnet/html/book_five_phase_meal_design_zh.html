@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>概念书: 五行膳食设计 — Meta Health Ch06</title>
+<script>
+MathJax = {
+  loader: { load: ['[tex]/mathtools'] },
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']],
+         packages: { '[+]': ['mathtools'] } },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<script src="https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.min.js"></script>
+<script>mermaid.initialize({ startOnLoad: true, theme: 'neutral' });</script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+footer.spl-credit span{display:block}
+footer.spl-credit .spl-credit__meta{margin-bottom:4px}
+.cb-figure{margin:24px 0;text-align:center}
+.cb-figure img{max-width:100%;height:auto;border:1px solid #e0e0d8;border-radius:6px}
+figcaption{font-size:.82rem;color:#666;margin-top:8px;font-style:italic;text-align:center}
+pre.mermaid{background:none;border:none;padding:0;overflow:visible;margin:16px 0}
+.page{display:grid;grid-template-columns:260px 1fr;min-height:100vh}
+nav.toc{position:sticky;top:0;height:100vh;overflow-y:auto;
+        background:#1e3a5f;color:#e8f0fe;padding:24px 16px}
+nav.toc h2{font-size:.75rem;letter-spacing:.1em;text-transform:uppercase;
+           color:#90b4e8;margin-bottom:14px;font-family:system-ui,sans-serif}
+nav.toc ol{list-style:decimal inside;padding:0}
+nav.toc li{margin-bottom:7px;font-size:.85rem;line-height:1.4;font-family:system-ui,sans-serif}
+nav.toc a{color:#a8c8f0;text-decoration:none}
+nav.toc a:hover{color:#fff}
+nav.toc li.toc-target{font-weight:700}
+nav.toc li.toc-target a{color:#fff}
+main{padding:48px 64px;max-width:860px}
+h1.book-title{font-size:2rem;color:#1e3a5f;margin-bottom:4px}
+.subtitle{color:#666;margin-bottom:48px;font-size:1rem;font-style:italic;font-family:system-ui,sans-serif}
+section{margin-bottom:56px;border-top:1px solid #e0e0d8;padding-top:40px}
+section:first-of-type{border-top:none;padding-top:0}
+@media(max-width:768px){.page{grid-template-columns:1fr}
+nav.toc{position:relative;height:auto}}
+</style>
+</head>
+<body>
+<div class="page">
+  <nav class="toc">
+    <h2>目录</h2>
+    <ol>
+<li><a href="concept_macronutrients_zh.html">宏量营养素</a></li>
+<li><a href="concept_dietary_fiber_zh.html">膳食纤维</a></li>
+<li><a href="concept_carbohydrate_quality_zh.html">碳水化合物的质量</a></li>
+<li><a href="concept_dietary_fat_quality_zh.html">膳食脂肪的质量</a></li>
+<li><a href="concept_five_phase_correspondences_zh.html">五行归类</a></li>
+<li><a href="concept_micronutrients_and_hydration_zh.html">微量营养素与水分</a></li>
+<li><a href="concept_spleen_transformation_transport_zh.html">脾主运化</a></li>
+<li><a href="concept_yin_yang_zh.html">阴阳</a></li>
+<li><a href="concept_energy_balance_zh.html">能量平衡</a></li>
+<li><a href="concept_four_natures_siqi_zh.html">四气</a></li>
+<li><a href="concept_whole_vs_ultra_processed_food_zh.html">天然食物与超加工食品</a></li>
+<li><a href="concept_dampness_and_phlegm_zh.html">湿与痰浊</a></li>
+<li><a href="concept_five_flavors_wuwei_zh.html">五味</a></li>
+<li><a href="concept_gut_microbiome_zh.html">肠道菌群</a></li>
+<li><a href="concept_circadian_clock_zh.html">生物钟</a></li>
+<li><a href="concept_fiber_microbiome_axis_zh.html">膳食纤维与肠道菌群</a></li>
+<li><a href="concept_five_colors_foods_zh.html">食物五色</a></li>
+<li><a href="concept_food_as_medicine_shiliao_zh.html">药食同源与食疗</a></li>
+<li><a href="concept_protein_across_life_zh.html">人生各阶段的蛋白质</a></li>
+<li><a href="concept_balanced_plate_zh.html">均衡餐盘</a></li>
+<li><a href="concept_constitution_based_eating_zh.html">按体质饮食</a></li>
+<li><a href="concept_junk_load_zh.html">劣质食物的负担</a></li>
+<li><a href="concept_meal_timing_chrononutrition_zh.html">进餐时间与时间营养学</a></li>
+<li><a href="concept_warm_cooked_food_principle_zh.html">温热熟食原则</a></li>
+<li class="toc-target"><a href="concept_five_phase_meal_design_zh.html">五行膳食设计</a></li>
+</ol>
+  </nav>
+  <main>
+    <h1 class="book-title">概念书: 五行膳食设计</h1>
+    <p class="subtitle">Meta Health Ch06 &middot; Generated by SPL</p>
+    <section>
+      <section>
+      <h2 id="学以致用">学以致用</h2>
+<p>走到这里,我们可以回答一个实际的问题:一周的饭菜到底该怎么安排?<strong>五行膳食设计</strong>就是答案。它不是一个新的知识点,而是把前面学过的工具合在一起,设计出一周的餐单,让它同时经得起两种眼光的检验。一种是现代营养学的眼光:餐盘均衡、食物天然、时间合理。另一种是中医(Traditional Chinese Medicine,TCM)的眼光:五色五味都有、以温热熟食为主、因人而异。它是自然的终点,因为前面每个概念只回答了一个局部问题,只有放到一周的餐单里,这些局部答案才能互相配合。</p>
+<h3 id="各个概念如何汇合">各个概念如何汇合</h3>
+<p>| 设计环节 | 用到的概念 | 在餐单中的作用 | |---|---|---| | 每餐的结构 | 均衡餐盘 | 蔬菜约占半盘,主食与蛋白质各约四分之一 | | 食材的质量 | 劣质食物的负担 | 以整体食物为主,少用超加工食品 | | 色与味 | 五味 | 五种味道都有,每种都适量 | | 做法与温度 | 温热熟食原则 | 以熟食、温热食物为主,冷饮和生冷适量 | | 用餐时间 | 进餐时间与时间营养学 | 三餐规律,晚餐不过晚、不过量 | | 个人调整 | 按体质饮食 | 按个人情况微调食材与分量 |</p>
+<p>TCM 把食物分为五种颜色(青、赤、黄、白、黑),并与五味对应。设计时可以把它当作"食材多样"的提示:一周内,绿叶菜、红椒与番茄、玉米与南瓜、豆腐与菌菇、黑豆与紫菜都应出现。这样做在营养学上也有道理,因为颜色不同的蔬果,所含的维生素和植物化学物也不同。</p>
+<h3 id="例题-为一位上班族设计周二">例题:为一位上班族设计周二</h3>
+<p>条件:成年女性,偏怕冷,常手脚凉,每天约需 1800 kcal,晚上 7 点前下班回家。</p>
+<li><strong>早餐(7:30,约 450 kcal)</strong>:小米南瓜粥、水煮蛋、拌菠菜。黄、白、绿三色,味道偏甘。</li>
+<li><strong>午餐(12:30,约 650 kcal)</strong>:杂粮饭、清蒸鱼、番茄炒蛋、蒜蓉西兰花。半盘蔬菜,四分之一主食,四分之一蛋白质。</li>
+<li><strong>加餐(15:30,约 150 kcal)</strong>:一小把核桃,配温热的红枣姜茶,糖量要控制。</li>
+<li><strong>晚餐(18:30,约 550 kcal)</strong>:黑米小米粥、豆腐菌菇汤、清炒木耳芹菜。偏清淡,黑、白、绿搭配。</li>
+<p>按体质调整:她怕冷,所以生姜、葱等温性食材可以多用一些,冷饮和冰品少吃。这只是按个人感受做的合理微调,不是医学诊断。</p>
+<h3 id="应用-检查一周的餐单">应用:检查一周的餐单</h3>
+<p>写好七天之后,按下面的顺序自查:</p>
+<li>每天的总能量是否接近 1800 kcal?</li>
+<li>每餐是否大致符合半盘蔬菜的比例?</li>
+<li>一周中五种颜色是否各出现至少三次?</li>
+<li>咸味(酱油、腌菜)有没有堆在同一天?</li>
+<li>超加工食品是否只是偶尔出现?</li>
+<li>晚餐是否在睡前三小时以上结束?</li>
+<p>发现问题就换一道菜,不必推倒重来。比如周四没有黑色食材,就把早餐的白粥换成黑米粥。</p>
+<h3 id="继续实践">继续实践</h3>
+<p>先从一天做起。今晚写下明天的三餐,逐项自查,再试着扩展到一周。一周后记录自己的感受:精力、消化、睡眠怎么样?再据此调整,餐单就会越来越适合你。</p>
+    </section>
+    </section>
+    <footer class="spl-credit"><span class="spl-credit__meta">Ch6: What We Eat — Food Quality, Four Natures, and Five Flavors (四气五味) (Level: College &middot; Language: ZH &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
+  </main>
+</div>
+</body>
+</html>

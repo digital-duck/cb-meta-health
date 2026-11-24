@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tension–Relaxation Cycling | Meta Health Ch04</title>
+<script>
+MathJax = {
+  loader: { load: ['[tex]/mathtools'] },
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']],
+         packages: { '[+]': ['mathtools'] } },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<script src="https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.min.js"></script>
+<script>mermaid.initialize({ startOnLoad: true, theme: 'neutral' });</script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+footer.spl-credit span{display:block}
+footer.spl-credit .spl-credit__meta{margin-bottom:4px}
+.cb-figure{margin:24px 0;text-align:center}
+.cb-figure img{max-width:100%;height:auto;border:1px solid #e0e0d8;border-radius:6px}
+figcaption{font-size:.82rem;color:#666;margin-top:8px;font-style:italic;text-align:center}
+pre.mermaid{background:none;border:none;padding:0;overflow:visible;margin:16px 0}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="tension-relaxation-cycling">Tension–Relaxation Cycling</h2>
+<p><strong>Definition.</strong> Tension–relaxation cycling is the rhythmic alternation of muscle contraction (tension) and release (relaxation) that helps move blood and lymph back toward the heart. It works because veins, unlike arteries, have no pump of their own. Blood returns through them under low pressure, and two features make the cycling effective: one-way venous valves and the muscles that surround the deep veins. This mechanism is called the skeletal muscle pump. In TCM, rhythmic stretching and release practices are often described as "moving" the circulation. The physiological account below does not depend on that idea.</p>
+<p><strong>How it works.</strong> When a calf muscle contracts, it squeezes the deep veins and pushes blood upward. The valves below the squeeze close, so blood cannot fall back. When the muscle relaxes, pressure in the vein drops, the valves above close, and the vein refills from below. One tension–relaxation cycle therefore moves one small packet of blood toward the heart.</p>
+<p>The volume moved per contraction is the stroke volume of the muscle pump, and the total flow is a standard product:</p>
+$$
+\text{flow} = \text{volume per cycle} \times \text{cycles per minute}
+$$
+<p><strong>Worked example.</strong> Suppose each calf contraction ejects about 40 mL of blood from the leg veins. A person walking at roughly 100 steps per minute contracts each calf about 50 times per minute.</p>
+$$
+40\ \text{mL} \times 50\ \text{min}^{-1} = 2000\ \text{mL/min} = 2\ \text{L/min}
+$$
+<p>Both legs together would move about 4 L/min. This is a sizable share of resting cardiac output, which is about 5 L/min. The numbers are illustrative, but they show why muscle activity matters for venous return. Compare a person standing still for the same minute. With almost no cycles, almost nothing is pumped, and blood pools in the legs.</p>
+<p><strong>Problem-solving application.</strong> Consider a long-haul flight of 8 hours. Seated and immobile, a passenger's calf muscle pump is nearly idle. Venous blood moves slowly, and the risk of a clot in the deep veins (deep vein thrombosis) rises.</p>
+<p><em>Problem:</em> Design a simple routine that restores pumping, then estimate its benefit.</p>
+<p><em>Solution:</em> Use ankle pumps, alternately pointing the toes and flexing the feet, for 1 minute every 30 minutes. At 30 cycles per minute and a conservative 15 mL per cycle:</p>
+$$
+15\ \text{mL} \times 30\ \text{min}^{-1} = 450\ \text{mL/min}
+$$
+<p>That is 450 mL of venous blood moved in each minute of exercise. Over an 8-hour flight, the routine adds about 16 sessions. Walking the aisle every hour or two does better, because it recruits the whole calf muscle rather than the ankle alone.</p>
+<p><strong>Key points.</strong></p>
+<p>| Phase | Muscle | Vein valves | Blood movement | |---|---|---|---| | Tension | Contracts, squeezes vein | Lower valves close | Pushed toward the heart | | Relaxation | Releases | Upper valves close | Vein refills from below |</p>
+<p>Cycling works only if both phases occur. Sustained tension, as in a static tight clench, compresses the veins continuously and does not pump. The benefit comes from the alternation.</p>
+  </main>
+  <footer class="spl-credit"><span class="spl-credit__meta">Ch4: Baduanjin — The Eight Brocades (八段锦) (Level: College &middot; Language: EN &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
+</div>
+</body>
+</html>
