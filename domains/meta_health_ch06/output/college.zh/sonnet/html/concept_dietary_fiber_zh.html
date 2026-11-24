@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>膳食纤维 | Meta Health Ch06</title>
+<script>
+MathJax = {
+  loader: { load: ['[tex]/mathtools'] },
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']],
+         packages: { '[+]': ['mathtools'] } },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<script src="https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.min.js"></script>
+<script>mermaid.initialize({ startOnLoad: true, theme: 'neutral' });</script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+footer.spl-credit span{display:block}
+footer.spl-credit .spl-credit__meta{margin-bottom:4px}
+.cb-figure{margin:24px 0;text-align:center}
+.cb-figure img{max-width:100%;height:auto;border:1px solid #e0e0d8;border-radius:6px}
+figcaption{font-size:.82rem;color:#666;margin-top:8px;font-style:italic;text-align:center}
+pre.mermaid{background:none;border:none;padding:0;overflow:visible;margin:16px 0}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="膳食纤维">膳食纤维</h2>
+<p><strong>定义。</strong> 膳食纤维是植物性碳水化合物及相关成分中,人体消化酶不能水解的部分。它不能在小肠被吸收,因此几乎不提供能量(结肠细菌发酵后,每克约产生 2 kcal 的能量,低于可消化碳水化合物的约 4 kcal/g)。按溶解性可分为两类:</p>
+<p>| 类型 | 典型来源 | 主要作用 | |---|---|---| | 可溶性纤维(果胶、β-葡聚糖、菊粉) | 燕麦、苹果、豆类 | 在水中形成凝胶,延缓胃排空和葡萄糖吸收,降低餐后血糖和低密度脂蛋白胆固醇 | | 不溶性纤维(纤维素、半纤维素、木质素) | 麦麸、全谷物、蔬菜 | 吸水增加粪便体积,缩短肠道通过时间,预防便秘 |</p>
+<p>此外,许多可溶性纤维可被结肠细菌发酵,产生乙酸、丙酸、丁酸等短链脂肪酸。其中丁酸是结肠上皮细胞的重要能量来源。</p>
+<p><strong>推荐摄入量。</strong> 中国居民膳食指南建议成年人每日摄入约 25–30 g 膳食纤维;美国的推荐标准约为每 1000 kcal 摄入 14 g。多数人实际摄入量明显不足。</p>
+<p><strong>例题。</strong> 小李每天摄入约 2000 kcal,早餐吃白面包和果汁,午餐吃白米饭和炒菜,晚餐吃面条,一天的膳食纤维约 12 g。按每 1000 kcal 摄入 14 g 的标准,他的目标量是多少?缺口是多少?</p>
+<p>目标量为:</p>
+$$2 \times 14\ \text{g} = 28\ \text{g}$$
+<p>缺口为 $28 - 12 = 16\ \text{g}$。</p>
+<p><strong>问题解决应用。</strong> 如何用常见食物补足这 16 g?参考含量(每份大致值):</p>
+<li>燕麦片 40 g(干重):约 4 g</li>
+<li>煮熟的黄豆或鹰嘴豆 100 g:约 6–7 g</li>
+<li>带皮苹果 1 个(约 200 g):约 3–4 g</li>
+<li>糙米饭 150 g 替代白米饭:比白米饭多约 2 g</li>
+<li>熟西兰花 100 g:约 3 g</li>
+<p>一种方案:早餐改为燕麦片(+4 g),午餐加一份豆类(+6.5 g),再吃一个苹果(+3.5 g),并把米饭换成糙米饭(+2 g),合计约 16 g,正好补足缺口。</p>
+<p><strong>调整时的注意事项。</strong></p>
+<li><strong>循序渐进。</strong> 摄入量突然从 12 g 升至 28 g,细菌发酵产气增多,常引起腹胀。建议每周增加约 5 g。</li>
+<li><strong>同时多喝水。</strong> 纤维吸水后才能起到软化粪便的作用,水分不足时,大量不溶性纤维反而可能加重便秘。</li>
+<li><strong>优先选择天然食物。</strong> 全谷物、豆类、蔬菜和水果除纤维外,还提供维生素、矿物质和植物化学物,单纯补充纤维粉并不能完全替代。</li>
+<p><strong>小结。</strong> 判断纤维是否充足,可先估算自己的日摄入量,再对照目标找出缺口,最后用具体食物逐项补齐。</p>
+  </main>
+  <footer class="spl-credit"><span class="spl-credit__meta">Ch6: What We Eat — Food Quality, Four Natures, and Five Flavors (四气五味) (Level: College &middot; Language: ZH &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
+</div>
+</body>
+</html>

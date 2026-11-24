@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>三焦 | Meta Health Ch04</title>
+<script>
+MathJax = {
+  loader: { load: ['[tex]/mathtools'] },
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']],
+         packages: { '[+]': ['mathtools'] } },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<script src="https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.min.js"></script>
+<script>mermaid.initialize({ startOnLoad: true, theme: 'neutral' });</script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+footer.spl-credit span{display:block}
+footer.spl-credit .spl-credit__meta{margin-bottom:4px}
+.cb-figure{margin:24px 0;text-align:center}
+.cb-figure img{max-width:100%;height:auto;border:1px solid #e0e0d8;border-radius:6px}
+figcaption{font-size:.82rem;color:#666;margin-top:8px;font-style:italic;text-align:center}
+pre.mermaid{background:none;border:none;padding:0;overflow:visible;margin:16px 0}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="三焦">三焦</h2>
+<p><strong>定义。</strong> 三焦(sānjiāo,又称"三焦腑")是中医理论中的一个功能性概念。中医认为,三焦是气和津液运行、升降出入的通道,并按部位分为三段:</p>
+<p>| 分部 | 大致范围 | 中医所述的主要功能 | 常用比喻 | |---|---|---|---| | 上焦 | 横膈以上(心、肺) | 宣发气,输布津液 | "如雾" | | 中焦 | 横膈至脐(脾、胃) | 消化饮食,化生气血 | "如沤" | | 下焦 | 脐以下(肝肾、膀胱、肠) | 排泄水液与糟粕 | "如渎" |</p>
+<p>要注意,三焦并不对应某个解剖器官。它是对全身水液代谢与气化过程的功能性划分,也是后世"三焦辨证"(用于外感热病)的基础。</p>
+<p><strong>例题:把一个症状归到哪一焦。</strong> 一位患者近几天有如下表现:咳嗽、咽痛、轻微发热,没有明显的腹胀或排尿异常。</p>
+<p>分析步骤:</p>
+<li>找出症状出现的部位:咳嗽、咽痛属于胸部与上呼吸道。</li>
+<li>对照分部:胸部在横膈以上,属于上焦(肺所在之处)。</li>
+<li>判断范围:没有消化症状(中焦)和排尿症状(下焦),因此病变局限于上焦。</li>
+<p>结论:这是上焦的表现。三焦辨证据此认为,此时病位较浅,治法重在宣散肺气。</p>
+<p><strong>问题解决应用。</strong> 现在换一个情境:一位患者饭后腹胀、食欲差、大便溏稀,同时小便不畅,下肢水肿。</p>
+<li>先把症状分组:饭后腹胀、食欲差、便溏,涉及消化,属中焦;小便不畅、下肢水肿,涉及水液排泄,属下焦。</li>
+<li>找关联:中医认为中焦脾胃负责把水谷化为精微,脾运化失常则水湿停聚,水湿下注,又加重下焦的水液排泄障碍。</li>
+<li>得出思路:病变涉及中、下两焦,以中焦为先。治疗思路是先健脾化湿,再兼顾下焦利水,而不是只处理水肿。</li>
+<p>这个例子说明,三焦分部的实际用途是<strong>定位和排序</strong>:先判断病变在哪一段,再判断哪一段是起因,从而安排处理的先后。</p>
+<p><strong>需要明确的证据状况。</strong> 现代解剖学和生理学中没有"三焦"这个结构,也没有证据表明存在一条独立的"三焦通道"。它与现代医学概念之间的对应(例如把它类比为体腔内的筋膜间隙或水液代谢网络)仍属推测。因此,学习三焦时应把它当作中医的分类框架,而不是已被证实的解剖或生理实体。</p>
+<p><strong>练习。</strong> 某人口渴、尿频,同时有腹胀、便秘。请按上、中、下三焦分别归类其症状,并说明你认为应先处理哪一段,理由是什么。</p>
+  </main>
+  <footer class="spl-credit"><span class="spl-credit__meta">Ch4: Baduanjin — The Eight Brocades (八段锦) (Level: College &middot; Language: ZH &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
+</div>
+</body>
+</html>

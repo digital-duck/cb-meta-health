@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>肌筋膜链 | Meta Health Ch02</title>
+<script>
+MathJax = {
+  loader: { load: ['[tex]/mathtools'] },
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']],
+         packages: { '[+]': ['mathtools'] } },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<script src="https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.min.js"></script>
+<script>mermaid.initialize({ startOnLoad: true, theme: 'neutral' });</script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+footer.spl-credit span{display:block}
+footer.spl-credit .spl-credit__meta{margin-bottom:4px}
+.cb-figure{margin:24px 0;text-align:center}
+.cb-figure img{max-width:100%;height:auto;border:1px solid #e0e0d8;border-radius:6px}
+figcaption{font-size:.82rem;color:#666;margin-top:8px;font-style:italic;text-align:center}
+pre.mermaid{background:none;border:none;padding:0;overflow:visible;margin:16px 0}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="肌筋膜链">肌筋膜链</h2>
+<p><strong>定义</strong></p>
+<p>肌筋膜链（myofascial lines）是指人体内一系列首尾相连的肌肉与筋膜组织，它们沿身体表面或深层形成连续的力学传导路径。这一概念最早由汤姆·迈尔斯（Thomas Myers）在其"解剖列车"（Anatomy Trains）体系中系统化：筋膜（包裹肌肉、连接肌肉与骨骼的结缔组织）并非各自独立，而是像列车车厢一样首尾衔接，将张力从一个身体区域传递到另一个区域。常见的几条链包括：浅背线（从脚底经小腿、大腿后侧、脊柱两侧一直延伸到头顶）、体侧线（从脚外侧沿身体侧面到头侧）、以及螺旋线（斜向缠绕躯干，连接对侧肩胛与骨盆）。需要说明的是，这些链的解剖学连续性在尸体解剖中可以观察到筋膜层面的物理延续，但其在活体中传递张力的具体力学效率仍是运动科学中持续研究的问题。</p>
+<p><strong>举例说明</strong></p>
+<p>一个直观的例子是"够趾"动作：站立并尝试用直腿弯腰去摸脚尖。很多人会感觉到不仅是小腿后侧的比目鱼肌和大腿后侧的腘绳肌在拉伸，连脊柱两侧甚至后颈部都出现紧绷感。这正是因为这些肌肉与筋膜同属浅背线，牵拉链条一端会将张力沿途传导至远端。</p>
+<p><strong>应用于问题解决</strong></p>
+<p>理解肌筋膜链对康复训练与运动表现分析有直接价值。例如，一名反复出现下背部僵硬、但腰椎影像检查正常的患者，问题根源可能并不在腰部本身，而在于浅背线上游的腘绳肌过度紧张，牵拉骨盆后倾，间接增加腰部张力。这时单纯局部按摩腰部效果有限，而针对小腿到大腿后侧的整条链进行拉伸训练，往往能更有效缓解症状。同样，在评估跑步或投掷等旋转性运动损伤时，教练常会沿螺旋线检查对侧髋部与肩部的协调性，而非只看受伤局部。</p>
+<pre class="mermaid">flowchart LR
+    A[脚底筋膜] --> B[小腿后侧<br/>比目鱼肌]
+    B --> C[大腿后侧<br/>腘绳肌]
+    C --> D[骨盆<br/>骶结节韧带]
+    D --> E[脊柱两侧<br/>竖脊肌]
+    E --> F[后颈部<br/>枕骨下肌群]</pre>
+<p><em>浅背线示意：张力沿脚底经小腿、大腿、骨盆、脊柱一直传导至颈枕部，说明局部紧绷可能源于远端牵拉。</em></p>
+  </main>
+  <footer class="spl-credit"><span class="spl-credit__meta">Ch2: The Physiology Lens — Breath, Circulation, Fascia, and Core (生理视角) (Level: College &middot; Language: ZH &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
+</div>
+</body>
+</html>

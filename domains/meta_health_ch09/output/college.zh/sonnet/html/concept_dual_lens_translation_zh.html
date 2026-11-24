@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>双重视角：中医与生理学的互译 | Meta Health Ch09</title>
+<script>
+MathJax = {
+  loader: { load: ['[tex]/mathtools'] },
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']],
+         packages: { '[+]': ['mathtools'] } },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<script src="https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.min.js"></script>
+<script>mermaid.initialize({ startOnLoad: true, theme: 'neutral' });</script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+footer.spl-credit span{display:block}
+footer.spl-credit .spl-credit__meta{margin-bottom:4px}
+.cb-figure{margin:24px 0;text-align:center}
+.cb-figure img{max-width:100%;height:auto;border:1px solid #e0e0d8;border-radius:6px}
+figcaption{font-size:.82rem;color:#666;margin-top:8px;font-style:italic;text-align:center}
+pre.mermaid{background:none;border:none;padding:0;overflow:visible;margin:16px 0}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="双重视角-中医与生理学的互译">双重视角：中医与生理学的互译</h2>
+<p><strong>定义。</strong> 双重视角，是指在面对同一个身体现象时，同时使用中医（Traditional Chinese Medicine，TCM）的语言和现代生理学的语言去描述，并在两者之间建立可检验的对应关系。互译不等于"等同"。中医认为"脾主运化"，这是一种功能性的归纳；生理学则讲胃排空、消化酶分泌和小肠吸收。两套语言的分类单位不同，因此翻译时应当问三个问题：它描述的是什么可观察的现象？生理学中有哪些可测量的指标与之相关？这种对应有没有证据支持？</p>
+<p><strong>一个可靠的翻译步骤：</strong></p>
+<li>抓住现象：把中医术语还原为患者可报告或可测量的表现。</li>
+<li>寻找指标：选出生理学中对应的量，如心率、血压、血糖、体温。</li>
+<li>标明边界：说明哪些部分有研究支持，哪些尚无证据，哪些已被证伪。</li>
+<p><strong>例题。</strong> 一位同学考试前连续三晚睡眠不足，白天心慌、手心出汗、口干。中医可能称之为"心火亢盛"或"心神不宁"。如何翻译？</p>
+<li>现象：心慌、出汗、口干。</li>
+<li>生理学解释：睡眠不足和考试压力会激活交感神经，使肾上腺素分泌增多，心率上升，唾液分泌减少。</li>
+<li>可测指标：静息心率。假设他平时为 $65$ 次/分钟，此刻为 $95$ 次/分钟，则增加了 $95-65=30$ 次/分钟，约为平时的 $\frac{30}{65}\approx 46\%$。</li>
+<li>心输出量按定义为 $CO = HR \times SV$。若每搏输出量 $SV$ 近似不变，仅因心率上升，心输出量就会按相同比例增加。</li>
+<p>这样，"心火亢盛"这个说法就被还原成了一组可以记录的数据：睡眠时长、静息心率、主观症状评分。</p>
+<p><strong>问题求解应用。</strong> 假设另一位同学说自己"脾虚"，表现为饭后腹胀、乏力、大便偏稀。用双重视角处理时，不应直接断言"脾虚等于某种病"，而应列出生理学上的几种可能：</p>
+<p>| 中医描述 | 可能的生理学解释 | 可检验的做法 | |---|---|---| | 饭后腹胀 | 进食过快、乳糖不耐受、胃排空偏慢 | 记录饮食日志，排除乳糖食物 | | 乏力 | 铁摄入不足、睡眠不足、能量摄入过低 | 评估每日能量（kcal）、必要时检测血红蛋白 | | 大便偏稀 | 肠道感染、膳食纤维或糖醇摄入变化 | 观察持续时间，持续不缓解则就医 |</p>
+<p>这张表的用途是把一个笼统的标签拆成可以逐项排查的问题。其中若出现持续体重下降、便血、发热等警示信号，应优先就医，不应只靠中医标签自行调理。</p>
+<p><strong>小结。</strong> 双重视角的价值，在于让传统术语成为"提问的起点"，让生理学指标成为"回答的依据"。当两者吻合时，可以相互补充；当中医的说法缺乏证据或可能延误治疗时，应明确以可靠的生理学证据为准。</p>
+  </main>
+  <footer class="spl-credit"><span class="spl-credit__meta">Ch9: The Unified Internal Conditioning Framework (内调一元论) (Level: College &middot; Language: ZH &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
+</div>
+</body>
+</html>

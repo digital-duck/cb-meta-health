@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Cortisol–Melatonin Rhythm | Meta Health Ch08</title>
+<script>
+MathJax = {
+  loader: { load: ['[tex]/mathtools'] },
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']],
+         packages: { '[+]': ['mathtools'] } },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<script src="https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.min.js"></script>
+<script>mermaid.initialize({ startOnLoad: true, theme: 'neutral' });</script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+footer.spl-credit span{display:block}
+footer.spl-credit .spl-credit__meta{margin-bottom:4px}
+.cb-figure{margin:24px 0;text-align:center}
+.cb-figure img{max-width:100%;height:auto;border:1px solid #e0e0d8;border-radius:6px}
+figcaption{font-size:.82rem;color:#666;margin-top:8px;font-style:italic;text-align:center}
+pre.mermaid{background:none;border:none;padding:0;overflow:visible;margin:16px 0}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="the-cortisol-melatonin-rhythm">The Cortisol–Melatonin Rhythm</h2>
+<p><strong>Definition.</strong> Cortisol and melatonin are two hormones whose blood levels rise and fall on a roughly 24-hour cycle, set mainly by the brain's master clock (the suprachiasmatic nucleus) and by light exposure. Cortisol, released by the adrenal glands, peaks about 30–45 minutes after waking. This is the cortisol awakening response. It raises blood glucose and alertness so the body can meet the demands of the day. Cortisol then declines through the afternoon and reaches its lowest point around midnight. Melatonin, released by the pineal gland, stays very low in daylight. It begins to rise about 2 hours before habitual bedtime in dim light (dim-light melatonin onset) and peaks in the middle of the night. The two hormones are roughly mirror images. Cortisol is high when melatonin is low, and the reverse.</p>
+<p><strong>Worked example.</strong> Maya wakes at 6:30 a.m. and gets outside in daylight. A saliva test would show her cortisol rising to a peak near 7:00–7:15, then falling steadily. At 9:00 p.m. she sits in a bright kitchen, scrolls on her phone, and goes to bed at 11:00 p.m. Her melatonin onset is later than it would be in dim light, because bright light, especially blue-rich light from screens, suppresses melatonin. She lies awake for 40 minutes. Her cortisol level is not the cause. The light has pushed back the signal that says "night has begun."</p>
+<p>| Time | Cortisol | Melatonin | |---|---|---| | 7:00 a.m. | Peak | Near zero | | 3:00 p.m. | Moderate, falling | Near zero | | 9:00 p.m. | Low | Rising (in dim light) | | 2:00 a.m. | Lowest | Peak |</p>
+<p><strong>Problem-solving application.</strong> Suppose a student sleeps at 1:00 a.m. and wakes at 9:00 a.m., but must wake at 6:30 a.m. for a new class schedule. Follow these steps.</p>
+<li><em>Identify the target.</em> Melatonin should begin rising about 2 hours before the new bedtime. For an 11:00 p.m. bedtime, that means around 9:00 p.m.</li>
+<li><em>Shift the light.</em> Get bright outdoor light soon after waking. This anchors the cortisol peak earlier. Dim indoor lights and reduce screen use from about 8:30 p.m., so melatonin can rise on schedule.</li>
+<li><em>Shift gradually.</em> Move bedtime and wake time earlier by 15–30 minutes every few days.</li>
+<p>A common mistake is to treat cortisol as simply "the stress hormone" and melatonin as "the sleep pill." Cortisol also follows a healthy daily pattern, and a morning peak is normal. Chronic stress, shift work, or late-night light can flatten or shift this pattern. Melatonin supplements can help in specific cases such as jet lag, but they are not a general sleep aid. Timing of light is usually the stronger lever.</p>
+<pre class="mermaid">flowchart LR
+    A[Morning light] --> B[Cortisol peak after waking]
+    B --> C[Alertness and glucose mobilized]
+    C --> D[Cortisol declines through day]
+    D --> E[Evening darkness]
+    E --> F[Melatonin rises]
+    F --> G[Sleepiness and sleep]
+    G --> H[Cortisol lowest near midnight]</pre>
+<p><em>The daily sequence: light and waking trigger a cortisol peak, and evening darkness triggers melatonin to prepare the body for sleep.</em></p>
+  </main>
+  <footer class="spl-credit"><span class="spl-credit__meta">Ch8: Rhythms — Sleep, the Organ Clock, and the Seasons (天人相应) (Level: College &middot; Language: EN &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
+</div>
+</body>
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>证据质量的判断 | Meta Health Ch09</title>
+<script>
+MathJax = {
+  loader: { load: ['[tex]/mathtools'] },
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']],
+         packages: { '[+]': ['mathtools'] } },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<script src="https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.min.js"></script>
+<script>mermaid.initialize({ startOnLoad: true, theme: 'neutral' });</script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+footer.spl-credit span{display:block}
+footer.spl-credit .spl-credit__meta{margin-bottom:4px}
+.cb-figure{margin:24px 0;text-align:center}
+.cb-figure img{max-width:100%;height:auto;border:1px solid #e0e0d8;border-radius:6px}
+figcaption{font-size:.82rem;color:#666;margin-top:8px;font-style:italic;text-align:center}
+pre.mermaid{background:none;border:none;padding:0;overflow:visible;margin:16px 0}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="证据质量的判断">证据质量的判断</h2>
+<p><strong>定义。</strong> 证据质量,是指一项研究结论在多大程度上值得相信。它取决于研究设计、样本规模、偏倚控制和结果能否被重复。常见的证据来源,从强到弱大致如下:</p>
+<p>| 证据类型 | 特点 | 主要局限 | |---|---|---| | 系统综述与荟萃分析 | 汇总多项试验 | 受纳入研究质量限制 | | 随机对照试验 | 随机分组,能检验因果 | 费用高,随访时间有限 | | 队列与病例对照研究 | 观察真实人群 | 混杂因素难以排除 | | 病例报告、专家意见 | 提供线索 | 无对照,易受偏倚影响 | | 传统经验 | 长期使用 | 使用久不等于有效 |</p>
+<p>在中医中,传统经验同样要经过这一检验。TCM 的某个方剂或疗法用了上千年,只说明它被长期使用,不能证明它有效。</p>
+<p><strong>例题。</strong> 一项观察性研究追踪了 2 万人,发现每天喝绿茶的人心血管病发生率更低。这是否说明喝绿茶能保护心脏?</p>
+<p>分析如下:</p>
+<li>研究设计是观察性的,没有随机分组,只能说明二者相关。</li>
+<li>找混杂因素。喝绿茶的人可能更常运动、吸烟更少、收入更高,这些因素本身就影响心脏健康。</li>
+<li>看效应大小和剂量关系。如果每天喝得越多,风险越低,因果的可能性会增大,但仍不能确证。</li>
+<li>结论:这是有提示意义的线索,证据等级为中低,需要随机试验来验证。</li>
+<p><strong>问题解决应用。</strong> 面对一条健康声明,可以按下面四步判断。</p>
+<li><strong>查来源。</strong> 它来自试验、观察研究,还是个人经验或广告?</li>
+<li><strong>查设计。</strong> 有没有对照组?是否随机、盲法?样本是否足够大?</li>
+<li><strong>查效应。</strong> 用具体数字衡量。例如某疗法使血压平均下降 $2\,\text{mmHg}$,统计上显著,但临床意义很小。降低 $10\,\text{mmHg}$ 才对降低中风风险有实际价值。</li>
+<li><strong>查一致性。</strong> 多项独立研究的结果是否一致?只有一项阳性结果的,应保持谨慎。</li>
+<p>再看一个例子。一种草药宣称能改善失眠,依据是几十位使用者的好评。按上面四步:来源是个人经验,没有对照,样本小,没有可量化的结果。它只能算作假设。如果后来有一项随机、双盲、安慰剂对照的试验,纳入 300 人,并用睡眠时长(分钟)和失眠量表评分作为结果,结论的可信度就大幅提高。若多项试验的结果一致,这一结论才可以写进实践建议。</p>
+<p><strong>小结。</strong> 证据质量不是非黑即白,而是一个从弱到强的连续过程。好的判断者不会因为一项研究就全盘相信,也不会因为一种疗法出身传统就一概否定。他们先看设计,再看数据,最后看这个结论能否被重复。当证据不足时,应坦率承认不确定,而不是用传统或权威来填补空白。</p>
+  </main>
+  <footer class="spl-credit"><span class="spl-credit__meta">Ch9: The Unified Internal Conditioning Framework (内调一元论) (Level: College &middot; Language: ZH &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
+</div>
+</body>
+</html>

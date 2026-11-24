@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>时间营养学 | Meta Health Ch08</title>
+<script>
+MathJax = {
+  loader: { load: ['[tex]/mathtools'] },
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']],
+         packages: { '[+]': ['mathtools'] } },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<script src="https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.min.js"></script>
+<script>mermaid.initialize({ startOnLoad: true, theme: 'neutral' });</script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+footer.spl-credit span{display:block}
+footer.spl-credit .spl-credit__meta{margin-bottom:4px}
+.cb-figure{margin:24px 0;text-align:center}
+.cb-figure img{max-width:100%;height:auto;border:1px solid #e0e0d8;border-radius:6px}
+figcaption{font-size:.82rem;color:#666;margin-top:8px;font-style:italic;text-align:center}
+pre.mermaid{background:none;border:none;padding:0;overflow:visible;margin:16px 0}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="时间营养学">时间营养学</h2>
+<p><strong>时间营养学</strong>(chrononutrition)研究的不只是"吃什么、吃多少",还包括"什么时候吃"。人体有一套约24小时的昼夜节律,由大脑中的中枢生物钟与肝脏、胰腺、脂肪组织等外周生物钟共同调控。多项研究发现,胰岛素敏感性在早晨和上午较高,到晚上下降:同样一份食物,晚上吃会引起更高、更持久的血糖峰值。同时,夜间褪黑素升高,胰岛素分泌能力也随之减弱。因此,时间营养学的常见建议是<strong>前置进食</strong>:把更多能量放在早餐和午餐,并在睡前约3小时结束进食。</p>
+<h3 id="例题">例题</h3>
+<p>小李每天摄入约2000 kcal,但分配很不均衡:</p>
+<p>| 餐次 | 时间 | 能量 | |---|---|---| | 早餐 | 8:00 | 300 kcal | | 午餐 | 12:30 | 600 kcal | | 晚餐 | 21:00 | 800 kcal | | 夜宵 | 23:30 | 300 kcal |</p>
+<p>他通常 0:00 入睡。晚餐和夜宵合计 1100 kcal,占全天能量的:</p>
+$$\frac{1100}{2000}\times 100\% = 55\%$$
+<p>也就是说,超过一半的能量在胰岛素敏感性较低的时段摄入,而且最后一餐距入睡只有约0.5小时。</p>
+<h3 id="问题解决-调整方案">问题解决:调整方案</h3>
+<p><strong>第一步:确定截止时间。</strong> 按睡前至少3小时结束进食,0:00 入睡意味着最晚 21:00 吃完。夜宵应取消。</p>
+<p><strong>第二步:重新分配能量。</strong> 一种常见做法是早餐、午餐、晚餐大致按 30%、40%、30% 分配,即 600、800、600 kcal。这只是便于执行的经验比例,并非严格标准。</p>
+<p><strong>第三步:调整时间。</strong> 晚餐提前到 18:30,早餐可适当增加蛋白质和复合碳水化合物,以维持上午的饱腹感。</p>
+<p><strong>第四步:检验效果。</strong> 如果有条件,可佩戴连续血糖仪,或在家测空腹和餐后2小时血糖,比较调整前后的变化。个体差异较大,以自身数据为准。</p>
+<h3 id="注意事项">注意事项</h3>
+<li>证据主要来自短期对照试验和观察性研究,长期减重和降糖的效果尚在研究中。总能量和食物质量仍然是基础,时间安排是在此之上的优化。</li>
+<li>夜班工作者的生物钟与常规作息不同,应以自己的"生物学白天"来安排进餐,而不是照搬钟表时间。</li>
+<li>糖尿病患者或正在用降糖药的人调整进餐时间前,应先咨询医生,以免发生低血糖。</li>
+<p><strong>小结:</strong> 时间营养学建议把进食集中在白天的活跃时段,晚餐尽量早,并与睡眠留出至少约3小时的间隔。</p>
+  </main>
+  <footer class="spl-credit"><span class="spl-credit__meta">Ch8: Rhythms — Sleep, the Organ Clock, and the Seasons (天人相应) (Level: College &middot; Language: ZH &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
+</div>
+</body>
+</html>

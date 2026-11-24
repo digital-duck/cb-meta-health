@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Yin and Yang (阴阳) | Meta Health Ch08</title>
+<script>
+MathJax = {
+  loader: { load: ['[tex]/mathtools'] },
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']],
+         packages: { '[+]': ['mathtools'] } },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<script src="https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.min.js"></script>
+<script>mermaid.initialize({ startOnLoad: true, theme: 'neutral' });</script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+footer.spl-credit span{display:block}
+footer.spl-credit .spl-credit__meta{margin-bottom:4px}
+.cb-figure{margin:24px 0;text-align:center}
+.cb-figure img{max-width:100%;height:auto;border:1px solid #e0e0d8;border-radius:6px}
+figcaption{font-size:.82rem;color:#666;margin-top:8px;font-style:italic;text-align:center}
+pre.mermaid{background:none;border:none;padding:0;overflow:visible;margin:16px 0}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="yin-and-yang-阴阳">Yin and Yang (阴阳)</h2>
+<p><strong>Definition.</strong> In Traditional Chinese Medicine (TCM), yin and yang are a pair of opposing but interdependent categories used to describe the body and its changes. Yin is associated with what is cool, quiet, nourishing, and structural. Yang is associated with what is warm, active, and functional. TCM holds that health is a dynamic relationship between the two, and that illness reflects a shift in that relationship. Yin-yang is a classification framework, not a measurement. It has no units, and it cannot be written as a ratio or an equation.</p>
+<p><strong>How the framework sorts things.</strong> The pairs below are examples of how TCM texts classify observations.</p>
+<p>| Observation | Typically classed as yang | Typically classed as yin | |---|---|---| | Time of day | Daytime, activity | Night, rest | | Body region | Back, upper body | Front, lower body | | Symptom quality | Fever, restlessness, flushed face | Chills, stillness, pale face | | Pace of illness | Sudden onset, rapid course | Gradual onset, slow course |</p>
+<p>TCM also says that each pole contains a seed of the other, and that either can change into the other at an extreme. For example, a prolonged fever may be described as eventually exhausting the body's fluids.</p>
+<p><strong>Worked example.</strong> A patient reports a dry mouth, night sweats, a warm feeling in the palms and soles, and trouble falling asleep. A TCM practitioner would read these as signs of "deficient yin": too little cooling, nourishing substance, so the warm, active side looks relatively prominent. A second patient reports cold hands, pale skin, loose stools, and tiredness that is worse in the cold. This pattern would be read as "deficient yang": too little warmth and function.</p>
+<p><strong>Problem-solving application.</strong> Suppose you are given the following case and asked to classify it.</p>
+<p><em>A student feels hot and restless in the afternoon, sleeps poorly, and has a dry throat. Their appetite and digestion are normal.</em></p>
+<li>List each symptom and ask whether it is warm and active or cool and still. Here, heat, restlessness, and poor sleep lean yang. Dryness suggests a shortage of moisture, which is yin.</li>
+<li>Check what is absent. Normal digestion and no cold signs argue against yang deficiency.</li>
+<li>State the pattern in words: warm and active signs alongside dryness suggest yin deficiency.</li>
+<li>Translate the pattern into a testable, modern question. Does the student's sleep schedule, caffeine intake, or hydration explain the same symptoms? Checking these ordinary causes first is sound practice.</li>
+<p><strong>Evidence status.</strong> Yin-yang is a traditional interpretive framework, not an established physiological mechanism. No anatomical structure or lab value corresponds to "yin" or "yang." Its usefulness is as a way to organize symptoms in TCM practice. Treat clinical claims built on it as separate questions that need controlled evidence.</p>
+<pre class="mermaid">graph TD
+    A[Observed signs] --> B{Warm and active?}
+    B -->|Yes| C[Yang-leaning]
+    B -->|No| D{Cool and still?}
+    D -->|Yes| E[Yin-leaning]
+    D -->|No| F[Mixed pattern]
+    C --> G[Check for hidden yin shortage]
+    E --> H[Check for hidden yang shortage]</pre>
+<p><em>A simplified decision flow showing how TCM sorts observed signs into yang-leaning, yin-leaning, or mixed patterns.</em></p>
+  </main>
+  <footer class="spl-credit"><span class="spl-credit__meta">Ch8: Rhythms — Sleep, the Organ Clock, and the Seasons (天人相应) (Level: College &middot; Language: EN &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
+</div>
+</body>
+</html>

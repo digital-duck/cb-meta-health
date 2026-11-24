@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>饱腹信号 | Meta Health Ch05</title>
+<script>
+MathJax = {
+  loader: { load: ['[tex]/mathtools'] },
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']],
+         packages: { '[+]': ['mathtools'] } },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<script src="https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.min.js"></script>
+<script>mermaid.initialize({ startOnLoad: true, theme: 'neutral' });</script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+footer.spl-credit span{display:block}
+footer.spl-credit .spl-credit__meta{margin-bottom:4px}
+.cb-figure{margin:24px 0;text-align:center}
+.cb-figure img{max-width:100%;height:auto;border:1px solid #e0e0d8;border-radius:6px}
+figcaption{font-size:.82rem;color:#666;margin-top:8px;font-style:italic;text-align:center}
+pre.mermaid{background:none;border:none;padding:0;overflow:visible;margin:16px 0}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="饱腹信号">饱腹信号</h2>
+<p><strong>定义。</strong> 饱腹信号是消化道在进食过程中向大脑传递"已经吃了多少"的一套反馈系统,主要由两类信息构成:一是胃壁的牵张感受器,它感知胃被食物撑开的程度,并经迷走神经上传;二是小肠在接触食物后分泌的肠道激素,如缩胆囊素(CCK)、胰高血糖素样肽-1(GLP-1)和酪酪肽(PYY)。这些信号汇集到下丘脑和脑干,抑制食欲、促使人停止进食。关键特点是<strong>滞后</strong>:从开始吃到大脑明确"饱了",通常需要约 15–20 分钟。</p>
+<p><strong>为什么会滞后。</strong> 食物先要离开胃、进入小肠,才能刺激肠道内分泌细胞;激素再经血液和神经到达脑部并起作用,这一过程需要时间。因此,进食速度快时,大脑的"饱了"信号还没到,食物已经进了嘴里。</p>
+<p><strong>例题。</strong> 小明吃一份 800 kcal 的快餐,5 分钟吃完;小红同样吃 800 kcal,用 25 分钟。假设两人的饱腹信号都在进食开始后约 20 分钟才充分生效,且两人仍想再吃一份 300 kcal 的甜点。</p>
+<li>小明:吃完正餐时(第 5 分钟),饱腹信号尚未充分到位,食欲仍高,很容易接着吃甜点。若他吃了,总摄入为 $800+300=1100\ \text{kcal}$。</li>
+<li>小红:吃到第 20 分钟起,信号已逐渐生效,到第 25 分钟吃完时,对甜点的欲望往往已明显下降。若她放弃甜点,总摄入为 $800\ \text{kcal}$。</li>
+<p>两人相差 $1100-800=300\ \text{kcal}$。这是一个说明性的情景,真实的个体差异很大,但它展示了进食速度如何影响摄入量。</p>
+<p><strong>问题解决应用。</strong> 如何利用滞后时间控制食量?</p>
+<li><strong>拉长进食时间。</strong> 把一餐的用时延长到 20 分钟以上,例如放下餐具、多咀嚼、每口之间喝水。</li>
+<li><strong>先吃高体积、高纤维的食物。</strong> 汤、蔬菜和全谷物能更好地撑开胃,激活牵张感受器;蛋白质也有助于刺激 CCK、GLP-1 和 PYY 的分泌。</li>
+<li><strong>设置"等待规则"。</strong> 吃完正餐后先等 15–20 分钟,再决定是否添加食物。这段时间正好让信号赶上进食。</li>
+<li><strong>避免分心进食。</strong> 边看屏幕边吃时,人容易忽略身体信号,吃得更快、更多。</li>
+<p><strong>小结。</strong> 饱腹感不是"吃进去就立刻有",而是一个有延迟的反馈回路。理解这一点,就能通过放慢速度、调整食物结构和主动等待,让大脑的判断与实际摄入保持同步。</p>
+  </main>
+  <footer class="spl-credit"><span class="spl-credit__meta">Ch5: Eating as Internal Exercise (饮食即内脏运动) (Level: College &middot; Language: ZH &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
+</div>
+</body>
+</html>

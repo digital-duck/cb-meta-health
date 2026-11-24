@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>骨骼肌泵 | Meta Health Ch02</title>
+<script>
+MathJax = {
+  loader: { load: ['[tex]/mathtools'] },
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']],
+         packages: { '[+]': ['mathtools'] } },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<script src="https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.min.js"></script>
+<script>mermaid.initialize({ startOnLoad: true, theme: 'neutral' });</script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+footer.spl-credit span{display:block}
+footer.spl-credit .spl-credit__meta{margin-bottom:4px}
+.cb-figure{margin:24px 0;text-align:center}
+.cb-figure img{max-width:100%;height:auto;border:1px solid #e0e0d8;border-radius:6px}
+figcaption{font-size:.82rem;color:#666;margin-top:8px;font-style:italic;text-align:center}
+pre.mermaid{background:none;border:none;padding:0;overflow:visible;margin:16px 0}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="骨骼肌泵">骨骼肌泵</h2>
+<p>人体静脉系统在安静状态下容纳全身约六到七成的血容量，但静脉壁薄、压力低，仅靠心脏收缩产生的压力梯度不足以把血液从下肢有效送回心脏，尤其是在人直立、血液必须克服重力上行的时候。骨骼肌泵正是解决这一问题的机制：当腿部肌肉（尤其是小腿的腓肠肌与比目鱼肌）收缩时，肌肉体积膨胀，机械性地挤压其间穿行的深静脉，把静脉内的血液向上"挤"出去；静脉壁上每隔几厘米就有的单向瓣膜此时关闭，阻止血液因重力倒流回下肢，于是血液只能沿着一个方向——朝心脏——移动。肌肉放松时，静脉压力短暂下降，瓣膜关闭防止血液回流，随后血液从远端静脉重新充盈局部静脉网，为下一次收缩做准备。因为小腿肌肉的收缩对静脉回流的贡献如此关键，小腿常被称为"第二心脏"。</p>
+<p>举一个具体的例子：一个人长时间站立不动（如站岗、久站工作），小腿肌肉几乎不收缩，骨骼肌泵不工作，血液和组织液在下肢静脉和毛细血管床中淤积，常见表现是脚踝浮肿、静脉曲张风险增加，严重时甚至因回心血量骤减、脑供血不足而晕厥。而如果同一个人原地做几次提踵（脚跟抬起再放下）或走动几步，小腿肌肉的节律性收缩立刻恢复了泵血作用，静脉回流量增加，心脏的前负荷随之提升，每搏输出量按照弗兰克-斯塔林机制相应增大，头晕的感觉往往迅速缓解。</p>
+<p>在运动生理学中，骨骼肌泵与呼吸泵（膈肌下降带来的胸腔负压效应）共同作用，是运动时静脉回流量成倍增加、从而支持心输出量大幅上升的重要机制,这也是为什么久坐后突然起身、或长途飞行久坐不动容易诱发下肢静脉血栓的原因——医生建议长途飞行时定时活动小腿，正是利用骨骼肌泵原理预防血液淤滞。</p>
+<pre class="mermaid">flowchart LR
+    A[小腿肌肉收缩] --> B[深静脉受挤压]
+    B --> C[远端瓣膜关闭]
+    C --> D[血液向心脏方向移动]
+    D --> E[肌肉舒张]
+    E --> F[静脉压下降/瓣膜关闭防倒流]
+    F --> G[远端静脉重新充盈]
+    G --> A</pre>
+<p><em>骨骼肌泵的收缩-舒张循环：肌肉收缩挤压静脉、瓣膜定向导流，推动血液持续向心脏回流。</em></p>
+  </main>
+  <footer class="spl-credit"><span class="spl-credit__meta">Ch2: The Physiology Lens — Breath, Circulation, Fascia, and Core (生理视角) (Level: College &middot; Language: ZH &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
+</div>
+</body>
+</html>

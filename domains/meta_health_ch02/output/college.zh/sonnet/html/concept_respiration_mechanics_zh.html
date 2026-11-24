@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>呼吸力学 | Meta Health Ch02</title>
+<script>
+MathJax = {
+  loader: { load: ['[tex]/mathtools'] },
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']],
+         packages: { '[+]': ['mathtools'] } },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<script src="https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.min.js"></script>
+<script>mermaid.initialize({ startOnLoad: true, theme: 'neutral' });</script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+footer.spl-credit span{display:block}
+footer.spl-credit .spl-credit__meta{margin-bottom:4px}
+.cb-figure{margin:24px 0;text-align:center}
+.cb-figure img{max-width:100%;height:auto;border:1px solid #e0e0d8;border-radius:6px}
+figcaption{font-size:.82rem;color:#666;margin-top:8px;font-style:italic;text-align:center}
+pre.mermaid{background:none;border:none;padding:0;overflow:visible;margin:16px 0}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="呼吸力学">呼吸力学</h2>
+<p>呼吸并非肺自身主动收缩产生的动作，而是由胸腔容积的变化被动驱动气体流动的过程。膈肌是位于胸腔底部的穹顶状肌肉，收缩时下移并压平，使胸腔纵向容积增大；肋间外肌收缩则提升肋骨、扩大胸腔的前后径与左右径。胸腔容积增大时，肺内压力下降到低于大气压，空气便顺着压力差流入肺部，这就是吸气。呼气时，膈肌和肋间外肌舒张，胸腔容积因肺组织的弹性回缩而减小，肺内压力升高到高于大气压，空气被排出体外。</p>
+<p>这一过程遵循气体的基本物理规律——玻意耳定律，即在温度不变的条件下，一定量气体的压强与体积成反比：</p>
+$$
+P_1 V_1 = P_2 V_2
+$$
+<p>例如，平静吸气前肺容积约为 $2.5\ \text{L}$，肺内压等于大气压 $760\ \text{mmHg}$。膈肌收缩使肺容积增大到 $2.7\ \text{L}$，代入玻意耳定律可得此时肺内压：</p>
+$$
+P_2 = \frac{P_1 V_1}{V_2} = \frac{760 \times 2.5}{2.7} \approx 703\ \text{mmHg}
+$$
+<p>肺内压比大气压低约 $57\ \text{mmHg}$，正是这一压差驱动空气流入肺部，直到肺内压重新等于大气压、气流停止。</p>
+<p>在实际问题中，这一关系可用于理解呼吸功的变化：当气道阻力增大（如哮喘发作使支气管变窄）或肺弹性降低（如肺纤维化使肺组织变硬）时，要产生同样的容积变化，膈肌与肋间肌必须收缩得更用力，才能造成足够的压差。这解释了为什么这类患者会出现呼吸困难和呼吸频率代偿性增快——他们并非肺容积不足，而是达到该容积所需的肌肉做功大幅增加。理解容积—压力—气流三者的因果链，是分析多数呼吸系统疾病症状的基础。</p>
+  </main>
+  <footer class="spl-credit"><span class="spl-credit__meta">Ch2: The Physiology Lens — Breath, Circulation, Fascia, and Core (生理视角) (Level: College &middot; Language: ZH &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
+</div>
+</body>
+</html>

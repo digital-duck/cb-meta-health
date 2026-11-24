@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Generating Cycle (Xiangsheng, 相生) | Meta Health Ch01</title>
+<script>
+MathJax = {
+  loader: { load: ['[tex]/mathtools'] },
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']],
+         packages: { '[+]': ['mathtools'] } },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<script src="https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.min.js"></script>
+<script>mermaid.initialize({ startOnLoad: true, theme: 'neutral' });</script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+footer.spl-credit span{display:block}
+footer.spl-credit .spl-credit__meta{margin-bottom:4px}
+.cb-figure{margin:24px 0;text-align:center}
+.cb-figure img{max-width:100%;height:auto;border:1px solid #e0e0d8;border-radius:6px}
+figcaption{font-size:.82rem;color:#666;margin-top:8px;font-style:italic;text-align:center}
+pre.mermaid{background:none;border:none;padding:0;overflow:visible;margin:16px 0}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="the-generating-cycle-xiangsheng-相生">The Generating Cycle (Xiangsheng, 相生)</h2>
+<p><strong>Definition.</strong> In Traditional Chinese Medicine (TCM), the generating cycle (相生, <em>xiangsheng</em>) describes how each of the Five Phases promotes the next in a fixed loop: Wood → Fire → Earth → Metal → Water → Wood. TCM calls the preceding phase the "mother" and the following phase the "child." Each phase therefore has one mother that nourishes it and one child that it nourishes. The cycle is a classification scheme: TCM uses it to organize observations about the body and the seasons, and to reason about which organ system may be involved in a problem. Because it is a qualitative framework, it is explained here in words and tables, not equations. Some of its claims are testable physiology. Others are metaphor, and the two should be kept apart.</p>
+<p><strong>The pairings.</strong> TCM links each phase to an organ system (the TCM organ names refer to functional systems, not exactly to anatomical organs):</p>
+<p>| Phase | Organ system (yin) | Mother (nourishes it) | Child (it nourishes) | |---|---|---|---| | Wood | Liver | Water (Kidney) | Fire (Heart) | | Fire | Heart | Wood (Liver) | Earth (Spleen) | | Earth | Spleen | Fire (Heart) | Metal (Lung) | | Metal | Lung | Earth (Spleen) | Water (Kidney) | | Water | Kidney | Metal (Lung) | Wood (Liver) |</p>
+<pre class="mermaid">flowchart LR
+    W[Wood] --> F[Fire] --> E[Earth] --> M[Metal] --> Wa[Water] --> W</pre>
+<p><em>The generating cycle: each phase feeds the next, and Water closes the loop back to Wood.</em></p>
+<p><strong>Worked example.</strong> Consider the pairing Earth → Metal, Spleen → Lung. In TCM, the Spleen governs digestion and transforms food into the raw material for energy (qi). The Lung takes in air and distributes qi. TCM therefore says a weak Spleen can leave the Lung undersupplied, "Earth failing to feed Metal." Compare this with modern physiology, where the link is real in part. Poor nutrition does weaken respiratory muscles and immune defenses, and a person who is underfed and loses weight can have a lower exercise capacity. But the TCM mechanism (qi transfer between organ systems) is not a measured physiological pathway.</p>
+<p><strong>Problem-solving application.</strong> Suppose a patient has a long-standing dry cough, fatigue, and poor appetite with loose stools. A TCM practitioner using the cycle would reason as follows:</p>
+<li>The cough points to Metal (Lung).</li>
+<li>Metal's mother is Earth (Spleen), and the appetite and stool symptoms point to Earth.</li>
+<li>The cycle suggests the Lung problem may stem from a weak mother, so treatment would aim to strengthen the Spleen, for example by improving diet, instead of treating only the cough.</li>
+<p>This is called "tonifying the mother" (补其母). A modern clinician would handle the same case differently: take a history, check for infection, reflux, asthma, or medication side effects (such as ACE inhibitors, a common cause of dry cough), and order tests where indicated. The cycle can serve as a way to organize questions, but it is not a diagnostic test. Evidence that treatments chosen by this reasoning outperform standard care is limited, and persistent cough or unexplained weight loss needs a medical evaluation.</p>
+<p><strong>Check your understanding.</strong> Using the table, name the mother and child of Water. (Mother: Metal. Child: Wood.) If a TCM practitioner explains a Kidney weakness by a problem in its mother, which organ system would they examine first? (The Lung.)</p>
+  </main>
+  <footer class="spl-credit"><span class="spl-credit__meta">Ch1: TCM Foundations — Yin-Yang, Qi-Blood, and the Five Phases (中医基础) (Level: College &middot; Language: EN &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
+</div>
+</body>
+</html>

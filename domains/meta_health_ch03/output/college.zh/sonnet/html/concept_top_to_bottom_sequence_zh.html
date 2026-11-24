@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>自上而下顺序 | Meta Health Ch03</title>
+<script>
+MathJax = {
+  loader: { load: ['[tex]/mathtools'] },
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']],
+         packages: { '[+]': ['mathtools'] } },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<script src="https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.min.js"></script>
+<script>mermaid.initialize({ startOnLoad: true, theme: 'neutral' });</script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+footer.spl-credit span{display:block}
+footer.spl-credit .spl-credit__meta{margin-bottom:4px}
+.cb-figure{margin:24px 0;text-align:center}
+.cb-figure img{max-width:100%;height:auto;border:1px solid #e0e0d8;border-radius:6px}
+figcaption{font-size:.82rem;color:#666;margin-top:8px;font-style:italic;text-align:center}
+pre.mermaid{background:none;border:none;padding:0;overflow:visible;margin:16px 0}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="自上而下顺序">自上而下顺序</h2>
+<p><strong>定义。</strong> 自上而下顺序,是指在做热身、热敷、拉伸或按摩时,按"胸 → 肋 → 腰 → 腿 → 足"的次序,由躯干上部逐步向下推进,每个部位完成后再转入下一个。从生理角度看,这样安排的好处是:上半身的胸廓和肩带活动先带动呼吸与循环,心率和体温逐步上升,血液随之流向下肢,较大的负重关节(腰、髋、膝、踝)在身体"热起来"之后再承担更大的动作幅度。中医认为,人体阳气易上浮,自上而下可以引阳气回归下焦之"根"。这属于中医的理论解释,现代研究并未证实"引阳归根"的说法;热身顺序的生理依据,主要在于循环与肌肉温度的变化。</p>
+<p><strong>示例。</strong> 小李晚上准备慢跑 5 公里,静息心率约 70 次/分钟。他用 8 分钟完成热身:</p>
+<p>| 步骤 | 部位 | 动作 | 时间 | |---|---|---|---| | 1 | 胸 | 扩胸、深呼吸 | 1.5 分钟 | | 2 | 肋 | 侧弯、转体 | 1.5 分钟 | | 3 | 腰 | 骨盆画圈、猫牛式 | 1.5 分钟 | | 4 | 腿 | 髋膝摆动、弓步 | 2 分钟 | | 5 | 足 | 踝关节环绕、踮脚 | 1.5 分钟 |</p>
+<p>热身结束时,他的心率升到约 100 次/分钟,微微出汗,说明全身血流已经增加。若他先拉伸小腿、后活动胸腰,则下肢肌肉在尚未"热起来"时就被牵拉,受伤风险更高。</p>
+<p><strong>问题求解应用。</strong> 常用的估算方法是:热身的目标强度约为最大心率的 50%~60%。最大心率可用 $220-\text{年龄}$ 估算。设小李 20 岁:</p>
+$$220-20=200\ \text{次/分钟}$$
+<p>目标心率约为 $200\times 0.5=100$ 到 $200\times 0.6=120$ 次/分钟。他热身后的 100 次/分钟刚好落在区间下限,可再延长腿部动作 1~2 分钟,把心率推到 110 次/分钟左右。</p>
+<p>再看一个场景:一位 60 岁、膝关节僵硬的人晨起想活动。可按如下思路判断:</p>
+<li>先做胸、肋的呼吸与轻柔转体,让心率缓慢上升,约 3 分钟;</li>
+<li>再活动腰和髋,约 3 分钟;</li>
+<li>膝、踝最后进行,幅度由小到大;</li>
+<li>若某关节出现尖锐疼痛(而非酸胀),应停止该动作,不要硬撑。</li>
+<p><strong>要点。</strong> 顺序不是越严格越好:若运动本身以下肢为主(如跑步),应保证腿足部位有足够的专项热身;若以上肢为主(如投掷),则可适当加长胸肩部分。自上而下是一个便于记忆、覆盖全身的流程,真正的评判标准是心率、体温和关节活动度是否已准备好。</p>
+  </main>
+  <footer class="spl-credit"><span class="spl-credit__meta">Ch3: The Five-Organ Exercises (五脏操) (Level: College &middot; Language: ZH &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
+</div>
+</body>
+</html>

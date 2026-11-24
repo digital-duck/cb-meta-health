@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>概念书: 正念用餐方案 — Meta Health Ch05</title>
+<script>
+MathJax = {
+  loader: { load: ['[tex]/mathtools'] },
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']],
+         packages: { '[+]': ['mathtools'] } },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<script src="https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.min.js"></script>
+<script>mermaid.initialize({ startOnLoad: true, theme: 'neutral' });</script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+footer.spl-credit span{display:block}
+footer.spl-credit .spl-credit__meta{margin-bottom:4px}
+.cb-figure{margin:24px 0;text-align:center}
+.cb-figure img{max-width:100%;height:auto;border:1px solid #e0e0d8;border-radius:6px}
+figcaption{font-size:.82rem;color:#666;margin-top:8px;font-style:italic;text-align:center}
+pre.mermaid{background:none;border:none;padding:0;overflow:visible;margin:16px 0}
+.page{display:grid;grid-template-columns:260px 1fr;min-height:100vh}
+nav.toc{position:sticky;top:0;height:100vh;overflow-y:auto;
+        background:#1e3a5f;color:#e8f0fe;padding:24px 16px}
+nav.toc h2{font-size:.75rem;letter-spacing:.1em;text-transform:uppercase;
+           color:#90b4e8;margin-bottom:14px;font-family:system-ui,sans-serif}
+nav.toc ol{list-style:decimal inside;padding:0}
+nav.toc li{margin-bottom:7px;font-size:.85rem;line-height:1.4;font-family:system-ui,sans-serif}
+nav.toc a{color:#a8c8f0;text-decoration:none}
+nav.toc a:hover{color:#fff}
+nav.toc li.toc-target{font-weight:700}
+nav.toc li.toc-target a{color:#fff}
+main{padding:48px 64px;max-width:860px}
+h1.book-title{font-size:2rem;color:#1e3a5f;margin-bottom:4px}
+.subtitle{color:#666;margin-bottom:48px;font-size:1rem;font-style:italic;font-family:system-ui,sans-serif}
+section{margin-bottom:56px;border-top:1px solid #e0e0d8;padding-top:40px}
+section:first-of-type{border-top:none;padding-top:0}
+@media(max-width:768px){.page{grid-template-columns:1fr}
+nav.toc{position:relative;height:auto}}
+</style>
+</head>
+<body>
+<div class="page">
+  <nav class="toc">
+    <h2>目录</h2>
+    <ol>
+<li><a href="concept_gastrointestinal_tract_zh.html">消化道</a></li>
+<li><a href="concept_sympathetic_parasympathetic_balance_zh.html">交感与副交感神经平衡</a></li>
+<li><a href="concept_regional_blood_flow_distribution_zh.html">血流的区域分配</a></li>
+<li><a href="concept_splanchnic_circulation_zh.html">内脏循环</a></li>
+<li><a href="concept_spleen_stomach_system_zh.html">脾胃</a></li>
+<li><a href="concept_prenatal_postnatal_qi_zh.html">先天之本与后天之本</a></li>
+<li><a href="concept_smooth_muscle_zh.html">平滑肌</a></li>
+<li><a href="concept_peristalsis_and_motility_zh.html">胃肠蠕动</a></li>
+<li><a href="concept_postprandial_hyperemia_zh.html">餐后充血</a></li>
+<li><a href="concept_spleen_transformation_transport_zh.html">脾主运化</a></li>
+<li><a href="concept_cardiovascular_load_of_digestion_zh.html">消化的心血管负荷</a></li>
+<li><a href="concept_cephalic_phase_digestion_zh.html">消化的头期</a></li>
+<li><a href="concept_liver_metabolic_role_zh.html">肝脏的代谢作用</a></li>
+<li><a href="concept_mastication_zh.html">咀嚼</a></li>
+<li><a href="concept_eating_as_internal_exercise_zh.html">饮食即内脏运动</a></li>
+<li><a href="concept_hepatic_first_pass_processing_zh.html">肝脏首过代谢</a></li>
+<li><a href="concept_stomach_receiving_ripening_zh.html">胃主受纳腐熟</a></li>
+<li><a href="concept_ascending_clear_descending_turbid_zh.html">升清降浊</a></li>
+<li><a href="concept_postprandial_glucose_response_zh.html">餐后血糖反应</a></li>
+<li><a href="concept_satiety_signaling_zh.html">饱腹信号</a></li>
+<li><a href="concept_digestive_load_pacing_zh.html">控制消化负荷：七分饱</a></li>
+<li><a href="concept_digestive_overtraining_zh.html">消化的过度训练</a></li>
+<li><a href="concept_digestive_warm_up_zh.html">消化的热身</a></li>
+<li><a href="concept_post_meal_gentle_movement_zh.html">饭后温和活动</a></li>
+<li class="toc-target"><a href="concept_mindful_meal_protocol_zh.html">正念用餐方案</a></li>
+</ol>
+  </nav>
+  <main>
+    <h1 class="book-title">概念书: 正念用餐方案</h1>
+    <p class="subtitle">Meta Health Ch05 &middot; Generated by SPL</p>
+    <section>
+      <section>
+      <h2 id="结语与应用">结语与应用</h2>
+<p>把每一顿饭当作一次教练式的“内部训练”,这就是正念用餐方案。它不是新增的知识点,而是把前面四个概念按时间顺序排成一套可以天天执行的流程:饭前、饭中、饭后。</p>
+<h3 id="它要达成什么">它要达成什么</h3>
+<p>消化系统每天要处理数顿饭。方案的目标很实际:让每一餐都在可承受的负荷内完成,并为下一餐留出恢复的余地。它之所以是终点,是因为前面的概念各自只解决一个环节,而吃饭是一个连续的过程,只有串起来才能真正使用。</p>
+<h3 id="四个概念如何汇合">四个概念如何汇合</h3>
+<p>下表按时间顺序列出各概念在方案中的位置:</p>
+<p>| 阶段 | 做法 | 对应概念 | |---|---|---| | 饭前 | 几次放松的深呼吸,收起手机和电视 | 消化的热身 | | 饭中 | 细嚼慢咽,吃到七八分饱就停 | 控制消化负荷:七分饱 | | 饭中与全程 | 避免长期吃得过快、过多、过频 | 消化的过度训练 | | 饭后 | 先静坐休息,再轻缓走动 | 饭后温和活动 |</p>
+<p><strong>饭前</strong>:如同运动前要热身,进餐前的几次深呼吸能让身体从忙碌状态转入进食状态,不看屏幕则让注意力回到食物上。这一步几乎不花时间,却为后面两个阶段定下节奏。</p>
+<p><strong>饭中</strong>:细嚼把一部分机械性工作提前完成,减轻胃的负担;放慢速度,则让饱腹信号有时间到达大脑。七分饱是这一阶段的“强度上限”。每餐都吃到撑,相当于每天做极限训练,长期下来就是消化的过度训练。所以七分饱既是当餐的刹车,也是长期的保护。</p>
+<p><strong>饭后</strong>:先休息片刻,再做散步之类的轻度活动。强度宜低,以能正常说话为准。刚吃完就剧烈运动,会与消化争夺血流,并不合适。</p>
+<h3 id="例题-调整一位上班族的午餐">例题:调整一位上班族的午餐</h3>
+<p>小李的午餐通常是:边看手机边吃,10 分钟吃完,吃到撑,然后立刻坐回工位。下午常感到困重、胃胀。</p>
+<p>用方案逐段修改:</p>
+<li><strong>饭前</strong>:坐下后先做 5 次缓慢呼吸,把手机放在包里。</li>
+<li><strong>饭中</strong>:每口多嚼几次,把用餐时间延长到约 20 分钟。当感觉“还能再吃一点,但不吃也行”时放下筷子,这大致就是七八分饱。</li>
+<li><strong>饭后</strong>:坐 5 分钟,再慢走 10 分钟。</li>
+<p>这里的数字只是起点,不是标准。关键是观察自己的反应:一周后记录餐后胀感和下午的精神状态,再决定是否调整。</p>
+<h3 id="开始实践">开始实践</h3>
+<p>方案的好处在于可以拆开试。第一周只做一件事,比如只在饭前放下手机并深呼吸;第二周加上七分饱;第三周加上饭后散步。每天一顿饭就够了,通常从最从容的早餐或晚餐开始。</p>
+<p>目前没有进一步的延伸应用,这个方案本身就是落点:今天的下一顿饭,就是第一次训练。请你在吃完后写下一句话:哪一步最容易,哪一步最难。</p>
+    </section>
+    </section>
+    <footer class="spl-credit"><span class="spl-credit__meta">Ch5: Eating as Internal Exercise (饮食即内脏运动) (Level: College &middot; Language: ZH &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
+  </main>
+</div>
+</body>
+</html>

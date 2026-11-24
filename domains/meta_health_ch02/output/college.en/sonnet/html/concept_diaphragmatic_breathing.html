@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Diaphragmatic Breathing | Meta Health Ch02</title>
+<script>
+MathJax = {
+  loader: { load: ['[tex]/mathtools'] },
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']],
+         packages: { '[+]': ['mathtools'] } },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<script src="https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.min.js"></script>
+<script>mermaid.initialize({ startOnLoad: true, theme: 'neutral' });</script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+footer.spl-credit span{display:block}
+footer.spl-credit .spl-credit__meta{margin-bottom:4px}
+.cb-figure{margin:24px 0;text-align:center}
+.cb-figure img{max-width:100%;height:auto;border:1px solid #e0e0d8;border-radius:6px}
+figcaption{font-size:.82rem;color:#666;margin-top:8px;font-style:italic;text-align:center}
+pre.mermaid{background:none;border:none;padding:0;overflow:visible;margin:16px 0}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="diaphragmatic-breathing">Diaphragmatic Breathing</h2>
+<p>Diaphragmatic breathing—often called "belly breathing"—is a breathing pattern in which inhalation is driven primarily by contraction of the diaphragm rather than the accessory muscles of the neck and upper chest. As the diaphragm contracts and flattens, it pushes the abdominal contents downward and outward, so the belly visibly rises, while the lower ribs expand sideways. This contrasts with shallow "chest breathing," in which the shoulders and upper ribcage do most of the work and each breath moves a smaller volume of air. Diaphragmatic breathing is typically slow and deep, and it is associated with activation of the parasympathetic nervous system—the branch of the autonomic nervous system that lowers heart rate and promotes recovery, in contrast to the sympathetic "fight or flight" response.</p>
+<p>A useful way to quantify a breathing pattern is minute ventilation, the total volume of air moved per minute:</p>
+$$
+\dot{V}_E = V_T \times f
+$$
+<p>where $V_T$ is tidal volume (air per breath, in liters) and $f$ is respiratory rate (breaths per minute). A shallow chest breather might take $f = 18$ breaths/min with $V_T = 0.4$ L, giving $\dot{V}_E = 7.2$ L/min. A diaphragmatic breather might slow to $f = 8$ breaths/min but increase $V_T$ to 0.9 L, giving $\dot{V}_E = 7.2$ L/min as well—the same total ventilation, achieved with far fewer, deeper breaths. Because each breath is deeper, more air reaches the lower lung regions where gas exchange is most efficient, and the slower rate itself gives the vagus nerve—the main parasympathetic pathway to the heart—more time to signal a heart-rate slowdown with every exhale.</p>
+<p>This distinction matters in practice. A clinician coaching a patient with anxiety-related rapid, shallow breathing does not tell them simply to "breathe less"—that can worsen the sense of air hunger. Instead, the practical target is to slow the rate while holding or increasing tidal volume, for example pacing inhalation and exhalation to a count of four to six seconds each, so minute ventilation stays adequate while breath rate drops. This is also the physiological basis for slow-breathing techniques used in yoga and clinical relaxation training: the mechanism is not "more oxygen" but a shift in autonomic balance produced by slower, deeper diaphragmatic cycles.</p>
+  </main>
+  <footer class="spl-credit"><span class="spl-credit__meta">Ch2: The Physiology Lens — Breath, Circulation, Fascia, and Core (生理视角) (Level: College &middot; Language: EN &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
+</div>
+</body>
+</html>

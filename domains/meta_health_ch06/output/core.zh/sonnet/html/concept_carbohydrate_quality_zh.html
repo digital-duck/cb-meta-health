@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>碳水化合物的质量 | Meta Health Ch06</title>
+<script>
+MathJax = {
+  loader: { load: ['[tex]/mathtools'] },
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']],
+         packages: { '[+]': ['mathtools'] } },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+footer.spl-credit span{display:block}
+footer.spl-credit .spl-credit__meta{margin-bottom:4px}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="碳水化合物的质量">碳水化合物的质量</h2>
+<p>前面提到过一个简单的区分:粗粮和全谷物让血糖慢慢升高,精制糖和白面食让血糖快速冲高。这个区别背后其实有一套可以量化的科学工具。</p>
+<p>碳水化合物的"质量"主要看两点:一是消化速度,二是每份食物里含糖量的多少。科学家用<strong>血糖生成指数</strong>(Glycemic Index,GI)衡量前者——它比较等量碳水化合物(通常是 $50\text{ g}$)升高血糖的速度和幅度,以葡萄糖为 $100$ 分的参照标准。全谷物、豆类因为富含膳食纤维,消化吸收慢,GI 值通常低于 $55$;白米饭、白面包、含糖饮料消化快,GI 值常超过 $70$。</p>
+<p>但只看 GI 还不够,因为它没考虑一份食物里到底有多少克碳水化合物。于是营养学家又提出了<strong>血糖负荷</strong>(Glycemic Load,GL),把速度和数量结合起来:</p>
+$$GL = \frac{GI \times \text{每份碳水化合物克数}}{100}$$
+<p>一般认为 $GL \leq 10$ 为低负荷,$GL \geq 20$ 为高负荷。这解释了为什么西瓜虽然 GI 值不低(约 $72$),但一份西瓜碳水化合物含量少,实际 GL 值却很低。</p>
+<p>膳食纤维之所以能"拖慢"血糖上升,是因为它会延缓胃排空和肠道中淀粉酶分解淀粉的速度,并非靠某种神秘作用,这一点已被大量实验证实。</p>
+<p><strong>练习</strong>:某食物 GI 值为 $60$,一份中含碳水化合物 $30\text{ g}$,求这份食物的血糖负荷 GL,并判断属于低、中、高负荷中的哪一类(标准:$GL \leq 10$ 低,$11$–$19$ 中,$\geq 20$ 高)。</p>
+  </main>
+  <footer class="spl-credit"><span class="spl-credit__meta">元健康 Meta-Health Ch6: What We Eat — Food Quality, Four Natures, and Five Flavors (四气五味) (Level: Core &middot; Language: ZH &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
+</div>
+</body>
+</html>

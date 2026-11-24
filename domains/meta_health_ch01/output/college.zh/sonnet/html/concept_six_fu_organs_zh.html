@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>六腑 | Meta Health Ch01</title>
+<script>
+MathJax = {
+  loader: { load: ['[tex]/mathtools'] },
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']],
+         packages: { '[+]': ['mathtools'] } },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<script src="https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.min.js"></script>
+<script>mermaid.initialize({ startOnLoad: true, theme: 'neutral' });</script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+footer.spl-credit span{display:block}
+footer.spl-credit .spl-credit__meta{margin-bottom:4px}
+.cb-figure{margin:24px 0;text-align:center}
+.cb-figure img{max-width:100%;height:auto;border:1px solid #e0e0d8;border-radius:6px}
+figcaption{font-size:.82rem;color:#666;margin-top:8px;font-style:italic;text-align:center}
+pre.mermaid{background:none;border:none;padding:0;overflow:visible;margin:16px 0}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="六腑">六腑</h2>
+<p><strong>定义。</strong> 六腑是中医(TCM)对胆、小肠、胃、大肠、膀胱、三焦六个"腑"的合称。中医认为,腑的共同特点是中空、传化物而不藏:饮食和水液像过一条通道,依次被接纳、转化、传送和排出,所以中医常说"六腑以通为用"。这里的"腑"是功能单位,不完全等同于现代解剖器官。其中三焦在中医里指全身水液和气化通路,现代解剖学中没有对应的单一器官。</p>
+<p>| 腑 | 中医所述主要功能 | 现代生理中的对应过程 | |---|---|---| | 胃 | 受纳、腐熟水谷 | 储存食物,胃酸与胃蛋白酶初步消化 | | 小肠 | 分清别浊 | 消化并吸收营养,剩余残渣下送 | | 大肠 | 传导糟粕 | 吸收水分,形成粪便 | | 胆 | 贮存、排泄胆汁 | 胆囊浓缩并释放胆汁,帮助脂肪消化 | | 膀胱 | 贮尿、排尿 | 储尿和排尿 | | 三焦 | 通调水道 | 无单一对应器官,常被类比为全身水液代谢通路 |</p>
+<p><strong>例题。</strong> 一顿饭从入口到排出,经过哪些腑?</p>
+<p>按中医的说法,顺序是:胃受纳腐熟,形成食糜;小肠分清别浊,"清"者(营养物质和水液)被吸收,"浊"者继续下行;糟粕入大肠,再被传导排出;被吸收的水液经三焦通路运行,多余部分由膀胱排出。胆汁则在小肠段参与消化。现代生理学的对应路径是:胃,小肠(胆汁、胰液参与),大肠,肛门排出;水分则经血液循环,由肾生成尿液,再入膀胱。可以看出,中医的"分清别浊"与现代所说的"小肠吸收营养、残渣下送"大体相当。</p>
+<p><strong>应用:用"以通为用"分析症状。</strong></p>
+<p><em>情境:</em> 一位同学考试周连续三天吃得少、喝水少、很少活动,出现腹胀、排便困难。</p>
+<p><em>分析步骤:</em></p>
+<li>定位症状所在环节。腹胀和便秘属于"传导糟粕"受阻,对应大肠。</li>
+<li>找上游原因。进食少、纤维摄入不足、饮水少、久坐,都会使肠内容物减少、变干、推进变慢。这一点与现代营养学一致:膳食纤维和水分能增加粪便体积和含水量,活动能促进肠蠕动。</li>
+<li>提出措施。每日增加蔬菜、水果、全谷物,补足水分,适度步行。成年人膳食纤维推荐量大约为每天 25 至 30 克,可作为目标。</li>
+<li>判断是否需要就医。如果便秘伴有便血、体重不明原因下降、剧烈腹痛,或持续超过数周,应就医检查,不能只靠调整饮食。</li>
+<p><em>要点:</em> 六腑理论提供了一条按"通道"思考消化和排泄问题的思路,便于把症状定位到环节。但具体诊断和治疗应以现代医学的检查结果为准。</p>
+  </main>
+  <footer class="spl-credit"><span class="spl-credit__meta">Ch1: TCM Foundations — Yin-Yang, Qi-Blood, and the Five Phases (中医基础) (Level: College &middot; Language: ZH &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
+</div>
+</body>
+</html>

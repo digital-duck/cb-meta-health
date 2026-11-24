@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Lymphatic System | Meta Health Ch02</title>
+<script>
+MathJax = {
+  loader: { load: ['[tex]/mathtools'] },
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']],
+         packages: { '[+]': ['mathtools'] } },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<script src="https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.min.js"></script>
+<script>mermaid.initialize({ startOnLoad: true, theme: 'neutral' });</script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+footer.spl-credit span{display:block}
+footer.spl-credit .spl-credit__meta{margin-bottom:4px}
+.cb-figure{margin:24px 0;text-align:center}
+.cb-figure img{max-width:100%;height:auto;border:1px solid #e0e0d8;border-radius:6px}
+figcaption{font-size:.82rem;color:#666;margin-top:8px;font-style:italic;text-align:center}
+pre.mermaid{background:none;border:none;padding:0;overflow:visible;margin:16px 0}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="the-lymphatic-system">The Lymphatic System</h2>
+<p>The lymphatic system is a one-way network of thin vessels that collects excess fluid from the spaces between cells, filters it through lymph nodes, and returns it to the bloodstream. Unlike the circulatory system, it has no central pump — no equivalent of the heart. Instead, the fluid, called lymph, is moved forward by the squeezing action of nearby skeletal muscles, the rhythmic motion of the digestive tract, and pressure changes from breathing, all working against one-way valves that prevent backflow.</p>
+<p><strong>Worked example.</strong> Blood plasma is pushed out of capillary walls under pressure to bathe tissues in oxygen and nutrients; roughly 20 liters of this fluid leaks out of the capillaries each day, but only about 17 liters are reabsorbed directly back into the capillaries. The remaining 3 liters would accumulate in the tissues, causing swelling, if not for the lymphatic vessels, which pick up this leftover fluid and channel it through lymph nodes — small filtering stations packed with white blood cells — before emptying it back into large veins near the neck. Along the way, lymph nodes trap bacteria, viruses, and abnormal cells, which is why they swell and become tender during an infection: immune cells are multiplying inside them to mount a response.</p>
+<p><strong>Problem-solving application.</strong> Because lymph flow depends entirely on movement rather than a pump, understanding this system explains several everyday and clinical situations. A person confined to bed rest or a long airplane flight may notice swollen ankles, because the calf muscle pump that normally drives lymph and venous return upward is inactive — the practical fix is periodic muscle contraction or elevation of the legs, not medication. After a mastectomy or lymph node removal for cancer treatment, a patient may develop lymphedema, a chronic swelling of the arm, because the local drainage pathways have been surgically interrupted; compression garments and manual lymphatic drainage massage work by manually substituting for the missing muscle pump. Recognizing that lymph movement is passive, rather than pressure-driven the way blood flow is, is the key insight for predicting when and where fluid will accumulate in the body.</p>
+<pre class="mermaid">flowchart LR
+    A[Blood capillaries] -->|fluid leaks out| B[Tissue spaces]
+    B -->|excess fluid enters| C[Lymphatic capillaries]
+    C --> D[Lymph vessels with one-way valves]
+    D --> E[Lymph nodes: filter and immune surveillance]
+    E --> F[Large veins near the neck]
+    F -->|fluid returned| G[Bloodstream]</pre>
+<p><em>Diagram showing how excess tissue fluid is collected by the lymphatic system, filtered through lymph nodes, and returned to the bloodstream.</em></p>
+  </main>
+  <footer class="spl-credit"><span class="spl-credit__meta">Ch2: The Physiology Lens — Breath, Circulation, Fascia, and Core (生理视角) (Level: College &middot; Language: EN &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
+</div>
+</body>
+</html>

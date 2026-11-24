@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>概念书: 双重视角：中医与生理学的互译 — Meta Health Ch02</title>
+<script>
+MathJax = {
+  loader: { load: ['[tex]/mathtools'] },
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']],
+         packages: { '[+]': ['mathtools'] } },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<script src="https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.min.js"></script>
+<script>mermaid.initialize({ startOnLoad: true, theme: 'neutral' });</script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+footer.spl-credit span{display:block}
+footer.spl-credit .spl-credit__meta{margin-bottom:4px}
+.cb-figure{margin:24px 0;text-align:center}
+.cb-figure img{max-width:100%;height:auto;border:1px solid #e0e0d8;border-radius:6px}
+figcaption{font-size:.82rem;color:#666;margin-top:8px;font-style:italic;text-align:center}
+pre.mermaid{background:none;border:none;padding:0;overflow:visible;margin:16px 0}
+.page{display:grid;grid-template-columns:260px 1fr;min-height:100vh}
+nav.toc{position:sticky;top:0;height:100vh;overflow-y:auto;
+        background:#1e3a5f;color:#e8f0fe;padding:24px 16px}
+nav.toc h2{font-size:.75rem;letter-spacing:.1em;text-transform:uppercase;
+           color:#90b4e8;margin-bottom:14px;font-family:system-ui,sans-serif}
+nav.toc ol{list-style:decimal inside;padding:0}
+nav.toc li{margin-bottom:7px;font-size:.85rem;line-height:1.4;font-family:system-ui,sans-serif}
+nav.toc a{color:#a8c8f0;text-decoration:none}
+nav.toc a:hover{color:#fff}
+nav.toc li.toc-target{font-weight:700}
+nav.toc li.toc-target a{color:#fff}
+main{padding:48px 64px;max-width:860px}
+h1.book-title{font-size:2rem;color:#1e3a5f;margin-bottom:4px}
+.subtitle{color:#666;margin-bottom:48px;font-size:1rem;font-style:italic;font-family:system-ui,sans-serif}
+section{margin-bottom:56px;border-top:1px solid #e0e0d8;padding-top:40px}
+section:first-of-type{border-top:none;padding-top:0}
+@media(max-width:768px){.page{grid-template-columns:1fr}
+nav.toc{position:relative;height:auto}}
+</style>
+</head>
+<body>
+<div class="page">
+  <nav class="toc">
+    <h2>目录</h2>
+    <ol>
+<li><a href="concept_autonomic_nervous_system_zh.html">自主神经系统</a></li>
+<li><a href="concept_respiration_mechanics_zh.html">呼吸力学</a></li>
+<li><a href="concept_skeletal_muscle_contraction_zh.html">骨骼肌收缩</a></li>
+<li><a href="concept_cardiac_output_zh.html">心输出量</a></li>
+<li><a href="concept_diaphragmatic_breathing_zh.html">腹式呼吸</a></li>
+<li><a href="concept_venous_return_zh.html">静脉回流</a></li>
+<li><a href="concept_fascia_zh.html">筋膜</a></li>
+<li><a href="concept_joint_range_of_motion_zh.html">关节活动度</a></li>
+<li><a href="concept_myofascial_lines_zh.html">肌筋膜链</a></li>
+<li><a href="concept_skeletal_muscle_pump_zh.html">骨骼肌泵</a></li>
+<li><a href="concept_intra_abdominal_pressure_zh.html">腹内压</a></li>
+<li><a href="concept_sympathetic_parasympathetic_balance_zh.html">交感与副交感神经平衡</a></li>
+<li><a href="concept_core_stability_zh.html">核心稳定</a></li>
+<li><a href="concept_lymphatic_system_zh.html">淋巴系统</a></li>
+<li><a href="concept_posterior_chain_zh.html">后侧链</a></li>
+<li><a href="concept_regional_blood_flow_distribution_zh.html">血流的区域分配</a></li>
+<li><a href="concept_respiratory_pump_zh.html">呼吸泵</a></li>
+<li><a href="concept_thoracic_mobility_zh.html">胸椎与胸廓灵活性</a></li>
+<li><a href="concept_vagal_tone_and_hrv_zh.html">迷走神经张力与心率变异性</a></li>
+<li><a href="concept_interoception_zh.html">内感受</a></li>
+<li><a href="concept_lymph_flow_zh.html">淋巴流动</a></li>
+<li><a href="concept_spinal_rotation_and_lateral_flexion_zh.html">脊柱旋转与侧屈</a></li>
+<li><a href="concept_squat_mechanics_zh.html">深蹲力学</a></li>
+<li><a href="concept_tension_relaxation_cycling_zh.html">松紧交替</a></li>
+<li><a href="concept_tidal_volume_and_gas_exchange_zh.html">潮气量与气体交换</a></li>
+<li class="toc-target"><a href="concept_dual_lens_translation_zh.html">双重视角：中医与生理学的互译</a></li>
+</ol>
+  </nav>
+  <main>
+    <h1 class="book-title">概念书: 双重视角：中医与生理学的互译</h1>
+    <p class="subtitle">Meta Health Ch02 &middot; Generated by SPL</p>
+    <section>
+      <section>
+      <h2 id="学以致用">学以致用</h2>
+<p>到目前为止，本书建立了两条并行的语言：一条描述可测量的生理信号——潮气量、迷走神经张力与心率变异性、淋巴流动、脊柱旋转与侧屈、深蹲力学；另一条描述中医用以组织身体经验的术语——肺气、肾根、松紧交替。双重视角：中医与生理学的互译，正是把这两条语言接通的最后一步。它不是宣称二者等同，而是提供一套翻译规则：哪些中医表述对应明确的生理机制，哪些只是合理但尚未证实的关联，哪些纯属比喻性的类比。这正是全书的自然终点——前面每一个概念都在积累"素材"，而互译本身教会读者如何判断素材属于哪一类。</p>
+<p>以"肺气不降"为例。中医认为，肺气应当向下、向外舒展，肺气郁滞则表现为胸闷、呼吸浅促。翻译成生理学语言，这对应着胸廓扩张受限与潮气量下降——吸气时膈肌下降、肋骨外展不充分，导致每次呼吸交换的气体量减少，进而影响血氧与二氧化碳的清除效率。这一层对应是机制性的：胸廓活动度和潮气量都可以直接测量，二者之间的因果链条也在生理学中有明确记录。深呼吸训练扩大胸廓活动度，同时被中医描述为"宣肺理气"、被生理学描述为"提高潮气量、增强迷走神经张力从而提升心率变异性"——两种语言在此描述的是同一个可观察的改善。</p>
+<p>再看"肾为先天之本，肾根在足跟"。中医将下肢稳定性和体力根基归于肾。翻译过来，这对应小腿肌肉泵与后链（腘绳肌、臀肌、竖脊肌）在深蹲和站立姿势中的力学支撑作用——小腿肌肉收缩推动静脉血回流，后链肌群维持脊柱中立位。这一层对应更接近合理推测：功能上确实相关，但"肾"在中医里同时涵盖内分泌、生殖、衰老等多重含义，不能简单等同于某一组肌肉。而"肾主纳气""肾不纳气则气喘"这类表述，则更多是隐喻性的——它描述的是虚弱、气短的整体印象，并没有对应单一、可定位的生理通路。</p>
+<p>练习：选择一个你熟悉的中医表述（如"心主血脉""肝主疏泄"），尝试写出它对应的生理指标，并判断你的翻译属于机制性、合理性还是比喻性对应——这正是本书希望你带走的能力：不轻信、也不轻易否定，而是学会追问"这句话在生理学上到底说了什么"。</p>
+    </section>
+    </section>
+    <footer class="spl-credit"><span class="spl-credit__meta">Ch2: The Physiology Lens — Breath, Circulation, Fascia, and Core (生理视角) (Level: College &middot; Language: ZH &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
+  </main>
+</div>
+</body>
+</html>

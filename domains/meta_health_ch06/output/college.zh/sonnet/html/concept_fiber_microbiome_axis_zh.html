@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>膳食纤维与肠道菌群 | Meta Health Ch06</title>
+<script>
+MathJax = {
+  loader: { load: ['[tex]/mathtools'] },
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']],
+         packages: { '[+]': ['mathtools'] } },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<script src="https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.min.js"></script>
+<script>mermaid.initialize({ startOnLoad: true, theme: 'neutral' });</script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+footer.spl-credit span{display:block}
+footer.spl-credit .spl-credit__meta{margin-bottom:4px}
+.cb-figure{margin:24px 0;text-align:center}
+.cb-figure img{max-width:100%;height:auto;border:1px solid #e0e0d8;border-radius:6px}
+figcaption{font-size:.82rem;color:#666;margin-top:8px;font-style:italic;text-align:center}
+pre.mermaid{background:none;border:none;padding:0;overflow:visible;margin:16px 0}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="膳食纤维与肠道菌群">膳食纤维与肠道菌群</h2>
+<p><strong>定义。</strong> 膳食纤维是人体小肠消化酶无法分解的碳水化合物,主要来自全谷物、豆类、蔬菜、水果和坚果。它们到达结肠后,成为肠道细菌的食物。细菌通过发酵把纤维转化为<strong>短链脂肪酸</strong>,主要是乙酸、丙酸和丁酸。这条"纤维→细菌→短链脂肪酸→宿主"的通路,就是膳食纤维与肠道菌群轴。</p>
+<p>三种主要产物的作用各有侧重:</p>
+<p>| 短链脂肪酸 | 主要去向 | 主要作用 | |---|---|---| | 丁酸 | 结肠上皮细胞 | 为肠黏膜供能,维持肠屏障 | | 丙酸 | 经门静脉到肝脏 | 参与肝脏糖代谢调节 | | 乙酸 | 进入外周血液 | 参与能量代谢,影响食欲信号 |</p>
+<p>短链脂肪酸还能刺激肠道细胞分泌 GLP-1、PYY 等饱腹激素,并抑制促炎信号,所以与食欲和炎症调节有关。多数结论来自动物实验和短期人体研究。吃多少纤维才能带来明确的临床获益,仍在研究中。</p>
+<p><strong>例题。</strong> 小李的早餐是白面包和果汁,午餐是白米饭加少量蔬菜,晚餐是肉类。他估算自己每天摄入约 14 g 膳食纤维。多国指南的常见推荐量是成年人每天 25~30 g(中国居民膳食指南建议约 25~30 g)。</p>
+<p>问:他还差多少?怎样补足?</p>
+<p><em>解:</em> 差额为 $25 - 14 = 11\ \text{g}$。可以做如下替换:</p>
+<li>白面包换成燕麦粥(约 4 g 纤维),增加约 3 g</li>
+<li>午餐白米饭换成一半糙米(约 2 g),增加约 2 g</li>
+<li>加一份熟豆类(半杯约 6~7 g)</li>
+<li>加一个苹果(带皮约 4 g)</li>
+<p>合计增加约 $3+2+6+4=15\ \text{g}$,总量约 29 g,达到目标。</p>
+<p><strong>问题应用。</strong> 提高纤维摄入时有三条实用规则:</p>
+<li><strong>循序渐进。</strong> 细菌需要时间适应。若每天从 14 g 骤增到 40 g,常见腹胀和产气。每周增加约 5 g 较稳妥,同时多喝水。</li>
+<li><strong>种类多样。</strong> 不同细菌偏爱不同纤维。同时吃全谷物、豆类、蔬菜、水果和坚果,比只大量吃一种更能支持多样的菌群。</li>
+<li><strong>留意个体差异。</strong> 肠易激综合征患者对某些可发酵纤维(如低聚糖、多元醇)敏感。症状明显时,应在医生或营养师指导下调整,不要自行大幅增减。</li>
+<p><strong>练习。</strong> 一位女士每天摄入 18 g 纤维,计划 4 周内增至 28 g。请算出每周平均应增加多少克,并写出一天的食谱调整。(提示:$\frac{28-18}{4}=2.5\ \text{g/周}$,每周约加半个苹果或四分之一杯豆类即可。)</p>
+  </main>
+  <footer class="spl-credit"><span class="spl-credit__meta">Ch6: What We Eat — Food Quality, Four Natures, and Five Flavors (四气五味) (Level: College &middot; Language: ZH &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
+</div>
+</body>
+</html>

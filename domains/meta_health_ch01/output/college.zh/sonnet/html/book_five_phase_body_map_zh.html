@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>概念书: 五行身体地图 — Meta Health Ch01</title>
+<script>
+MathJax = {
+  loader: { load: ['[tex]/mathtools'] },
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']],
+         packages: { '[+]': ['mathtools'] } },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<script src="https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.min.js"></script>
+<script>mermaid.initialize({ startOnLoad: true, theme: 'neutral' });</script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+footer.spl-credit span{display:block}
+footer.spl-credit .spl-credit__meta{margin-bottom:4px}
+.cb-figure{margin:24px 0;text-align:center}
+.cb-figure img{max-width:100%;height:auto;border:1px solid #e0e0d8;border-radius:6px}
+figcaption{font-size:.82rem;color:#666;margin-top:8px;font-style:italic;text-align:center}
+pre.mermaid{background:none;border:none;padding:0;overflow:visible;margin:16px 0}
+.page{display:grid;grid-template-columns:260px 1fr;min-height:100vh}
+nav.toc{position:sticky;top:0;height:100vh;overflow-y:auto;
+        background:#1e3a5f;color:#e8f0fe;padding:24px 16px}
+nav.toc h2{font-size:.75rem;letter-spacing:.1em;text-transform:uppercase;
+           color:#90b4e8;margin-bottom:14px;font-family:system-ui,sans-serif}
+nav.toc ol{list-style:decimal inside;padding:0}
+nav.toc li{margin-bottom:7px;font-size:.85rem;line-height:1.4;font-family:system-ui,sans-serif}
+nav.toc a{color:#a8c8f0;text-decoration:none}
+nav.toc a:hover{color:#fff}
+nav.toc li.toc-target{font-weight:700}
+nav.toc li.toc-target a{color:#fff}
+main{padding:48px 64px;max-width:860px}
+h1.book-title{font-size:2rem;color:#1e3a5f;margin-bottom:4px}
+.subtitle{color:#666;margin-bottom:48px;font-size:1rem;font-style:italic;font-family:system-ui,sans-serif}
+section{margin-bottom:56px;border-top:1px solid #e0e0d8;padding-top:40px}
+section:first-of-type{border-top:none;padding-top:0}
+@media(max-width:768px){.page{grid-template-columns:1fr}
+nav.toc{position:relative;height:auto}}
+</style>
+</head>
+<body>
+<div class="page">
+  <nav class="toc">
+    <h2>目录</h2>
+    <ol>
+<li><a href="concept_qi_zh.html">气</a></li>
+<li><a href="concept_five_phases_wuxing_zh.html">五行</a></li>
+<li><a href="concept_blood_xue_zh.html">血</a></li>
+<li><a href="concept_essence_jing_zh.html">精</a></li>
+<li><a href="concept_five_zang_organs_zh.html">五脏</a></li>
+<li><a href="concept_body_fluids_jinye_zh.html">津液</a></li>
+<li><a href="concept_controlling_cycle_xiangke_zh.html">五行相克</a></li>
+<li><a href="concept_six_fu_organs_zh.html">六腑</a></li>
+<li><a href="concept_generating_cycle_xiangsheng_zh.html">五行相生</a></li>
+<li><a href="concept_meridian_jingluo_zh.html">经络</a></li>
+<li><a href="concept_qi_blood_relationship_zh.html">气血关系</a></li>
+<li><a href="concept_spirit_shen_zh.html">神</a></li>
+<li><a href="concept_yin_yang_zh.html">阴阳</a></li>
+<li><a href="concept_overacting_and_insulting_zh.html">相乘相侮</a></li>
+<li><a href="concept_qi_stagnation_blood_stasis_zh.html">气滞血瘀</a></li>
+<li><a href="concept_three_treasures_jing_qi_shen_zh.html">精气神三宝</a></li>
+<li><a href="concept_zang_fu_pairing_zh.html">脏腑表里</a></li>
+<li><a href="concept_dantian_zh.html">丹田</a></li>
+<li><a href="concept_five_phase_correspondences_zh.html">五行归类</a></li>
+<li><a href="concept_harmony_as_health_zh.html">阴平阳秘：以平衡为健康</a></li>
+<li><a href="concept_heart_kidney_interaction_zh.html">心肾相交</a></li>
+<li><a href="concept_liver_spleen_relationship_zh.html">肝脾关系</a></li>
+<li><a href="concept_prenatal_postnatal_qi_zh.html">先天之本与后天之本</a></li>
+<li><a href="concept_triple_burner_sanjiao_zh.html">三焦</a></li>
+<li><a href="concept_twelve_primary_meridians_zh.html">十二经脉</a></li>
+<li class="toc-target"><a href="concept_five_phase_body_map_zh.html">五行身体地图</a></li>
+</ol>
+  </nav>
+  <main>
+    <h1 class="book-title">概念书: 五行身体地图</h1>
+    <p class="subtitle">Meta Health Ch01 &middot; Generated by SPL</p>
+    <section>
+      <section>
+      <h2 id="学以致用">学以致用</h2>
+<p>五行身体地图的目的，是把零散的身体信号读成一张相互关联的图，而不是逐条背诵的清单。中医认为，身体各部分彼此牵连：一个日常表现，往往能顺着脏腑关系、生克规律追到更深一层。这就是它成为全书终点的原因：前面每个概念各管一块，这里才把它们合在一起使用。</p>
+<h3 id="各概念如何汇合">各概念如何汇合</h3>
+<li><strong>五行归类</strong>提供底表：肝属木，脾属土，心属火，肾属水，肺属金，并对应情志、五味、季节等。</li>
+<li><strong>三焦</strong>给出纵向分区：上焦（心肺）、中焦（脾胃）、下焦（肝肾），说明信号发生在哪一层。</li>
+<li><strong>丹田</strong>标出三个“中心”：下丹田位于脐下，被视为蓄养之处。</li>
+<li><strong>先天之本与后天之本</strong>区分来源：肾为先天之本，脾为后天之本。</li>
+<li><strong>十二经脉</strong>是连接各脏腑的通路，解释为何一处的问题会在别处出现症状。</li>
+<li><strong>心肾相交</strong>与<strong>肝脾关系</strong>是两个已展开的具体例子。</li>
+<li><strong>阴平阳秘</strong>是判断标准：地图读出的是哪里偏离了平稳，而不是给每个器官打分。</li>
+<h3 id="例题-易怒伴食欲差">例题：易怒伴食欲差</h3>
+<p>一位大学生考试周连续熬夜，近来容易发火、胁肋胀闷，吃饭没胃口，饭后腹胀。用地图读它，分四步：</p>
+<li><strong>定位</strong>：易怒、胁胀属木（肝）；食欲差、腹胀属土（脾），位于中焦。</li>
+<li><strong>查关系</strong>：五行相克中木克土。中医认为，肝气郁结时疏泄失常，会影响脾的运化，这正是肝脾关系的典型表现。</li>
+<li><strong>看根基</strong>：脾是后天之本，熬夜与饮食不规律先伤后天；久而不复，才考虑牵动肾这一先天之本。</li>
+<li><strong>定方向</strong>：处理的是“木过度制约土”的关系，而不是只盯着“没胃口”。生活层面可做的是规律作息、三餐定时、适度运动缓解压力；若症状持续，应就医，由医生辨证。</li>
+<h3 id="练习应用">练习应用</h3>
+<p>同样的方法可以读另一个信号：入睡困难、心烦，同时腰膝酸软。</p>
+<li><strong>定位</strong>：心烦属火（心，上焦），腰膝酸软与肾（下焦）相关。</li>
+<li><strong>查关系</strong>：这是心肾相交失调的典型表述：心火在上，肾水在下，两者本应互相沟通。</li>
+<li><strong>追问</strong>：先天之本是否被长期透支？这个问题引导你记录作息和压力，不是下诊断。</li>
+<p>注意，地图是一种整理思路的框架，用于提出假设和提问；它的证据基础有限，不能代替现代医学检查。出现持续疼痛、体重骤变、胸闷心悸等症状时，应先排除器质性疾病。</p>
+<h3 id="继续探索">继续探索</h3>
+<p>下一步，请你做一周的“身体日志”：每天记录睡眠时间、食欲、情绪、大便和精力，周末对照上面的步骤，试着把其中两三个信号连成一条线：它们落在哪个五行？处在哪一焦？彼此是生还是克？把你的读图结果与老师或中医师讨论，看他们如何修正。能把这张图读顺，本书的概念才算真正合成了一个整体。</p>
+    </section>
+    </section>
+    <footer class="spl-credit"><span class="spl-credit__meta">Ch1: TCM Foundations — Yin-Yang, Qi-Blood, and the Five Phases (中医基础) (Level: College &middot; Language: ZH &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
+  </main>
+</div>
+</body>
+</html>

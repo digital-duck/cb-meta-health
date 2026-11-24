@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>每日抗压练习 | Meta Health Ch07</title>
+<script>
+MathJax = {
+  loader: { load: ['[tex]/mathtools'] },
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']],
+         packages: { '[+]': ['mathtools'] } },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<script src="https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.min.js"></script>
+<script>mermaid.initialize({ startOnLoad: true, theme: 'neutral' });</script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+footer.spl-credit span{display:block}
+footer.spl-credit .spl-credit__meta{margin-bottom:4px}
+.cb-figure{margin:24px 0;text-align:center}
+.cb-figure img{max-width:100%;height:auto;border:1px solid #e0e0d8;border-radius:6px}
+figcaption{font-size:.82rem;color:#666;margin-top:8px;font-style:italic;text-align:center}
+pre.mermaid{background:none;border:none;padding:0;overflow:visible;margin:16px 0}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="每日抗压练习">每日抗压练习</h2>
+<p><strong>定义。</strong> 每日抗压练习是一套固定、简短、可重复的日常安排，目的是在压力积累之前就打断它，并保护消化功能。它由四个部分组成：</p>
+<li><strong>餐前三次慢呼吸</strong>：进食前用鼻吸气约4秒、缓慢呼气约6秒，重复三次。</li>
+<li><strong>紧张时的舒肝动作</strong>：在肩颈或胁肋部紧绷时，做侧向伸展、扩胸或缓慢扭转，每次2到3分钟。</li>
+<li><strong>傍晚的放松流程</strong>：睡前一小时调暗灯光、放下屏幕，做轻柔拉伸或安静阅读。</li>
+<li><strong>反馈记录</strong>：用心率变异性（HRV）或情绪日记检查练习是否有效。</li>
+<p>中医认为，情志不畅会使“肝木”过度，克伐“脾土”，称为“木旺乘土”，表现为紧张时胃胀、食欲忽高忽低、大便不规律。现代生理学对应的解释是：压力使交感神经活跃，减慢胃排空，并扰乱肠道运动。缓慢呼气能增强迷走神经的活动，这有可靠的实验支持。“肝气”“木乘土”本身是中医的理论框架，不是已被检验的解剖机制。</p>
+<p><strong>例题。</strong> 小林是一名程序员，常在午饭时因赶项目而紧张，饭后胃胀。她从周一开始执行这套练习，并在每晚睡前用手环测量静息心率变异性（常用指标为RMSSD，单位为毫秒）。</p>
+<li>基线一周：RMSSD平均为 $28\ \text{ms}$，每周约有4天饭后胃胀。</li>
+<li>练习第三周：RMSSD平均为 $34\ \text{ms}$，每周饭后胃胀减少到1天。</li>
+<p>变化幅度为：</p>
+$$\frac{34-28}{28}\times 100\% \approx 21\%$$
+<p>HRV上升与迷走神经活动增强的方向一致，胃胀天数也减少。但手环的测量误差、工作量的变化、睡眠和咖啡摄入都会影响结果，所以这只是一个相关的信号，不能证明因果。</p>
+<p><strong>问题解决应用。</strong> 练习没有效果时，按下面的步骤排查：</p>
+<p>| 现象 | 可能原因 | 调整 | |---|---|---| | 做了呼吸但仍然胃胀 | 吃得太快，或餐中仍在看工作消息 | 把第一口之前的停顿延长到30秒，并收起手机 | | HRV没有变化 | 测量时间不固定，或睡前饮酒 | 每天同一时间测量，至少记录两周再比较 | | 舒肝动作很难坚持 | 触发信号太模糊 | 设定具体提示，例如每次开会结束后做一次 | | 日记中“紧张”和胀气同时出现 | 压力确实在影响消化 | 保留餐前呼吸，并减少高脂、辛辣的快餐 |</p>
+<p><strong>需要注意。</strong> 如果胃胀伴有体重下降、黑便、持续呕吐或夜间腹痛，要先就医检查，不能用放松练习代替诊断。</p>
+<p><strong>小结。</strong> 先把三次慢呼吸固定在每一餐之前，因为它最短、最容易坚持。两周后看记录，再决定是否加入其他步骤。</p>
+  </main>
+  <footer class="spl-credit"><span class="spl-credit__meta">Ch7: Stress, Emotion, and the Flow of Qi and Blood (情志与气血) (Level: College &middot; Language: ZH &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
+</div>
+</body>
+</html>

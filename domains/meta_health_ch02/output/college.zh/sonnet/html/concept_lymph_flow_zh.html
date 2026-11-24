@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>淋巴流动 | Meta Health Ch02</title>
+<script>
+MathJax = {
+  loader: { load: ['[tex]/mathtools'] },
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']],
+         packages: { '[+]': ['mathtools'] } },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<script src="https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.min.js"></script>
+<script>mermaid.initialize({ startOnLoad: true, theme: 'neutral' });</script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+footer.spl-credit span{display:block}
+footer.spl-credit .spl-credit__meta{margin-bottom:4px}
+.cb-figure{margin:24px 0;text-align:center}
+.cb-figure img{max-width:100%;height:auto;border:1px solid #e0e0d8;border-radius:6px}
+figcaption{font-size:.82rem;color:#666;margin-top:8px;font-style:italic;text-align:center}
+pre.mermaid{background:none;border:none;padding:0;overflow:visible;margin:16px 0}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="淋巴流动">淋巴流动</h2>
+<p>淋巴系统是一套遍布全身的细小管道网络,负责收集组织间隙中多余的液体、蛋白质和免疫细胞,最终经锁骨下静脉汇入血液循环。与血液循环不同,淋巴系统没有独立的"泵"——没有心脏那样持续收缩的中心器官来驱动淋巴液流动。淋巴液的推进依赖三种外部机制:骨骼肌收缩挤压淋巴管、呼吸时胸腔与腹腔压力变化形成的"呼吸泵",以及淋巴管壁自身的节律性蠕动。淋巴管内每隔几毫米就有一个单向瓣膜,保证液体只能向心脏方向流动,不会倒流。</p>
+<p><strong>具体机制</strong>:静息状态下,人体每小时约有120毫升淋巴液流回血液,全天总量约2至4升。当小腿肌肉收缩时(例如走路时的踩踏动作),肌肉体积膨胀,挤压穿行其中的淋巴管,推动液体通过瓣膜前移;肌肉放松时,瓣膜关闭防止回流。深呼吸时膈肌下移,腹腔压力升高、胸腔压力降低,在胸导管两端形成压差,同样起到"抽吸"作用。因此,静态站立或久坐时,由于肌肉泵和呼吸泵作用减弱,淋巴液和组织液容易在下肢积聚,表现为脚踝或小腿肿胀。</p>
+<p><strong>应用分析</strong>:假设一名乘客乘坐8小时长途航班,全程久坐不动。下肢肌肉泵基本停止工作,淋巴回流速率可能从正常的120毫升/小时降至不足一半,组织间液持续积聚,导致踝部水肿,严重时还会增加深静脉血栓风险。解决办法并不神秘:每隔1小时起身走动5分钟,或做踝泵运动(反复勾脚、绷脚),即可重新激活肌肉泵,恢复淋巴回流。这也解释了为什么医生建议久坐人群、长期卧床患者以及淋巴水肿术后病人,都要通过主动活动或穿戴压力袜来维持淋巴流动。</p>
+<pre class="mermaid">flowchart LR
+    A[骨骼肌收缩] --> B[挤压淋巴管]
+    B --> C[单向瓣膜开启]
+    C --> D[淋巴液向心脏方向前移]
+    E[深呼吸] --> F[胸腹腔压差变化]
+    F --> D
+    G[久坐不动] --> H[肌肉泵与呼吸泵减弱]
+    H --> I[组织液积聚/肿胀]</pre>
+<p><em>淋巴液依靠肌肉收缩和呼吸产生的压力变化向前推进,久坐会削弱这两种驱动力,导致液体在组织中积聚。</em></p>
+  </main>
+  <footer class="spl-credit"><span class="spl-credit__meta">Ch2: The Physiology Lens — Breath, Circulation, Fascia, and Core (生理视角) (Level: College &middot; Language: ZH &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
+</div>
+</body>
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dantian (丹田) | Meta Health Ch04</title>
+<script>
+MathJax = {
+  loader: { load: ['[tex]/mathtools'] },
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']],
+         packages: { '[+]': ['mathtools'] } },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<script src="https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.min.js"></script>
+<script>mermaid.initialize({ startOnLoad: true, theme: 'neutral' });</script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+footer.spl-credit span{display:block}
+footer.spl-credit .spl-credit__meta{margin-bottom:4px}
+.cb-figure{margin:24px 0;text-align:center}
+.cb-figure img{max-width:100%;height:auto;border:1px solid #e0e0d8;border-radius:6px}
+figcaption{font-size:.82rem;color:#666;margin-top:8px;font-style:italic;text-align:center}
+pre.mermaid{background:none;border:none;padding:0;overflow:visible;margin:16px 0}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="dantian-丹田">Dantian (丹田)</h2>
+<p><strong>Definition.</strong> In Traditional Chinese Medicine (TCM), the <em>dantian</em> ("elixir field") is a region of the body regarded as a center where qi is gathered and stored. TCM describes three: upper (between the eyebrows), middle (the chest), and lower. The <strong>lower dantian</strong> (下丹田) is the one most often meant. It lies in the lower abdomen, roughly 2 to 3 finger-widths below the navel and deep to the surface. It is a location used in practice, not a discrete organ. Anatomists find no separate structure there, and qi itself has no established physiological measurement. Dantian is best understood as a <em>focus of attention and posture</em> in qigong, tai chi, and meditation.</p>
+<p><strong>What practitioners do with it.</strong> The practical core is a breathing and posture skill:</p>
+<p>| Step | Instruction | Physiological effect | |---|---|---| | 1 | Sit or stand with the spine long and shoulders relaxed | Reduces neck and shoulder tension | | 2 | Rest attention (or the hands) on the lower abdomen | Directs awareness to the belly wall | | 3 | Inhale slowly through the nose so the abdomen expands | Diaphragm descends, increasing lung volume | | 4 | Exhale slowly so the abdomen gently draws in | Diaphragm relaxes upward |</p>
+<p>Physiologically, "breathing into the dantian" is diaphragmatic (abdominal) breathing. Slow breathing at about 6 breaths per minute is associated with increased heart rate variability and reduced stress ratings in several small studies. These are modest, short-term effects. Claims that the dantian stores a literal energy, or that the practice cures disease, are not supported by evidence.</p>
+<p><strong>Worked example.</strong> A student wants to calm down before an exam. At rest she breathes 16 times per minute, each breath moving about 0.5 L of air:</p>
+$$\dot{V}_E = f \times V_T = 16 \times 0.5\ \text{L} = 8\ \text{L/min}$$
+<p>where $\dot V_E$ is minute ventilation, $f$ is breathing rate, and $V_T$ is tidal volume. She then practices dantian breathing at 6 breaths per minute with deeper breaths of 1.0 L:</p>
+$$\dot{V}_E = 6 \times 1.0\ \text{L} = 6\ \text{L/min}$$
+<p>Total ventilation falls slightly, yet each breath is larger. Deeper, slower breaths reach more of the lungs' gas-exchange surface. Some air only fills the airways, about 150 mL per breath (anatomical dead space). The air reaching the alveoli is therefore</p>
+$$\dot{V}_A = f \times (V_T - V_D)$$
+<p>At 16 breaths per minute: $16 \times (0.5 - 0.15) = 5.6$ L/min. At 6 breaths per minute: $6 \times (1.0 - 0.15) = 5.1$ L/min. Alveolar ventilation is about equal, achieved with far fewer, calmer breaths.</p>
+<p><strong>Problem-solving application.</strong> Suppose someone's breathing is shallow, with $f = 20$ and $V_T = 0.4$ L.</p>
+<li>Alveolar ventilation: $20 \times (0.4 - 0.15) = 5.0$ L/min.</li>
+<li>Slow to $f = 8$ with $V_T = 0.9$ L: $8 \times (0.9 - 0.15) = 6.0$ L/min.</li>
+<p>Alveolar ventilation improves by 1.0 L/min with fewer breaths, which shows why slow, deep abdominal breathing is more efficient than rapid shallow breathing.</p>
+<p><strong>Practical caution.</strong> Keep the breathing comfortable. Straining, breath-holding, or forcing the abdomen out can cause dizziness or discomfort. People with respiratory or cardiovascular conditions should consult a clinician before starting breathing practices.</p>
+  </main>
+  <footer class="spl-credit"><span class="spl-credit__meta">Ch4: Baduanjin — The Eight Brocades (八段锦) (Level: College &middot; Language: EN &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
+</div>
+</body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Meal Timing and Chrononutrition | Meta Health Ch06</title>
+<script>
+MathJax = {
+  loader: { load: ['[tex]/mathtools'] },
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']],
+         packages: { '[+]': ['mathtools'] } },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<script src="https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.min.js"></script>
+<script>mermaid.initialize({ startOnLoad: true, theme: 'neutral' });</script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+footer.spl-credit span{display:block}
+footer.spl-credit .spl-credit__meta{margin-bottom:4px}
+.cb-figure{margin:24px 0;text-align:center}
+.cb-figure img{max-width:100%;height:auto;border:1px solid #e0e0d8;border-radius:6px}
+figcaption{font-size:.82rem;color:#666;margin-top:8px;font-style:italic;text-align:center}
+pre.mermaid{background:none;border:none;padding:0;overflow:visible;margin:16px 0}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="meal-timing-and-chrononutrition">Meal Timing and Chrononutrition</h2>
+<p><strong>Definition.</strong> Chrononutrition is the study of <em>when</em> we eat, not only what or how much. Human metabolism follows a circadian rhythm, a roughly 24-hour cycle driven by a master clock in the brain and by clocks in the liver, pancreas, gut, and fat tissue. Light sets the master clock. Eating times help set the peripheral clocks. In controlled studies, the same meal eaten in the evening usually produces a higher and longer blood glucose rise than it does in the morning, because insulin sensitivity is highest earlier in the day and falls toward night. Melatonin released in the evening also dampens insulin secretion.</p>
+<p>In TCM, the late-night eating concern is described as "forcing the organs to work overtime." This is a metaphor, not a measured mechanism. The physiological version is the clock mismatch described above. Human trials do support that mismatch, but they are small and short-term. Evidence from long-term outcomes is weaker.</p>
+<p><strong>Worked example.</strong> Suppose a lab gives the same 600 kcal meal to one volunteer at two times, and measures blood glucose in mg/dL.</p>
+<p>| Meal time | Fasting glucose | Peak glucose | Rise | |---|---|---|---| | 8:00 a.m. | 90 | 135 | 45 | | 9:00 p.m. | 90 | 160 | 70 |</p>
+<p>The rise is the peak minus the fasting value, so the morning rise is $135 - 90 = 45$ mg/dL and the evening rise is $160 - 90 = 70$ mg/dL. The evening response is $\frac{70 - 45}{45} \approx 56\%$ larger for an identical meal. (These numbers are illustrative, but the direction matches published findings.)</p>
+<p><strong>Problem-solving application.</strong> Consider a student who eats 2,000 kcal a day, with 200 kcal at breakfast, 500 at lunch, and 1,300 after 8:00 p.m. because of evening study. How should they adjust?</p>
+<li><strong>Identify the problem.</strong> Of the day's energy, $\frac{1300}{2000} = 65\%$ comes at the time of day when glucose handling is weakest. It also falls close to sleep. Lying down soon after a large meal can worsen reflux and disturb sleep.</li>
+<li><strong>Shift, don't just cut.</strong> Moving 500 kcal from the late meal to breakfast and a mid-afternoon snack gives roughly 400, 600, and 800 kcal. The daily total is unchanged, so any benefit comes from timing alone.</li>
+<li><strong>Set a practical window.</strong> Many studies of time-restricted eating use a 8 to 10 hour window, for example 8:00 a.m. to 6:00 p.m. A finishing time about 3 hours before bed is a reasonable target.</li>
+<li><strong>Handle exceptions.</strong> Shift workers, athletes training late, and people on glucose-lowering medication have different needs. Their timing should be planned with a clinician or dietitian rather than copied from a general rule.</li>
+<li><strong>Check the result.</strong> Track morning energy, sleep quality, and, if available, fasting glucose over 2 to 4 weeks. If nothing improves, the timing change may matter less for that person than total diet quality.</li>
+<p><strong>Key takeaway.</strong> Meal timing is a modifiable factor that shifts how the body handles the same food. It supports eating more of the day's energy earlier and avoiding large meals close to bedtime. It does not replace attention to total calories and food quality.</p>
+  </main>
+  <footer class="spl-credit"><span class="spl-credit__meta">Ch6: What We Eat — Food Quality, Four Natures, and Five Flavors (四气五味) (Level: College &middot; Language: EN &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
+</div>
+</body>
+</html>

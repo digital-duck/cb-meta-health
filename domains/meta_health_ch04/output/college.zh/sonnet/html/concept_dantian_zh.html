@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>丹田 | Meta Health Ch04</title>
+<script>
+MathJax = {
+  loader: { load: ['[tex]/mathtools'] },
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']],
+         packages: { '[+]': ['mathtools'] } },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<script src="https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.min.js"></script>
+<script>mermaid.initialize({ startOnLoad: true, theme: 'neutral' });</script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+footer.spl-credit span{display:block}
+footer.spl-credit .spl-credit__meta{margin-bottom:4px}
+.cb-figure{margin:24px 0;text-align:center}
+.cb-figure img{max-width:100%;height:auto;border:1px solid #e0e0d8;border-radius:6px}
+figcaption{font-size:.82rem;color:#666;margin-top:8px;font-style:italic;text-align:center}
+pre.mermaid{background:none;border:none;padding:0;overflow:visible;margin:16px 0}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="丹田">丹田</h2>
+<p><strong>定义。</strong> 丹田(dāntián)是中医(Traditional Chinese Medicine,TCM)和气功、内丹传统中的一个概念,字面意思是“炼丹之田”。TCM 认为,丹田是人体储藏和转化“气”的部位,常说的有上、中、下三个丹田。本章讨论的是<strong>下丹田</strong>,通常指脐下约三指(约 1.5 至 3 寸)、位于腹部深处的区域,相当于关元穴、气海穴附近。需要说明:丹田不是解剖学结构,腹部没有一个能被手术或影像发现的“丹田器官”。它是一个用于定位、训练和描述体感的概念。</p>
+<p><strong>对应的真实解剖。</strong> 下丹田所在的位置,在解剖学上包括小肠、膀胱、子宫或前列腺等脏器,以及腹横肌、盆底肌、腹直肌、膈肌等核心肌群。重心(人体质量中心)在直立时大约位于第二骶椎前方,也在这一区域附近。因此,练习者说的“气沉丹田”,在可检验的层面上,更接近下面这些生理动作:</p>
+<p>| 传统说法 | 可观察的生理对应 | |---|---| | 气沉丹田 | 腹式呼吸:吸气时膈肌下降,腹部向外扩张 | | 意守丹田 | 把注意力集中在下腹,有助于放松和调节呼吸节律 | | 丹田有力 | 腹横肌与盆底肌的核心稳定性 |</p>
+<p>腹式呼吸、放松训练对降低心率和缓解紧张有一定的研究支持;但“气”在丹田中积聚、运行这一说法,目前没有可测量的客观证据。</p>
+<p><strong>例题。</strong> 一位练习者静坐时每分钟呼吸 16 次,每次潮气量约 $0.5\ \text{L}$。改为腹式慢呼吸后,每分钟 6 次,潮气量增至 $1.0\ \text{L}$。比较每分钟通气量,并考虑死腔的影响。</p>
+<p>每分钟通气量等于呼吸频率乘以潮气量:</p>
+$$
+\dot V_E = f \times V_T
+$$
+<p>练习前:$16 \times 0.5 = 8.0\ \text{L/min}$;练习后:$6 \times 1.0 = 6.0\ \text{L/min}$。</p>
+<p>设解剖死腔约 $0.15\ \text{L}$,则肺泡通气量为 $f \times (V_T - V_D)$:</p>
+<li>练习前:$16 \times (0.5 - 0.15) = 5.6\ \text{L/min}$</li>
+<li>练习后:$6 \times (1.0 - 0.15) = 5.1\ \text{L/min}$</li>
+<p><strong>问题解决应用。</strong> 总通气量下降了 25%,而肺泡通气量只下降约 9%。这说明深慢呼吸让每一口气中更大比例用于气体交换,效率更高。因此,练习者可以用更少的呼吸次数,维持接近的肺泡通气。</p>
+<p>实际练习时,可以这样检验自己的“丹田呼吸”:</p>
+<li>一手放在肚脐下方,另一手放在胸口。</li>
+<li>吸气时,下腹的手应先被推起,胸口的手几乎不动。</li>
+<li>数 1 分钟的呼吸次数,目标为 6 至 8 次。</li>
+<li>若出现头晕、手麻,说明过度通气,应立即恢复自然呼吸。</li>
+<p><strong>小结。</strong> 丹田是 TCM 与气功中定位下腹的概念,而不是解剖结构。它的实用价值体现在可以验证的部分:腹式呼吸、核心稳定与放松。把传统术语翻译成可观察的动作,既能保留训练方法,也避免把无法检验的说法当作生理事实。</p>
+  </main>
+  <footer class="spl-credit"><span class="spl-credit__meta">Ch4: Baduanjin — The Eight Brocades (八段锦) (Level: College &middot; Language: ZH &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
+</div>
+</body>
+</html>

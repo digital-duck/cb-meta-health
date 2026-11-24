@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>静脉回流 | Meta Health Ch02</title>
+<script>
+MathJax = {
+  loader: { load: ['[tex]/mathtools'] },
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']],
+         packages: { '[+]': ['mathtools'] } },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<script src="https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.min.js"></script>
+<script>mermaid.initialize({ startOnLoad: true, theme: 'neutral' });</script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+footer.spl-credit span{display:block}
+footer.spl-credit .spl-credit__meta{margin-bottom:4px}
+.cb-figure{margin:24px 0;text-align:center}
+.cb-figure img{max-width:100%;height:auto;border:1px solid #e0e0d8;border-radius:6px}
+figcaption{font-size:.82rem;color:#666;margin-top:8px;font-style:italic;text-align:center}
+pre.mermaid{background:none;border:none;padding:0;overflow:visible;margin:16px 0}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="静脉回流">静脉回流</h2>
+<p>静脉回流是指血液经由静脉系统流回心脏（右心房）的过程。与动脉不同，静脉内压力很低，血流主要依靠三种机制驱动：骨骼肌收缩时对邻近静脉的挤压（骨骼肌泵）、呼吸时胸腔与腹腔压力变化形成的抽吸作用（呼吸泵），以及静脉内的单向瓣膜，防止血液因重力而倒流。这三者共同决定了单位时间内回到心脏的血量。</p>
+<p>静脉回流量与心脏泵出的血量（心输出量）密切相关。心脏本身不能凭空产生血液，它只能泵出流入右心房的血液；因此在稳定状态下，心输出量必须等于静脉回流量。生理学中用一个简化关系描述驱动静脉回流的压力差：</p>
+$$
+Q_v = \frac{P_{ms} - P_{ra}}{R_v}
+$$
+<p>其中 $Q_v$ 为静脉回流量，$P_{ms}$ 为体循环平均充盈压（血管系统中血液的平均压力），$P_{ra}$ 为右心房压，$R_v$ 为静脉回流的阻力。</p>
+<p><strong>举例说明</strong>：长时间站立不动时，重力使血液淤积在下肢静脉中，骨骼肌泵不工作，静脉回流减少，右心房压 $P_{ra}$ 相对下降，导致心输出量降低，可能引起头晕（体位性低血压）。反之，运动时腿部肌肉有节律地收缩，像泵一样把血液挤向心脏，加上呼吸加深加快，静脉回流显著增加，心输出量随之上升，这正是运动时心脏能泵出更多血液的关键前提之一。</p>
+<p><strong>应用</strong>：医生建议久坐或久站人群穿弹力袜、定时活动小腿，正是通过增强骨骼肌泵作用、减少静脉血液淤积，来维持足够的静脉回流和血压稳定；同样，飞行员在承受高重力加速度时通过绷紧下肢肌肉（M-1动作）来对抗血液向下肢的过度淤积，也是同一原理的实际应用。</p>
+<pre class="mermaid">flowchart LR
+    A[外周静脉血液] --> B[骨骼肌泵挤压]
+    A --> C[呼吸泵抽吸]
+    B --> D[静脉瓣膜阻止倒流]
+    C --> D
+    D --> E[右心房]
+    E --> F[心输出量]</pre>
+<p><em>图示：骨骼肌泵与呼吸泵驱动静脉血液经单向瓣膜回流至右心房，最终决定心输出量。</em></p>
+  </main>
+  <footer class="spl-credit"><span class="spl-credit__meta">Ch2: The Physiology Lens — Breath, Circulation, Fascia, and Core (生理视角) (Level: College &middot; Language: ZH &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
+</div>
+</body>
+</html>

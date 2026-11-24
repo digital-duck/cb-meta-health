@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>心肾相交 | Meta Health Ch04</title>
+<script>
+MathJax = {
+  loader: { load: ['[tex]/mathtools'] },
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']],
+         packages: { '[+]': ['mathtools'] } },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<script src="https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.min.js"></script>
+<script>mermaid.initialize({ startOnLoad: true, theme: 'neutral' });</script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+footer.spl-credit span{display:block}
+footer.spl-credit .spl-credit__meta{margin-bottom:4px}
+.cb-figure{margin:24px 0;text-align:center}
+.cb-figure img{max-width:100%;height:auto;border:1px solid #e0e0d8;border-radius:6px}
+figcaption{font-size:.82rem;color:#666;margin-top:8px;font-style:italic;text-align:center}
+pre.mermaid{background:none;border:none;padding:0;overflow:visible;margin:16px 0}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="心肾相交">心肾相交</h2>
+<p><strong>定义。</strong> 心肾相交(又称水火既济)是中医(TCM)用来描述心与肾之间相互协调的说法。中医认为,心位于上,属火,主神志;肾位于下,属水,主藏精。心火应下降以温养肾水,肾水应上升以滋润心火,二者上下交通,人才能入睡安稳、精神充沛。若这种交通失常,称为"心肾不交",典型表现为失眠、多梦、心悸、心烦、五心烦热、腰膝酸软、盗汗等。需要说明的是,这是一种以症状归纳为基础的传统理论框架,"心火""肾水"并不对应现代解剖学上的单一结构;它的现代对应关系目前缺乏确证。</p>
+<p><strong>现代生理学中可以量化的相关联系。</strong> 心脏与肾脏之间确实存在已被充分证实的相互作用,称为"心肾综合征"。心脏每搏输出量下降会使肾灌注减少;肾功能下降则导致水钠潴留,增加心脏负荷。常用的量化关系是:</p>
+$$CO = HR \times SV$$
+<p>其中 $CO$ 为心输出量,$HR$ 为心率,$SV$ 为每搏输出量。肾脏约接受心输出量的 $20\%$ 至 $25\%$。</p>
+<p><strong>例题。</strong> 某患者静息心率 $HR = 70$ 次/分,每搏输出量 $SV = 70\ \text{mL}$。若肾血流占心输出量的 $20\%$,求肾血流量。</p>
+<p>解:</p>
+$$CO = 70 \times 70 = 4900\ \text{mL/min}$$
+$$\text{肾血流量} = 4900 \times 0.20 = 980\ \text{mL/min}$$
+<p>若心力衰竭使 $SV$ 降为 $50\ \text{mL}$,而心率代偿上升到 $80$ 次/分,则 $CO = 80 \times 50 = 4000\ \text{mL/min}$,肾血流约为 $800\ \text{mL/min}$,下降约 $18\%$。肾灌注不足会激活肾素—血管紧张素—醛固酮系统,使水钠潴留、血容量上升,进一步加重心脏负担,形成恶性循环。</p>
+<p><strong>问题解决应用。</strong> 下面把两种视角对照使用:</p>
+<p>| 情境 | 中医的解释 | 现代生理学的思路 | |---|---|---| | 长期熬夜后心烦、失眠、腰酸 | 心肾不交 | 先排查睡眠不足、焦虑、甲状腺功能亢进、贫血等原因 | | 下肢水肿、气短、夜尿增多 | 心肾阳虚(中医用语) | 需检查心功能、肾功能(肌酐、估算肾小球滤过率)及电解质 |</p>
+<p>实际应用时应注意:失眠、心悸属于常见症状,多数由生活方式或焦虑引起;但若同时出现水肿、气短、尿量明显变化,应及时就医做心电图、心脏超声和肾功能检查,而不应仅凭"心肾不交"的概念自行调理。心肾相交可作为理解身心症状的一种传统描述,但诊断和治疗决策应以现代检查结果为依据。</p>
+<p><strong>小结。</strong> 心肾相交在中医中指心火下降、肾水上升的协调状态;而在现代医学中,心输出量与肾灌注之间的双向影响是可测量、可干预的。两者不可互相替代。</p>
+  </main>
+  <footer class="spl-credit"><span class="spl-credit__meta">Ch4: Baduanjin — The Eight Brocades (八段锦) (Level: College &middot; Language: ZH &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
+</div>
+</body>
+</html>

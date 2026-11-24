@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>均衡餐盘 | Meta Health Ch06</title>
+<script>
+MathJax = {
+  loader: { load: ['[tex]/mathtools'] },
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']],
+         packages: { '[+]': ['mathtools'] } },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<script src="https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.min.js"></script>
+<script>mermaid.initialize({ startOnLoad: true, theme: 'neutral' });</script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+footer.spl-credit span{display:block}
+footer.spl-credit .spl-credit__meta{margin-bottom:4px}
+.cb-figure{margin:24px 0;text-align:center}
+.cb-figure img{max-width:100%;height:auto;border:1px solid #e0e0d8;border-radius:6px}
+figcaption{font-size:.82rem;color:#666;margin-top:8px;font-style:italic;text-align:center}
+pre.mermaid{background:none;border:none;padding:0;overflow:visible;margin:16px 0}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="均衡餐盘">均衡餐盘</h2>
+<p><strong>定义。</strong> 均衡餐盘是一种把一餐"画"在盘子上的配餐方法:不必称重、不必查表,只看各类食物在盘中所占的面积。常用的比例是:约一半是蔬菜和水果,约四分之一是全谷物,约四分之一是蛋白质食物,再加上适量的健康脂肪(如橄榄油、坚果、鱼类脂肪)。蔬果提供膳食纤维、维生素、矿物质和植物化学物;全谷物提供缓慢释放的碳水化合物和 B 族维生素;蛋白质食物提供氨基酸、铁、锌等;健康脂肪提供必需脂肪酸并帮助脂溶性维生素吸收。</p>
+<p>除了比例,还可以用"五色"做第二道检查:红、绿、黄(橙)、白、黑(紫)。颜色越多,通常意味着摄入的植物化学物和微量营养素越多样。注意,这是一个便于操作的经验检查法,并不是严格的营养计算。</p>
+<p><strong>例题。</strong> 小李午餐的盘子(直径约 25 cm)里有:炒西兰花和胡萝卜占约 $\frac{1}{2}$,糙米饭占约 $\frac{1}{4}$,清蒸鱼占约 $\frac{1}{4}$,另用一茶匙橄榄油拌菜,旁边放一个苹果。</p>
+<li>比例检查:蔬菜加水果约占一半,主食为全谷物,蛋白质约占四分之一,脂肪来自橄榄油和鱼,符合要求。</li>
+<li>五色检查:绿(西兰花)、橙(胡萝卜)、黄褐(糙米)、白(鱼肉)、红(苹果),缺少黑/紫色。</li>
+<p>结论:比例合格,颜色差四项里的一项,下一餐可以加入紫甘蓝、黑木耳或蓝莓。</p>
+<p><strong>问题解决应用。</strong> 下面是一份常见的外卖午餐:一大盒白米饭(约占盒子 $\frac{1}{2}$)、炸鸡块(约 $\frac{1}{3}$)、几片青菜(约 $\frac{1}{6}$)。请把它调整为均衡餐盘。</p>
+<li><strong>找出偏差。</strong> 精制主食占比过高,蔬菜过少,且蛋白质来自油炸食品。</li>
+<li><strong>调整比例。</strong> 米饭减到约一半,换成糙米或杂粮饭;蔬菜增加到约一半(可另点一份凉拌菜或蔬菜汤);鸡块减量,或换成蒸煮、烤制的鸡肉、豆腐、鱼。</li>
+<li><strong>再做五色检查。</strong> 补充胡萝卜(橙)、紫甘蓝(紫)或菌菇(白/黑),让颜色更丰富。</li>
+<li><strong>按需微调。</strong> 比例是起点,不是固定公式。运动量大的人可以适当增加全谷物和蛋白质的份额;需要控制血糖的人,可以增加蔬菜、减少精制主食,并咨询医生或营养师。</li>
+<p><strong>小结。</strong> 均衡餐盘把复杂的营养建议变成了一个看得见的画面:先看比例,再看颜色。遇到不理想的餐食时,可以按"找偏差、调比例、查颜色"三步来改。</p>
+  </main>
+  <footer class="spl-credit"><span class="spl-credit__meta">Ch6: What We Eat — Food Quality, Four Natures, and Five Flavors (四气五味) (Level: College &middot; Language: ZH &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
+</div>
+</body>
+</html>

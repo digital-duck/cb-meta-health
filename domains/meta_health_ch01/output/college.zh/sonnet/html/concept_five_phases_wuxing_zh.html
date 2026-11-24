@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>五行 | Meta Health Ch01</title>
+<script>
+MathJax = {
+  loader: { load: ['[tex]/mathtools'] },
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']],
+         packages: { '[+]': ['mathtools'] } },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<script src="https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.min.js"></script>
+<script>mermaid.initialize({ startOnLoad: true, theme: 'neutral' });</script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+footer.spl-credit span{display:block}
+footer.spl-credit .spl-credit__meta{margin-bottom:4px}
+.cb-figure{margin:24px 0;text-align:center}
+.cb-figure img{max-width:100%;height:auto;border:1px solid #e0e0d8;border-radius:6px}
+figcaption{font-size:.82rem;color:#666;margin-top:8px;font-style:italic;text-align:center}
+pre.mermaid{background:none;border:none;padding:0;overflow:visible;margin:16px 0}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="五行">五行</h2>
+<p><strong>定义。</strong> 五行（木、火、土、金、水）是中国古代用来归类事物及其相互关系的五种“过程类别”。中医（TCM，即传统中医学，Traditional Chinese Medicine）借用这一框架，把脏腑、季节、情志、五味等现象分组，并用来解释它们之间的联系。五行描述的是动态的功能特征，而不是五种具体的物质：</p>
+<p>| 五行 | 特征 | 脏 | 季节 | 五味 | |---|---|---|---|---| | 木 | 生发、舒展 | 肝 | 春 | 酸 | | 火 | 温热、上升 | 心 | 夏 | 苦 | | 土 | 化生、承载 | 脾 | 长夏 | 甘 | | 金 | 收敛、肃降 | 肺 | 秋 | 辛 | | 水 | 寒润、闭藏 | 肾 | 冬 | 咸 |</p>
+<p>五行之间有两类基本关系。<strong>相生</strong>是促进：木生火，火生土，土生金，金生水，水生木。<strong>相克</strong>是制约：木克土，土克水，水克火，火克金，金克木。这些关系用文字和图示表达，并不是数学等式。</p>
+<p><strong>例题。</strong> 一位患者长期情绪抑郁，同时食欲差、腹胀、大便稀溏。中医认为情志不畅属“肝（木）”的问题，消化功能属“脾（土）”，木克土，所以肝气郁结可以“乘”脾，导致脾失运化。这类分析会得出“疏肝健脾”的治疗思路。</p>
+<p><strong>应用练习。</strong> 用五行关系回答下面的问题：</p>
+<p><em>问题：</em> 某人秋天反复干咳（肺，金），按“相生”关系，中医会考虑补哪一脏来帮助肺？</p>
+<p><em>解法：</em></p>
+<li>找出目标脏所属的行：肺属金。</li>
+<li>找出“生我者”：土生金，所以土是金的“母”，对应脾。</li>
+<li>得出思路：培土生金，即通过调理脾胃来改善肺的功能。</li>
+<p><em>再练一题：</em> 若心火过旺，哪一行可以制约它？按相克关系，水克火，所以中医会考虑滋养肾水来制约心火。</p>
+<pre class="mermaid">graph LR
+  A[木 肝] -->|相生| B[火 心]
+  B -->|相生| C[土 脾]
+  C -->|相生| D[金 肺]
+  D -->|相生| E[水 肾]
+  E -->|相生| A
+  A -.->|相克| C
+  C -.->|相克| E
+  E -.->|相克| B
+  B -.->|相克| D
+  D -.->|相克| A</pre>
+<p><em>图：五行的相生（实线，沿圆环顺时针）与相克（虚线，隔一位）关系。</em></p>
+<p><strong>如何看待它。</strong> 五行是一种分类与推理的模型，不是解剖学或生理学的发现。上表中的对应（例如“肝属木”）并没有被现代生理学证实，用它推导出的治疗方案，应以临床试验的证据为准。把它当作理解中医术语和思路的“语法”是有用的，但不能替代诊断和检查。例如，上面例题中的腹胀和腹泻，仍需要排查感染、乳糜泻、甲状腺疾病等明确的医学原因。</p>
+  </main>
+  <footer class="spl-credit"><span class="spl-credit__meta">Ch1: TCM Foundations — Yin-Yang, Qi-Blood, and the Five Phases (中医基础) (Level: College &middot; Language: ZH &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
+</div>
+</body>
+</html>

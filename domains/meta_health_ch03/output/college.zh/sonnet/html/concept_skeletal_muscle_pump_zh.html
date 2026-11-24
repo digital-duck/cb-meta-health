@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>骨骼肌泵 | Meta Health Ch03</title>
+<script>
+MathJax = {
+  loader: { load: ['[tex]/mathtools'] },
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']],
+         packages: { '[+]': ['mathtools'] } },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<script src="https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.min.js"></script>
+<script>mermaid.initialize({ startOnLoad: true, theme: 'neutral' });</script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+footer.spl-credit span{display:block}
+footer.spl-credit .spl-credit__meta{margin-bottom:4px}
+.cb-figure{margin:24px 0;text-align:center}
+.cb-figure img{max-width:100%;height:auto;border:1px solid #e0e0d8;border-radius:6px}
+figcaption{font-size:.82rem;color:#666;margin-top:8px;font-style:italic;text-align:center}
+pre.mermaid{background:none;border:none;padding:0;overflow:visible;margin:16px 0}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="骨骼肌泵">骨骼肌泵</h2>
+<p><strong>定义。</strong> 骨骼肌泵是指行走、站立踮脚等活动时,腿部(尤其是小腿)骨骼肌的收缩与舒张挤压深静脉,把静脉血推向心脏的机制。它之所以必要,是因为静脉系统几乎没有自身的"心脏":站立时,足部静脉要对抗重力,血液容易积聚在下肢。</p>
+<p><strong>工作原理。</strong> 它依赖两个结构:</p>
+<li><strong>肌肉收缩</strong>:小腿肌肉(腓肠肌、比目鱼肌)收缩时,挤压肌肉之间的深静脉,使静脉内压力升高。</li>
+<li><strong>静脉瓣膜</strong>:瓣膜只允许血液向心流动。因此收缩时血液被推向上方,舒张时瓣膜关闭,血液不会倒流。</li>
+<p>肌肉舒张后,深静脉腔内压力下降,浅静脉和远端血液随之被"吸"入,为下一次收缩做好准备。</p>
+<pre class="mermaid">flowchart TD
+    A[小腿肌肉收缩] --> B[深静脉受挤压]
+    B --> C[近心端瓣膜开放]
+    B --> D[远心端瓣膜关闭]
+    C --> E[血液向心脏回流]
+    E --> F[肌肉舒张]
+    F --> G[静脉腔压力下降]
+    G --> H[远端血液充盈深静脉]</pre>
+<p><em>图:骨骼肌泵的一个周期。收缩时血液被推向心脏,舒张时瓣膜防止倒流,并让新的血液充盈。</em></p>
+<p><strong>例题。</strong> 一名健康成人安静站立时,每搏输出量约为 $70\ \text{mL}$,心率为 $70\ \text{次/分}$。心输出量为</p>
+$$CO = SV \times HR = 70\ \text{mL} \times 70\ \text{次/分} = 4900\ \text{mL/分}$$
+<p>这些血液最终都必须经静脉回到心脏。假设每次踮脚时小腿肌肉泵出约 $40\ \text{mL}$ 血液,每分钟踮脚 $30$ 次,则每分钟经小腿泵送的血量为 $40 \times 30 = 1200\ \text{mL}$,约占心输出量的</p>
+$$\frac{1200}{4900} \approx 24\%$$
+<p>这个数字是为说明数量级而设的估算值,实际泵出量因人和活动强度而异。</p>
+<p><strong>问题应用。</strong> </p>
+<p><em>情境一:长途飞行。</em> 乘客久坐数小时,小腿肌肉几乎不收缩,血液在下肢淤积,静脉压升高,可出现脚踝肿胀,并增加深静脉血栓的风险。对策是定时起身走动,或坐着做踝泵运动(勾脚、绷脚),人为启动骨骼肌泵。</p>
+<p><em>情境二:长时间站立的职业。</em> 教师、售货员若长时间站立不动,同样会出现下肢沉重、肿胀。适度踮脚、交替移动重心,可以让小腿肌肉持续工作。</p>
+<p><em>情境三:瓣膜受损。</em> 若静脉瓣膜功能不全,收缩时一部分血液会倒流,骨骼肌泵效率下降,这是下肢静脉曲张的重要机制之一。此时医生常建议穿戴医用弹力袜,通过外部加压帮助静脉血回流。</p>
+<p><strong>小结。</strong> 骨骼肌泵靠"肌肉挤压加瓣膜单向"两个条件起作用,缺一不可。判断某种情境是否会影响静脉回流,可以先问两个问题:小腿肌肉是否在有节律地收缩?静脉瓣膜是否完好?</p>
+  </main>
+  <footer class="spl-credit"><span class="spl-credit__meta">Ch3: The Five-Organ Exercises (五脏操) (Level: College &middot; Language: ZH &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
+</div>
+</body>
+</html>

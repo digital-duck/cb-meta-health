@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>迷走神经张力与心率变异性 | Meta Health Ch07</title>
+<script>
+MathJax = {
+  loader: { load: ['[tex]/mathtools'] },
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']],
+         packages: { '[+]': ['mathtools'] } },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<script src="https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.min.js"></script>
+<script>mermaid.initialize({ startOnLoad: true, theme: 'neutral' });</script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+footer.spl-credit span{display:block}
+footer.spl-credit .spl-credit__meta{margin-bottom:4px}
+.cb-figure{margin:24px 0;text-align:center}
+.cb-figure img{max-width:100%;height:auto;border:1px solid #e0e0d8;border-radius:6px}
+figcaption{font-size:.82rem;color:#666;margin-top:8px;font-style:italic;text-align:center}
+pre.mermaid{background:none;border:none;padding:0;overflow:visible;margin:16px 0}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="迷走神经张力与心率变异性">迷走神经张力与心率变异性</h2>
+<p><strong>定义。</strong> 迷走神经是副交感神经系统的主要通路,它释放乙酰胆碱,作用于窦房结,使心率减慢。<strong>迷走神经张力</strong>指迷走神经在静息时对心脏持续施加的抑制作用强度。<strong>心率变异性</strong>(HRV)则是相邻心跳间隔(RR 间期)逐拍变化的程度。迷走神经张力越高,心脏对呼吸、体位和情绪变化的调节越灵活,HRV 通常也越大。因此,HRV 是一种无创、间接反映迷走神经张力的指标。</p>
+<p>常用的时域指标有两个:</p>
+<li><strong>SDNN</strong>:全部 RR 间期的标准差,反映总体变异。</li>
+<li><strong>RMSSD</strong>:相邻 RR 间期之差的均方根,主要反映迷走神经的短时调节,是运动和恢复监测中最常用的指标。</li>
+$$\text{RMSSD}=\sqrt{\frac{1}{N-1}\sum_{i=1}^{N-1}\left(RR_{i+1}-RR_i\right)^2}$$
+<p>其中 $RR_i$ 是第 $i$ 个 RR 间期(单位 ms),$N$ 是间期总数。</p>
+<p><strong>例题。</strong> 一位同学晨起静息时记录到 6 个连续 RR 间期(ms):</p>
+$$1000,\ 1040,\ 980,\ 1020,\ 960,\ 1000$$
+<p>相邻差值依次为 $+40,\,-60,\,+40,\,-60,\,+40$,平方后为 $1600,\,3600,\,1600,\,3600,\,1600$,总和为 12000。这里 $N-1=5$,所以:</p>
+$$\text{RMSSD}=\sqrt{\frac{12000}{5}}=\sqrt{2400}\approx 49\ \text{ms}$$
+<p>该同学平均 RR 间期为 1000 ms,对应平均心率 $\frac{60000}{1000}=60$ 次/分。</p>
+<p><strong>问题解决应用。</strong> 假设这位同学连续三周每天晨起测量,结果如下:</p>
+<p>| 阶段 | 平均静息心率 | 晨起 RMSSD | |---|---|---| | 基线周 | 60 次/分 | 49 ms | | 高强度训练周 | 66 次/分 | 31 ms | | 减量恢复周 | 58 次/分 | 56 ms |</p>
+<p>分析时可按三步进行:</p>
+<li><strong>比较个人基线。</strong> HRV 个体差异很大,不同人之间的绝对值没有可比性,应与自己的长期趋势比较。</li>
+<li><strong>看方向是否一致。</strong> 训练周内心率上升、RMSSD 下降,说明迷走神经张力暂时降低,身体仍处于疲劳状态。恢复周则相反,说明适应良好。</li>
+<li><strong>结合主观感受决定训练安排。</strong> 若 RMSSD 连续数日明显低于个人基线,同时伴有睡眠差、疲劳感重,可考虑降低强度。单日的小幅波动不足以作为依据。</li>
+<p><strong>注意事项。</strong> 测量条件要保持一致(同一时间、同一体位、同一设备),并避免在饮酒、咖啡因摄入或生病时直接与基线比较。呼吸频率也会显著影响 HRV,因此测量时最好保持自然呼吸。HRV 是趋势性指标,不能单独用来诊断疾病。</p>
+  </main>
+  <footer class="spl-credit"><span class="spl-credit__meta">Ch7: Stress, Emotion, and the Flow of Qi and Blood (情志与气血) (Level: College &middot; Language: ZH &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
+</div>
+</body>
+</html>

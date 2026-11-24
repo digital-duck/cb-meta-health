@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>深蹲 | Meta Health Ch03</title>
+<script>
+MathJax = {
+  loader: { load: ['[tex]/mathtools'] },
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']],
+         packages: { '[+]': ['mathtools'] } },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<script src="https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.min.js"></script>
+<script>mermaid.initialize({ startOnLoad: true, theme: 'neutral' });</script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+footer.spl-credit span{display:block}
+footer.spl-credit .spl-credit__meta{margin-bottom:4px}
+.cb-figure{margin:24px 0;text-align:center}
+.cb-figure img{max-width:100%;height:auto;border:1px solid #e0e0d8;border-radius:6px}
+figcaption{font-size:.82rem;color:#666;margin-top:8px;font-style:italic;text-align:center}
+pre.mermaid{background:none;border:none;padding:0;overflow:visible;margin:16px 0}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="深蹲">深蹲</h2>
+<p><strong>定义。</strong> 深蹲是髋、膝、踝三个关节同时屈伸的复合动作:下蹲时髋膝弯曲,起身时臀大肌、股四头肌、腘绳肌等人体最大的肌群共同发力。大肌群同时收缩,耗能多,所以心率明显上升;肌肉收缩还会挤压静脉,把血液送回心脏,这称为静脉回流。在 TCM 中,深蹲与"引火归元"相关:中医认为心属火,肾属水,下半身用力、重心下沉,可以引导上浮的心火下行,与肾水相交。这是中医理论的解释,不是生理学已证实的机制。</p>
+<p><strong>生理量化。</strong> 运动强度常用最大心率的百分比衡量。常用估算公式为:</p>
+$$HR_{\max} \approx 220 - \text{年龄}$$
+<p>心输出量等于心率乘以每搏输出量:</p>
+$$CO = HR \times SV$$
+<p>深蹲时,腿部肌肉泵促进静脉回流,每搏输出量随之增加;运动强度升高后,心率也会上升,所以心输出量增加。</p>
+<p><strong>例题。</strong> 一名 20 岁学生做自重深蹲。静息心率为 70 次/分,每搏输出量为 70 mL。做 2 分钟后,心率升到 130 次/分,每搏输出量升到 90 mL。求运动前后的心输出量,以及运动强度占最大心率的百分比。</p>
+<p>解:</p>
+<li>静息:$CO = 70 \times 70 = 4900\ \text{mL/min} \approx 4.9\ \text{L/min}$</li>
+<li>运动时:$CO = 130 \times 90 = 11700\ \text{mL/min} \approx 11.7\ \text{L/min}$</li>
+<li>最大心率:$HR_{\max} \approx 220 - 20 = 200$ 次/分</li>
+<li>强度:$\dfrac{130}{200} = 65\%$</li>
+<p>心输出量增加到静息时的约 2.4 倍,强度属于中等。</p>
+<p><strong>问题解决应用。</strong> 假设要设计一份安全的深蹲训练:目标强度为最大心率的 60%~70%,训练者为 40 岁。</p>
+<li>$HR_{\max} \approx 220 - 40 = 180$ 次/分。</li>
+<li>目标区间为 $0.60 \times 180 = 108$ 到 $0.70 \times 180 = 126$ 次/分。</li>
+<li>每组结束后数 15 秒脉搏再乘以 4。若超过 126 次/分,就延长休息或减少次数;若低于 108 次/分,可增加次数或负重。</li>
+<p><strong>注意事项。</strong> 动作要领是膝盖与脚尖方向一致,背部保持中立,下蹲深度以能控制为准。有高血压、心脏病或膝关节损伤的人,开始前应咨询医生。深蹲时憋气用力会使胸腔内压骤升,血压波动大,所以应当"下蹲吸气、起身呼气"。</p>
+<p>至于"引火归元",这一说法目前没有可检验的生理指标。把深蹲当作运动处方时,依据应是心率、心输出量和肌肉负荷这些可测量的量。</p>
+  </main>
+  <footer class="spl-credit"><span class="spl-credit__meta">Ch3: The Five-Organ Exercises (五脏操) (Level: College &middot; Language: ZH &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
+</div>
+</body>
+</html>

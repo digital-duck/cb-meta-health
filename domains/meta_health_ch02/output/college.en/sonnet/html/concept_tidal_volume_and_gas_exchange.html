@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tidal Volume and Gas Exchange | Meta Health Ch02</title>
+<script>
+MathJax = {
+  loader: { load: ['[tex]/mathtools'] },
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']],
+         packages: { '[+]': ['mathtools'] } },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<script src="https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.min.js"></script>
+<script>mermaid.initialize({ startOnLoad: true, theme: 'neutral' });</script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+footer.spl-credit span{display:block}
+footer.spl-credit .spl-credit__meta{margin-bottom:4px}
+.cb-figure{margin:24px 0;text-align:center}
+.cb-figure img{max-width:100%;height:auto;border:1px solid #e0e0d8;border-radius:6px}
+figcaption{font-size:.82rem;color:#666;margin-top:8px;font-style:italic;text-align:center}
+pre.mermaid{background:none;border:none;padding:0;overflow:visible;margin:16px 0}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="tidal-volume-and-gas-exchange">Tidal Volume and Gas Exchange</h2>
+<p>Tidal volume is the amount of air that moves into or out of the lungs in a single, normal breath — roughly 500 milliliters in a resting adult. Multiplying tidal volume by breathing rate gives minute ventilation, the total air exchanged per minute:</p>
+$$
+\dot{V}_E = V_T \times f
+$$
+<p>where $\dot{V}_E$ is minute ventilation (liters per minute), $V_T$ is tidal volume (liters), and $f$ is respiratory rate (breaths per minute). Not all of this air reaches the alveoli for gas exchange — about 150 mL of each breath fills the trachea and bronchi, a region called dead space, where no oxygen or carbon dioxide crosses into the blood. Alveolar ventilation, the portion that actually matters for gas exchange, is $(V_T - \text{dead space}) \times f$.</p>
+<p><strong>Worked example.</strong> At rest, a person breathes 500 mL per breath at 12 breaths per minute: minute ventilation is $500 \times 12 = 6{,}000$ mL/min, or 6 L/min. Alveolar ventilation is $(500 - 150) \times 12 = 4{,}200$ mL/min. During moderate exercise, tidal volume might rise to 1,000 mL and rate to 20 breaths per minute, giving a minute ventilation of 20 L/min — more than three times the resting value. Because dead space stays roughly fixed, alveolar ventilation rises even faster: $(1{,}000 - 150) \times 20 = 17{,}000$ mL/min, over four times the resting figure. This is why deep, slow breaths ventilate the alveoli more efficiently than shallow, rapid ones for the same minute ventilation — a shallow, fast breathing pattern wastes proportionally more air on dead space.</p>
+<p><strong>Problem-solving application.</strong> Suppose two people both have a minute ventilation of 8 L/min. Person A breathes 400 mL at 20 breaths/min; Person B breathes 800 mL at 10 breaths/min. Their alveolar ventilations differ: Person A gets $(400-150)\times20 = 5{,}000$ mL/min, while Person B gets $(800-150)\times10 = 6{,}500$ mL/min. Despite identical minute ventilation, Person B exchanges more usable air with the alveoli. This principle explains clinical strategies such as pursed-lip breathing in patients with chronic obstructive pulmonary disease, which slows respiratory rate and increases tidal volume to improve oxygen delivery and carbon dioxide removal without increasing total effort.</p>
+  </main>
+  <footer class="spl-credit"><span class="spl-credit__meta">Ch2: The Physiology Lens — Breath, Circulation, Fascia, and Core (生理视角) (Level: College &middot; Language: EN &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
+</div>
+</body>
+</html>

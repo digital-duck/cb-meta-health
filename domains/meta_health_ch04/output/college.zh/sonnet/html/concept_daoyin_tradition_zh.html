@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>导引传统 | Meta Health Ch04</title>
+<script>
+MathJax = {
+  loader: { load: ['[tex]/mathtools'] },
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']],
+         packages: { '[+]': ['mathtools'] } },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<script src="https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.min.js"></script>
+<script>mermaid.initialize({ startOnLoad: true, theme: 'neutral' });</script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+footer.spl-credit span{display:block}
+footer.spl-credit .spl-credit__meta{margin-bottom:4px}
+.cb-figure{margin:24px 0;text-align:center}
+.cb-figure img{max-width:100%;height:auto;border:1px solid #e0e0d8;border-radius:6px}
+figcaption{font-size:.82rem;color:#666;margin-top:8px;font-style:italic;text-align:center}
+pre.mermaid{background:none;border:none;padding:0;overflow:visible;margin:16px 0}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="导引传统">导引传统</h2>
+<p><strong>定义。</strong> 导引(导引术)是中国古代把肢体伸展、呼吸调节和意念集中结合起来、用于养生保健的一类练习。"导"指引导气息,"引"指牵引肢体。最早的实物与图像证据包括湖南马王堆汉墓出土的帛画《导引图》(约公元前168年下葬),画面上有四十多个人形姿势,部分附有病名或动物名称。汉代华佗相传创编"五禽戏",模仿虎、鹿、熊、猿、鸟的动作。八段锦是导引的后世分支,宋代文献已有记载,明清时期逐渐定型为现在常见的八个动作。中医认为,这类练习可以疏通气血、调和脏腑;现代研究则更多从运动量、呼吸模式和放松效应来评估它。</p>
+<p><strong>导引的三个组成要素</strong></p>
+<p>| 要素 | 具体做法 | 现代对应的可观察指标 | |---|---|---| | 调身 | 缓慢伸展、转体、屈伸 | 关节活动度、柔韧性、平衡能力 | | 调息 | 深长、均匀的腹式呼吸 | 呼吸频率、静息心率 | | 调神 | 注意力集中于动作与呼吸 | 主观压力感、焦虑量表得分 |</p>
+<p><strong>例题。</strong> 一位同学练习八段锦一整套,约需12分钟。已知该同学体重 $60\ \text{kg}$,这类低强度练习的代谢当量约为 $3\ \text{METs}$。估算这次练习的能量消耗。</p>
+<p>常用估算公式为:</p>
+$$
+\text{能量消耗(kcal)} \approx \text{METs} \times \text{体重(kg)} \times \text{时间(h)}
+$$
+<p>代入数据,12分钟等于 $0.2\ \text{h}$:</p>
+$$
+3 \times 60 \times 0.2 = 36\ \text{kcal}
+$$
+<p>因此一次练习只消耗约36 kcal,相当于一小片面包的热量。</p>
+<p><strong>问题解决应用。</strong> 假设有人想用导引改善久坐造成的肩颈僵硬,并问它能否"减肥"。分三步分析:</p>
+<li><strong>明确目标。</strong> 若目标是减脂,36 kcal 的消耗太小。每周练习5次,总计约180 kcal,远低于一次30分钟慢跑的消耗。</li>
+<li><strong>匹配强项。</strong> 导引的优势在柔韧性、平衡和放松。针对肩颈,可选"双手托天理三焦"和"五劳七伤往后瞧"两式,每天练习一到两遍。</li>
+<li><strong>设定观察指标。</strong> 练习前后记录静息心率、肩部活动范围(如双手能否在背后相扣)以及主观僵硬程度,连续记录四周,用数据判断是否有效。</li>
+<p><strong>注意事项。</strong> 老年人和平衡能力较差者,做下蹲、单腿站立等动作时应扶稳支撑物。有严重心血管疾病或骨质疏松的人,练习前应先咨询医生。需要明确的是,导引不能替代对疾病的规范治疗,"导引治愈某种病"之类的说法缺乏可靠证据。</p>
+<p><strong>小结。</strong> 导引是历史悠久的身心练习传统,八段锦是其中最流行的后代。它适合作为低强度、易坚持的日常活动,但评价它的效果,应当落到热量、柔韧性、心率和主观感受这些可测量的指标上。</p>
+  </main>
+  <footer class="spl-credit"><span class="spl-credit__meta">Ch4: Baduanjin — The Eight Brocades (八段锦) (Level: College &middot; Language: ZH &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
+</div>
+</body>
+</html>

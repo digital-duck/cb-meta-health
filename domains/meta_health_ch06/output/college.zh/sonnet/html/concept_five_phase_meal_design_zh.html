@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>五行膳食设计 | Meta Health Ch06</title>
+<script>
+MathJax = {
+  loader: { load: ['[tex]/mathtools'] },
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']],
+         packages: { '[+]': ['mathtools'] } },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<script src="https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.min.js"></script>
+<script>mermaid.initialize({ startOnLoad: true, theme: 'neutral' });</script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+footer.spl-credit span{display:block}
+footer.spl-credit .spl-credit__meta{margin-bottom:4px}
+.cb-figure{margin:24px 0;text-align:center}
+.cb-figure img{max-width:100%;height:auto;border:1px solid #e0e0d8;border-radius:6px}
+figcaption{font-size:.82rem;color:#666;margin-top:8px;font-style:italic;text-align:center}
+pre.mermaid{background:none;border:none;padding:0;overflow:visible;margin:16px 0}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="五行膳食设计">五行膳食设计</h2>
+<p><strong>定义。</strong> 五行膳食设计,是把现代营养学与中医(Traditional Chinese Medicine,TCM)的饮食观念结合起来,为一周三餐做整体安排的方法。中医认为,五种颜色和五种味道对应五个脏系:青(绿)—酸—肝,赤(红)—苦—心,黄—甘—脾,白—辛—肺,黑—咸—肾。这套对应是中医的理论框架,并非经对照试验证实的营养规律。不过,它引导人们每天吃到多种颜色的蔬果、全谷物和豆类,与现代膳食指南"食物多样、以植物性食物为主"的建议相合,这一点有实际价值。</p>
+<p>设计时可同时满足两套标准:</p>
+<p>| 视角 | 核心要求 | |---|---| | 现代营养学 | 餐盘约一半是蔬果,四分之一全谷物,四分之一优质蛋白;优先全食物,少吃超加工食品 | | 中医食养 | 五色五味适度搭配;多吃温热的熟食;三餐定时;依体质调整 |</p>
+<p><strong>示例。</strong> 以一名成年女性为例,每日约需 1800 kcal,三餐大致按 30%、40%、30% 分配:</p>
+<li>早餐约 540 kcal:小米南瓜粥(黄)、水煮蛋、拌菠菜(青)、少量黑芝麻(黑)。</li>
+<li>午餐约 720 kcal:糙米饭、清蒸鱼、西红柿炒蛋(赤)、蒜蓉西兰花(青)、白萝卜汤(白)。</li>
+<li>晚餐约 540 kcal:黑米红豆饭、豆腐炖香菇(白、黑)、少量姜丝炒胡萝卜(黄、辛)。</li>
+<p>这一天里,五色基本齐全。五味也各有体现:酸来自西红柿,苦来自西兰花,甘来自小米和南瓜,辛来自姜蒜,咸来自适量调味。全天食盐控制在 5 g 以内,符合《中国居民膳食指南》的建议。</p>
+<p><strong>问题求解:一周的设计步骤。</strong></p>
+<li><strong>定能量与比例。</strong> 先根据年龄、体重和活动量估算每日能量,再确定三餐分配。</li>
+<li><strong>排五色。</strong> 每天至少吃到三种颜色,一周内五色轮换,避免连续几天重复同一种蔬菜。</li>
+<li><strong>控五味。</strong> 每种味道都适量,重点限制咸味和添加糖。中医讲"五味不可偏嗜",这与限盐、限糖的现代建议一致。</li>
+<li><strong>选烹饪方式。</strong> 以蒸、煮、炖、快炒为主,少油炸。热食以入口温热为宜,不必烫口。烫食会损伤食管黏膜,这是明确的健康风险,应当避免。</li>
+<li><strong>安排时间。</strong> 早餐在起床后一小时内,晚餐尽量在睡前三小时完成。</li>
+<li><strong>按体质微调。</strong> 中医的体质分类可作参考,但缺乏严格的诊断标准。较稳妥的做法是以自身感受和检查结果为依据:例如常觉胃部不适者,减少生冷和辛辣;血糖偏高者,用杂豆、燕麦替换部分精白米面,并监测餐后血糖。</li>
+<p><strong>练习。</strong> 某人午餐只有白米饭、炸鸡排和一份白萝卜。请按上述步骤指出缺少的颜色与营养成分,并提出三处具体修改。参考答案:增加绿叶菜和一份红色或橙色蔬菜;把部分白米换成糙米;炸鸡排改为清蒸鱼或煮鸡胸。</p>
+<p><strong>小结。</strong> 五行只是组织菜单的框架。真正决定膳食是否健康的,仍是能量够不够、结构均不均衡、食物是否天然多样,以及个人的实际反应。</p>
+  </main>
+  <footer class="spl-credit"><span class="spl-credit__meta">Ch6: What We Eat — Food Quality, Four Natures, and Five Flavors (四气五味) (Level: College &middot; Language: ZH &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
+</div>
+</body>
+</html>

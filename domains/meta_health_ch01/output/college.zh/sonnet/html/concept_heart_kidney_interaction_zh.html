@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>心肾相交 | Meta Health Ch01</title>
+<script>
+MathJax = {
+  loader: { load: ['[tex]/mathtools'] },
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']],
+         packages: { '[+]': ['mathtools'] } },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<script src="https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.min.js"></script>
+<script>mermaid.initialize({ startOnLoad: true, theme: 'neutral' });</script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+footer.spl-credit span{display:block}
+footer.spl-credit .spl-credit__meta{margin-bottom:4px}
+.cb-figure{margin:24px 0;text-align:center}
+.cb-figure img{max-width:100%;height:auto;border:1px solid #e0e0d8;border-radius:6px}
+figcaption{font-size:.82rem;color:#666;margin-top:8px;font-style:italic;text-align:center}
+pre.mermaid{background:none;border:none;padding:0;overflow:visible;margin:16px 0}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="心肾相交">心肾相交</h2>
+<p><strong>定义。</strong> 在中医(TCM)理论中,心属火,位居上焦;肾属水,位居下焦。中医认为,心火应当下降,温养肾水,使肾水不致过寒;肾水应当上升,滋润心火,使心火不致过亢。这种上下相互制约、相互协助的关系称为"心肾相交",又称"水火既济"。若这一关系失常,表现为肾水不足、不能制约心火,心火独亢于上,称为"心火上炎"(也属"心肾不交"的一种类型)。这是一套解释症状的理论框架,"心火""肾水"并不等同于现代解剖学中心脏和肾脏的功能。</p>
+<p><strong>与现代生理的对照。</strong> 现代医学中,心脏与肾脏确有紧密联系:心输出量决定肾脏的灌注,肾脏通过调节水钠和血压反过来影响心脏负荷。但这是另一套机制,不能与中医的"相交"直接画等号。下面的示例只做对照,不作等同。</p>
+<p><strong>图示。</strong></p>
+<pre class="mermaid">flowchart TD
+    A["心火(上焦)"] -->|下降温养| B["肾水(下焦)"]
+    B -->|上升滋润| A
+    B -.->|肾水不足| C["制约减弱"]
+    C -.-> D["心火上炎"]</pre>
+<p><em>心火下降、肾水上升构成循环;肾水不足时,心火失去制约而上炎。</em></p>
+<p><strong>例题(辨别症状组合)。</strong> 某人长期熬夜,近来出现心烦、入睡困难、口舌生疮,同时伴有腰膝酸软、夜间盗汗、手足心热。问:按中医理论,如何归纳其病机?</p>
+<p>分析步骤:</p>
+<li>把症状按"上"与"下"分组。上部(心火偏亢):心烦、失眠、口舌生疮。下部(肾水偏虚):腰膝酸软、盗汗、手足心热。</li>
+<li>判断因果。中医认为,长期熬夜耗伤肾阴,肾水不能上济,心火便失去制约,于是上部出现"火"象。</li>
+<li>归纳:这是"心肾不交"中"心火上炎、肾水不足"的类型。</li>
+<p>中医常用的调治思路是"滋肾阴、清心火",并改善作息;常用方剂有黄连阿胶汤、交泰丸等。</p>
+<p><strong>问题应用。</strong> 下表帮助区分不同的组合:</p>
+<p>| 表现 | 偏向的判断 | |---|---| | 仅有心烦、口舌生疮,无下部虚象 | 单纯心火亢盛,以清心火为主 | | 上述上部症状加下部虚象 | 心肾不交,上清下滋并用 | | 仅有腰膝酸软、畏寒,无上部火象 | 偏肾虚,不属心肾不交 |</p>
+<p><strong>练习。</strong> 某人入睡困难、心悸心烦,同时夜尿频多、畏寒肢冷。请判断:这更像"心火上炎、肾水不足",还是另一类寒象为主的组合?理由是什么?</p>
+<p><em>提示:</em>畏寒肢冷属寒象,与"火象偏亢、水象偏虚"的组合不同,不宜直接套用滋阴降火的思路。</p>
+<p><strong>证据说明。</strong> 心肾相交是中医的理论模型,其中个别方剂(如交泰丸)的失眠疗效有少量临床研究,但证据质量有限。出现持续失眠、心悸、水肿或夜尿异常时,应先就医排除甲状腺疾病、心律失常、肾脏疾病等明确病因,不要仅凭此理论自行判断。</p>
+  </main>
+  <footer class="spl-credit"><span class="spl-credit__meta">Ch1: TCM Foundations — Yin-Yang, Qi-Blood, and the Five Phases (中医基础) (Level: College &middot; Language: ZH &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
+</div>
+</body>
+</html>

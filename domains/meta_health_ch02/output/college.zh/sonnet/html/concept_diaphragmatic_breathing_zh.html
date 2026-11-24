@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>腹式呼吸 | Meta Health Ch02</title>
+<script>
+MathJax = {
+  loader: { load: ['[tex]/mathtools'] },
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']],
+         packages: { '[+]': ['mathtools'] } },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<script src="https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.min.js"></script>
+<script>mermaid.initialize({ startOnLoad: true, theme: 'neutral' });</script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+footer.spl-credit span{display:block}
+footer.spl-credit .spl-credit__meta{margin-bottom:4px}
+.cb-figure{margin:24px 0;text-align:center}
+.cb-figure img{max-width:100%;height:auto;border:1px solid #e0e0d8;border-radius:6px}
+figcaption{font-size:.82rem;color:#666;margin-top:8px;font-style:italic;text-align:center}
+pre.mermaid{background:none;border:none;padding:0;overflow:visible;margin:16px 0}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="腹式呼吸">腹式呼吸</h2>
+<p>腹式呼吸（也称"膈式呼吸"）是一种以膈肌为主要动力的慢速呼吸方式：吸气时膈肌主动下降，推挤腹腔内容物，使下肋骨向外扩张、腹部隆起；呼气时膈肌放松回升，腹部自然回落。与之相对的是"胸式呼吸"——主要依靠肋间肌抬升胸廓，吸气时肩部和上胸部明显起伏，膈肌参与较少。健康成人在安静状态下的呼吸频率约为每分钟12到18次，腹式呼吸通常将频率降到每分钟6到10次，同时增大每次呼吸的潮气量。</p>
+<p>腹式呼吸与自主神经系统的活动状态相关。自主神经系统包含交感神经和副交感神经两个分支：交感神经在应激时被激活，表现为心率加快、血压上升、呼吸变浅变快；副交感神经则在放松状态下占主导，表现为心率减慢、血压下降、消化功能增强。缓慢的腹式呼吸，尤其是延长呼气时间，会通过迷走神经（副交感神经的主要传出通路）向心脏和血管发出信号，从而降低心率、稳定血压。这一机制在临床和运动医学中被广泛用于减轻焦虑、辅助入睡和促进运动后恢复。</p>
+<p><strong>练习方法</strong>：仰卧或坐直，一手放胸口、一手放腹部。用鼻缓慢吸气4秒，感受腹部的手上抬、胸口的手基本不动；然后缩唇缓慢呼气6到8秒，腹部随之凹陷。每组练习5到10分钟，每天可重复2到3次。</p>
+<p><strong>问题解决应用</strong>：假设某人静息心率为78次/分钟，在进行10分钟腹式呼吸练习后测得心率为64次/分钟。这一变化提示副交感神经活动增强、交感神经张力下降，是身体从"应激—唤醒"状态转向"放松—恢复"状态的直接证据。在康复训练、考前减压或术后呼吸训练中，腹式呼吸常被作为无成本、无副作用的第一线干预手段；但对于伴有严重呼吸系统疾病（如慢性阻塞性肺病急性加重期)的患者，应在医生指导下调整呼吸训练强度，而非自行判断。</p>
+<pre class="mermaid">flowchart LR
+    A[缓慢腹式呼吸] --> B[迷走神经传入信号增强]
+    B --> C[副交感神经活动上升]
+    C --> D[心率下降]
+    C --> E[血压趋于平稳]
+    C --> F[消化与恢复功能增强]</pre>
+<p><em>该图展示缓慢腹式呼吸如何通过迷走神经激活副交感神经系统，进而影响心率、血压和身体恢复功能。</em></p>
+  </main>
+  <footer class="spl-credit"><span class="spl-credit__meta">Ch2: The Physiology Lens — Breath, Circulation, Fascia, and Core (生理视角) (Level: College &middot; Language: ZH &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
+</div>
+</body>
+</html>

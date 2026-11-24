@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>胃肠蠕动 | Meta Health Ch05</title>
+<script>
+MathJax = {
+  loader: { load: ['[tex]/mathtools'] },
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']],
+         packages: { '[+]': ['mathtools'] } },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<script src="https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.min.js"></script>
+<script>mermaid.initialize({ startOnLoad: true, theme: 'neutral' });</script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+footer.spl-credit span{display:block}
+footer.spl-credit .spl-credit__meta{margin-bottom:4px}
+.cb-figure{margin:24px 0;text-align:center}
+.cb-figure img{max-width:100%;height:auto;border:1px solid #e0e0d8;border-radius:6px}
+figcaption{font-size:.82rem;color:#666;margin-top:8px;font-style:italic;text-align:center}
+pre.mermaid{background:none;border:none;padding:0;overflow:visible;margin:16px 0}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="胃肠蠕动">胃肠蠕动</h2>
+<p><strong>定义。</strong> 胃肠蠕动是消化道平滑肌有协调的收缩波，它既能搅拌食物，也能把食物向前推送。消化道从口腔到肛门全长约 7–9 米（活体肌肉有张力，实际较短）。蠕动主要有两种形式：</p>
+<li><strong>推进性蠕动</strong>：环形肌在食团上方收缩，纵行肌在食团下方收缩，食团被向肛侧推进。</li>
+<li><strong>分节运动</strong>：相隔的肠段交替收缩和舒张，把食糜切分、混合，使它与消化液和肠黏膜充分接触。</li>
+<p>肠神经系统（肠壁内的神经网络）能独立产生这些节律。副交感神经（主要是迷走神经）兴奋时，会增强收缩、加快推进。应激时交感神经占优势，肠道运动被抑制，所以紧张时常出现食欲下降或便秘。也有人在应激时腹泻，这说明应激对肠道的影响并不单一。</p>
+<p><strong>数据举例。</strong> 不同肠段的推进速度差别很大。一餐混合食物的大致通过时间如下：</p>
+<p>| 部位 | 大致停留时间 | |---|---| | 胃（排空） | 2–4 小时 | | 小肠 | 3–5 小时 | | 结肠 | 12–48 小时 |</p>
+<p>全肠道通过时间为 $T = T_{\text{胃}} + T_{\text{小肠}} + T_{\text{结肠}}$，这是对各段时间的求和。</p>
+<p><strong>例题。</strong> 某人早餐后，胃排空用了 3 小时，小肠通过用了 4 小时，结肠通过用了 30 小时。求全肠道通过时间，并判断它是否在常见范围内。</p>
+<p>解：</p>
+$$T = 3 + 4 + 30 = 37 \text{ 小时}$$
+<p>这个值落在上表三段范围合计的约 17–96 小时之内，也在一般 24–72 小时的常见范围内，属于正常。</p>
+<p><strong>问题解决应用。</strong> 某人连续一周考试，每天排便一次的习惯变为每 3–4 天一次，同时食欲下降。可以按以下步骤分析：</p>
+<li><strong>找机制</strong>：考试压力使交感神经兴奋，副交感活动相对减弱，结肠蠕动变慢，粪便在结肠中停留更久，水分被吸收更多，大便变硬。</li>
+<li><strong>选对策</strong>：</li>
+<p>   - 增加膳食纤维，成人推荐每日约 25–30 g，以增加粪便体积和对肠壁的刺激。    - 保证每日饮水充足，避免粪便过干。    - 安排规律的进餐时间。进食后胃结肠反射会增强结肠蠕动，早餐后尝试排便最容易成功。    - 适度运动，并用放松呼吸等方式降低交感兴奋。</p>
+<li><strong>识别警示信号</strong>：若出现便血、不明原因的体重下降、持续腹痛，或症状超过数周，应就医检查，不能只当作"压力问题"。</li>
+<p>中医认为"脾主运化"，胃肠功能与情志相关。这一说法与上述应激和肠道运动的关系有一定的相似之处，但它是传统理论的表述，不能代替现代的生理机制。</p>
+<p><strong>小结。</strong> 胃肠蠕动由平滑肌的推进波和分节运动共同完成，受肠神经系统调节，副交感神经使之增强，应激使之减弱。分析肠道问题时，可以先估算各段通过时间，再判断是哪个环节出了问题。</p>
+  </main>
+  <footer class="spl-credit"><span class="spl-credit__meta">Ch5: Eating as Internal Exercise (饮食即内脏运动) (Level: College &middot; Language: ZH &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
+</div>
+</body>
+</html>

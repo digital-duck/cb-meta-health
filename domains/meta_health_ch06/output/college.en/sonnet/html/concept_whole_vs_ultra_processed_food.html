@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Whole vs. Ultra-Processed Food | Meta Health Ch06</title>
+<script>
+MathJax = {
+  loader: { load: ['[tex]/mathtools'] },
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']],
+         packages: { '[+]': ['mathtools'] } },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<script src="https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.min.js"></script>
+<script>mermaid.initialize({ startOnLoad: true, theme: 'neutral' });</script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+footer.spl-credit span{display:block}
+footer.spl-credit .spl-credit__meta{margin-bottom:4px}
+.cb-figure{margin:24px 0;text-align:center}
+.cb-figure img{max-width:100%;height:auto;border:1px solid #e0e0d8;border-radius:6px}
+figcaption{font-size:.82rem;color:#666;margin-top:8px;font-style:italic;text-align:center}
+pre.mermaid{background:none;border:none;padding:0;overflow:visible;margin:16px 0}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="whole-vs-ultra-processed-food">Whole vs. Ultra-Processed Food</h2>
+<p><strong>Definition.</strong> The NOVA classification sorts foods by the <em>extent and purpose of industrial processing</em> rather than by nutrient content. It has four groups:</p>
+<p>| Group | Description | Examples | |---|---|---| | 1. Unprocessed or minimally processed | Edible parts of plants or animals, altered only by drying, freezing, grinding or pasteurizing | Fruit, vegetables, eggs, plain milk, dried beans, fresh meat | | 2. Processed culinary ingredients | Substances extracted from group 1 foods, used in cooking | Oil, butter, sugar, salt | | 3. Processed foods | Groups 1 and 2 combined by simple methods | Canned vegetables, cheese, fresh bread | | 4. Ultra-processed foods (UPFs) | Industrial formulations made mostly from extracted substances (refined starch, sugar, fats, protein isolates) plus additives such as emulsifiers, flavorings, and sweeteners | Soft drinks, packaged snacks, instant noodles, reconstituted meat products |</p>
+<p>A practical test for group 4: the ingredient list contains items you would not find in a home kitchen, such as maltodextrin, hydrogenated oil, or "natural flavor."</p>
+<p><strong>Why UPFs are linked to overeating.</strong> UPFs are typically energy-dense, soft, and low in fiber and water. They are easy to eat quickly, so fullness signals arrive after more energy has already been consumed. In a 2019 inpatient trial (Hall et al.), 20 adults were given either an ultra-processed or an unprocessed diet for two weeks, with meals matched for presented calories, sugar, fat, fiber, and macronutrients. On the ultra-processed diet they ate about 500 kcal/day more and gained about 0.9 kg; on the unprocessed diet they lost about 0.9 kg.</p>
+<p><strong>Worked example.</strong> Using the trial's figures, estimate the extra energy intake over 14 days:</p>
+$$500\ \text{kcal/day} \times 14\ \text{days} = 7000\ \text{kcal}$$
+<p>Body fat stores roughly 7700 kcal per kilogram, a common rule of thumb. So 7000 kcal corresponds to about $\frac{7000}{7700} \approx 0.9$ kg of fat, which is close to the observed weight difference. The rule of thumb is approximate, but here it agrees with the measurement.</p>
+<p><strong>Problem-solving application.</strong> Classify a typical breakfast and find a substitution.</p>
+<p><em>Meal:</em> sweetened breakfast cereal with flavored milk, and a fruit-flavored yogurt drink.</p>
+<li>Read the labels. The cereal lists refined grain flour, sugar, and flavorings (group 4). The flavored milk and yogurt drink contain sweeteners, thickeners, and flavorings (group 4).</li>
+<li>Replace with the nearest group 1 or 3 equivalents: plain oats cooked in water or milk, fresh fruit, and plain yogurt.</li>
+<li>Estimate the change. If the original meal is 550 kcal and the swap is 400 kcal, you save 150 kcal per day, or about 1050 kcal per week.</li>
+<p>Some caution is warranted: NOVA is a classification of processing, not a ranking of nutrients. Some group 4 foods (certain wholegrain breads or fortified plant milks) may be nutritionally reasonable, and some group 1 foods are not healthy in every quantity. Observational studies link high UPF intake to obesity, type 2 diabetes, and cardiovascular disease, but they cannot fully separate processing from overall diet quality. The 2019 trial was small and short, so it shows a plausible mechanism rather than long-term proof.</p>
+<p><strong>Takeaway.</strong> Reading ingredient lists, not just calorie counts, is a practical way to spot ultra-processed foods and reduce their share of your diet.</p>
+  </main>
+  <footer class="spl-credit"><span class="spl-credit__meta">Ch6: What We Eat — Food Quality, Four Natures, and Five Flavors (四气五味) (Level: College &middot; Language: EN &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
+</div>
+</body>
+</html>

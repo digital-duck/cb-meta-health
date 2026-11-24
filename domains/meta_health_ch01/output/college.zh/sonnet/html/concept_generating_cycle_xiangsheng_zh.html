@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>五行相生 | Meta Health Ch01</title>
+<script>
+MathJax = {
+  loader: { load: ['[tex]/mathtools'] },
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']],
+         packages: { '[+]': ['mathtools'] } },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<script src="https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.min.js"></script>
+<script>mermaid.initialize({ startOnLoad: true, theme: 'neutral' });</script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+footer.spl-credit span{display:block}
+footer.spl-credit .spl-credit__meta{margin-bottom:4px}
+.cb-figure{margin:24px 0;text-align:center}
+.cb-figure img{max-width:100%;height:auto;border:1px solid #e0e0d8;border-radius:6px}
+figcaption{font-size:.82rem;color:#666;margin-top:8px;font-style:italic;text-align:center}
+pre.mermaid{background:none;border:none;padding:0;overflow:visible;margin:16px 0}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="五行相生">五行相生</h2>
+<p><strong>定义。</strong> 在 Traditional Chinese Medicine(TCM,中医)中,五行指木、火、土、金、水五种功能属性。中医认为,五行之间存在"相生"关系:每一行都对后一行起滋养、促进作用。相生的顺序是:木生火,火生土,土生金,金生水,水生木,首尾相接,形成闭环。</p>
+<p>古人用母子关系比喻这一过程:"生我者为母,我生者为子"。例如,木生火,则木是火之"母",火是木之"子";同时火又生土,所以火既是"子",也是"母"。需要说明,这是一种解释框架,不是可以测量的生理定律。</p>
+<p>| 相生关系 | 传统取象 | 中医的脏腑对应 | |---|---|---| | 木生火 | 木头燃烧生火 | 肝(木)藏血,养心(火) | | 火生土 | 火烬成灰化土 | 心(火)之阳气温煦脾(土) | | 土生金 | 土中蕴藏矿物 | 脾(土)运化水谷精微,充养肺(金) | | 金生水 | 金属凝结水汽 | 肺(金)之清肃下行,助肾(水) | | 水生木 | 水滋润树木 | 肾(水)藏精,滋养肝(木) |</p>
+<p><strong>示例:用相生分析一个病例。</strong> 假设一位患者长期食欲差、大便偏稀、容易疲倦,同时常感气短、易感冒。中医的解释思路如下:</p>
+<li>食欲差、便稀、疲倦,归为脾(土)功能不足。</li>
+<li>气短、易感冒,归为肺(金)功能不足。</li>
+<li>按相生次序,土生金,脾为肺之母。中医称此为"母病及子":母脏虚弱,无力充养子脏。</li>
+<li>因此治疗不单治肺,而是先健脾,即"培土生金"。常用的方法包括调整饮食,如规律进食、少食生冷,并配合中药(如以党参、白术、茯苓为主的方剂,须由执业中医师辨证开方)。</li>
+<p><strong>问题求解:反向与顺向的推理。</strong> 相生关系给出两种推理路径:</p>
+<li><strong>补母:</strong> 子脏虚,可补其母。例如肺虚久咳,用培土生金。</li>
+<li><strong>泻子:</strong> 母脏过亢,可泻其子。例如肝火旺(木)出现烦躁、头痛,按"实则泻其子"的思路,清泻心火(火)。</li>
+<p>练习:一位患者失眠、心悸、健忘,并伴有眼睛干涩、头晕。请问:(1) 心属哪一行?肝属哪一行?(2) 按相生关系,哪一脏是哪一脏之母?(3) 中医会提出怎样的调养思路?</p>
+<p>参考答案:(1) 心属火,肝属木。(2) 木生火,肝为心之母。(3) 肝血不足,无以养心,属"母病及子",思路是养肝血以安心神,同时规律作息。</p>
+<p><strong>证据状况。</strong> 五行相生是一套归纳性的类比模型,用于组织经验和指导辨证。现代医学并不以它解释器官间的关系,其具体治法的疗效需靠针对各方药、各疗法的临床试验来检验,不能由相生理论本身推出。因此,出现持续的食欲、呼吸或睡眠问题时,应首先就医明确诊断。</p>
+<pre class="mermaid">graph LR
+A[木 肝] -->|相生| B[火 心]
+B -->|相生| C[土 脾]
+C -->|相生| D[金 肺]
+D -->|相生| E[水 肾]
+E -->|相生| A</pre>
+<p><em>五行相生循环图:木、火、土、金、水依次滋养下一行,水再回过头生木,首尾相连成环。</em></p>
+  </main>
+  <footer class="spl-credit"><span class="spl-credit__meta">Ch1: TCM Foundations — Yin-Yang, Qi-Blood, and the Five Phases (中医基础) (Level: College &middot; Language: ZH &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
+</div>
+</body>
+</html>

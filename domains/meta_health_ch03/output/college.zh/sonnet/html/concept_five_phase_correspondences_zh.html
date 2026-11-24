@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>五行归类 | Meta Health Ch03</title>
+<script>
+MathJax = {
+  loader: { load: ['[tex]/mathtools'] },
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']],
+         packages: { '[+]': ['mathtools'] } },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<script src="https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.min.js"></script>
+<script>mermaid.initialize({ startOnLoad: true, theme: 'neutral' });</script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+footer.spl-credit span{display:block}
+footer.spl-credit .spl-credit__meta{margin-bottom:4px}
+.cb-figure{margin:24px 0;text-align:center}
+.cb-figure img{max-width:100%;height:auto;border:1px solid #e0e0d8;border-radius:6px}
+figcaption{font-size:.82rem;color:#666;margin-top:8px;font-style:italic;text-align:center}
+pre.mermaid{background:none;border:none;padding:0;overflow:visible;margin:16px 0}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="五行归类">五行归类</h2>
+<p><strong>定义。</strong> 五行归类是中医(Traditional Chinese Medicine,TCM)用来整理人体与自然现象的一套分类表。TCM 认为,木、火、土、金、水五种"行"各自对应一组事物。这些事物包括脏腑、季节、情志、五味和所主的身体组织。归入同一行的事物,被认为彼此关联。归类的依据是功能和性质上的类比,例如木"曲直、生发",火"炎上、温热"。它不是实验测得的因果关系。</p>
+<p>下表是最常用的对应关系:</p>
+<p>| 五行 | 五脏 | 季节 | 情志 | 五味 | 所主组织 | |---|---|---|---|---|---| | 木 | 肝 | 春 | 怒 | 酸 | 筋 | | 火 | 心 | 夏 | 喜 | 苦 | 脉 | | 土 | 脾 | 长夏 | 思 | 甘 | 肌肉 | | 金 | 肺 | 秋 | 悲(忧) | 辛 | 皮毛 | | 水 | 肾 | 冬 | 恐 | 咸 | 骨 |</p>
+<p>读表时按行读,也就是一行对应一整组事物。例如"木"这一行包含肝、春、怒、酸和筋。</p>
+<p><strong>例题。</strong> 小李每到秋天就容易皮肤干燥、咳嗽,心情也低落。请用五行归类解释这三个现象的归属。</p>
+<p><em>解:</em></p>
+<li>秋属金。</li>
+<li>金所对应的脏是肺,所主组织是皮毛,情志是悲(忧)。</li>
+<li>所以 TCM 把皮肤干燥、咳嗽和低落情绪,都放在"秋—金—肺"这一组里解释。</li>
+<p>这是 TCM 的解释框架。从现代生理学看,秋季空气干燥会刺激皮肤和呼吸道,这是更直接的原因。</p>
+<p><strong>问题解决应用。</strong> 归类表可以反过来使用:已知一个线索,查出同一行的其他项目,再推断相关的问题。</p>
+<p><em>题目:</em> 一位患者长期易怒,筋脉拘紧,爱吃酸味食物,春天症状加重。请找出这些线索共同指向哪一行。</p>
+<p><em>解:</em></p>
+<li>逐项查表:怒属木,筋属木,酸属木,春属木。</li>
+<li>四条线索都落在"木"这一行。</li>
+<li>木对应肝,所以 TCM 会把"肝"作为首先考虑的脏。</li>
+<p><em>检验:</em> 如果线索分属不同的行,例如易怒(木)加咳嗽(金),就不能只归入一行。此时要考虑多个脏腑同时受累,并结合其他表现一起判断。</p>
+<p><strong>使用时的提醒。</strong> 五行归类是一套记忆和推理的工具。它不能代替检查和诊断。表中的对应关系,例如"怒伤肝""悲伤肺",没有被现代医学证实为确定的因果规律。持续咳嗽、长期情绪低落或肌肉僵紧,应当先做规范的医学检查。</p>
+  </main>
+  <footer class="spl-credit"><span class="spl-credit__meta">Ch3: The Five-Organ Exercises (五脏操) (Level: College &middot; Language: ZH &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
+</div>
+</body>
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>松紧结合 | Meta Health Ch04</title>
+<script>
+MathJax = {
+  loader: { load: ['[tex]/mathtools'] },
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']],
+         packages: { '[+]': ['mathtools'] } },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<script src="https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.min.js"></script>
+<script>mermaid.initialize({ startOnLoad: true, theme: 'neutral' });</script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+footer.spl-credit span{display:block}
+footer.spl-credit .spl-credit__meta{margin-bottom:4px}
+.cb-figure{margin:24px 0;text-align:center}
+.cb-figure img{max-width:100%;height:auto;border:1px solid #e0e0d8;border-radius:6px}
+figcaption{font-size:.82rem;color:#666;margin-top:8px;font-style:italic;text-align:center}
+pre.mermaid{background:none;border:none;padding:0;overflow:visible;margin:16px 0}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="松紧结合">松紧结合</h2>
+<p><strong>松紧结合</strong>指的是在每一式动作的末尾，先做一个短暂的"紧"（向上托举、拉弓、握拳等），随即立刻放松（"松"），再进入下一式。其要点有两个：紧的时间很短，通常约 1 至 2 秒；松要及时、彻底，不能带着僵硬进入下一式。</p>
+<p>从生理学看，这种节律与肌肉泵作用相吻合。肌肉收缩时会挤压其间的静脉，静脉内的瓣膜只允许血液向心回流，所以血液被推向心脏。肌肉放松时，静脉重新充盈，血液又从毛细血管流入。如果紧而不松，持续收缩会压住血管，反而妨碍血流；如果只松不紧，肌肉泵就没有动力。可见，"泵"的效果来自收缩与放松的交替，而不是其中任何一半。</p>
+<h3 id="例题">例题</h3>
+<p>以八段锦中的"双手托天理三焦"为例。</p>
+<li>两掌上托，伸展手臂，到最高处时用力撑住，保持约 1 秒（紧）。</li>
+<li>立刻松开手指，让双臂自然下落，肩、肘、腕全部放松（松）。</li>
+<li>随后进入下一次托举。</li>
+<p>假设你做 8 次，每次紧 1 秒、松 3 秒。一轮的总用时与"紧"所占的比例如下：</p>
+$$
+8\times(1+3)=32\ \text{秒},\qquad \frac{1}{1+3}=25\%
+$$
+<p>这里的比例只是用来说明时间的分配，并不是该功法的规定数值。若把"紧"拉长到 4 秒，比例升至 $\frac{4}{4+3}\approx 57\%$，持续收缩的时间就占了一半以上，容易憋气、面红，也会升高血压。血压偏高或有心血管疾病的人尤其要避免长时间用力。</p>
+<h3 id="问题应用">问题应用</h3>
+<p><strong>情境：</strong> 小李练"左右开弓似射雕"时，每次拉弓后都要停 5 秒再放，练完感到手臂酸胀、胸口发闷。请分析原因并给出调整办法。</p>
+<p><strong>分析：</strong></p>
+<li>停 5 秒属于持续收缩，肌肉长时间压迫血管，血液回流受阻，所以酸胀。</li>
+<li>为了坚持下去，人容易不自觉地憋气，因此胸闷。</li>
+<li>问题出在"紧"过长，也可能是"松"不够，比如放松时肩膀仍然耸着。</li>
+<p><strong>调整办法：</strong></p>
+<li>把拉弓末端的"紧"缩短到约 1 至 2 秒，随即松手、沉肩、放下手臂。</li>
+<li>保持自然呼吸，不要憋气；一般的做法是拉弓时呼气，回收时吸气。</li>
+<li>用身体感觉来检验："紧"时手臂有力但不发抖，"松"时手指和肩膀能明显感到变软、变沉。</li>
+<p><strong>自查清单：</strong></p>
+<p>| 检查项 | 合格表现 | 需要调整 | |---|---|---| | 紧的时长 | 约 1 至 2 秒 | 超过 3 秒，面红、憋气 | | 松的程度 | 肩、肘、腕全部松开 | 肩膀仍耸起、手指仍绷着 | | 呼吸 | 自然、不中断 | 用力时屏气 |</p>
+<p>松紧结合的价值，在于借助肌肉泵作用，让血液在动作的节奏中被推动。需要提醒的是，这一节律是对功法动作的生理学解释，不等于它能治疗具体疾病；有基础疾病的人应根据自身情况调整力度，必要时咨询医生。</p>
+  </main>
+  <footer class="spl-credit"><span class="spl-credit__meta">Ch4: Baduanjin — The Eight Brocades (八段锦) (Level: College &middot; Language: ZH &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
+</div>
+</body>
+</html>

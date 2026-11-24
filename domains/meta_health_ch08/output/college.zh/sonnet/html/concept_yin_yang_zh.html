@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>阴阳 | Meta Health Ch08</title>
+<script>
+MathJax = {
+  loader: { load: ['[tex]/mathtools'] },
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']],
+         packages: { '[+]': ['mathtools'] } },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<script src="https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.min.js"></script>
+<script>mermaid.initialize({ startOnLoad: true, theme: 'neutral' });</script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+footer.spl-credit span{display:block}
+footer.spl-credit .spl-credit__meta{margin-bottom:4px}
+.cb-figure{margin:24px 0;text-align:center}
+.cb-figure img{max-width:100%;height:auto;border:1px solid #e0e0d8;border-radius:6px}
+figcaption{font-size:.82rem;color:#666;margin-top:8px;font-style:italic;text-align:center}
+pre.mermaid{background:none;border:none;padding:0;overflow:visible;margin:16px 0}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="阴阳">阴阳</h2>
+<p><strong>定义。</strong> 阴阳是中医(Traditional Chinese Medicine,TCM)用来描述事物相对性质及其相互关系的一对概念。中医认为,人体和自然界的现象都可以按相对的性质分为两类:阴偏向寒凉、安静、向内、向下、物质性;阳偏向温热、活跃、向外、向上、功能性。要注意,阴阳不是固定的标签,而是相对的:同一事物与不同对象比较,归属可以改变。例如,白天属阳、夜晚属阴;而在白天之中,上午又相对属阳、下午相对属阴。</p>
+<p>中医还提出阴阳之间有几种关系:对立制约(如热与寒互相抑制)、互根互用(阴为阳提供物质基础,阳推动阴的化生)、消长变化(此长彼消)、相互转化(极端状态下可向对立面转变)。这些是定性的描述,不能用数值或公式计算,也没有可直接测量的"阴量"或"阳量"。从现代科学角度看,阴阳是一种思维框架和分类语言,而不是已被证实的生理机制;它与体温、心率、激素水平等可测量指标之间并没有经检验的对应关系。</p>
+<p><strong>示例:用阴阳描述一次发热。</strong> 设想一位患者,体温 $39\,^\circ\text{C}$,面红口渴,喜冷饮,脉快,尿黄。中医会这样分析:</p>
+<p>| 观察 | 倾向 | |---|---| | 发热、面红 | 热,属阳 | | 口渴喜冷饮 | 热伤津液,津液属阴 | | 脉快 | 动,属阳 | | 尿黄、量少 | 阴液不足 |</p>
+<p>中医据此判断为"阳盛"(热过盛),治疗原则是清热。若另一位患者怕冷、四肢冰凉、精神萎靡、脉弱、喜热饮,则被归为"阳虚"(温煦不足),治疗原则是温补。两者的区别在于:前者是热的一方过多,后者是热的一方不足。</p>
+<p><strong>问题应用。</strong> 下面三道题练习用阴阳的相对性做分类。</p>
+<li><em>某人白天精神好、夜间畏寒,怎样描述?</em> 白天属阳,精神好是阳的功能活跃,属正常;夜间畏寒,说明夜间"阳"不足以温煦身体。这是中医的描述方式,并不等于诊断出某种疾病。</li>
+<li><em>在"心"与"肾"中,谁相对属阳?</em> 在中医的五脏理论中,心位于上,属阳;肾位于下,属阴。这是与对方比较得出的相对结论。</li>
+<li><em>出汗过多后口渴、乏力,如何理解?</em> 汗是津液,属阴;大量出汗是阴液耗损。</li>
+<p><strong>需要提醒的是</strong>:现代医学对发热、脱水等情况有明确的测量方法和处理规范。体温持续升高、严重脱水或意识改变时,应以体温、血压、化验结果为依据及时就医,而不应只靠阴阳分类来判断病情。学习阴阳的价值,在于读懂中医的语言和推理方式,而不是替代客观检查。</p>
+  </main>
+  <footer class="spl-credit"><span class="spl-credit__meta">Ch8: Rhythms — Sleep, the Organ Clock, and the Seasons (天人相应) (Level: College &middot; Language: ZH &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
+</div>
+</body>
+</html>

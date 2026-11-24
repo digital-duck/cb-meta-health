@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cardiac Output | Meta Health Ch02</title>
+<script>
+MathJax = {
+  loader: { load: ['[tex]/mathtools'] },
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']],
+         packages: { '[+]': ['mathtools'] } },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<script src="https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.min.js"></script>
+<script>mermaid.initialize({ startOnLoad: true, theme: 'neutral' });</script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+footer.spl-credit span{display:block}
+footer.spl-credit .spl-credit__meta{margin-bottom:4px}
+.cb-figure{margin:24px 0;text-align:center}
+.cb-figure img{max-width:100%;height:auto;border:1px solid #e0e0d8;border-radius:6px}
+figcaption{font-size:.82rem;color:#666;margin-top:8px;font-style:italic;text-align:center}
+pre.mermaid{background:none;border:none;padding:0;overflow:visible;margin:16px 0}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="cardiac-output">Cardiac Output</h2>
+<p>Cardiac output is the volume of blood the heart pumps in one minute. It depends on two quantities the heart controls directly: how fast it beats (heart rate) and how much blood it ejects with each beat (stroke volume).</p>
+$$
+\text{Cardiac Output} = \text{Heart Rate} \times \text{Stroke Volume}
+$$
+<p>Heart rate is measured in beats per minute (bpm), and stroke volume — the volume of blood ejected by the left ventricle in a single contraction — is measured in milliliters. Multiplying beats per minute by milliliters per beat gives milliliters per minute, which is usually converted to liters per minute.</p>
+<p><strong>Worked example.</strong> A resting adult has a heart rate of 70 bpm and a stroke volume of 70 mL. Cardiac output is:</p>
+$$
+70\ \text{beats/min} \times 70\ \text{mL/beat} = 4900\ \text{mL/min} \approx 5\ \text{L/min}
+$$
+<p>This matches the commonly cited resting value of about 5 liters per minute — roughly the body's entire blood volume circulated once every minute.</p>
+<p><strong>Problem-solving application.</strong> Cardiac output must rise sharply during exercise to deliver more oxygen to working muscles, and the equation shows the two independent levers the body can pull. Suppose during moderate exercise heart rate rises to 130 bpm while stroke volume increases modestly to 90 mL (a well-trained heart fills more completely and contracts more forcefully). New cardiac output:</p>
+$$
+130 \times 90 = 11{,}700\ \text{mL/min} \approx 11.7\ \text{L/min}
+$$
+<p>This is a more than twofold increase. Notice that heart rate contributed the larger share of the change here — that is typical: heart rate can roughly triple or quadruple from rest to maximal exertion, while stroke volume increases more modestly because filling time between beats shortens as heart rate rises. This is also why cardiac output plateaus or even falls at very high heart rates in untrained individuals: if the heart beats too fast, the ventricle does not have time to fill, stroke volume drops, and the gain from higher heart rate is partly canceled out.</p>
+<p>The formula also explains clinical reasoning at the bedside. In heart failure, stroke volume falls because the weakened heart cannot contract as forcefully; the body partially compensates by raising heart rate, which is why heart failure patients often have a resting tachycardia. Knowing that cardiac output is a product, not a sum, of two variables lets a clinician or physiology student predict how a change in one factor — blood loss lowering stroke volume, a fever raising heart rate — will shift total blood flow, even without measuring cardiac output directly.</p>
+  </main>
+  <footer class="spl-credit"><span class="spl-credit__meta">Ch2: The Physiology Lens — Breath, Circulation, Fascia, and Core (生理视角) (Level: College &middot; Language: EN &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
+</div>
+</body>
+</html>

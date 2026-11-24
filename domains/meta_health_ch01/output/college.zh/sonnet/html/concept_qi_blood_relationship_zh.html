@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>气血关系 | Meta Health Ch01</title>
+<script>
+MathJax = {
+  loader: { load: ['[tex]/mathtools'] },
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']],
+         packages: { '[+]': ['mathtools'] } },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<script src="https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.min.js"></script>
+<script>mermaid.initialize({ startOnLoad: true, theme: 'neutral' });</script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+footer.spl-credit span{display:block}
+footer.spl-credit .spl-credit__meta{margin-bottom:4px}
+.cb-figure{margin:24px 0;text-align:center}
+.cb-figure img{max-width:100%;height:auto;border:1px solid #e0e0d8;border-radius:6px}
+figcaption{font-size:.82rem;color:#666;margin-top:8px;font-style:italic;text-align:center}
+pre.mermaid{background:none;border:none;padding:0;overflow:visible;margin:16px 0}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="气血关系">气血关系</h2>
+<p><strong>定义。</strong> 气血关系指气与血在生成、运行和功能上相互依存、相互作用的关系。中医认为：“气为血之帅，血为气之母”（气为血之帅，血为气之母）。前半句指气能生血、行血、摄血；后半句指血能载气、养气。这是中医的解释框架，不等同于现代生理学中的具体机制，但可以用来理解中医如何分析临床表现。</p>
+<p><strong>两个方向的作用：</strong></p>
+<p>| 方向 | 作用 | 常见表现举例 | |---|---|---| | 气对血 | 生血：气化功能参与血的生成 | 气虚日久，面色淡白、乏力 | | | 行血：气的推动使血液运行 | 气滞则血瘀，出现胀痛、刺痛 | | | 摄血：气固摄血液于脉中 | 气不摄血，出现皮下瘀斑、月经量多 | | 血对气 | 载气：气依附于血而运行 | 大出血后气随血脱，出现冷汗、脉微 | | | 养气：血为气提供营养 | 血虚者常伴气短、懒言 |</p>
+<p><strong>示例：月经量多伴乏力。</strong> 一位女性连续数月月经量多、色淡，平时容易疲倦，稍动即气短，面色苍白。中医的分析步骤如下：</p>
+<li>先看主症：出血量多，属“血”的问题。</li>
+<li>再看伴随症：乏力、气短，属“气”虚的表现。</li>
+<li>判断因果：中医认为这可能是气不摄血，即气虚而不能固摄血液，导致出血；失血又使血虚，血不养气，气更虚，形成循环。</li>
+<li>治则：补气以摄血，同时补血，常用方剂如归脾汤，即气血并补。</li>
+<p><strong>应用：同一症状，不同的气血关系。</strong></p>
+<p>| 情形 | 表现 | 中医的辨证思路 | |---|---|---| | 气滞血瘀 | 胸胁固定刺痛，情绪抑郁时加重，舌暗 | 气行不畅，血随之停滞，治以理气活血 | | 气虚血瘀 | 肢体麻木乏力，伴气短 | 气推动无力，治以补气为主，兼活血 | | 气随血脱 | 大出血后四肢厥冷、冷汗、脉微欲绝 | 血失则气无所依，急需止血并回阳固脱 |</p>
+<p>练习：某人久病后面色萎黄、心悸、气短、懒言。请判断主要是气虚还是血虚，二者如何相互影响？ 参考思路：面色萎黄、心悸偏向血虚（血不养心）；气短、懒言偏向气虚；两者并见，称气血两虚。血虚使气失所养，气虚使生血无力，因此治疗时通常兼顾两方面，而不是只补其一。</p>
+<p><strong>需要注意的现实边界。</strong> 现代医学中，大出血、严重贫血、异常出血等属于需要及时检查和处理的情况，例如月经量过多可能由子宫肌瘤、凝血异常或甲状腺疾病引起，应先明确诊断。气血关系可作为中医理解症状的框架，但不能替代对出血原因的检查，更不应延误急症救治。</p>
+  </main>
+  <footer class="spl-credit"><span class="spl-credit__meta">Ch1: TCM Foundations — Yin-Yang, Qi-Blood, and the Five Phases (中医基础) (Level: College &middot; Language: ZH &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
+</div>
+</body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>光照校准生物钟 | Meta Health Ch08</title>
+<script>
+MathJax = {
+  loader: { load: ['[tex]/mathtools'] },
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']],
+         packages: { '[+]': ['mathtools'] } },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<script src="https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.min.js"></script>
+<script>mermaid.initialize({ startOnLoad: true, theme: 'neutral' });</script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+footer.spl-credit span{display:block}
+footer.spl-credit .spl-credit__meta{margin-bottom:4px}
+.cb-figure{margin:24px 0;text-align:center}
+.cb-figure img{max-width:100%;height:auto;border:1px solid #e0e0d8;border-radius:6px}
+figcaption{font-size:.82rem;color:#666;margin-top:8px;font-style:italic;text-align:center}
+pre.mermaid{background:none;border:none;padding:0;overflow:visible;margin:16px 0}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="光照校准生物钟">光照校准生物钟</h2>
+<p><strong>定义。</strong> 人体的昼夜节律由下丘脑视交叉上核（SCN）这一"主时钟"调控，其自然周期略长于 24 小时，平均约为 24.2 小时。如果没有外界信号，这个时钟每天都会向后漂移一点。光照校准（光牵引，light entrainment）指的是：视网膜中含有黑视蛋白的感光神经节细胞把光信号传给视交叉上核，使内部时钟与外界昼夜对齐。这类细胞对波长约 480 nm 的蓝光最敏感。</p>
+<p>光的作用取决于<strong>什么时候</strong>照到眼睛：</p>
+<p>| 光照时间 | 对生物钟的影响 | 实际表现 | |---|---|---| | 清晨（起床后） | 提前（相位前移） | 夜里更早困，早晨更易醒 | | 白天 | 巩固节律，提高夜间褪黑素分泌 | 白天警觉，夜间睡眠更深 | | 深夜 | 推迟（相位后移），并抑制褪黑素 | 入睡变晚，早晨起床困难 |</p>
+<p><strong>例题。</strong> 小林的内在周期是 24.2 小时，晚上常刷手机到凌晨 1 点，早晨在室内拉着窗帘，7:30 才起床。他发现自己越来越晚睡。</p>
+<p>分析：深夜的明亮屏幕光让时钟推迟；早晨又缺少把时钟拉回的强光。两者叠加，每天都在向后漂移。</p>
+<p><strong>解决问题：设计一个调整方案。</strong> 小林想把入睡时间从 1:00 提前到 23:30。可以分三步：</p>
+<li><strong>固定起床时间并早晨见光。</strong> 每天 7:00 起床，30 分钟内到户外。晴天室外照度通常在 10000 勒克斯以上，阴天仍有数千勒克斯，而普通室内灯光一般只有 100–500 勒克斯，差距很大。</li>
+<li><strong>减少夜间光暴露。</strong> 睡前 1–2 小时调暗灯光，手机开启夜间模式并降低亮度。夜间模式只减少蓝光，不等于不影响节律，亮度和使用时间同样重要。</li>
+<li><strong>逐步调整。</strong> 每隔几天把作息提前 15–30 分钟，不要一次提前几个小时，这样时钟更容易跟上。</li>
+<p><strong>检验。</strong> 一两周后，如果小林不用闹钟也能在 7:00 前后自然醒来，并在 23:30 左右出现困意，说明时钟已经被校准。</p>
+<p><strong>注意。</strong> 轮班工作者和跨时区旅行者的问题本质相同：光照时间与内部时钟错位。到达东边的目的地后，早晨光照有助于提前时钟；先在晚上避免强光，再在目的地的清晨接触阳光，通常能更快适应。若长期失眠或节律严重紊乱，应咨询医生，而不是只靠调整光照。</p>
+  </main>
+  <footer class="spl-credit"><span class="spl-credit__meta">Ch8: Rhythms — Sleep, the Organ Clock, and the Seasons (天人相应) (Level: College &middot; Language: ZH &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
+</div>
+</body>
+</html>

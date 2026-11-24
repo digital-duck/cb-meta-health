@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>调心 | Meta Health Ch07</title>
+<script>
+MathJax = {
+  loader: { load: ['[tex]/mathtools'] },
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']],
+         packages: { '[+]': ['mathtools'] } },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<script src="https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.min.js"></script>
+<script>mermaid.initialize({ startOnLoad: true, theme: 'neutral' });</script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+footer.spl-credit span{display:block}
+footer.spl-credit .spl-credit__meta{margin-bottom:4px}
+.cb-figure{margin:24px 0;text-align:center}
+.cb-figure img{max-width:100%;height:auto;border:1px solid #e0e0d8;border-radius:6px}
+figcaption{font-size:.82rem;color:#666;margin-top:8px;font-style:italic;text-align:center}
+pre.mermaid{background:none;border:none;padding:0;overflow:visible;margin:16px 0}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="调心">调心</h2>
+<p><strong>调心</strong>(tiáoxīn)是气功三要素"调身、调息、调心"中的心理部分。中医认为,心神散乱会影响气的运行,因此练习时要把注意力收束到一个固定对象上。常见的对象有两种:一是呼吸(数息或观息),二是下腹部的<strong>丹田</strong>(意守丹田)。意守不是用力"想",而是轻轻地把注意放在那里,走神了再温和地带回来。</p>
+<p>现代研究把这类练习归入"专注式正念/注意力训练"。规律的呼吸专注练习有助于降低主观压力感,但效果大小因研究设计而异,不能当作疾病的治疗手段。</p>
+<p>正念进食(mindful eating)用的是同一种注意力技术,只是对象换成了食物:留意气味、口感、咀嚼次数和饱腹感信号。</p>
+<h3 id="例题-数息练习">例题:数息练习</h3>
+<p><strong>步骤:</strong></p>
+<li>坐姿放松,双眼微闭,自然呼吸。</li>
+<li>每次呼气时在心里默数,从1数到10,然后回到1。</li>
+<li>一旦发现自己走神(想到别的事),不批评自己,从1重新开始。</li>
+<p><strong>记录示例:</strong> 小明练习5分钟,记录到走神5次。</p>
+<p>练习时长为5分钟,即300秒。平均每次走神之间的间隔为:</p>
+$$\frac{300\ \text{s}}{5}=60\ \text{s}$$
+<p>下一周他练习同样的时长,走神3次,平均间隔变为:</p>
+$$\frac{300\ \text{s}}{3}=100\ \text{s}$$
+<p>这说明他保持专注的时间变长了。注意,"发现走神"本身就是练习的一部分,而不是失败。</p>
+<h3 id="应用-把调心用到正念进食">应用:把调心用到正念进食</h3>
+<p><strong>情境:</strong> 你要吃一顿午餐,常见情况是边看手机边吃,约10分钟吃完,几乎没有感觉到饱。</p>
+<p><strong>做法:</strong></p>
+<li>放下手机,先做3次深呼吸。</li>
+<li>每一口都留意气味、温度和口感,咀嚼后再放下餐具。</li>
+<li>吃到一半时停一下,给自己的饱腹感打分(0表示极饿,10表示极撑)。</li>
+<li>分数达到6至7时,可以考虑停下。</li>
+<p>饱腹信号从胃部传到大脑通常需要约20分钟,所以放慢速度能让你更早感觉到"够了"。以每分钟吃一口计,把用餐时间从10分钟延长到20分钟,就是把进食速度放慢一半。</p>
+<h3 id="常见问题">常见问题</h3>
+<p>| 问题 | 原因 | 处理办法 | |---|---|---| | 一直走神 | 初学者很正常 | 缩短到3分钟,每天固定时间练 | | 意守丹田时腹部发紧 | 用力过度 | 放松注意力,改回观察自然呼吸 | | 头晕、焦虑加重 | 过度专注或本身有焦虑症等情况 | 停止练习,必要时咨询医生 |</p>
+<p><strong>要点:</strong> 调心的核心是"选定一个对象、保持轻柔注意、走神即带回"。用走神次数或间隔来记录进步,比追求"完全不走神"更实际。</p>
+  </main>
+  <footer class="spl-credit"><span class="spl-credit__meta">Ch7: Stress, Emotion, and the Flow of Qi and Blood (情志与气血) (Level: College &middot; Language: ZH &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
+</div>
+</body>
+</html>

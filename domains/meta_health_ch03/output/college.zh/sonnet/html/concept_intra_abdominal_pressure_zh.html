@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>腹内压 | Meta Health Ch03</title>
+<script>
+MathJax = {
+  loader: { load: ['[tex]/mathtools'] },
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']],
+         packages: { '[+]': ['mathtools'] } },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<script src="https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.min.js"></script>
+<script>mermaid.initialize({ startOnLoad: true, theme: 'neutral' });</script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+footer.spl-credit span{display:block}
+footer.spl-credit .spl-credit__meta{margin-bottom:4px}
+.cb-figure{margin:24px 0;text-align:center}
+.cb-figure img{max-width:100%;height:auto;border:1px solid #e0e0d8;border-radius:6px}
+figcaption{font-size:.82rem;color:#666;margin-top:8px;font-style:italic;text-align:center}
+pre.mermaid{background:none;border:none;padding:0;overflow:visible;margin:16px 0}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="腹内压">腹内压</h2>
+<p><strong>定义。</strong> 腹内压(intra-abdominal pressure,IAP)是腹腔内部的压力,由腹壁肌肉、膈肌、骨盆底肌和腹腔内容物(脏器、液体、气体)共同形成。临床上通常以膀胱内压间接测量,单位为 mmHg。安静仰卧时正常值约为 5–7 mmHg;咳嗽、用力排便或举重时,可瞬间升至数十甚至上百 mmHg。</p>
+<p>腹腔可以看作一个"充满液体和脏器的封闭腔体",四周的壁决定了它的压力:</p>
+<p>| 结构 | 位置 | 对腹内压的作用 | |---|---|---| | 膈肌 | 顶部 | 收缩下移,腔体容积变小,压力升高 | | 腹横肌、腹斜肌、腹直肌 | 前侧壁 | 收缩使腹壁内收,压力升高 | | 盆底肌 | 底部 | 收缩上托,压力升高,并防止内容物下压 | | 多裂肌、腰背部肌群 | 后壁 | 收缩使后壁变硬,压力升高 |</p>
+<p><strong>呼吸与躯干运动的影响。</strong> 吸气时膈肌下降,腹腔容积略减,腹内压轻微上升;呼气时膈肌上升,压力回落。若在吸气后屏住呼吸(声门关闭),同时收紧腹壁肌肉,这一动作称为瓦尔萨尔瓦动作(Valsalva maneuver)。此时胸腔与腹腔都成为"加压的密闭腔",腹内压可显著升高,对腰椎起到支撑作用,减少腰椎承受的部分压缩负荷。躯干前屈、下蹲等动作同样会改变腹腔形状与压力。</p>
+<p><strong>例题。</strong> 一位 70 kg 的训练者做深蹲,测得安静站立时腹内压约 6 mmHg,吸气屏息、收紧腹壁后升至约 90 mmHg。问:压力变化了多少?这对循环系统有什么影响?</p>
+<p>解:变化量为 90 − 6 = 84 mmHg,约为静息值的 15 倍。腹内压过高会压迫腹腔内的静脉(如下腔静脉),使静脉回心血量暂时减少;同时胸内压也升高,血压在屏息期间可能剧烈波动。屏息结束后血压骤变,有人会感到头晕。</p>
+<p><strong>问题求解应用。</strong> 判断某个动作是否适合某人,可以按三步考虑:</p>
+<li><strong>看目标。</strong> 举起大重量时,短暂提高腹内压有助于稳定躯干,是常见做法。</li>
+<li><strong>看风险。</strong> 高血压、心血管疾病、疝气、孕期、腹部手术后的人,持续高腹内压可能加重病情,应避免长时间屏息用力,并遵从医嘱。</li>
+<li><strong>看替代。</strong> 中小重量训练时,可在用力阶段呼气,不必完全屏息。</li>
+<p>例如,一位有腹股沟疝的人搬重物,宜先寻求医生建议。若必须搬,应避免屏息硬撑,并尽量借助工具或他人协助,以免反复的高腹内压使疝囊加重突出。</p>
+<p><strong>小结。</strong> 腹内压由膈肌、腹壁肌、盆底肌和脊柱周围肌群共同调节。呼吸、屏息和躯干姿势都会改变它。适度升高有助于稳定脊柱,过高或持续升高则会增加循环系统和腹壁的负担,应根据个人健康状况合理控制。</p>
+  </main>
+  <footer class="spl-credit"><span class="spl-credit__meta">Ch3: The Five-Organ Exercises (五脏操) (Level: College &middot; Language: ZH &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
+</div>
+</body>
+</html>

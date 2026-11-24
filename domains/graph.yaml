@@ -1,0 +1,2094 @@
+# Book-level super-graph — AUTO-GENERATED, do not edit by hand.
+# Run:  python scripts/build_super_graph.py
+#
+# Merges all chapter graphs; each node carries source_domain (canonical
+# definition) and optionally also_in (other chapters that reuse it).
+# Cross-domain primitives (concepts in an earlier chapter re-declared as
+# primitives in a later one) appear here with their full composed_of chain.
+# This file is never used for SPL generation — it exists for validation
+# and future book-level graph visualisation.
+domain: meta_health
+chapters:
+- meta_health_ch01
+- meta_health_ch02
+- meta_health_ch03
+- meta_health_ch04
+- meta_health_ch05
+- meta_health_ch06
+- meta_health_ch07
+- meta_health_ch08
+- meta_health_ch09
+primitives:
+  blood_xue:
+    defines: 'Blood (血): in TCM, the nourishing and moistening substance that circulates
+      in the vessels, overlapping with but broader than the anatomical blood.'
+    labels:
+      en: Blood (Xue, 血)
+      zh: 血
+    tier: 0
+    source_domain: meta_health_ch01
+  body_fluids_jinye:
+    defines: 'Body fluids (津液): all normal fluids of the body — thin fluids (津) that
+      moisten skin and muscles and thick fluids (液) that lubricate joints, organs
+      and orifices.'
+    labels:
+      en: Body Fluids (Jinye, 津液)
+      zh: 津液
+    tier: 0
+    source_domain: meta_health_ch01
+  essence_jing:
+    defines: 'Essence (精): the stored, constitutional substance underlying growth,
+      reproduction and aging, inherited from parents and replenished by food.'
+    labels:
+      en: Essence (Jing, 精)
+      zh: 精
+    tier: 0
+    source_domain: meta_health_ch01
+  five_phases_wuxing:
+    defines: 'The Five Phases (五行 — Wood 木, Fire 火, Earth 土, Metal 金, Water 水): five
+      categories of process used to classify and relate natural and bodily phenomena.'
+    labels:
+      en: The Five Phases (Wuxing, 五行)
+      zh: 五行
+    tier: 0
+    source_domain: meta_health_ch01
+  meridian_jingluo:
+    defines: 'Meridians (经络): the TCM network of channels through which qi and blood
+      are said to flow, linking organs with the surface of the body and the limbs.'
+    labels:
+      en: Meridians (Jingluo, 经络)
+      zh: 经络
+    tier: 0
+    source_domain: meta_health_ch01
+  qi:
+    defines: 'Qi (气): the TCM notion of vital activity — the moving, warming, protecting
+      and transforming function of the body; roughly ''physiological function in motion''.'
+    labels:
+      en: Qi (气)
+      zh: 气
+    tier: 0
+    source_domain: meta_health_ch01
+  spirit_shen:
+    defines: 'Spirit (神): the TCM term for consciousness, mental activity and vitality
+      as it shows in the eyes, face and behavior.'
+    labels:
+      en: Spirit (Shen, 神)
+      zh: 神
+    tier: 0
+    source_domain: meta_health_ch01
+  yin_yang:
+    defines: 'Yin-yang (阴阳): the paired, mutually dependent and mutually transforming
+      opposites (rest/activity, cool/warm, substance/function) that TCM uses to describe
+      every process in the body.'
+    labels:
+      en: Yin and Yang (阴阳)
+      zh: 阴阳
+    tier: 0
+    source_domain: meta_health_ch01
+    also_in:
+    - meta_health_ch06
+    - meta_health_ch08
+  autonomic_nervous_system:
+    defines: 'The autonomic nervous system: the involuntary control system for heart
+      rate, blood vessels, digestion and breathing, with sympathetic and parasympathetic
+      branches.'
+    labels:
+      en: The Autonomic Nervous System
+      zh: 自主神经系统
+    tier: 0
+    source_domain: meta_health_ch02
+  cardiac_output:
+    defines: 'Cardiac output: the volume of blood the heart pumps per minute (heart
+      rate × stroke volume), about 5 L/min at rest in adults.'
+    labels:
+      en: Cardiac Output
+      zh: 心输出量
+    tier: 0
+    source_domain: meta_health_ch02
+  fascia:
+    defines: 'Fascia: the continuous connective-tissue web that wraps and links muscles,
+      organs and bones throughout the body.'
+    labels:
+      en: Fascia
+      zh: 筋膜
+    tier: 0
+    source_domain: meta_health_ch02
+  joint_range_of_motion:
+    defines: 'Joint range of motion: how far a joint can move in each direction (flexion,
+      extension, rotation, lateral bending), limited by bones, ligaments and muscles.'
+    labels:
+      en: Joint Range of Motion
+      zh: 关节活动度
+    tier: 0
+    source_domain: meta_health_ch02
+  lymphatic_system:
+    defines: 'The lymphatic system: a low-pressure network of vessels that returns
+      tissue fluid to the blood and carries immune cells; it has no central pump.'
+    labels:
+      en: The Lymphatic System
+      zh: 淋巴系统
+    tier: 0
+    source_domain: meta_health_ch02
+  respiration_mechanics:
+    defines: 'Breathing mechanics: the diaphragm and intercostal muscles change rib-cage
+      and thoracic volume to move air in and out of the lungs.'
+    labels:
+      en: Breathing Mechanics
+      zh: 呼吸力学
+    tier: 0
+    source_domain: meta_health_ch02
+  skeletal_muscle_contraction:
+    defines: 'Skeletal muscle contraction: voluntary muscles shorten and produce force
+      when activated by motor nerves, then relax.'
+    labels:
+      en: Skeletal Muscle Contraction
+      zh: 骨骼肌收缩
+    tier: 0
+    source_domain: meta_health_ch02
+  daoyin_tradition:
+    defines: 'Daoyin (导引): the ancient Chinese tradition of guided stretching and
+      breathing exercises for health, of which Baduanjin is a well-known descendant.'
+    labels:
+      en: The Daoyin Tradition (导引)
+      zh: 导引传统
+    tier: 0
+    source_domain: meta_health_ch04
+  evidence_quality:
+    defines: 'Evidence quality: how to weigh case reports, observational studies,
+      randomized controlled trials and meta-analyses, and why small or unblinded trials
+      can overstate benefits.'
+    labels:
+      en: Judging Evidence Quality
+      zh: 证据质量的判断
+    tier: 0
+    source_domain: meta_health_ch04
+    also_in:
+    - meta_health_ch09
+  gastrointestinal_tract:
+    defines: 'The gastrointestinal tract: mouth, esophagus, stomach, small and large
+      intestine, with the liver and pancreas as accessory organs.'
+    labels:
+      en: The Gastrointestinal Tract
+      zh: 消化道
+    tier: 0
+    source_domain: meta_health_ch05
+  liver_metabolic_role:
+    defines: 'The liver''s metabolic role: processing nutrients arriving from the
+      gut, storing glycogen, making bile and clearing toxins.'
+    labels:
+      en: The Liver's Metabolic Role
+      zh: 肝脏的代谢作用
+    tier: 0
+    source_domain: meta_health_ch05
+  smooth_muscle:
+    defines: 'Smooth muscle: involuntary muscle in the gut wall and blood vessels
+      that contracts rhythmically without conscious control.'
+    labels:
+      en: Smooth Muscle
+      zh: 平滑肌
+    tier: 0
+    source_domain: meta_health_ch05
+  spleen_stomach_system:
+    defines: The Spleen–Stomach system (脾胃), the Earth phase and middle burner (中焦)
+      of TCM (from Chapter 1).
+    labels:
+      en: The Spleen–Stomach System (脾胃)
+      zh: 脾胃
+    tier: 0
+    source_domain: meta_health_ch05
+  circadian_clock:
+    defines: 'The circadian clock: the body''s roughly 24-hour internal timer, set
+      mainly by light, that schedules hormones, digestion and sleep.'
+    labels:
+      en: The Circadian Clock
+      zh: 生物钟
+    tier: 0
+    source_domain: meta_health_ch06
+    also_in:
+    - meta_health_ch08
+  dietary_fiber:
+    defines: 'Dietary fiber: plant carbohydrates that human enzymes cannot digest,
+      which add bulk and feed gut bacteria.'
+    labels:
+      en: Dietary Fiber
+      zh: 膳食纤维
+    tier: 0
+    source_domain: meta_health_ch06
+  energy_balance:
+    defines: 'Energy balance: energy intake from food versus energy expenditure (basal
+      metabolic rate, digestion and activity), which together determine weight change
+      over time.'
+    labels:
+      en: Energy Balance
+      zh: 能量平衡
+    tier: 0
+    source_domain: meta_health_ch06
+  gut_microbiome:
+    defines: 'The gut microbiome: the trillions of microbes in the large intestine
+      that ferment fiber and influence digestion, immunity and metabolism.'
+    labels:
+      en: The Gut Microbiome
+      zh: 肠道菌群
+    tier: 0
+    source_domain: meta_health_ch06
+  macronutrients:
+    defines: 'Macronutrients: protein, carbohydrate and fat — the nutrients that supply
+      energy and building material.'
+    labels:
+      en: Macronutrients
+      zh: 宏量营养素
+    tier: 0
+    source_domain: meta_health_ch06
+  micronutrients_and_hydration:
+    defines: 'Micronutrients and hydration: vitamins, minerals and water, needed in
+      small amounts as co-factors for metabolism and signalling.'
+    labels:
+      en: Micronutrients and Hydration
+      zh: 微量营养素与水分
+    tier: 0
+    source_domain: meta_health_ch06
+  hpa_axis:
+    defines: 'The HPA axis (hypothalamus–pituitary–adrenal): the hormonal stress system
+      that releases cortisol.'
+    labels:
+      en: The HPA Axis
+      zh: HPA 轴（下丘脑-垂体-肾上腺轴）
+    tier: 0
+    source_domain: meta_health_ch07
+  liver_opening_movements:
+    defines: 'Liver-opening movements: rib fanning (扇肋) and Baduanjin form 7 (攒拳怒目)
+      (from Chapters 3–4).'
+    labels:
+      en: Liver-Opening Movements
+      zh: 疏肝动作
+    tier: 0
+    source_domain: meta_health_ch07
+  daily_baduanjin_practice_plan:
+    defines: A daily Baduanjin practice plan (from Chapter 4).
+    labels:
+      en: Your Daily Baduanjin Plan
+      zh: 每日八段锦练习计划
+    tier: 0
+    source_domain: meta_health_ch09
+  dual_lens_translation:
+    defines: Translating between TCM and physiology (from Chapter 2).
+    labels:
+      en: 'Dual-Lens Translation: TCM and Physiology'
+      zh: 双重视角：中医与生理学的互译
+    tier: 0
+    source_domain: meta_health_ch09
+  five_organ_routine_design:
+    defines: A personal five-organ exercise routine (from Chapter 3).
+    labels:
+      en: Designing Your Five-Organ Routine
+      zh: 设计你的五脏操练习
+    tier: 0
+    source_domain: meta_health_ch09
+  five_phase_meal_design:
+    defines: Five-Phase meal design (from Chapter 6).
+    labels:
+      en: Five-Phase Meal Design
+      zh: 五行膳食设计
+    tier: 0
+    source_domain: meta_health_ch09
+  mindful_meal_protocol:
+    defines: The mindful-meal protocol (from Chapter 5).
+    labels:
+      en: The Mindful-Meal Protocol
+      zh: 正念用餐方案
+    tier: 0
+    source_domain: meta_health_ch09
+  personal_daily_rhythm_schedule:
+    defines: The personal 24-hour rhythm (from Chapter 8).
+    labels:
+      en: Your Personal Rhythm Plan
+      zh: 个人作息节律计划
+    tier: 0
+    source_domain: meta_health_ch09
+  stress_resilience_routine:
+    defines: The stress-resilience routine (from Chapter 7).
+    labels:
+      en: A Daily Stress-Resilience Routine
+      zh: 每日抗压练习
+    tier: 0
+    source_domain: meta_health_ch09
+concepts:
+  controlling_cycle_xiangke:
+    defines: 'The controlling cycle (相克): Wood → Earth → Water → Fire → Metal → Wood,
+      each phase restraining another so that no phase grows unchecked.'
+    labels:
+      en: The Controlling Cycle (Xiangke, 相克)
+      zh: 五行相克
+    composed_of:
+    - five_phases_wuxing
+    tier: 1
+    source_domain: meta_health_ch01
+  dantian:
+    defines: 'Dantian (丹田): the ''elixir fields'', especially the lower dantian a
+      few finger-widths below the navel, used in qigong as the center where attention
+      and breath settle qi.'
+    labels:
+      en: Dantian (丹田)
+      zh: 丹田
+    composed_of:
+    - qi
+    - essence_jing
+    tier: 1
+    source_domain: meta_health_ch01
+    also_in:
+    - meta_health_ch03
+    - meta_health_ch04
+  five_zang_organs:
+    defines: 'The five zang organs (五脏 — Liver 肝, Heart 心, Spleen 脾, Lung 肺, Kidney
+      肾): functional systems that store qi, blood and essence, each governed by one
+      of the Five Phases; not identical to the anatomical organs of the same name.'
+    labels:
+      en: The Five Zang Organs (五脏)
+      zh: 五脏
+    composed_of:
+    - five_phases_wuxing
+    - qi
+    - blood_xue
+    - essence_jing
+    tier: 1
+    source_domain: meta_health_ch01
+  generating_cycle_xiangsheng:
+    defines: 'The generating cycle (相生): Wood → Fire → Earth → Metal → Water → Wood,
+      each phase nourishing the next like a mother feeding a child.'
+    labels:
+      en: The Generating Cycle (Xiangsheng, 相生)
+      zh: 五行相生
+    composed_of:
+    - five_phases_wuxing
+    tier: 1
+    source_domain: meta_health_ch01
+    also_in:
+    - meta_health_ch03
+  qi_blood_relationship:
+    defines: 'The mutual dependence of qi and blood — ''qi is the commander of blood,
+      blood is the mother of qi'' (气为血之帅，血为气之母): qi moves blood, blood nourishes qi.'
+    labels:
+      en: The Qi–Blood Relationship
+      zh: 气血关系
+    composed_of:
+    - qi
+    - blood_xue
+    tier: 1
+    source_domain: meta_health_ch01
+  three_treasures_jing_qi_shen:
+    defines: 'The Three Treasures (精气神): essence, qi and spirit as three levels of
+      vitality that cultivation practices aim to conserve and refine.'
+    labels:
+      en: 'The Three Treasures: Jing, Qi, Shen (精气神)'
+      zh: 精气神三宝
+    composed_of:
+    - essence_jing
+    - qi
+    - spirit_shen
+    tier: 1
+    source_domain: meta_health_ch01
+  five_phase_correspondences:
+    defines: 'The Five-Phase correspondence table (五行归类): each phase links an organ,
+      season, emotion, flavor, color, sense organ and tissue — e.g. Wood ↔ Liver ↔
+      spring ↔ anger ↔ sour ↔ green ↔ eyes ↔ tendons.'
+    labels:
+      en: Five-Phase Correspondences
+      zh: 五行归类
+    composed_of:
+    - five_zang_organs
+    - generating_cycle_xiangsheng
+    tier: 2
+    source_domain: meta_health_ch01
+    also_in:
+    - meta_health_ch03
+    - meta_health_ch06
+    - meta_health_ch07
+    - meta_health_ch08
+  heart_kidney_interaction:
+    defines: 'Heart–Kidney interaction (心肾相交, 水火既济): Heart Fire descends to warm Kidney
+      Water and Kidney Water ascends to cool Heart Fire; failure is described as ''Heart
+      Fire flaring upward'' (心火上炎).'
+    labels:
+      en: Heart–Kidney Interaction (心肾相交)
+      zh: 心肾相交
+    composed_of:
+    - five_zang_organs
+    - controlling_cycle_xiangke
+    - yin_yang
+    tier: 2
+    source_domain: meta_health_ch01
+    also_in:
+    - meta_health_ch03
+    - meta_health_ch04
+  overacting_and_insulting:
+    defines: Pathological distortions of the controlling cycle — overacting (相乘, excessive
+      restraint) and insulting (相侮, reversed restraint) — used in TCM to explain how
+      imbalance spreads between organs.
+    labels:
+      en: Overacting and Insulting (相乘相侮)
+      zh: 相乘相侮
+    composed_of:
+    - controlling_cycle_xiangke
+    tier: 2
+    source_domain: meta_health_ch01
+  prenatal_postnatal_qi:
+    defines: 'Prenatal (先天) and postnatal (后天) foundations: the Kidney stores inherited
+      essence, while the Spleen and Stomach make new qi and blood from food and drink
+      every day.'
+    labels:
+      en: Prenatal and Postnatal Qi (先天与后天)
+      zh: 先天之本与后天之本
+    composed_of:
+    - five_zang_organs
+    - essence_jing
+    tier: 2
+    source_domain: meta_health_ch01
+    also_in:
+    - meta_health_ch05
+  qi_stagnation_blood_stasis:
+    defines: 'Qi stagnation and blood stasis (气滞血瘀): the TCM picture of impaired flow
+      — when qi stops moving freely, blood and fluids pool, which is said to cause
+      distension, pain and dysfunction.'
+    labels:
+      en: Qi Stagnation and Blood Stasis (气滞血瘀)
+      zh: 气滞血瘀
+    composed_of:
+    - qi_blood_relationship
+    tier: 2
+    source_domain: meta_health_ch01
+    also_in:
+    - meta_health_ch07
+  six_fu_organs:
+    defines: 'The six fu organs (六腑 — gallbladder, small intestine, stomach, large
+      intestine, bladder, triple burner): hollow organs that receive, transform and
+      pass on food and fluids.'
+    labels:
+      en: The Six Fu Organs (六腑)
+      zh: 六腑
+    composed_of:
+    - five_zang_organs
+    - body_fluids_jinye
+    tier: 2
+    source_domain: meta_health_ch01
+  harmony_as_health:
+    defines: 'Health as dynamic balance (阴平阳秘): TCM defines health as yin-yang equilibrium
+      and free flow among the Five Phases, not the absence of a single disease.'
+    labels:
+      en: Health as Harmony (阴平阳秘)
+      zh: 阴平阳秘：以平衡为健康
+    composed_of:
+    - yin_yang
+    - generating_cycle_xiangsheng
+    - controlling_cycle_xiangke
+    - qi_stagnation_blood_stasis
+    - three_treasures_jing_qi_shen
+    tier: 3
+    source_domain: meta_health_ch01
+    also_in:
+    - meta_health_ch09
+  liver_spleen_relationship:
+    defines: 'The Liver–Spleen relationship (木克土): the Liver''s smooth flow of qi
+      supports digestion, and when the Liver is constrained it ''overacts'' on the
+      Spleen and Stomach (肝木克脾土).'
+    labels:
+      en: The Liver–Spleen Relationship
+      zh: 肝脾关系
+    composed_of:
+    - five_zang_organs
+    - overacting_and_insulting
+    tier: 3
+    source_domain: meta_health_ch01
+    also_in:
+    - meta_health_ch07
+  triple_burner_sanjiao:
+    defines: 'The triple burner (三焦): the upper (heart, lung), middle (spleen, stomach)
+      and lower (liver, kidney, bladder, intestines) burners, understood as the passageways
+      of qi and fluids through the trunk.'
+    labels:
+      en: The Triple Burner (Sanjiao, 三焦)
+      zh: 三焦
+    composed_of:
+    - six_fu_organs
+    - body_fluids_jinye
+    - qi
+    tier: 3
+    source_domain: meta_health_ch01
+    also_in:
+    - meta_health_ch04
+  zang_fu_pairing:
+    defines: 'Interior-exterior pairing (表里): each zang organ paired with a fu organ
+      and linked by meridians, e.g. Spleen–Stomach, Liver–Gallbladder, Lung–Large
+      Intestine.'
+    labels:
+      en: Zang–Fu Pairing (表里)
+      zh: 脏腑表里
+    composed_of:
+    - five_zang_organs
+    - six_fu_organs
+    - meridian_jingluo
+    tier: 3
+    source_domain: meta_health_ch01
+  twelve_primary_meridians:
+    defines: The twelve primary meridians (十二经脉), each belonging to a zang or fu organ,
+      running along the arms, legs and trunk — e.g. the Lung meridian (手太阴肺经) across
+      the upper chest to the thumb and the Kidney meridian (足少阴肾经) from the sole of
+      the foot.
+    labels:
+      en: The Twelve Primary Meridians
+      zh: 十二经脉
+    composed_of:
+    - zang_fu_pairing
+    - meridian_jingluo
+    tier: 4
+    source_domain: meta_health_ch01
+    also_in:
+    - meta_health_ch03
+    - meta_health_ch04
+    - meta_health_ch08
+  diaphragmatic_breathing:
+    defines: 'Diaphragmatic (''belly'') breathing: slow breathing led by the diaphragm,
+      which expands the lower ribs and abdomen and is linked to parasympathetic activation.'
+    labels:
+      en: Diaphragmatic Breathing
+      zh: 腹式呼吸
+    composed_of:
+    - respiration_mechanics
+    - autonomic_nervous_system
+    tier: 1
+    source_domain: meta_health_ch02
+    also_in:
+    - meta_health_ch03
+    - meta_health_ch04
+    - meta_health_ch07
+  myofascial_lines:
+    defines: 'Myofascial lines: chains of muscle and fascia running the length of
+      the body (e.g. the superficial back line, lateral line and spiral line), so
+      a stretch in one region loads tissue far away.'
+    labels:
+      en: Myofascial Lines
+      zh: 肌筋膜链
+    composed_of:
+    - fascia
+    - skeletal_muscle_contraction
+    tier: 1
+    source_domain: meta_health_ch02
+    also_in:
+    - meta_health_ch03
+  regional_blood_flow_distribution:
+    defines: 'Regional blood-flow distribution: the autonomic nervous system redistributes
+      cardiac output among muscles, gut, skin and brain by constricting or dilating
+      vessels, according to what the body is doing.'
+    labels:
+      en: Regional Blood-Flow Distribution
+      zh: 血流的区域分配
+    composed_of:
+    - cardiac_output
+    - autonomic_nervous_system
+    tier: 1
+    source_domain: meta_health_ch02
+    also_in:
+    - meta_health_ch05
+  sympathetic_parasympathetic_balance:
+    defines: 'Sympathetic–parasympathetic balance: ''fight-or-flight'' (sympathetic)
+      versus ''rest-and-digest'' (parasympathetic) activity, and the body''s ability
+      to shift between them.'
+    labels:
+      en: Sympathetic–Parasympathetic Balance
+      zh: 交感与副交感神经平衡
+    composed_of:
+    - autonomic_nervous_system
+    tier: 1
+    source_domain: meta_health_ch02
+    also_in:
+    - meta_health_ch05
+    - meta_health_ch07
+  thoracic_mobility:
+    defines: 'Thoracic mobility: the ability of the rib cage and upper-back spine
+      to extend, rotate and side-bend, which affects posture and how deeply one can
+      breathe.'
+    labels:
+      en: Thoracic Mobility
+      zh: 胸椎与胸廓灵活性
+    composed_of:
+    - joint_range_of_motion
+    - respiration_mechanics
+    tier: 1
+    source_domain: meta_health_ch02
+    also_in:
+    - meta_health_ch03
+  tidal_volume_and_gas_exchange:
+    defines: 'Tidal volume and gas exchange: how much air each breath moves, and how
+      breathing depth and rate affect oxygen and CO2 exchange in the alveoli.'
+    labels:
+      en: Tidal Volume and Gas Exchange
+      zh: 潮气量与气体交换
+    composed_of:
+    - respiration_mechanics
+    tier: 1
+    source_domain: meta_health_ch02
+  venous_return:
+    defines: 'Venous return: blood flowing back to the heart through low-pressure
+      veins with one-way valves, which sets how much the heart can pump out.'
+    labels:
+      en: Venous Return
+      zh: 静脉回流
+    composed_of:
+    - cardiac_output
+    tier: 1
+    source_domain: meta_health_ch02
+  intra_abdominal_pressure:
+    defines: 'Intra-abdominal pressure: the pressure in the abdominal cavity created
+      by the diaphragm, abdominal wall and pelvic floor working together; it stabilizes
+      the spine and changes with breathing and twisting.'
+    labels:
+      en: Intra-Abdominal Pressure
+      zh: 腹内压
+    composed_of:
+    - diaphragmatic_breathing
+    - skeletal_muscle_contraction
+    tier: 2
+    source_domain: meta_health_ch02
+    also_in:
+    - meta_health_ch03
+  posterior_chain:
+    defines: 'The posterior chain: calves, hamstrings, glutes and spinal erectors
+      working as one line, extending the body upward and stabilizing the lower back.'
+    labels:
+      en: The Posterior Chain
+      zh: 后侧链
+    composed_of:
+    - myofascial_lines
+    - skeletal_muscle_contraction
+    tier: 2
+    source_domain: meta_health_ch02
+  respiratory_pump:
+    defines: 'The respiratory pump: pressure changes from diaphragmatic breathing
+      help draw venous blood and lymph from the abdomen into the chest.'
+    labels:
+      en: The Respiratory Pump
+      zh: 呼吸泵
+    composed_of:
+    - diaphragmatic_breathing
+    - venous_return
+    tier: 2
+    source_domain: meta_health_ch02
+  skeletal_muscle_pump:
+    defines: 'The skeletal-muscle pump: contracting leg muscles, especially the calf
+      (''second heart''), squeeze the veins and push blood back toward the heart.'
+    labels:
+      en: The Skeletal-Muscle Pump
+      zh: 骨骼肌泵
+    composed_of:
+    - skeletal_muscle_contraction
+    - venous_return
+    tier: 2
+    source_domain: meta_health_ch02
+    also_in:
+    - meta_health_ch03
+  spinal_rotation_and_lateral_flexion:
+    defines: 'Spinal rotation and lateral flexion: twisting and side-bending the trunk,
+      which mobilizes the thoracic spine and ribs and loads the spiral and lateral
+      lines.'
+    labels:
+      en: Spinal Rotation and Side-Bending
+      zh: 脊柱旋转与侧屈
+    composed_of:
+    - thoracic_mobility
+    - myofascial_lines
+    tier: 2
+    source_domain: meta_health_ch02
+  vagal_tone_and_hrv:
+    defines: 'Vagal tone and heart-rate variability (HRV): beat-to-beat variation
+      in heart rate, an indirect index of parasympathetic (vagus nerve) activity that
+      slow breathing tends to raise.'
+    labels:
+      en: Vagal Tone and Heart-Rate Variability
+      zh: 迷走神经张力与心率变异性
+    composed_of:
+    - sympathetic_parasympathetic_balance
+    - diaphragmatic_breathing
+    tier: 2
+    source_domain: meta_health_ch02
+    also_in:
+    - meta_health_ch07
+  core_stability:
+    defines: 'Core stability: controlling the trunk under movement by coordinating
+      the deep abdominal, back and pelvic-floor muscles with intra-abdominal pressure.'
+    labels:
+      en: Core Stability
+      zh: 核心稳定
+    composed_of:
+    - intra_abdominal_pressure
+    - joint_range_of_motion
+    tier: 3
+    source_domain: meta_health_ch02
+  interoception:
+    defines: 'Interoception: awareness of internal bodily signals (heartbeat, breath,
+      fullness, tension), which slow mindful movement and eating practice and sharpen.'
+    labels:
+      en: Interoception
+      zh: 内感受
+    composed_of:
+    - vagal_tone_and_hrv
+    tier: 3
+    source_domain: meta_health_ch02
+  lymph_flow:
+    defines: 'Lymph flow: because lymph has no heart, it relies on muscle contraction,
+      breathing and movement, which is why inactivity lets fluid pool in the tissues.'
+    labels:
+      en: Lymph Flow
+      zh: 淋巴流动
+    composed_of:
+    - lymphatic_system
+    - skeletal_muscle_pump
+    - respiratory_pump
+    tier: 3
+    source_domain: meta_health_ch02
+  tension_relaxation_cycling:
+    defines: 'Tension–relaxation cycling: alternating brief contraction with full
+      release, which pumps blood and lymph more effectively than holding a static
+      position.'
+    labels:
+      en: Tension–Relaxation Cycling
+      zh: 松紧交替
+    composed_of:
+    - skeletal_muscle_pump
+    - regional_blood_flow_distribution
+    tier: 3
+    source_domain: meta_health_ch02
+    also_in:
+    - meta_health_ch04
+  squat_mechanics:
+    defines: 'Squat mechanics: hip, knee and ankle bending together with a stable
+      trunk; large leg muscles do the work, so squatting raises heart rate and venous
+      return.'
+    labels:
+      en: Squat Mechanics
+      zh: 深蹲力学
+    composed_of:
+    - joint_range_of_motion
+    - core_stability
+    - posterior_chain
+    - skeletal_muscle_pump
+    tier: 4
+    source_domain: meta_health_ch02
+    also_in:
+    - meta_health_ch03
+  chest_expansion_kuoxiong:
+    defines: 'Chest expansion (扩胸) → Lung (肺) → Metal (金): opening the arms and chest
+      stretches the pectorals and intercostals and increases thoracic volume; in TCM
+      it opens the Lung meridian across the upper chest and ''draws in clear qi''.'
+    labels:
+      en: Chest Expansion (Kuoxiong, 扩胸)
+      zh: 扩胸
+    composed_of:
+    - thoracic_mobility
+    - diaphragmatic_breathing
+    - five_phase_correspondences
+    - twelve_primary_meridians
+    tier: 1
+    source_domain: meta_health_ch03
+  deep_squat_shendun:
+    defines: 'Deep squat (深蹲) → Heart (心) → Fire (火): recruiting the largest leg muscles
+      raises heart rate and venous return; in TCM, lowering the center of gravity
+      leads Heart Fire downward to meet Kidney Water (引火归元).'
+    labels:
+      en: Deep Squat (Shendun, 深蹲)
+      zh: 深蹲
+    composed_of:
+    - squat_mechanics
+    - skeletal_muscle_pump
+    - heart_kidney_interaction
+    - five_phase_correspondences
+    tier: 1
+    source_domain: meta_health_ch03
+  rib_fanning_shanlei:
+    defines: 'Rib fanning (扇肋) → Liver (肝) → Wood (木): side-bending and spreading
+      the ribs stretches the lateral line, intercostals and obliques around the hypochondrium;
+      in TCM it frees the Liver meridian''s flank pathway and relieves Liver qi stagnation
+      (肝气郁结).'
+    labels:
+      en: Rib Fanning (Shanlei, 扇肋)
+      zh: 扇肋
+    composed_of:
+    - myofascial_lines
+    - thoracic_mobility
+    - five_phase_correspondences
+    - twelve_primary_meridians
+    tier: 1
+    source_domain: meta_health_ch03
+  torso_twist_niuzhuan:
+    defines: 'Torso twist (扭转) → Spleen (脾) → Earth (土): trunk rotation alternately
+      compresses and releases the abdomen and mobilizes the thoracolumbar fascia;
+      in TCM it ''wrings out'' the middle burner and supports the Spleen''s transformation
+      (运化). The effect on gut motility is plausible but little studied.'
+    labels:
+      en: Torso Twist (Niuzhuan, 扭转)
+      zh: 扭转
+    composed_of:
+    - intra_abdominal_pressure
+    - myofascial_lines
+    - five_phase_correspondences
+    tier: 1
+    source_domain: meta_health_ch03
+  yongquan_point:
+    defines: Yongquan (涌泉, KI-1), the 'bubbling spring' point on the sole of the foot
+      where the Kidney meridian begins; rising onto the toes and landing on the heels
+      is said to stimulate it.
+    labels:
+      en: The Yongquan Point (涌泉, KI-1)
+      zh: 涌泉穴
+    composed_of:
+    - twelve_primary_meridians
+    tier: 1
+    source_domain: meta_health_ch03
+    also_in:
+    - meta_health_ch04
+  body_lifting_tishen:
+    defines: 'Body lifting (提身) → Kidney (肾) → Water (水): reaching up while rising
+      onto the toes engages the posterior chain and calf pump; in TCM it stretches
+      the back line and stimulates Yongquan at the root of the Kidney meridian.'
+    labels:
+      en: Body Lifting (Tishen, 提身)
+      zh: 提身
+    composed_of:
+    - skeletal_muscle_pump
+    - myofascial_lines
+    - yongquan_point
+    - five_phase_correspondences
+    tier: 2
+    source_domain: meta_health_ch03
+  five_organ_movement_matrix:
+    defines: 'The five-organ movement matrix: one table of movement, main physical
+      action, target organ, phase, and meridian or physiological mechanism for all
+      five exercises.'
+    labels:
+      en: The Five-Organ Movement Matrix
+      zh: 五脏操对照表
+    composed_of:
+    - chest_expansion_kuoxiong
+    - rib_fanning_shanlei
+    - body_lifting_tishen
+    - torso_twist_niuzhuan
+    - deep_squat_shendun
+    tier: 3
+    source_domain: meta_health_ch03
+    also_in:
+    - meta_health_ch04
+  sealing_finish:
+    defines: 'The sealing finish (收势): ending with body lifting and a pause with hands
+      over the lower dantian to ''settle and store'' qi, instead of stopping abruptly.'
+    labels:
+      en: The Sealing Finish (收势)
+      zh: 收势
+    composed_of:
+    - body_lifting_tishen
+    - dantian
+    tier: 3
+    source_domain: meta_health_ch03
+  breath_first_sequence:
+    defines: 'Breath-first order: starting with chest expansion (Lung) because breathing
+      is the easiest bridge from voluntary control to the autonomic nervous system
+      — the order used in some popular teaching videos, differing from the generating
+      cycle only by swapping Lung and Liver.'
+    labels:
+      en: The Breath-First Sequence
+      zh: 呼吸优先顺序
+    composed_of:
+    - five_organ_movement_matrix
+    - diaphragmatic_breathing
+    tier: 4
+    source_domain: meta_health_ch03
+  generating_cycle_sequence:
+    defines: 'Generating-cycle order (相生顺序): rib fanning (Wood) → deep squat (Fire)
+      → torso twist (Earth) → chest expansion (Metal) → body lifting (Water), so that
+      each movement ''feeds'' the next — suited to daily cultivation.'
+    labels:
+      en: The Generating-Cycle Sequence (相生顺序)
+      zh: 相生顺序
+    composed_of:
+    - five_organ_movement_matrix
+    - generating_cycle_xiangsheng
+    tier: 4
+    source_domain: meta_health_ch03
+  safe_practice_and_modification:
+    defines: 'Safe practice: pain-free range, knee tracking and partial squats, a
+      chair or wall for balance, gentle twisting for back or disc problems, and no
+      breath-holding for people with high blood pressure.'
+    labels:
+      en: Safe Practice and Modifications
+      zh: 安全练习与动作调整
+    composed_of:
+    - five_organ_movement_matrix
+    - squat_mechanics
+    tier: 4
+    source_domain: meta_health_ch03
+  top_to_bottom_sequence:
+    defines: 'Top-to-bottom order: chest → ribs → waist → legs → feet, warming joints
+      from the upper body downward and, in TCM terms, drawing rising yang back to
+      the root.'
+    labels:
+      en: The Top-to-Bottom Sequence
+      zh: 自上而下顺序
+    composed_of:
+    - five_organ_movement_matrix
+    - thoracic_mobility
+    tier: 4
+    source_domain: meta_health_ch03
+  baduanjin_overview:
+    defines: 'Baduanjin (八段锦): a standing qigong routine of eight movements, first
+      recorded in the Song dynasty and standardized in 2003 as a national Health Qigong
+      (健身气功) set; one round takes about 10–12 minutes.'
+    labels:
+      en: 'Baduanjin: An Overview (八段锦)'
+      zh: 八段锦概述
+    composed_of:
+    - daoyin_tradition
+    tier: 1
+    source_domain: meta_health_ch04
+  baduanjin_evidence_base:
+    defines: 'The evidence for Baduanjin: randomized trials and meta-analyses report
+      improvements in balance, flexibility, blood pressure, sleep quality, mood and
+      quality of life, especially in older adults, but many trials are small and unblinded;
+      organ-specific claims remain mostly traditional.'
+    labels:
+      en: The Evidence for Baduanjin
+      zh: 八段锦的研究证据
+    composed_of:
+    - baduanjin_overview
+    - evidence_quality
+    tier: 2
+    source_domain: meta_health_ch04
+  form1_hold_up_heavens:
+    defines: 'Form 1 — Holding up the heavens to regulate the triple burner (两手托天理三焦):
+      pressing both palms up stretches the whole trunk and is the opening ''master
+      key'' that frees the three burners for the forms that follow.'
+    labels:
+      en: 'Form 1: Holding Up the Heavens (两手托天理三焦)'
+      zh: 第一式：两手托天理三焦
+    composed_of:
+    - baduanjin_overview
+    - triple_burner_sanjiao
+    tier: 2
+    source_domain: meta_health_ch04
+  form2_draw_the_bow:
+    defines: 'Form 2 — Drawing the bow to shoot the eagle (左右开弓似射雕): a horse stance
+      with a bow-drawing arm action that opens the chest and stretches the Lung and
+      Large Intestine meridians — the natural counterpart of chest expansion (Lung/Metal).'
+    labels:
+      en: 'Form 2: Drawing the Bow (左右开弓似射雕)'
+      zh: 第二式：左右开弓似射雕
+    composed_of:
+    - baduanjin_overview
+    - twelve_primary_meridians
+    tier: 2
+    source_domain: meta_health_ch04
+  form3_single_arm_raise:
+    defines: 'Form 3 — Raising one arm to regulate Spleen and Stomach (调理脾胃须单举): one
+      palm presses up and the other presses down, stretching the abdomen to ''raise
+      the clear and lower the turbid'' (升清降浊) in the middle burner.'
+    labels:
+      en: 'Form 3: Raising One Arm (调理脾胃须单举)'
+      zh: 第三式：调理脾胃须单举
+    composed_of:
+    - baduanjin_overview
+    - triple_burner_sanjiao
+    tier: 2
+    source_domain: meta_health_ch04
+  form4_look_back:
+    defines: 'Form 4 — Looking back to cure the five strains and seven injuries (五劳七伤往后瞧):
+      turning the head and upper trunk mobilizes the cervical and thoracic spine;
+      paired with the torso twist (Spleen/Earth).'
+    labels:
+      en: 'Form 4: Looking Back (五劳七伤往后瞧)'
+      zh: 第四式：五劳七伤往后瞧
+    composed_of:
+    - baduanjin_overview
+    - twelve_primary_meridians
+    tier: 2
+    source_domain: meta_health_ch04
+  form5_sway_head_and_tail:
+    defines: 'Form 5 — Swaying head and tail to clear Heart Fire (摇头摆尾去心火): a deep
+      horse stance with a circling lean of the trunk that lowers the center of gravity
+      to ''lead Heart Fire down'' — the compound form of the deep squat (Heart/Fire).'
+    labels:
+      en: 'Form 5: Swaying Head and Tail (摇头摆尾去心火)'
+      zh: 第五式：摇头摆尾去心火
+    composed_of:
+    - baduanjin_overview
+    - heart_kidney_interaction
+    tier: 2
+    source_domain: meta_health_ch04
+  form6_touch_toes:
+    defines: 'Form 6 — Both hands reach the feet to strengthen Kidney and waist (两手攀足固肾腰):
+      a forward fold with hands sliding down the back of the legs, stretching the
+      Bladder and Kidney meridians and the posterior chain.'
+    labels:
+      en: 'Form 6: Reaching for the Feet (两手攀足固肾腰)'
+      zh: 第六式：两手攀足固肾腰
+    composed_of:
+    - baduanjin_overview
+    - twelve_primary_meridians
+    tier: 2
+    source_domain: meta_health_ch04
+  form7_clench_fists_glare:
+    defines: 'Form 7 — Clenching fists with glaring eyes to increase strength (攒拳怒目增气力):
+      punching from a horse stance with a fierce gaze to vent Liver qi — the counterpart
+      of rib fanning (Liver/Wood), since the Liver ''opens into the eyes''.'
+    labels:
+      en: 'Form 7: Clenched Fists, Glaring Eyes (攒拳怒目增气力)'
+      zh: 第七式：攒拳怒目增气力
+    composed_of:
+    - baduanjin_overview
+    - twelve_primary_meridians
+    tier: 2
+    source_domain: meta_health_ch04
+  form8_heel_bounce:
+    defines: 'Form 8 — Bouncing on the heels seven times to banish illness (背后七颠百病消):
+      rising onto the toes and dropping gently onto the heels jolts the body, works
+      the calf pump and stimulates Yongquan — the direct match for body lifting (Kidney/Water).'
+    labels:
+      en: 'Form 8: Bouncing on the Heels (背后七颠百病消)'
+      zh: 第八式：背后七颠百病消
+    composed_of:
+    - baduanjin_overview
+    - yongquan_point
+    tier: 2
+    source_domain: meta_health_ch04
+  three_regulations:
+    defines: 'The three regulations (三调): regulating the body (调身, posture), the breath
+      (调息, breathing) and the mind (调心, attention) — together what distinguishes qigong
+      from ordinary calisthenics.'
+    labels:
+      en: The Three Regulations (三调)
+      zh: 三调：调身、调息、调心
+    composed_of:
+    - baduanjin_overview
+    - diaphragmatic_breathing
+    tier: 2
+    source_domain: meta_health_ch04
+  baduanjin_five_organ_mapping:
+    defines: 'The Baduanjin ↔ five-organ-exercise map: Wood 7 ↔ rib fanning; Fire
+      5 ↔ deep squat; Earth 4 (and 3) ↔ torso twist; Metal 2 (and 1, 3) ↔ chest expansion;
+      Water 8 (and 6) ↔ body lifting — with form 1 as the overall regulator. The five
+      exercises serve as isolation drills for Baduanjin''s compound forms.'
+    labels:
+      en: Baduanjin and the Five-Organ Exercises
+      zh: 八段锦与五脏操的对应
+    composed_of:
+    - five_organ_movement_matrix
+    - form1_hold_up_heavens
+    - form2_draw_the_bow
+    - form3_single_arm_raise
+    - form4_look_back
+    - form5_sway_head_and_tail
+    - form6_touch_toes
+    - form7_clench_fists_glare
+    - form8_heel_bounce
+    tier: 3
+    source_domain: meta_health_ch04
+  breath_movement_coordination:
+    defines: 'Coordinating breath and movement: breathing in as the body rises or
+      opens and out as it sinks or closes, without ever holding the breath.'
+    labels:
+      en: Coordinating Breath and Movement
+      zh: 呼吸与动作的配合
+    composed_of:
+    - three_regulations
+    tier: 3
+    source_domain: meta_health_ch04
+  practice_dose:
+    defines: 'Practice dose: about 10 minutes (one or two rounds), once or twice a
+      day — enough to mobilize the body without fatigue or heavy sweating (which TCM
+      says ''consumes qi''); a morning round to raise yang and an evening round to
+      release tension.'
+    labels:
+      en: How Much to Practice
+      zh: 练习的剂量
+    composed_of:
+    - baduanjin_overview
+    - three_regulations
+    tier: 3
+    source_domain: meta_health_ch04
+  tension_release_rhythm:
+    defines: 'The tension–release rhythm (松紧结合): a brief firm moment at the end of
+      each form (pressing up, drawing the bow, clenching) followed by immediate softening
+      — where the circulatory ''pumping'' happens.'
+    labels:
+      en: The Tension–Release Rhythm (松紧结合)
+      zh: 松紧结合
+    composed_of:
+    - three_regulations
+    - tension_relaxation_cycling
+    tier: 3
+    source_domain: meta_health_ch04
+  closing_form_shougong:
+    defines: 'Closing the practice (收功): standing still with hands over the lower
+      dantian for three to five slow breaths, rather than sitting down straight away
+      or picking up a phone, to ''store'' the qi that has been mobilized.'
+    labels:
+      en: Closing the Practice (收功)
+      zh: 收功
+    composed_of:
+    - dantian
+    - form8_heel_bounce
+    - breath_movement_coordination
+    tier: 4
+    source_domain: meta_health_ch04
+  cephalic_phase_digestion:
+    defines: 'The cephalic phase of digestion: the sight, smell and taste of food
+      and the act of chewing trigger saliva, gastric acid and insulin release through
+      the vagus nerve before food reaches the stomach.'
+    labels:
+      en: The Cephalic Phase of Digestion
+      zh: 消化的头期
+    composed_of:
+    - gastrointestinal_tract
+    - sympathetic_parasympathetic_balance
+    tier: 1
+    source_domain: meta_health_ch05
+  peristalsis_and_motility:
+    defines: 'Peristalsis and gut motility: coordinated smooth-muscle waves that mix
+      and move food along several metres of gut, strengthened by parasympathetic activity
+      and inhibited by stress.'
+    labels:
+      en: Peristalsis and Gut Motility
+      zh: 胃肠蠕动
+    composed_of:
+    - smooth_muscle
+    - sympathetic_parasympathetic_balance
+    - gastrointestinal_tract
+    tier: 1
+    source_domain: meta_health_ch05
+  splanchnic_circulation:
+    defines: 'The splanchnic circulation: blood supply to the stomach, intestines,
+      pancreas, spleen and liver, which receives roughly a quarter of resting cardiac
+      output.'
+    labels:
+      en: The Splanchnic Circulation
+      zh: 内脏循环
+    composed_of:
+    - regional_blood_flow_distribution
+    - gastrointestinal_tract
+    tier: 1
+    source_domain: meta_health_ch05
+  spleen_transformation_transport:
+    defines: 'The Spleen transforms and transports (脾主运化): the Spleen extracts the
+      refined essence (水谷精微) from food and fluids and distributes it to make qi and
+      blood; this work is powered by Spleen yang (脾阳).'
+    labels:
+      en: The Spleen Transforms and Transports (脾主运化)
+      zh: 脾主运化
+    composed_of:
+    - spleen_stomach_system
+    - prenatal_postnatal_qi
+    tier: 1
+    source_domain: meta_health_ch05
+    also_in:
+    - meta_health_ch06
+  stomach_receiving_ripening:
+    defines: 'The Stomach receives and ripens (胃主受纳腐熟): in TCM, the Stomach is the
+      vessel that takes in food and ''rots and ripens'' it as the first stage of digestion.'
+    labels:
+      en: The Stomach Receives and Ripens (胃主受纳)
+      zh: 胃主受纳腐熟
+    composed_of:
+    - spleen_stomach_system
+    tier: 1
+    source_domain: meta_health_ch05
+  ascending_clear_descending_turbid:
+    defines: 'Ascending the clear, descending the turbid (升清降浊): Spleen qi lifts nourishment
+      upward while Stomach qi sends waste downward; when this reverses, bloating,
+      belching and heaviness follow.'
+    labels:
+      en: Ascending the Clear, Descending the Turbid (升清降浊)
+      zh: 升清降浊
+    composed_of:
+    - spleen_transformation_transport
+    - stomach_receiving_ripening
+    tier: 2
+    source_domain: meta_health_ch05
+  hepatic_first_pass_processing:
+    defines: 'First-pass processing in the liver: nutrient-rich blood from the gut
+      goes through the portal vein to the liver first, which stores glucose as glycogen,
+      packages fats and makes bile.'
+    labels:
+      en: First-Pass Processing in the Liver
+      zh: 肝脏首过代谢
+    composed_of:
+    - liver_metabolic_role
+    - splanchnic_circulation
+    tier: 2
+    source_domain: meta_health_ch05
+  mastication:
+    defines: 'Mastication (咀嚼): chewing breaks food into small pieces, mixes it with
+      saliva and enzymes, and gives the brain time to register what is being eaten.'
+    labels:
+      en: Chewing (Mastication)
+      zh: 咀嚼
+    composed_of:
+    - gastrointestinal_tract
+    - cephalic_phase_digestion
+    tier: 2
+    source_domain: meta_health_ch05
+  postprandial_hyperemia:
+    defines: 'Postprandial hyperemia (餐后充血): after a meal, intestinal blood flow rises
+      substantially (superior mesenteric flow can roughly double) and cardiac output
+      increases to supply digestion.'
+    labels:
+      en: Postprandial Hyperemia
+      zh: 餐后充血
+    composed_of:
+    - splanchnic_circulation
+    tier: 2
+    source_domain: meta_health_ch05
+    also_in:
+    - meta_health_ch07
+  cardiovascular_load_of_digestion:
+    defines: 'The cardiovascular load of digestion: heart rate and cardiac output
+      rise after large meals, which is why vigorous exercise straight after eating
+      competes for blood and why some older adults feel dizzy after meals (postprandial
+      hypotension).'
+    labels:
+      en: The Cardiovascular Load of Digestion
+      zh: 消化的心血管负荷
+    composed_of:
+    - postprandial_hyperemia
+    - sympathetic_parasympathetic_balance
+    tier: 3
+    source_domain: meta_health_ch05
+  postprandial_glucose_response:
+    defines: 'The post-meal glucose response: blood sugar rises and falls after eating
+      depending on meal composition, eating speed, gastric emptying and muscle activity;
+      large, repeated spikes are linked to metabolic strain.'
+    labels:
+      en: The Post-Meal Glucose Response
+      zh: 餐后血糖反应
+    composed_of:
+    - hepatic_first_pass_processing
+    - peristalsis_and_motility
+    tier: 3
+    source_domain: meta_health_ch05
+  satiety_signaling:
+    defines: 'Satiety signalling: stretch receptors and gut hormones (e.g. CCK, GLP-1,
+      PYY) tell the brain the stomach is filling, with a lag of roughly 15–20 minutes
+      behind the eating itself.'
+    labels:
+      en: Satiety Signaling
+      zh: 饱腹信号
+    composed_of:
+    - gastrointestinal_tract
+    - mastication
+    tier: 3
+    source_domain: meta_health_ch05
+  eating_as_internal_exercise:
+    defines: 'Eating as internal exercise (饮食即内脏运动): a meal is a demanding workout
+      for the digestive organs and circulation — blood redistributes, smooth muscle
+      works, and the liver''s metabolic load surges — equivalent in TCM to firing
+      up the Spleen–Stomach engine. Like any workout, it needs preparation, the right
+      load and recovery.'
+    labels:
+      en: Eating as Internal Exercise
+      zh: 饮食即内脏运动
+    composed_of:
+    - postprandial_hyperemia
+    - peristalsis_and_motility
+    - spleen_transformation_transport
+    - cardiovascular_load_of_digestion
+    tier: 4
+    source_domain: meta_health_ch05
+    also_in:
+    - meta_health_ch09
+  post_meal_gentle_movement:
+    defines: 'Gentle movement after meals (饭后百步走): an easy walk or gentle forms (e.g.
+      Baduanjin forms 3 and 4) about 10–40 minutes after eating measurably blunts
+      the glucose spike and, in TCM terms, aids transformation; vigorous exercise
+      should wait longer.'
+    labels:
+      en: Gentle Movement After Meals
+      zh: 饭后温和活动
+    composed_of:
+    - postprandial_glucose_response
+    - cardiovascular_load_of_digestion
+    - ascending_clear_descending_turbid
+    tier: 4
+    source_domain: meta_health_ch05
+  digestive_load_pacing:
+    defines: 'Pacing the digestive load: eating slowly and stopping at about 70–80%
+      full (七分饱, hara hachi bu) so satiety signals can catch up and the Spleen–Stomach
+      is not overloaded.'
+    labels:
+      en: Pacing the Digestive Load (七分饱)
+      zh: 控制消化负荷：七分饱
+    composed_of:
+    - eating_as_internal_exercise
+    - satiety_signaling
+    tier: 5
+    source_domain: meta_health_ch05
+  digestive_warm_up:
+    defines: 'The digestive warm-up: a few slow breaths and a relaxed start before
+      the first bite, then thorough chewing — shifting into rest-and-digest and letting
+      the cephalic phase prime secretions, like warming up before a workout.'
+    labels:
+      en: The Digestive Warm-Up
+      zh: 消化的热身
+    composed_of:
+    - eating_as_internal_exercise
+    - cephalic_phase_digestion
+    - mastication
+    tier: 5
+    source_domain: meta_health_ch05
+  digestive_overtraining:
+    defines: 'Digestive ''overtraining'': overeating, bolting food and heavy late
+      meals overload the organs, as overtraining injures muscles — seen in TCM as
+      food stagnation (积食) and a weakened Spleen, and in physiology as reflux, sluggishness
+      and large glucose swings.'
+    labels:
+      en: Digestive Overtraining
+      zh: 消化的过度训练
+    composed_of:
+    - digestive_load_pacing
+    - ascending_clear_descending_turbid
+    - postprandial_glucose_response
+    tier: 6
+    source_domain: meta_health_ch05
+  carbohydrate_quality:
+    defines: 'Carbohydrate quality and glycemic load: whole, fiber-rich carbohydrates
+      raise blood sugar more gently than refined starches and sugars.'
+    labels:
+      en: Carbohydrate Quality
+      zh: 碳水化合物的质量
+    composed_of:
+    - macronutrients
+    - dietary_fiber
+    tier: 1
+    source_domain: meta_health_ch06
+  dietary_fat_quality:
+    defines: 'Dietary fat quality: unsaturated fats from nuts, seeds, fish and plant
+      oils versus excess saturated and industrial trans fats.'
+    labels:
+      en: Dietary Fat Quality
+      zh: 膳食脂肪的质量
+    composed_of:
+    - macronutrients
+    tier: 1
+    source_domain: meta_health_ch06
+  fiber_microbiome_axis:
+    defines: 'The fiber–microbiome axis: gut bacteria ferment fiber into short-chain
+      fatty acids that nourish the gut lining and help regulate inflammation and appetite.'
+    labels:
+      en: The Fiber–Microbiome Axis
+      zh: 膳食纤维与肠道菌群
+    composed_of:
+    - dietary_fiber
+    - gut_microbiome
+    tier: 1
+    source_domain: meta_health_ch06
+  five_colors_foods:
+    defines: 'The five colors (五色): green → Liver, red → Heart, yellow → Spleen, white
+      → Lung, black → Kidney — a simple TCM cue for variety that lines up with modern
+      advice to ''eat the rainbow''.'
+    labels:
+      en: The Five Colors of Food (五色)
+      zh: 食物五色
+    composed_of:
+    - five_phase_correspondences
+    tier: 1
+    source_domain: meta_health_ch06
+  five_flavors_wuwei:
+    defines: 'The five flavors (五味): sour → Liver, bitter → Heart, sweet → Spleen,
+      pungent → Lung, salty → Kidney; each flavor has an action (astringe, drain,
+      tonify, disperse, soften), and any flavor in excess harms its organ.'
+    labels:
+      en: The Five Flavors (Wuwei, 五味)
+      zh: 五味
+    composed_of:
+    - five_phase_correspondences
+    tier: 1
+    source_domain: meta_health_ch06
+  four_natures_siqi:
+    defines: 'The four natures (四气): foods classified as cold, cool, neutral, warm
+      or hot by their effect on the body — e.g. watermelon cooling, ginger warming.'
+    labels:
+      en: The Four Natures (Siqi, 四气)
+      zh: 四气
+    composed_of:
+    - yin_yang
+    tier: 1
+    source_domain: meta_health_ch06
+  meal_timing_chrononutrition:
+    defines: 'Meal timing and chrononutrition: the same meal is handled better earlier
+      in the day, and late-night eating conflicts with the circadian clock — ''forcing
+      the organs to work overtime''.'
+    labels:
+      en: Meal Timing and Chrononutrition
+      zh: 进餐时间与时间营养学
+    composed_of:
+    - energy_balance
+    - circadian_clock
+    tier: 1
+    source_domain: meta_health_ch06
+  protein_across_life:
+    defines: 'Protein across the lifespan: adequate, evenly spread protein supports
+      muscle repair and helps prevent age-related muscle loss (sarcopenia), which
+      matters more after about age 50.'
+    labels:
+      en: Protein Across the Lifespan
+      zh: 人生各阶段的蛋白质
+    composed_of:
+    - macronutrients
+    - energy_balance
+    tier: 1
+    source_domain: meta_health_ch06
+  balanced_plate:
+    defines: 'The balanced plate: roughly half vegetables and fruit, a quarter whole
+      grains, a quarter protein, plus healthy fats — cross-checked against the five
+      colors for variety.'
+    labels:
+      en: The Balanced Plate
+      zh: 均衡餐盘
+    composed_of:
+    - protein_across_life
+    - carbohydrate_quality
+    - dietary_fat_quality
+    - fiber_microbiome_axis
+    - five_colors_foods
+    tier: 2
+    source_domain: meta_health_ch06
+  food_as_medicine_shiliao:
+    defines: 'Food as medicine (药食同源, 食疗): everyday foods with recognized TCM actions
+      — ginger, Chinese yam, jujube, goji, mung bean — used gently and seasonally,
+      not as a substitute for medical treatment.'
+    labels:
+      en: Food as Medicine (Shiliao, 食疗)
+      zh: 药食同源与食疗
+    composed_of:
+    - four_natures_siqi
+    - five_flavors_wuwei
+    tier: 2
+    source_domain: meta_health_ch06
+  warm_cooked_food_principle:
+    defines: 'The warm, cooked food principle: TCM holds that habitual cold, raw and
+      iced food weakens Spleen yang, and favours warm, cooked, easily digested meals
+      such as congee, soups and steamed vegetables.'
+    labels:
+      en: The Warm, Cooked Food Principle
+      zh: 温热熟食原则
+    composed_of:
+    - four_natures_siqi
+    - spleen_transformation_transport
+    tier: 2
+    source_domain: meta_health_ch06
+  whole_vs_ultra_processed_food:
+    defines: 'Whole versus ultra-processed food: the NOVA classification, and why
+      industrial formulations high in refined starch, sugar, fat and additives are
+      linked to overeating and poorer health.'
+    labels:
+      en: Whole vs. Ultra-Processed Food
+      zh: 天然食物与超加工食品
+    composed_of:
+    - carbohydrate_quality
+    - dietary_fat_quality
+    - micronutrients_and_hydration
+    tier: 2
+    source_domain: meta_health_ch06
+  dampness_and_phlegm:
+    defines: 'Dampness and phlegm (湿, 痰浊): in TCM, what builds up when the Spleen
+      cannot transform an excess of greasy, sweet, rich or cold food — heaviness,
+      bloating, sluggishness — which some authors compare with metabolic overload.'
+    labels:
+      en: Dampness and Phlegm (湿与痰)
+      zh: 湿与痰浊
+    composed_of:
+    - spleen_transformation_transport
+    - whole_vs_ultra_processed_food
+    tier: 3
+    source_domain: meta_health_ch06
+  constitution_based_eating:
+    defines: 'Eating for one''s constitution (体质): the nine TCM constitution types
+      (e.g. qi-deficient, yang-deficient, damp-heat) and how the same food can suit
+      one person and not another.'
+    labels:
+      en: Eating for Your Constitution (体质)
+      zh: 按体质饮食
+    composed_of:
+    - four_natures_siqi
+    - dampness_and_phlegm
+    - food_as_medicine_shiliao
+    tier: 4
+    source_domain: meta_health_ch06
+  junk_load:
+    defines: '''Junk load'' (劣质食物 = 垃圾训练): low-quality food makes the digestive organs
+      work hard for little nourishment — the internal equivalent of training with
+      bad form under a heavy, useless load.'
+    labels:
+      en: Junk Load
+      zh: 劣质食物的负担
+    composed_of:
+    - whole_vs_ultra_processed_food
+    - dampness_and_phlegm
+    tier: 4
+    source_domain: meta_health_ch06
+  acute_vs_chronic_stress:
+    defines: 'Acute versus chronic stress: a short stress response mobilizes energy
+      and resolves, whereas a stress response that stays switched on keeps cortisol
+      and sympathetic tone elevated.'
+    labels:
+      en: Acute vs. Chronic Stress
+      zh: 急性压力与慢性压力
+    composed_of:
+    - hpa_axis
+    - sympathetic_parasympathetic_balance
+    tier: 1
+    source_domain: meta_health_ch07
+  breath_as_bridge:
+    defines: 'Breath as the bridge: breathing is the one autonomic function under
+      voluntary control, so slow breathing (around 6 breaths per minute) is the quickest
+      way to shift from sympathetic to parasympathetic tone.'
+    labels:
+      en: Breath as the Bridge
+      zh: 呼吸是桥梁
+    composed_of:
+    - diaphragmatic_breathing
+    - vagal_tone_and_hrv
+    tier: 1
+    source_domain: meta_health_ch07
+  seven_emotions_qiqing:
+    defines: 'The seven emotions (七情 — joy, anger, worry, pensiveness, grief, fear,
+      fright): normal emotions that TCM holds become causes of illness when intense
+      or prolonged.'
+    labels:
+      en: The Seven Emotions (Qiqing, 七情)
+      zh: 七情
+    composed_of:
+    - five_phase_correspondences
+    tier: 1
+    source_domain: meta_health_ch07
+  allostatic_load:
+    defines: 'Allostatic load: the cumulative ''wear and tear'' of repeated or chronic
+      stress on blood pressure, metabolism, sleep and immunity.'
+    labels:
+      en: Allostatic Load
+      zh: 稳态负荷
+    composed_of:
+    - acute_vs_chronic_stress
+    tier: 2
+    source_domain: meta_health_ch07
+  five_emotions_five_organs:
+    defines: 'The five emotions and five organs: anger harms the Liver, excess joy
+      the Heart, overthinking the Spleen, grief the Lung, fear the Kidney (怒伤肝, 喜伤心,
+      思伤脾, 悲伤肺, 恐伤肾).'
+    labels:
+      en: The Five Emotions and the Five Organs
+      zh: 五志与五脏
+    composed_of:
+    - seven_emotions_qiqing
+    - five_phase_correspondences
+    tier: 2
+    source_domain: meta_health_ch07
+  mind_regulation_tiaoxin:
+    defines: 'Regulating the mind (调心): single-pointed attention on breath or the
+      lower dantian (意守丹田), the mental half of qigong and mindful eating.'
+    labels:
+      en: Regulating the Mind (Tiaoxin, 调心)
+      zh: 调心
+    composed_of:
+    - breath_as_bridge
+    tier: 2
+    source_domain: meta_health_ch07
+  stress_and_digestion:
+    defines: 'Stress and digestion: fight-or-flight activity constricts gut blood
+      vessels, slows motility and cuts digestive secretions — so eating while stressed
+      means the internal workout starts under-supplied.'
+    labels:
+      en: Stress and Digestion
+      zh: 压力与消化
+    composed_of:
+    - acute_vs_chronic_stress
+    - postprandial_hyperemia
+    tier: 2
+    source_domain: meta_health_ch07
+  gut_brain_axis:
+    defines: 'The gut–brain axis: two-way communication between gut and brain through
+      the vagus nerve, hormones, immune signals and the microbiome.'
+    labels:
+      en: The Gut–Brain Axis
+      zh: 肠脑轴
+    composed_of:
+    - stress_and_digestion
+    - vagal_tone_and_hrv
+    tier: 3
+    source_domain: meta_health_ch07
+  hrv_self_monitoring:
+    defines: 'Monitoring stress with HRV: using resting heart rate and HRV from a
+      wearable, together with sleep and mood, as simple feedback on accumulated load
+      and recovery.'
+    labels:
+      en: Monitoring Stress with HRV
+      zh: 用心率变异性监测压力
+    composed_of:
+    - vagal_tone_and_hrv
+    - allostatic_load
+    tier: 3
+    source_domain: meta_health_ch07
+  liver_free_flow_shuxie:
+    defines: 'The Liver governs free flow (肝主疏泄): the Liver keeps qi moving smoothly,
+      which in turn regulates emotion, digestion and the menstrual cycle.'
+    labels:
+      en: The Liver Governs Free Flow (肝主疏泄)
+      zh: 肝主疏泄
+    composed_of:
+    - five_emotions_five_organs
+    - qi_stagnation_blood_stasis
+    tier: 3
+    source_domain: meta_health_ch07
+  liver_qi_stagnation:
+    defines: 'Liver qi stagnation (肝气郁结): frustration or suppressed emotion blocks
+      the Liver''s free flow, felt as sighing, tight flanks, irritability and a lump
+      in the throat.'
+    labels:
+      en: Liver Qi Stagnation (肝气郁结)
+      zh: 肝气郁结
+    composed_of:
+    - liver_free_flow_shuxie
+    tier: 4
+    source_domain: meta_health_ch07
+  releasing_liver_qi_through_movement:
+    defines: 'Releasing Liver qi through movement: flank stretching, rib fanning and
+      the glaring-fist form give stagnant qi an outlet — physically they loosen the
+      trunk and discharge tension.'
+    labels:
+      en: Releasing Liver Qi Through Movement
+      zh: 以动作疏解肝气
+    composed_of:
+    - liver_qi_stagnation
+    - liver_opening_movements
+    tier: 5
+    source_domain: meta_health_ch07
+  wood_overacting_on_earth:
+    defines: 'Wood overacting on Earth (肝木克脾土, 肝脾不调): stuck Liver qi attacks the Spleen
+      and Stomach, causing bloating, poor appetite or stress-related bowel upset —
+      TCM''s counterpart of stress shutting down digestion.'
+    labels:
+      en: Wood Overacting on Earth (肝木克脾土)
+      zh: 肝木克脾土
+    composed_of:
+    - liver_qi_stagnation
+    - liver_spleen_relationship
+    - stress_and_digestion
+    tier: 5
+    source_domain: meta_health_ch07
+  emotional_eating:
+    defines: 'Emotional eating: eating to soothe stress or boredom, overriding satiety
+      — ''overthinking harms the Spleen'' in TCM, reward-driven eating in modern terms.'
+    labels:
+      en: Emotional Eating
+      zh: 情绪化进食
+    composed_of:
+    - gut_brain_axis
+    - wood_overacting_on_earth
+    tier: 6
+    source_domain: meta_health_ch07
+  cortisol_melatonin_rhythm:
+    defines: 'The cortisol–melatonin rhythm: cortisol peaks soon after waking to mobilize
+      energy, and melatonin rises in the evening darkness to prepare for sleep.'
+    labels:
+      en: The Cortisol–Melatonin Rhythm
+      zh: 皮质醇与褪黑素节律
+    composed_of:
+    - circadian_clock
+    tier: 1
+    source_domain: meta_health_ch08
+  day_night_yin_yang:
+    defines: 'Day–night yin-yang (昼夜阴阳消长): yang grows from midnight to noon and yin
+      grows from noon to midnight, so activity belongs to the day and storage and
+      rest to the night.'
+    labels:
+      en: Day–Night Yin and Yang
+      zh: 昼夜阴阳消长
+    composed_of:
+    - yin_yang
+    - circadian_clock
+    tier: 1
+    source_domain: meta_health_ch08
+  light_entrainment:
+    defines: 'Light entrainment: morning daylight sets the circadian clock, while
+      bright or blue light late at night delays it.'
+    labels:
+      en: Light Entrainment
+      zh: 光照校准生物钟
+    composed_of:
+    - circadian_clock
+    tier: 1
+    source_domain: meta_health_ch08
+  sleep_architecture:
+    defines: 'Sleep architecture: repeating ~90-minute cycles of light, deep (slow-wave)
+      and REM sleep; deep sleep dominates early in the night and REM toward the morning.'
+    labels:
+      en: Sleep Architecture
+      zh: 睡眠结构
+    composed_of:
+    - circadian_clock
+    tier: 1
+    source_domain: meta_health_ch08
+  exercise_timing:
+    defines: 'Exercise timing: morning movement in daylight helps set the clock and
+      ''raise yang''; calmer practice suits the evening, and vigorous exercise close
+      to bedtime can delay sleep.'
+    labels:
+      en: Exercise Timing
+      zh: 运动时机
+    composed_of:
+    - light_entrainment
+    - cortisol_melatonin_rhythm
+    tier: 2
+    source_domain: meta_health_ch08
+  four_seasons_regimen:
+    defines: 'The four-seasons regimen (四时养生): spring for growth, summer for expansion,
+      autumn for gathering, winter for storing (春生夏长秋收冬藏) — adjusting sleep, activity
+      and diet to the season.'
+    labels:
+      en: The Four-Seasons Regimen (四时养生)
+      zh: 四时养生
+    composed_of:
+    - five_phase_correspondences
+    - day_night_yin_yang
+    tier: 2
+    source_domain: meta_health_ch08
+  organ_clock_ziwu_liuzhu:
+    defines: 'The meridian organ clock (子午流注): twelve two-hour periods, each assigned
+      to a meridian — Lung 3–5, Large Intestine 5–7, Stomach 7–9, Spleen 9–11, Heart
+      11–13, Small Intestine 13–15, Bladder 15–17, Kidney 17–19, Pericardium 19–21,
+      Triple Burner 21–23, Gallbladder 23–1, Liver 1–3.'
+    labels:
+      en: The Meridian Organ Clock (子午流注)
+      zh: 子午流注
+    composed_of:
+    - twelve_primary_meridians
+    - day_night_yin_yang
+    tier: 2
+    source_domain: meta_health_ch08
+  sleep_and_metabolic_repair:
+    defines: 'Sleep and metabolic repair: tissue repair and growth-hormone release
+      happen in deep sleep, and short sleep impairs glucose tolerance and raises appetite
+      hormones.'
+    labels:
+      en: Sleep and Metabolic Repair
+      zh: 睡眠与代谢修复
+    composed_of:
+    - sleep_architecture
+    - cortisol_melatonin_rhythm
+    tier: 2
+    source_domain: meta_health_ch08
+  chrononutrition:
+    defines: 'Chrononutrition: insulin sensitivity is higher earlier in the day, so
+      front-loading meals and finishing eating a few hours before bed suits the circadian
+      clock.'
+    labels:
+      en: Chrononutrition
+      zh: 时间营养学
+    composed_of:
+    - cortisol_melatonin_rhythm
+    - sleep_and_metabolic_repair
+    tier: 3
+    source_domain: meta_health_ch08
+  seasonal_organ_care:
+    defines: 'Caring for the organ of each season: nourish the Liver in spring, Heart
+      in summer, Spleen in late summer, Lung in autumn and Kidney in winter (春养肝,
+      夏养心, 长夏养脾, 秋养肺, 冬养肾).'
+    labels:
+      en: Caring for the Organ of Each Season
+      zh: 四季养五脏
+    composed_of:
+    - four_seasons_regimen
+    - five_phase_correspondences
+    tier: 3
+    source_domain: meta_health_ch08
+  sleep_before_zishi:
+    defines: 'Sleeping before 子时 (23:00): TCM advises being asleep during the Gallbladder
+      and Liver hours, when ''blood returns to the Liver when one lies down'' (人卧则血归于肝)
+      — in line with modern advice to keep a regular early bedtime.'
+    labels:
+      en: Sleeping Before Zishi (子时)
+      zh: 子时之前入睡
+    composed_of:
+    - organ_clock_ziwu_liuzhu
+    - sleep_architecture
+    tier: 3
+    source_domain: meta_health_ch08
+  breakfast_in_chenshi:
+    defines: 'Breakfast in 辰时 (7–9 a.m., Stomach time): the organ clock and chrononutrition
+      agree that a real breakfast should anchor the day''s eating.'
+    labels:
+      en: Breakfast in Chenshi (辰时)
+      zh: 辰时早餐
+    composed_of:
+    - organ_clock_ziwu_liuzhu
+    - chrononutrition
+    tier: 4
+    source_domain: meta_health_ch08
+  seasonal_food_and_movement:
+    defines: 'Seasonal food and movement: lighter, cooling foods and early mornings
+      in summer; warming, nourishing foods and gentler, shorter practice in winter;
+      emphasizing the season''s organ exercise.'
+    labels:
+      en: Seasonal Food and Movement
+      zh: 应季饮食与运动
+    composed_of:
+    - seasonal_organ_care
+    - exercise_timing
+    - chrononutrition
+    tier: 4
+    source_domain: meta_health_ch08
+  five_phase_integration_matrix:
+    defines: 'The Five-Phase integration matrix: for each phase, one row linking organ,
+      five-organ exercise, Baduanjin form, flavor and food, emotion, organ-clock time
+      and season — the whole book in one table.'
+    labels:
+      en: The Five-Phase Integration Matrix
+      zh: 五行整合总表
+    composed_of:
+    - five_organ_routine_design
+    - daily_baduanjin_practice_plan
+    - five_phase_meal_design
+    - stress_resilience_routine
+    - personal_daily_rhythm_schedule
+    tier: 1
+    source_domain: meta_health_ch09
+  internal_external_cultivation:
+    defines: 'Internal-external cultivation (内外兼修): external movement guides qi and
+      blood through the channels while mindful eating conditions the organs from within
+      — two halves of one practice.'
+    labels:
+      en: Internal–External Cultivation (内外兼修)
+      zh: 内外兼修
+    composed_of:
+    - eating_as_internal_exercise
+    - daily_baduanjin_practice_plan
+    - mindful_meal_protocol
+    tier: 1
+    source_domain: meta_health_ch09
+  organ_training_principles:
+    defines: 'Training principles for the organs: warm-up, appropriate load, progression,
+      recovery and consistency — ''train, don''t overload'' — applied equally to muscles,
+      the digestive organs and the nervous system.'
+    labels:
+      en: Training Principles for the Organs
+      zh: 脏腑训练原则
+    composed_of:
+    - eating_as_internal_exercise
+    - harmony_as_health
+    tier: 1
+    source_domain: meta_health_ch09
+  evidence_and_safety_lens:
+    defines: 'The evidence-and-safety lens: separating what is well established (e.g.
+      post-meal walking lowers glucose; Baduanjin improves balance), what is plausible
+      and what is traditional metaphor — and knowing when symptoms need a doctor,
+      especially with diabetes, heart disease, pregnancy or medication.'
+    labels:
+      en: The Evidence-and-Safety Lens
+      zh: 证据与安全视角
+    composed_of:
+    - evidence_quality
+    - dual_lens_translation
+    - five_phase_integration_matrix
+    tier: 2
+    source_domain: meta_health_ch09
+  habit_formation:
+    defines: 'Habit formation: small daily doses (10 minutes, one breath before each
+      meal) anchored to existing routines such as meals and waking are more durable
+      than ambitious programs.'
+    labels:
+      en: Habit Formation
+      zh: 习惯养成
+    composed_of:
+    - organ_training_principles
+    tier: 2
+    source_domain: meta_health_ch09
+  mind_body_digestive_loop:
+    defines: 'The mind–body–digestive loop: mental state → mindful eating → post-meal
+      rest → gentle guiding movement → better mental state; stress breaks the loop
+      at its first link.'
+    labels:
+      en: The Mind–Body–Digestive Loop
+      zh: 身心与消化的循环
+    composed_of:
+    - internal_external_cultivation
+    - stress_resilience_routine
+    tier: 2
+    source_domain: meta_health_ch09
+  personalization:
+    defines: 'Personalization: adjusting the framework for constitution (体质), age,
+      fitness, chronic conditions and culture instead of prescribing one routine for
+      everyone.'
+    labels:
+      en: Personalization
+      zh: 个性化调整
+    composed_of:
+    - five_phase_integration_matrix
+    - organ_training_principles
+    tier: 2
+    source_domain: meta_health_ch09
+  self_observation_feedback:
+    defines: 'Self-observation as feedback: tracking energy, appetite, digestion and
+      stool, sleep, mood, tongue appearance and, optionally, HRV or glucose, to adjust
+      practice the way a coach adjusts training.'
+    labels:
+      en: Self-Observation as Feedback
+      zh: 自我观察与反馈
+    composed_of:
+    - organ_training_principles
+    - dual_lens_translation
+    tier: 2
+    source_domain: meta_health_ch09
+applications:
+  five_phase_body_map:
+    defines: Using the Five-Phase table, the three burners, the dantian and the prenatal/postnatal
+      roots to read the body as one connected system — linking an everyday sign (e.g.
+      irritability with a poor appetite) to organ relationships and the generating
+      and controlling cycles.
+    labels:
+      en: The Five-Phase Body Map
+      zh: 五行身体地图
+    needs:
+    - five_phase_correspondences
+    - twelve_primary_meridians
+    - harmony_as_health
+    - liver_spleen_relationship
+    - heart_kidney_interaction
+    - triple_burner_sanjiao
+    - dantian
+    - prenatal_postnatal_qi
+    tier: 5
+    source_domain: meta_health_ch01
+  dual_lens_translation:
+    defines: Translating TCM statements into physiology and back — e.g. 'moving Lung
+      qi' ↔ thoracic expansion and gas exchange, 'Kidney root' ↔ calf pump and posterior
+      chain — while noting where the correspondence is mechanistic, where it is plausible,
+      and where it is metaphorical.
+    labels:
+      en: 'Dual-Lens Translation: TCM and Physiology'
+      zh: 双重视角：中医与生理学的互译
+    needs:
+    - tidal_volume_and_gas_exchange
+    - lymph_flow
+    - vagal_tone_and_hrv
+    - spinal_rotation_and_lateral_flexion
+    - squat_mechanics
+    - tension_relaxation_cycling
+    - interoception
+    tier: 5
+    source_domain: meta_health_ch02
+  five_organ_routine_design:
+    defines: 'Designing a personal 5–10 minute five-organ routine: choosing a sequencing
+      logic for the goal and time of day, pairing each movement with the breath, ending
+      with the sealing finish, and scaling each movement to one''s body.'
+    labels:
+      en: Designing Your Five-Organ Routine
+      zh: 设计你的五脏操练习
+    needs:
+    - generating_cycle_sequence
+    - breath_first_sequence
+    - top_to_bottom_sequence
+    - sealing_finish
+    - safe_practice_and_modification
+    tier: 5
+    source_domain: meta_health_ch03
+  daily_baduanjin_practice_plan:
+    defines: 'A personal daily Baduanjin plan: the full set with breath coordination
+      and tension–release, organ-targeted extras drawn from the mapping, a proper
+      closing, and realistic expectations based on the evidence.'
+    labels:
+      en: Your Daily Baduanjin Plan
+      zh: 每日八段锦练习计划
+    needs:
+    - baduanjin_five_organ_mapping
+    - breath_movement_coordination
+    - tension_release_rhythm
+    - closing_form_shougong
+    - practice_dose
+    - baduanjin_evidence_base
+    tier: 5
+    source_domain: meta_health_ch04
+  mindful_meal_protocol:
+    defines: 'The mindful-meal protocol: before (warm-up breaths, no screens), during
+      (thorough chewing, pacing to 70–80% full) and after (rest, then gentle movement)
+      — a practical routine that treats every meal as a well-coached internal workout.'
+    labels:
+      en: The Mindful-Meal Protocol
+      zh: 正念用餐方案
+    needs:
+    - digestive_warm_up
+    - digestive_load_pacing
+    - digestive_overtraining
+    - post_meal_gentle_movement
+    tier: 7
+    source_domain: meta_health_ch05
+  five_phase_meal_design:
+    defines: 'Designing a week of meals that satisfy both lenses: a balanced plate,
+      whole foods, all five colors and flavors in moderation, warm cooked foods, sensible
+      timing, and adjustments for one''s constitution.'
+    labels:
+      en: Five-Phase Meal Design
+      zh: 五行膳食设计
+    needs:
+    - balanced_plate
+    - junk_load
+    - warm_cooked_food_principle
+    - five_flavors_wuwei
+    - meal_timing_chrononutrition
+    - constitution_based_eating
+    tier: 5
+    source_domain: meta_health_ch06
+  stress_resilience_routine:
+    defines: 'A daily stress-resilience routine: three slow breaths before each meal,
+      a liver-releasing movement when tension builds, a calm evening wind-down, and
+      HRV or journal feedback — protecting digestion from ''Wood overacting on Earth''.'
+    labels:
+      en: A Daily Stress-Resilience Routine
+      zh: 每日抗压练习
+    needs:
+    - wood_overacting_on_earth
+    - emotional_eating
+    - breath_as_bridge
+    - releasing_liver_qi_through_movement
+    - mind_regulation_tiaoxin
+    - hrv_self_monitoring
+    tier: 7
+    source_domain: meta_health_ch07
+  personal_daily_rhythm_schedule:
+    defines: 'A personal rhythm plan: a 24-hour day (morning light and Baduanjin,
+      breakfast in 辰时, main meal at midday, gentle movement after meals, an early
+      light dinner, an evening wind-down, sleep before 23:00) adjusted through the
+      year according to the season''s phase and organ.'
+    labels:
+      en: Your Personal Rhythm Plan
+      zh: 个人作息节律计划
+    needs:
+    - light_entrainment
+    - exercise_timing
+    - breakfast_in_chenshi
+    - sleep_before_zishi
+    - sleep_and_metabolic_repair
+    - seasonal_food_and_movement
+    tier: 5
+    source_domain: meta_health_ch08
+  daily_meta_health_protocol:
+    defines: 'The daily 元健康 Meta-Health protocol (日常元健康方案 — ''meta'' as in 元, the
+      whole above the parts: movement, eating, mind and rhythm as one practice; not
+      代谢/metabolic health) — a 24-hour blueprint: morning light and Baduanjin; pre-meal
+      breaths, mindful meals to 70–80% full, gentle movement 30–40 minutes after eating;
+      stress-release through the day; an early, light dinner; sleep before 子时 — personalized,
+      observed and adjusted over time.'
+    labels:
+      en: The Daily Meta-Health Protocol (元健康)
+      zh: 日常元健康方案
+    needs:
+    - mind_body_digestive_loop
+    - five_phase_integration_matrix
+    - habit_formation
+    - personalization
+    - self_observation_feedback
+    - evidence_and_safety_lens
+    tier: 3
+    source_domain: meta_health_ch09

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Venous Return | Meta Health Ch02</title>
+<script>
+MathJax = {
+  loader: { load: ['[tex]/mathtools'] },
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']],
+         packages: { '[+]': ['mathtools'] } },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<script src="https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.min.js"></script>
+<script>mermaid.initialize({ startOnLoad: true, theme: 'neutral' });</script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+footer.spl-credit span{display:block}
+footer.spl-credit .spl-credit__meta{margin-bottom:4px}
+.cb-figure{margin:24px 0;text-align:center}
+.cb-figure img{max-width:100%;height:auto;border:1px solid #e0e0d8;border-radius:6px}
+figcaption{font-size:.82rem;color:#666;margin-top:8px;font-style:italic;text-align:center}
+pre.mermaid{background:none;border:none;padding:0;overflow:visible;margin:16px 0}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="venous-return">Venous Return</h2>
+<p>Venous return is the volume of blood flowing back into the right atrium per minute. It is not a passive trickle: the veins act as a low-pressure, high-capacity reservoir that must actively deliver blood uphill (from the legs) and against a nearly empty heart during diastole. Three features make this possible: one-way valves inside the veins prevent backflow, contraction of surrounding skeletal muscle squeezes blood forward past those valves (the skeletal-muscle pump), and pressure changes in the chest during breathing draw blood toward the heart (the respiratory pump). Because the heart can only pump out what arrives at its inlet, venous return sets an upper limit on cardiac output over any given time — the two must be equal at steady state.</p>
+<p>Physiologist Arthur Guyton formalized this relationship as venous return being driven by the pressure gradient between the systemic veins and the right atrium, divided by the resistance the blood encounters on its way back:</p>
+$$
+VR = \frac{P_{ms} - P_{ra}}{R_{VR}}
+$$
+<p>Here $P_{ms}$ is the mean systemic filling pressure (the average pressure in the circulation when the heart is briefly stopped, typically about 7 mmHg), $P_{ra}$ is right atrial pressure, and $R_{VR}$ is the resistance to venous return.</p>
+<p>Worked example: suppose mean systemic filling pressure is 7 mmHg, right atrial pressure is 2 mmHg, and venous resistance is 0.05 mmHg per (liter/min). Venous return is then $(7-2)/0.05 = 100$ liters/min in relative units — the key point is that reducing right atrial pressure (as a stronger heart does by emptying more completely) increases the gradient and thus increases venous return, while raising right atrial pressure (as in heart failure) reduces it.</p>
+<p>This model explains everyday and clinical scenarios. Standing motionless causes blood to pool in leg veins, lowering venous return and can produce lightheadedness because cardiac output briefly falls. Walking reactivates the skeletal-muscle pump, boosting return. In varicose veins, faulty valves let blood reflux downward, chronically reducing the effective forward flow. A clinician assessing a patient with unexplained fatigue or swollen ankles is often, in effect, asking which term in this pressure-resistance relationship has gone wrong — the reservoir pressure, the resistance in the veins, or the heart's ability to keep right atrial pressure low.</p>
+  </main>
+  <footer class="spl-credit"><span class="spl-credit__meta">Ch2: The Physiology Lens — Breath, Circulation, Fascia, and Core (生理视角) (Level: College &middot; Language: EN &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
+</div>
+</body>
+</html>

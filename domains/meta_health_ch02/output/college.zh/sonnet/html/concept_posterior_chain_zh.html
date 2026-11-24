@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>后侧链 | Meta Health Ch02</title>
+<script>
+MathJax = {
+  loader: { load: ['[tex]/mathtools'] },
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']],
+         packages: { '[+]': ['mathtools'] } },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<script src="https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.min.js"></script>
+<script>mermaid.initialize({ startOnLoad: true, theme: 'neutral' });</script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+footer.spl-credit span{display:block}
+footer.spl-credit .spl-credit__meta{margin-bottom:4px}
+.cb-figure{margin:24px 0;text-align:center}
+.cb-figure img{max-width:100%;height:auto;border:1px solid #e0e0d8;border-radius:6px}
+figcaption{font-size:.82rem;color:#666;margin-top:8px;font-style:italic;text-align:center}
+pre.mermaid{background:none;border:none;padding:0;overflow:visible;margin:16px 0}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="后侧链">后侧链</h2>
+<p>后侧链是指身体背面由小腿三头肌、腘绳肌（大腿后侧肌群）、臀大肌与脊柱竖脊肌依次连接而成的一条功能性肌肉链。这些肌肉并非各自独立工作，而是在下肢伸展、髋关节伸直和脊柱稳定等动作中按顺序协同发力，把地面的反作用力沿着这条链向上传递，最终转化为身体直立、行走、跳跃或搬举物体的动力。可以把它想象成一条接力链条：小腿把力量交给腘绳肌，腘绳肌交给臀肌，臀肌再交给竖脊肌，任何一环松弛或激活不足，都会让下一环甚至下背部承担额外负荷。</p>
+<p>以硬拉（deadlift）动作为例：起始时身体前屈、髋关节弯曲，此时腘绳肌和臀大肌处于拉长状态；上拉过程中，臀大肌率先发力伸髋，腘绳肌协同收缩伸膝，竖脊肌则全程保持脊柱中立、防止腰椎过度弯曲，小腿三头肌稳定踝关节、维持身体平衡。如果臀大肌力量不足或激活延迟，身体会本能地用腰部竖脊肌代偿发力，导致腰椎承受远超其设计的负荷，这正是许多下背部损伤的力学根源。</p>
+<p>从生物力学角度看，可以用杠杆原理估算腰椎所承受的力矩：</p>
+$$\tau = F \times d$$
+<p>其中 $\tau$ 为作用在腰椎上的力矩，$F$ 为搬举物体所产生的力，$d$ 为物体重心到腰椎（力矩支点）的水平距离。当臀肌与腘绳肌未能充分分担伸髋力量时，身体重心相对腰椎的有效力臂 $d$ 会增大，力矩 $\tau$ 随之升高，腰椎间盘和椎旁韧带所受压力也相应增加。这解释了为什么搬重物时"背部弓起、髋部不发力"比"屈髋挺胸、臀肌主导"更容易造成腰伤。</p>
+<p>针对这一原理的训练应用包括臀桥（glute bridge）、罗马尼亚硬拉（Romanian deadlift）等动作，其目的正是有意识地激活臀大肌与腘绳肌，缩短力矩计算中的有效力臂 $d$，把负荷从脆弱的腰椎转移到更强壮的髋部肌群，从而降低受伤风险、提高发力效率。</p>
+  </main>
+  <footer class="spl-credit"><span class="spl-credit__meta">Ch2: The Physiology Lens — Breath, Circulation, Fascia, and Core (生理视角) (Level: College &middot; Language: ZH &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
+</div>
+</body>
+</html>

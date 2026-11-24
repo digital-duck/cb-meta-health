@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Vagal Tone and Heart-Rate Variability | Meta Health Ch07</title>
+<script>
+MathJax = {
+  loader: { load: ['[tex]/mathtools'] },
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']],
+         packages: { '[+]': ['mathtools'] } },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<script src="https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.min.js"></script>
+<script>mermaid.initialize({ startOnLoad: true, theme: 'neutral' });</script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+footer.spl-credit span{display:block}
+footer.spl-credit .spl-credit__meta{margin-bottom:4px}
+.cb-figure{margin:24px 0;text-align:center}
+.cb-figure img{max-width:100%;height:auto;border:1px solid #e0e0d8;border-radius:6px}
+figcaption{font-size:.82rem;color:#666;margin-top:8px;font-style:italic;text-align:center}
+pre.mermaid{background:none;border:none;padding:0;overflow:visible;margin:16px 0}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="vagal-tone-and-heart-rate-variability">Vagal Tone and Heart-Rate Variability</h2>
+<p><strong>Definition.</strong> The vagus nerve (cranial nerve X) carries parasympathetic signals to the heart's pacemaker, the sinoatrial (SA) node. Left alone, the SA node fires at an intrinsic rate of roughly 100 beats per minute (bpm). The vagus acts like a brake, which is why a typical resting heart rate is closer to 60–75 bpm. <strong>Vagal tone</strong> is the strength of this braking influence at rest. <strong>Heart-rate variability (HRV)</strong> is the beat-to-beat variation in the time between heartbeats, called R–R intervals, because they are measured between successive R peaks on an ECG. Vagal tone cannot be measured directly in everyday settings, so HRV serves as its practical, noninvasive index.</p>
+<p>Heart rate rises slightly as you inhale, when vagal braking eases, and falls as you exhale, when it returns. This pattern is called respiratory sinus arrhythmia. A healthy, flexible nervous system shows more of this variation, not less. Higher resting HRV generally reflects stronger vagal influence and is associated with better cardiovascular fitness and stress recovery. Very low HRV is linked to higher cardiovascular risk, though HRV alone does not diagnose a condition.</p>
+<p><strong>Common time-domain measures.</strong></p>
+<p>| Measure | Meaning | |---|---| | SDNN | Standard deviation of all R–R intervals (overall variability) | | RMSSD | Root mean square of successive differences (best reflects vagal activity) |</p>
+<p>RMSSD is defined as:</p>
+$$\text{RMSSD} = \sqrt{\frac{1}{N-1}\sum_{i=1}^{N-1}\left(RR_{i+1}-RR_i\right)^2}$$
+<p>where $RR_i$ is the $i$-th interval in milliseconds and $N$ is the number of intervals.</p>
+<p><strong>Worked example.</strong> Five consecutive R–R intervals (ms) are 850, 900, 830, 910, 840.</p>
+<li>Successive differences: $+50,\ -70,\ +80,\ -70$.</li>
+<li>Squares: $2500,\ 4900,\ 6400,\ 4900$, which sum to $18{,}700$.</li>
+<li>Divide by $N-1=4$: $4675$.</li>
+<li>Take the square root: $\text{RMSSD} \approx 68\ \text{ms}$.</li>
+<p>The mean interval is $(850+900+830+910+840)/5 = 866$ ms, so the average heart rate is $60{,}000/866 \approx 69$ bpm.</p>
+<p><strong>Problem-solving application.</strong> Suppose an athlete records a morning RMSSD of 70 ms on most days during a training block. One morning it drops to 40 ms, and their resting heart rate is 8 bpm higher than usual. The reasoning is:</p>
+<li>A single day's drop is not meaningful on its own. Compare it with the person's own baseline, because HRV varies widely between individuals and depends on age.</li>
+<li>A sharp fall in RMSSD together with a higher resting heart rate is consistent with reduced vagal activity. Common causes are accumulated training load, poor sleep, illness, alcohol, or psychological stress.</li>
+<li>A sensible response is to reduce intensity that day and watch the trend over several days. If values stay low, look for the cause rather than training through it.</li>
+<p>Practices that raise vagal activity in the short term include slow breathing at about 6 breaths per minute, regular aerobic exercise, and adequate sleep. Measure under consistent conditions, such as on waking and at the same posture, since posture, caffeine, and the time of day all shift the numbers.</p>
+  </main>
+  <footer class="spl-credit"><span class="spl-credit__meta">Ch7: Stress, Emotion, and the Flow of Qi and Blood (情志与气血) (Level: College &middot; Language: EN &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
+</div>
+</body>
+</html>

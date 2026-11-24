@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>五行膳食设计 | Meta Health Ch09</title>
+<script>
+MathJax = {
+  loader: { load: ['[tex]/mathtools'] },
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']],
+         packages: { '[+]': ['mathtools'] } },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<script src="https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.min.js"></script>
+<script>mermaid.initialize({ startOnLoad: true, theme: 'neutral' });</script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+footer.spl-credit span{display:block}
+footer.spl-credit .spl-credit__meta{margin-bottom:4px}
+.cb-figure{margin:24px 0;text-align:center}
+.cb-figure img{max-width:100%;height:auto;border:1px solid #e0e0d8;border-radius:6px}
+figcaption{font-size:.82rem;color:#666;margin-top:8px;font-style:italic;text-align:center}
+pre.mermaid{background:none;border:none;padding:0;overflow:visible;margin:16px 0}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="五行膳食设计">五行膳食设计</h2>
+<p><strong>定义。</strong> 五行膳食设计是中医(TCM)中一种安排饮食的方法。TCM 认为,食物的"五味"(酸、苦、甘、辛、咸)分别与五脏(肝、心、脾、肺、肾)相联系,因此可以按体质、季节和身体状况来搭配食物。需要说明的是,"五味对应五脏"属于传统理论的框架,并没有被现代营养学或生理学证实。现代饮食指南的依据是能量、宏量营养素和微量营养素的摄入量。因此,较稳妥的做法是把五行当作"多样化搭配的提示",再用营养学数据检验菜单是否合格。</p>
+<p><strong>五味与常见食物对照</strong></p>
+<p>| 五味 | 对应脏腑(TCM) | 常见食物 | 营养学角度的主要贡献 | |---|---|---|---| | 酸 | 肝 | 柠檬、山楂、醋 | 维生素 C、有机酸 | | 苦 | 心 | 苦瓜、茶、芥蓝 | 多酚、膳食纤维 | | 甘 | 脾 | 米饭、南瓜、红薯 | 碳水化合物、能量 | | 辛 | 肺 | 姜、葱、白萝卜 | 挥发性香味物质 | | 咸 | 肾 | 海带、紫菜、少量酱油 | 碘、钠 |</p>
+<p><strong>工作流程。</strong> 先用文字确定当天的"主题"(例如秋季偏干燥,TCM 主张多吃润肺的食物),再按五味各选一种食材,最后核对营养。</p>
+<p><strong>示例。</strong> 一位体重 60 kg、轻体力活动的大学生,每天约需 2000 kcal 能量。秋季午餐设计如下:</p>
+<li>酸:凉拌山楂木耳(少量山楂)</li>
+<li>苦:清炒芥蓝</li>
+<li>甘:杂粮饭 150 g(熟重),约 170 kcal</li>
+<li>辛:白萝卜炖排骨</li>
+<li>咸:紫菜蛋花汤(盐控制在少量)</li>
+<p>午餐大约占全天能量的 35%,即</p>
+$$2000 \times 0.35 = 700\ \text{kcal}$$
+<p>粗略估算:杂粮饭约 170 kcal、排骨萝卜汤约 250 kcal、芥蓝约 60 kcal、山楂木耳约 50 kcal、紫菜蛋花汤约 70 kcal,合计约 600 kcal,距目标还差约 100 kcal,可加一份水果或增加 50 g 米饭补足。</p>
+<p><strong>解题应用。</strong> 设计菜单时按以下步骤检验:</p>
+<li>用五味清单检查是否有明显缺失。若一周内几乎没有"苦"味,说明深色蔬菜和茶类偏少,应补充。</li>
+<li>用营养数据检查能量和蛋白质是否达标。</li>
+<li>检查钠摄入。成人每日食盐宜控制在 5 g 以内,而"咸"味的酱油、腌制品很容易超标。若五行清单要求"补咸",应选海带、紫菜等低钠来源,而不是多加盐。</li>
+<li>若有慢性病(如高血压、糖尿病),以医生和营养师的建议为准,不能用五行搭配替代治疗。</li>
+<p><strong>小结。</strong> 五行膳食设计的实际价值在于促使人们食材多样、色味丰富;其理论解释不能当作疾病防治的依据。把它与能量和营养素的核算结合起来,才是安全、可验证的做法。</p>
+  </main>
+  <footer class="spl-credit"><span class="spl-credit__meta">Ch9: The Unified Internal Conditioning Framework (内调一元论) (Level: College &middot; Language: ZH &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
+</div>
+</body>
+</html>

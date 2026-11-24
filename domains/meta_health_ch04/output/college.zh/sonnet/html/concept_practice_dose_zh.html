@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>练习的剂量 | Meta Health Ch04</title>
+<script>
+MathJax = {
+  loader: { load: ['[tex]/mathtools'] },
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']],
+         packages: { '[+]': ['mathtools'] } },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<script src="https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.min.js"></script>
+<script>mermaid.initialize({ startOnLoad: true, theme: 'neutral' });</script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+footer.spl-credit span{display:block}
+footer.spl-credit .spl-credit__meta{margin-bottom:4px}
+.cb-figure{margin:24px 0;text-align:center}
+.cb-figure img{max-width:100%;height:auto;border:1px solid #e0e0d8;border-radius:6px}
+figcaption{font-size:.82rem;color:#666;margin-top:8px;font-style:italic;text-align:center}
+pre.mermaid{background:none;border:none;padding:0;overflow:visible;margin:16px 0}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="练习的剂量">练习的剂量</h2>
+<p><strong>定义。</strong> 练习的剂量，是指一次练习持续多长时间、一天练几次，以及练到什么强度为止。这和用药一样：剂量太小，身体得不到足够的活动；剂量太大，反而造成疲劳。本节采用的推荐剂量是：每轮约 10 分钟（一到两轮），每天一到两次，强度以"活动开身体、但不疲劳、不大汗淋漓"为限。中医认为大汗会"耗气"。这是中医的说法，并不是可以直接测量的生理指标。我们可以用更客观的指标来把握强度：能够正常交谈、微微发热、心率只是略有升高。</p>
+<p><strong>两个时段的不同目的。</strong> 中医认为，清晨阳气初升，适合用练习来"升阳"。实际体验就是唤醒身体、提神。傍晚或睡前的一轮，则以放松肌肉、释放一天积累的紧张为主，动作应当更慢、幅度更柔和。</p>
+<p>| 时段 | 时长 | 目的 | 节奏 | |---|---|---|---| | 早晨 | 约 10 分钟 | 唤醒身体、提神 | 稍明快，幅度舒展 | | 晚间 | 约 10 分钟 | 放松紧张、利于入睡 | 缓慢，呼吸放长 |</p>
+<p><strong>例题。</strong> 小林白天久坐，想把练习排进日程。方案一：早上 10 分钟一轮，晚上 10 分钟一轮，每天共 20 分钟。方案二：只在早上练一轮，每轮 10 分钟。</p>
+<p>这两个方案每周的总量是多少？</p>
+<li>方案一：$10 \times 2 \times 7 = 140$ 分钟。</li>
+<li>方案二：$10 \times 1 \times 7 = 70$ 分钟。</li>
+<p>两个方案都不算多。方案一的 140 分钟接近常见推荐的每周中等强度活动量 150 分钟，而且是在日常活动之外额外增加的。小林可以先从方案二开始，适应一两周后，再加晚间一轮。</p>
+<p><strong>问题解决应用。</strong> 剂量不是固定不变的，要根据身体的反馈来调整。可以按下面的步骤自查：</p>
+<li><strong>练习中</strong>：能否轻松说完整句话？如果气喘到说不出话，说明强度过大，应放慢速度或缩小动作幅度。</li>
+<li><strong>练习后</strong>：身体微热、轻松舒畅，属于合适。如果大汗淋漓、心悸，或第二天明显疲乏、肌肉酸痛，说明剂量偏大，应缩短时长或减为每天一次。</li>
+<li><strong>睡眠</strong>：如果晚间练习后反而更清醒，就把晚间一轮提前，或把动作放得更缓慢。</li>
+<li><strong>调整幅度</strong>：每次只改变一个变量（时长、次数或强度），观察一周后再决定下一步。</li>
+<p>例如，小张刚开始练，一轮 10 分钟就觉得腰酸。他可以先把每轮缩短到 5 分钟，保持每天两次，两周后再逐渐延长。这样总量不变，负担却更小。</p>
+<p><strong>小结。</strong> 练习的剂量以"约 10 分钟、每天一到两次、微热不大汗"为基本框架。具体练多少，由你的主观感受和睡眠、第二天的精力来校准，目标是持之以恒，而不是一次练到筋疲力尽。身体有慢性疾病或不适者，应先咨询医生再确定练习量。</p>
+  </main>
+  <footer class="spl-credit"><span class="spl-credit__meta">Ch4: Baduanjin — The Eight Brocades (八段锦) (Level: College &middot; Language: ZH &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
+</div>
+</body>
+</html>

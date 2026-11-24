@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>四气 | Meta Health Ch06</title>
+<script>
+MathJax = {
+  loader: { load: ['[tex]/mathtools'] },
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']],
+         packages: { '[+]': ['mathtools'] } },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<script src="https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.min.js"></script>
+<script>mermaid.initialize({ startOnLoad: true, theme: 'neutral' });</script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+footer.spl-credit span{display:block}
+footer.spl-credit .spl-credit__meta{margin-bottom:4px}
+.cb-figure{margin:24px 0;text-align:center}
+.cb-figure img{max-width:100%;height:auto;border:1px solid #e0e0d8;border-radius:6px}
+figcaption{font-size:.82rem;color:#666;margin-top:8px;font-style:italic;text-align:center}
+pre.mermaid{background:none;border:none;padding:0;overflow:visible;margin:16px 0}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="四气">四气</h2>
+<p><strong>定义。</strong> 四气(也称四性)是中医对食物和药物"寒热偏性"的分类。中医认为,不同食物进入人体后,会使人倾向于偏凉或偏热。传统上分为五档:寒、凉、平、温、热。其中寒与凉属"凉性",温与热属"热性",平性则不明显偏向任何一边。凉与温是程度较轻的一档,寒与热则较强。需要注意,"气"在此指性质倾向,与食物实际温度无关:一杯热的绿豆汤,仍被归为凉性食物。</p>
+<p><strong>常见例子。</strong></p>
+<p>| 分类 | 食物举例 | 传统上认为的用途 | |---|---|---| | 寒 | 西瓜、苦瓜、螃蟹 | 清热、解暑 | | 凉 | 梨、黄瓜、绿茶 | 轻度清热 | | 平 | 大米、玉米、猪肉 | 日常食用,无明显偏向 | | 温 | 生姜、红枣、羊肉 | 驱寒、暖身 | | 热 | 辣椒、肉桂、干姜 | 强烈温散 |</p>
+<p><strong>例题。</strong> 小李夏天长时间在户外活动,出现口渴、面红、心烦、出汗多。中医会把这种表现归为"热证",并按"热者寒之"的原则选食物。</p>
+<p><em>分析:</em> 在上表中,应选寒凉一侧的食物,如西瓜或绿豆汤,同时避开辣椒、羊肉等热性食物。从现代角度看,这一情景的核心问题是脱水和中暑风险。西瓜含水量约 $90\%$,补水确有道理。因此,这个建议是否有效,主要取决于补水,而不是"寒性"本身。</p>
+<p><strong>应用:为不同体质选择食物。</strong> 中医的搭配原则可概括为:偏热的状态配寒凉食物,偏寒的状态配温热食物,无明显偏向者以平性食物为主。</p>
+<p><em>问题:</em> 小王常年怕冷、手脚凉,冬天想煮一道汤。该怎样选料?</p>
+<p><em>解答:</em></p>
+<li>判断偏向:怕冷、手脚凉,中医归为"寒"的倾向。</li>
+<li>选温热一侧的食材:生姜、红枣、羊肉。</li>
+<li>以平性食物(如大米)作为主食搭配,避免一次摄入过多热性食物。</li>
+<li>避免同时大量加入西瓜、苦瓜等寒性食物,否则方向相互抵消。</li>
+<p><strong>证据状况。</strong> 四气是一套经验性的分类系统,它所依据的"寒热"并不对应现代营养学里的任何单一指标。热量、营养成分和食物温度都不能预测一种食物属于哪一气。有一些研究探讨了不同气性食物与代谢产热的关系,但结论尚不一致,不足以证明这套分类能预测个体反应。因此,把四气当作一种饮食搭配的传统参考框架较为合适。若有糖尿病、肾病等疾病,选择食物仍应以营养学和医嘱为准。</p>
+<p><strong>小结。</strong> 四气把食物按"寒、凉、平、温、热"五档排列,用来配合人体的偏寒或偏热状态。使用时先判断状态,再选择方向相反的食物。</p>
+  </main>
+  <footer class="spl-credit"><span class="spl-credit__meta">Ch6: What We Eat — Food Quality, Four Natures, and Five Flavors (四气五味) (Level: College &middot; Language: ZH &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
+</div>
+</body>
+</html>

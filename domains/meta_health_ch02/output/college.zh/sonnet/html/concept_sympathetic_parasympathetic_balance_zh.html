@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>交感与副交感神经平衡 | Meta Health Ch02</title>
+<script>
+MathJax = {
+  loader: { load: ['[tex]/mathtools'] },
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']],
+         packages: { '[+]': ['mathtools'] } },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<script src="https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.min.js"></script>
+<script>mermaid.initialize({ startOnLoad: true, theme: 'neutral' });</script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+footer.spl-credit span{display:block}
+footer.spl-credit .spl-credit__meta{margin-bottom:4px}
+.cb-figure{margin:24px 0;text-align:center}
+.cb-figure img{max-width:100%;height:auto;border:1px solid #e0e0d8;border-radius:6px}
+figcaption{font-size:.82rem;color:#666;margin-top:8px;font-style:italic;text-align:center}
+pre.mermaid{background:none;border:none;padding:0;overflow:visible;margin:16px 0}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="交感与副交感神经平衡">交感与副交感神经平衡</h2>
+<p>自主神经系统包含两条分支：交感神经系统主导"战或逃"反应,副交感神经系统主导"休息与消化"状态。两者并非非此即彼的开关,而是持续相互拮抗、动态调节心率、血压、消化和呼吸等无意识生理过程的一对系统。交感神经激活时,肾上腺素与去甲肾上腺素释放增加,心率加快、支气管扩张、消化道血流减少,身体准备应对威胁或高强度运动;副交感神经(主要经由迷走神经)激活时,心率减慢、唾液与胃酸分泌增加、消化道蠕动加强,身体转入修复与能量储存状态。健康状态下,两者应能根据情境灵活切换,而不是长期固定在某一端。</p>
+<p>心血管系统中,交感与副交感的净效应可以通过心输出量体现,其定义为:</p>
+$$
+CO = HR \times SV
+$$
+<p>其中 $CO$ 为心输出量(mL/min)，$HR$ 为心率(次/分)，$SV$ 为每搏输出量(mL)。静息状态下,一名成年人心率约为70次/分,每搏输出量约70 mL,心输出量约为 $70 \times 70 = 4900$ mL/min,即约4.9 L/min。当交感神经被强烈激活(例如剧烈运动或急性应激)时,心率可升至150次/分,每搏输出量因心肌收缩力增强升至约100 mL,心输出量随之升至 $150 \times 100 = 15000$ mL/min,即15 L/min——约为静息值的3倍。</p>
+<p>这一机制也是可训练、可测量的:心率变异性(HRV,指连续心跳间期的波动程度)常被用作评估两套系统相对活跃度的指标。HRV较高通常反映副交感张力较强、系统切换灵活;HRV持续偏低则提示交感神经长期占主导,与慢性压力相关。缓慢腹式呼吸(如每分钟6次)能够通过呼吸性窦性心律不齐机制,主动提升迷走神经张力、增强HRV,是一种有实证支持的自我调节练习方法。</p>
+<pre class="mermaid">graph LR
+    A[自主神经系统] --> B[交感神经系统]
+    A --> C[副交感神经系统]
+    B --> D[心率加快]
+    B --> E[消化血流减少]
+    C --> F[心率减慢]
+    C --> G[消化蠕动增强]
+    D --> H[心输出量上升]
+    F --> I[心输出量下降]</pre>
+<p><em>该图展示交感与副交感神经系统对心率、消化和心输出量的相反调节作用。</em></p>
+  </main>
+  <footer class="spl-credit"><span class="spl-credit__meta">Ch2: The Physiology Lens — Breath, Circulation, Fascia, and Core (生理视角) (Level: College &middot; Language: ZH &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
+</div>
+</body>
+</html>

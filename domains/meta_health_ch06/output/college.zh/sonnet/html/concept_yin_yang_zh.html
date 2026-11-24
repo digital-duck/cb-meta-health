@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>阴阳 | Meta Health Ch06</title>
+<script>
+MathJax = {
+  loader: { load: ['[tex]/mathtools'] },
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']],
+         packages: { '[+]': ['mathtools'] } },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<script src="https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.min.js"></script>
+<script>mermaid.initialize({ startOnLoad: true, theme: 'neutral' });</script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+footer.spl-credit span{display:block}
+footer.spl-credit .spl-credit__meta{margin-bottom:4px}
+.cb-figure{margin:24px 0;text-align:center}
+.cb-figure img{max-width:100%;height:auto;border:1px solid #e0e0d8;border-radius:6px}
+figcaption{font-size:.82rem;color:#666;margin-top:8px;font-style:italic;text-align:center}
+pre.mermaid{background:none;border:none;padding:0;overflow:visible;margin:16px 0}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="阴阳">阴阳</h2>
+<p><strong>定义。</strong> 阴阳是中医(Traditional Chinese Medicine,TCM)用来描述事物相互对立又相互依存的两个方面的一对概念。TCM 认为,人体的状态可以用这样的成对关系来归类:凉与温、静与动、夜与昼、休息与活动。阴大致对应前一类(偏凉、偏静、偏内),阳对应后一类(偏温、偏动、偏外)。它们不是两种互相独立的“物质”,而是同一过程的两端:没有活动就谈不上休息,没有温暖也就无所谓凉。阴阳的概念本身是一种归类和描述的语言,不是可以直接测量的生理量。</p>
+<p>| 一对对立面 | 偏阳的一端 | 偏阴的一端 | |---|---|---| | 温度感 | 温、热 | 凉、寒 | | 活动状态 | 活动、兴奋 | 休息、安静 | | 昼夜 | 白天 | 夜晚 | | 位置 | 体表、上部 | 体内、下部 |</p>
+<p><strong>例子:一天中的体温与活动。</strong> 人的核心体温并非恒定:清晨最低,约 $36.1\,^\circ\mathrm{C}$,傍晚最高,约 $37.0\,^\circ\mathrm{C}$,日内波动不到 1 °C。同时,心率在睡眠时可低至每分钟约 55 次,白天活动时可升到 80 次以上,运动时更高。用阴阳的语言描述就是:夜间体温较低、心率较慢、身体处于休息状态,偏“阴”;白天体温较高、心率较快、身体处于活动状态,偏“阳”。从生理学角度看,这对应的是昼夜节律与自主神经活动(夜间副交感神经占优势,白天交感神经活动增强)的变化。两者是同一现象的两种说法,阴阳提供的是一个便于归类的框架,生理学则给出了机制和数值。</p>
+<p><strong>问题应用。</strong> 小李连续一周熬夜,白天总觉得疲倦,但夜里躺下后又很难入睡,手心发热。请用阴阳的思路梳理这件事。</p>
+<li><strong>找出对立的两端。</strong> 活动(阳)持续到深夜,休息(阴)时间被压缩。</li>
+<li><strong>判断失衡的方向。</strong> TCM 会说,这是活动一端过多、休息一端不足,所以表现为夜间“躁热”而难以安静。</li>
+<li><strong>转换为可操作的措施。</strong> 固定起床和入睡时间、睡前一小时减少屏幕和剧烈运动、白天适度活动并接触自然光,也就是让活动与休息各自回到合适的时段。</li>
+<li><strong>用客观指标检验。</strong> 记录一周的入睡时间、睡眠时长和晨起静息心率,看是否趋于稳定。</li>
+<p>这里真正起作用的是规律作息,这一点有充分的睡眠医学证据支持。阴阳学说本身是一种解释框架,没有独立的实验证据证明“阴阳失衡”是一种可测量的病理状态,所以遇到持续失眠或发热等症状,应当寻求医学评估,不要只靠阴阳归类来判断。</p>
+<p><strong>小结。</strong> 阴阳帮助我们把凉与温、休息与活动这类成对的状态放在一起思考;在实际问题中,先把它翻译成可观察、可记录的具体指标,再据此行动。</p>
+  </main>
+  <footer class="spl-credit"><span class="spl-credit__meta">Ch6: What We Eat — Food Quality, Four Natures, and Five Flavors (四气五味) (Level: College &middot; Language: ZH &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
+</div>
+</body>
+</html>

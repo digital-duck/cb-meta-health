@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>自我观察与反馈 | Meta Health Ch09</title>
+<script>
+MathJax = {
+  loader: { load: ['[tex]/mathtools'] },
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']],
+         packages: { '[+]': ['mathtools'] } },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<script src="https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.min.js"></script>
+<script>mermaid.initialize({ startOnLoad: true, theme: 'neutral' });</script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+footer.spl-credit span{display:block}
+footer.spl-credit .spl-credit__meta{margin-bottom:4px}
+.cb-figure{margin:24px 0;text-align:center}
+.cb-figure img{max-width:100%;height:auto;border:1px solid #e0e0d8;border-radius:6px}
+figcaption{font-size:.82rem;color:#666;margin-top:8px;font-style:italic;text-align:center}
+pre.mermaid{background:none;border:none;padding:0;overflow:visible;margin:16px 0}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="自我观察与反馈">自我观察与反馈</h2>
+<p><strong>定义。</strong> 自我观察与反馈,是指把自己的身体状态当作一组可以持续记录的数据,定期回看,再据此调整饮食、运动和作息,方式很像教练根据训练表现调整训练计划。要点有三个:记录要简单,足够坚持;观察要连续,单次数据意义有限;调整要小步,一次只改一个变量。</p>
+<p><strong>常见观察项目。</strong></p>
+<p>| 项目 | 记录方式 | 说明 | |---|---|---| | 精力 | 每天早、午、晚各打 1–5 分 | 午后是否明显下滑 | | 食欲 | 饥饿程度与进食时间 | 是否暴饮暴食或毫无食欲 | | 消化与大便 | 频率、形态(可参照布里斯托大便分类)、有无腹胀 | 3 次/天至 3 次/周都属常见范围,重点看自己的变化 | | 睡眠 | 入睡时间、起床时间、夜醒次数 | 手环数据只作参考 | | 情绪 | 当天主要情绪,1–5 分 | 与压力事件一并记录 | | 舌象 | 晨起自然光下拍照:舌色、舌苔厚薄 | 中医认为舌象可反映脾胃状态,但它不是诊断工具,易受食物染色和刷舌影响 | | 可选:心率变异性 | 晨起静息测量 | 同一设备、同一时段比较 | | 可选:血糖 | 空腹及餐后 2 小时 | 需合规的血糖仪;有糖尿病者应遵医嘱 |</p>
+<p><strong>例题。</strong> 小林想改善午后困倦。基线一周:早餐为白面包加甜饮料,午后精力平均 2.0 分,晚上 11:30 入睡。第一步只改一个变量:早餐换成鸡蛋、燕麦和一份水果,其他不变。再记录一周,午后精力平均上升到 3.4 分。</p>
+<p>变化量为 $3.4 - 2.0 = 1.4$ 分。小林有血糖仪,餐后 2 小时血糖由 8.1 mmol/L 降到 6.4 mmol/L,与主观感受一致,支持"早餐影响午后状态"的判断。</p>
+<p><strong>问题解决应用。</strong> 按以下循环操作:</p>
+<li><strong>建立基线</strong>:不改变任何习惯,记录 7–14 天。</li>
+<li><strong>提出假设</strong>:例如"高糖早餐导致午后困倦"。</li>
+<li><strong>单变量干预</strong>:只改一件事,持续 1–2 周。</li>
+<li><strong>比较与判断</strong>:对照基线看趋势。变化小于日常波动(比如精力评分本来就在 2–4 分之间摇摆)时,不要下结论。</li>
+<li><strong>保留或回退</strong>:有效则保留,无效就换下一个假设。</li>
+<p><strong>注意事项。</strong></p>
+<li>样本很小:一两周的记录只能提示方向,不能证明因果。睡眠不足、月经周期、天气、考试压力都会同时影响数据。</li>
+<li>避免过度监测:如果记录引发焦虑,或你开始为一个数值反复纠结,就应减少项目,只保留精力和睡眠两项。</li>
+<li>危险信号不能靠自我调整处理:持续便血或黑便、不明原因体重下降、持续低落或有自伤念头、反复晕厥等,应及时就医。</li>
+<p><strong>小结。</strong> 自我观察不是追求完美的数据,而是用少量、连续、可比较的记录,让每一次调整都有依据。</p>
+  </main>
+  <footer class="spl-credit"><span class="spl-credit__meta">Ch9: The Unified Internal Conditioning Framework (内调一元论) (Level: College &middot; Language: ZH &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
+</div>
+</body>
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>五志与五脏 | Meta Health Ch07</title>
+<script>
+MathJax = {
+  loader: { load: ['[tex]/mathtools'] },
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']],
+         packages: { '[+]': ['mathtools'] } },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<script src="https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.min.js"></script>
+<script>mermaid.initialize({ startOnLoad: true, theme: 'neutral' });</script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+footer.spl-credit span{display:block}
+footer.spl-credit .spl-credit__meta{margin-bottom:4px}
+.cb-figure{margin:24px 0;text-align:center}
+.cb-figure img{max-width:100%;height:auto;border:1px solid #e0e0d8;border-radius:6px}
+figcaption{font-size:.82rem;color:#666;margin-top:8px;font-style:italic;text-align:center}
+pre.mermaid{background:none;border:none;padding:0;overflow:visible;margin:16px 0}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="五志与五脏">五志与五脏</h2>
+<p><strong>定义。</strong> 在中医(Traditional Chinese Medicine,TCM)理论中,"五志"指怒、喜、思、悲、恐五种情志活动,分别对应肝、心、脾、肺、肾五脏。TCM 认为,情志是脏腑功能的外在表现;当某种情绪过于强烈或持续过久,就会反过来损伤相应的脏。经典说法是:怒伤肝,喜伤心,思伤脾,悲伤肺,恐伤肾(《黄帝内经》)。</p>
+<p>| 情志 | 所伤之脏 | TCM 所述的典型表现 | |---|---|---| | 怒 | 肝 | 头胀、面红、胁肋胀痛 | | 喜(过度) | 心 | 心神不宁、心悸、失眠 | | 思(过度) | 脾 | 食欲差、腹胀、乏力 | | 悲 | 肺 | 气短、声低、易疲倦 | | 恐 | 肾 | 二便失控、腰膝酸软 |</p>
+<p>这里的"脏"是功能系统的概念,不完全等同于解剖学上的器官。</p>
+<p><strong>例题。</strong> 一位备考的大学生连续三周每天只睡约5小时,总担心成绩,反复思虑。近来他食欲下降,饭后腹胀,白天疲乏。</p>
+<p>按 TCM 的辨证思路:</p>
+<li>找主要情志:长期忧思、反复思虑。</li>
+<li>对应脏:思伤脾。</li>
+<li>对照症状:食欲差、腹胀、乏力,与"脾失健运"的描述相符。</li>
+<li>提出调护方向:减少持续思虑、规律作息和三餐,必要时请中医师辨证。</li>
+<p><strong>问题求解应用。</strong> 判断某个案例时,可分三步:先看情绪是否"过度或持续"(偶尔的怒不等于伤肝);再看症状是否与对应脏的功能描述吻合;最后排除其他原因。</p>
+<p>练习:某人突遭噩耗,数日来哭泣、气短、说话声音低微。</p>
+<li>情志:悲。</li>
+<li>对应脏:肺(悲伤肺)。</li>
+<li>症状:气短、声低,符合 TCM 对"肺气耗伤"的描述。</li>
+<li>调护:倾诉、适度运动、充足休息。</li>
+<p>再比如,一个人长期易怒,同时血压偏高。TCM 会归入"肝"的范畴;但现代医学要求先测血压、查明病因,不能只靠情志解释。</p>
+<p><strong>证据状况。</strong> 现代研究确实发现,长期压力、焦虑、抑郁与高血压、心血管疾病、消化功能紊乱和睡眠障碍相关,说明情绪影响身体是有依据的。但"某种情绪专门损伤某个特定的脏"这种一一对应关系,并没有得到现代生理学的证实,应视为 TCM 的理论模型,而非已验证的因果规律。出现持续的身体症状或情绪问题时,应首先寻求规范的医学评估。</p>
+  </main>
+  <footer class="spl-credit"><span class="spl-credit__meta">Ch7: Stress, Emotion, and the Flow of Qi and Blood (情志与气血) (Level: College &middot; Language: ZH &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
+</div>
+</body>
+</html>

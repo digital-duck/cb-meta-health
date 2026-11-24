@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>骨骼肌收缩 | Meta Health Ch02</title>
+<script>
+MathJax = {
+  loader: { load: ['[tex]/mathtools'] },
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']],
+         packages: { '[+]': ['mathtools'] } },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<script src="https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.min.js"></script>
+<script>mermaid.initialize({ startOnLoad: true, theme: 'neutral' });</script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+footer.spl-credit span{display:block}
+footer.spl-credit .spl-credit__meta{margin-bottom:4px}
+.cb-figure{margin:24px 0;text-align:center}
+.cb-figure img{max-width:100%;height:auto;border:1px solid #e0e0d8;border-radius:6px}
+figcaption{font-size:.82rem;color:#666;margin-top:8px;font-style:italic;text-align:center}
+pre.mermaid{background:none;border:none;padding:0;overflow:visible;margin:16px 0}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="骨骼肌收缩">骨骼肌收缩</h2>
+<p>骨骼肌是受意识支配的肌肉,通过运动神经的激活而收缩产生力量,收缩结束后随即舒张。这一过程被称为兴奋-收缩耦联(excitation-contraction coupling):神经信号先转化为电信号,再转化为化学信号,最终转化为机械收缩。</p>
+<p>收缩的起点是运动神经元传来的动作电位。动作电位到达神经末梢与肌纤维交界处——神经肌肉接头(neuromuscular junction)——触发神经递质乙酰胆碱(acetylcholine, ACh)的释放。乙酰胆碱与肌细胞膜上的受体结合,使肌细胞膜去极化,这一电信号沿肌纤维内部的管道系统迅速传导,促使肌浆网释放储存的钙离子($\text{Ca}^{2+}$)。钙离子的出现是关键的触发信号:它与肌丝上的调节蛋白结合,暴露出肌动蛋白(actin)上原本被遮蔽的结合位点,使肌球蛋白(myosin)头部得以与肌动蛋白结合,形成横桥(cross-bridge)。肌球蛋白头部随后发生构象变化,拉动肌动蛋白丝向肌节中央滑动,肌节因而缩短——这就是滑动丝学说(sliding filament theory)所描述的机制:肌丝本身长度不变,是肌丝之间的相对滑动导致肌肉整体缩短。收缩产生的力量大小,取决于同时被激活的运动单位数量,以及每个运动单位的放电频率——这一原理在训练科学中称为动员(recruitment)。</p>
+<p><strong>应用实例</strong>:举重运动员完成一次深蹲,股四头肌需要产生足以支撑数倍体重的力量。神经系统通过增加运动单位募集数量与提高放电频率来提升输出力量,这也是力量训练能提高最大力量输出的神经层面机制之一,区别于肌纤维本身增粗带来的适应。理解这一通路,也能解释为何神经损伤(如运动神经元病)或神经肌肉接头病变(如重症肌无力)会导致肌无力,即使肌纤维本身结构完好。</p>
+<pre class="mermaid">flowchart LR
+    A[动作电位] --> B[运动神经元]
+    B --> C[神经肌肉接头]
+    C --> D[乙酰胆碱释放]
+    D --> E[肌细胞膜去极化]
+    E --> F[钙离子释放]
+    F --> G[肌动蛋白-肌球蛋白横桥形成]
+    G --> H[肌肉缩短]</pre>
+<p><em>图示骨骼肌收缩的兴奋-收缩耦联全过程,从神经信号到机械收缩。</em></p>
+  </main>
+  <footer class="spl-credit"><span class="spl-credit__meta">Ch2: The Physiology Lens — Breath, Circulation, Fascia, and Core (生理视角) (Level: College &middot; Language: ZH &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
+</div>
+</body>
+</html>

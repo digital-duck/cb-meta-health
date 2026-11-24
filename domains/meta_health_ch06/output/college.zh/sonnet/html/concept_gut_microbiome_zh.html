@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>肠道菌群 | Meta Health Ch06</title>
+<script>
+MathJax = {
+  loader: { load: ['[tex]/mathtools'] },
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']],
+         packages: { '[+]': ['mathtools'] } },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<script src="https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.min.js"></script>
+<script>mermaid.initialize({ startOnLoad: true, theme: 'neutral' });</script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+footer.spl-credit span{display:block}
+footer.spl-credit .spl-credit__meta{margin-bottom:4px}
+.cb-figure{margin:24px 0;text-align:center}
+.cb-figure img{max-width:100%;height:auto;border:1px solid #e0e0d8;border-radius:6px}
+figcaption{font-size:.82rem;color:#666;margin-top:8px;font-style:italic;text-align:center}
+pre.mermaid{background:none;border:none;padding:0;overflow:visible;margin:16px 0}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="肠道菌群">肠道菌群</h2>
+<p><strong>定义。</strong> 肠道菌群(gut microbiome)是栖息在人体肠道内的微生物群落,以大肠为主,包括细菌、古菌、真菌和病毒,总数约为 $10^{13}$ 个,与人体自身细胞数量大致相当。人体缺乏分解膳食纤维和抗性淀粉的酶,这些未被消化的碳水化合物进入大肠后,由菌群发酵,产生短链脂肪酸(主要是乙酸、丙酸和丁酸)和气体(氢气、二氧化碳、甲烷)。</p>
+<p>菌群的作用主要有三方面:</p>
+<p>| 方面 | 主要作用 | |---|---| | 消化 | 发酵纤维;合成维生素 K 和部分 B 族维生素 | | 免疫 | 训练免疫系统;占据生态位,抑制病原菌定植 | | 代谢 | 短链脂肪酸为结肠细胞供能,并参与调节食欲和血糖 |</p>
+<p>其中丁酸是结肠上皮细胞的主要能量来源。</p>
+<p><strong>例题。</strong> 一位成年人每天摄入 30 g 可发酵纤维。研究常用的估算是:每克可发酵纤维经发酵,约为人体提供 2 kcal 能量(远低于葡萄糖的 4 kcal/g)。求这部分能量,并比较它与每日 2000 kcal 摄入量的占比。</p>
+<p>第一步,计算发酵供能:</p>
+$$30\ \text{g} \times 2\ \text{kcal/g} = 60\ \text{kcal}$$
+<p>第二步,计算占比:</p>
+$$\frac{60}{2000} \times 100\% = 3\%$$
+<p>结论:纤维提供的能量很少,它的价值主要不在热量,而在于喂养菌群、产生短链脂肪酸,并增加粪便体积。</p>
+<p><strong>问题解决应用。</strong> 小李连续一周每天只吃约 10 g 纤维,然后在两天内把纤维增至 35 g,结果出现明显腹胀和排气增多。请分析原因,并提出改进方案。</p>
+<p><em>分析:</em> 菌群组成会随饮食调整,但需要几天到几周。纤维突然增加时,原有菌群来不及适应,发酵产气骤增,于是腹胀。这不是纤维有害,而是增幅过快。</p>
+<p><em>方案:</em></p>
+<li>每周增加约 5 g,逐步加到 25–35 g。</li>
+<li>同时增加饮水量,因为纤维吸水后才能使粪便保持松软。</li>
+<li>食物种类要多样,包括全谷物、豆类、蔬菜、水果和坚果,因为不同细菌偏好不同的底物,多样的纤维能支持更丰富的菌群。</li>
+<li>若症状持续或伴有体重下降、便血,应就医,不要自行归因于菌群。</li>
+<p><strong>要点。</strong> 肠道菌群的状态受饮食、抗生素使用、年龄等因素影响。长期低纤维饮食会减少产短链脂肪酸细菌的数量。目前,菌群与肥胖、糖尿病、炎症性肠病等疾病的关联已有大量研究,但很多结果只是相关性,不能直接说明因果。因此,日常中增加膳食纤维是证据较充分的做法,而宣称能"重建菌群"的各类产品,多数尚缺乏可靠的临床证据。</p>
+  </main>
+  <footer class="spl-credit"><span class="spl-credit__meta">Ch6: What We Eat — Food Quality, Four Natures, and Five Flavors (四气五味) (Level: College &middot; Language: ZH &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
+</div>
+</body>
+</html>

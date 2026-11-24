@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Carbohydrate Quality | Meta Health Ch06</title>
+<script>
+MathJax = {
+  loader: { load: ['[tex]/mathtools'] },
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']],
+         packages: { '[+]': ['mathtools'] } },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<script src="https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.min.js"></script>
+<script>mermaid.initialize({ startOnLoad: true, theme: 'neutral' });</script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+footer.spl-credit span{display:block}
+footer.spl-credit .spl-credit__meta{margin-bottom:4px}
+.cb-figure{margin:24px 0;text-align:center}
+.cb-figure img{max-width:100%;height:auto;border:1px solid #e0e0d8;border-radius:6px}
+figcaption{font-size:.82rem;color:#666;margin-top:8px;font-style:italic;text-align:center}
+pre.mermaid{background:none;border:none;padding:0;overflow:visible;margin:16px 0}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="carbohydrate-quality">Carbohydrate Quality</h2>
+<p><strong>Definition.</strong> Carbohydrate quality describes how a carbohydrate-containing food affects blood glucose and overall health, based on its fiber content, degree of processing, and how quickly its sugars reach the bloodstream. Whole grains, legumes, vegetables, and intact fruit are digested slowly because fiber and intact cell structure slow the breakdown of starch. Refined starches (white bread, white rice, pastries) and sugary drinks are digested quickly and produce a sharper rise in blood glucose.</p>
+<p>Two standard measures quantify this:</p>
+<li><strong>Glycemic index (GI):</strong> a ranking from 0 to 100 of how fast a food raises blood glucose compared with pure glucose, using a fixed portion containing 50 g of available carbohydrate.</li>
+<li><strong>Glycemic load (GL):</strong> the GI adjusted for the portion actually eaten.</li>
+$$\text{GL} = \frac{\text{GI} \times \text{available carbohydrate (g)}}{100}$$
+<p>Available carbohydrate means total carbohydrate minus fiber. A GL of 10 or below is generally considered low, 11–19 medium, and 20 or above high.</p>
+<p><strong>Worked example.</strong> Compare two breakfasts that each supply about 40 g of total carbohydrate.</p>
+<p><em>Breakfast A:</em> one cup of sweetened corn flakes with a glass of juice. Suppose the available carbohydrate is 38 g and the combined GI is about 80.</p>
+$$\text{GL} = \frac{80 \times 38}{100} \approx 30$$
+<p><em>Breakfast B:</em> a cup of cooked rolled oats with an apple. Suppose the available carbohydrate is 33 g (7 g of fiber already subtracted) and the combined GI is about 50.</p>
+$$\text{GL} = \frac{50 \times 33}{100} \approx 17$$
+<p>The total carbohydrate is similar, but Breakfast A is a high-GL meal and Breakfast B is a medium-GL meal. Blood glucose after A typically peaks higher and falls faster, which often brings earlier hunger.</p>
+<p><strong>Problem-solving application.</strong> Suppose a person with prediabetes wants to cut the glucose load of lunch without eating less food. A practical process:</p>
+<li>Estimate the GL of the current meal. For example, 1.5 cups of white rice (GI about 73, 60 g available carbohydrate) gives $\text{GL} = \frac{73 \times 60}{100} \approx 44$.</li>
+<li>Swap one refined item for a whole, fiber-rich one. Replacing it with 1.5 cups of cooked lentils (GI about 30, 35 g available carbohydrate) gives $\text{GL} = \frac{30 \times 35}{100} \approx 10.5$.</li>
+<li>Add protein, fat, or vinegar-based dressing. These can slow stomach emptying and lower the glucose response further.</li>
+<li>Check the result with a glucose meter or continuous monitor if available, since individual responses vary.</li>
+<p>Two cautions apply. GI values vary with ripeness, cooking time, and food combinations, so treat published values as estimates. GL also does not capture everything: a low-GL food such as ice cream is not automatically healthy. Use GL together with fiber, processing level, and overall nutrient content when judging a food.</p>
+  </main>
+  <footer class="spl-credit"><span class="spl-credit__meta">Ch6: What We Eat — Food Quality, Four Natures, and Five Flavors (四气五味) (Level: College &middot; Language: EN &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
+</div>
+</body>
+</html>

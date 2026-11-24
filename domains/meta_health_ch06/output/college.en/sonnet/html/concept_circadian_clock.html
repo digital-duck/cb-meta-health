@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Circadian Clock | Meta Health Ch06</title>
+<script>
+MathJax = {
+  loader: { load: ['[tex]/mathtools'] },
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']],
+         packages: { '[+]': ['mathtools'] } },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<script src="https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.min.js"></script>
+<script>mermaid.initialize({ startOnLoad: true, theme: 'neutral' });</script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+footer.spl-credit span{display:block}
+footer.spl-credit .spl-credit__meta{margin-bottom:4px}
+.cb-figure{margin:24px 0;text-align:center}
+.cb-figure img{max-width:100%;height:auto;border:1px solid #e0e0d8;border-radius:6px}
+figcaption{font-size:.82rem;color:#666;margin-top:8px;font-style:italic;text-align:center}
+pre.mermaid{background:none;border:none;padding:0;overflow:visible;margin:16px 0}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="the-circadian-clock">The Circadian Clock</h2>
+<p>The <strong>circadian clock</strong> is the body's internal timer, which runs on a cycle of roughly 24 hours. (The word comes from the Latin <em>circa diem</em>, "about a day.") Its master clock is a small cluster of neurons in the hypothalamus called the suprachiasmatic nucleus. The clock is set mainly by light. Specialized cells in the retina detect light, especially blue light, and signal the master clock, which then coordinates timers in nearly every organ. The clock schedules sleep, body temperature, hormone release, and digestive activity. For example, melatonin rises in the evening, cortisol peaks shortly after waking, and body temperature reaches its lowest point in the early morning.</p>
+<p>Without light cues, the human clock runs slightly longer than 24 hours, on average about 24.2 hours. Daily light exposure resets it, so it does not drift.</p>
+<h3 id="worked-example">Worked example</h3>
+<p>Suppose a student's clock runs at 24.2 hours per cycle and gets no light cues. Each day, their internal "morning" falls 0.2 hours, or 12 minutes, later than the day before.</p>
+$$0.2\ \text{h/day} \times 60\ \text{min/h} = 12\ \text{min/day}$$
+<p>After 10 days, the drift is $10 \times 12 = 120$ minutes, or 2 hours. In real life, morning light shifts the clock earlier by about this amount each day, which keeps it aligned with the sun.</p>
+<h3 id="problem-solving-application">Problem-solving application</h3>
+<p>Consider a student who normally sleeps from 11 pm to 7 am. They fly east across 6 time zones. On arrival, local time is 6 hours ahead of their body's clock, so their clock "thinks" it is 6 hours earlier than it is. They will feel sleepy and alert at the wrong local times. This mismatch is <strong>jet lag</strong>.</p>
+<p>Most people can shift their clock by about 1 to 1.5 hours per day with well-timed light. Taking 1 hour per day as a conservative rate, this student needs about 6 days to adapt. Eastward travel is usually harder than westward travel. Traveling east requires moving the clock <em>earlier</em>, which works against its natural tendency to run long, while traveling west requires moving it <em>later</em>.</p>
+<p>The timing of light matters as much as the amount:</p>
+<p>| Light exposure | Effect on the clock | |---|---| | Morning, after the body's temperature minimum | Shifts the clock earlier | | Evening, before the body's temperature minimum | Shifts the clock later | | Bright light late at night | Delays the clock and suppresses melatonin |</p>
+<p>To adapt after flying east, the student should seek bright light in the local morning and avoid bright light during the hours when their body clock still reads "night." Both rules push the clock in the needed direction.</p>
+<p>The same logic applies without travel. A student who stays up late on screens and sleeps in on weekends delays their clock. This pattern, sometimes called "social jet lag," can leave them groggy on Monday morning. Keeping a consistent wake time and getting morning light helps anchor the clock.</p>
+<h3 id="check-your-understanding">Check your understanding</h3>
+<p>A person's clock runs at 24.5 hours in constant dim light. By how much does their internal day drift later each day? What daily cue would correct this?</p>
+<p><em>Answer:</em> The drift is 0.5 h = 30 minutes per day. Morning light exposure would shift the clock earlier each day and offset the drift.</p>
+  </main>
+  <footer class="spl-credit"><span class="spl-credit__meta">Ch6: What We Eat — Food Quality, Four Natures, and Five Flavors (四气五味) (Level: College &middot; Language: EN &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
+</div>
+</body>
+</html>

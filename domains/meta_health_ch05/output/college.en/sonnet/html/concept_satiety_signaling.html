@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Satiety Signaling | Meta Health Ch05</title>
+<script>
+MathJax = {
+  loader: { load: ['[tex]/mathtools'] },
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']],
+         packages: { '[+]': ['mathtools'] } },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<script src="https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.min.js"></script>
+<script>mermaid.initialize({ startOnLoad: true, theme: 'neutral' });</script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+footer.spl-credit span{display:block}
+footer.spl-credit .spl-credit__meta{margin-bottom:4px}
+.cb-figure{margin:24px 0;text-align:center}
+.cb-figure img{max-width:100%;height:auto;border:1px solid #e0e0d8;border-radius:6px}
+figcaption{font-size:.82rem;color:#666;margin-top:8px;font-style:italic;text-align:center}
+pre.mermaid{background:none;border:none;padding:0;overflow:visible;margin:16px 0}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="satiety-signaling">Satiety Signaling</h2>
+<p><strong>Satiety signaling</strong> is the process by which the digestive tract tells the brain that enough food has been eaten. Two kinds of signals are involved:</p>
+<li><strong>Mechanical signals.</strong> Stretch receptors in the stomach wall fire as the stomach fills and send the information to the brainstem through the vagus nerve.</li>
+<li><strong>Chemical signals.</strong> Nutrients reaching the small intestine trigger the release of gut hormones. Cholecystokinin (CCK) is released in response to fat and protein. Glucagon-like peptide-1 (GLP-1) and peptide YY (PYY) are released by cells in the lower small intestine and colon. All three act on the hypothalamus and brainstem to reduce hunger and end the meal.</li>
+<p>These signals take time to build. Fullness registers roughly 15–20 minutes after eating begins, so it lags behind the eating itself. A person who eats quickly can swallow far more food during that lag than the body would have asked for.</p>
+<h3 id="worked-example">Worked example</h3>
+<p>Two students, Ana and Ben, each eat a meal of the same food. Ana finishes in 10 minutes and Ben takes 30. Assume both eat at a constant rate and that fullness registers 20 minutes after they start.</p>
+<p>Ben eats at 1,000 kcal per 30 min, which is about 33 kcal/min.</p>
+<li>Fullness registers at minute 20. By then Ben has eaten $33 \times 20 \approx 667$ kcal, and he can stop or slow down with the signal arriving in time.</li>
+<li>Ana eats the same 1,000 kcal in 10 minutes, about 100 kcal/min. She has finished before any signal arrives.</li>
+<p>Fullness reaches Ana only after the plate is empty. If she is still hungry, she may take a second serving. At the same pace she could eat another 1,000 kcal in the next 10 minutes, and the total would be 2,000 kcal before her signals catch up.</p>
+<p>Ben's slower pace gives his body the chance to stop him partway through.</p>
+<h3 id="problem-solving-application">Problem-solving application</h3>
+<p>Suppose you want to eat until comfortably satisfied without overshooting. Use the lag as a design constraint:</p>
+<li><strong>Estimate the lag.</strong> Use about 20 minutes as a working figure.</li>
+<li><strong>Pace the meal to it.</strong> Stretch a meal over at least 20 minutes. Put the fork down between bites, drink water, and talk.</li>
+<li><strong>Check before seconds.</strong> Wait 15–20 minutes after finishing the first serving. If you are still hungry then, take more.</li>
+<li><strong>Choose foods that engage the signals.</strong> Protein and fat trigger CCK. Fiber and water-rich foods such as soup, vegetables, and fruit add volume and stretch the stomach. Both help fullness register on a modest number of calories.</li>
+<p>Satiety signaling can also be disrupted. Sleep loss, distracted eating, and very fast eating all weaken or delay the signal. Some medications used for weight loss (GLP-1 receptor agonists) work by mimicking one of these hormones, which shows how strongly it affects appetite.</p>
+<p><strong>Check yourself:</strong> A friend eats 900 kcal in 8 minutes and then asks for dessert. Using the lag, explain why waiting before dessert is reasonable.</p>
+  </main>
+  <footer class="spl-credit"><span class="spl-credit__meta">Ch5: Eating as Internal Exercise (饮食即内脏运动) (Level: College &middot; Language: EN &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
+</div>
+</body>
+</html>

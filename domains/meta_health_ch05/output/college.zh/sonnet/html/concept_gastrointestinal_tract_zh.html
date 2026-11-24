@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>消化道 | Meta Health Ch05</title>
+<script>
+MathJax = {
+  loader: { load: ['[tex]/mathtools'] },
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']],
+         packages: { '[+]': ['mathtools'] } },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<script src="https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.min.js"></script>
+<script>mermaid.initialize({ startOnLoad: true, theme: 'neutral' });</script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+footer.spl-credit span{display:block}
+footer.spl-credit .spl-credit__meta{margin-bottom:4px}
+.cb-figure{margin:24px 0;text-align:center}
+.cb-figure img{max-width:100%;height:auto;border:1px solid #e0e0d8;border-radius:6px}
+figcaption{font-size:.82rem;color:#666;margin-top:8px;font-style:italic;text-align:center}
+pre.mermaid{background:none;border:none;padding:0;overflow:visible;margin:16px 0}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="消化道">消化道</h2>
+<p><strong>定义。</strong> 消化道(胃肠道)是一条从口腔到肛门、长约 $9\ \text{m}$ 的连续管道,依次为口腔、咽、食管、胃、小肠(十二指肠、空肠、回肠)和大肠。肝脏和胰腺不是管道本身,而是<strong>附属消化器官</strong>:它们通过导管把胆汁和胰液排入十二指肠。消化道的任务有两项:一是<strong>消化</strong>,把食物分解成可吸收的小分子;二是<strong>吸收</strong>,把营养物质、水和电解质送入血液或淋巴。</p>
+<p>各段分工如下:</p>
+<p>| 部位 | 主要功能 | |---|---| | 口腔 | 咀嚼;唾液淀粉酶开始分解淀粉 | | 食管 | 蠕动推送食团,约 $10\text{–}15$ 秒到达胃 | | 胃 | 盐酸($\text{pH}\approx 1.5\text{–}3.5$)与胃蛋白酶初步消化蛋白质 | | 小肠 | 消化的主要场所,也是吸收的主要场所;绒毛和微绒毛使吸收面积大大增加 | | 大肠 | 吸收水和电解质,形成粪便,容纳肠道菌群 | | 肝脏 | 分泌胆汁,帮助脂肪乳化 | | 胰腺 | 分泌胰淀粉酶、胰蛋白酶、胰脂肪酶和碳酸氢盐 |</p>
+<p><strong>例题。</strong> 一份午餐含 $60\ \text{g}$ 碳水化合物、$30\ \text{g}$ 蛋白质、$20\ \text{g}$ 脂肪。请追踪各营养素的消化位置,并估算能量。</p>
+<li><strong>碳水化合物:</strong> 口腔中唾液淀粉酶开始分解淀粉;进入胃后,胃酸使该酶失活;在小肠中由胰淀粉酶继续分解,最终由小肠刷状缘的酶变成葡萄糖并被吸收。</li>
+<li><strong>蛋白质:</strong> 胃蛋白酶先将其切成大的肽段,小肠中胰蛋白酶等进一步分解为氨基酸和短肽。</li>
+<li><strong>脂肪:</strong> 胃里仅有少量消化。到十二指肠后,胆汁将脂肪乳化成小滴,胰脂肪酶再将其分解为脂肪酸和单酸甘油酯。</li>
+<li><strong>能量:</strong> 按常用的能量换算系数(碳水化合物和蛋白质约 $4\ \text{kcal/g}$,脂肪约 $9\ \text{kcal/g}$):</li>
+$$60\times4+30\times4+20\times9=240+120+180=540\ \text{kcal}$$
+<p><strong>问题解决应用。</strong> 把部位与功能对应起来,就能推断症状的来源。</p>
+<p><em>情境一:</em> 一位患者做了胆囊切除术,吃了油腻食物后容易腹泻、大便油腻。分析:肝脏仍分泌胆汁,但胆囊不再浓缩和储存,胆汁无法在进食时集中排出,脂肪乳化不充分,未消化的脂肪进入大肠,引起脂肪泻。因此建议少量多餐、减少单次脂肪摄入。</p>
+<p><em>情境二:</em> 乳糖不耐受者喝牛奶后腹胀。分析:小肠刷状缘乳糖酶不足,乳糖不能被分解吸收,进入大肠后被细菌发酵产气,并通过渗透作用把水拉入肠腔。判断时应注意,问题出在小肠的消化环节,而不是胃酸或胰腺。</p>
+<p><em>情境三:</em> 严重胰腺炎或胰腺切除后,胰酶分泌不足,三大营养素都难以消化,尤其是脂肪,常需口服胰酶制剂。</p>
+<p>解题思路:先问"食物此刻走到了哪一段",再问"这一段缺少了什么酶、胆汁或吸收面积",症状的原因通常就清楚了。</p>
+  </main>
+  <footer class="spl-credit"><span class="spl-credit__meta">Ch5: Eating as Internal Exercise (饮食即内脏运动) (Level: College &middot; Language: ZH &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
+</div>
+</body>
+</html>

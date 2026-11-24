@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>内外兼修 | Meta Health Ch09</title>
+<script>
+MathJax = {
+  loader: { load: ['[tex]/mathtools'] },
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']],
+         packages: { '[+]': ['mathtools'] } },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<script src="https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.min.js"></script>
+<script>mermaid.initialize({ startOnLoad: true, theme: 'neutral' });</script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+footer.spl-credit span{display:block}
+footer.spl-credit .spl-credit__meta{margin-bottom:4px}
+.cb-figure{margin:24px 0;text-align:center}
+.cb-figure img{max-width:100%;height:auto;border:1px solid #e0e0d8;border-radius:6px}
+figcaption{font-size:.82rem;color:#666;margin-top:8px;font-style:italic;text-align:center}
+pre.mermaid{background:none;border:none;padding:0;overflow:visible;margin:16px 0}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="内外兼修">内外兼修</h2>
+<h3 id="定义">定义</h3>
+<p>内外兼修是一种把“外在运动”和“内在饮食”当作同一套健康实践的两个部分来安排的思路。在中医(Traditional Chinese Medicine,TCM)中,外修指通过太极、八段锦、散步等运动,使气血在经络中运行通畅;内修指通过专注、有节制的进食来调养脏腑。TCM 认为二者缺一不可:只运动不注意饮食,或只讲究饮食而久坐不动,都不完整。</p>
+<p>用现代生理学的语言看,这两部分对应两类可以测量的过程:运动影响心率、心输出量和肌肉对血糖的摄取;进食影响总能量摄入、餐后血糖和消化负荷。“气血”“经络”属于中医的解释框架,本节用它们转述传统说法,不当作可测量的量。</p>
+<h3 id="例题">例题</h3>
+<p>小李每天久坐办公,晚饭常常匆忙吃完,再瘫坐在沙发上。她想按内外兼修的思路调整一周的安排:</p>
+<p><strong>外修部分</strong>:每天饭后 30 分钟快走 20 分钟。中等强度快走大约每分钟消耗 4 到 5 kcal,所以 20 分钟约消耗 80 到 100 kcal。</p>
+<p><strong>内修部分</strong>:晚饭放慢速度,每口咀嚼到细碎再咽下,吃饭时不看手机,吃到七分饱就停。用餐时间从 8 分钟延长到 20 分钟。</p>
+<p>| 项目 | 调整前 | 调整后 | |---|---|---| | 晚餐用时 | 8 分钟 | 20 分钟 | | 饭后活动 | 无 | 快走 20 分钟 | | 每日额外消耗 | 0 kcal | 约 80 到 100 kcal |</p>
+<h3 id="问题解决应用">问题解决应用</h3>
+<p><strong>问题</strong>:小李两周后发现体重几乎没变,怎么办?</p>
+<p><strong>分析步骤</strong>:</p>
+<li><strong>先分清两部分各自的作用。</strong> 快走每天只多消耗 80 到 100 kcal。一个中等大小的甜点就可能抵消它。运动的主要收益是改善餐后血糖和心肺功能,不能只看体重。</li>
+<li><strong>检查内修是否真正落实。</strong> 放慢进食的价值在于给饱腹信号留出时间,这个信号通常要进食约 20 分钟后才明显。如果小李仍在 10 分钟内吃完,内修就没有做到位。</li>
+<li><strong>用可测量的指标评估。</strong> 记录晚餐用时、饭后步行时长、餐后两小时血糖(如有条件)和静息心率。两周内静息心率下降、餐后血糖波动变小,说明调整有效,即使体重暂时没动。</li>
+<li><strong>再调整。</strong> 只改变一个变量,例如把快走延长到 30 分钟,或把晚餐主食减少四分之一,然后再观察两周。</li>
+<p><strong>要点</strong>:内外兼修的实用价值在于“两部分同时做、分别记录”。外修常见的证据是运动对血糖、血压和心肺功能的益处;内修中细嚼慢咽、专注进食对饱腹感的帮助也有研究支持。至于气血沿经络运行这一机制,现代医学尚未证实。</p>
+  </main>
+  <footer class="spl-credit"><span class="spl-credit__meta">Ch9: The Unified Internal Conditioning Framework (内调一元论) (Level: College &middot; Language: ZH &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
+</div>
+</body>
+</html>

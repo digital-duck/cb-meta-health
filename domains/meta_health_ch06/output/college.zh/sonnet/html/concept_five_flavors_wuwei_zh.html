@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>五味 | Meta Health Ch06</title>
+<script>
+MathJax = {
+  loader: { load: ['[tex]/mathtools'] },
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']],
+         packages: { '[+]': ['mathtools'] } },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<script src="https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.min.js"></script>
+<script>mermaid.initialize({ startOnLoad: true, theme: 'neutral' });</script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+footer.spl-credit span{display:block}
+footer.spl-credit .spl-credit__meta{margin-bottom:4px}
+.cb-figure{margin:24px 0;text-align:center}
+.cb-figure img{max-width:100%;height:auto;border:1px solid #e0e0d8;border-radius:6px}
+figcaption{font-size:.82rem;color:#666;margin-top:8px;font-style:italic;text-align:center}
+pre.mermaid{background:none;border:none;padding:0;overflow:visible;margin:16px 0}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="五味">五味</h2>
+<p><strong>定义。</strong> 中医认为,食物和药物的味道不只是口感,还对应着特定的作用方向和脏腑归属。五味(酸、苦、甘、辛、咸)与五脏的对应关系如下:</p>
+<p>| 味 | 归属脏腑 | 作用 | 常见例子 | |---|---|---|---| | 酸 | 肝 | 收敛、固涩 | 乌梅、山楂、醋 | | 苦 | 心 | 清泄、燥湿 | 苦瓜、黄连、莲子心 | | 甘 | 脾 | 补益、缓急 | 大枣、山药、蜂蜜 | | 辛 | 肺 | 发散、行气 | 生姜、葱白、薄荷 | | 咸 | 肾 | 软坚、散结 | 海带、海盐、牡蛎 |</p>
+<p>此外,中医认为任何一味过量都会损伤其所对应的脏腑,例如《黄帝内经》提到“多食咸,则脉凝泣而变色”。需要说明的是,这里的“肝”“心”等是中医的功能系统概念,不等同于解剖学上的同名器官。现代研究尚未证实五味与脏腑之间的一一对应,但其中个别结论与现代营养学相吻合,下面会具体看到。</p>
+<p><strong>例题。</strong> 某人受凉后出现鼻塞、怕冷、无汗,中医会判断为“风寒表证”,需要把寒邪从体表散出去。应选哪一味?</p>
+<li>辛味主“散”,可促使发汗、行气,因此选辛味。</li>
+<li>典型做法是用生姜约 $3$ 片(约 $10\ \text{g}$)配葱白煮水热饮。</li>
+<li>不宜选酸味:酸主收敛,中医认为会把邪气“关”在体内。</li>
+<p><strong>解题应用:从味道推断作用,再判断是否过量。</strong> 步骤如下:</p>
+<li>先辨目的:要“散”、要“补”、要“收”,还是要“泻”。</li>
+<li>再按作用选味:散选辛,补选甘,收选酸,泻选苦,软坚选咸。</li>
+<li>最后检查总量,避免任何一味过度。</li>
+<p><em>练习:</em> 某人长期口味偏重,每天食盐摄入约 $10\ \text{g}$,同时有血压偏高的倾向。按五味,这对应哪一味过量?现代医学如何看待?</p>
+<p><em>解答:</em> 这属于咸味过量,中医认为伤肾、伤血脉。现代医学对此有明确的支持证据:世界卫生组织建议成人每日食盐摄入量不超过 $5\ \text{g}$(约相当于钠 $2\ \text{g}$),长期高盐饮食与高血压、心血管疾病和肾脏负担增加有关。所以在这个例子中,“咸多伤肾、伤血脉”与现代结论方向一致。应把盐量减至 $5\ \text{g}$ 以内,并多用香料、醋等调味。</p>
+<p>但要注意,并非所有对应都有这样的依据。例如“酸入肝”“辛入肺”并没有可靠的临床证据,更不能用“吃酸养肝”来替代肝病的检查和治疗。五味更适合作为理解中医饮食思路的框架,而不是诊断或治疗的依据。</p>
+  </main>
+  <footer class="spl-credit"><span class="spl-credit__meta">Ch6: What We Eat — Food Quality, Four Natures, and Five Flavors (四气五味) (Level: College &middot; Language: ZH &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
+</div>
+</body>
+</html>

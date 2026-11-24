@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>餐后血糖反应 | Meta Health Ch05</title>
+<script>
+MathJax = {
+  loader: { load: ['[tex]/mathtools'] },
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']],
+         packages: { '[+]': ['mathtools'] } },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<script src="https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.min.js"></script>
+<script>mermaid.initialize({ startOnLoad: true, theme: 'neutral' });</script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+footer.spl-credit span{display:block}
+footer.spl-credit .spl-credit__meta{margin-bottom:4px}
+.cb-figure{margin:24px 0;text-align:center}
+.cb-figure img{max-width:100%;height:auto;border:1px solid #e0e0d8;border-radius:6px}
+figcaption{font-size:.82rem;color:#666;margin-top:8px;font-style:italic;text-align:center}
+pre.mermaid{background:none;border:none;padding:0;overflow:visible;margin:16px 0}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="餐后血糖反应">餐后血糖反应</h2>
+<p><strong>定义。</strong> 餐后血糖反应是指进食后血糖浓度随时间上升、达峰、再回落至基线的过程。健康成年人的血糖通常在进食后约30–60分钟达到峰值,约2小时内回到接近空腹水平(空腹正常值约为3.9–5.6 mmol/L)。峰值高低和回落快慢主要取决于四个因素:</p>
+<p>| 因素 | 对血糖曲线的影响 | |---|---| | 餐食成分 | 精制碳水化合物升糖快;蛋白质、脂肪、膳食纤维使升糖变缓 | | 进食速度 | 吃得快,葡萄糖短时间内集中进入血液,峰值更高 | | 胃排空速度 | 胃排空越慢,葡萄糖进入小肠的速度越慢,曲线越平缓 | | 肌肉活动 | 肌肉收缩可不依赖胰岛素摄取葡萄糖,餐后散步能降低峰值 |</p>
+<p>长期反复出现大幅度的血糖波动,与胰岛素分泌负担增加、胰岛素抵抗和血管内皮损伤风险上升有关,即所谓"代谢压力"。</p>
+<p><strong>例题。</strong> 小李用连续血糖监测仪记录了两天早餐后的血糖(空腹值均为5.0 mmol/L):</p>
+<li>第一天:白粥加白面包,10分钟吃完,餐后静坐。峰值9.8 mmol/L,出现在餐后40分钟。</li>
+<li>第二天:鸡蛋、蔬菜和全麦面包,20分钟吃完,餐后散步15分钟。峰值7.2 mmol/L,出现在餐后60分钟。</li>
+<p>峰值增幅(峰值减空腹值)分别为:</p>
+<li>第一天:$9.8 - 5.0 = 4.8\ \text{mmol/L}$</li>
+<li>第二天:$7.2 - 5.0 = 2.2\ \text{mmol/L}$</li>
+<p>第二天的增幅不到第一天的一半,而且峰值出现得更晚,说明曲线更平缓。原因是多个因素叠加:蛋白质和纤维延缓胃排空,进食较慢减少了集中吸收,散步又增加了肌肉对葡萄糖的摄取。</p>
+<p><strong>问题解决应用。</strong> 假设你要为一位午餐后常犯困、血糖波动大的同学调整饮食,可按下面的步骤处理:</p>
+<li><strong>找出主要问题。</strong> 他午餐是一大碗白米饭配少量菜,吃饭只用8分钟。主要问题是精制碳水占比高,而且进食快。</li>
+<li><strong>逐项调整。</strong> 把一部分白米饭换成杂粮饭;先吃蔬菜和蛋白质,再吃主食(有研究显示这种顺序可降低餐后血糖峰值);把用餐时间延长到15–20分钟。</li>
+<li><strong>加入活动。</strong> 餐后10–15分钟轻快步行,不要立刻久坐。</li>
+<li><strong>验证效果。</strong> 用血糖仪或连续血糖监测仪比较调整前后的餐后1小时和2小时数值。若餐后2小时血糖仍持续高于7.8 mmol/L,或空腹血糖多次达到或超过7.0 mmol/L,应就医做进一步检查,不要只靠饮食自行判断。</li>
+<p>需要注意,同样的食物在不同人身上的血糖反应可以差别很大,睡眠、压力和肠道菌群等因素都会影响结果。因此,个人的实测数据比通用的食物排行榜更有参考价值。</p>
+  </main>
+  <footer class="spl-credit"><span class="spl-credit__meta">Ch5: Eating as Internal Exercise (饮食即内脏运动) (Level: College &middot; Language: ZH &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
+</div>
+</body>
+</html>

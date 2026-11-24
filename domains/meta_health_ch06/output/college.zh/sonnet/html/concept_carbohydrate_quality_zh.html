@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>碳水化合物的质量 | Meta Health Ch06</title>
+<script>
+MathJax = {
+  loader: { load: ['[tex]/mathtools'] },
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']],
+         packages: { '[+]': ['mathtools'] } },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<script src="https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.min.js"></script>
+<script>mermaid.initialize({ startOnLoad: true, theme: 'neutral' });</script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+footer.spl-credit span{display:block}
+footer.spl-credit .spl-credit__meta{margin-bottom:4px}
+.cb-figure{margin:24px 0;text-align:center}
+.cb-figure img{max-width:100%;height:auto;border:1px solid #e0e0d8;border-radius:6px}
+figcaption{font-size:.82rem;color:#666;margin-top:8px;font-style:italic;text-align:center}
+pre.mermaid{background:none;border:none;padding:0;overflow:visible;margin:16px 0}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="碳水化合物的质量">碳水化合物的质量</h2>
+<p><strong>定义。</strong> 碳水化合物的质量,指的是一种含碳水化合物的食物在多大程度上带来平缓、持久的血糖变化,同时提供膳食纤维和微量营养素。全谷物、豆类、蔬菜和完整水果保留了细胞结构与膳食纤维,消化较慢,血糖上升较平缓。精制淀粉(如白面包、白米饭)和添加糖消化吸收快,血糖上升迅速。</p>
+<p>衡量质量常用两个指标:</p>
+<li><strong>血糖指数(GI)</strong>:含 50 g 可利用碳水化合物的食物,与等量葡萄糖相比,引起血糖上升的相对幅度。葡萄糖定为 100。</li>
+<li><strong>血糖负荷(GL)</strong>:同时考虑食物的 GI 和实际吃下的碳水化合物量。这是营养学中的标准定义式:</li>
+$$
+\text{GL}=\frac{\text{GI}\times \text{每份可利用碳水化合物(g)}}{100}
+$$
+<p>一般认为 GL 不超过 10 为低,11 到 19 为中,20 及以上为高。</p>
+<p><strong>例题。</strong> 比较两份食物:</p>
+<p>| 食物 | GI | 每份可利用碳水化合物 | |---|---|---| | 西瓜,1 份 | 约 75 | 约 6 g | | 白米饭,1 份 | 约 73 | 约 45 g |</p>
+<p>西瓜:</p>
+$$
+\text{GL}=\frac{75\times 6}{100}=4.5
+$$
+<p>白米饭:</p>
+$$
+\text{GL}=\frac{73\times 45}{100}\approx 32.9
+$$
+<p>西瓜的 GI 与白米饭相近,但一份西瓜的碳水化合物很少,GL 低得多。所以只看 GI 会误判,GL 更贴近一餐的实际血糖负担。</p>
+<p><strong>问题解决应用。</strong> 某人早餐想把精制主食换成更高质量的选择,并估算效果。</p>
+<p>方案 A:白面包 2 片,每片约 15 g 可利用碳水化合物,GI 约 75。总量 30 g,则</p>
+$$
+\text{GL}=\frac{75\times 30}{100}=22.5
+$$
+<p>方案 B:燕麦片(整粒或粗加工)一份,含 30 g 可利用碳水化合物,GI 约 55,则</p>
+$$
+\text{GL}=\frac{55\times 30}{100}=16.5
+$$
+<p>两种方案的碳水化合物总量相同,B 的 GL 低约 6 点,从"高"降到"中"。这个结果与燕麦中的可溶性膳食纤维(β-葡聚糖)减缓消化的机制一致。</p>
+<p>实用步骤:</p>
+<li>优先选择全谷物、豆类和蔬菜,少选精制谷物和含糖饮料。</li>
+<li>查看食物成分表中的膳食纤维含量。</li>
+<li>混合搭配,例如把一部分白米换成糙米或杂豆,并配上蛋白质和蔬菜,通常能进一步减缓血糖上升。</li>
+<li>比较食物时,先看份量,再算 GL。</li>
+<p>GI 和 GL 来自受试者的平均测量值。烹饪时间、食物成熟度和个体差异都会使结果不同,所以它们是估算工具,不是精确预测。</p>
+  </main>
+  <footer class="spl-credit"><span class="spl-credit__meta">Ch6: What We Eat — Food Quality, Four Natures, and Five Flavors (四气五味) (Level: College &middot; Language: ZH &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
+</div>
+</body>
+</html>

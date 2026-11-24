@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>消化的过度训练 | Meta Health Ch05</title>
+<script>
+MathJax = {
+  loader: { load: ['[tex]/mathtools'] },
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']],
+         packages: { '[+]': ['mathtools'] } },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<script src="https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.min.js"></script>
+<script>mermaid.initialize({ startOnLoad: true, theme: 'neutral' });</script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+footer.spl-credit span{display:block}
+footer.spl-credit .spl-credit__meta{margin-bottom:4px}
+.cb-figure{margin:24px 0;text-align:center}
+.cb-figure img{max-width:100%;height:auto;border:1px solid #e0e0d8;border-radius:6px}
+figcaption{font-size:.82rem;color:#666;margin-top:8px;font-style:italic;text-align:center}
+pre.mermaid{background:none;border:none;padding:0;overflow:visible;margin:16px 0}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="消化的过度训练">消化的过度训练</h2>
+<p><strong>定义。</strong> 运动过度训练是指训练量超过身体的恢复能力,肌肉因此受伤。消化系统同样会"过度训练":一次吃得太多、吃得太快、或在夜里吃得太重,胃肠、胰腺和肝脏的负担就超过了它们的处理能力。TCM 把这种情况称为食积(积食),认为饮食过量会使脾胃运化失职,食物停滞在中焦。中医认为,长期如此会使脾气变弱,更容易再次积食。</p>
+<p>生理学的描述更具体:胃被撑大后,食管下括约肌更容易松弛,胃内容物反流入食管,引起烧心。餐后血糖的升高也与进食量和吸收速度有关。</p>
+<p><strong>例题。</strong> 小林晚上 11 点吃了一顿夜宵,约 1200 kcal,并在 10 分钟内吃完。他的日常需要量约为 2200 kcal。</p>
+<li>这一餐占全天需要量的比例:$\frac{1200}{2200}\approx 55\%$。</li>
+<li>吃饭很快,饱腹信号(通常需要约 20 分钟才能充分传到大脑)来不及起作用,所以他吃得比自己需要的更多。</li>
+<li>进食后马上躺下,胃内容物容易反流,他会感到烧心。</li>
+<li>这一餐含大量精制碳水,血糖在 1 至 2 小时内快速升高,随后下降,他会感到困倦,第二天早上也没有食欲。TCM 会把这些表现描述为腹胀、嗳腐吞酸、舌苔厚腻的食积。</li>
+<p><strong>问题解决应用。</strong> 像安排训练计划一样,逐步增加负荷、保证恢复,来"训练"消化系统。下面是几个常用的调整:</p>
+<p>| 过载来源 | 调整办法 | |---|---| | 一餐太多 | 每餐约占全天需要量的 25% 至 35%,吃到七八分饱 | | 吃得太快 | 一餐至少花 20 分钟,多咀嚼 | | 睡前重餐 | 晚餐在睡前至少 2 至 3 小时吃完,并减少油腻食物 | | 血糖大幅波动 | 主食搭配蛋白质、蔬菜和膳食纤维,放慢吸收 |</p>
+<p><strong>练习。</strong> 小玲每天早餐 300 kcal,午餐 500 kcal,晚餐 1100 kcal,总量与需要量(1900 kcal)相符。</p>
+<li>晚餐占全天的比例是 $\frac{1100}{1900}\approx 58\%$,明显超过 35%。</li>
+<li>可以把晚餐降到约 700 kcal,再把 400 kcal 移到早餐和午餐,例如两餐各加 200 kcal。</li>
+<li>总量不变,但晚间的负荷减轻了,睡前反流和夜间血糖波动的风险也随之降低。</li>
+<p>食积是 TCM 的传统说法。反流、餐后血糖波动与饮食量和速度的关系,有生理学研究支持。多数轻度的饭后不适可以通过调整饮食习惯改善。如果出现持续的胸痛、吞咽困难、体重下降或黑便,应及时就医,不要自行归为"积食"。</p>
+  </main>
+  <footer class="spl-credit"><span class="spl-credit__meta">Ch5: Eating as Internal Exercise (饮食即内脏运动) (Level: College &middot; Language: ZH &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
+</div>
+</body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>生物钟 | Meta Health Ch06</title>
+<script>
+MathJax = {
+  loader: { load: ['[tex]/mathtools'] },
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']],
+         packages: { '[+]': ['mathtools'] } },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<script src="https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.min.js"></script>
+<script>mermaid.initialize({ startOnLoad: true, theme: 'neutral' });</script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+footer.spl-credit span{display:block}
+footer.spl-credit .spl-credit__meta{margin-bottom:4px}
+.cb-figure{margin:24px 0;text-align:center}
+.cb-figure img{max-width:100%;height:auto;border:1px solid #e0e0d8;border-radius:6px}
+figcaption{font-size:.82rem;color:#666;margin-top:8px;font-style:italic;text-align:center}
+pre.mermaid{background:none;border:none;padding:0;overflow:visible;margin:16px 0}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="生物钟">生物钟</h2>
+<p><strong>定义。</strong> 生物钟(昼夜节律系统)是人体内约 24 小时运转一圈的内部计时机制。主时钟位于下丘脑的视交叉上核,它接收视网膜中特殊感光细胞传来的光信号,每天用光线"校准"一次;肝、肠、肌肉等器官中的外周时钟则跟随主时钟的节奏。在没有任何光照线索的实验中,人体自身的节律周期平均约为 24.2 小时,略长于一天,因此每天需要晨光把它"拨回"24 小时。</p>
+<p>生物钟安排的是一整套日程:夜间褪黑素分泌上升,促进入睡;清晨皮质醇上升,帮助清醒;核心体温在凌晨最低、傍晚最高;胃肠蠕动与胰岛素敏感性在白天较强,夜间下降。</p>
+<p><strong>生物钟与睡眠压力。</strong> 睡眠由两股力量共同决定:一是生物钟给出的"时间信号",二是清醒越久越强的"睡眠压力"。熬夜时,即使睡眠压力很大,凌晨的生物钟仍会让人觉得清醒,这就是"凌晨反而不困"的原因。</p>
+<p><strong>光的作用方向。</strong> 光照的效果取决于时间: | 光照时间 | 对生物钟的影响 | |---|---| | 核心体温最低点之前(深夜) | 推迟,即更晚入睡 | | 核心体温最低点之后(清晨) | 提前,即更早入睡 |</p>
+<p><strong>例题。</strong> 小林平时 23:00 入睡、7:00 起床,核心体温最低点约在 4:00。周末他熬夜到 3:00 并睡到 11:00,周一又要 7:00 起床。请分析他为什么周一早晨困难,并给出调整办法。</p>
+<p><em>分析:</em> 周末的晚睡和晚间灯光把他的生物钟推迟了约 2 到 3 小时。周一 7:00 起床时,他的体内时间相当于 4:00 至 5:00,正处在体温最低点附近,皮质醇尚未上升,褪黑素仍然偏高,所以非常困。这种现象常被称为"社交时差"。</p>
+<p><strong>问题解决应用。</strong> 小林有三种办法:</p>
+<li><strong>固定起床时间。</strong> 周末起床时间与工作日相差控制在 1 小时内,避免生物钟被拨晚。</li>
+<li><strong>早晨光照。</strong> 起床后尽快到室外接受 20 至 30 分钟自然光。室外晴天光照可达上万勒克斯,室内灯光通常只有几百勒克斯,因此室外光的校准作用强得多。</li>
+<li><strong>晚间减光。</strong> 睡前 1 至 2 小时调暗灯光、减少手机和屏幕的强光,避免延后褪黑素分泌。</li>
+<p>跨时区旅行也可按同样思路处理:向东飞行(需要提前入睡)时,宜在抵达后的早晨接触阳光;向西飞行(需要推迟入睡)时,宜在傍晚接触阳光。一般情况下,生物钟每天大约能调整 1 小时,因此跨越 6 个时区,通常需要约 6 天才能基本适应。</p>
+<p><strong>要点。</strong> 生物钟靠光校准,并为激素、消化和睡眠安排时间。规律的作息和合时宜的光照,是维持它稳定最直接的办法。</p>
+  </main>
+  <footer class="spl-credit"><span class="spl-credit__meta">Ch6: What We Eat — Food Quality, Four Natures, and Five Flavors (四气五味) (Level: College &middot; Language: ZH &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
+</div>
+</body>
+</html>

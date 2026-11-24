@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>餐后充血 | Meta Health Ch05</title>
+<script>
+MathJax = {
+  loader: { load: ['[tex]/mathtools'] },
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']],
+         packages: { '[+]': ['mathtools'] } },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<script src="https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.min.js"></script>
+<script>mermaid.initialize({ startOnLoad: true, theme: 'neutral' });</script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+footer.spl-credit span{display:block}
+footer.spl-credit .spl-credit__meta{margin-bottom:4px}
+.cb-figure{margin:24px 0;text-align:center}
+.cb-figure img{max-width:100%;height:auto;border:1px solid #e0e0d8;border-radius:6px}
+figcaption{font-size:.82rem;color:#666;margin-top:8px;font-style:italic;text-align:center}
+pre.mermaid{background:none;border:none;padding:0;overflow:visible;margin:16px 0}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="餐后充血">餐后充血</h2>
+<p><strong>定义。</strong> 餐后充血(postprandial hyperemia)是指进食后胃肠道血流量显著增加的生理反应。食物进入消化道后,肠系膜上动脉的血流量可升至空腹时的约 2 倍,持续约 1–3 小时,峰值常出现在进餐后 30–90 分钟。与此同时,心率和每搏输出量上升,心输出量随之增加,以保证全身其他器官的供血不被明显挤占。</p>
+<p><strong>机制。</strong> 主要有三方面:(1)食物的化学成分(尤其是脂肪、糖和蛋白质的消化产物)刺激肠黏膜,引起局部血管舒张;(2)胃肠激素和局部代谢产物(如腺苷)参与扩张肠道小动脉;(3)自主神经调节使心率加快、心输出量增加。</p>
+<p>心输出量(CO)的定义为:</p>
+$$\text{CO} = \text{HR} \times \text{SV}$$
+<p>其中 HR 为心率,SV 为每搏输出量。</p>
+<p><strong>例题。</strong> 某成年人空腹时心率为 70 次/分,每搏输出量为 70 mL;一顿大餐后心率升至 80 次/分,每搏输出量升至 75 mL。肠系膜上动脉血流从 0.6 L/min 升到 1.2 L/min。求心输出量的变化,以及肠系膜上动脉增加的血流占心输出量增加量的比例。</p>
+<p>空腹时:</p>
+$$\text{CO}_1 = 70 \times 70\ \text{mL} = 4900\ \text{mL/min} \approx 4.9\ \text{L/min}$$
+<p>餐后:</p>
+$$\text{CO}_2 = 80 \times 75\ \text{mL} = 6000\ \text{mL/min} = 6.0\ \text{L/min}$$
+<p>心输出量增加 $6.0 - 4.9 = 1.1$ L/min。肠系膜上动脉血流增加 $1.2 - 0.6 = 0.6$ L/min,所以:</p>
+$$\frac{0.6}{1.1} \approx 0.55$$
+<p>也就是说,增加的心输出量中约 55% 流向了肠道;其余约 0.5 L/min 的增量供给其他器官,同时其他血管床也会发生部分血流重新分配。</p>
+<p><strong>问题求解应用。</strong> </p>
+<p><em>情境一:餐后血压。</em> 肠道血管床大量开放,外周阻力下降。健康人靠心输出量增加和交感神经兴奋来代偿,血压基本稳定。但部分老年人或自主神经功能受损者(如糖尿病神经病变、帕金森病)代偿不足,餐后 1–2 小时血压会明显下降,称为餐后低血压(通常指收缩压下降 ≥20 mmHg),可出现头晕甚至跌倒。建议这类人群少量多餐、减少一次性大量碳水化合物的摄入,餐后避免立刻起身活动。</p>
+<p><em>情境二:餐后运动。</em> 运动时骨骼肌同样需要大量血流。饱餐后立即剧烈运动,肠道和肌肉对血流形成竞争,可能引起腹胀、恶心或腹痛。因此较大一餐后,通常建议间隔 1.5–3 小时再进行高强度运动;轻度活动如散步一般不受影响。</p>
+<p><em>情境三:血流估算。</em> 若已知餐后心输出量和肠系膜血流,可用上例的比例方法判断一次进餐对循环系统的负担,以及哪些人群需要注意餐后血流动力学变化。</p>
+<p><strong>要点。</strong> 餐后充血是正常的适应性反应:肠道血流增加,心输出量上调,使消化吸收与全身供血得以同时进行。</p>
+  </main>
+  <footer class="spl-credit"><span class="spl-credit__meta">Ch5: Eating as Internal Exercise (饮食即内脏运动) (Level: College &middot; Language: ZH &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
+</div>
+</body>
+</html>

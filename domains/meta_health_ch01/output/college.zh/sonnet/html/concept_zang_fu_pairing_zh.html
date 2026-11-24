@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>脏腑表里 | Meta Health Ch01</title>
+<script>
+MathJax = {
+  loader: { load: ['[tex]/mathtools'] },
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']],
+         packages: { '[+]': ['mathtools'] } },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<script src="https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.min.js"></script>
+<script>mermaid.initialize({ startOnLoad: true, theme: 'neutral' });</script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+footer.spl-credit span{display:block}
+footer.spl-credit .spl-credit__meta{margin-bottom:4px}
+.cb-figure{margin:24px 0;text-align:center}
+.cb-figure img{max-width:100%;height:auto;border:1px solid #e0e0d8;border-radius:6px}
+figcaption{font-size:.82rem;color:#666;margin-top:8px;font-style:italic;text-align:center}
+pre.mermaid{background:none;border:none;padding:0;overflow:visible;margin:16px 0}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="脏腑表里">脏腑表里</h2>
+<p><strong>定义。</strong> 中医认为,五脏(心、肝、脾、肺、肾)属阴,主"藏"精气;六腑(小肠、胆、胃、大肠、膀胱、三焦)属阳,主"传化"饮食水谷。"表里"是一种配对关系:一脏一腑相互对应,脏为里,腑为表,二者由经络相互络属,生理上相互配合,病理上相互影响。</p>
+<p>经典的配对如下:</p>
+<p>| 脏(里) | 腑(表) | 一个直观的联系 | |---|---|---| | 心 | 小肠 | 心火过旺时,可见口舌生疮、小便短赤 | | 肝 | 胆 | 胆汁的排泄被认为依赖肝的疏泄 | | 脾 | 胃 | 胃受纳腐熟,脾运化转输 | | 肺 | 大肠 | 肺失宣降时,可伴大便不通 | | 肾 | 膀胱 | 肾主水,膀胱贮尿、排尿 | | 心包 | 三焦 | 两经相互络属 |</p>
+<p>"络属"指:脏的经脉属于本脏、络于相配的腑,腑的经脉则相反。例如手太阴肺经属肺、络大肠,手阳明大肠经属大肠、络肺。</p>
+<p><strong>例题。</strong> 一位患者数日来大便干结、排便困难,同时有咳嗽、胸闷、痰少而黏。按表里思路,如何分析?</p>
+<li>找出症状所在的脏腑:大便干结属大肠,咳嗽胸闷属肺。</li>
+<li>判断两者是否构成一对:肺与大肠正是表里配对。</li>
+<li>推断关联:肺气不降,可能影响大肠传导,使大便不通;反过来,腑气不通也可能让肺气上逆,加重咳喘。</li>
+<li>确定治疗思路:既可宣降肺气,也可通腑泄热,两头兼顾。</li>
+<p><strong>问题求解应用。</strong> 表里思路的实用价值在于:遇到一个脏或腑的症状,先检查与它配对的另一个脏腑。可按下面的步骤练习:</p>
+<li>第一步:把症状归到具体脏腑。</li>
+<li>第二步:查表中的配偶脏腑,看是否也有症状。</li>
+<li>第三步:若两者都有,先判断哪一方是起因,再决定先治脏、先治腑,还是脏腑同治。</li>
+<p>练习:某人食欲差、腹胀、大便稀溏、四肢乏力。请回答:(1) 哪两个脏腑最先被考虑?(2) 若同时还有恶心、胃脘胀满,表里关系提示什么?</p>
+<p>参考思路:(1) 脾与胃。腹胀、便溏、乏力多归脾,食欲差、恶心多归胃。(2) 脾胃表里相关,脾不运化与胃失和降常同时出现,治疗常脾胃同调。</p>
+<p><strong>一点说明。</strong> 脏腑表里是中医用来组织症状和指导辨证的框架,并不等同于现代解剖学的器官联系。比如"肺与大肠相表里"在解剖和生理上并没有直接的结构依据,所以不能把它当作已证实的机制,而应把它看作临床推理的工具。遇到持续的咳嗽或排便异常,应首先做规范的医学检查,以免延误诊断。</p>
+  </main>
+  <footer class="spl-credit"><span class="spl-credit__meta">Ch1: TCM Foundations — Yin-Yang, Qi-Blood, and the Five Phases (中医基础) (Level: College &middot; Language: ZH &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
+</div>
+</body>
+</html>

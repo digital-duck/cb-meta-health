@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>心输出量 | Meta Health Ch02</title>
+<script>
+MathJax = {
+  loader: { load: ['[tex]/mathtools'] },
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']],
+         packages: { '[+]': ['mathtools'] } },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<script src="https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.min.js"></script>
+<script>mermaid.initialize({ startOnLoad: true, theme: 'neutral' });</script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+footer.spl-credit span{display:block}
+footer.spl-credit .spl-credit__meta{margin-bottom:4px}
+.cb-figure{margin:24px 0;text-align:center}
+.cb-figure img{max-width:100%;height:auto;border:1px solid #e0e0d8;border-radius:6px}
+figcaption{font-size:.82rem;color:#666;margin-top:8px;font-style:italic;text-align:center}
+pre.mermaid{background:none;border:none;padding:0;overflow:visible;margin:16px 0}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="心输出量">心输出量</h2>
+<p>心输出量指心脏每分钟泵出的血液总量,是衡量心血管系统供血能力的核心指标。其定义由两个变量的乘积构成:心率——心脏每分钟跳动的次数;每搏输出量——心脏每次收缩泵出的血液体积。健康成年人静息状态下心输出量约为每分钟5升,恰好接近全身血液总量,意味着静息时血液平均每分钟完整循环一周。</p>
+<p>心输出量的定义式为:</p>
+$$
+Q = HR \times SV
+$$
+<p>其中 $Q$ 为心输出量(单位:升/分钟),$HR$ 为心率(单位:次/分钟),$SV$ 为每搏输出量(单位:毫升/次)。</p>
+<p><strong>计算示例</strong>:一名静息成年人心率为每分钟70次,每搏输出量为70毫升。代入公式:</p>
+$$
+Q = 70 \times 70\ \text{mL} = 4900\ \text{mL/min} \approx 4.9\ \text{L/min}
+$$
+<p>这一结果与临床常见的5升/分钟静息值高度吻合。</p>
+<p><strong>问题解决应用</strong>:心输出量的公式说明了两条提升供血的独立路径——提高心率或增大每搏输出量,运动时人体两者兼用。假设某人中等强度运动时心率升至每分钟140次,每搏输出量因静脉回流增加而升至100毫升,则:</p>
+$$
+Q = 140 \times 100\ \text{mL} = 14000\ \text{mL/min} = 14\ \text{L/min}
+$$
+<p>心输出量较静息时增加约1.86倍,这解释了运动时肌肉获得更多氧气与营养的生理机制。反过来,该公式也是诊断工具:若心率正常但心输出量偏低,提示每搏输出量下降,可能与心肌收缩力减弱或血容量不足有关——这正是临床评估心力衰竭时常用的推理路径。</p>
+<pre class="mermaid">graph LR
+    A[心率] --> C[心输出量]
+    B[每搏输出量] --> C
+    C --> D[组织供氧与供能]</pre>
+<p><em>心输出量由心率与每搏输出量共同决定,并直接影响全身组织的氧气与营养供应。</em></p>
+  </main>
+  <footer class="spl-credit"><span class="spl-credit__meta">Ch2: The Physiology Lens — Breath, Circulation, Fascia, and Core (生理视角) (Level: College &middot; Language: ZH &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
+</div>
+</body>
+</html>

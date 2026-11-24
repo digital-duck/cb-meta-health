@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>气 | Meta Health Ch01</title>
+<script>
+MathJax = {
+  loader: { load: ['[tex]/mathtools'] },
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']],
+         packages: { '[+]': ['mathtools'] } },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<script src="https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.min.js"></script>
+<script>mermaid.initialize({ startOnLoad: true, theme: 'neutral' });</script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+footer.spl-credit span{display:block}
+footer.spl-credit .spl-credit__meta{margin-bottom:4px}
+.cb-figure{margin:24px 0;text-align:center}
+.cb-figure img{max-width:100%;height:auto;border:1px solid #e0e0d8;border-radius:6px}
+figcaption{font-size:.82rem;color:#666;margin-top:8px;font-style:italic;text-align:center}
+pre.mermaid{background:none;border:none;padding:0;overflow:visible;margin:16px 0}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="气">气</h2>
+<p><strong>定义。</strong> 气(qì)是中医(Traditional Chinese Medicine,TCM)用来概括"生命活动"的核心概念。TCM 认为,人体不只是一堆静止的结构,更是一套持续运转的功能:呼吸、消化、循环、体温维持、抵御外邪,都被视为"气在运动"。可以粗略理解为"处于运动中的生理功能"。气不是现代生理学中某种可单独测量的物质或能量,所以不能把它换算成 kcal、毫伏或其他实验室数值;它是一种解释和归纳临床表现的语言。</p>
+<p><strong>气的五类功能。</strong> TCM 把气的作用分为:</p>
+<p>| 功能 | 含义 | 现代生理中可对照的现象(仅作类比) | |---|---|---| | 推动 | 促进生长、血液与津液的运行 | 心脏泵血、胃肠蠕动 | | 温煦 | 维持体温、使身体温暖 | 产热与体温调节 | | 防御 | 抵御外邪、保护机体 | 皮肤黏膜屏障、免疫反应 | | 固摄 | 约束血液、汗液、尿液等不随意流失 | 括约肌控制、血管完整性 | | 气化 | 物质的转化与代谢 | 消化吸收、新陈代谢 |</p>
+<p>这个对照只是帮助理解,二者并不等同。</p>
+<p><strong>例题。</strong> 一位患者自述:容易疲乏、说话声音低、稍一活动就出汗、常常感冒,舌淡,脉弱。</p>
+<p>分析步骤:</p>
+<li>把症状按功能归类:疲乏、声低,是推动不足的表现;活动即出汗,是固摄不足;常感冒,是防御不足。</li>
+<li>这些表现都指向同一类功能的整体偏弱,中医称之为"气虚"。</li>
+<li>TCM 的治疗思路是补气,常用方剂如四君子汤,并配合饮食与作息调整。</li>
+<p><strong>问题解决应用。</strong> 请判断下列两种情形各对应气的哪类功能失常:</p>
+<li>(a)老年人夜间尿频、咳嗽时尿液不自主漏出;</li>
+<li>(b)手脚长期冰凉、畏寒。</li>
+<p>解答:(a)是固摄失常,TCM 称为"气不固摄";(b)是温煦不足,常称"阳气不足"。</p>
+<p>解题的方法是:先列出症状,再逐一问"这是哪种运动或保护功能出了问题",最后归类。这样做能把零散的描述整理成一个有条理的判断。</p>
+<p><strong>需要注意的边界。</strong> 气的概念为临床描述提供了一套系统语言,但气本身没有被现代科学证实为一种可检测的实体,"补气"的具体疗效也需逐项由临床研究检验。症状如持续疲乏、反复出汗、尿失禁,可能由贫血、甲状腺功能异常、糖尿病、感染或泌尿系统疾病引起,应先由医生做出检查,不要仅凭"气虚"的判断自行用药或延误就诊。</p>
+  </main>
+  <footer class="spl-credit"><span class="spl-credit__meta">Ch1: TCM Foundations — Yin-Yang, Qi-Blood, and the Five Phases (中医基础) (Level: College &middot; Language: ZH &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
+</div>
+</body>
+</html>

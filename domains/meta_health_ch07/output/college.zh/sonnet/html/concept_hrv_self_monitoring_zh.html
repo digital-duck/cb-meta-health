@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>用心率变异性监测压力 | Meta Health Ch07</title>
+<script>
+MathJax = {
+  loader: { load: ['[tex]/mathtools'] },
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']],
+         packages: { '[+]': ['mathtools'] } },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<script src="https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.min.js"></script>
+<script>mermaid.initialize({ startOnLoad: true, theme: 'neutral' });</script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+footer.spl-credit span{display:block}
+footer.spl-credit .spl-credit__meta{margin-bottom:4px}
+.cb-figure{margin:24px 0;text-align:center}
+.cb-figure img{max-width:100%;height:auto;border:1px solid #e0e0d8;border-radius:6px}
+figcaption{font-size:.82rem;color:#666;margin-top:8px;font-style:italic;text-align:center}
+pre.mermaid{background:none;border:none;padding:0;overflow:visible;margin:16px 0}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="用心率变异性监测压力">用心率变异性监测压力</h2>
+<p><strong>定义。</strong> 心率变异性(HRV)描述相邻两次心跳间隔(RR 间期)的逐次波动。间隔越不规则、变化越大,通常说明副交感神经(迷走神经)的调节作用较强,身体恢复能力较好。压力、睡眠不足、疾病、酒精和过度训练往往使 HRV 下降、静息心率上升。可穿戴设备最常报告的指标是 RMSSD,即相邻 RR 间期之差的均方根:</p>
+$$\mathrm{RMSSD}=\sqrt{\frac{1}{N-1}\sum_{i=1}^{N-1}\left(RR_{i+1}-RR_i\right)^2}$$
+<p>其中 $RR_i$ 是第 $i$ 个间期(单位 ms),$N$ 是间期个数。</p>
+<p><strong>关键原则:看趋势,不看单次数值。</strong> HRV 个体差异很大,年龄、性别、基因都有影响,所以别人的数字没有参考价值。更有用的做法是先用 2～4 周建立自己的基线,再看每天的读数偏离基线多少。不同品牌的算法不同,不要混用多台设备的数据。</p>
+<p><strong>工作示例。</strong> 小林连续记录了晨起时的数据,基线(前三周平均)为:静息心率 58 次/分,RMSSD 52 ms。</p>
+<p>| 日期 | 静息心率(次/分) | RMSSD(ms) | 睡眠(小时) | 心情(1–5) | |---|---|---|---|---| | 周一 | 58 | 51 | 7.5 | 4 | | 周二 | 59 | 49 | 7.0 | 4 | | 周三 | 62 | 42 | 5.5 | 3 | | 周四 | 64 | 38 | 5.0 | 2 |</p>
+<p>计算周四相对基线的变化:</p>
+$$\frac{38-52}{52}\approx -27\%$$
+<p>静息心率比基线高 6 次/分。这几项指标同时朝"负荷高、恢复差"的方向变化,而且与睡眠缩短、心情下降相互印证。</p>
+<p><strong>问题解决应用。</strong> 可以用"三步法"把数据变成决定:</p>
+<li><strong>看多项是否同向。</strong> 只有 HRV 一项偏低,可能只是前晚饮酒或测量姿势不同;HRV 下降、静息心率升高、睡眠变差、心情低落同时出现,才说明累积负荷较高。</li>
+<li><strong>看持续时间。</strong> 单日异常很常见;连续 3 天以上偏离基线(例如 HRV 低于基线约 10%～20%,或静息心率高出 5 次/分以上),才值得调整。具体阈值因人而异,这里只是起点。</li>
+<li><strong>选择小幅调整。</strong> 小林应当降低当天的训练强度,提前 1 小时上床,减少晚间咖啡因,并在两三天后复查是否回到基线。</li>
+<p><strong>局限。</strong> 手腕光学传感器在运动和睡眠翻身时误差较大,HRV 并不能诊断焦虑或疾病。若静息心率长期明显偏高、伴有胸闷、心悸或头晕,应就医,而不是继续依赖手环的数据。</p>
+  </main>
+  <footer class="spl-credit"><span class="spl-credit__meta">Ch7: Stress, Emotion, and the Flow of Qi and Blood (情志与气血) (Level: College &middot; Language: ZH &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
+</div>
+</body>
+</html>

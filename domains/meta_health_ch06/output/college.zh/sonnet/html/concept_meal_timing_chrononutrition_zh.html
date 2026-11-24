@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>进餐时间与时间营养学 | Meta Health Ch06</title>
+<script>
+MathJax = {
+  loader: { load: ['[tex]/mathtools'] },
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']],
+         packages: { '[+]': ['mathtools'] } },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<script src="https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.min.js"></script>
+<script>mermaid.initialize({ startOnLoad: true, theme: 'neutral' });</script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+footer.spl-credit span{display:block}
+footer.spl-credit .spl-credit__meta{margin-bottom:4px}
+.cb-figure{margin:24px 0;text-align:center}
+.cb-figure img{max-width:100%;height:auto;border:1px solid #e0e0d8;border-radius:6px}
+figcaption{font-size:.82rem;color:#666;margin-top:8px;font-style:italic;text-align:center}
+pre.mermaid{background:none;border:none;padding:0;overflow:visible;margin:16px 0}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="进餐时间与时间营养学">进餐时间与时间营养学</h2>
+<p><strong>定义。</strong> 时间营养学研究的是"什么时候吃"对代谢的影响。人体的生物钟(昼夜节律)约以 24 小时为周期,调控血糖调节、胰岛素敏感性、消化酶分泌和体温等功能。白天,身体处于"活动—进食"状态,胰岛素敏感性较高,对碳水化合物的处理较好。夜间,褪黑素上升,胰岛素敏感性和葡萄糖耐量下降,身体转入休息和修复状态。因此,同样一餐在不同时间吃,代谢结果可以不同。</p>
+<p>民间有"夜里吃东西是让器官加班"的说法。这个比喻抓住了方向,但不是精确的机制。更准确的说法是:夜间进食时,外周组织(肝脏、胰腺、肌肉)的节律处于"休息"相位,而进食信号要它们按"白天"模式工作,两者不同步。长期夜班人群的代谢综合征和 2 型糖尿病风险较高,与此一致。</p>
+<p><strong>工作示例。</strong> 一项经典的交叉试验让同一批受试者在早晨和晚上分别摄入相同的标准餐(约 600 kcal),然后测量餐后血糖。结果通常是:晚餐后血糖曲线下面积更大,峰值更高、回落更慢。假设某人早餐后 2 小时血糖为 6.5 mmol/L,晚上同样的一餐后 2 小时为 8.0 mmol/L,差值为:</p>
+$$8.0 - 6.5 = 1.5\ \text{mmol/L}$$
+<p>食物没有变,热量没有变,差异来自进食时间。</p>
+<p><strong>问题解决应用。</strong> 小林每天总摄入约 2000 kcal,分布为:早餐 300 kcal、午餐 500 kcal、晚餐 600 kcal、22:30 夜宵 600 kcal。</p>
+<p>第一步,计算 18:00 之后的热量占比:</p>
+$$\frac{600 + 600}{2000} = 60\%$$
+<p>第二步,识别问题:大部分热量集中在节律不利的时段,且夜宵离入睡很近,可能影响睡眠和夜间血糖。</p>
+<p>第三步,调整方案,总量不变:早餐 600 kcal、午餐 700 kcal、晚餐 500 kcal、取消夜宵并把 200 kcal 分到白天加餐。此时晚间占比为:</p>
+$$\frac{500}{2000} = 25\%$$
+<p>可操作的原则包括:把主要热量放在白天;晚餐尽量在睡前 3 小时以上完成;保持每日进餐时间大致固定;若必须夜间进食(如倒班),选择较小份量、低升糖指数的食物。</p>
+<p><strong>证据说明。</strong> 早进食对血糖的益处在短期试验中较为一致,但长期减重效果以及"限时进食"的普遍获益仍在研究中。总热量和饮食质量仍然是首要因素,进餐时间是在此基础上的优化,而不是替代。</p>
+  </main>
+  <footer class="spl-credit"><span class="spl-credit__meta">Ch6: What We Eat — Food Quality, Four Natures, and Five Flavors (四气五味) (Level: College &middot; Language: ZH &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
+</div>
+</body>
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>津液 | Meta Health Ch01</title>
+<script>
+MathJax = {
+  loader: { load: ['[tex]/mathtools'] },
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']],
+         packages: { '[+]': ['mathtools'] } },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<script src="https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.min.js"></script>
+<script>mermaid.initialize({ startOnLoad: true, theme: 'neutral' });</script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+footer.spl-credit span{display:block}
+footer.spl-credit .spl-credit__meta{margin-bottom:4px}
+.cb-figure{margin:24px 0;text-align:center}
+.cb-figure img{max-width:100%;height:auto;border:1px solid #e0e0d8;border-radius:6px}
+figcaption{font-size:.82rem;color:#666;margin-top:8px;font-style:italic;text-align:center}
+pre.mermaid{background:none;border:none;padding:0;overflow:visible;margin:16px 0}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="津液">津液</h2>
+<p><strong>定义。</strong> 中医认为,人体一切正常的液体统称为津液(津指津,液指液)。津质地清稀、流动性强,分布于皮肤、肌肉和孔窍,起滋润作用,汗液、尿液中的水分和泪液多与之相关。液质地较稠、流动较缓,灌注于关节、脏腑、脑髓和骨髓,起濡养、润滑作用,例如关节腔内的滑液。二者可相互转化,常合称"津液"。</p>
+<p>两者的区别见下表:</p>
+<p>| 项目 | 津 | 液 | |---|---|---| | 质地 | 清稀 | 较稠厚 | | 流动性 | 强 | 弱 | | 主要部位 | 皮肤、肌肉、孔窍 | 关节、脏腑、脑髓 | | 主要作用 | 滋润 | 濡养、润滑 |</p>
+<p>中医认为,津液来源于饮食,经脾的运化、肺的宣发肃降和肾的蒸腾气化,得以输布与排泄。排泄的途径包括汗、尿、呼气和粪便。这是中医的理论框架,与现代生理学中的体液分布并不一一对应。</p>
+<p><strong>工作示例。</strong> 现代生理学能用可测量的量来描述"水的进出"。设一名成人某日的水分收支如下:</p>
+<p>| 摄入 | 量(mL) | 排出 | 量(mL) | |---|---|---|---| | 饮水 | 1200 | 尿液 | 1500 | | 食物含水 | 700 | 粪便 | 100 | | 代谢产生的水 | 300 | 皮肤蒸发与出汗 | 500 | | | | 呼吸蒸发 | 300 | | 合计 | 2200 | 合计 | 2400 |</p>
+<p>净变化为:</p>
+$$2200 - 2400 = -200\ \text{mL}$$
+<p>当天水分出入相差 200 mL,为负平衡。若连续数日如此,身体会出现口渴、尿少色深、口唇干燥等表现。中医会把这类表现归为"津液不足"(伤津),同时常见舌红少津、大便干结。</p>
+<p><strong>问题解决应用。</strong> 下面用一个情境练习如何辨别。</p>
+<p>情境:一名学生在高温下长跑,大量出汗,只喝了少量水。他口渴、尿黄量少、嘴唇干裂。</p>
+<li><strong>分析原因。</strong> 大量出汗使水分和电解质丢失,摄入又不足,所以水分负平衡。中医称之为汗出伤津。</li>
+<li><strong>估算缺水。</strong> 假设体重由 60 kg 降到 59 kg。1 kg 约对应 1 L 水,所以出汗造成约 1000 mL 的净水分损失,约占体重的:</li>
+$$\frac{1}{60}\times 100\% \approx 1.7\%$$
+<li><strong>处理。</strong> 在轻度脱水阶段,应分次补充含少量电解质的液体,不宜一次猛灌。</li>
+<li><strong>警惕。</strong> 如果出现头晕、意识模糊、持续呕吐或几乎无尿,说明脱水较重,应及时就医,不能只靠饮食调理。</li>
+<p><strong>小结。</strong> 津液是中医对体内正常液体的总称,津偏清稀、主滋润,液偏稠厚、主濡养关节与脏腑。判断体液是否充足时,最可靠的做法是记录摄入与排出的水量,再结合口渴、尿量等表现作出判断。</p>
+  </main>
+  <footer class="spl-credit"><span class="spl-credit__meta">Ch1: TCM Foundations — Yin-Yang, Qi-Blood, and the Five Phases (中医基础) (Level: College &middot; Language: ZH &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
+</div>
+</body>
+</html>

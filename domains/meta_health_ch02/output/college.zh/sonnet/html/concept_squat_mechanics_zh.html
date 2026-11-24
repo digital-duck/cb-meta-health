@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>深蹲力学 | Meta Health Ch02</title>
+<script>
+MathJax = {
+  loader: { load: ['[tex]/mathtools'] },
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']],
+         packages: { '[+]': ['mathtools'] } },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<script src="https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.min.js"></script>
+<script>mermaid.initialize({ startOnLoad: true, theme: 'neutral' });</script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+footer.spl-credit span{display:block}
+footer.spl-credit .spl-credit__meta{margin-bottom:4px}
+.cb-figure{margin:24px 0;text-align:center}
+.cb-figure img{max-width:100%;height:auto;border:1px solid #e0e0d8;border-radius:6px}
+figcaption{font-size:.82rem;color:#666;margin-top:8px;font-style:italic;text-align:center}
+pre.mermaid{background:none;border:none;padding:0;overflow:visible;margin:16px 0}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="深蹲力学">深蹲力学</h2>
+<p>深蹲是一个多关节动作：髋、膝、踝三个关节同时屈曲，身体重心随之下降，躯干保持相对稳定、不前倾塌陷。完成这个动作的主要是下肢的大肌群——股四头肞、臀大肌和腘绳肌。因为这些肌肉体积大、耗氧多,并且肌肉收缩会挤压深层静脉、把血液推回心脏(称为"肌肉泵"效应),所以深蹲时心率和回心血量都会明显上升,而不只是关节在活动。</p>
+<p><strong>举例说明</strong>：用代谢当量(MET)可以估算深蹲带来的能量消耗。深蹲属于中等到较高强度的抗阻运动，MET 值约为 5–8。已知耗氧量与代谢当量的换算关系为：</p>
+$$
+\dot{V}O_2 = \text{MET} \times 3.5\ \text{mL/kg/min}
+$$
+<p>一名体重 70 kg 的人以 6 MET 的强度深蹲，其耗氧量为：</p>
+$$
+\dot{V}O_2 = 6 \times 3.5 = 21\ \text{mL/kg/min}
+$$
+<p>换算成全身耗氧量为 $21 \times 70 = 1470$ mL/min，这远高于安静状态下约 250 mL/min 的耗氧水平,说明大肌群同时发力时全身代谢需求会显著增加,心脏必须泵出更多血液来满足氧气供应。</p>
+<p><strong>问题解决应用</strong>：如果要估算做一组 3 分钟深蹲训练消耗的热量，可以用能量换算关系——每消耗 1 升氧气约产生 5 千卡热能。上例中 1470 mL/min 相当于每分钟约 7.35 千卡，3 分钟约消耗 22 千卡。这类计算在制定训练强度、比较不同动作的能量消耗，或为康复病人设定安全心率范围时都很实用：知道某个动作对应的大致 MET 值，就能反推心率负荷是否超出目标区间，从而调整深蹲的深度、速度或负重。</p>
+<p>这也解释了为什么深蹲常被用作评估下肢功能和心肺耐力的复合动作——它同时检验关节活动度、肌肉力量和心血管系统对运动的反应能力。</p>
+  </main>
+  <footer class="spl-credit"><span class="spl-credit__meta">Ch2: The Physiology Lens — Breath, Circulation, Fascia, and Core (生理视角) (Level: College &middot; Language: ZH &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
+</div>
+</body>
+</html>

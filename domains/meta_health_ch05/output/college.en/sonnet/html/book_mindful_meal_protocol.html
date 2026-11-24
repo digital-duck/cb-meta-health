@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Concept Book: The Mindful-Meal Protocol — Meta Health Ch05</title>
+<script>
+MathJax = {
+  loader: { load: ['[tex]/mathtools'] },
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']],
+         packages: { '[+]': ['mathtools'] } },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<script src="https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.min.js"></script>
+<script>mermaid.initialize({ startOnLoad: true, theme: 'neutral' });</script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+footer.spl-credit span{display:block}
+footer.spl-credit .spl-credit__meta{margin-bottom:4px}
+.cb-figure{margin:24px 0;text-align:center}
+.cb-figure img{max-width:100%;height:auto;border:1px solid #e0e0d8;border-radius:6px}
+figcaption{font-size:.82rem;color:#666;margin-top:8px;font-style:italic;text-align:center}
+pre.mermaid{background:none;border:none;padding:0;overflow:visible;margin:16px 0}
+.page{display:grid;grid-template-columns:260px 1fr;min-height:100vh}
+nav.toc{position:sticky;top:0;height:100vh;overflow-y:auto;
+        background:#1e3a5f;color:#e8f0fe;padding:24px 16px}
+nav.toc h2{font-size:.75rem;letter-spacing:.1em;text-transform:uppercase;
+           color:#90b4e8;margin-bottom:14px;font-family:system-ui,sans-serif}
+nav.toc ol{list-style:decimal inside;padding:0}
+nav.toc li{margin-bottom:7px;font-size:.85rem;line-height:1.4;font-family:system-ui,sans-serif}
+nav.toc a{color:#a8c8f0;text-decoration:none}
+nav.toc a:hover{color:#fff}
+nav.toc li.toc-target{font-weight:700}
+nav.toc li.toc-target a{color:#fff}
+main{padding:48px 64px;max-width:860px}
+h1.book-title{font-size:2rem;color:#1e3a5f;margin-bottom:4px}
+.subtitle{color:#666;margin-bottom:48px;font-size:1rem;font-style:italic;font-family:system-ui,sans-serif}
+section{margin-bottom:56px;border-top:1px solid #e0e0d8;padding-top:40px}
+section:first-of-type{border-top:none;padding-top:0}
+@media(max-width:768px){.page{grid-template-columns:1fr}
+nav.toc{position:relative;height:auto}}
+</style>
+</head>
+<body>
+<div class="page">
+  <nav class="toc">
+    <h2>Contents</h2>
+    <ol>
+<li><a href="concept_gastrointestinal_tract.html">The Gastrointestinal Tract</a></li>
+<li><a href="concept_sympathetic_parasympathetic_balance.html">Sympathetic–Parasympathetic Balance</a></li>
+<li><a href="concept_regional_blood_flow_distribution.html">Regional Blood-Flow Distribution</a></li>
+<li><a href="concept_splanchnic_circulation.html">The Splanchnic Circulation</a></li>
+<li><a href="concept_spleen_stomach_system.html">The Spleen–Stomach System (脾胃)</a></li>
+<li><a href="concept_prenatal_postnatal_qi.html">Prenatal and Postnatal Qi (先天与后天)</a></li>
+<li><a href="concept_smooth_muscle.html">Smooth Muscle</a></li>
+<li><a href="concept_peristalsis_and_motility.html">Peristalsis and Gut Motility</a></li>
+<li><a href="concept_postprandial_hyperemia.html">Postprandial Hyperemia</a></li>
+<li><a href="concept_spleen_transformation_transport.html">The Spleen Transforms and Transports (脾主运化)</a></li>
+<li><a href="concept_cardiovascular_load_of_digestion.html">The Cardiovascular Load of Digestion</a></li>
+<li><a href="concept_cephalic_phase_digestion.html">The Cephalic Phase of Digestion</a></li>
+<li><a href="concept_liver_metabolic_role.html">The Liver's Metabolic Role</a></li>
+<li><a href="concept_mastication.html">Chewing (Mastication)</a></li>
+<li><a href="concept_eating_as_internal_exercise.html">Eating as Internal Exercise</a></li>
+<li><a href="concept_hepatic_first_pass_processing.html">First-Pass Processing in the Liver</a></li>
+<li><a href="concept_stomach_receiving_ripening.html">The Stomach Receives and Ripens (胃主受纳)</a></li>
+<li><a href="concept_ascending_clear_descending_turbid.html">Ascending the Clear, Descending the Turbid (升清降浊)</a></li>
+<li><a href="concept_postprandial_glucose_response.html">The Post-Meal Glucose Response</a></li>
+<li><a href="concept_satiety_signaling.html">Satiety Signaling</a></li>
+<li><a href="concept_digestive_load_pacing.html">Pacing the Digestive Load (七分饱)</a></li>
+<li><a href="concept_digestive_overtraining.html">Digestive Overtraining</a></li>
+<li><a href="concept_digestive_warm_up.html">The Digestive Warm-Up</a></li>
+<li><a href="concept_post_meal_gentle_movement.html">Gentle Movement After Meals</a></li>
+<li class="toc-target"><a href="concept_mindful_meal_protocol.html">The Mindful-Meal Protocol</a></li>
+</ol>
+  </nav>
+  <main>
+    <h1 class="book-title">Concept Book: The Mindful-Meal Protocol</h1>
+    <p class="subtitle">Meta Health Ch05 &middot; Generated by SPL</p>
+    <section>
+      <section>
+      <h2 id="payoff">Payoff</h2>
+<p>Every earlier idea in this book treated one stage of eating in isolation. The Mindful-Meal Protocol joins them into a single routine that treats each meal as a well-coached internal workout. Like a good training session, it has a warm-up, a paced main set, and a cool-down. It is the natural endpoint because a meal is one continuous event, and its digestive load is shaped by what you do before, during, and after the food arrives.</p>
+<h3 id="the-protocol">The protocol</h3>
+<p><strong>Before.</strong> Do a few warm-up breaths and put screens away. This is the Digestive Warm-Up. Slow breathing and a short pause shift the body toward its rest-and-digest state, so saliva and gastric secretions are ready when food arrives.</p>
+<p><strong>During.</strong> Chew thoroughly and pace yourself to about 70–80% full. Thorough chewing gives the stomach smaller, better-prepared pieces. Pacing applies Pacing the Digestive Load (七分饱). In TCM, 七分饱 means stopping at roughly "seven-tenths full." Your fullness signals lag behind your intake by about 15–20 minutes, so stopping at 70–80% usually means you feel comfortably full shortly after you put the fork down.</p>
+<p><strong>After.</strong> Rest briefly, then add gentle movement. This is Gentle Movement After Meals. A slow walk of 10–15 minutes helps gastric emptying and smooths the rise in blood glucose.</p>
+<h3 id="worked-example">Worked example</h3>
+<p>Consider a 20-minute lunch of about 700 kcal, eaten at a desk while scrolling. Compare two versions of that same lunch.</p>
+<p>| Stage | Unstructured version | Protocol version | |---|---|---| | Before | Start immediately, screen on | Three slow breaths, phone away | | During | Finish in 8 minutes, stop when the plate is empty | Take 20 minutes, stop at about 75% full, perhaps 600 kcal | | After | Return to work, sitting | Rest 5 minutes, then walk 10 minutes |</p>
+<p>The unstructured version is the pattern behind Digestive Overtraining. Repeated oversized, rushed loads leave you bloated and sleepy, and over time they strain the system. The protocol version gives the same food a lighter, better-prepared load.</p>
+<h3 id="problem-solving-application">Problem-solving application</h3>
+<p>Suppose you routinely feel heavy and sluggish about an hour after dinner. Treat it as a troubleshooting problem. Change one stage at a time for a week each and note the result:</p>
+<li>Add the warm-up only.</li>
+<li>Add pacing, meaning put the fork down between bites and stop at 70–80% full.</li>
+<li>Add a 10-minute walk after the meal.</li>
+<p>Whichever change makes the biggest difference tells you where your habits strain digestion most. Then combine all three. Athletes use this same logic when they adjust one variable of a training plan at a time.</p>
+<h3 id="try-it">Try it</h3>
+<p>Choose one meal tomorrow and run the full protocol. Afterward, jot down how you felt at the 30-minute and 2-hour marks. Repeat for a week and compare. Because the protocol is a routine you adjust to your own body, it needs no equipment and costs nothing, and every meal is a chance to practice it.</p>
+    </section>
+    </section>
+    <footer class="spl-credit"><span class="spl-credit__meta">Ch5: Eating as Internal Exercise (饮食即内脏运动) (Level: College &middot; Language: EN &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
+  </main>
+</div>
+</body>
+</html>

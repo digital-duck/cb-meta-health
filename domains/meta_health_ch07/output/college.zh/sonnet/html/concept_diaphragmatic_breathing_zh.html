@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>腹式呼吸 | Meta Health Ch07</title>
+<script>
+MathJax = {
+  loader: { load: ['[tex]/mathtools'] },
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']],
+         packages: { '[+]': ['mathtools'] } },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<script src="https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.min.js"></script>
+<script>mermaid.initialize({ startOnLoad: true, theme: 'neutral' });</script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+footer.spl-credit span{display:block}
+footer.spl-credit .spl-credit__meta{margin-bottom:4px}
+.cb-figure{margin:24px 0;text-align:center}
+.cb-figure img{max-width:100%;height:auto;border:1px solid #e0e0d8;border-radius:6px}
+figcaption{font-size:.82rem;color:#666;margin-top:8px;font-style:italic;text-align:center}
+pre.mermaid{background:none;border:none;padding:0;overflow:visible;margin:16px 0}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="腹式呼吸">腹式呼吸</h2>
+<p><strong>定义。</strong> 腹式呼吸(又称膈式呼吸)是以膈肌为主要动力的呼吸方式。吸气时膈肌收缩、下移,胸腔纵向扩大,肺内压下降,空气进入肺的下部,腹部随之轻微隆起;呼气时膈肌放松、上升,腹部回落。与之相对的胸式呼吸主要依靠肋间肌和颈部辅助肌,呼吸较浅,肺底部通气相对不足。</p>
+<p>在中医(TCM)的养生实践中,类似的方法常被称为"腹式呼吸"或"丹田呼吸",强调"气沉丹田"。这是一种传统说法,现代生理学对应的机制主要是膈肌运动和迷走神经张力的变化。</p>
+<p><strong>基本做法。</strong> 仰卧或坐位,一只手放在胸前,另一只手放在肚脐上方。用鼻缓慢吸气,使腹部手被顶起而胸前手基本不动;再用嘴或鼻缓慢呼气,腹部回落。</p>
+<p><strong>例题。</strong> 某人静息时潮气量为 $500\ \text{mL}$,呼吸频率为每分钟 $16$ 次。已知解剖无效腔约为 $150\ \text{mL}$。分钟通气量与肺泡通气量分别是多少?</p>
+<p>分钟通气量:</p>
+$$\dot V_E = V_T \times f = 500 \times 16 = 8000\ \text{mL/min}$$
+<p>肺泡通气量:</p>
+$$\dot V_A = (V_T - V_D)\times f = (500-150)\times 16 = 5600\ \text{mL/min}$$
+<p><strong>问题应用。</strong> 比较两种呼吸方式,总通气量都保持约 $8000\ \text{mL/min}$:</p>
+<p>| 方式 | 潮气量 | 频率 | 肺泡通气量 | |---|---|---|---| | 浅快胸式 | $300\ \text{mL}$ | 26 次/分 | $(300-150)\times 26 = 3900\ \text{mL/min}$ | | 深慢腹式 | $800\ \text{mL}$ | 10 次/分 | $(800-150)\times 10 = 6500\ \text{mL/min}$ |</p>
+<p>两者分钟通气量相近(约 $7800$ 与 $8000\ \text{mL/min}$),但深慢呼吸的肺泡通气量更高,因为每次呼吸中无效腔所占比例更小。这说明:真正参与气体交换的是肺泡通气量,而不是单纯的呼吸总量。</p>
+<p>此外,每分钟约 6 次的缓慢腹式呼吸常用于放松训练。研究显示它可使心率变异性增加、静息心率和主观紧张感略有下降,但效果因人而异,不能替代对高血压或焦虑障碍的规范治疗。</p>
+<p><strong>练习建议。</strong> </p>
+<li>每天 5–10 分钟,从每分钟 10 次开始,逐步放慢。</li>
+<li>呼气时间略长于吸气(如吸 4 秒、呼 6 秒)。</li>
+<li>出现头晕、手麻时立即恢复自然呼吸,这是过度通气的表现。</li>
+<li>患有严重慢性阻塞性肺疾病或心血管疾病者,应先咨询医生再练习。</li>
+<p><strong>小结。</strong> 腹式呼吸通过增加膈肌参与度提高潮气量,在同样的分钟通气量下提升肺泡通气量。解决相关问题时,先区分分钟通气量与肺泡通气量,再代入无效腔进行计算。</p>
+  </main>
+  <footer class="spl-credit"><span class="spl-credit__meta">Ch7: Stress, Emotion, and the Flow of Qi and Blood (情志与气血) (Level: College &middot; Language: ZH &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
+</div>
+</body>
+</html>

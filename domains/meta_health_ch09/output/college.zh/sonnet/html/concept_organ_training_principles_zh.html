@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>脏腑训练原则 | Meta Health Ch09</title>
+<script>
+MathJax = {
+  loader: { load: ['[tex]/mathtools'] },
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']],
+         packages: { '[+]': ['mathtools'] } },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<script src="https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.min.js"></script>
+<script>mermaid.initialize({ startOnLoad: true, theme: 'neutral' });</script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+footer.spl-credit span{display:block}
+footer.spl-credit .spl-credit__meta{margin-bottom:4px}
+.cb-figure{margin:24px 0;text-align:center}
+.cb-figure img{max-width:100%;height:auto;border:1px solid #e0e0d8;border-radius:6px}
+figcaption{font-size:.82rem;color:#666;margin-top:8px;font-style:italic;text-align:center}
+pre.mermaid{background:none;border:none;padding:0;overflow:visible;margin:16px 0}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="脏腑训练原则">脏腑训练原则</h2>
+<p><strong>定义。</strong> 脏腑训练原则是指把"训练而不过载"的思路,同样用于肌肉、消化器官和神经系统的一套通用方法。这些系统都有一个共同特点:适度的刺激会让它们变强,过量的刺激则会造成损伤。原则有五条:<strong>热身</strong>、<strong>适当负荷</strong>、<strong>循序渐进</strong>、<strong>恢复</strong>和<strong>持之以恒</strong>。</p>
+<li><strong>热身</strong>:先用低强度刺激唤起功能。例如运动前慢跑5分钟,或进食前先喝几口温水。</li>
+<li><strong>适当负荷</strong>:刺激要略高于现有能力,但不能超出承受范围。</li>
+<li><strong>循序渐进</strong>:每次只小幅增加负荷。运动训练中常用的经验做法是每周增幅不超过约10%。</li>
+<li><strong>恢复</strong>:适应发生在休息期间,不发生在刺激期间。肌肉需要24–48小时修复,睡眠则是神经系统恢复的主要时段。</li>
+<li><strong>持之以恒</strong>:规律的中等刺激,效果好过偶尔一次的极端刺激。</li>
+<p><strong>例题。</strong> 小林想从零开始跑步,目前每周跑 10 公里,目标是半程马拉松(约 21 公里)。如果每周增加 10%,他需要多少周才能达到每周 21 公里?</p>
+<p>每周总量 $d_n = 10 \times 1.1^{\,n}$。令 $d_n \ge 21$,得</p>
+$$1.1^{\,n} \ge 2.1,\qquad n \ge \frac{\ln 2.1}{\ln 1.1} \approx 7.8$$
+<p>所以约需 8 周。这个结果说明:循序渐进看起来慢,却是安全的路径。若他第一周就直接跑 21 公里,增幅达110%,肌肉和肌腱很可能受伤,之后的休养反而要花更长时间。</p>
+<p><strong>问题解决应用。</strong> 同样的思路也适用于消化系统和神经系统。</p>
+<p><em>场景一:消化。</em> 一个人长期吃得清淡,突然参加聚餐,吃了大量高脂食物,随后腹胀、腹泻。胆汁和消化酶的分泌能力会随饮食适应,骤增的脂肪量超过了当时的"负荷"。改进办法:先从少量开始(热身),逐步增加种类和分量(渐进),两餐之间留出间隔(恢复)。</p>
+<p><em>场景二:神经系统。</em> 一名学生连续三晚只睡4小时备考,第四天注意力和记忆明显下降。大脑的学习巩固发生在睡眠中,缺少恢复,继续加大学习量只会让效率下降。更好的安排是学习50分钟、休息10分钟,并保证每晚7–9小时睡眠。</p>
+<p><em>通用检查表:</em> 遇到症状时,依次问自己五个问题。(1)开始前有没有热身?(2)今天的负荷比上次高出多少?(3)增幅是否过快?(4)恢复是否足够?(5)是否坚持规律?多数过载问题,都能在其中某一项找到原因。</p>
+<p>需要注意:如果出现持续疼痛、反复呕吐、长期失眠等症状,说明问题可能已超出训练调整的范围,应当就医,而不是继续"加练"。</p>
+  </main>
+  <footer class="spl-credit"><span class="spl-credit__meta">Ch9: The Unified Internal Conditioning Framework (内调一元论) (Level: College &middot; Language: ZH &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
+</div>
+</body>
+</html>
