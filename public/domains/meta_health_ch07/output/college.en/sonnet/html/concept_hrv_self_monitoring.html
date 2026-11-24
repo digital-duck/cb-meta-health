@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Monitoring Stress with HRV | Meta Health Ch07</title>
+<script>
+MathJax = {
+  loader: { load: ['[tex]/mathtools'] },
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']],
+         packages: { '[+]': ['mathtools'] } },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<script src="https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.min.js"></script>
+<script>mermaid.initialize({ startOnLoad: true, theme: 'neutral' });</script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+footer.spl-credit span{display:block}
+footer.spl-credit .spl-credit__meta{margin-bottom:4px}
+.cb-figure{margin:24px 0;text-align:center}
+.cb-figure img{max-width:100%;height:auto;border:1px solid #e0e0d8;border-radius:6px}
+figcaption{font-size:.82rem;color:#666;margin-top:8px;font-style:italic;text-align:center}
+pre.mermaid{background:none;border:none;padding:0;overflow:visible;margin:16px 0}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="monitoring-stress-with-hrv">Monitoring Stress with HRV</h2>
+<p><strong>Definition.</strong> Heart rate variability (HRV) is the natural beat-to-beat variation in the time between heartbeats. A resting heart rate of 60 beats per minute does not mean one beat every 1000 ms. The gaps might be 940, 1050, 980, and 1030 ms. The most common wearable metric is RMSSD, the root mean square of successive differences between beats, reported in milliseconds:</p>
+$$\text{RMSSD} = \sqrt{\frac{1}{N-1}\sum_{i=1}^{N-1}\left(RR_{i+1}-RR_i\right)^2}$$
+<p>Here $RR_i$ is the interval between beats $i$ and $i+1$. Higher RMSSD generally reflects stronger parasympathetic ("rest and recover") activity. Resting heart rate (RHR) usually moves the opposite way: when you are under strain, RHR tends to rise and HRV tends to fall.</p>
+<p>The key idea is that HRV is a personal trend signal, not a score to compare with other people. Baselines vary widely with age, genetics, and fitness, and a single night's reading is noisy. Wearables also estimate HRV from optical sensors, so absolute values differ between devices. Use one device consistently, measure under the same conditions (for example, overnight or on waking), and compare against your own rolling average.</p>
+<p><strong>Worked example.</strong> Suppose your 14-day average overnight RMSSD is 62 ms and your average RHR is 56 bpm. This week:</p>
+<p>| Day | RMSSD (ms) | RHR (bpm) | Sleep (h) | Mood (1–5) | |---|---|---|---|---| | Mon | 60 | 56 | 7.5 | 4 | | Tue | 55 | 58 | 6.5 | 3 | | Wed | 48 | 61 | 5.5 | 3 | | Thu | 45 | 62 | 6.0 | 2 |</p>
+<p>By Thursday, HRV is about $\frac{62-45}{62}\approx 27\%$ below baseline, and RHR is 6 bpm above it. Sleep has been short and mood has dropped. Each signal alone could be noise, but all four moving together over several days suggest accumulated load, such as exams, heavy training, or illness onset.</p>
+<p><strong>Problem-solving application.</strong> Use a simple decision routine:</p>
+<li><strong>Establish a baseline.</strong> Collect 2–4 weeks of data and note your typical range.</li>
+<li><strong>Look for multi-day patterns.</strong> Act on trends of 3 or more days, not a single dip.</li>
+<li><strong>Check for explanations.</strong> Alcohol, late meals, fever, travel, and caffeine all lower HRV without meaning chronic stress.</li>
+<li><strong>Respond proportionally.</strong> If signals converge, reduce the load. Swap a hard workout for an easy walk, protect sleep, and add recovery time. If only HRV dips while you feel fine, keep your plan and keep watching.</li>
+<li><strong>Confirm recovery.</strong> Return to normal intensity when HRV and RHR are back near baseline for a couple of days.</li>
+<p>In the example above, a sensible response on Thursday is to skip the interval session, aim for 8 hours of sleep, and re-check over the next three nights.</p>
+<p><strong>Limits.</strong> HRV monitoring is feedback, not diagnosis. It cannot identify the cause of stress or detect disease. Persistent changes with symptoms such as chest pain, fainting, or palpitations warrant a clinician's evaluation, not further tracking.</p>
+  </main>
+  <footer class="spl-credit"><span class="spl-credit__meta">Ch7: Stress, Emotion, and the Flow of Qi and Blood (情志与气血) (Level: College &middot; Language: EN &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
+</div>
+</body>
+</html>

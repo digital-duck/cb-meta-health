@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>证据与安全视角 | Meta Health Ch09</title>
+<script>
+MathJax = {
+  loader: { load: ['[tex]/mathtools'] },
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']],
+         packages: { '[+]': ['mathtools'] } },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<script src="https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.min.js"></script>
+<script>mermaid.initialize({ startOnLoad: true, theme: 'neutral' });</script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+footer.spl-credit span{display:block}
+footer.spl-credit .spl-credit__meta{margin-bottom:4px}
+.cb-figure{margin:24px 0;text-align:center}
+.cb-figure img{max-width:100%;height:auto;border:1px solid #e0e0d8;border-radius:6px}
+figcaption{font-size:.82rem;color:#666;margin-top:8px;font-style:italic;text-align:center}
+pre.mermaid{background:none;border:none;padding:0;overflow:visible;margin:16px 0}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="证据与安全视角">证据与安全视角</h2>
+<p><strong>定义。</strong> 证据与安全视角是一种在面对任何健康建议时都先问两个问题的习惯：第一，这个说法有多少可靠证据支持？第二，它对我自己是否安全？根据证据强度，健康说法大致分为三类：</p>
+<p>| 类别 | 含义 | 例子 | |---|---|---| | 证据确凿 | 多项对照研究结果一致 | 餐后散步可降低血糖；八段锦可改善平衡能力 | | 合理但未证实 | 机制说得通，研究少或质量有限 | 某些呼吸放松练习有助于缓解压力 | | 传统隐喻 | 属于传统理论的语言，并非可检验的生理机制 | 中医认为"气血不通"导致不适 |</p>
+<p>这三类并无高下之分，只是回答的问题不同。隐喻可以帮助人理解和记忆，但不能当作诊断依据。</p>
+<p><strong>例题。</strong> 小李的父亲 58 岁，患 2 型糖尿病，正在服用降糖药。小李在网上看到"饭后散步 15 分钟能降血糖"，还看到"按压某穴位可以代替降糖药"。</p>
+<p>逐条判断：</p>
+<li>饭后散步：多项研究发现，餐后轻度活动能让血糖峰值下降。这属于证据确凿，风险也低，可以尝试。</li>
+<li>穴位代替降糖药：没有可靠证据表明穴位按压能替代药物控制血糖。擅自停药可能使血糖失控，这一说法属于有害，应明确拒绝。</li>
+<p><strong>问题求解：四步检查法。</strong></p>
+<li><strong>归类</strong>：这个说法属于确凿、合理还是隐喻？</li>
+<li><strong>查风险人群</strong>：我是否属于糖尿病、心脏病、孕期或正在服药的人群？这些人群往往需要调整强度或时间。</li>
+<li><strong>看红旗症状</strong>：出现以下情况应立即就医，不要等待"调理"：胸痛或胸闷、呼吸困难、晕厥、持续剧烈头痛、孕期出血或明显腹痛、血糖过低（心慌、出冷汗、意识模糊）。</li>
+<li><strong>不自行改药</strong>：任何运动或传统疗法都只能作为补充，调整药物必须由医生决定。</li>
+<p><strong>应用。</strong> 回到小李的父亲。他服用降糖药，饭后散步时若出现头晕、出冷汗、手抖，可能是低血糖，应立即停下并补充糖分，之后告知医生。他还可以在散步前后测血糖，把数据带给医生，由医生判断药量是否需要调整。</p>
+<p>再看一个情境：一位孕妇想练八段锦。八段锦对健康成年人的平衡能力有证据支持，但孕期的研究较少，且部分动作涉及大幅度弯腰、下蹲。较稳妥的做法是先咨询产科医生，再选择幅度较小的动作。</p>
+<p><strong>小结。</strong> 先归类，再查风险，识别红旗症状，不擅自改药。证据决定一件事值不值得做，安全决定它适不适合此刻的你做。</p>
+  </main>
+  <footer class="spl-credit"><span class="spl-credit__meta">Ch9: The Unified Internal Conditioning Framework (内调一元论) (Level: College &middot; Language: ZH &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
+</div>
+</body>
+</html>

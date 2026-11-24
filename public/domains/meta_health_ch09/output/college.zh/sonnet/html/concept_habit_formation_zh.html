@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>习惯养成 | Meta Health Ch09</title>
+<script>
+MathJax = {
+  loader: { load: ['[tex]/mathtools'] },
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']],
+         packages: { '[+]': ['mathtools'] } },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<script src="https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.min.js"></script>
+<script>mermaid.initialize({ startOnLoad: true, theme: 'neutral' });</script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+footer.spl-credit span{display:block}
+footer.spl-credit .spl-credit__meta{margin-bottom:4px}
+.cb-figure{margin:24px 0;text-align:center}
+.cb-figure img{max-width:100%;height:auto;border:1px solid #e0e0d8;border-radius:6px}
+figcaption{font-size:.82rem;color:#666;margin-top:8px;font-style:italic;text-align:center}
+pre.mermaid{background:none;border:none;padding:0;overflow:visible;margin:16px 0}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="习惯养成">习惯养成</h2>
+<p><strong>定义。</strong> 习惯养成是指把一个小而具体的行为,绑定到已经稳定存在的日常节点上,重复到它几乎不需要意志力就能发生的过程。研究习惯的心理学家称这个已有节点为"触发线索"。线索越固定、动作越小,行为就越容易持续。吃饭、起床、刷牙、通勤都是现成的线索,因为它们每天都会发生,无需另行记忆。</p>
+<p><strong>为什么小剂量更持久。</strong> 雄心勃勃的计划(例如"每天跑步一小时")依赖当天的精力、时间和心情,任何一天出现波动就会中断,中断之后又容易全盘放弃。小剂量的做法把门槛降到几乎总能完成的程度,所以连续执行的天数更长,这种重复本身才是形成习惯的关键。研究中常被引用的数字是:一项针对志愿者的研究发现,新行为变得自动化平均需要约66天,个体差异很大,从18天到254天不等。</p>
+<p><strong>例子。</strong> 下面比较两个目标相同的方案,目标都是增加每天的活动量。</p>
+<p>| 方案 | 内容 | 触发线索 | 门槛 | |---|---|---|---| | 甲 | 每天早晨健身一小时 | 无固定线索,靠"有空就做" | 高 | | 乙 | 每天快走10分钟 | 午饭后立即出门 | 低 |</p>
+<p>假设甲方案在一个月里因加班、疲劳等原因只完成了10天,累计 $10\times 60=600$ 分钟;乙方案完成了28天,累计 $28\times 10=280$ 分钟。再看坚持情况:甲方案的重复次数只有10次,远低于形成自动化所需的数量;乙方案有28次,并且还在继续。一般来说,第二个月甲方案很可能归零,乙方案则可以顺势延长到15分钟。</p>
+<p>另一个例子是进食前的"一次呼吸":每顿饭开始前,先做一次缓慢的深呼吸,再拿起筷子。这个动作只需几秒钟,线索是"看到饭菜",几乎没有失败的机会。它能让进食速度略微放慢,也为之后增加咀嚼次数、留意饱腹感打下基础。</p>
+<p><strong>问题解决应用。</strong> 设计自己的习惯时,可以按四步操作:</p>
+<li><strong>选线索</strong>:挑一个每天必然发生的事件,如"起床后喝水""晚饭后"。</li>
+<li><strong>缩动作</strong>:把目标缩到在最糟糕的一天也能完成,比如2分钟拉伸、5个深蹲。</li>
+<li><strong>写成句子</strong>:"在【线索】之后,我就【小动作】。"明确的句子比"我要多运动"更容易执行。</li>
+<li><strong>逐步加量</strong>:连续两周几乎不漏之后,再把时间或次数增加一小步。</li>
+<p>如果某天漏掉了,不必补做,也不必自责,第二天照常接上即可。单次漏做对结果影响很小,真正的风险是因此放弃整个计划。</p>
+<p><strong>小结。</strong> 习惯养成的重点不在于单次做得多好,而在于是否每天都能重复。把小动作挂在吃饭、起床这类固定线索上,是让健康行为长期留存的实用做法。</p>
+  </main>
+  <footer class="spl-credit"><span class="spl-credit__meta">Ch9: The Unified Internal Conditioning Framework (内调一元论) (Level: College &middot; Language: ZH &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
+</div>
+</body>
+</html>

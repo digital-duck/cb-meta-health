@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>四时养生 | Meta Health Ch08</title>
+<script>
+MathJax = {
+  loader: { load: ['[tex]/mathtools'] },
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']],
+         packages: { '[+]': ['mathtools'] } },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<script src="https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.min.js"></script>
+<script>mermaid.initialize({ startOnLoad: true, theme: 'neutral' });</script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+footer.spl-credit span{display:block}
+footer.spl-credit .spl-credit__meta{margin-bottom:4px}
+.cb-figure{margin:24px 0;text-align:center}
+.cb-figure img{max-width:100%;height:auto;border:1px solid #e0e0d8;border-radius:6px}
+figcaption{font-size:.82rem;color:#666;margin-top:8px;font-style:italic;text-align:center}
+pre.mermaid{background:none;border:none;padding:0;overflow:visible;margin:16px 0}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="四时养生">四时养生</h2>
+<p><strong>定义。</strong> 四时养生是中医(Traditional Chinese Medicine,TCM)提出的一种生活调养思路:中医认为,人应随季节变化调整作息、活动和饮食。其依据是《黄帝内经》中的"春生夏长秋收冬藏",即春季万物萌发,夏季生长旺盛,秋季收敛成熟,冬季闭藏蓄积。把这一思路落到现代生活中,实际上是在回答一个具体问题:日照、气温和活动量随季节变化时,睡眠、运动与饮食该怎样跟着变?</p>
+<p><strong>各季要点。</strong></p>
+<p>| 季节 | 中医主张 | 可操作的做法 | |---|---|---| | 春 | 生发,舒展 | 早起,户外散步、拉伸;饮食清淡,多吃时令蔬菜 | | 夏 | 长养,外放 | 稍晚睡、早起,避开正午高温运动;多补水,注意防暑 | | 秋 | 收敛,润燥 | 早睡早起;饮食适当增加润燥食物,如梨、银耳;运动量逐步收敛 | | 冬 | 闭藏,蓄养 | 早睡晚起,顺应日出时间;保暖,适度增加热量摄入 |</p>
+<p>其中,与现代研究相吻合的部分主要是:昼夜节律受光照影响,冬季日照短,多数人睡眠需求略增;冬季气温低,基础代谢的产热需求上升;夏季出汗多,需要补水。至于"某季节吃某食物能调养某脏腑"这类说法,现有证据有限,可当作饮食多样化的参考,不宜当作治疗手段。</p>
+<p><strong>例题。</strong> 小李体重 70 kg,夏季每天慢跑 30 min,消耗约 300 kcal。进入冬季后,他因天冷改为快走 30 min,消耗约 150 kcal,饮食却没有变化,每天摄入 2200 kcal,其中约 2200 kcal 与总消耗持平。问:冬季一个月(30 天)后体重会怎样变化?</p>
+<p>按每天少消耗 150 kcal 估算,每天形成约 150 kcal 的盈余,30 天共约 4500 kcal。常用的经验换算是约 7700 kcal 对应 1 kg 体脂,所以:</p>
+$$\frac{4500\ \text{kcal}}{7700\ \text{kcal/kg}} \approx 0.58\ \text{kg}$$
+<p>体重大约增加 0.6 kg。这只是粗略估计,实际还会受代谢适应等因素影响。</p>
+<p><strong>问题应用。</strong> 把四时养生当作"按季节校准能量和作息"的方法,可以这样做:</p>
+<li><strong>算账</strong>:换季时估算活动量的变化,相应调整摄入。冬季若运动减少,不必刻意"进补",热量盈余多半会转为脂肪。</li>
+<li><strong>调作息</strong>:冬季天亮得晚,可适当晚起约 30 min,保证 7–9 h 睡眠;夏季早晨光线充足,宜早起,午后可小憩。</li>
+<li><strong>改运动</strong>:夏季把运动安排在清晨或傍晚;冬季选择室内或午后阳光较好的时段,避免寒冷时骤然剧烈运动。</li>
+<li><strong>看个体</strong>:有心血管疾病、糖尿病等基础病的人,应以医生建议为准,不要单靠季节原则自行调整。</li>
+<p><strong>小结。</strong> 四时养生的合理核心,是让生活节奏随季节的客观变化适度调整。把它落实为可计算的睡眠时长、热量收支和运动时段,比纠缠于抽象说法更有用。</p>
+  </main>
+  <footer class="spl-credit"><span class="spl-credit__meta">Ch8: Rhythms — Sleep, the Organ Clock, and the Seasons (天人相应) (Level: College &middot; Language: ZH &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
+</div>
+</body>
+</html>

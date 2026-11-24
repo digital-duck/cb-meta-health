@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>十二经脉 | Meta Health Ch08</title>
+<script>
+MathJax = {
+  loader: { load: ['[tex]/mathtools'] },
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']],
+         packages: { '[+]': ['mathtools'] } },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<script src="https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.min.js"></script>
+<script>mermaid.initialize({ startOnLoad: true, theme: 'neutral' });</script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+footer.spl-credit span{display:block}
+footer.spl-credit .spl-credit__meta{margin-bottom:4px}
+.cb-figure{margin:24px 0;text-align:center}
+.cb-figure img{max-width:100%;height:auto;border:1px solid #e0e0d8;border-radius:6px}
+figcaption{font-size:.82rem;color:#666;margin-top:8px;font-style:italic;text-align:center}
+pre.mermaid{background:none;border:none;padding:0;overflow:visible;margin:16px 0}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="十二经脉">十二经脉</h2>
+<p><strong>定义。</strong> 在中医(Traditional Chinese Medicine,TCM)理论中,经脉是气血运行的通路。中医认为人体有十二条“正经”,左右对称,各自归属一个脏或腑,并分为手三阴、手三阳、足三阴、足三阳四组。需要说明的是,经脉并非解剖学上已被证实的结构,现代解剖学没有发现与之对应的独立管道,因此它是一套用于组织针灸与推拿经验的理论框架,而不是生理学事实。</p>
+<p><strong>分组规则。</strong> 命名由三个信息组成:手或足(循行的肢体)、阴或阳(循行在肢体内侧或外侧)、所属脏腑。</p>
+<p>| 分组 | 经脉 | |---|---| | 手三阴(上肢内侧) | 手太阴肺经、手厥阴心包经、手少阴心经 | | 手三阳(上肢外侧) | 手阳明大肠经、手少阳三焦经、手太阳小肠经 | | 足三阳(下肢外侧及前、后) | 足阳明胃经、足少阳胆经、足太阳膀胱经 | | 足三阴(下肢内侧) | 足太阴脾经、足厥阴肝经、足少阴肾经 |</p>
+<p><strong>流注顺序。</strong> 中医认为气血按固定顺序依次流经十二条经脉,首尾相接:肺经 → 大肠经 → 胃经 → 脾经 → 心经 → 小肠经 → 膀胱经 → 肾经 → 心包经 → 三焦经 → 胆经 → 肝经,再回到肺经。</p>
+<pre class="mermaid">flowchart LR
+A[肺经] --> B[大肠经] --> C[胃经] --> D[脾经]
+D --> E[心经] --> F[小肠经] --> G[膀胱经] --> H[肾经]
+H --> I[心包经] --> J[三焦经] --> K[胆经] --> L[肝经]</pre>
+<p><em>十二经脉的流注顺序:依次相接,由肝经再回到肺经,形成循环。</em></p>
+<p><strong>例题 1:由名称读出信息。</strong> “足少阳胆经”表示什么?</p>
+<li>“足”:循行于下肢;</li>
+<li>“少阳”:属阳经,走在肢体外侧(偏侧面);</li>
+<li>“胆”:所属腑为胆。</li>
+<p>因此它是下肢外侧的一条阳经,与胆相关。</p>
+<p><strong>例题 2:判断归属。</strong> 某人小腿内侧、靠近内踝处有酸胀感,想知道可能涉及哪些经脉。</p>
+<li>下肢内侧属阴经,所以只考虑足三阴;</li>
+<li>在小腿下部和内踝附近,足三阴的循行位置由前到后依次是肝经、脾经、肾经(中医的经典描述在小腿下段与上段的前后顺序略有不同);</li>
+<li>再结合具体的按压点和其他症状,才能进一步缩小范围。</li>
+<p><strong>应用:学会查表并核对。</strong> 面对一份针灸穴位资料,可按三步检查:先根据名称确定肢体与内外侧;再核对该穴位是否位于对应的内侧或外侧;最后对照流注顺序,理解“某经之后接哪一经”。例如,看到“手阳明大肠经”,你应预期它位于手臂外侧(前缘),并且在流注中紧接在肺经之后。若资料中的位置与此矛盾,就应回头核对来源。</p>
+<p><strong>小结。</strong> 十二经脉是一套命名清晰、规则统一的定位体系。把“肢体、阴阳、脏腑”三要素拆开读,比死记十二个名字更有效。</p>
+  </main>
+  <footer class="spl-credit"><span class="spl-credit__meta">Ch8: Rhythms — Sleep, the Organ Clock, and the Seasons (天人相应) (Level: College &middot; Language: ZH &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
+</div>
+</body>
+</html>

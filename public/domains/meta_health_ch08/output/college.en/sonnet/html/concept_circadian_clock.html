@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Circadian Clock | Meta Health Ch08</title>
+<script>
+MathJax = {
+  loader: { load: ['[tex]/mathtools'] },
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']],
+         packages: { '[+]': ['mathtools'] } },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<script src="https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.min.js"></script>
+<script>mermaid.initialize({ startOnLoad: true, theme: 'neutral' });</script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+footer.spl-credit span{display:block}
+footer.spl-credit .spl-credit__meta{margin-bottom:4px}
+.cb-figure{margin:24px 0;text-align:center}
+.cb-figure img{max-width:100%;height:auto;border:1px solid #e0e0d8;border-radius:6px}
+figcaption{font-size:.82rem;color:#666;margin-top:8px;font-style:italic;text-align:center}
+pre.mermaid{background:none;border:none;padding:0;overflow:visible;margin:16px 0}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="the-circadian-clock">The Circadian Clock</h2>
+<p><strong>Definition.</strong> The circadian clock is the body's internal timer, which runs on a cycle of roughly 24 hours (<em>circa</em> = about, <em>dies</em> = day). The master clock is the suprachiasmatic nucleus (SCN), a cluster of about 20,000 neurons in the hypothalamus, just above where the optic nerves cross. Nearly every other tissue, including liver, muscle, fat, and gut, also has its own peripheral clock. These are cells whose clock genes switch on and off in a self-sustaining cycle. The SCN synchronizes them, mainly through hormone signals such as cortisol and melatonin and through body temperature.</p>
+<p>The clock is not exactly 24 hours long. In people shielded from time cues, the average intrinsic period is about 24.2 hours. Daily <strong>zeitgebers</strong> ("time-givers") reset it, and the strongest is light. Specialized retinal cells containing melanopsin respond most to blue-rich light and report it directly to the SCN. Meal timing, exercise, and social routine act as weaker zeitgebers, mostly for peripheral clocks.</p>
+<p><strong>Worked example.</strong> Suppose a person's intrinsic period is 24.2 hours and no zeitgebers reset it. The clock then drifts later by</p>
+$$24.2 - 24 = 0.2 \text{ hours} = 12 \text{ minutes per day}.$$
+<p>After 30 days the drift is $30 \times 12 = 360$ minutes, or 6 hours. Bedtime would slide from 11 p.m. to 5 a.m. Real people don't drift like this because morning light nudges the clock earlier by about the same 12 minutes each day. Light at the wrong time can push the clock the wrong way. Bright light late in the evening delays it. Bright light in the early morning advances it.</p>
+<p><strong>Problem-solving application: jet lag.</strong> A traveler flies east from New York to Paris, a 6-hour shift. Their clock still runs on New York time, so Paris bedtime at 11 p.m. feels like 5 p.m. to the body, and falling asleep is hard. Because the clock must advance, the useful strategy is to seek bright light in the morning and avoid it late in the evening. Adjustment is typically about 1 hour per day for eastward travel. Westward travel requires a delay, which is slightly easier because the clock's natural period is already a little over 24 hours. Estimated recovery for this trip is therefore roughly 6 days.</p>
+<p>The same reasoning applies to shift work and to teenagers' late schedules. Eating at night, when the liver and pancreas clocks expect fasting, is associated with poorer glucose handling than the same meal in daytime. To work with your clock, keep consistent sleep and wake times, get outdoor light soon after waking, and dim screens and lights in the hours before bed.</p>
+<p><strong>Evidence note.</strong> TCM describes an organ clock in which qi is said to peak in a different organ every two hours. That scheme has no support in circadian biology, which measures timing through clock genes, melatonin, cortisol, and core body temperature.</p>
+  </main>
+  <footer class="spl-credit"><span class="spl-credit__meta">Ch8: Rhythms — Sleep, the Organ Clock, and the Seasons (天人相应) (Level: College &middot; Language: EN &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
+</div>
+</body>
+</html>

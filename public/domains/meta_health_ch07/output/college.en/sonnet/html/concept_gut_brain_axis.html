@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Gut–Brain Axis | Meta Health Ch07</title>
+<script>
+MathJax = {
+  loader: { load: ['[tex]/mathtools'] },
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']],
+         packages: { '[+]': ['mathtools'] } },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<script src="https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.min.js"></script>
+<script>mermaid.initialize({ startOnLoad: true, theme: 'neutral' });</script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+footer.spl-credit span{display:block}
+footer.spl-credit .spl-credit__meta{margin-bottom:4px}
+.cb-figure{margin:24px 0;text-align:center}
+.cb-figure img{max-width:100%;height:auto;border:1px solid #e0e0d8;border-radius:6px}
+figcaption{font-size:.82rem;color:#666;margin-top:8px;font-style:italic;text-align:center}
+pre.mermaid{background:none;border:none;padding:0;overflow:visible;margin:16px 0}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="the-gut-brain-axis">The Gut–Brain Axis</h2>
+<p>The <strong>gut–brain axis</strong> is the two-way communication network linking the digestive tract with the central nervous system. Signals travel in both directions through four main channels:</p>
+<li><strong>The vagus nerve</strong>, a long cranial nerve. About 80% of its fibers carry information <em>from</em> the gut <em>to</em> the brain.</li>
+<li><strong>Hormones</strong>, such as ghrelin (rising before meals) and cholecystokinin and GLP-1 (released after eating). These signal hunger and fullness.</li>
+<li><strong>Immune signals</strong>, including cytokines released by gut immune cells, which can influence brain inflammation and mood.</li>
+<li><strong>The microbiome</strong>, the trillions of microbes in the gut. They ferment fiber into short-chain fatty acids and help produce neurotransmitter precursors. In fact, roughly 90% of the body's serotonin is made in the gut, though that serotonin does not cross into the brain.</li>
+<p>The brain talks back too. Stress alters gut motility, secretion and permeability, which is why nervousness can cause nausea or diarrhea.</p>
+<h3 id="worked-example-a-stressful-exam">Worked example: a stressful exam</h3>
+<p>A student eats breakfast and then sits a high-stakes exam. Trace the signals:</p>
+<li><strong>Brain → gut:</strong> Anxiety activates the stress response (cortisol, sympathetic nerves). Stomach emptying slows and gut motility changes, so the student feels "butterflies" or nausea.</li>
+<li><strong>Gut → brain:</strong> The discomfort travels up the vagus nerve and is read by the brain as more threat, which raises anxiety further.</li>
+<li><strong>Hormones:</strong> Ghrelin is suppressed by stress, so hunger fades, and the student skips lunch.</li>
+<p>The result is a feedback loop. The brain affects the gut, and the gut's signals feed back to the brain.</p>
+<h3 id="problem-solving-application">Problem-solving application</h3>
+<p><strong>Problem:</strong> A person has irritable bowel syndrome (IBS) with symptoms that worsen during stressful weeks. Using the axis, which interventions could work, and at which channel?</p>
+<p>| Channel | Intervention | Reasoning | |---|---|---| | Brain → gut | Cognitive behavioral therapy, gut-directed hypnotherapy, regular sleep | Lowers the stress signal sent to the gut. Clinical trials support these for IBS. | | Vagus nerve | Slow breathing (about 6 breaths per minute) | Increases parasympathetic activity. | | Microbiome | Fiber-rich diet, fermented foods | Increases the production of short-chain fatty acids. | | Immune | Identifying food triggers, treating inflammation | Reduces the immune signals that sensitize the gut. |</p>
+<p>A good approach is to change one variable at a time and track symptoms for 2–4 weeks. That shows which channel is responsible for the person's symptoms.</p>
+<p><strong>Evidence note:</strong> The axis itself is well established. Many popular claims go further than the data do, however. For example, most human evidence linking specific probiotics to depression or anxiety is still preliminary, and mouse results often fail to carry over to people. Treat product claims such as "a probiotic that fixes your mood" with skepticism.</p>
+<pre class="mermaid">flowchart LR
+    B[Brain] -->|Stress hormones and nerves| G[Gut]
+    G -->|Vagus nerve| B
+    M[Microbiome] -->|Fatty acids and metabolites| G
+    G -->|Gut hormones| B
+    I[Immune system] -->|Cytokines| B
+    G --> I</pre>
+<p><em>The gut–brain axis: the brain and gut exchange signals through nerves, hormones and immune messengers, with the microbiome shaping the gut's side of the conversation.</em></p>
+  </main>
+  <footer class="spl-credit"><span class="spl-credit__meta">Ch7: Stress, Emotion, and the Flow of Qi and Blood (情志与气血) (Level: College &middot; Language: EN &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
+</div>
+</body>
+</html>

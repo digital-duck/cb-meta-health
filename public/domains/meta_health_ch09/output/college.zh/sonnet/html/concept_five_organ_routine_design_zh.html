@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>设计你的五脏操练习 | Meta Health Ch09</title>
+<script>
+MathJax = {
+  loader: { load: ['[tex]/mathtools'] },
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']],
+         packages: { '[+]': ['mathtools'] } },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<script src="https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.min.js"></script>
+<script>mermaid.initialize({ startOnLoad: true, theme: 'neutral' });</script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+footer.spl-credit span{display:block}
+footer.spl-credit .spl-credit__meta{margin-bottom:4px}
+.cb-figure{margin:24px 0;text-align:center}
+.cb-figure img{max-width:100%;height:auto;border:1px solid #e0e0d8;border-radius:6px}
+figcaption{font-size:.82rem;color:#666;margin-top:8px;font-style:italic;text-align:center}
+pre.mermaid{background:none;border:none;padding:0;overflow:visible;margin:16px 0}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="设计你的五脏操练习">设计你的五脏操练习</h2>
+<p><strong>定义。</strong> 五脏操练习是把一组动作按固定顺序排成日常训练的方法。设计这样的练习，就是回答四个问题：练什么、练多久、练多强、怎样安排顺序。中医认为，五脏（肝、心、脾、肺、肾）各有对应的调养方式；现代运动科学则用可测量的量来评估效果，比如心率、时长和主观用力程度。设计时可以把两者分开：传统的分类决定动作的搭配，可测量的指标决定强度和安全。传统说法本身缺少足够的临床证据，所以练习的效果要靠你自己记录的数据来判断。</p>
+<p><strong>设计的四个要素。</strong></p>
+<li><strong>目标：</strong> 想改善什么，比如久坐后的僵硬、爬楼梯时气短，或睡前的紧张。</li>
+<li><strong>动作选择：</strong> 每个"脏"选一个动作，总共五个。</li>
+<li><strong>强度：</strong> 用心率或自觉用力程度（1～10 分）控制。中等强度的常用参考是最大心率的 $64\%\sim76\%$，最大心率可粗略估算为 $220-\text{年龄}$。</li>
+<li><strong>时间与顺序：</strong> 总时长 15～20 分钟，先热身，再主体，最后放松。</li>
+<p><strong>例题。</strong> 小林今年 20 岁，每天伏案学习 8 小时，想设计一套 15 分钟的晨练。</p>
+<li>最大心率约为 $220-20=200$ 次/分。</li>
+<li>中等强度区间约为 $200\times0.64=128$ 到 $200\times0.76=152$ 次/分。</li>
+<li>动作安排如下：</li>
+<p>| 脏 | 动作 | 时间 | 强度 | |---|---|---|---| | 肝 | 站姿侧身拉伸（舒展两胁） | 3 分钟 | 低，3 分 | | 心 | 原地踏步加摆臂 | 4 分钟 | 中，5～6 分 | | 脾 | 腹部按摩加转腰 | 3 分钟 | 低，3 分 | | 肺 | 扩胸加深呼吸 | 3 分钟 | 低，3 分 | | 肾 | 双手搓腰加屈膝下蹲 | 2 分钟 | 中低，4 分 |</p>
+<p>小林的做法是把需要明显提高心率的"心"动作放在中间，前后用低强度动作热身和放松。</p>
+<p><strong>问题解决应用。</strong> 练了两周后，小林发现踏步时心率到了 165 次/分，超出了目标区间，而且有些头晕。可以按下面的步骤调整：</p>
+<li>找原因：是踏步太快，还是前一晚没睡好？</li>
+<li>先改变量：把踏步时间减为 3 分钟，速度放慢，并把省下的 1 分钟加到呼吸放松上。</li>
+<li>重新测量：下一次练习后，再记录心率和自觉用力程度。</li>
+<p>如果调整后仍然头晕，或有胸闷、胸痛，就应停止练习并去看医生。个人设计的练习不能代替诊断和治疗。</p>
+<pre class="mermaid">flowchart LR
+A[确定目标] --> B[每脏选一个动作]
+B --> C[按心率设定强度]
+C --> D[安排顺序与时长]
+D --> E[练习并记录]
+E --> F{达到目标区间?}
+F -- 否 --> C
+F -- 是 --> G[保持并逐步加量]</pre>
+<p><em>设计流程图：从确定目标到记录和调整，形成可以反复修正的循环。</em></p>
+<p><strong>小结。</strong> 好的个人练习要有明确的目标，有清楚的动作和顺序，并用心率等可测量的量来检验。如果检验不合格，就改动作或强度，再测一次。</p>
+  </main>
+  <footer class="spl-credit"><span class="spl-credit__meta">Ch9: The Unified Internal Conditioning Framework (内调一元论) (Level: College &middot; Language: ZH &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
+</div>
+</body>
+</html>

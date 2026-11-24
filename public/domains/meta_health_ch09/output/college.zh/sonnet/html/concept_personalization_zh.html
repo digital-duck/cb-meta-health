@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>个性化调整 | Meta Health Ch09</title>
+<script>
+MathJax = {
+  loader: { load: ['[tex]/mathtools'] },
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']],
+         packages: { '[+]': ['mathtools'] } },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<script src="https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.min.js"></script>
+<script>mermaid.initialize({ startOnLoad: true, theme: 'neutral' });</script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+footer.spl-credit span{display:block}
+footer.spl-credit .spl-credit__meta{margin-bottom:4px}
+.cb-figure{margin:24px 0;text-align:center}
+.cb-figure img{max-width:100%;height:auto;border:1px solid #e0e0d8;border-radius:6px}
+figcaption{font-size:.82rem;color:#666;margin-top:8px;font-style:italic;text-align:center}
+pre.mermaid{background:none;border:none;padding:0;overflow:visible;margin:16px 0}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="个性化调整">个性化调整</h2>
+<p><strong>定义。</strong> 个性化调整是指:不给所有人开同一张"通用处方",而是根据个人的体质(体质)、年龄、体能水平、慢性疾病和文化饮食背景,修改框架中的具体参数。框架本身(例如"规律运动、均衡饮食、充足睡眠")保持不变,变化的是强度、频率、食物选择和禁忌。</p>
+<p>中医(Traditional Chinese Medicine,TCM)把个体差异称为"体质",常见分类有平和质、气虚质、阳虚质、痰湿质等。需要说明的是,体质分类是一种经验性的归纳工具,其各类型的科学效度仍缺乏充分的临床证据。相比之下,年龄、体能、血糖、血压等指标有明确的测量方法,应当优先作为调整依据。</p>
+<p><strong>例题。</strong> 某健康指南建议成年人每周进行 150 分钟中等强度有氧运动。比较两位使用者:</p>
+<p>| 项目 | 小李 | 张阿姨 | |---|---|---| | 年龄 | 20 岁 | 62 岁 | | 健康状况 | 无慢性病 | 高血压(已服药) | | 运动基础 | 经常跑步 | 几乎不运动 |</p>
+<p>最大心率的常用估算公式为:</p>
+$$HR_{\max} \approx 220 - \text{年龄}$$
+<p>中等强度通常取最大心率的 $64\%$ 至 $76\%$。</p>
+<li>小李:$HR_{\max} \approx 200$ 次/分,目标区间约 $128$ 至 $152$ 次/分。</li>
+<li>张阿姨:$HR_{\max} \approx 158$ 次/分,目标区间约 $101$ 至 $120$ 次/分。</li>
+<p>此外,张阿姨应先咨询医生:部分降压药(如 β 受体阻滞剂)会压低心率,此时用心率区间会失准,改用自觉用力程度(能说话但不能唱歌)更合适。她也不必一开始就做满 150 分钟,可从每天 10 分钟快走起步,逐周增加。</p>
+<p><strong>问题求解应用。</strong> 遇到具体情形时,可按四步处理:</p>
+<li><strong>先筛查风险</strong>:有无慢性病、用药、怀孕等需要医生参与的情况。</li>
+<li><strong>再调参数</strong>:根据年龄和体能调整强度与时长,而不是调整目标本身。</li>
+<li><strong>结合文化与习惯</strong>:例如乳糖不耐受者可用豆制品补钙;偏好温热饮食的人,在不影响营养的前提下,可保留这一习惯以提高坚持度。</li>
+<li><strong>定期复查</strong>:每 4 至 8 周依据体重、血压、血糖或主观感受重新评估。</li>
+<p>练习:一位 45 岁、空腹血糖偏高、平时久坐的上班族,想开始运动。请估算其最大心率与中等强度区间,并列出你会先问的三个问题。(参考:$HR_{\max}\approx175$,区间约 $112$ 至 $133$ 次/分;可问用药情况、有无胸闷或头晕史、膝关节是否健康。)</p>
+<p>个性化不等于随意。它要求调整有依据,并且随着身体状况的变化持续修正。</p>
+  </main>
+  <footer class="spl-credit"><span class="spl-credit__meta">Ch9: The Unified Internal Conditioning Framework (内调一元论) (Level: College &middot; Language: ZH &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
+</div>
+</body>
+</html>

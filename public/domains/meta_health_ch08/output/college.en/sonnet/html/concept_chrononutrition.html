@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Chrononutrition | Meta Health Ch08</title>
+<script>
+MathJax = {
+  loader: { load: ['[tex]/mathtools'] },
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']],
+         packages: { '[+]': ['mathtools'] } },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<script src="https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.min.js"></script>
+<script>mermaid.initialize({ startOnLoad: true, theme: 'neutral' });</script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+footer.spl-credit span{display:block}
+footer.spl-credit .spl-credit__meta{margin-bottom:4px}
+.cb-figure{margin:24px 0;text-align:center}
+.cb-figure img{max-width:100%;height:auto;border:1px solid #e0e0d8;border-radius:6px}
+figcaption{font-size:.82rem;color:#666;margin-top:8px;font-style:italic;text-align:center}
+pre.mermaid{background:none;border:none;padding:0;overflow:visible;margin:16px 0}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="chrononutrition">Chrononutrition</h2>
+<p><strong>Chrononutrition</strong> is the study of how the <em>timing</em> of eating, not just the amount or content, affects health. Its core observation is that the body does not process food the same way at all hours. Metabolism follows the circadian clock, the roughly 24-hour internal rhythm set largely by light and darkness. In the morning, tissues respond more strongly to insulin, the hormone that moves glucose from blood into cells. In the evening and at night, insulin sensitivity declines, and the same meal produces a larger, longer-lasting rise in blood glucose.</p>
+<p>Two practical rules follow from this:</p>
+<li><strong>Front-load energy.</strong> Eat more of the day's calories earlier, with breakfast and lunch at least as substantial as dinner.</li>
+<li><strong>Finish eating a few hours before bed.</strong> A common target is 2–3 hours, so digestion and the glucose response are mostly complete before sleep.</li>
+<p>Controlled studies, mostly short-term and in small groups, have found that identical meals eaten in the evening raise glucose more than the same meals eaten in the morning. Long-term outcome evidence is still limited, so treat the rules as sensible defaults rather than guarantees.</p>
+<h3 id="worked-example">Worked example</h3>
+<p>Two people each eat 2,000 kcal per day, with the same foods.</p>
+<p>| | Breakfast | Lunch | Dinner | Last bite | |---|---|---|---|---| | Person A | 400 kcal | 600 kcal | 1,000 kcal | 11:30 pm | | Person B | 600 kcal | 800 kcal | 600 kcal | 7:00 pm |</p>
+<p>Person A takes 50% of daily energy in the evening, when insulin sensitivity is lowest, and eats 30 minutes before a bedtime of midnight. The share of energy at dinner is</p>
+$$\frac{1000}{2000} = 50\%$$
+<p>Person B's is $\frac{600}{2000} = 30\%$, and the last meal ends 5 hours before a midnight bedtime. Total energy is identical, but Person B's schedule fits the clock better.</p>
+<h3 id="problem-solving-application">Problem-solving application</h3>
+<p><strong>Problem.</strong> A night-shift nurse works 10 pm to 6 am and sleeps 8:30 am to 4:30 pm. How should they apply chrononutrition?</p>
+<p><strong>Solution.</strong> Do not copy a daytime schedule. The rules are anchored to <em>sleep</em>, not to the wall clock:</p>
+<li>Treat waking (4:30 pm) as "morning." Eat the largest meal soon after, around 5 pm, before the shift.</li>
+<li>Take a moderate meal near the middle of the shift, such as 1 am.</li>
+<li>Keep the last meal 2–3 hours before sleep. Here, that means finishing by about 6 am. Choose a light snack, such as yogurt and fruit, over a heavy meal.</li>
+<p>Shift work is a known challenge for glucose regulation, because eating and light exposure conflict with the internal clock. Timing meals this way is a reasonable way to reduce the mismatch, but it does not remove it.</p>
+<p><strong>Check yourself.</strong> If your usual bedtime is 11 pm, what is your latest sensible finishing time for dinner? (Answer: about 8 pm.) What single change would most improve a day on which you currently skip breakfast and eat 60% of your energy after 7 pm?</p>
+  </main>
+  <footer class="spl-credit"><span class="spl-credit__meta">Ch8: Rhythms — Sleep, the Organ Clock, and the Seasons (天人相应) (Level: College &middot; Language: EN &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
+</div>
+</body>
+</html>

@@ -2803,7 +2803,7 @@
       {
         "name": "acute_vs_chronic_stress",
         "label": "Acute Vs Chronic Stress",
-        "file": "output/core.en/sonnet/html/concept_acute_vs_chronic_stress.html",
+        "file": "output/college.en/sonnet/html/concept_acute_vs_chronic_stress.html",
         "model": "sonnet",
         "language": "en"
       },
@@ -2817,7 +2817,7 @@
       {
         "name": "allostatic_load",
         "label": "Allostatic Load",
-        "file": "output/core.en/sonnet/html/concept_allostatic_load.html",
+        "file": "output/college.en/sonnet/html/concept_allostatic_load.html",
         "model": "sonnet",
         "language": "en"
       },
@@ -2831,7 +2831,7 @@
       {
         "name": "breath_as_bridge",
         "label": "Breath As Bridge",
-        "file": "output/core.en/sonnet/html/concept_breath_as_bridge.html",
+        "file": "output/college.en/sonnet/html/concept_breath_as_bridge.html",
         "model": "sonnet",
         "language": "en"
       },
@@ -2845,7 +2845,7 @@
       {
         "name": "diaphragmatic_breathing",
         "label": "Diaphragmatic Breathing",
-        "file": "output/core.en/sonnet/html/concept_diaphragmatic_breathing.html",
+        "file": "output/college.en/sonnet/html/concept_diaphragmatic_breathing.html",
         "model": "sonnet",
         "language": "en"
       },
@@ -2859,7 +2859,7 @@
       {
         "name": "emotional_eating",
         "label": "Emotional Eating",
-        "file": "output/core.en/sonnet/html/concept_emotional_eating.html",
+        "file": "output/college.en/sonnet/html/concept_emotional_eating.html",
         "model": "sonnet",
         "language": "en"
       },
@@ -2873,7 +2873,7 @@
       {
         "name": "five_emotions_five_organs",
         "label": "Five Emotions Five Organs",
-        "file": "output/core.en/sonnet/html/concept_five_emotions_five_organs.html",
+        "file": "output/college.en/sonnet/html/concept_five_emotions_five_organs.html",
         "model": "sonnet",
         "language": "en"
       },
@@ -2887,7 +2887,7 @@
       {
         "name": "five_phase_correspondences",
         "label": "Five Phase Correspondences",
-        "file": "output/core.en/sonnet/html/concept_five_phase_correspondences.html",
+        "file": "output/college.en/sonnet/html/concept_five_phase_correspondences.html",
         "model": "sonnet",
         "language": "en"
       },
@@ -2901,7 +2901,7 @@
       {
         "name": "gut_brain_axis",
         "label": "Gut Brain Axis",
-        "file": "output/core.en/sonnet/html/concept_gut_brain_axis.html",
+        "file": "output/college.en/sonnet/html/concept_gut_brain_axis.html",
         "model": "sonnet",
         "language": "en"
       },
@@ -2915,7 +2915,7 @@
       {
         "name": "hpa_axis",
         "label": "Hpa Axis",
-        "file": "output/core.en/sonnet/html/concept_hpa_axis.html",
+        "file": "output/college.en/sonnet/html/concept_hpa_axis.html",
         "model": "sonnet",
         "language": "en"
       },
@@ -2929,7 +2929,7 @@
       {
         "name": "hrv_self_monitoring",
         "label": "Hrv Self Monitoring",
-        "file": "output/core.en/sonnet/html/concept_hrv_self_monitoring.html",
+        "file": "output/college.en/sonnet/html/concept_hrv_self_monitoring.html",
         "model": "sonnet",
         "language": "en"
       },
@@ -2943,7 +2943,7 @@
       {
         "name": "liver_free_flow_shuxie",
         "label": "Liver Free Flow Shuxie",
-        "file": "output/core.en/sonnet/html/concept_liver_free_flow_shuxie.html",
+        "file": "output/college.en/sonnet/html/concept_liver_free_flow_shuxie.html",
         "model": "sonnet",
         "language": "en"
       },
@@ -2957,7 +2957,7 @@
       {
         "name": "liver_opening_movements",
         "label": "Liver Opening Movements",
-        "file": "output/core.en/sonnet/html/concept_liver_opening_movements.html",
+        "file": "output/college.en/sonnet/html/concept_liver_opening_movements.html",
         "model": "sonnet",
         "language": "en"
       },
@@ -2971,7 +2971,7 @@
       {
         "name": "liver_qi_stagnation",
         "label": "Liver Qi Stagnation",
-        "file": "output/core.en/sonnet/html/concept_liver_qi_stagnation.html",
+        "file": "output/college.en/sonnet/html/concept_liver_qi_stagnation.html",
         "model": "sonnet",
         "language": "en"
       },
@@ -2985,7 +2985,7 @@
       {
         "name": "liver_spleen_relationship",
         "label": "Liver Spleen Relationship",
-        "file": "output/core.en/sonnet/html/concept_liver_spleen_relationship.html",
+        "file": "output/college.en/sonnet/html/concept_liver_spleen_relationship.html",
         "model": "sonnet",
         "language": "en"
       },
@@ -2999,7 +2999,7 @@
       {
         "name": "mind_regulation_tiaoxin",
         "label": "Mind Regulation Tiaoxin",
-        "file": "output/core.en/sonnet/html/concept_mind_regulation_tiaoxin.html",
+        "file": "output/college.en/sonnet/html/concept_mind_regulation_tiaoxin.html",
         "model": "sonnet",
         "language": "en"
       },
@@ -3013,7 +3013,7 @@
       {
         "name": "postprandial_hyperemia",
         "label": "Postprandial Hyperemia",
-        "file": "output/core.en/sonnet/html/concept_postprandial_hyperemia.html",
+        "file": "output/college.en/sonnet/html/concept_postprandial_hyperemia.html",
         "model": "sonnet",
         "language": "en"
       },
@@ -3027,7 +3027,7 @@
       {
         "name": "qi_stagnation_blood_stasis",
         "label": "Qi Stagnation Blood Stasis",
-        "file": "output/core.en/sonnet/html/concept_qi_stagnation_blood_stasis.html",
+        "file": "output/college.en/sonnet/html/concept_qi_stagnation_blood_stasis.html",
         "model": "sonnet",
         "language": "en"
       },
@@ -3041,7 +3041,7 @@
       {
         "name": "releasing_liver_qi_through_movement",
         "label": "Releasing Liver Qi Through Movement",
-        "file": "output/core.en/sonnet/html/concept_releasing_liver_qi_through_movement.html",
+        "file": "output/college.en/sonnet/html/concept_releasing_liver_qi_through_movement.html",
         "model": "sonnet",
         "language": "en"
       },
@@ -3055,7 +3055,7 @@
       {
         "name": "seven_emotions_qiqing",
         "label": "Seven Emotions Qiqing",
-        "file": "output/core.en/sonnet/html/concept_seven_emotions_qiqing.html",
+        "file": "output/college.en/sonnet/html/concept_seven_emotions_qiqing.html",
         "model": "sonnet",
         "language": "en"
       },
@@ -3069,7 +3069,7 @@
       {
         "name": "stress_and_digestion",
         "label": "Stress And Digestion",
-        "file": "output/core.en/sonnet/html/concept_stress_and_digestion.html",
+        "file": "output/college.en/sonnet/html/concept_stress_and_digestion.html",
         "model": "sonnet",
         "language": "en"
       },
@@ -3083,7 +3083,7 @@
       {
         "name": "stress_resilience_routine",
         "label": "Stress Resilience Routine",
-        "file": "output/core.en/sonnet/html/concept_stress_resilience_routine.html",
+        "file": "output/college.en/sonnet/html/concept_stress_resilience_routine.html",
         "model": "sonnet",
         "language": "en"
       },
@@ -3097,7 +3097,7 @@
       {
         "name": "sympathetic_parasympathetic_balance",
         "label": "Sympathetic Parasympathetic Balance",
-        "file": "output/core.en/sonnet/html/concept_sympathetic_parasympathetic_balance.html",
+        "file": "output/college.en/sonnet/html/concept_sympathetic_parasympathetic_balance.html",
         "model": "sonnet",
         "language": "en"
       },
@@ -3111,7 +3111,7 @@
       {
         "name": "vagal_tone_and_hrv",
         "label": "Vagal Tone And Hrv",
-        "file": "output/core.en/sonnet/html/concept_vagal_tone_and_hrv.html",
+        "file": "output/college.en/sonnet/html/concept_vagal_tone_and_hrv.html",
         "model": "sonnet",
         "language": "en"
       },
@@ -3125,7 +3125,7 @@
       {
         "name": "wood_overacting_on_earth",
         "label": "Wood Overacting On Earth",
-        "file": "output/core.en/sonnet/html/concept_wood_overacting_on_earth.html",
+        "file": "output/college.en/sonnet/html/concept_wood_overacting_on_earth.html",
         "model": "sonnet",
         "language": "en"
       },
@@ -3179,254 +3179,254 @@
       {
         "name": "breakfast_in_chenshi",
         "label": "Breakfast In Chenshi",
-        "file": "output/core.zh/sonnet/html/concept_breakfast_in_chenshi_zh.html",
-        "model": "sonnet",
-        "language": "zh"
-      },
-      {
-        "name": "breakfast_in_chenshi",
-        "label": "Breakfast In Chenshi",
-        "file": "output/core.en/sonnet/html/concept_breakfast_in_chenshi.html",
+        "file": "output/college.en/sonnet/html/concept_breakfast_in_chenshi.html",
         "model": "sonnet",
         "language": "en"
       },
       {
-        "name": "chrononutrition",
-        "label": "Chrononutrition",
-        "file": "output/core.zh/sonnet/html/concept_chrononutrition_zh.html",
+        "name": "breakfast_in_chenshi_zh",
+        "label": "Breakfast In Chenshi Zh",
+        "file": "output/college.zh/sonnet/html/concept_breakfast_in_chenshi_zh.html",
         "model": "sonnet",
         "language": "zh"
       },
       {
         "name": "chrononutrition",
         "label": "Chrononutrition",
-        "file": "output/core.en/sonnet/html/concept_chrononutrition.html",
+        "file": "output/college.en/sonnet/html/concept_chrononutrition.html",
         "model": "sonnet",
         "language": "en"
       },
       {
-        "name": "circadian_clock",
-        "label": "Circadian Clock",
-        "file": "output/core.zh/sonnet/html/concept_circadian_clock_zh.html",
+        "name": "chrononutrition_zh",
+        "label": "Chrononutrition Zh",
+        "file": "output/college.zh/sonnet/html/concept_chrononutrition_zh.html",
         "model": "sonnet",
         "language": "zh"
       },
       {
         "name": "circadian_clock",
         "label": "Circadian Clock",
-        "file": "output/core.en/sonnet/html/concept_circadian_clock.html",
+        "file": "output/college.en/sonnet/html/concept_circadian_clock.html",
         "model": "sonnet",
         "language": "en"
       },
       {
-        "name": "cortisol_melatonin_rhythm",
-        "label": "Cortisol Melatonin Rhythm",
-        "file": "output/core.zh/sonnet/html/concept_cortisol_melatonin_rhythm_zh.html",
+        "name": "circadian_clock_zh",
+        "label": "Circadian Clock Zh",
+        "file": "output/college.zh/sonnet/html/concept_circadian_clock_zh.html",
         "model": "sonnet",
         "language": "zh"
       },
       {
         "name": "cortisol_melatonin_rhythm",
         "label": "Cortisol Melatonin Rhythm",
-        "file": "output/core.en/sonnet/html/concept_cortisol_melatonin_rhythm.html",
+        "file": "output/college.en/sonnet/html/concept_cortisol_melatonin_rhythm.html",
         "model": "sonnet",
         "language": "en"
       },
       {
-        "name": "day_night_yin_yang",
-        "label": "Day Night Yin Yang",
-        "file": "output/core.zh/sonnet/html/concept_day_night_yin_yang_zh.html",
+        "name": "cortisol_melatonin_rhythm_zh",
+        "label": "Cortisol Melatonin Rhythm Zh",
+        "file": "output/college.zh/sonnet/html/concept_cortisol_melatonin_rhythm_zh.html",
         "model": "sonnet",
         "language": "zh"
       },
       {
         "name": "day_night_yin_yang",
         "label": "Day Night Yin Yang",
-        "file": "output/core.en/sonnet/html/concept_day_night_yin_yang.html",
+        "file": "output/college.en/sonnet/html/concept_day_night_yin_yang.html",
         "model": "sonnet",
         "language": "en"
       },
       {
-        "name": "exercise_timing",
-        "label": "Exercise Timing",
-        "file": "output/core.zh/sonnet/html/concept_exercise_timing_zh.html",
+        "name": "day_night_yin_yang_zh",
+        "label": "Day Night Yin Yang Zh",
+        "file": "output/college.zh/sonnet/html/concept_day_night_yin_yang_zh.html",
         "model": "sonnet",
         "language": "zh"
       },
       {
         "name": "exercise_timing",
         "label": "Exercise Timing",
-        "file": "output/core.en/sonnet/html/concept_exercise_timing.html",
+        "file": "output/college.en/sonnet/html/concept_exercise_timing.html",
         "model": "sonnet",
         "language": "en"
       },
       {
-        "name": "five_phase_correspondences",
-        "label": "Five Phase Correspondences",
-        "file": "output/core.zh/sonnet/html/concept_five_phase_correspondences_zh.html",
+        "name": "exercise_timing_zh",
+        "label": "Exercise Timing Zh",
+        "file": "output/college.zh/sonnet/html/concept_exercise_timing_zh.html",
         "model": "sonnet",
         "language": "zh"
       },
       {
         "name": "five_phase_correspondences",
         "label": "Five Phase Correspondences",
-        "file": "output/core.en/sonnet/html/concept_five_phase_correspondences.html",
+        "file": "output/college.en/sonnet/html/concept_five_phase_correspondences.html",
         "model": "sonnet",
         "language": "en"
       },
       {
-        "name": "four_seasons_regimen",
-        "label": "Four Seasons Regimen",
-        "file": "output/core.zh/sonnet/html/concept_four_seasons_regimen_zh.html",
+        "name": "five_phase_correspondences_zh",
+        "label": "Five Phase Correspondences Zh",
+        "file": "output/college.zh/sonnet/html/concept_five_phase_correspondences_zh.html",
         "model": "sonnet",
         "language": "zh"
       },
       {
         "name": "four_seasons_regimen",
         "label": "Four Seasons Regimen",
-        "file": "output/core.en/sonnet/html/concept_four_seasons_regimen.html",
+        "file": "output/college.en/sonnet/html/concept_four_seasons_regimen.html",
         "model": "sonnet",
         "language": "en"
       },
       {
-        "name": "light_entrainment",
-        "label": "Light Entrainment",
-        "file": "output/core.zh/sonnet/html/concept_light_entrainment_zh.html",
+        "name": "four_seasons_regimen_zh",
+        "label": "Four Seasons Regimen Zh",
+        "file": "output/college.zh/sonnet/html/concept_four_seasons_regimen_zh.html",
         "model": "sonnet",
         "language": "zh"
       },
       {
         "name": "light_entrainment",
         "label": "Light Entrainment",
-        "file": "output/core.en/sonnet/html/concept_light_entrainment.html",
+        "file": "output/college.en/sonnet/html/concept_light_entrainment.html",
         "model": "sonnet",
         "language": "en"
       },
       {
-        "name": "organ_clock_ziwu_liuzhu",
-        "label": "Organ Clock Ziwu Liuzhu",
-        "file": "output/core.zh/sonnet/html/concept_organ_clock_ziwu_liuzhu_zh.html",
+        "name": "light_entrainment_zh",
+        "label": "Light Entrainment Zh",
+        "file": "output/college.zh/sonnet/html/concept_light_entrainment_zh.html",
         "model": "sonnet",
         "language": "zh"
       },
       {
         "name": "organ_clock_ziwu_liuzhu",
         "label": "Organ Clock Ziwu Liuzhu",
-        "file": "output/core.en/sonnet/html/concept_organ_clock_ziwu_liuzhu.html",
+        "file": "output/college.en/sonnet/html/concept_organ_clock_ziwu_liuzhu.html",
         "model": "sonnet",
         "language": "en"
       },
       {
-        "name": "personal_daily_rhythm_schedule",
-        "label": "Personal Daily Rhythm Schedule",
-        "file": "output/core.zh/sonnet/html/concept_personal_daily_rhythm_schedule_zh.html",
+        "name": "organ_clock_ziwu_liuzhu_zh",
+        "label": "Organ Clock Ziwu Liuzhu Zh",
+        "file": "output/college.zh/sonnet/html/concept_organ_clock_ziwu_liuzhu_zh.html",
         "model": "sonnet",
         "language": "zh"
       },
       {
         "name": "personal_daily_rhythm_schedule",
         "label": "Personal Daily Rhythm Schedule",
-        "file": "output/core.en/sonnet/html/concept_personal_daily_rhythm_schedule.html",
+        "file": "output/college.en/sonnet/html/concept_personal_daily_rhythm_schedule.html",
         "model": "sonnet",
         "language": "en"
       },
       {
-        "name": "seasonal_food_and_movement",
-        "label": "Seasonal Food And Movement",
-        "file": "output/core.zh/sonnet/html/concept_seasonal_food_and_movement_zh.html",
+        "name": "personal_daily_rhythm_schedule_zh",
+        "label": "Personal Daily Rhythm Schedule Zh",
+        "file": "output/college.zh/sonnet/html/concept_personal_daily_rhythm_schedule_zh.html",
         "model": "sonnet",
         "language": "zh"
       },
       {
         "name": "seasonal_food_and_movement",
         "label": "Seasonal Food And Movement",
-        "file": "output/core.en/sonnet/html/concept_seasonal_food_and_movement.html",
+        "file": "output/college.en/sonnet/html/concept_seasonal_food_and_movement.html",
         "model": "sonnet",
         "language": "en"
       },
       {
-        "name": "seasonal_organ_care",
-        "label": "Seasonal Organ Care",
-        "file": "output/core.zh/sonnet/html/concept_seasonal_organ_care_zh.html",
+        "name": "seasonal_food_and_movement_zh",
+        "label": "Seasonal Food And Movement Zh",
+        "file": "output/college.zh/sonnet/html/concept_seasonal_food_and_movement_zh.html",
         "model": "sonnet",
         "language": "zh"
       },
       {
         "name": "seasonal_organ_care",
         "label": "Seasonal Organ Care",
-        "file": "output/core.en/sonnet/html/concept_seasonal_organ_care.html",
+        "file": "output/college.en/sonnet/html/concept_seasonal_organ_care.html",
         "model": "sonnet",
         "language": "en"
       },
       {
-        "name": "sleep_and_metabolic_repair",
-        "label": "Sleep And Metabolic Repair",
-        "file": "output/core.zh/sonnet/html/concept_sleep_and_metabolic_repair_zh.html",
+        "name": "seasonal_organ_care_zh",
+        "label": "Seasonal Organ Care Zh",
+        "file": "output/college.zh/sonnet/html/concept_seasonal_organ_care_zh.html",
         "model": "sonnet",
         "language": "zh"
       },
       {
         "name": "sleep_and_metabolic_repair",
         "label": "Sleep And Metabolic Repair",
-        "file": "output/core.en/sonnet/html/concept_sleep_and_metabolic_repair.html",
+        "file": "output/college.en/sonnet/html/concept_sleep_and_metabolic_repair.html",
         "model": "sonnet",
         "language": "en"
       },
       {
-        "name": "sleep_architecture",
-        "label": "Sleep Architecture",
-        "file": "output/core.zh/sonnet/html/concept_sleep_architecture_zh.html",
+        "name": "sleep_and_metabolic_repair_zh",
+        "label": "Sleep And Metabolic Repair Zh",
+        "file": "output/college.zh/sonnet/html/concept_sleep_and_metabolic_repair_zh.html",
         "model": "sonnet",
         "language": "zh"
       },
       {
         "name": "sleep_architecture",
         "label": "Sleep Architecture",
-        "file": "output/core.en/sonnet/html/concept_sleep_architecture.html",
+        "file": "output/college.en/sonnet/html/concept_sleep_architecture.html",
         "model": "sonnet",
         "language": "en"
       },
       {
-        "name": "sleep_before_zishi",
-        "label": "Sleep Before Zishi",
-        "file": "output/core.zh/sonnet/html/concept_sleep_before_zishi_zh.html",
+        "name": "sleep_architecture_zh",
+        "label": "Sleep Architecture Zh",
+        "file": "output/college.zh/sonnet/html/concept_sleep_architecture_zh.html",
         "model": "sonnet",
         "language": "zh"
       },
       {
         "name": "sleep_before_zishi",
         "label": "Sleep Before Zishi",
-        "file": "output/core.en/sonnet/html/concept_sleep_before_zishi.html",
+        "file": "output/college.en/sonnet/html/concept_sleep_before_zishi.html",
         "model": "sonnet",
         "language": "en"
       },
       {
-        "name": "twelve_primary_meridians",
-        "label": "Twelve Primary Meridians",
-        "file": "output/core.zh/sonnet/html/concept_twelve_primary_meridians_zh.html",
+        "name": "sleep_before_zishi_zh",
+        "label": "Sleep Before Zishi Zh",
+        "file": "output/college.zh/sonnet/html/concept_sleep_before_zishi_zh.html",
         "model": "sonnet",
         "language": "zh"
       },
       {
         "name": "twelve_primary_meridians",
         "label": "Twelve Primary Meridians",
-        "file": "output/core.en/sonnet/html/concept_twelve_primary_meridians.html",
+        "file": "output/college.en/sonnet/html/concept_twelve_primary_meridians.html",
         "model": "sonnet",
         "language": "en"
       },
       {
-        "name": "yin_yang",
-        "label": "Yin Yang",
-        "file": "output/core.zh/sonnet/html/concept_yin_yang_zh.html",
+        "name": "twelve_primary_meridians_zh",
+        "label": "Twelve Primary Meridians Zh",
+        "file": "output/college.zh/sonnet/html/concept_twelve_primary_meridians_zh.html",
         "model": "sonnet",
         "language": "zh"
       },
       {
         "name": "yin_yang",
         "label": "Yin Yang",
-        "file": "output/core.en/sonnet/html/concept_yin_yang.html",
+        "file": "output/college.en/sonnet/html/concept_yin_yang.html",
         "model": "sonnet",
         "language": "en"
+      },
+      {
+        "name": "yin_yang_zh",
+        "label": "Yin Yang Zh",
+        "file": "output/college.zh/sonnet/html/concept_yin_yang_zh.html",
+        "model": "sonnet",
+        "language": "zh"
       }
     ],
     "default_level": "core"
@@ -3471,268 +3471,268 @@
       {
         "name": "daily_baduanjin_practice_plan",
         "label": "Daily Baduanjin Practice Plan",
-        "file": "output/core.zh/sonnet/html/concept_daily_baduanjin_practice_plan_zh.html",
-        "model": "sonnet",
-        "language": "zh"
-      },
-      {
-        "name": "daily_baduanjin_practice_plan",
-        "label": "Daily Baduanjin Practice Plan",
-        "file": "output/core.en/sonnet/html/concept_daily_baduanjin_practice_plan.html",
+        "file": "output/college.en/sonnet/html/concept_daily_baduanjin_practice_plan.html",
         "model": "sonnet",
         "language": "en"
       },
       {
-        "name": "daily_meta_health_protocol",
-        "label": "Daily Meta Health Protocol",
-        "file": "output/core.zh/sonnet/html/concept_daily_meta_health_protocol_zh.html",
+        "name": "daily_baduanjin_practice_plan_zh",
+        "label": "Daily Baduanjin Practice Plan Zh",
+        "file": "output/college.zh/sonnet/html/concept_daily_baduanjin_practice_plan_zh.html",
         "model": "sonnet",
         "language": "zh"
       },
       {
         "name": "daily_meta_health_protocol",
         "label": "Daily Meta Health Protocol",
-        "file": "output/core.en/sonnet/html/concept_daily_meta_health_protocol.html",
+        "file": "output/college.en/sonnet/html/concept_daily_meta_health_protocol.html",
         "model": "sonnet",
         "language": "en"
       },
       {
-        "name": "dual_lens_translation",
-        "label": "Dual Lens Translation",
-        "file": "output/core.zh/sonnet/html/concept_dual_lens_translation_zh.html",
+        "name": "daily_meta_health_protocol_zh",
+        "label": "Daily Meta Health Protocol Zh",
+        "file": "output/college.zh/sonnet/html/concept_daily_meta_health_protocol_zh.html",
         "model": "sonnet",
         "language": "zh"
       },
       {
         "name": "dual_lens_translation",
         "label": "Dual Lens Translation",
-        "file": "output/core.en/sonnet/html/concept_dual_lens_translation.html",
+        "file": "output/college.en/sonnet/html/concept_dual_lens_translation.html",
         "model": "sonnet",
         "language": "en"
       },
       {
-        "name": "eating_as_internal_exercise",
-        "label": "Eating As Internal Exercise",
-        "file": "output/core.zh/sonnet/html/concept_eating_as_internal_exercise_zh.html",
+        "name": "dual_lens_translation_zh",
+        "label": "Dual Lens Translation Zh",
+        "file": "output/college.zh/sonnet/html/concept_dual_lens_translation_zh.html",
         "model": "sonnet",
         "language": "zh"
       },
       {
         "name": "eating_as_internal_exercise",
         "label": "Eating As Internal Exercise",
-        "file": "output/core.en/sonnet/html/concept_eating_as_internal_exercise.html",
+        "file": "output/college.en/sonnet/html/concept_eating_as_internal_exercise.html",
         "model": "sonnet",
         "language": "en"
       },
       {
-        "name": "evidence_and_safety_lens",
-        "label": "Evidence And Safety Lens",
-        "file": "output/core.zh/sonnet/html/concept_evidence_and_safety_lens_zh.html",
+        "name": "eating_as_internal_exercise_zh",
+        "label": "Eating As Internal Exercise Zh",
+        "file": "output/college.zh/sonnet/html/concept_eating_as_internal_exercise_zh.html",
         "model": "sonnet",
         "language": "zh"
       },
       {
         "name": "evidence_and_safety_lens",
         "label": "Evidence And Safety Lens",
-        "file": "output/core.en/sonnet/html/concept_evidence_and_safety_lens.html",
+        "file": "output/college.en/sonnet/html/concept_evidence_and_safety_lens.html",
         "model": "sonnet",
         "language": "en"
       },
       {
-        "name": "evidence_quality",
-        "label": "Evidence Quality",
-        "file": "output/core.zh/sonnet/html/concept_evidence_quality_zh.html",
+        "name": "evidence_and_safety_lens_zh",
+        "label": "Evidence And Safety Lens Zh",
+        "file": "output/college.zh/sonnet/html/concept_evidence_and_safety_lens_zh.html",
         "model": "sonnet",
         "language": "zh"
       },
       {
         "name": "evidence_quality",
         "label": "Evidence Quality",
-        "file": "output/core.en/sonnet/html/concept_evidence_quality.html",
+        "file": "output/college.en/sonnet/html/concept_evidence_quality.html",
         "model": "sonnet",
         "language": "en"
       },
       {
-        "name": "five_organ_routine_design",
-        "label": "Five Organ Routine Design",
-        "file": "output/core.zh/sonnet/html/concept_five_organ_routine_design_zh.html",
+        "name": "evidence_quality_zh",
+        "label": "Evidence Quality Zh",
+        "file": "output/college.zh/sonnet/html/concept_evidence_quality_zh.html",
         "model": "sonnet",
         "language": "zh"
       },
       {
         "name": "five_organ_routine_design",
         "label": "Five Organ Routine Design",
-        "file": "output/core.en/sonnet/html/concept_five_organ_routine_design.html",
+        "file": "output/college.en/sonnet/html/concept_five_organ_routine_design.html",
         "model": "sonnet",
         "language": "en"
       },
       {
-        "name": "five_phase_integration_matrix",
-        "label": "Five Phase Integration Matrix",
-        "file": "output/core.zh/sonnet/html/concept_five_phase_integration_matrix_zh.html",
+        "name": "five_organ_routine_design_zh",
+        "label": "Five Organ Routine Design Zh",
+        "file": "output/college.zh/sonnet/html/concept_five_organ_routine_design_zh.html",
         "model": "sonnet",
         "language": "zh"
       },
       {
         "name": "five_phase_integration_matrix",
         "label": "Five Phase Integration Matrix",
-        "file": "output/core.en/sonnet/html/concept_five_phase_integration_matrix.html",
+        "file": "output/college.en/sonnet/html/concept_five_phase_integration_matrix.html",
         "model": "sonnet",
         "language": "en"
       },
       {
-        "name": "five_phase_meal_design",
-        "label": "Five Phase Meal Design",
-        "file": "output/core.zh/sonnet/html/concept_five_phase_meal_design_zh.html",
+        "name": "five_phase_integration_matrix_zh",
+        "label": "Five Phase Integration Matrix Zh",
+        "file": "output/college.zh/sonnet/html/concept_five_phase_integration_matrix_zh.html",
         "model": "sonnet",
         "language": "zh"
       },
       {
         "name": "five_phase_meal_design",
         "label": "Five Phase Meal Design",
-        "file": "output/core.en/sonnet/html/concept_five_phase_meal_design.html",
+        "file": "output/college.en/sonnet/html/concept_five_phase_meal_design.html",
         "model": "sonnet",
         "language": "en"
       },
       {
-        "name": "habit_formation",
-        "label": "Habit Formation",
-        "file": "output/core.zh/sonnet/html/concept_habit_formation_zh.html",
+        "name": "five_phase_meal_design_zh",
+        "label": "Five Phase Meal Design Zh",
+        "file": "output/college.zh/sonnet/html/concept_five_phase_meal_design_zh.html",
         "model": "sonnet",
         "language": "zh"
       },
       {
         "name": "habit_formation",
         "label": "Habit Formation",
-        "file": "output/core.en/sonnet/html/concept_habit_formation.html",
+        "file": "output/college.en/sonnet/html/concept_habit_formation.html",
         "model": "sonnet",
         "language": "en"
       },
       {
-        "name": "harmony_as_health",
-        "label": "Harmony As Health",
-        "file": "output/core.zh/sonnet/html/concept_harmony_as_health_zh.html",
+        "name": "habit_formation_zh",
+        "label": "Habit Formation Zh",
+        "file": "output/college.zh/sonnet/html/concept_habit_formation_zh.html",
         "model": "sonnet",
         "language": "zh"
       },
       {
         "name": "harmony_as_health",
         "label": "Harmony As Health",
-        "file": "output/core.en/sonnet/html/concept_harmony_as_health.html",
+        "file": "output/college.en/sonnet/html/concept_harmony_as_health.html",
         "model": "sonnet",
         "language": "en"
       },
       {
-        "name": "internal_external_cultivation",
-        "label": "Internal External Cultivation",
-        "file": "output/core.zh/sonnet/html/concept_internal_external_cultivation_zh.html",
+        "name": "harmony_as_health_zh",
+        "label": "Harmony As Health Zh",
+        "file": "output/college.zh/sonnet/html/concept_harmony_as_health_zh.html",
         "model": "sonnet",
         "language": "zh"
       },
       {
         "name": "internal_external_cultivation",
         "label": "Internal External Cultivation",
-        "file": "output/core.en/sonnet/html/concept_internal_external_cultivation.html",
+        "file": "output/college.en/sonnet/html/concept_internal_external_cultivation.html",
         "model": "sonnet",
         "language": "en"
       },
       {
-        "name": "mind_body_digestive_loop",
-        "label": "Mind Body Digestive Loop",
-        "file": "output/core.zh/sonnet/html/concept_mind_body_digestive_loop_zh.html",
+        "name": "internal_external_cultivation_zh",
+        "label": "Internal External Cultivation Zh",
+        "file": "output/college.zh/sonnet/html/concept_internal_external_cultivation_zh.html",
         "model": "sonnet",
         "language": "zh"
       },
       {
         "name": "mind_body_digestive_loop",
         "label": "Mind Body Digestive Loop",
-        "file": "output/core.en/sonnet/html/concept_mind_body_digestive_loop.html",
+        "file": "output/college.en/sonnet/html/concept_mind_body_digestive_loop.html",
         "model": "sonnet",
         "language": "en"
       },
       {
-        "name": "mindful_meal_protocol",
-        "label": "Mindful Meal Protocol",
-        "file": "output/core.zh/sonnet/html/concept_mindful_meal_protocol_zh.html",
+        "name": "mind_body_digestive_loop_zh",
+        "label": "Mind Body Digestive Loop Zh",
+        "file": "output/college.zh/sonnet/html/concept_mind_body_digestive_loop_zh.html",
         "model": "sonnet",
         "language": "zh"
       },
       {
         "name": "mindful_meal_protocol",
         "label": "Mindful Meal Protocol",
-        "file": "output/core.en/sonnet/html/concept_mindful_meal_protocol.html",
+        "file": "output/college.en/sonnet/html/concept_mindful_meal_protocol.html",
         "model": "sonnet",
         "language": "en"
       },
       {
-        "name": "organ_training_principles",
-        "label": "Organ Training Principles",
-        "file": "output/core.zh/sonnet/html/concept_organ_training_principles_zh.html",
+        "name": "mindful_meal_protocol_zh",
+        "label": "Mindful Meal Protocol Zh",
+        "file": "output/college.zh/sonnet/html/concept_mindful_meal_protocol_zh.html",
         "model": "sonnet",
         "language": "zh"
       },
       {
         "name": "organ_training_principles",
         "label": "Organ Training Principles",
-        "file": "output/core.en/sonnet/html/concept_organ_training_principles.html",
+        "file": "output/college.en/sonnet/html/concept_organ_training_principles.html",
         "model": "sonnet",
         "language": "en"
       },
       {
-        "name": "personal_daily_rhythm_schedule",
-        "label": "Personal Daily Rhythm Schedule",
-        "file": "output/core.zh/sonnet/html/concept_personal_daily_rhythm_schedule_zh.html",
+        "name": "organ_training_principles_zh",
+        "label": "Organ Training Principles Zh",
+        "file": "output/college.zh/sonnet/html/concept_organ_training_principles_zh.html",
         "model": "sonnet",
         "language": "zh"
       },
       {
         "name": "personal_daily_rhythm_schedule",
         "label": "Personal Daily Rhythm Schedule",
-        "file": "output/core.en/sonnet/html/concept_personal_daily_rhythm_schedule.html",
+        "file": "output/college.en/sonnet/html/concept_personal_daily_rhythm_schedule.html",
         "model": "sonnet",
         "language": "en"
       },
       {
-        "name": "personalization",
-        "label": "Personalization",
-        "file": "output/core.zh/sonnet/html/concept_personalization_zh.html",
+        "name": "personal_daily_rhythm_schedule_zh",
+        "label": "Personal Daily Rhythm Schedule Zh",
+        "file": "output/college.zh/sonnet/html/concept_personal_daily_rhythm_schedule_zh.html",
         "model": "sonnet",
         "language": "zh"
       },
       {
         "name": "personalization",
         "label": "Personalization",
-        "file": "output/core.en/sonnet/html/concept_personalization.html",
+        "file": "output/college.en/sonnet/html/concept_personalization.html",
         "model": "sonnet",
         "language": "en"
       },
       {
-        "name": "self_observation_feedback",
-        "label": "Self Observation Feedback",
-        "file": "output/core.zh/sonnet/html/concept_self_observation_feedback_zh.html",
+        "name": "personalization_zh",
+        "label": "Personalization Zh",
+        "file": "output/college.zh/sonnet/html/concept_personalization_zh.html",
         "model": "sonnet",
         "language": "zh"
       },
       {
         "name": "self_observation_feedback",
         "label": "Self Observation Feedback",
-        "file": "output/core.en/sonnet/html/concept_self_observation_feedback.html",
+        "file": "output/college.en/sonnet/html/concept_self_observation_feedback.html",
         "model": "sonnet",
         "language": "en"
       },
       {
-        "name": "stress_resilience_routine",
-        "label": "Stress Resilience Routine",
-        "file": "output/core.zh/sonnet/html/concept_stress_resilience_routine_zh.html",
+        "name": "self_observation_feedback_zh",
+        "label": "Self Observation Feedback Zh",
+        "file": "output/college.zh/sonnet/html/concept_self_observation_feedback_zh.html",
         "model": "sonnet",
         "language": "zh"
       },
       {
         "name": "stress_resilience_routine",
         "label": "Stress Resilience Routine",
-        "file": "output/core.en/sonnet/html/concept_stress_resilience_routine.html",
+        "file": "output/college.en/sonnet/html/concept_stress_resilience_routine.html",
         "model": "sonnet",
         "language": "en"
+      },
+      {
+        "name": "stress_resilience_routine_zh",
+        "label": "Stress Resilience Routine Zh",
+        "file": "output/college.zh/sonnet/html/concept_stress_resilience_routine_zh.html",
+        "model": "sonnet",
+        "language": "zh"
       }
     ],
     "default_level": "core"

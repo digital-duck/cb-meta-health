@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Meridian Organ Clock (子午流注) | Meta Health Ch08</title>
+<script>
+MathJax = {
+  loader: { load: ['[tex]/mathtools'] },
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']],
+         packages: { '[+]': ['mathtools'] } },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<script src="https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.min.js"></script>
+<script>mermaid.initialize({ startOnLoad: true, theme: 'neutral' });</script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+footer.spl-credit span{display:block}
+footer.spl-credit .spl-credit__meta{margin-bottom:4px}
+.cb-figure{margin:24px 0;text-align:center}
+.cb-figure img{max-width:100%;height:auto;border:1px solid #e0e0d8;border-radius:6px}
+figcaption{font-size:.82rem;color:#666;margin-top:8px;font-style:italic;text-align:center}
+pre.mermaid{background:none;border:none;padding:0;overflow:visible;margin:16px 0}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="the-meridian-organ-clock-子午流注">The Meridian Organ Clock (子午流注)</h2>
+<p><strong>Definition.</strong> In Traditional Chinese Medicine (TCM), the meridian organ clock (子午流注, <em>zǐ wǔ liú zhù</em>) is a daily schedule. TCM holds that qi flows through the twelve main meridians in a fixed order, and that each meridian is most active during one two-hour window. The order starts at the Lung and ends at the Liver, then repeats the next day. The windows are listed below.</p>
+<p>| Time | Meridian | Time | Meridian | |---|---|---|---| | 3–5 | Lung | 15–17 | Bladder | | 5–7 | Large Intestine | 17–19 | Kidney | | 7–9 | Stomach | 19–21 | Pericardium | | 9–11 | Spleen | 21–23 | Triple Burner | | 11–13 | Heart | 23–1 | Gallbladder | | 13–15 | Small Intestine | 1–3 | Liver |</p>
+<p>The twelve windows are 24 hours divided by 12, which gives 2 hours each. The name 子午 refers to midnight (子) and noon (午), the two points where the cycle is said to turn between its yin and yang phases.</p>
+<p><strong>Worked example.</strong> A person wakes at 3 a.m. almost every night. In clock practice, 3 a.m. sits at the boundary between the Liver window (1–3) and the Lung window (3–5). A practitioner using the clock would link the waking to one of those two meridians. They might ask about stress or irritability for the Liver, or about breathing and cough for the Lung. They might also suggest eating lightly in the evening and keeping a regular bedtime. The clock gives the practitioner a list of questions to ask. It does not give a diagnosis.</p>
+<p><strong>Problem-solving application.</strong> Suppose you want to plan a day around the clock. The clock's own suggestions are:</p>
+<li>Eat breakfast during 7–9 (Stomach).</li>
+<li>Take a short rest around 11–13 (Heart).</li>
+<li>Be in bed by about 23:00, when the Gallbladder window begins.</li>
+<p>Each suggestion matches a sensible habit: a regular breakfast, a midday break, and a consistent bedtime. You can follow these habits without believing the meridian explanation. The habits are the useful part.</p>
+<p><strong>Evidence status.</strong> The explanation itself is not supported. Studies have not found organs that are more active in their assigned two-hour windows, and nothing in anatomy corresponds to a meridian. Real biology does give daily rhythms, and these are measured differently:</p>
+<li>Cortisol peaks in the early morning.</li>
+<li>Core body temperature reaches its lowest point in the early morning and its highest point in the late afternoon.</li>
+<li>Melatonin rises in the evening.</li>
+<li>Digestion, blood pressure, and liver enzyme activity all vary over the day.</li>
+<p>These rhythms are controlled by the body's circadian clock, and chronobiology studies them. Their timing varies from person to person, and it does not follow twelve equal windows.</p>
+<p>Treat the organ clock as a traditional framework for organizing questions and habits. Do not use it to decide when to take medication, or to explain night waking in place of seeing a clinician. Persistent sleep problems have many causes, such as sleep apnea, anxiety, and caffeine. A clinician can evaluate these causes, and the clock cannot.</p>
+<pre class="mermaid">flowchart LR
+    A["Lung 3-5"] --> B["Large Intestine 5-7"]
+    B --> C["Stomach 7-9"]
+    C --> D["Spleen 9-11"]
+    D --> E["Heart 11-13"]
+    E --> F["Small Intestine 13-15"]
+    F --> G["Bladder 15-17"]
+    G --> H["Kidney 17-19"]
+    H --> I["Pericardium 19-21"]
+    I --> J["Triple Burner 21-23"]
+    J --> K["Gallbladder 23-1"]
+    K --> L["Liver 1-3"]</pre>
+<p><em>The twelve two-hour windows of the organ clock in order. After the Liver window the cycle returns to the Lung.</em></p>
+  </main>
+  <footer class="spl-credit"><span class="spl-credit__meta">Ch8: Rhythms — Sleep, the Organ Clock, and the Seasons (天人相应) (Level: College &middot; Language: EN &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
+</div>
+</body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>应季饮食与运动 | Meta Health Ch08</title>
+<script>
+MathJax = {
+  loader: { load: ['[tex]/mathtools'] },
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']],
+         packages: { '[+]': ['mathtools'] } },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<script src="https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.min.js"></script>
+<script>mermaid.initialize({ startOnLoad: true, theme: 'neutral' });</script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+footer.spl-credit span{display:block}
+footer.spl-credit .spl-credit__meta{margin-bottom:4px}
+.cb-figure{margin:24px 0;text-align:center}
+.cb-figure img{max-width:100%;height:auto;border:1px solid #e0e0d8;border-radius:6px}
+figcaption{font-size:.82rem;color:#666;margin-top:8px;font-style:italic;text-align:center}
+pre.mermaid{background:none;border:none;padding:0;overflow:visible;margin:16px 0}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="应季饮食与运动">应季饮食与运动</h2>
+<p><strong>定义。</strong> 应季饮食与运动,是指根据季节的气温、日照和活动量变化,调整吃什么、怎么动、什么时候动。中医(TCM)认为"天人相应",人应随季节调整起居;这一思路的现代对应是:气温和昼长会实际改变出汗量、能量消耗、食欲和运动风险。夏季的做法是吃清淡、偏凉的食物,在清晨运动;冬季的做法是吃温热、营养充足的食物,运动量减小、时间缩短。中医还主张按季节侧重锻炼相应的脏腑,例如夏季对应心、冬季对应肾,常用练习包括放松的呼吸与八段锦等。这种脏腑对应属于传统理论,现代研究并未证实,但把它当作"夏季重心肺耐力、冬季重保暖与力量"的提醒,有实际用处。</p>
+<p><strong>对比。</strong></p>
+<p>| | 夏季 | 冬季 | |---|---|---| | 饮食 | 绿豆汤、冬瓜、黄瓜、西瓜,多补水 | 炖肉、羊肉汤、根茎类蔬菜、热粥 | | 运动时间 | 清晨或傍晚,避开正午 | 日出后、气温回升时 | | 运动方式 | 慢跑、游泳、太极 | 快走、力量训练、室内练习 | | 时长 | 可稍长,但要补水 | 先充分热身,单次稍短 | | 主要风险 | 中暑、脱水 | 肌肉拉伤、心血管负荷增加 |</p>
+<p><strong>例题。</strong> 小李体重 $70\ \text{kg}$,夏季每天早上慢跑 $45$ 分钟。慢跑的代谢当量约为 $7\ \text{MET}$,估算能量消耗:</p>
+$$
+E \approx 7 \times 70\ \text{kg} \times 0.75\ \text{h} \approx 368\ \text{kcal}
+$$
+<p>出汗按每小时 $1\ \text{L}$ 估计,45 分钟约丢失 $0.75\ \text{L}$ 水分,跑前跑后应补水约 $500$ 到 $750\ \text{mL}$。早餐吃一碗小米粥配黄瓜和鸡蛋,既补水也补能量。</p>
+<p><strong>问题应用。</strong> 到了冬季,小李改为每周 3 次、每次 30 分钟的快走,另加 2 次力量训练,运动时间放在 8 点以后。气温低时血管收缩,血压容易升高,所以热身要延长到 10 分钟。冬季出汗少、户外活动少,总能量消耗下降,如果仍按夏季的食量吃,体重会增加。因此晚餐可以用炖菜加一小份主食,而不是额外加肉加油。</p>
+<p>解题时按三步走:</p>
+<li>先看气温、湿度和日出时间,选定运动时段。</li>
+<li>再用 MET 公式估算消耗,决定补水和进食量。</li>
+<li>最后检查个人情况,例如高血压、糖尿病或关节问题,必要时咨询医生,不要只按季节规则行事。</li>
+<p>季节规则只是起点,真正的依据是你的身体反应、环境条件和健康状况。</p>
+  </main>
+  <footer class="spl-credit"><span class="spl-credit__meta">Ch8: Rhythms — Sleep, the Organ Clock, and the Seasons (天人相应) (Level: College &middot; Language: ZH &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
+</div>
+</body>
+</html>
