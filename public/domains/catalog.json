@@ -33,6 +33,18 @@
         "file": "output/core.zh/sonnet/html/book_five_phase_body_map_zh.html",
         "model": "sonnet",
         "language": "zh"
+      },
+      {
+        "target": "five_phase_body_map",
+        "file": "output/college.en/sonnet/html/book_five_phase_body_map.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "target": "five_phase_body_map",
+        "file": "output/college.zh/sonnet/html/book_five_phase_body_map_zh.html",
+        "model": "sonnet",
+        "language": "zh"
       }
     ],
     "generated_concepts": [
@@ -1217,6 +1229,18 @@
         "file": "output/core.zh/sonnet/html/book_five_organ_routine_design_zh.html",
         "model": "sonnet",
         "language": "zh"
+      },
+      {
+        "target": "five_organ_routine_design",
+        "file": "output/college.en/sonnet/html/book_five_organ_routine_design.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "target": "five_organ_routine_design",
+        "file": "output/college.zh/sonnet/html/book_five_organ_routine_design_zh.html",
+        "model": "sonnet",
+        "language": "zh"
       }
     ],
     "generated_concepts": [
@@ -1591,6 +1615,18 @@
       {
         "target": "daily_baduanjin_practice_plan",
         "file": "output/core.zh/sonnet/html/book_daily_baduanjin_practice_plan_zh.html",
+        "model": "sonnet",
+        "language": "zh"
+      },
+      {
+        "target": "daily_baduanjin_practice_plan",
+        "file": "output/college.en/sonnet/html/book_daily_baduanjin_practice_plan.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "target": "daily_baduanjin_practice_plan",
+        "file": "output/college.zh/sonnet/html/book_daily_baduanjin_practice_plan_zh.html",
         "model": "sonnet",
         "language": "zh"
       }
@@ -2017,6 +2053,18 @@
         "file": "output/core.zh/sonnet/html/book_mindful_meal_protocol_zh.html",
         "model": "sonnet",
         "language": "zh"
+      },
+      {
+        "target": "mindful_meal_protocol",
+        "file": "output/college.en/sonnet/html/book_mindful_meal_protocol.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "target": "mindful_meal_protocol",
+        "file": "output/college.zh/sonnet/html/book_mindful_meal_protocol_zh.html",
+        "model": "sonnet",
+        "language": "zh"
       }
     ],
     "generated_concepts": [
@@ -2405,6 +2453,18 @@
       {
         "target": "five_phase_meal_design",
         "file": "output/core.zh/sonnet/html/book_five_phase_meal_design_zh.html",
+        "model": "sonnet",
+        "language": "zh"
+      },
+      {
+        "target": "five_phase_meal_design",
+        "file": "output/college.en/sonnet/html/book_five_phase_meal_design.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "target": "five_phase_meal_design",
+        "file": "output/college.zh/sonnet/html/book_five_phase_meal_design_zh.html",
         "model": "sonnet",
         "language": "zh"
       }
@@ -2797,6 +2857,18 @@
         "file": "output/core.zh/sonnet/html/book_stress_resilience_routine_zh.html",
         "model": "sonnet",
         "language": "zh"
+      },
+      {
+        "target": "stress_resilience_routine",
+        "file": "output/college.en/sonnet/html/book_stress_resilience_routine.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "target": "stress_resilience_routine",
+        "file": "output/college.zh/sonnet/html/book_stress_resilience_routine_zh.html",
+        "model": "sonnet",
+        "language": "zh"
       }
     ],
     "generated_concepts": [
@@ -3173,6 +3245,18 @@
         "file": "output/core.zh/sonnet/html/book_personal_daily_rhythm_schedule_zh.html",
         "model": "sonnet",
         "language": "zh"
+      },
+      {
+        "target": "personal_daily_rhythm_schedule",
+        "file": "output/college.en/sonnet/html/book_personal_daily_rhythm_schedule.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "target": "personal_daily_rhythm_schedule",
+        "file": "output/college.zh/sonnet/html/book_personal_daily_rhythm_schedule_zh.html",
+        "model": "sonnet",
+        "language": "zh"
       }
     ],
     "generated_concepts": [
@@ -3463,6 +3547,18 @@
       {
         "target": "daily_meta_health_protocol",
         "file": "output/core.zh/sonnet/html/book_daily_meta_health_protocol_zh.html",
+        "model": "sonnet",
+        "language": "zh"
+      },
+      {
+        "target": "daily_meta_health_protocol",
+        "file": "output/college.en/sonnet/html/book_daily_meta_health_protocol.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "target": "daily_meta_health_protocol",
+        "file": "output/college.zh/sonnet/html/book_daily_meta_health_protocol_zh.html",
         "model": "sonnet",
         "language": "zh"
       }
